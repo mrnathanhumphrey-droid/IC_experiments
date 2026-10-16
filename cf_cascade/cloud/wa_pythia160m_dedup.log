@@ -1,0 +1,14 @@
+[WA] EleutherAI/pythia-160m-deduped (tag pythia160m_dedup) target acc>=0.8
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3098.50it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2201268.48 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 356613.99 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 569010.47 examples/s]
+[WA] step 250: SST acc=0.747 (25s)
+[WA] step 500: SST acc=0.760 (36s)
+[WA] step 750: SST acc=0.783 (47s)
+[WA] step 1000: SST acc=0.797 (58s)
+[WA] step 1250: SST acc=0.773 (69s)
+[WA] step 1500: SST acc=0.803 (80s)
+[WA] target hit acc=0.803 at step 1500; saved /home/ubuntu/gateA/pythia160m_dedup_sst2_wA.pt
+[WA] DONE tag=pythia160m_dedup acc=0.803 stop_step=1500 matched=True wall=81s

@@ -1,0 +1,151 @@
+{
+  "orig_real": [
+    "agnews",
+    "code",
+    "dbpedia",
+    "emotion",
+    "imdb",
+    "subj",
+    "tweet",
+    "ucdp",
+    "yelp"
+  ],
+  "new_real": [
+    "gsm8k",
+    "newscat",
+    "sciq",
+    "snli",
+    "yahoo"
+  ],
+  "null_keys": [
+    "nltext",
+    "nullperm",
+    "randtok"
+  ],
+  "types": {
+    "agnews": "topic",
+    "yelp": "sentiment",
+    "subj": "subjectivity",
+    "ucdp": "violence",
+    "nullperm": "NULLperm",
+    "code": "code",
+    "emotion": "emotion",
+    "dbpedia": "topic",
+    "imdb": "sentiment",
+    "tweet": "sentiment",
+    "gsm8k": "math",
+    "sciq": "science",
+    "snli": "nli",
+    "newscat": "newscat",
+    "yahoo": "qatopic",
+    "nltext": "NULLnl",
+    "randtok": "NULLrand"
+  },
+  "KBAND": 128,
+  "floor_nltext": 0.6389206035846765,
+  "floor_randtok": 0.41882101499178376,
+  "pertask": {
+    "agnews": {
+      "cross_orig": 0.7197507838327923,
+      "cross_enr": 0.7185249272482496,
+      "type": "topic",
+      "era": "orig",
+      "delta": -0.0012258565845427727
+    },
+    "code": {
+      "cross_orig": 0.5787236176199124,
+      "cross_enr": 0.6072041842046025,
+      "type": "code",
+      "era": "orig",
+      "delta": 0.028480566584690115
+    },
+    "dbpedia": {
+      "cross_orig": 0.691378227215004,
+      "cross_enr": 0.6800764848738727,
+      "type": "topic",
+      "era": "orig",
+      "delta": -0.011301742341131238
+    },
+    "emotion": {
+      "cross_orig": 0.6279399914400967,
+      "cross_enr": 0.6064075165975318,
+      "type": "emotion",
+      "era": "orig",
+      "delta": -0.02153247484256493
+    },
+    "gsm8k": {
+      "cross_orig": 0.5421927635234304,
+      "cross_enr": 0.5547960847374855,
+      "type": "math",
+      "era": "new",
+      "delta": 0.012603321214055163
+    },
+    "imdb": {
+      "cross_orig": 0.6312992671741307,
+      "cross_enr": 0.5992507811803587,
+      "type": "sentiment",
+      "era": "orig",
+      "delta": -0.03204848599377197
+    },
+    "newscat": {
+      "cross_orig": 0.7266317546218234,
+      "cross_enr": 0.7337961062626394,
+      "type": "newscat",
+      "era": "new",
+      "delta": 0.007164351640815969
+    },
+    "sciq": {
+      "cross_orig": 0.45586665354440115,
+      "cross_enr": 0.511285938367314,
+      "type": "science",
+      "era": "new",
+      "delta": 0.05541928482291281
+    },
+    "snli": {
+      "cross_orig": 0.6309696445737182,
+      "cross_enr": 0.5902169620210096,
+      "type": "nli",
+      "era": "new",
+      "delta": -0.040752682552708586
+    },
+    "subj": {
+      "cross_orig": 0.6644661085914417,
+      "cross_enr": 0.6882143656027082,
+      "type": "subjectivity",
+      "era": "orig",
+      "delta": 0.023748257011266483
+    },
+    "tweet": {
+      "cross_orig": 0.6431513458692747,
+      "cross_enr": 0.6645031103768191,
+      "type": "sentiment",
+      "era": "orig",
+      "delta": 0.02135176450754439
+    },
+    "ucdp": {
+      "cross_orig": 0.5153209597156636,
+      "cross_enr": 0.48659433844130895,
+      "type": "violence",
+      "era": "orig",
+      "delta": -0.028726621274354658
+    },
+    "yahoo": {
+      "cross_orig": 0.5703729977162796,
+      "cross_enr": 0.6220033574334981,
+      "type": "qatopic",
+      "era": "new",
+      "delta": 0.05163035971721852
+    },
+    "yelp": {
+      "cross_orig": 0.6067687070545777,
+      "cross_enr": 0.6019183422428487,
+      "type": "sentiment",
+      "era": "orig",
+      "delta": -0.004850364811729069
+    }
+  },
+  "verdicts": {
+    "code": "HARD LIMIT: cross stays at/below language floor (0.607 vs 0.639, \u0394+0.028) despite bridges -> unreachable from a sentiment-rooted childhood.",
+    "ucdp": "HARD LIMIT: cross stays at/below language floor (0.487 vs 0.639, \u0394-0.029) despite bridges -> unreachable from a sentiment-rooted childhood."
+  }
+}

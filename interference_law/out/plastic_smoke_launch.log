@@ -1,0 +1,77 @@
+[L:pl] tarball _plastic_ship.tar.gz with 44 files
+[L:pl] picked gpu_1x_a10 @ us-east-1 $1.29/hr  RUN_ENV='SMOKE=1' wd=1800s
+[L:pl] instance_id=ad78d376056a4fe886c19a766801fd20  (manual teardown if I go dark)
+[L:pl] status=booting ip=None 0s
+[L:pl] status=active ip=129.153.153.99 328s
+[L:pl] SSH up at 129.153.153.99 (329s)
+Warning: Permanently added '129.153.153.99' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.153.153.99' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.153.153.99' (ED25519) to the list of known hosts.
+[L:pl] uploaded+extracted (330s); pip...
+Warning: Permanently added '129.153.153.99' (ED25519) to the list of known hosts.
+2026-07-26 04:14:07.575511: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-26 04:14:07.647881: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785039247.685388    2527 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785039247.697237    2527 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785039247.756182    2527 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785039247.756210    2527 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785039247.756212    2527 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785039247.756214    2527 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-26 04:14:07.765668: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+pins 4.46.0 0.13.2 2.21.0
+[L:pl] running plastic_transfer_lambda.py (SMOKE=1) wd=1800s (353s)...
+Warning: Permanently added '129.153.153.99' (ED25519) to the list of known hosts.
+2026-07-26 04:14:15.318721: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-26 04:14:15.332164: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785039255.348384    2585 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785039255.353598    2585 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785039255.366196    2585 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785039255.366217    2585 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785039255.366219    2585 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785039255.366220    2585 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-26 04:14:15.369790: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[PL] SMOKE=True model=pythia1.4b ds=['clinc150'] ncap=3 seeds=[0, 1] steps=40 proj=32 dev=cuda
+[PL] EleutherAI/pythia-1.4b nlayers=24 layer=12 hdim=2048->32 (14s)
+Downloading readme:   0%|          | 0.00/24.0k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 24.0k/24.0k [00:00<00:00, 667kB/s]
+Downloading data:   0%|          | 0.00/312k [00:00<?, ?B/s]Downloading data: 100%|██████████| 312k/312k [00:00<00:00, 738kB/s]Downloading data: 100%|██████████| 312k/312k [00:00<00:00, 737kB/s]
+Downloading data:   0%|          | 0.00/77.8k [00:00<?, ?B/s]Downloading data: 100%|██████████| 77.8k/77.8k [00:00<00:00, 247kB/s]Downloading data: 100%|██████████| 77.8k/77.8k [00:00<00:00, 247kB/s]
+Downloading data:   0%|          | 0.00/136k [00:00<?, ?B/s]Downloading data: 100%|██████████| 136k/136k [00:00<00:00, 671kB/s]Downloading data: 100%|██████████| 136k/136k [00:00<00:00, 670kB/s]
+Generating train split:   0%|          | 0/15250 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 15250/15250 [00:00<00:00, 1319453.27 examples/s]
+Generating validation split:   0%|          | 0/3100 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 3100/3100 [00:00<00:00, 1033079.80 examples/s]
+Generating test split:   0%|          | 0/5500 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 5500/5500 [00:00<00:00, 1326014.37 examples/s]
+[PL] clinc150: 3 caps 10 neg layer=12 (15s)
+[PL] clinc150 seed0 src0 done (20s)
+[PL] clinc150 seed0 src1 done (23s)
+[PL] clinc150 seed0 src2 done (27s)
+[PL] clinc150 seed1 src0 done (30s)
+[PL] clinc150 seed1 src1 done (33s)
+[PL] clinc150 seed1 src2 done (37s)
+/home/ubuntu/ilaw/plastic_transfer_lambda.py:181: RuntimeWarning: Mean of empty slice
+  FT = np.nanmean(FTs, axis=0)
+/home/ubuntu/ilaw/plastic_transfer_lambda.py:182: RuntimeWarning: Mean of empty slice
+  even = np.nanmean(FTs[0::2], axis=0); odd = np.nanmean(FTs[1::2], axis=0)
+[PL] aggregated after clinc150; JSON updated (37s)
+
+[PL] === PLASTIC TRANSFER ===
+  clinc150: FT_rel=0.75 var(row/col/resid)={'row': 0.368, 'col': 0.448, 'resid': 0.258} FT=-0.031+/-0.114
+    COS        vsFT rho=None CI[None, None] p=None | vsRESID rho=None p=None
+    CKA_drift  vsFT rho=None CI[None, None] p=None | vsRESID rho=None p=None
+    CKA_reuse  vsFT rho=None CI[None, None] p=None | vsRESID rho=None p=None
+    SUBOVL     vsFT rho=None CI[None, None] p=None | vsRESID rho=None p=None
+    LOGME      vsFT rho=None CI[None, None] p=None | vsRESID rho=None p=None
+    EFFRANK    vsFT rho=None CI[None, None] p=None | vsRESID rho=None p=None
+
+[PL] VERDICT: {'cos_dissociation_persists': False, 'feature_reuse_hits_vs_FT': [], 'feature_reuse_hits_vs_resid': [], 'headline': 'NULL: plastic transfer also geometrically opaque (no feature-reuse descriptor clears bar)'}
+[PL] wrote /home/ubuntu/ilaw/out/plastic_transfer.json  wall=37s
+[L:pl] run rc=0 (397s)
+Warning: Permanently added '129.153.153.99' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.153.153.99' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.153.153.99' (ED25519) to the list of known hosts.
+[L:pl] RESULT LANDED: D:\IC_experiments\interference_law\out\plastic_transfer.json rows=D:\IC_experiments\interference_law\out\plastic_rows.jsonl
+[L:pl] terminating ad78d376056a4fe886c19a766801fd20...
+[L:pl] terminated ad78d376056a4fe886c19a766801fd20
+[L:pl] ledger += 7min $0.14

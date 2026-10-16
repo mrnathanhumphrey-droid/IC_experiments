@@ -1,0 +1,17 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[A'sub] SST-2 subset = 2000 examples
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  40%|###9      | 116/292 [00:00<00:00, 1148.49it/s]Loading weights: 100%|##########| 292/292 [00:00<00:00, 1468.19it/s]
+  step  200  train_win 0.4117  (33s)
+  step  400  train_win 0.1386  (54s)
+  step  600  train_win 0.0719  (75s)
+  step  800  train_win 0.0189  (95s)
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|##########| 292/292 [00:00<00:00, 3811.33it/s]
+
+[A'sub] === GENUINE-MINIMUM CHECK (SST-2 2k subset) ===
+  stopped step 800, train_win 0.0189
+  full-subset grad-norm = 0.1879   (saddle was 1.19)
+  lambda_max = 21.00
+  lambda_min = -49.244   (THE PSD GATE; >0 = genuine min, <0 = saddle)
+  ESD decade-span median = 5.87
+  VERDICT: STILL A SADDLE (lambda_min<0) - switch task A
+[A'sub] saved pythia410m_sst2_subsetmin.pt, gateAprime_subset_summary.json  wall=1799s

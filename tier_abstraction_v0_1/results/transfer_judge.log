@@ -1,0 +1,22 @@
+held-out fine classes (15): [0, 1, 2, 3, 4, 5, 6, 9, 12, 15, 22, 23, 26, 34, 54]
+train-in 42500 | novel support 7500 | novel query 1500
+[seed 0] PAY GATE novel-super acc  z_low=0.3607  z_trans=0.3380  diff=-0.0227
+[seed 0] flat fine k= 1  z_low=0.3104  z_trans=0.2472  diff=-0.0632
+[seed 0] flat fine k= 5  z_low=0.5179  z_trans=0.4140  diff=-0.1039
+[seed 0] flat fine k=10  z_low=0.5682  z_trans=0.4591  diff=-0.1091
+[seed 0] flat fine k=20  z_low=0.5987  z_trans=0.4846  diff=-0.1140
+[seed 1] PAY GATE novel-super acc  z_low=0.3600  z_trans=0.3540  diff=-0.0060
+[seed 1] flat fine k= 1  z_low=0.2992  z_trans=0.2765  diff=-0.0227
+[seed 1] flat fine k= 5  z_low=0.5147  z_trans=0.4264  diff=-0.0884
+[seed 1] flat fine k=10  z_low=0.5633  z_trans=0.4654  diff=-0.0979
+[seed 1] flat fine k=20  z_low=0.5943  z_trans=0.4936  diff=-0.1006
+[seed 2] PAY GATE novel-super acc  z_low=0.3367  z_trans=0.3440  diff=+0.0073
+[seed 2] flat fine k= 1  z_low=0.2940  z_trans=0.2741  diff=-0.0199
+[seed 2] flat fine k= 5  z_low=0.4928  z_trans=0.4467  diff=-0.0460
+[seed 2] flat fine k=10  z_low=0.5574  z_trans=0.4830  diff=-0.0745
+[seed 2] flat fine k=20  z_low=0.5959  z_trans=0.5032  diff=-0.0928
+
+=== C5 PAY GATE ===
+novel-class superclass acc: z_low=0.3524  z_trans=0.3453
+paired diff = -0.0071   95% CI = [-0.0191, +0.0058]   threshold +0.0200
+P5 REFUTED (Locatello-null: representational not functional)

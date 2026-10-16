@@ -1,0 +1,29 @@
+{
+  "model": "facebook/opt-350m",
+  "wA_sst_acc": 0.7966666666666666,
+  "step1": {
+    "com_rank_median": 0.07216556145404332,
+    "M1_median": 0.8585359454154968,
+    "antag_median": 0.09409299330001875,
+    "antag_headon": false,
+    "core_exists": true,
+    "pass": true
+  },
+  "step2": {
+    "partial_median": 0.2880605720616807,
+    "partial_frac_pos": 0.9930555555555556,
+    "partial_attn_median": 0.2856379387761046,
+    "pass": true
+  },
+  "step3": {
+    "fragile_G_median": 0.08741943538188934,
+    "topcurv_G_median": 0.08914945274591446,
+    "fragile_G_attn": 0.0864013060927391,
+    "topcurv_G_attn": 0.08911300450563431,
+    "chance": 0.013671875,
+    "moves": true,
+    "fragile_eq_topcurv": true,
+    "verdict": "TASK-A's NOT architecture's (Pythia replicates): fragile_G median=0.087 \u2248 topcurv_G 0.089 (chance 0.014) \u2014 fragile subspace MOVES with task-A & equals generic curvature (no architectural fragile core). attn fragile 0.086 vs topcurv 0.089."
+  },
+  "verdict": "RUNG-2 REPLICATES on OPT: seed/contested-core (com 0.07, M1 0.86) + beyond-curvature aimed (partial 0.29, frac_pos 0.99) + task-A-owned (fragile_G\u2248topcurv_G) ALL replicate on a 3rd family -> mechanism cross-architecture (Pythia+GPT2+OPT). antagonism g_A\u00b7g_B0=0.094 ~0 NOT head-on (the one Pythia feature that does NOT replicate on OPT \u2014 corroborating signal diverges). OPT earns rung-3."
+}

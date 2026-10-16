@@ -1,0 +1,25 @@
+[GEOM] GEOMETRY MATRIX — size x family, bootstrap-null (measurement-only)
+
+[opt1_3b] loading facebook/opt-1.3b...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 129/389 [00:00<00:00, 1274.77it/s]Loading weights:  68%|██████▊   | 263/389 [00:00<00:00, 1265.75it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 1397.89it/s]
+[opt1_3b] 144 carriers (23s)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2073522.42 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 359311.63 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 648592.70 examples/s]
+[opt1_3b] Fisher/V/spectrum done (176s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 67000/560000 [00:00<00:00, 656882.72 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 827861.92 examples/s]Generating train split:  50%|████▉     | 279000/560000 [00:00<00:00, 969800.82 examples/s]Generating train split:  75%|███████▍  | 419000/560000 [00:00<00:00, 1076791.30 examples/s]Generating train split:  97%|█████████▋| 543000/560000 [00:00<00:00, 1130668.39 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1028990.27 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1097833.43 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   4%|▍         | 59000/1400000 [00:00<00:02, 579506.90 examples/s]Generating train split:  10%|█         | 146000/1400000 [00:00<00:01, 662984.01 examples/s]Generating train split:  16%|█▌        | 223000/1400000 [00:00<00:01, 706044.20 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 729449.20 examples/s]Generating train split:  29%|██▊       | 400000/1400000 [00:00<00:01, 802626.49 examples/s]Generating train split:  36%|███▌      | 505000/1400000 [00:00<00:01, 754302.38 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 757838.04 examples/s]Generating train split:  49%|████▉     | 686000/1400000 [00:00<00:00, 812343.80 examples/s]Generating train split:  57%|█████▋    | 801000/1400000 [00:01<00:00, 790735.38 examples/s]Generating train split:  66%|██████▋   | 930000/1400000 [00:01<00:00, 810059.45 examples/s]Generating train split:  72%|███████▏  | 1013000/1400000 [00:01<00:00, 805855.82 examples/s]Generating train split:  78%|███████▊  | 1097000/1400000 [00:01<00:00, 803205.34 examples/s]Generating train split:  84%|████████▍ | 1181000/1400000 [00:01<00:00, 801776.39 examples/s]Generating train split:  91%|█████████ | 1268000/1400000 [00:01<00:00, 802372.44 examples/s]Generating train split:  97%|█████████▋| 1356000/1400000 [00:01<00:00, 799009.18 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 775448.09 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 901587.23 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 242917.53 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 262574.31 examples/s]Generating train split:  74%|███████▍  | 155103/209527 [00:00<00:00, 254534.76 examples/s]Generating train split:  96%|█████████▋| 201886/209527 [00:00<00:00, 245417.30 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 248983.09 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1858919.81 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 727483.13 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 788477.11 examples/s]
+[opt1_3b] seed 0: G5 dep-surge=0.453(rand 0.125) G2=1.73 G6=0.164 (342s)
+[opt1_3b] seed 1: G5 dep-surge=0.455(rand 0.124) G2=1.73 G6=0.163 (488s)
+[opt1_3b] seed 2: G5 dep-surge=0.446(rand 0.125) G2=1.73 G6=0.162 (632s)
+[opt1_3b] G1=0.002 G2=1.73 G3=0.242 G4=0.309 ★G5=0.439(rand 0.125) G6=0.180
+[GEOM] insufficient cells for family classification: OK=['opt1_3b']
+
+[GEOM] cells OK: ['opt1_3b'] | saved geom_matrix.json wall=633s

@@ -1,0 +1,140 @@
+{
+ "config": {
+  "model": "Qwen/Qwen2.5-1.5B",
+  "ncap": 16,
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "steps": 200,
+  "layer": 14,
+  "smoke": false
+ },
+ "grid": [
+  {
+   "projdim": 8,
+   "projseed": 0,
+   "auc0_med": 0.747,
+   "medFgt": 0.032,
+   "dominance_rho": 0.868,
+   "curl_rho": 0.373,
+   "phi_loo_r2": -0.471,
+   "rho_dprime_phi": 0.532
+  },
+  {
+   "projdim": 8,
+   "projseed": 1,
+   "auc0_med": 0.708,
+   "medFgt": 0.041,
+   "dominance_rho": 0.823,
+   "curl_rho": 0.387,
+   "phi_loo_r2": 0.175,
+   "rho_dprime_phi": 0.518
+  },
+  {
+   "projdim": 8,
+   "projseed": 2,
+   "auc0_med": 0.726,
+   "medFgt": 0.015,
+   "dominance_rho": 0.785,
+   "curl_rho": 0.365,
+   "phi_loo_r2": -0.237,
+   "rho_dprime_phi": 0.462
+  },
+  {
+   "projdim": 12,
+   "projseed": 0,
+   "auc0_med": 0.749,
+   "medFgt": 0.033,
+   "dominance_rho": 0.935,
+   "curl_rho": 0.407,
+   "phi_loo_r2": -0.893,
+   "rho_dprime_phi": 0.412
+  },
+  {
+   "projdim": 12,
+   "projseed": 1,
+   "auc0_med": 0.75,
+   "medFgt": 0.024,
+   "dominance_rho": 0.783,
+   "curl_rho": 0.298,
+   "phi_loo_r2": -1.403,
+   "rho_dprime_phi": 0.074
+  },
+  {
+   "projdim": 12,
+   "projseed": 2,
+   "auc0_med": 0.78,
+   "medFgt": 0.035,
+   "dominance_rho": 0.519,
+   "curl_rho": 0.212,
+   "phi_loo_r2": -0.757,
+   "rho_dprime_phi": 0.094
+  },
+  {
+   "projdim": 24,
+   "projseed": 0,
+   "auc0_med": 0.77,
+   "medFgt": 0.037,
+   "dominance_rho": 0.834,
+   "curl_rho": 0.391,
+   "phi_loo_r2": -0.132,
+   "rho_dprime_phi": 0.268
+  },
+  {
+   "projdim": 24,
+   "projseed": 1,
+   "auc0_med": 0.795,
+   "medFgt": 0.059,
+   "dominance_rho": 0.782,
+   "curl_rho": 0.274,
+   "phi_loo_r2": -0.186,
+   "rho_dprime_phi": 0.503
+  },
+  {
+   "projdim": 24,
+   "projseed": 2,
+   "auc0_med": 0.816,
+   "medFgt": 0.052,
+   "dominance_rho": 0.557,
+   "curl_rho": 0.301,
+   "phi_loo_r2": -0.15,
+   "rho_dprime_phi": 0.276
+  },
+  {
+   "projdim": 48,
+   "projseed": 0,
+   "auc0_med": 0.774,
+   "medFgt": 0.028,
+   "dominance_rho": 0.883,
+   "curl_rho": 0.356,
+   "phi_loo_r2": -0.412,
+   "rho_dprime_phi": 0.4
+  },
+  {
+   "projdim": 48,
+   "projseed": 1,
+   "auc0_med": 0.795,
+   "medFgt": 0.021,
+   "dominance_rho": 0.833,
+   "curl_rho": 0.531,
+   "phi_loo_r2": 0.672,
+   "rho_dprime_phi": 0.653
+  },
+  {
+   "projdim": 48,
+   "projseed": 2,
+   "auc0_med": 0.819,
+   "medFgt": 0.02,
+   "dominance_rho": 0.873,
+   "curl_rho": 0.444,
+   "phi_loo_r2": -0.645,
+   "rho_dprime_phi": 0.562
+  }
+ ],
+ "frac_cyclic_inband": 0.714,
+ "median_curl_inband": 0.373,
+ "cycles_persist": true,
+ "headline": "CYCLES PERSIST across projections (curl-rho>=0.30 in 71% of in-band grid, median +0.373) \u2014 NOT a projection artifact."
+}

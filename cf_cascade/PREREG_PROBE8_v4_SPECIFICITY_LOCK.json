@@ -1,0 +1,22 @@
+{
+  "prereg": "PREREG_PROBE8_v4_SPECIFICITY_2026_06_28.md",
+  "sha256": "0112d69b32e01a7ad35d5b8fa31186965f773d57620d65ab03cf522a8955deb8",
+  "short": "0112d69b",
+  "locked": "2026-06-28",
+  "probe": "probe8_v4_directional_specificity",
+  "builds_on": "v3 65ae39d4 (FINDING 1 not-global STANDS); v4 sharpens FINDING 2 with biting nulls",
+  "question": "is directional protection SPECIFIC to phase-2 interference or GENERIC to real-task damaging dirs",
+  "directions": [
+    "phase2 (realized)",
+    "alttask (TREC gradient)",
+    "randtop16"
+  ],
+  "primary": "S=N(phase2)-N(alttask); N(d)=mean(dprop_NoCH-dprop_CH); SPECIFIC if S>0(2sig)&N(phase2)>N(randtop16); GENERIC if S~=0 & both>randtop16",
+  "N": 100,
+  "K_RAND": 5,
+  "cells": [
+    "opt350m",
+    "pythia410m"
+  ],
+  "fired": false
+}

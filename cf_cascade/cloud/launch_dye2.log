@@ -1,0 +1,62 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=d026f3af01dc47f7a51b685168bf68c9  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] status=active ip=132.145.180.36 283s
+[L] SSH up at 132.145.180.36 (284s)
+Warning: Permanently added '132.145.180.36' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.180.36' (ED25519) to the list of known hosts.
+[L] uploading 1.6GB checkpoint...
+Warning: Permanently added '132.145.180.36' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.180.36' (ED25519) to the list of known hosts.
+[L] upload done (354s)
+[L] installing transformers/datasets + upgrading Pillow...
+Warning: Permanently added '132.145.180.36' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L] running dye2_lambda.py (380s)...
+Warning: Permanently added '132.145.180.36' (ED25519) to the list of known hosts.
+[DYE2] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  79%|███████▉  | 230/292 [00:00<00:00, 2174.04it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2338.80it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2153820.55 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 419286.15 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 639202.24 examples/s]
+[DYE2] curvature basis + injections built (39s)
+[DYE2] baseline done, 12 snaps (118s)
+[DYE2] stiff-injection run done (193s)
+[DYE2] flat-injection run done (270s)
+[DYE2] saved dye2_series.npz (270s)
+  [attention.query_key_value ] PR stiff 1.0->8.0  flat 1.0->7.8
+  [mlp.dense_h_to_4h         ] PR stiff 1.0->23.4  flat 1.0->22.3
+  [mlp.dense_4h_to_h         ] PR stiff 1.0->6.2  flat 1.0->5.4
+
+[DYE2] SAME RATE (stiff 13 ~ flat 12, 1.1x) -> grading is SEEDING-driven not transport (falsifier: graded rate lives in where damage seeds, not how perturbations transport)
+[DYE2] saved dye2.json wall=270s
+[L] run rc=0 (653s)
+[L] pulling result + log...
+Warning: Permanently added '132.145.180.36' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.180.36' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.180.36' (ED25519) to the list of known hosts.
+[L] RESULT LANDED: gateA/dye2.json
+[L] terminating d026f3af01dc47f7a51b685168bf68c9...
+[L] terminated d026f3af01dc47f7a51b685168bf68c9

@@ -1,0 +1,30 @@
+[ANTAG] OPTION 1 — pin down the antagonism space (measurement-only)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  66%|██████▋   | 194/292 [00:00<00:00, 1937.36it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2188.69it/s]
+[ANTAG] loaded pinned w_A /home/ubuntu/gateA/pythia410m_sst2_subsetmin.pt
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2109807.90 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 401342.38 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 641942.14 examples/s]
+[ANTAG] w_A SST acc=0.753 (rung-1 ~0.77, dispositive 0.753); 72 carriers (13s)
+[ANTAG] curv basis (top-128) done (39s)
+[ANTAG] g_A (held-out SST val, 96 ex) done (45s)
+[ANTAG] agnews  : curv16=+0.104 | curv128=+0.102 | raw=+0.100 (45s)
+[ANTAG] subj    : curv16=+0.047 | curv128=+0.047 | raw=+0.047 (45s)
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1527179.85 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 707779.95 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 764895.41 examples/s]
+[ANTAG] emotion : curv16=+0.059 | curv128=+0.059 | raw=+0.054 (47s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 67000/560000 [00:00<00:00, 655835.66 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 828812.19 examples/s]Generating train split:  50%|████▉     | 278000/560000 [00:00<00:00, 964930.10 examples/s]Generating train split:  75%|███████▌  | 422000/560000 [00:00<00:00, 1096836.67 examples/s]Generating train split:  96%|█████████▋| 539000/560000 [00:00<00:00, 1118139.14 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1022594.34 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1087641.76 examples/s]
+[ANTAG] dbpedia : curv16=+0.114 | curv128=+0.113 | raw=+0.095 (50s)
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▍         | 66000/1400000 [00:00<00:02, 649731.76 examples/s]Generating train split:  11%|█         | 149000/1400000 [00:00<00:01, 710802.66 examples/s]Generating train split:  16%|█▌        | 225000/1400000 [00:00<00:01, 728728.94 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 739234.47 examples/s]Generating train split:  29%|██▊       | 401000/1400000 [00:00<00:01, 810251.30 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 730886.56 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 748130.54 examples/s]Generating train split:  49%|████▉     | 684000/1400000 [00:00<00:00, 799287.76 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 707356.91 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 721007.73 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 733814.29 examples/s]Generating train split:  75%|███████▌  | 1054000/1400000 [00:01<00:00, 781568.01 examples/s]Generating train split:  84%|████████▍ | 1178000/1400000 [00:01<00:00, 794801.30 examples/s]Generating train split:  90%|█████████ | 1266000/1400000 [00:01<00:00, 790968.81 examples/s]Generating train split:  97%|█████████▋| 1354000/1400000 [00:01<00:00, 784216.41 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 760214.64 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 867894.77 examples/s]
+[ANTAG] yahoo   : curv16=+0.024 | curv128=+0.020 | raw=+0.016 (57s)
+
+[ANTAG] === ANTAGONISM SPACE MAP (median over carriers) ===
+  reproduce-known: agnews curv16 = +0.104 (rung-2 Pythia −0.23) -> DOES NOT reproduce — pinned w_A differs from rung-2 regime, flag
+  curv16 : agnews=+0.104 | subj=+0.047 | emotion=+0.059 | dbpedia=+0.114 | yahoo=+0.024   [range +0.024,+0.114; neg-reachable=False]
+  curv128: agnews=+0.102 | subj=+0.047 | emotion=+0.059 | dbpedia=+0.113 | yahoo=+0.020   [range +0.020,+0.113; neg-reachable=False]
+  raw    : agnews=+0.100 | subj=+0.047 | emotion=+0.054 | dbpedia=+0.095 | yahoo=+0.016   [range +0.016,+0.100; neg-reachable=False]
+  subj (dispositive depth task) curv16=+0.047 -> the antagonism level the toggle must hit at the −0.23 end
+[ANTAG] saved antag_space.json wall=57s

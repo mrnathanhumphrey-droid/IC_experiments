@@ -1,0 +1,11 @@
+N=100000 class=51 order=273 fit=70081 q=29919
+[seed 0] base=+0.6471 super=+0.6581 blanket=+0.5219 fire=0.110
+[seed 1] base=+0.6367 super=+0.6634 blanket=+0.5149 fire=0.144
+[seed 2] base=+0.6511 super=+0.6637 blanket=+0.5142 fire=0.128
+
+=== Axis-G SUPERSESSION: clean tier + separate correction store ===
+  base(k1)=+0.6450  supersession=+0.6618  blanket=+0.5170  fire_rate=0.127
+  G_super super-base=+0.0168[+0.0101,+0.0234] -> False
+  G_disc  super-blanket=+0.1448[+0.1399,+0.1492] -> True
+  VERDICT: CORRECTION_NULL
+DONE axisG-supersession

@@ -1,0 +1,28 @@
+[DIRSMOKE] #4 low-rank adjudication smoke | CAPS=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] NEG=[90, 91, 92, 93, 94, 95, 96, 97, 98, 99] ft=(300,0.0005) dev=cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[data] HF cifar100 banks OK
+[DIRSMOKE] base heads: mean auc0=1.000 dim=512 n=12
+    perturb 0: colFgt=+0.159  (1/12)
+    perturb 1: colFgt=+0.153  (2/12)
+    perturb 2: colFgt=+0.209  (3/12)
+    perturb 3: colFgt=+0.218  (4/12)
+    perturb 4: colFgt=+0.233  (5/12)
+    perturb 5: colFgt=+0.224  (6/12)
+    perturb 6: colFgt=+0.145  (7/12)
+    perturb 7: colFgt=+0.244  (8/12)
+    perturb 8: colFgt=+0.169  (9/12)
+    perturb 9: colFgt=+0.173  (10/12)
+    perturb 10: colFgt=+0.172  (11/12)
+    perturb 11: colFgt=+0.204  (12/12)
+
+=== #4 SMOKE RESULT (CIFAR, N=12) ===
+  median off-diag forgetting      = +0.186
+  INTERACTION eff-rank (dcenter F)= 4.61   top6 var% = [33.9, 23.4, 17.0, 9.8, 7.9, 4.4]
+  PER-TASK operator eff-rank      = median 2.37  range [1.58, 2.93]
+  POOLED direction eff-rank       = 13.86   (effective # distinct forgetting directions, max=132)
+  mean |cos| across pair-dirs     = 0.169   (low = dispersed)
+
+  READ: dichotomy holds if PER-TASK eff-rank LOW while INTERACTION + POOLED eff-rank HIGH,
+        and mean|cos| LOW (dispersed). KILL if per-task eff-rank ~ interaction, or mean|cos| high.
+
+[DIRSMOKE] wrote D:\IC_experiments\interference_law\out\lowrank_dirsmoke.json  wall=336s

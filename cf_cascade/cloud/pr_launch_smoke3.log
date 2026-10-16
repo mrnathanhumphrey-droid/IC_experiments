@@ -1,0 +1,55 @@
+[L:pr] picked gpu_1x_a10 @ us-east-1 $1.29/hr  RUN_ENV='SMOKE=1' wd=1800s hf_tok=yes
+[L:pr] instance_id=e313cb5407c643b4bcc5c95c0a12b1fa  (manual teardown if I go dark)
+[L:pr] status=booting ip=None 1s
+[L:pr] status=active ip=150.136.18.154 313s
+[L:pr] SSH up at 150.136.18.154 (313s)
+Warning: Permanently added '150.136.18.154' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.18.154' (ED25519) to the list of known hosts.
+[L:pr] uploaded (314s); pip...
+Warning: Permanently added '150.136.18.154' (ED25519) to the list of known hosts.
+WARNING: The candidate selected for download or install is a yanked version: 'transformers' candidate (version 4.46.0 at https://files.pythonhosted.org/packages/db/88/1ef8a624a33d7fe460a686b9e0194a7916320fc0d67d4e38e570beeac039/transformers-4.46.0-py3-none-any.whl#sha256=e161268ae8bee315eb9e9b4c0b27f1bd6980f91e0fc292d75249193d339704c0 (from https://pypi.org/simple/transformers/) (requires-python:>=3.8.0))
+Reason for being yanked: This version unfortunately does not work with 3.8 but we did not drop the support yet
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+tf 2.7.0 4.46.0
+[L:pr] running pr_steering_lambda.py (SMOKE=1) wd=1800s (325s)...
+Warning: Permanently added '150.136.18.154' (ED25519) to the list of known hosts.
+[PR] #3 subspace-dim | SMOKE=1 model=google/gemma-2-2b alpha=4.0 dev=cuda
+2026-07-27 18:27:34.957157: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-27 18:27:35.030054: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785176855.067117    2597 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785176855.077383    2597 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785176855.134597    2597 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785176855.134623    2597 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785176855.134625    2597 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785176855.134627    2597 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-27 18:27:35.143127: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+Downloading shards:   0%|          | 0/3 [00:00<?, ?it/s]Downloading shards:  33%|███▎      | 1/3 [01:43<03:27, 103.77s/it]Downloading shards:  67%|██████▋   | 2/3 [01:59<00:51, 51.87s/it] Downloading shards: 100%|██████████| 3/3 [02:04<00:00, 30.69s/it]Downloading shards: 100%|██████████| 3/3 [02:04<00:00, 41.60s/it]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  2.57it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  2.61it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  3.38it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  3.12it/s]
+[MODEL] google/gemma-2-2b nlayers=26 d=2304
+  [sentiment] L13 PR=1.37 sr=1.173 ablatable=4.6465 k*=6 top1abl=-0.213 steer=26.3872
+  [refusal] L12 PR=5.725 sr=2.699 ablatable=-0.5391 k*=None top1abl=None steer=1.6387
+  [toxicity] L16 PR=6.848 sr=3.084 ablatable=3.2266 k*=1 top1abl=1.033 steer=10.8555
+
+[PR] 2/3 concepts have valid k* — need >=5 for correlation (smoke validates pipeline).
+[PR] wrote /home/ubuntu/pr/gateA/pr_steering_gemma-2-2b.json  wall=136s
+[L:pr] run rc=0 (464s)
+Warning: Permanently added '150.136.18.154' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.18.154' (ED25519) to the list of known hosts.
+[L:pr] RESULT LANDED: D:\IC_experiments\cf_cascade\gateA\pr_steering_gemma-2-2b.json
+[L:pr] terminating e313cb5407c643b4bcc5c95c0a12b1fa...
+[L:pr] terminated e313cb5407c643b4bcc5c95c0a12b1fa
+[L:pr] ledger += 8min $0.17

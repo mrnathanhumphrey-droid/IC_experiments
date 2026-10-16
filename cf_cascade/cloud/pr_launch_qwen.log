@@ -1,0 +1,62 @@
+[L:pr] picked gpu_1x_a10 @ us-east-1 $1.29/hr  RUN_ENV='MODEL=Qwen/Qwen2.5-1.5B OUTNAME=pr_steering_qwen.json' wd=3000s hf_tok=yes
+[L:pr] instance_id=d661c3b9c0a542b2939a7ffe86c6e52b  (manual teardown if I go dark)
+[L:pr] status=booting ip=None 1s
+[L:pr] status=active ip=129.213.22.140 250s
+[L:pr] SSH up at 129.213.22.140 (251s)
+Warning: Permanently added '129.213.22.140' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.22.140' (ED25519) to the list of known hosts.
+[L:pr] uploaded (252s); pip...
+Warning: Permanently added '129.213.22.140' (ED25519) to the list of known hosts.
+WARNING: The candidate selected for download or install is a yanked version: 'transformers' candidate (version 4.46.0 at https://files.pythonhosted.org/packages/db/88/1ef8a624a33d7fe460a686b9e0194a7916320fc0d67d4e38e570beeac039/transformers-4.46.0-py3-none-any.whl#sha256=e161268ae8bee315eb9e9b4c0b27f1bd6980f91e0fc292d75249193d339704c0 (from https://pypi.org/simple/transformers/) (requires-python:>=3.8.0))
+Reason for being yanked: This version unfortunately does not work with 3.8 but we did not drop the support yet
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+tf 2.7.0 4.46.0
+[L:pr] running pr_steering_lambda.py (MODEL=Qwen/Qwen2.5-1.5B OUTNAME=pr_steering_qwen.json) wd=3000s (263s)...
+Warning: Permanently added '129.213.22.140' (ED25519) to the list of known hosts.
+[PR] #3 subspace-dim | SMOKE=0 model=Qwen/Qwen2.5-1.5B alpha=4.0 dev=cuda
+2026-07-27 20:15:23.915068: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-27 20:15:24.077784: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785183324.149274    2580 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785183324.170729    2580 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785183324.309327    2580 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785183324.309362    2580 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785183324.309364    2580 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785183324.309365    2580 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-27 20:15:24.326084: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+[MODEL] Qwen/Qwen2.5-1.5B nlayers=28 d=1536
+  [sentiment] L16 specPR=3.37 causalPR=27.476 PRsig=5.71 nsig=9 c/rand=1.60 steer=6.2773 valid=True
+  [size] L14 specPR=8.641 causalPR=25.122 PRsig=3.501 nsig=10 c/rand=1.42 steer=4.1846 valid=True
+  [temperature] L8 specPR=11.945 causalPR=24.09 PRsig=2.889 nsig=6 c/rand=1.42 steer=1.137 valid=True
+  [speed] L13 specPR=12.191 causalPR=23.498 PRsig=4.331 nsig=7 c/rand=1.35 steer=2.3952 valid=True
+  [brightness] L10 specPR=8.83 causalPR=26.456 PRsig=8.906 nsig=11 c/rand=1.59 steer=1.9336 valid=True
+  [difficulty] L13 specPR=7.497 causalPR=27.458 PRsig=4.532 nsig=6 c/rand=1.70 steer=3.2669 valid=True
+  [wealth] L10 specPR=9.094 causalPR=27.215 PRsig=9.107 nsig=14 c/rand=1.82 steer=3.305 valid=True
+  [strength] L15 specPR=12.689 causalPR=24.641 PRsig=3.066 nsig=5 c/rand=1.07 steer=2.5042 valid=True
+  [age] L14 specPR=13.662 causalPR=22.515 PRsig=6.074 nsig=9 c/rand=1.08 steer=1.2441 valid=True
+  [loudness] L13 specPR=11.288 causalPR=22.839 PRsig=5.856 nsig=10 c/rand=1.51 steer=3.4434 valid=True
+  [cleanliness] L11 specPR=8.238 causalPR=27.146 PRsig=7.359 nsig=10 c/rand=1.87 steer=2.4482 valid=True
+  [toxicity] L12 specPR=5.259 causalPR=23.207 PRsig=2.532 nsig=4 c/rand=1.15 steer=3.5717 valid=True
+
+[PR] CONTROL mean concept/rand=1.47 (>=1.5 concept-specific; <1.5 CONFOUNDED) | CORE rho(specPR,causalPRsignal)=+0.021 p=0.9558 rho(specPR,nsig)=-0.014 | HIT=False
+[PR] wrote /home/ubuntu/pr/gateA/pr_steering_qwen.json  wall=103s
+[L:pr] run rc=0 (368s)
+Warning: Permanently added '129.213.22.140' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.22.140' (ED25519) to the list of known hosts.
+[L:pr] RESULT LANDED: D:\IC_experiments\cf_cascade\gateA\pr_steering_qwen.json
+[L:pr] terminating d661c3b9c0a542b2939a7ffe86c6e52b...
+[L:pr] terminated d661c3b9c0a542b2939a7ffe86c6e52b
+[L:pr] ledger += 6min $0.13

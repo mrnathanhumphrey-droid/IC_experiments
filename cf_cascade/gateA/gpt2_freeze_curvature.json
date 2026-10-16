@@ -1,0 +1,15 @@
+{
+  "lam_max": 0.895077109336853,
+  "lam_max_r2": 0.895077109336853,
+  "lam_min": 4.752708782085335e-10,
+  "lam_min_r2": 8.445132371193154e-10,
+  "lmax_agree": true,
+  "lmin_agree": true,
+  "psd": true,
+  "dyn_range": 895077109.336853,
+  "curv_binding_decades": 17.13984145553863,
+  "CURVED": true,
+  "verdict": "PSD MINIMUM (lam_min=4.75e-10 ~ 0, lam_max=0.90, dyn=9.0e+08) + CURVED (17.1 binding decades)",
+  "kfac": "D:/IC_experiments/cf_cascade/gateA/gpt2_kfac_binding_basis.npz",
+  "wall_s": 544.3731555938721
+}

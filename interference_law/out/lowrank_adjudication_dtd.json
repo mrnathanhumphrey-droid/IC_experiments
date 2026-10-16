@@ -1,0 +1,126 @@
+{
+ "prereg_lock": "b5c3929a",
+ "smoke": false,
+ "datasets": [
+  "dtd"
+ ],
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "Ncaps": [
+  6,
+  12,
+  24
+ ],
+ "ft": [
+  300,
+  0.0005
+ ],
+ "aggregate": {
+  "dtd": {
+   "6": {
+    "n_seeds": 3,
+    "interaction_eff_rank": [
+     2.322,
+     [
+      1.764,
+      3.037
+     ]
+    ],
+    "per_task_eff_rank_median": [
+     1.892,
+     [
+      1.755,
+      2.013
+     ]
+    ],
+    "pooled_direction_eff_rank": [
+     8.088,
+     [
+      7.762,
+      8.596
+     ]
+    ],
+    "mean_abs_cos": 0.2148,
+    "median_forget": 0.2877
+   },
+   "12": {
+    "n_seeds": 3,
+    "interaction_eff_rank": [
+     4.854,
+     [
+      4.573,
+      5.087
+     ]
+    ],
+    "per_task_eff_rank_median": [
+     2.146,
+     [
+      2.02,
+      2.358
+     ]
+    ],
+    "pooled_direction_eff_rank": [
+     15.554,
+     [
+      15.053,
+      16.258
+     ]
+    ],
+    "mean_abs_cos": 0.1626,
+    "median_forget": 0.2712
+   },
+   "24": {
+    "n_seeds": 3,
+    "interaction_eff_rank": [
+     9.307,
+     [
+      8.414,
+      10.194
+     ]
+    ],
+    "per_task_eff_rank_median": [
+     2.497,
+     [
+      2.17,
+      2.753
+     ]
+    ],
+    "pooled_direction_eff_rank": [
+     20.882,
+     [
+      20.049,
+      21.466
+     ]
+    ],
+    "mean_abs_cos": 0.1534,
+    "median_forget": 0.259,
+    "haar_per_task_eff_rank": 21.974,
+    "haar_pooled_eff_rank": 265.834,
+    "perm_p_pt_below": 0.0
+   },
+   "scaling": {
+    "N": [
+     6,
+     12,
+     24
+    ],
+    "interaction": [
+     2.322,
+     4.854,
+     9.307
+    ],
+    "per_task": [
+     1.892,
+     2.146,
+     2.497
+    ],
+    "interaction_slope": 0.3856,
+    "per_task_slope": 0.033
+   }
+  }
+ },
+ "wall_s": 3846
+}

@@ -1,0 +1,17 @@
+{
+  "model": "facebook/opt-350m",
+  "tag": "opt350m_d6",
+  "keep": 6,
+  "depth_orig": 24,
+  "kept_idx": [
+    0,
+    5,
+    9,
+    14,
+    18,
+    23
+  ],
+  "wA_sst_acc": 0.7733333333333333,
+  "stop_step": 1500,
+  "matched": false
+}

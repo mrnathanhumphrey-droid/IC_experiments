@@ -1,0 +1,37 @@
+{
+  "tail_index_alpha": 2.8023225856586413,
+  "C1": {
+    "curvature": {
+      "h1": 0.8252151329145897,
+      "h2": 0.8176315398822203,
+      "W_real": 0.34816305181172436,
+      "W_shuffle": 0.4882604812734239,
+      "persistent": true,
+      "monofractal_corr": true,
+      "consistent": true
+    },
+    "esd": {
+      "h1": 0.7307377320543019,
+      "h2": 0.7448066973642572,
+      "W_real": 0.27187774740889037,
+      "W_shuffle": 0.2613754973152235,
+      "persistent": true,
+      "monofractal_corr": false,
+      "consistent": false
+    }
+  },
+  "C2": {
+    "curvature": {
+      "rho_component": 0.4417152742609835,
+      "var_slope": 0.15234359561701058,
+      "var_r2": 0.17787898473534924,
+      "var_shell_rho": 0.3537390029325513
+    },
+    "esd": {
+      "rho_component": -0.3711362459443683,
+      "var_slope": -0.019370140501791096,
+      "var_r2": 0.005377148081518346,
+      "var_shell_rho": 0.03079178885630498
+    }
+  }
+}

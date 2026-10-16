@@ -1,0 +1,75 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=14daf567c10d4363a90c0673a9229708  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] status=active ip=150.136.70.188 281s
+[L] SSH up at 150.136.70.188 (282s)
+Warning: Permanently added '150.136.70.188' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.70.188' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.70.188' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.70.188' (ED25519) to the list of known hosts.
+[L] upload done (340s)
+[L] installing transformers/datasets + upgrading Pillow...
+Warning: Permanently added '150.136.70.188' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L] running poke_pythia_matched_lambda.py (366s)...
+Warning: Permanently added '150.136.70.188' (ED25519) to the list of known hosts.
+[PYM] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  88%|████████▊ | 258/292 [00:00<00:00, 2543.78it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2642.47it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2165859.15 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 396555.69 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 594614.84 examples/s]
+[PYM] pre SST acc=0.750 (target match OPT forget 0.121) (20s)
+[PYM]   lr=2e-05 st=200: ret=0.635 forget=0.115  MATCH (44s)
+[PYM]   lr=2e-05 st=150: ret=0.670 forget=0.080 (63s)
+[PYM]   lr=3e-05 st=150: ret=0.665 forget=0.085 (83s)
+[PYM]   lr=2e-05 st=250: ret=0.640 forget=0.110  MATCH (111s)
+[PYM]   lr=3e-05 st=200: ret=0.660 forget=0.090 (135s)
+[PYM]   lr=3e-05 st=100: ret=0.670 forget=0.080 (149s)
+[PYM]   lr=5e-05 st=100: ret=0.495 forget=0.255 (164s)
+[PYM]   lr=5e-05 st=150: ret=0.500 forget=0.250 (183s)
+[PYM] PRECHECK -> lr=2e-05 steps=200 forget=0.115 (OPT 0.121) MATCHED (183s)
+[PYM] FA basis done (206s)
+[PYM] seed 0: A/B/C/D=0.635/0.510/0.545/0.680 (433s)
+[PYM] seed 1: A/B/C/D=0.615/0.680/0.555/0.615 (659s)
+[PYM] seed 2: A/B/C/D=0.720/0.515/0.735/0.600 (885s)
+[PYM] seed 3: A/B/C/D=0.670/0.775/0.685/0.730 (1109s)
+[PYM] seed 4: A/B/C/D=0.655/0.690/0.495/0.495 (1335s)
+[PYM] seed 5: A/B/C/D=0.525/0.725/0.580/0.505 (1560s)
+[PYM] seed 6: A/B/C/D=0.630/0.515/0.730/0.750 (1787s)
+
+[PYM] === DISAMBIGUATOR VERDICT ===
+  ARCHITECTURAL — real cross-arch split (sink direction): Pythia B-C=+0.012 ns at matched forget 0.115 (OPT was -0.125 SIG). OPT's fragile-specific SINK is architectural — but it's the OPPOSITE of the pre-registered deflect; antagonism controls deposit-survival WITHOUT giving poke-deflection (the two dissociate).
+  retention A/B/C/D = 0.636/0.630/0.618/0.625 | armA forget 0.114 (OPT 0.121, matched=True)
+  B-A=-0.006 | B-C=+0.012 | B-D=+0.005 | postpoke-B 0.744 (pre 0.750)
+  (Pythia NATIVE-regime was: B-A -0.001, B-C -0.068 ns, forget 0.214 | OPT: B-A -0.078 ns, B-C -0.125 SIG, forget 0.121)
+[PYM] saved poke_pythia_matched.json wall=1787s
+[L] run rc=0 (2156s)
+[L] pulling result + log...
+Warning: Permanently added '150.136.70.188' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.70.188' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.70.188' (ED25519) to the list of known hosts.
+[L] RESULT LANDED: gateA/poke_pythia_matched.json
+[L] terminating 14daf567c10d4363a90c0673a9229708...
+[L] terminated 14daf567c10d4363a90c0673a9229708

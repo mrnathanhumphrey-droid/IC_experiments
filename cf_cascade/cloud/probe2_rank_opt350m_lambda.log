@@ -1,0 +1,34 @@
+[P2:opt350m] facebook/opt-350m clean rank ladder K=[0, 14, 32, 64, 128] (knot=14); childhood-once -> confound dead
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 13311.44it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 3860945.00 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 589243.29 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 963642.14 examples/s]
+[P2:opt350m] w_A acc=0.823; 144 carriers (10s)
+[P2:opt350m] V + swap(rank-14) done (28s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  34%|███▍      | 191000/560000 [00:00<00:00, 1897861.62 examples/s]Generating train split:  77%|███████▋  | 431000/560000 [00:00<00:00, 2187633.81 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 2161598.52 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 2152265.37 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:  11%|█         | 150000/1400000 [00:00<00:00, 1489775.50 examples/s]Generating train split:  23%|██▎       | 318000/1400000 [00:00<00:00, 1597722.41 examples/s]Generating train split:  35%|███▌      | 490000/1400000 [00:00<00:00, 1642497.14 examples/s]Generating train split:  47%|████▋     | 655000/1400000 [00:00<00:00, 1642668.01 examples/s]Generating train split:  64%|██████▎   | 892000/1400000 [00:00<00:00, 1610089.95 examples/s]Generating train split:  76%|███████▌  | 1061000/1400000 [00:00<00:00, 1632685.94 examples/s]Generating train split:  88%|████████▊ | 1229000/1400000 [00:00<00:00, 1645928.15 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:00<00:00, 1660198.89 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:00<00:00, 1636230.53 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 1629815.88 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 699988.37 examples/s]Generating train split:  96%|█████████▋| 201886/209527 [00:00<00:00, 676414.21 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 677318.39 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 2579721.07 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 1161535.31 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 1223185.77 examples/s]
+[P2:opt350m] seed 0: A=0.557 k0=0.563 k14=0.490 k32=0.550 k64=0.613 k128=0.593 swap=0.700 ld=6.79 (193s)
+[P2:opt350m] seed 5: A=0.653 k0=0.637 k14=0.740 k32=0.710 k64=0.753 k128=0.590 swap=0.573 ld=6.75 (924s)
+[P2:opt350m] seed 10: A=0.630 k0=0.530 k14=0.677 k32=0.563 k64=0.717 k128=0.627 swap=0.773 ld=6.82 (1653s)
+[P2:opt350m] seed 15: A=0.570 k0=0.533 k14=0.490 k32=0.553 k64=0.653 k128=0.670 swap=0.507 ld=5.96 (2384s)
+[P2:opt350m] seed 20: A=0.663 k0=0.573 k14=0.510 k32=0.510 k64=0.767 k128=0.590 swap=0.660 ld=6.79 (3116s)
+[P2:opt350m] seed 25: A=0.510 k0=0.713 k14=0.697 k32=0.663 k64=0.713 k128=0.660 swap=0.697 ld=6.85 (3849s)
+[P2:opt350m] seed 29: A=0.503 k0=0.633 k14=0.563 k32=0.730 k64=0.747 k128=0.513 swap=0.580 ld=6.63 (4434s)
+
+[P2:opt350m] === ANCHOR B-A(k128)=+0.080(exp +0.089) -> OK ===
+[P2:opt350m] retA=0.581  lossdrop=6.68 (identical across k)
+[P2:opt350m] rank ladder (Bk - A; saturate by k~14=core-monolithic, climb 64->128=broad-shell):
+   k=   0  Bk-A=+0.034±0.016   B-Bk=+0.046 (=D,out-of-V only)
+   k=  14  Bk-A=+0.021±0.027   B-Bk=+0.060  <-KNOT/core
+   k=  32  Bk-A=+0.058±0.022   B-Bk=+0.023
+   k=  64  Bk-A=+0.104±0.018   B-Bk=-0.023
+   k= 128  Bk-A=+0.080±0.020   B-Bk=+0.000 (=B,full)
+[P2:opt350m] swap(rank-14, matched-mag) - A = +0.031±0.018  vs real k14-A=+0.021  (real>>swap => core deposit-specific)
+[P2:opt350m] saved /home/ubuntu/gateA/probe2_rank_opt350m.json wall=4434s

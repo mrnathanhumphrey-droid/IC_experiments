@@ -1,0 +1,188 @@
+{
+ "have_opt1_3b": true,
+ "spec": "B_PARSIMONY_SPEC_FOR_REIMPL.md",
+ "scenarios": {
+  "present": {
+   "cells": [
+    "opt125m",
+    "opt1_3b",
+    "opt350m",
+    "pythia160m",
+    "pythia1b",
+    "pythia410m"
+   ],
+   "family": {
+    "G1": {
+     "label": "G1~family",
+     "n_units": 6,
+     "n_groups": 2,
+     "delta": -35.32268781851475,
+     "ci": [
+      -77.41818737923013,
+      -8.841947104750567
+     ],
+     "reduced": true,
+     "base": "COSTS",
+     "perm_p": 1.0,
+     "strict": "COSTS"
+    },
+    "G2": {
+     "label": "G2~family",
+     "n_units": 6,
+     "n_groups": 2,
+     "delta": -3.7663987846077753,
+     "ci": [
+      -33.868859315511656,
+      38.1408309715497
+     ],
+     "reduced": true,
+     "base": "PAYS",
+     "perm_p": 0.12935323383084577,
+     "strict": "PAYS_BUT_NOT_SPECIFIC"
+    },
+    "G3": {
+     "label": "G3~family",
+     "n_units": 6,
+     "n_groups": 2,
+     "delta": -15.978375121157054,
+     "ci": [
+      -25.641876517187733,
+      -7.409106855384652
+     ],
+     "reduced": true,
+     "base": "COSTS",
+     "perm_p": 0.13930348258706468,
+     "strict": "COSTS"
+    },
+    "G4": {
+     "label": "G4~family",
+     "n_units": 6,
+     "n_groups": 2,
+     "delta": -2.894281948324498,
+     "ci": [
+      -7.726858266516232,
+      1.8460669566699024
+     ],
+     "reduced": true,
+     "base": "PAYS",
+     "perm_p": 0.014925373134328358,
+     "strict": "PAYS_STRICT"
+    },
+    "G5": {
+     "label": "G5~family",
+     "n_units": 6,
+     "n_groups": 2,
+     "delta": -1.017589759081046,
+     "ci": [
+      -9.20394679757406,
+      6.851213634577418
+     ],
+     "reduced": true,
+     "base": "PAYS",
+     "perm_p": 0.014925373134328358,
+     "strict": "PAYS_STRICT"
+    },
+    "G6": {
+     "label": "G6~family",
+     "n_units": 6,
+     "n_groups": 2,
+     "delta": -29.1825149361635,
+     "ci": [
+      -41.6335850736065,
+      -18.348841322524024
+     ],
+     "reduced": true,
+     "base": "COSTS",
+     "perm_p": 0.31343283582089554,
+     "strict": "COSTS"
+    }
+   },
+   "sizeband": {
+    "G1": {
+     "label": "G1~sizeband",
+     "n_units": 6,
+     "n_groups": 3,
+     "delta": -25.340976517094887,
+     "ci": [
+      -42.4184764825275,
+      -11.26579101211692
+     ],
+     "reduced": true,
+     "base": "COSTS",
+     "perm_p": 0.8208955223880597,
+     "strict": "COSTS"
+    },
+    "G2": {
+     "label": "G2~sizeband",
+     "n_units": 6,
+     "n_groups": 3,
+     "delta": -7.108098428911995,
+     "ci": [
+      -26.476115827534265,
+      16.007845403936734
+     ],
+     "reduced": true,
+     "base": "PAYS",
+     "perm_p": 0.6766169154228856,
+     "strict": "PAYS_BUT_NOT_SPECIFIC"
+    },
+    "G3": {
+     "label": "G3~sizeband",
+     "n_units": 6,
+     "n_groups": 3,
+     "delta": -13.702804294093589,
+     "ci": [
+      -23.630305727712848,
+      -4.133080329156314
+     ],
+     "reduced": true,
+     "base": "COSTS",
+     "perm_p": 0.1691542288557214,
+     "strict": "COSTS"
+    },
+    "G4": {
+     "label": "G4~sizeband",
+     "n_units": 6,
+     "n_groups": 3,
+     "delta": -22.57883623922455,
+     "ci": [
+      -35.73311045446339,
+      -8.42649736546242
+     ],
+     "reduced": true,
+     "base": "COSTS",
+     "perm_p": 0.6567164179104478,
+     "strict": "COSTS"
+    },
+    "G5": {
+     "label": "G5~sizeband",
+     "n_units": 6,
+     "n_groups": 3,
+     "delta": -14.430085753476307,
+     "ci": [
+      -25.07504103742674,
+      -1.6721177995313143
+     ],
+     "reduced": true,
+     "base": "COSTS",
+     "perm_p": 0.945273631840796,
+     "strict": "COSTS"
+    },
+    "G6": {
+     "label": "G6~sizeband",
+     "n_units": 6,
+     "n_groups": 3,
+     "delta": -7.3986152668833265,
+     "ci": [
+      -16.689378820601718,
+      2.7155647275123243
+     ],
+     "reduced": true,
+     "base": "PAYS",
+     "perm_p": 0.029850746268656716,
+     "strict": "PAYS_STRICT"
+    }
+   }
+  }
+ }
+}

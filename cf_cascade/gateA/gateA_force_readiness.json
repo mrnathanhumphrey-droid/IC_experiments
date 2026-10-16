@@ -1,0 +1,11 @@
+{
+  "ckpt": "D:/IC_experiments/cf_cascade/gateA/pythia410m_sst2.pt",
+  "large_batch_grad_norm": 1.190579891204834,
+  "lambda_max": -1932.84765625,
+  "hessian_trace": 1219.009521484375,
+  "lambda_mean": 3.007419741165703e-06,
+  "dynamic_range": -642693013.4803234,
+  "N_params_M": 405.334016,
+  "curved": false,
+  "wall_s": 69.2737488746643
+}

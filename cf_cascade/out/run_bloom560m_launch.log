@@ -1,0 +1,227 @@
+[L:bloom560m] gpu_1x_a10 @ us-east-1 $1.29/hr N=25 doses=3e-7,1e-6,2e-6,3e-6,7e-6 wd=18000s
+[L:bloom560m] instance_id=9998fb3f2dd9482ba2a128bd99367c0e
+[L:bloom560m] status=booting ip=None 1s
+[L:bloom560m] status=active ip=150.136.115.7 328s
+[L:bloom560m] SSH up 150.136.115.7 (328s)
+Warning: Permanently added '150.136.115.7' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.115.7' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.115.7' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.115.7' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.115.7' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.115.7' (ED25519) to the list of known hosts.
+pins 4.46.0 2.7.0
+[L:bloom560m] pip+ship done (366s); build_wA -> probe13...
+Warning: Permanently added '150.136.115.7' (ED25519) to the list of known hosts.
+[buildwA:bloom560m] bigscience/bloom-560m fine-tune on SST-2  lr=2.0e-05 steps=2000 (Sun Jul 26 15:52:20 2026)
+2026-07-26 15:52:26.758584: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-26 15:52:27.004544: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785081147.112346    2635 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785081147.137246    2635 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785081147.339458    2635 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785081147.339530    2635 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785081147.339533    2635 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785081147.339536    2635 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-26 15:52:27.363766: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[buildwA:bloom560m] posid=18121 negid=23381 (distinct=True)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 1315939.38 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 263238.31 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 422516.32 examples/s]
+[buildwA:bloom560m] base (untuned) SST-2 acc=0.605 (26s)
+[hb] bloom560m step 0/2000 loss=8.094 (26s)
+[hb] bloom560m step 50/2000 loss=1.095 (37s)
+[hb] bloom560m step 100/2000 loss=0.916 (48s)
+[hb] bloom560m step 150/2000 loss=0.532 (59s)
+[hb] bloom560m step 200/2000 loss=0.305 (70s)
+[eval] bloom560m step 250 val_acc=0.8050 (best -1.0000@0) (84s)
+[hb] bloom560m step 250/2000 loss=0.035 (86s)
+[hb] bloom560m step 300/2000 loss=0.293 (97s)
+[hb] bloom560m step 350/2000 loss=0.271 (109s)
+[hb] bloom560m step 400/2000 loss=0.183 (120s)
+[hb] bloom560m step 450/2000 loss=0.118 (131s)
+[eval] bloom560m step 500 val_acc=0.8125 (best 0.8050@250) (145s)
+[hb] bloom560m step 500/2000 loss=0.385 (148s)
+[hb] bloom560m step 550/2000 loss=0.997 (159s)
+[hb] bloom560m step 600/2000 loss=0.304 (170s)
+[hb] bloom560m step 650/2000 loss=0.432 (181s)
+[hb] bloom560m step 700/2000 loss=0.387 (193s)
+[eval] bloom560m step 750 val_acc=0.8275 (best 0.8125@500) (206s)
+[hb] bloom560m step 750/2000 loss=0.182 (209s)
+[hb] bloom560m step 800/2000 loss=0.644 (220s)
+[hb] bloom560m step 850/2000 loss=0.078 (231s)
+[hb] bloom560m step 900/2000 loss=0.264 (242s)
+[hb] bloom560m step 950/2000 loss=0.229 (253s)
+[eval] bloom560m step 1000 val_acc=0.8050 (best 0.8275@750) (267s)
+[hb] bloom560m step 1000/2000 loss=0.009 (267s)
+[hb] bloom560m step 1050/2000 loss=0.430 (278s)
+[hb] bloom560m step 1100/2000 loss=0.013 (290s)
+[hb] bloom560m step 1150/2000 loss=0.406 (301s)
+[hb] bloom560m step 1200/2000 loss=1.128 (313s)
+[eval] bloom560m step 1250 val_acc=0.8475 (best 0.8275@750) (326s)
+[hb] bloom560m step 1250/2000 loss=0.011 (329s)
+[hb] bloom560m step 1300/2000 loss=0.152 (340s)
+[hb] bloom560m step 1350/2000 loss=0.058 (351s)
+[hb] bloom560m step 1400/2000 loss=0.288 (363s)
+[hb] bloom560m step 1450/2000 loss=0.107 (374s)
+[eval] bloom560m step 1500 val_acc=0.8300 (best 0.8475@1250) (387s)
+[hb] bloom560m step 1500/2000 loss=0.213 (388s)
+[hb] bloom560m step 1550/2000 loss=0.009 (399s)
+[hb] bloom560m step 1600/2000 loss=0.310 (410s)
+[hb] bloom560m step 1650/2000 loss=1.669 (421s)
+[hb] bloom560m step 1700/2000 loss=0.000 (432s)
+[eval] bloom560m step 1750 val_acc=0.8150 (best 0.8475@1250) (446s)
+[hb] bloom560m step 1750/2000 loss=0.136 (446s)
+[hb] bloom560m step 1800/2000 loss=0.010 (457s)
+[hb] bloom560m step 1850/2000 loss=0.001 (468s)
+[hb] bloom560m step 1900/2000 loss=0.000 (480s)
+[hb] bloom560m step 1950/2000 loss=0.000 (491s)
+[eval] bloom560m step 2000 val_acc=0.8300 (best 0.8475@1250) (505s)
+[buildwA:bloom560m] SAVED /home/ubuntu/gateA/bloom560m_sst2_wA.pt  anchor_acc=0.8475@1250  reload_confirm=0.8475  wall=512s
+[buildwA:bloom560m] >>> set ANCHOR_WA['BLOOM']=0.848 in the Probe-11 harness <<<
+[driver] anchor=0.8475
+[P13:bloom560m] bigscience/bloom-560m dose-response N=25 DOSES=[3e-07, 1e-06, 2e-06, 3e-06, 7e-06]
+2026-07-26 16:01:02.338115: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-26 16:01:02.365218: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785081662.394783    3063 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785081662.404013    3063 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785081662.426548    3063 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785081662.426596    3063 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785081662.426600    3063 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785081662.426602    3063 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-26 16:01:02.430992: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[P13:bloom560m] w_A acc=0.853 (exp 0.8475); 72 carriers (19s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:   6%|▌         | 34000/560000 [00:00<00:01, 329841.55 examples/s]Generating train split:  18%|█▊        | 98000/560000 [00:00<00:00, 506441.70 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 540063.26 examples/s]Generating train split:  41%|████▏     | 231000/560000 [00:00<00:00, 587679.10 examples/s]Generating train split:  52%|█████▏    | 293000/560000 [00:00<00:00, 596045.87 examples/s]Generating train split:  64%|██████▍   | 360000/560000 [00:00<00:00, 618284.23 examples/s]Generating train split:  79%|███████▉  | 443000/560000 [00:00<00:00, 683978.83 examples/s]Generating train split:  92%|█████████▏| 514000/560000 [00:00<00:00, 688545.94 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 616645.86 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split:  93%|█████████▎| 65000/70000 [00:00<00:00, 634428.44 examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 635901.14 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   2%|▏         | 34000/1400000 [00:00<00:04, 336565.10 examples/s]Generating train split:   6%|▋         | 88000/1400000 [00:00<00:02, 448772.08 examples/s]Generating train split:  11%|█▏        | 158000/1400000 [00:00<00:02, 455815.47 examples/s]Generating train split:  15%|█▍        | 204000/1400000 [00:00<00:02, 445058.45 examples/s]Generating train split:  18%|█▊        | 258000/1400000 [00:00<00:02, 474079.42 examples/s]Generating train split:  24%|██▍       | 334000/1400000 [00:00<00:02, 476310.66 examples/s]Generating train split:  28%|██▊       | 388000/1400000 [00:00<00:02, 492536.25 examples/s]Generating train split:  33%|███▎      | 456000/1400000 [00:00<00:01, 472363.49 examples/s]Generating train split:  37%|███▋      | 524000/1400000 [00:01<00:01, 461655.09 examples/s]Generating train split:  41%|████▏     | 579000/1400000 [00:01<00:01, 480651.25 examples/s]Generating train split:  46%|████▋     | 648000/1400000 [00:01<00:01, 470822.29 examples/s]Generating train split:  50%|████▉     | 698000/1400000 [00:01<00:01, 475249.08 examples/s]Generating train split:  54%|█████▍    | 761000/1400000 [00:01<00:01, 454574.16 examples/s]Generating train split:  58%|█████▊    | 811000/1400000 [00:01<00:01, 462809.61 examples/s]Generating train split:  62%|██████▏   | 867000/1400000 [00:01<00:01, 485888.28 examples/s]Generating train split:  67%|██████▋   | 937000/1400000 [00:01<00:00, 476999.68 examples/s]Generating train split:  71%|███████   | 991000/1400000 [00:02<00:00, 465724.66 examples/s]Generating train split:  75%|███████▍  | 1046000/1400000 [00:02<00:00, 457395.31 examples/s]Generating train split:  79%|███████▊  | 1102000/1400000 [00:02<00:00, 481385.81 examples/s]Generating train split:  84%|████████▎ | 1172000/1400000 [00:02<00:00, 473755.38 examples/s]Generating train split:  89%|████████▉ | 1244000/1400000 [00:02<00:00, 468207.15 examples/s]Generating train split:  93%|█████████▎| 1299000/1400000 [00:02<00:00, 485534.08 examples/s]Generating train split:  98%|█████████▊| 1370000/1400000 [00:02<00:00, 477787.04 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:02<00:00, 469059.92 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split:  83%|████████▎ | 50000/60000 [00:00<00:00, 484677.71 examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 498561.20 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 316515.32 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 317919.86 examples/s]Generating train split:  74%|███████▍  | 155103/209527 [00:00<00:00, 309103.63 examples/s]Generating train split:  96%|█████████▋| 201886/209527 [00:00<00:00, 303834.22 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 306964.15 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1064510.39 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 424696.64 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 527452.72 examples/s]
+[P13:bloom560m] datasets loaded (phase-2 subj 2200; childhood 5)
+[hb] s1/25 d1/5(3e-07) childhood 1/400 loss=19.036 (197s)
+[hb] s1/25 d1/5(3e-07) childhood 41/400 loss=15.492 (207s)
+[hb] s1/25 d1/5(3e-07) childhood 81/400 loss=11.222 (218s)
+[hb] s1/25 d1/5(3e-07) childhood 121/400 loss=8.470 (228s)
+[hb] s1/25 d1/5(3e-07) childhood 161/400 loss=5.850 (239s)
+[hb] s1/25 d1/5(3e-07) childhood 201/400 loss=3.701 (249s)
+[hb] s1/25 d1/5(3e-07) childhood 241/400 loss=1.714 (260s)
+[hb] s1/25 d1/5(3e-07) childhood 281/400 loss=0.812 (270s)
+[hb] s1/25 d1/5(3e-07) childhood 321/400 loss=0.871 (281s)
+[hb] s1/25 d1/5(3e-07) childhood 361/400 loss=0.734 (292s)
+[hb] s1/25 d1/5(3e-07) childhood 400/400 loss=4.764 (302s)
+[hb] s1/25 d2/5(1e-06) childhood 1/400 loss=19.036 (395s)
+[hb] s1/25 d2/5(1e-06) childhood 41/400 loss=8.342 (406s)
+[hb] s1/25 d2/5(1e-06) childhood 81/400 loss=2.787 (417s)
+[hb] s1/25 d2/5(1e-06) childhood 121/400 loss=1.376 (427s)
+[hb] s1/25 d2/5(1e-06) childhood 161/400 loss=0.518 (438s)
+[hb] s1/25 d2/5(1e-06) childhood 201/400 loss=0.221 (448s)
+[hb] s1/25 d2/5(1e-06) childhood 241/400 loss=0.240 (459s)
+[hb] s1/25 d2/5(1e-06) childhood 281/400 loss=0.289 (470s)
+[hb] s1/25 d2/5(1e-06) childhood 321/400 loss=1.037 (480s)
+[hb] s1/25 d2/5(1e-06) childhood 361/400 loss=0.629 (491s)
+[hb] s1/25 d2/5(1e-06) childhood 400/400 loss=1.195 (501s)
+[hb] s1/25 d3/5(2e-06) childhood 1/400 loss=19.036 (595s)
+[hb] s1/25 d3/5(2e-06) childhood 41/400 loss=4.207 (605s)
+[hb] s1/25 d3/5(2e-06) childhood 81/400 loss=0.549 (616s)
+[hb] s1/25 d3/5(2e-06) childhood 121/400 loss=1.080 (626s)
+[hb] s1/25 d3/5(2e-06) childhood 161/400 loss=0.263 (637s)
+[hb] s1/25 d3/5(2e-06) childhood 201/400 loss=0.242 (647s)
+[hb] s1/25 d3/5(2e-06) childhood 241/400 loss=0.143 (658s)
+[hb] s1/25 d3/5(2e-06) childhood 281/400 loss=0.269 (669s)
+[hb] s1/25 d3/5(2e-06) childhood 321/400 loss=1.002 (679s)
+[hb] s1/25 d3/5(2e-06) childhood 361/400 loss=0.503 (690s)
+[hb] s1/25 d3/5(2e-06) childhood 400/400 loss=0.795 (700s)
+[hb] s1/25 d4/5(3e-06) childhood 1/400 loss=19.036 (793s)
+[hb] s1/25 d4/5(3e-06) childhood 41/400 loss=2.534 (804s)
+[hb] s1/25 d4/5(3e-06) childhood 81/400 loss=0.656 (814s)
+[hb] s1/25 d4/5(3e-06) childhood 121/400 loss=0.568 (825s)
+[hb] s1/25 d4/5(3e-06) childhood 161/400 loss=0.505 (835s)
+[hb] s1/25 d4/5(3e-06) childhood 201/400 loss=0.180 (846s)
+[hb] s1/25 d4/5(3e-06) childhood 241/400 loss=0.092 (856s)
+[hb] s1/25 d4/5(3e-06) childhood 281/400 loss=0.193 (867s)
+[hb] s1/25 d4/5(3e-06) childhood 321/400 loss=1.086 (878s)
+[hb] s1/25 d4/5(3e-06) childhood 361/400 loss=0.574 (888s)
+[hb] s1/25 d4/5(3e-06) childhood 400/400 loss=0.701 (899s)
+[hb] s1/25 d5/5(7e-06) childhood 1/400 loss=19.036 (991s)
+[hb] s1/25 d5/5(7e-06) childhood 41/400 loss=0.776 (1002s)
+[hb] s1/25 d5/5(7e-06) childhood 81/400 loss=0.449 (1012s)
+[hb] s1/25 d5/5(7e-06) childhood 121/400 loss=0.370 (1023s)
+[hb] s1/25 d5/5(7e-06) childhood 161/400 loss=0.330 (1033s)
+[hb] s1/25 d5/5(7e-06) childhood 201/400 loss=0.116 (1044s)
+[hb] s1/25 d5/5(7e-06) childhood 241/400 loss=0.102 (1054s)
+[hb] s1/25 d5/5(7e-06) childhood 281/400 loss=0.047 (1065s)
+[hb] s1/25 d5/5(7e-06) childhood 321/400 loss=1.466 (1075s)
+[hb] s1/25 d5/5(7e-06) childhood 361/400 loss=0.473 (1086s)
+[hb] s1/25 d5/5(7e-06) childhood 400/400 loss=0.124 (1096s)
+[seed] s1/25 3e-07:Np=+0.240@drop0.043 1e-06:Np=+0.017@drop0.030 2e-06:Np=+0.043@drop0.020 3e-06:Np=+0.157@drop0.027 7e-06:Np=+0.003@drop0.017 (1189s)
+[seed] s6/25 3e-07:Np=-0.014@drop0.041 1e-06:Np=-0.166@drop0.019 2e-06:Np=-0.181@drop0.016 3e-06:Np=-0.099@drop0.011 7e-06:Np=-0.126@drop0.024 (6368s)
+[hb] s11/25 d1/5(3e-07) childhood 1/400 loss=19.207 (10762s)
+[hb] s11/25 d1/5(3e-07) childhood 41/400 loss=17.773 (10773s)
+[hb] s11/25 d1/5(3e-07) childhood 81/400 loss=12.196 (10784s)
+[hb] s11/25 d1/5(3e-07) childhood 121/400 loss=8.951 (10795s)
+[hb] s11/25 d1/5(3e-07) childhood 161/400 loss=5.974 (10805s)
+[hb] s11/25 d1/5(3e-07) childhood 201/400 loss=3.598 (10816s)
+[hb] s11/25 d1/5(3e-07) childhood 241/400 loss=1.821 (10827s)
+[hb] s11/25 d1/5(3e-07) childhood 281/400 loss=0.810 (10837s)
+[hb] s11/25 d1/5(3e-07) childhood 321/400 loss=0.404 (10848s)
+[hb] s11/25 d1/5(3e-07) childhood 361/400 loss=1.147 (10858s)
+[hb] s11/25 d1/5(3e-07) childhood 400/400 loss=5.028 (10869s)
+[hb] s11/25 d2/5(1e-06) childhood 1/400 loss=19.207 (10963s)
+[hb] s11/25 d2/5(1e-06) childhood 41/400 loss=9.281 (10974s)
+[hb] s11/25 d2/5(1e-06) childhood 81/400 loss=2.755 (10984s)
+[hb] s11/25 d2/5(1e-06) childhood 121/400 loss=0.330 (10995s)
+[hb] s11/25 d2/5(1e-06) childhood 161/400 loss=0.329 (11005s)
+[hb] s11/25 d2/5(1e-06) childhood 201/400 loss=0.533 (11016s)
+[hb] s11/25 d2/5(1e-06) childhood 241/400 loss=0.361 (11027s)
+[hb] s11/25 d2/5(1e-06) childhood 281/400 loss=0.521 (11037s)
+[hb] s11/25 d2/5(1e-06) childhood 321/400 loss=0.167 (11048s)
+[hb] s11/25 d2/5(1e-06) childhood 361/400 loss=1.152 (11059s)
+[hb] s11/25 d2/5(1e-06) childhood 400/400 loss=0.804 (11069s)
+[hb] s11/25 d3/5(2e-06) childhood 1/400 loss=19.207 (11163s)
+[hb] s11/25 d3/5(2e-06) childhood 41/400 loss=4.573 (11174s)
+[hb] s11/25 d3/5(2e-06) childhood 81/400 loss=0.549 (11185s)
+[hb] s11/25 d3/5(2e-06) childhood 121/400 loss=0.357 (11195s)
+[hb] s11/25 d3/5(2e-06) childhood 161/400 loss=0.234 (11206s)
+[hb] s11/25 d3/5(2e-06) childhood 201/400 loss=0.298 (11216s)
+[hb] s11/25 d3/5(2e-06) childhood 241/400 loss=0.302 (11227s)
+[hb] s11/25 d3/5(2e-06) childhood 281/400 loss=0.225 (11238s)
+[hb] s11/25 d3/5(2e-06) childhood 321/400 loss=0.327 (11249s)
+[hb] s11/25 d3/5(2e-06) childhood 361/400 loss=1.031 (11259s)
+[hb] s11/25 d3/5(2e-06) childhood 400/400 loss=0.551 (11270s)
+[hb] s11/25 d4/5(3e-06) childhood 1/400 loss=19.207 (11364s)
+[hb] s11/25 d4/5(3e-06) childhood 41/400 loss=2.558 (11375s)
+[hb] s11/25 d4/5(3e-06) childhood 81/400 loss=0.406 (11385s)
+[hb] s11/25 d4/5(3e-06) childhood 121/400 loss=0.487 (11396s)
+[hb] s11/25 d4/5(3e-06) childhood 161/400 loss=0.125 (11406s)
+[hb] s11/25 d4/5(3e-06) childhood 201/400 loss=0.239 (11417s)
+[hb] s11/25 d4/5(3e-06) childhood 241/400 loss=0.378 (11428s)
+[hb] s11/25 d4/5(3e-06) childhood 281/400 loss=0.324 (11438s)
+[hb] s11/25 d4/5(3e-06) childhood 321/400 loss=0.297 (11449s)
+[hb] s11/25 d4/5(3e-06) childhood 361/400 loss=0.894 (11460s)
+[hb] s11/25 d4/5(3e-06) childhood 400/400 loss=0.518 (11470s)
+[hb] s11/25 d5/5(7e-06) childhood 1/400 loss=19.207 (11564s)
+[hb] s11/25 d5/5(7e-06) childhood 41/400 loss=0.593 (11575s)
+[hb] s11/25 d5/5(7e-06) childhood 81/400 loss=0.133 (11585s)
+[hb] s11/25 d5/5(7e-06) childhood 121/400 loss=0.225 (11596s)
+[hb] s11/25 d5/5(7e-06) childhood 161/400 loss=0.036 (11606s)
+[hb] s11/25 d5/5(7e-06) childhood 201/400 loss=0.121 (11617s)
+[hb] s11/25 d5/5(7e-06) childhood 241/400 loss=0.463 (11628s)
+[hb] s11/25 d5/5(7e-06) childhood 281/400 loss=0.374 (11638s)
+[hb] s11/25 d5/5(7e-06) childhood 321/400 loss=0.134 (11649s)
+[hb] s11/25 d5/5(7e-06) childhood 361/400 loss=0.945 (11660s)
+[hb] s11/25 d5/5(7e-06) childhood 400/400 loss=0.207 (11670s)
+[seed] s11/25 3e-07:Np=-0.023@drop0.038 1e-06:Np=-0.082@drop0.019 2e-06:Np=-0.072@drop0.012 3e-06:Np=-0.061@drop0.009 7e-06:Np=-0.051@drop0.024 (11763s)
+[seed] s16/25 3e-07:Np=+0.015@drop0.039 1e-06:Np=-0.083@drop0.019 2e-06:Np=-0.068@drop0.011 3e-06:Np=-0.070@drop0.009 7e-06:Np=-0.042@drop0.025 (17188s)
+[L:bloom560m] WATCHDOG 18000s -> pull partial + teardown
+[L:bloom560m] rc=-1 (18366s)
+Warning: Permanently added '150.136.115.7' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.115.7' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.115.7' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.115.7' (ED25519) to the list of known hosts.
+[L:bloom560m] LANDED D:\IC_experiments\cf_cascade\out\probe13_doseresponse_bloom560m.json
+[L:bloom560m] terminated 9998fb3f2dd9482ba2a128bd99367c0e
+[L:bloom560m] ledger += 306min $6.58

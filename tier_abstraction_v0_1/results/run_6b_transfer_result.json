@@ -1,0 +1,25 @@
+{
+  "beta": 0.1,
+  "epochs": 50,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "primary": {
+    "armC_superacc": 0.33644444444444443,
+    "armB_superacc": 0.3015555555555555,
+    "paired_diff": 0.034888888888888914,
+    "ci95": [
+      0.02155555555555555,
+      0.0484444444444444
+    ],
+    "MDE": 0.03,
+    "verdict": "COMPARTMENTALIZATION-TRANSFERS"
+  },
+  "secondary_fine": {
+    "armC": 0.4868235294117647,
+    "uniform": 0.4871764705882353,
+    "net_diff": -0.0003529411764706114
+  }
+}

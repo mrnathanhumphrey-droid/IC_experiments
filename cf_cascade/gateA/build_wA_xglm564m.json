@@ -1,0 +1,15 @@
+{
+  "cell": "xglm564m",
+  "family": "XGLM",
+  "model": "facebook/xglm-564M",
+  "ckpt": "xglm564m_sst2_wA.pt",
+  "VOID": false,
+  "base_acc": 0.6075,
+  "anchor_acc": 0.895,
+  "best_step": 750,
+  "confirm_reload_acc": 0.895,
+  "lr": 2e-05,
+  "steps": 2000,
+  "posid": 17255,
+  "negid": 24622
+}

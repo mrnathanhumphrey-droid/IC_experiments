@@ -1,0 +1,39 @@
+{
+  "model": "facebook/opt-350m",
+  "wA_sst_acc": 0.49,
+  "step1": {
+    "com_rank_median": 3.3641612394116685e-07,
+    "M1_median": 0.9998609125614166,
+    "antag_median": -0.017262752470800363,
+    "pass": false
+  },
+  "step2": {
+    "partial_median": 0.048928415757702175,
+    "partial_frac_pos": 0.6527777777777778,
+    "partial_attn_median": 0.029652460962438364,
+    "pass": false
+  },
+  "bridge": {
+    "wA_acc": 0.49,
+    "reached_acc_band": false,
+    "acc_band": [
+      0.77,
+      0.84
+    ],
+    "M1_median": 0.9998609125614166,
+    "antag_median": -0.017262752470800363,
+    "partial_median": 0.048928415757702175,
+    "anchor": {
+      "M1": 0.86,
+      "antag": 0.09,
+      "partial": 0.29,
+      "wA_acc_band": [
+        0.77,
+        0.84
+      ]
+    },
+    "backbone_present": false,
+    "from_scratch": true
+  },
+  "verdict": "BRIDGE FAIL (regime): from-scratch SST acc=0.490 OUTSIDE band [0.77, 0.84] -> pretraining is load-bearing for task-A; aspect-ratio shapes need PRETRAINED variants or a from-scratch-learnable task-A."
+}

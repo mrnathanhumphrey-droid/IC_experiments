@@ -1,0 +1,57 @@
+[GEOMDEPTH] DEPTH AXIS — G1-G6 across OPT-350m depths {6,12,18,24} (measurement-only)
+
+[opt_d6] building facebook/opt-350m @ 6 layers...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[opt_d6] 36 carriers (12s)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2118351.56 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 405840.33 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 610781.89 examples/s]
+[opt_d6] Fisher/V/spectrum done (24s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  11%|█         | 60000/560000 [00:00<00:00, 595313.91 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 772733.45 examples/s]Generating train split:  48%|████▊     | 271000/560000 [00:00<00:00, 897003.72 examples/s]Generating train split:  68%|██████▊   | 380000/560000 [00:00<00:00, 966590.88 examples/s]Generating train split:  91%|█████████ | 510000/560000 [00:00<00:00, 1079001.49 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 966005.00 examples/s] 
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1059569.03 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   4%|▍         | 61000/1400000 [00:00<00:02, 604009.88 examples/s]Generating train split:  11%|█         | 148000/1400000 [00:00<00:01, 667891.82 examples/s]Generating train split:  16%|█▌        | 218000/1400000 [00:00<00:01, 678977.43 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 709763.62 examples/s]Generating train split:  29%|██▊       | 402000/1400000 [00:00<00:01, 728975.27 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 750137.34 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 763186.40 examples/s]Generating train split:  49%|████▊     | 682000/1400000 [00:00<00:00, 798221.02 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 751892.58 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 758101.55 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 758091.31 examples/s]Generating train split:  75%|███████▍  | 1046000/1400000 [00:01<00:00, 762921.50 examples/s]Generating train split:  82%|████████▏ | 1141000/1400000 [00:01<00:00, 812288.11 examples/s]Generating train split:  90%|█████████ | 1266000/1400000 [00:01<00:00, 817769.00 examples/s]Generating train split:  97%|█████████▋| 1354000/1400000 [00:01<00:00, 806482.94 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 767574.11 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 830922.72 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 241701.34 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 265253.56 examples/s]Generating train split:  74%|███████▍  | 155103/209527 [00:00<00:00, 253987.45 examples/s]Generating train split:  96%|█████████▋| 201886/209527 [00:00<00:00, 247376.81 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 249714.34 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1577250.73 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 665498.45 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 673080.96 examples/s]
+[opt_d6] seed 0: G5=0.430 G4=0.283 G6=0.296 (63s)
+[opt_d6] seed 1: G5=0.425 G4=0.283 G6=0.295 (80s)
+[opt_d6] seed 2: G5=0.427 G4=0.282 G6=0.296 (96s)
+[opt_d6] depth 6: G1=0.007 G2=2.21 G3=0.381 G4=0.289 ★G5=0.436(rand 0.123) G6=0.327
+
+[opt_d12] building facebook/opt-350m @ 12 layers...
+[opt_d12] 72 carriers (105s)
+[opt_d12] Fisher/V/spectrum done (122s)
+[opt_d12] seed 0: G5=0.409 G4=0.310 G6=0.271 (154s)
+[opt_d12] seed 1: G5=0.414 G4=0.309 G6=0.271 (184s)
+[opt_d12] seed 2: G5=0.405 G4=0.302 G6=0.271 (212s)
+[opt_d12] depth 12: G1=0.004 G2=2.01 G3=0.335 G4=0.310 ★G5=0.393(rand 0.124) G6=0.294
+
+[opt_d18] building facebook/opt-350m @ 18 layers...
+[opt_d18] 108 carriers (224s)
+[opt_d18] Fisher/V/spectrum done (248s)
+[opt_d18] seed 0: G5=0.407 G4=0.274 G6=0.268 (292s)
+[opt_d18] seed 1: G5=0.405 G4=0.283 G6=0.266 (334s)
+[opt_d18] seed 2: G5=0.408 G4=0.283 G6=0.267 (376s)
+[opt_d18] depth 18: G1=0.003 G2=2.19 G3=0.322 G4=0.274 ★G5=0.396(rand 0.126) G6=0.293
+
+[opt_d24] building facebook/opt-350m @ 24 layers...
+[opt_d24] 144 carriers (390s)
+[opt_d24] Fisher/V/spectrum done (422s)
+[opt_d24] seed 0: G5=0.408 G4=0.285 G6=0.258 (479s)
+[opt_d24] seed 1: G5=0.444 G4=0.295 G6=0.256 (533s)
+[opt_d24] seed 2: G5=0.441 G4=0.292 G6=0.257 (587s)
+[opt_d24] depth 24: G1=0.003 G2=2.26 G3=0.319 G4=0.292 ★G5=0.426(rand 0.125) G6=0.281
+
+[GEOMDEPTH] === DEPTH TREND (OPT-350m, cells ['opt_d6', 'opt_d12', 'opt_d18', 'opt_d24']) ===
+  G1: d6=0.007 d12=0.004 d18=0.003 d24=0.003 | range=0.004 bootSE=0.001 -> MOVES
+  G2: d6=2.206 d12=2.010 d18=2.194 d24=2.261 | range=0.251 bootSE=0.110 -> MOVES
+  G3: d6=0.381 d12=0.335 d18=0.322 d24=0.319 | range=0.062 bootSE=0.011 -> MOVES
+  G4: d6=0.289 d12=0.310 d18=0.274 d24=0.292 | range=0.035 bootSE=0.013 -> MOVES
+ ★G5: d6=0.436 d12=0.393 d18=0.396 d24=0.426 | range=0.043 bootSE=0.013 -> MOVES
+  G6: d6=0.327 d12=0.294 d18=0.293 d24=0.281 | range=0.046 bootSE=0.012 -> MOVES
+  METRICS THAT MOVE WITH DEPTH: ['G1', 'G2', 'G3', 'G4', 'G5', 'G6']
+  (FLAT G5 => depth de-confounded, family-G5 separation is NOT a depth artifact; MOVES => depth is a lever)
+
+[GEOMDEPTH] cells OK: ['opt_d6', 'opt_d12', 'opt_d18', 'opt_d24'] | saved geom_depth.json wall=588s

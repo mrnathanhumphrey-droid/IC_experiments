@@ -1,0 +1,10 @@
+[WA] gpt2-xl (tag gpt2xl) target acc>=0.8
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/580 [00:00<?, ?it/s]Loading weights:  90%|█████████ | 522/580 [00:00<00:00, 5218.52it/s]Loading weights: 100%|██████████| 580/580 [00:00<00:00, 5620.73it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2244558.53 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 379244.41 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 613726.60 examples/s]
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+[WA] step 250: SST acc=0.883 (86s)
+[WA] target hit acc=0.883 at step 250; saved /home/ubuntu/gateA/gpt2xl_sst2_wA.pt
+[WA] DONE tag=gpt2xl acc=0.883 stop_step=250 matched=True wall=94s

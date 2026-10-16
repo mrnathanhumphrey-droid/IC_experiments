@@ -1,0 +1,49 @@
+[P0] DISSOCIATION POWER | nseed=12 caps=20 K=30 few=8/24 D_PROJ=24 boot=2000 perm=2000 dev=cuda
+[P0] BANDS: CONFIRMED = r_SB>=0.30 & relCI_lo>0 & rho_CI in (-0.30,0.30) | REJECTED = rho_CI reaches +/-0.30 | SAND = reliability weak
+[P0] === cifar ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  [cifar] seed 1/12 done (16s)
+  [cifar] seed 2/12 done (24s)
+  [cifar] seed 3/12 done (32s)
+  [cifar] seed 4/12 done (41s)
+  [cifar] seed 5/12 done (49s)
+  [cifar] seed 6/12 done (57s)
+  [cifar] seed 7/12 done (66s)
+  [cifar] seed 8/12 done (75s)
+  [cifar] seed 9/12 done (84s)
+  [cifar] seed 10/12 done (93s)
+  [cifar] seed 11/12 done (102s)
+  [cifar] seed 12/12 done (110s)
+D:\IC_experiments\interference_law\p0_dissociation_power.py:86: RuntimeWarning: Mean of empty slice
+  FTmean = np.nanmean(perseed, axis=0)
+D:\IC_experiments\interference_law\p0_dissociation_power.py:91: RuntimeWarning: Mean of empty slice
+  even = np.nanmean(perseed[0::2], axis=0); odd = np.nanmean(perseed[1::2], axis=0)
+  [cifar] cold_med=0.800 headroom=True n=20 | xfer=0.31 hurt=0.49 FT[-0.177,+0.102]
+  [cifar] FT reliability: r_half=+0.954 r_SB=+0.977 CI[+0.969,+0.981]  rel_ok=True
+  [cifar] rho(cos,FT)=+0.032 CI[-0.072,+0.130] pearson=+0.056 perm_p=0.536 | excl_coupling=True
+  [cifar] >>> BAND = CONFIRMED (110s)
+[P0] === dtd ===
+  [dtd] seed 1/12 done (38s)
+  [dtd] seed 2/12 done (47s)
+  [dtd] seed 3/12 done (56s)
+  [dtd] seed 4/12 done (64s)
+  [dtd] seed 5/12 done (72s)
+  [dtd] seed 6/12 done (81s)
+  [dtd] seed 7/12 done (89s)
+  [dtd] seed 8/12 done (97s)
+  [dtd] seed 9/12 done (106s)
+  [dtd] seed 10/12 done (114s)
+  [dtd] seed 11/12 done (122s)
+  [dtd] seed 12/12 done (130s)
+  [dtd] cold_med=0.809 headroom=True n=20 | xfer=0.27 hurt=0.49 FT[-0.159,+0.110]
+  [dtd] FT reliability: r_half=+0.896 r_SB=+0.945 CI[+0.924,+0.961]  rel_ok=True
+  [dtd] rho(cos,FT)=-0.012 CI[-0.115,+0.083] pearson=-0.005 perm_p=0.816 | excl_coupling=True
+  [dtd] >>> BAND = CONFIRMED (131s)
+
+=== P0 DISSOCIATION (frozen, powered) ===
+  dataset  coldAUC   r_SB           relCI     rho           rhoCI  perm_p   BAND
+  cifar      0.800   0.98  [+0.97,+0.98]   0.032  [-0.07,+0.13]   0.536   CONFIRMED
+  dtd        0.809   0.95  [+0.92,+0.96]  -0.012  [-0.11,+0.08]   0.816   CONFIRMED
+
+[P0] per-dataset bands={'cifar': 'CONFIRMED', 'dtd': 'CONFIRMED'} | OVERALL=CONFIRMED
+[P0] wrote D:\IC_experiments\interference_law\out\p0_dissociation.json  wall=240s

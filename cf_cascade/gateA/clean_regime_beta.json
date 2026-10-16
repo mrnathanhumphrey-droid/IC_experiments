@@ -1,0 +1,48 @@
+{
+  "clean_step": 100,
+  "results": {
+    "Pythia/AG-News": {
+      "label": "Pythia/AG-News",
+      "full_beta": 0.88,
+      "clean_beta": 1.0547781881646219,
+      "n_clean": 12,
+      "var_quad_coef": -6.219529514724025e-14,
+      "var_convex": false,
+      "r2_lin": 0.9641816042645031,
+      "r2_quad": 0.9897685045947537,
+      "PR_clean_lastmax": 1.0,
+      "PR_climbing": true,
+      "PR_accel": false,
+      "accel_corroborated": false
+    },
+    "Pythia/Yelp": {
+      "label": "Pythia/Yelp",
+      "full_beta": 1.16,
+      "clean_beta": 1.0577317668212736,
+      "n_clean": 13,
+      "var_quad_coef": -3.8137334309274416e-14,
+      "var_convex": false,
+      "r2_lin": 0.9262677807071888,
+      "r2_quad": 0.9932699504208402,
+      "PR_clean_lastmax": 0.9548705682259837,
+      "PR_climbing": false,
+      "PR_accel": false,
+      "accel_corroborated": false
+    },
+    "GPT-2/AG-News": {
+      "label": "GPT-2/AG-News",
+      "full_beta": 1.57,
+      "clean_beta": 1.9888506573667466,
+      "n_clean": 12,
+      "var_quad_coef": 8.687567189293355e-13,
+      "var_convex": true,
+      "r2_lin": 0.947247845083506,
+      "r2_quad": 0.9972887151405856,
+      "PR_clean_lastmax": 1.0,
+      "PR_climbing": true,
+      "PR_accel": false,
+      "accel_corroborated": false
+    }
+  },
+  "gpt2_verdict": "BETA SUSPECT: clean-beta>1.2 but acceleration NOT corroborated (PR/var disagree) -> false-PASS trap, do NOT bank super-linear; treat as inconclusive"
+}

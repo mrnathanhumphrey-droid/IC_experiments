@@ -1,0 +1,11 @@
+[SWA] facebook/opt-350m keep=12 tag=opt350m_d12
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 4084.22it/s]
+[SWA] depth 24 -> 12 kept=[0, 2, 4, 6, 8, 10, 13, 15, 17, 19, 21, 23] (180M)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2263841.80 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 346610.41 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 583708.64 examples/s]
+[SWA] step 250: acc=0.777 (24s)
+[SWA] step 500: acc=0.820 (35s)
+[SWA] target hit 0.820 @ 500; saved /home/ubuntu/gateA/opt350m_d12_sst2_wA.pt
+[SWA] DONE tag=opt350m_d12 keep=12 acc=0.820 matched=True wall=36s

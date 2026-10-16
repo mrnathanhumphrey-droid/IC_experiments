@@ -1,0 +1,144 @@
+{
+ "config": {
+  "caps": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19
+  ],
+  "ft": [
+   300,
+   0.0005
+  ],
+  "few": [
+   8,
+   24
+  ],
+  "K": 30,
+  "d_proj": 24,
+  "nseed": 3,
+  "seed": 0,
+  "prereg_lock": "e6086a1b"
+ },
+ "results": {
+  "cifar": {
+   "n": 20,
+   "cold_auc_median": 0.8126,
+   "headroom": true,
+   "net_FT": -0.0562,
+   "transfer_frac": 0.263,
+   "hurt_frac": 0.676,
+   "FT_range": [
+    -0.4137,
+    0.2245
+   ],
+   "rho_cos_FT": 0.069,
+   "pearson": 0.04,
+   "FT_vs_cos_curve": [
+    [
+     -0.417,
+     -0.0647
+    ],
+    [
+     -0.3,
+     -0.0611
+    ],
+    [
+     -0.225,
+     -0.0449
+    ],
+    [
+     -0.147,
+     -0.0816
+    ],
+    [
+     -0.072,
+     -0.0663
+    ],
+    [
+     0.022,
+     -0.0488
+    ],
+    [
+     0.19,
+     -0.0231
+    ],
+    [
+     0.562,
+     -0.0596
+    ]
+   ],
+   "checks": {
+    "P2_cosine_gov": false
+   }
+  },
+  "dtd": {
+   "n": 20,
+   "cold_auc_median": 0.8445,
+   "headroom": true,
+   "net_FT": -0.0535,
+   "transfer_frac": 0.311,
+   "hurt_frac": 0.624,
+   "FT_range": [
+    -0.4832,
+    0.2749
+   ],
+   "rho_cos_FT": 0.093,
+   "pearson": 0.077,
+   "FT_vs_cos_curve": [
+    [
+     -0.393,
+     -0.0603
+    ],
+    [
+     -0.256,
+     -0.0623
+    ],
+    [
+     -0.179,
+     -0.0615
+    ],
+    [
+     -0.105,
+     -0.0742
+    ],
+    [
+     -0.03,
+     -0.037
+    ],
+    [
+     0.044,
+     -0.0439
+    ],
+    [
+     0.15,
+     -0.0545
+    ],
+    [
+     0.397,
+     -0.0342
+    ]
+   ],
+   "checks": {
+    "P2_cosine_gov": false
+   }
+  }
+ },
+ "verdict": "plastic forward transfer NOT cosine-governed -> cosine is purely a FORGETTING law at all levels"
+}

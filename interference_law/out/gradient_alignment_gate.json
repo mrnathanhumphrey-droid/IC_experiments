@@ -1,0 +1,177 @@
+{
+ "config": {
+  "mode": "gate",
+  "ft_steps": 400,
+  "ft_lr": 0.001,
+  "n_b": 2,
+  "sub_a": [
+   0,
+   6,
+   12,
+   18,
+   24,
+   30,
+   36,
+   42
+  ],
+  "prereg_lock": "5b68b154"
+ },
+ "median_forget": 0.07335,
+ "cosines": {
+  "grad": {
+   "rho": 0.385,
+   "rho_withinB": 0.244,
+   "range": [
+    -0.038,
+    0.141
+   ]
+  },
+  "feature": {
+   "rho": -0.121,
+   "rho_withinB": 0.221,
+   "range": [
+    -0.294,
+    0.466
+   ]
+  },
+  "dtheta": {
+   "rho": -0.238,
+   "rho_withinB": -0.312,
+   "range": [
+    -0.004,
+    0.004
+   ]
+  }
+ },
+ "verdict": "HARD BOUNDARY: representational forgetting NOT cosine-governed even with structured gradient cosine",
+ "points": [
+  {
+   "A": 0,
+   "B": 0,
+   "forget": 0.0744,
+   "feature": 0.4658,
+   "grad": 0.1109,
+   "dtheta": 0.0045
+  },
+  {
+   "A": 6,
+   "B": 0,
+   "forget": 0.0986,
+   "feature": 0.1188,
+   "grad": 0.118,
+   "dtheta": -0.0037
+  },
+  {
+   "A": 12,
+   "B": 0,
+   "forget": 0.1514,
+   "feature": 0.3626,
+   "grad": 0.0347,
+   "dtheta": -0.0011
+  },
+  {
+   "A": 18,
+   "B": 0,
+   "forget": 0.1755,
+   "feature": 0.1582,
+   "grad": 0.1362,
+   "dtheta": 0.0001
+  },
+  {
+   "A": 24,
+   "B": 0,
+   "forget": 0.0905,
+   "feature": 0.0066,
+   "grad": 0.141,
+   "dtheta": 0.0039
+  },
+  {
+   "A": 30,
+   "B": 0,
+   "forget": 0.0466,
+   "feature": -0.2529,
+   "grad": 0.1084,
+   "dtheta": 0.0006
+  },
+  {
+   "A": 36,
+   "B": 0,
+   "forget": 0.101,
+   "feature": -0.1749,
+   "grad": -0.0346,
+   "dtheta": 0.0013
+  },
+  {
+   "A": 42,
+   "B": 0,
+   "forget": 0.0904,
+   "feature": -0.2941,
+   "grad": -0.0011,
+   "dtheta": 0.0023
+  },
+  {
+   "A": 0,
+   "B": 1,
+   "forget": 0.0397,
+   "feature": -0.114,
+   "grad": 0.0307,
+   "dtheta": 0.0033
+  },
+  {
+   "A": 6,
+   "B": 1,
+   "forget": 0.0382,
+   "feature": 0.1081,
+   "grad": 0.0654,
+   "dtheta": 0.0011
+  },
+  {
+   "A": 12,
+   "B": 1,
+   "forget": 0.0327,
+   "feature": 0.4049,
+   "grad": 0.0592,
+   "dtheta": 0.0021
+  },
+  {
+   "A": 18,
+   "B": 1,
+   "forget": 0.1273,
+   "feature": -0.0129,
+   "grad": 0.106,
+   "dtheta": -0.0002
+  },
+  {
+   "A": 24,
+   "B": 1,
+   "forget": 0.016,
+   "feature": 0.16,
+   "grad": -0.0378,
+   "dtheta": -0.0001
+  },
+  {
+   "A": 30,
+   "B": 1,
+   "forget": 0.0636,
+   "feature": 0.2683,
+   "grad": 0.0133,
+   "dtheta": 0.0016
+  },
+  {
+   "A": 36,
+   "B": 1,
+   "forget": 0.0555,
+   "feature": 0.1595,
+   "grad": -0.0048,
+   "dtheta": -0.0008
+  },
+  {
+   "A": 42,
+   "B": 1,
+   "forget": 0.0723,
+   "feature": 0.3277,
+   "grad": 0.0815,
+   "dtheta": 0.0042
+  }
+ ]
+}

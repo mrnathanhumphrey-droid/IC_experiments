@@ -1,0 +1,126 @@
+{
+ "prereg_lock": "b5c3929a",
+ "smoke": false,
+ "datasets": [
+  "cifar"
+ ],
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "Ncaps": [
+  6,
+  12,
+  24
+ ],
+ "ft": [
+  300,
+  0.0005
+ ],
+ "aggregate": {
+  "cifar": {
+   "6": {
+    "n_seeds": 3,
+    "interaction_eff_rank": [
+     2.135,
+     [
+      2.047,
+      2.215
+     ]
+    ],
+    "per_task_eff_rank_median": [
+     1.705,
+     [
+      1.591,
+      1.78
+     ]
+    ],
+    "pooled_direction_eff_rank": [
+     7.65,
+     [
+      7.438,
+      7.948
+     ]
+    ],
+    "mean_abs_cos": 0.2119,
+    "median_forget": 0.2691
+   },
+   "12": {
+    "n_seeds": 3,
+    "interaction_eff_rank": [
+     4.698,
+     [
+      4.261,
+      4.962
+     ]
+    ],
+    "per_task_eff_rank_median": [
+     2.101,
+     [
+      1.914,
+      2.291
+     ]
+    ],
+    "pooled_direction_eff_rank": [
+     13.197,
+     [
+      12.871,
+      13.703
+     ]
+    ],
+    "mean_abs_cos": 0.1749,
+    "median_forget": 0.2414
+   },
+   "24": {
+    "n_seeds": 3,
+    "interaction_eff_rank": [
+     9.573,
+     [
+      9.177,
+      9.895
+     ]
+    ],
+    "per_task_eff_rank_median": [
+     2.003,
+     [
+      1.94,
+      2.088
+     ]
+    ],
+    "pooled_direction_eff_rank": [
+     17.541,
+     [
+      16.847,
+      18.412
+     ]
+    ],
+    "mean_abs_cos": 0.1662,
+    "median_forget": 0.2415,
+    "haar_per_task_eff_rank": 21.974,
+    "haar_pooled_eff_rank": 265.834,
+    "perm_p_pt_below": 0.0
+   },
+   "scaling": {
+    "N": [
+     6,
+     12,
+     24
+    ],
+    "interaction": [
+     2.135,
+     4.698,
+     9.573
+    ],
+    "per_task": [
+     1.705,
+     2.101,
+     2.003
+    ],
+    "interaction_slope": 0.4122,
+    "per_task_slope": 0.013
+   }
+  }
+ },
+ "wall_s": 2945
+}

@@ -1,0 +1,16 @@
+[PLS] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  47%|████▋     | 136/292 [00:00<00:00, 1346.89it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 1743.07it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2175701.31 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 378029.26 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 610928.46 examples/s]
+[PLS] FA + PA done (39s)
+[PLS] seed captured (46s)
+[PLS] saved camera frame perlayer_seed.npz (46s)
+  [attention.query_key_value ] align=0.0e+00 seedchk=+1.00 | partial mean=+0.43±0.11 t=+19.0 pos=24/24 | ovl=0.71 dissoc=19(6L) Ediss_z=+0.8 Ecore=0.87
+  [mlp.dense_h_to_4h         ] align=0.0e+00 seedchk=+1.00 | partial mean=+0.41±0.13 t=+15.2 pos=24/24 | ovl=0.66 dissoc=26(14L) Ediss_z=+1.7 Ecore=0.85
+  [mlp.dense_4h_to_h         ] align=0.0e+00 seedchk=+1.00 | partial mean=+0.52±0.13 t=+20.0 pos=24/24 | ovl=0.71 dissoc=30(15L) Ediss_z=+3.0 Ecore=0.87
+
+[PLS] GRAND partial mean=+0.45 t=+29.4 pos=72/72 dissoc=75
+[PLS] VERDICT: BEYOND-CURVATURE: per-layer partial mean=+0.45 t=+29.4 (72/72 layers positive) -> seed tracks contest structure beyond curvature; layer-average HID it. Deflation doesn't fully absorb; re-opens novel-mechanism reading. dissoc dirs total=75.
+[PLS] saved perlayer_seed_overlap.json wall=48s

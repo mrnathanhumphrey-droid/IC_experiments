@@ -1,0 +1,154 @@
+{
+ "config": {
+  "nseed": 10,
+  "kpc": 5,
+  "prereg": "P1c_2026_07_26",
+  "primary": "interaction_residual"
+ },
+ "results": {
+  "cifar": {
+   "n": 20,
+   "descriptors": {
+    "Y1_reach": {
+     "rho_resid": 0.0548,
+     "ci_resid": [
+      -0.044,
+      0.1583
+     ],
+     "perm_p_resid": 0.273,
+     "rho_ft": 0.067,
+     "perm_p_ft": 0.1875,
+     "hit": false
+    },
+    "Y2_newton": {
+     "rho_resid": -0.0626,
+     "ci_resid": [
+      -0.1608,
+      0.0382
+     ],
+     "perm_p_resid": 0.227,
+     "rho_ft": -0.0223,
+     "perm_p_ft": 0.655,
+     "hit": false
+    },
+    "Y3_spread": {
+     "rho_resid": 0.1232,
+     "ci_resid": [
+      0.0226,
+      0.2248
+     ],
+     "perm_p_resid": 0.017,
+     "rho_ft": 0.16,
+     "perm_p_ft": 0.003,
+     "hit": false
+    },
+    "Y4_whiten": {
+     "rho_resid": 0.0645,
+     "ci_resid": [
+      -0.0368,
+      0.1587
+     ],
+     "perm_p_resid": 0.217,
+     "rho_ft": 0.0242,
+     "perm_p_ft": 0.6395,
+     "hit": false
+    },
+    "Y5_usage": {
+     "rho_resid": -0.1074,
+     "ci_resid": [
+      -0.2086,
+      -0.0073
+     ],
+     "perm_p_resid": 0.031,
+     "rho_ft": -0.0927,
+     "perm_p_ft": 0.0755,
+     "hit": false
+    },
+    "Y6_curvtr": {
+     "rho_resid": 0.1097,
+     "ci_resid": [
+      0.0053,
+      0.2166
+     ],
+     "perm_p_resid": 0.0315,
+     "rho_ft": 0.129,
+     "perm_p_ft": 0.012,
+     "hit": false
+    }
+   }
+  },
+  "dtd": {
+   "n": 20,
+   "descriptors": {
+    "Y1_reach": {
+     "rho_resid": 0.077,
+     "ci_resid": [
+      -0.0178,
+      0.1693
+     ],
+     "perm_p_resid": 0.1175,
+     "rho_ft": -0.0418,
+     "perm_p_ft": 0.414,
+     "hit": false
+    },
+    "Y2_newton": {
+     "rho_resid": 0.0848,
+     "ci_resid": [
+      -0.015,
+      0.1824
+     ],
+     "perm_p_resid": 0.0975,
+     "rho_ft": -0.0638,
+     "perm_p_ft": 0.217,
+     "hit": false
+    },
+    "Y3_spread": {
+     "rho_resid": 0.1075,
+     "ci_resid": [
+      0.0075,
+      0.2071
+     ],
+     "perm_p_resid": 0.038,
+     "rho_ft": -0.0547,
+     "perm_p_ft": 0.2815,
+     "hit": false
+    },
+    "Y4_whiten": {
+     "rho_resid": 0.0081,
+     "ci_resid": [
+      -0.096,
+      0.1103
+     ],
+     "perm_p_resid": 0.874,
+     "rho_ft": -0.0147,
+     "perm_p_ft": 0.762,
+     "hit": false
+    },
+    "Y5_usage": {
+     "rho_resid": -0.0919,
+     "ci_resid": [
+      -0.1863,
+      0.0076
+     ],
+     "perm_p_resid": 0.0695,
+     "rho_ft": -0.0456,
+     "perm_p_ft": 0.3855,
+     "hit": false
+    },
+    "Y6_curvtr": {
+     "rho_resid": -0.0884,
+     "ci_resid": [
+      -0.1898,
+      0.0117
+     ],
+     "perm_p_resid": 0.095,
+     "rho_ft": 0.093,
+     "perm_p_ft": 0.075,
+     "hit": false
+    }
+   }
+  }
+ },
+ "replicated_hits": [],
+ "verdict": "NULL: interaction resists optimization-landscape descriptors too -> bank strengthened negative + PIVOT TO PLASTIC"
+}

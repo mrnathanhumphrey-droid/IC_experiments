@@ -1,0 +1,15 @@
+{
+  "run": "armHyp_beta0.1_K8_seed0",
+  "probe_super_zlow": 0.5781,
+  "probe_super_ztrans": 0.5491,
+  "probe_fine_zlow": 0.5078,
+  "probe_fine_ztrans": 0.2182,
+  "within_super_zlow": 0.2732629012596505,
+  "within_super_ztrans": 0.41455615246866206,
+  "within_super_chance": 0.0404040404040404,
+  "selectivity_index": 0.14129325120901154,
+  "n_err_zlow": 4922,
+  "n_err_ztrans": 7818,
+  "cka_zlow_ztrans": 0.5083694214683855,
+  "kl_rate": 5.289521875
+}

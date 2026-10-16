@@ -1,0 +1,35 @@
+[P2:pythia410m] EleutherAI/pythia-410m clean rank ladder K=[0, 5, 9, 32, 64, 128] (knot=9); childhood-once -> confound dead
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 5824.48it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 3670363.42 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 572457.83 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 983495.70 examples/s]
+[P2:pythia410m] w_A acc=0.753; 72 carriers (11s)
+[P2:pythia410m] V + swap(rank-9) done (31s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  33%|███▎      | 183000/560000 [00:00<00:00, 1820012.79 examples/s]Generating train split:  73%|███████▎  | 411000/560000 [00:00<00:00, 2083105.52 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 2080841.55 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 2055585.13 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:  10%|█         | 147000/1400000 [00:00<00:00, 1451210.37 examples/s]Generating train split:  22%|██▏       | 310000/1400000 [00:00<00:00, 1548595.42 examples/s]Generating train split:  34%|███▍      | 477000/1400000 [00:00<00:00, 1599847.94 examples/s]Generating train split:  46%|████▌     | 638000/1400000 [00:00<00:00, 1602540.36 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:00<00:00, 1572055.70 examples/s]Generating train split:  75%|███████▍  | 1046000/1400000 [00:00<00:00, 1586073.51 examples/s]Generating train split:  87%|████████▋ | 1217000/1400000 [00:00<00:00, 1599028.26 examples/s]Generating train split:  99%|█████████▉| 1384000/1400000 [00:00<00:00, 1619149.18 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:00<00:00, 1592213.37 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 1564785.79 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 680309.88 examples/s]Generating train split:  96%|█████████▋| 201886/209527 [00:00<00:00, 655579.20 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 656792.04 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 2541617.33 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 1122822.65 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 1149596.82 examples/s]
+[P2:pythia410m] seed 0: A=0.493 k0=0.510 k5=0.497 k9=0.497 k32=0.573 k64=0.603 k128=0.600 swap=0.587 ld=8.94 (246s)
+[P2:pythia410m] seed 5: A=0.493 k0=0.500 k5=0.603 k9=0.563 k32=0.663 k64=0.670 k128=0.640 swap=0.497 ld=8.72 (1237s)
+[P2:pythia410m] seed 10: A=0.533 k0=0.540 k5=0.543 k9=0.687 k32=0.703 k64=0.563 k128=0.663 swap=0.630 ld=8.95 (2226s)
+[P2:pythia410m] seed 15: A=0.490 k0=0.680 k5=0.587 k9=0.613 k32=0.647 k64=0.660 k128=0.673 swap=0.507 ld=8.54 (3216s)
+[P2:pythia410m] seed 20: A=0.490 k0=0.550 k5=0.553 k9=0.497 k32=0.587 k64=0.643 k128=0.587 swap=0.507 ld=9.00 (4207s)
+[P2:pythia410m] seed 25: A=0.493 k0=0.490 k5=0.530 k9=0.543 k32=0.490 k64=0.513 k128=0.680 swap=0.660 ld=8.81 (5200s)
+[P2:pythia410m] seed 29: A=0.527 k0=0.503 k5=0.670 k9=0.510 k32=0.613 k64=0.543 k128=0.650 swap=0.507 ld=8.71 (5992s)
+
+[P2:pythia410m] === ANCHOR B-A(k128)=+0.062(exp +0.073) -> OK ===
+[P2:pythia410m] retA=0.557  lossdrop=8.78 (identical across k)
+[P2:pythia410m] rank ladder (Bk - A; saturate by k~9=core-monolithic, climb 64->128=broad-shell):
+   k=   0  Bk-A=+0.006±0.019   B-Bk=+0.055 (=D,out-of-V only)
+   k=   5  Bk-A=+0.028±0.017   B-Bk=+0.034
+   k=   9  Bk-A=+0.032±0.017   B-Bk=+0.030  <-KNOT/core
+   k=  32  Bk-A=+0.040±0.019   B-Bk=+0.021
+   k=  64  Bk-A=+0.049±0.019   B-Bk=+0.013
+   k= 128  Bk-A=+0.062±0.017   B-Bk=+0.000 (=B,full)
+[P2:pythia410m] swap(rank-9, matched-mag) - A = +0.006±0.018  vs real k9-A=+0.032  (real>>swap => core deposit-specific)
+[P2:pythia410m] saved /home/ubuntu/gateA/probe2_rank_pythia410m.json wall=5992s

@@ -1,0 +1,16 @@
+[R1] loading facebook/opt-350m...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  68%|██████▊   | 264/388 [00:00<00:00, 2632.51it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 2810.78it/s]
+[R1] GATE-0a: ESD(W^TW) full/robust median = 7.25/5.01 decades | |eig(W)| full med 2.120133679765367 | autocorr |median| 0.0011 -> PASS (64s)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2122346.37 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 402269.37 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 561233.56 examples/s]
+[R1] training task-A to interpolation (1200 steps on 2000-subset)...
+[R1] interpolation min: train loss 0.0002, SST val acc 0.773 (176s)
+
+[R1] === RUNG-1 VERDICT (facebook/opt-350m) ===
+  FREEZE GATE FAILED: lambda_min=-7.017e-01 NOT > 0 (runs ['-7.02e-01', '-7.02e-01']) -> not a genuine PSD basin (saddle) on facebook/opt-350m. Harder-task-A fork or can't anchor. Don't proceed to rung 2.
+  Gate-0a: ESD robust median 5.01 dec, autocorr 0.0011 -> PASS
+  Freeze: lambda_min=-7.017e-01 (>0=False), lambda_max=5.351e+00, range=None dec (curved=False)
+  spectrum shape=continuum; top=['5.35e+00', '1.73e+00', '8.76e-01', '-7.02e-01', '6.20e-01']; ESD frozen 4.98
+[R1] saved rung1_opt.json wall=1235s

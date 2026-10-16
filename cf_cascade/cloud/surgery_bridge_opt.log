@@ -1,0 +1,16 @@
+[R2] loading facebook/opt-350m (eager)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  73%|███████▎  | 282/388 [00:00<00:00, 2795.74it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3012.87it/s]
+[SURGERY] facebook/opt-350m: depth 24 -> 12 (every-other kept); 180M params
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2242349.18 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 405165.96 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 636804.03 examples/s]
+[R2] training task-A=SST -> w_A...
+[R2] w_A SST acc=0.777 (rung-1 was 0.77) (50s)
+[R2] curvature basis done (63s)
+[R2] STEP1: com_rank median=0.125(<0.42) | M1 median=0.711(>0.30, Pythia 0.70) | antagonism median=-0.008(<0, Pythia −0.23) -> FAIL (75s)
+[R2] STEP2: partial(seed,contest|λ) median=0.490 (Pythia +0.45), frac_pos=1.00, attn median=0.482 -> PASS (75s)
+
+[SURGERY-BRIDGE] === VERDICT ===
+  SURGERY-BRIDGE PASS: half-depth pretrained reaches acc band (0.777) AND keeps backbone (M1=0.711 vs anchor 0.86, partial=0.490 vs 0.29, antag=-0.008 vs 0.09) -> layer-surgery regime VALID; the depth sweep can fire.
+[SURGERY-BRIDGE] wall=75s

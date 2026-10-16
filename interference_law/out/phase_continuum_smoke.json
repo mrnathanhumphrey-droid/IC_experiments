@@ -1,0 +1,62 @@
+{
+ "config": {
+  "ranks": [
+   2
+  ],
+  "snaps": [
+   32,
+   256,
+   1000
+  ],
+  "N_B": 2,
+  "seeds": [
+   0
+  ],
+  "B_lr": 0.008,
+  "smoke": true
+ },
+ "frozen_ref_rho": -0.74,
+ "curves": {
+  "2": [
+   {
+    "rank": 2,
+    "snap_steps": 32,
+    "mean_dtheta": 14.343,
+    "mean_drift": 29.114,
+    "rho_cos_pool": 0.033,
+    "rho_cos_within_B": 0.02,
+    "within_B_sd_across_seeds": 0.0,
+    "median_forget": 0.0235,
+    "inband": false,
+    "n_seeds": 1
+   },
+   {
+    "rank": 2,
+    "snap_steps": 256,
+    "mean_dtheta": 20.874,
+    "mean_drift": 29.596,
+    "rho_cos_pool": -0.152,
+    "rho_cos_within_B": -0.088,
+    "within_B_sd_across_seeds": 0.0,
+    "median_forget": 0.0426,
+    "inband": false,
+    "n_seeds": 1
+   },
+   {
+    "rank": 2,
+    "snap_steps": 1000,
+    "mean_dtheta": 20.85,
+    "mean_drift": 29.49,
+    "rho_cos_pool": -0.167,
+    "rho_cos_within_B": -0.116,
+    "within_B_sd_across_seeds": 0.0,
+    "median_forget": 0.0435,
+    "inband": false,
+    "n_seeds": 1
+   }
+  ]
+ },
+ "verdicts": {
+  "2": "H_DISCONTINUITY SUPPORTED -- rho_cos > -0.20 at every measurable ||dtheta|| (smallest=+0.020 @ ||dth||=14.34); dead as soon as motion is nonzero. SS17 holds at fine resolution."
+ }
+}

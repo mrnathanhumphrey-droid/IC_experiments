@@ -1,0 +1,18 @@
+[FAC] model=Qwen/Qwen2.5-1.5B kA=8 doses=[4, 8, 16] N_eval=200 layer=15 (matched-label)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/120000 [00:00<?, ? examples/s]Generating train split:  98%|█████████▊| 117000/120000 [00:00<00:00, 1161092.84 examples/s]Generating train split: 100%|██████████| 120000/120000 [00:00<00:00, 1148277.59 examples/s]
+Generating test split:   0%|          | 0/7600 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 7600/7600 [00:00<00:00, 928294.66 examples/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  53%|█████▎    | 179/338 [00:00<00:00, 1777.55it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 1878.58it/s]
+  loaded (18s)
+  cos range [-0.46,-0.00] (26s)
+  clean AUC [0.488, 0.588, 0.624, 0.59, 0.675] (37s)
+  dose=  4 | rho=-0.277 | antipar=+0.0096 aligned=+nan | NEUTRAL=+0.0440 REPLAY=-0.0371 | antipar-neutral=-0.0344  (135s)
+  dose=  8 | rho=+0.066 | antipar=+0.0135 aligned=+nan | NEUTRAL=+0.0338 REPLAY=-0.0485 | antipar-neutral=-0.0203  (263s)
+  dose= 16 | rho=+0.117 | antipar=+0.0463 aligned=+nan | NEUTRAL=+0.0956 REPLAY=-0.0954 | antipar-neutral=-0.0494  (455s)
+
+=== FACILITATION CHARACTERIZATION (matched-label) ===
+  cosine-REAL (rho survives matched labels) : False  (dose4 rho=-0.277)
+  SPECIFIC (antipar-B beats neutral filler)  : True  (antipar +0.0096 vs neutral +0.0440, diff -0.0344)
+  VERDICT: LABEL/FORMAT artifact: matched labels kill the ordering -> earlier +0.4 was label-space distinctness, not cosine
+[FAC] wrote /home/ubuntu/out/ic_facilitation.json  wall=455s

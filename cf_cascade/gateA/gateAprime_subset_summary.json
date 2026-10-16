@@ -1,0 +1,29 @@
+{
+  "subset": 2000,
+  "stopped_step": 800,
+  "train_win": 0.018866507076893413,
+  "grad_norm_full_subset": 0.18790215253829956,
+  "lambda_max": 21.00202178955078,
+  "lambda_min": -49.243778228759766,
+  "is_psd_minimum": false,
+  "esd_decade_median": 5.867738594640626,
+  "train_hist": [
+    {
+      "step": 200,
+      "train_win": 0.41173301534727214
+    },
+    {
+      "step": 400,
+      "train_win": 0.13864819224631902
+    },
+    {
+      "step": 600,
+      "train_win": 0.07194532972926027
+    },
+    {
+      "step": 800,
+      "train_win": 0.018866507076893413
+    }
+  ],
+  "wall_s": 1798.8233761787415
+}

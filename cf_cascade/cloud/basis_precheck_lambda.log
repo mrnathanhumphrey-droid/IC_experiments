@@ -1,0 +1,29 @@
+[BPC] BASIS PRE-CHECK (cross-task basis existence gate) on OPT + Pythia
+
+[OPT] loading facebook/opt-350m...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  90%|█████████ | 350/388 [00:00<00:00, 3475.61it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3462.55it/s]
+[OPT] 144 carriers
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2078068.05 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 377327.26 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 602494.88 examples/s]
+[OPT] Fisher A+B done (91s)
+[OPT] F_B effrank≈14.4 (effrank/d 0.011; subspace is LOW-RANK -> working K=16)
+[OPT] distinct ortho-frac by K: K4=0.50 K8=0.63 K16=0.71 K32=0.73 K64=0.71 K128=0.65
+[OPT] stable grassmann by K:   K4=0.62(ch0.00) K8=0.47(ch0.01) K16=0.36(ch0.01) K32=0.33(ch0.03) K64=0.34(ch0.05) K128=0.39(ch0.11)
+[OPT] GATE1 distinct@K16=0.708(>0.40?True) | GATE2 cond top128E=0.968 effr/d=0.011(?True) antag=+0.096(triv?False) | GATE3 stable@K16=0.357(>0.027?True)
+[OPT] === ALL PASS @ K16: True ===
+
+[PYTHIA] loading EleutherAI/pythia-410m...
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  92%|█████████▏| 270/292 [00:00<00:00, 2619.94it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2773.56it/s]
+[PYTHIA] 72 carriers
+[PYTHIA] Fisher A+B done (215s)
+[PYTHIA] F_B effrank≈2.1 (effrank/d 0.002; subspace is LOW-RANK -> working K=16)
+[PYTHIA] distinct ortho-frac by K: K4=0.41 K8=0.45 K16=0.50 K32=0.60 K64=0.65 K128=0.65
+[PYTHIA] stable grassmann by K:   K4=0.96(ch0.00) K8=0.90(ch0.01) K16=0.76(ch0.01) K32=0.59(ch0.02) K64=0.48(ch0.05) K128=0.43(ch0.09)
+[PYTHIA] GATE1 distinct@K16=0.501(>0.40?True) | GATE2 cond top128E=0.999 effr/d=0.002(?True) antag=-0.034(triv?True) | GATE3 stable@K16=0.762(>0.023?True)
+[PYTHIA] === ALL PASS @ K16: True ===
+
+[BPC] === JOINT VERDICT ===
+  BASIS EXISTS both substrates -> green-light Probe 1 then Probe 2.
+[BPC] saved basis_precheck.json wall=248s

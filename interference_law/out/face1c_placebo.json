@@ -1,0 +1,145 @@
+{
+ "config": {
+  "model": "Qwen/Qwen2.5-1.5B",
+  "ncap": 16,
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "steps": 200,
+  "layer": 14,
+  "smoke": false
+ },
+ "summary": {
+  "real": {
+   "median_curl_rho": 0.331,
+   "median_dom_rho": 0.483,
+   "median_medFgt": 0.038,
+   "n_inband": 3
+  },
+  "randtext": {
+   "median_curl_rho": 0.006,
+   "median_dom_rho": 0.585,
+   "median_medFgt": 0.053,
+   "n_inband": 2
+  },
+  "noise": {
+   "median_curl_rho": null,
+   "median_dom_rho": null,
+   "median_medFgt": null,
+   "n_inband": 0
+  }
+ },
+ "rows": [
+  {
+   "cond": "real",
+   "projdim": 12,
+   "projseed": 0,
+   "auc0": 0.77,
+   "medFgt": 0.038,
+   "dom_rho": 0.44,
+   "curl_rho": 0.331
+  },
+  {
+   "cond": "randtext",
+   "projdim": 12,
+   "projseed": 0,
+   "auc0": 0.77,
+   "medFgt": 0.026,
+   "dom_rho": 0.518,
+   "curl_rho": 0.001
+  },
+  {
+   "cond": "noise",
+   "projdim": 12,
+   "projseed": 0,
+   "auc0": 0.77,
+   "medFgt": 0.016,
+   "dom_rho": 0.219,
+   "curl_rho": -0.051
+  },
+  {
+   "cond": "real",
+   "projdim": 12,
+   "projseed": 1,
+   "auc0": 0.715,
+   "medFgt": 0.032,
+   "dom_rho": 0.697,
+   "curl_rho": 0.364
+  },
+  {
+   "cond": "randtext",
+   "projdim": 12,
+   "projseed": 1,
+   "auc0": 0.715,
+   "medFgt": 0.039,
+   "dom_rho": 0.705,
+   "curl_rho": 0.017
+  },
+  {
+   "cond": "noise",
+   "projdim": 12,
+   "projseed": 1,
+   "auc0": 0.715,
+   "medFgt": 0.016,
+   "dom_rho": 0.476,
+   "curl_rho": 0.107
+  },
+  {
+   "cond": "real",
+   "projdim": 24,
+   "projseed": 0,
+   "auc0": 0.76,
+   "medFgt": 0.025,
+   "dom_rho": 0.789,
+   "curl_rho": 0.296
+  },
+  {
+   "cond": "randtext",
+   "projdim": 24,
+   "projseed": 0,
+   "auc0": 0.76,
+   "medFgt": 0.026,
+   "dom_rho": 0.719,
+   "curl_rho": 0.007
+  },
+  {
+   "cond": "noise",
+   "projdim": 24,
+   "projseed": 0,
+   "auc0": 0.76,
+   "medFgt": 0.007,
+   "dom_rho": 0.663,
+   "curl_rho": -0.021
+  },
+  {
+   "cond": "real",
+   "projdim": 24,
+   "projseed": 1,
+   "auc0": 0.779,
+   "medFgt": 0.067,
+   "dom_rho": 0.483,
+   "curl_rho": 0.322
+  },
+  {
+   "cond": "randtext",
+   "projdim": 24,
+   "projseed": 1,
+   "auc0": 0.779,
+   "medFgt": 0.067,
+   "dom_rho": 0.465,
+   "curl_rho": -0.005
+  },
+  {
+   "cond": "noise",
+   "projdim": 24,
+   "projseed": 1,
+   "auc0": 0.779,
+   "medFgt": 0.017,
+   "dom_rho": 0.64,
+   "curl_rho": -0.045
+  }
+ ],
+ "headline": "GENUINE \u2014 real curl-rho 0.331 clears placebos (max 0.006) by >=0.15. Cycles are task-specific interference, NOT a pipeline/projection artifact."
+}

@@ -1,0 +1,109 @@
+{
+ "config": {
+  "paradigms": [
+   "bark",
+   "gtts",
+   "pyttsx3"
+  ],
+  "subsample": 40,
+  "smoke": true,
+  "prereg_lock": "17a22acb"
+ },
+ "D1_cosine_matrix": [
+  [
+   1.0,
+   0.48,
+   0.484
+  ],
+  [
+   0.48,
+   1.0,
+   0.853
+  ],
+  [
+   0.484,
+   0.853,
+   1.0
+  ]
+ ],
+ "D2_law": {
+  "spearman_rho": -0.5428571428571428,
+  "pearson": -0.3254252315867194,
+  "base_auc": {
+   "bark": 0.996,
+   "gtts": 0.996,
+   "pyttsx3": 1.0
+  },
+  "pairs": [
+   {
+    "A": "bark",
+    "B": "gtts",
+    "cos": 0.48,
+    "A_base": 0.996,
+    "A_after": 0.0,
+    "forget": 0.996
+   },
+   {
+    "A": "bark",
+    "B": "pyttsx3",
+    "cos": 0.484,
+    "A_base": 0.996,
+    "A_after": 0.075,
+    "forget": 0.921
+   },
+   {
+    "A": "gtts",
+    "B": "bark",
+    "cos": 0.48,
+    "A_base": 0.996,
+    "A_after": 0.0,
+    "forget": 0.996
+   },
+   {
+    "A": "gtts",
+    "B": "pyttsx3",
+    "cos": 0.853,
+    "A_base": 0.996,
+    "A_after": 0.0,
+    "forget": 0.996
+   },
+   {
+    "A": "pyttsx3",
+    "B": "bark",
+    "cos": 0.484,
+    "A_base": 1.0,
+    "A_after": 0.162,
+    "forget": 0.838
+   },
+   {
+    "A": "pyttsx3",
+    "B": "gtts",
+    "cos": 0.853,
+    "A_base": 1.0,
+    "A_after": 0.247,
+    "forget": 0.753
+   }
+  ]
+ },
+ "D3_route": {
+  "clusters": [
+   [
+    "bark",
+    "gtts",
+    "pyttsx3"
+   ]
+  ],
+  "naive": {
+   "bark": 0.075,
+   "gtts": 0.607,
+   "pyttsx3": 0.923
+  },
+  "route": {
+   "bark": 0.989,
+   "gtts": 1.0,
+   "pyttsx3": 1.0
+  },
+  "worst_naive": 0.075,
+  "worst_route": 0.989
+ }
+}

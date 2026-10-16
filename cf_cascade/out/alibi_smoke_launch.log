@@ -1,0 +1,58 @@
+[L:as] gpu_1x_a10 @ us-east-1 $1.29/hr wd=1800s
+[L:as] instance_id=c9b9a4ac87424dfd8db5ccdc95f9d48a
+[L:as] status=booting ip=None 1s
+[L:as] status=active ip=129.213.136.38 313s
+[L:as] SSH up 129.213.136.38 (313s)
+Warning: Permanently added '129.213.136.38' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.136.38' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.136.38' (ED25519) to the list of known hosts.
+pins 4.46.0 2.7.0
+[L:as] pip done (332s); running...
+Warning: Permanently added '129.213.136.38' (ED25519) to the list of known hosts.
+2026-07-26 15:21:40.448557: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-26 15:21:40.518143: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785079300.551754    2603 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785079300.562303    2603 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785079300.617451    2603 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785079300.617470    2603 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785079300.617472    2603 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785079300.617474    2603 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-26 15:21:40.625268: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2363907.18 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 395056.50 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 622226.28 examples/s]
+[SMOKE] bloom560m: loaded carriers=72 kinds={'query_key_value.weight': 'Linear(3072, 1024)', 'dense_h_to_4h.weight': 'Linear(4096, 1024)', 'dense_4h_to_h.weight': 'Linear(1024, 4096)'} accPre=0.65 loss 6.141->0.0 fisher_proj_ok=True (19s)
+A new version of the following files was downloaded from https://huggingface.co/inceptionai/jais-family-590m:
+- configuration_jais.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+A new version of the following files was downloaded from https://huggingface.co/inceptionai/jais-family-590m:
+- modeling_jais.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+Downloading shards:   0%|          | 0/1 [00:00<?, ?it/s]Downloading shards: 100%|██████████| 1/1 [00:09<00:00,  9.96s/it]Downloading shards: 100%|██████████| 1/1 [00:09<00:00,  9.96s/it]
+[SMOKE] jais590m: loaded carriers=72 kinds={'c_attn.weight': 'Conv1D(1536, 4608)', 'c_fc.weight': 'Conv1D(1536, 4096)', 'c_fc2.weight': 'Conv1D(1536, 4096)'} accPre=0.85 loss 5.948->0.001 fisher_proj_ok=True (39s)
+Traceback (most recent call last):
+  File "/home/ubuntu/alibi_smoke_loadcheck.py", line 107, in main
+    results[key] = run_cell(key, cfg, t0)
+  File "/home/ubuntu/alibi_smoke_loadcheck.py", line 93, in run_cell
+    opt.zero_grad(); loss.backward(); torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0); opt.step()
+  File "/usr/lib/python3/dist-packages/torch/optim/optimizer.py", line 485, in wrapper
+    out = func(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/torch/optim/optimizer.py", line 79, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/torch/optim/adam.py", line 236, in step
+    has_complex = self._init_group(
+  File "/usr/lib/python3/dist-packages/torch/optim/adam.py", line 180, in _init_group
+    state["exp_avg_sq"] = torch.zeros_like(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 54.00 MiB. GPU 0 has a total capacity of 22.07 GiB of which 8.44 MiB is free. Including non-PyTorch memory, this process has 22.05 GiB memory in use. Of the allocated memory 21.09 GiB is allocated by PyTorch, and 664.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[SMOKE] qwen2_1p5b FAIL: OutOfMemoryError: CUDA out of memory. Tried to allocate 54.00 MiB. GPU 0 has a total capacity of 22.07 GiB of which 8.44 MiB is free. Including non-PyTorch memory, this process has 22.05 GiB memory in use. Of the alloc
+
+[SMOKE] READY: {'bloom560m': True, 'jais590m': True, 'qwen2_1p5b': False}
+[SMOKE] wrote /home/ubuntu/gateA/alibi_smoke.json wall=56s
+[L:as] rc=0 (391s)
+Warning: Permanently added '129.213.136.38' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.136.38' (ED25519) to the list of known hosts.
+[L:as] LANDED D:\IC_experiments\cf_cascade\out\alibi_smoke.json
+[L:as] terminated c9b9a4ac87424dfd8db5ccdc95f9d48a
+[L:as] ledger += 7min $0.14

@@ -1,0 +1,25 @@
+[P18:opt350m] facebook/opt-350m steer controllability; DOSES=[3e-05] N=15
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  88%|████████▊ | 341/388 [00:00<00:00, 3408.13it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3520.88it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2159996.48 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 417039.12 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 579765.26 examples/s]
+[P18:opt350m] w_A acc=0.823 (exp 0.823); 144 carriers (17s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  14%|█▍        | 80000/560000 [00:00<00:00, 787953.12 examples/s]Generating train split:  32%|███▏      | 181000/560000 [00:00<00:00, 913820.76 examples/s]Generating train split:  55%|█████▍    | 307000/560000 [00:00<00:00, 1066516.71 examples/s]Generating train split:  78%|███████▊  | 436000/560000 [00:00<00:00, 1151045.29 examples/s]Generating train split:  99%|█████████▉| 554000/560000 [00:00<00:00, 1159455.83 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1080271.35 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1109667.14 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▍         | 69000/1400000 [00:00<00:01, 679592.01 examples/s]Generating train split:  11%|█         | 152000/1400000 [00:00<00:01, 743492.41 examples/s]Generating train split:  16%|█▋        | 231000/1400000 [00:00<00:01, 760320.70 examples/s]Generating train split:  22%|██▏       | 312000/1400000 [00:00<00:01, 775531.22 examples/s]Generating train split:  29%|██▊       | 402000/1400000 [00:00<00:01, 785198.03 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 792616.92 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 796095.18 examples/s]Generating train split:  49%|████▉     | 687000/1400000 [00:00<00:00, 844775.17 examples/s]Generating train split:  58%|█████▊    | 808000/1400000 [00:01<00:00, 826273.86 examples/s]Generating train split:  67%|██████▋   | 936000/1400000 [00:01<00:00, 834314.69 examples/s]Generating train split:  75%|███████▍  | 1046000/1400000 [00:01<00:00, 796804.36 examples/s]Generating train split:  81%|████████  | 1130000/1400000 [00:01<00:00, 799042.24 examples/s]Generating train split:  87%|████████▋ | 1217000/1400000 [00:01<00:00, 801934.69 examples/s]Generating train split:  93%|█████████▎| 1306000/1400000 [00:01<00:00, 793428.59 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 804151.03 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 799185.79 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 926887.29 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 243346.83 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 260742.22 examples/s]Generating train split:  74%|███████▍  | 155103/209527 [00:00<00:00, 250353.04 examples/s]Generating train split:  96%|█████████▋| 201886/209527 [00:00<00:00, 244095.38 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 247452.03 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1558641.40 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 774428.36 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 803352.61 examples/s]
+[P18:opt350m] datasets loaded; V ready
+[seed] s1/15 3e-05 base=+0.053 oDVp=+0.080 oRnd=+0.090 (309s)
+[seed] s3/15 3e-05 base=+0.149 oDVp=+0.139 oRnd=+0.157 (781s)
+[seed] s5/15 3e-05 base=+0.141 oDVp=+0.021 oRnd=+0.131 (1253s)
+[seed] s7/15 3e-05 base=+0.145 oDVp=+0.063 oRnd=+0.133 (1728s)
+[seed] s9/15 3e-05 base=+0.142 oDVp=+0.079 oRnd=+0.132 (2194s)
+[seed] s11/15 3e-05 base=+0.132 oDVp=+0.102 oRnd=+0.148 (2665s)
+[seed] s13/15 3e-05 base=+0.162 oDVp=+0.132 oRnd=+0.170 (3141s)
+[seed] s15/15 3e-05 base=+0.149 oDVp=+0.122 oRnd=+0.158 (3612s)
+[P18:opt350m] DONE saved /home/ubuntu/gateA/probe18_steer_opt350m.json wall=3612s

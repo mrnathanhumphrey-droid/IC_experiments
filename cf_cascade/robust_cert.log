@@ -1,0 +1,20 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|##########| 292/292 [00:00<00:00, 3549.35it/s]
+[cert] direct (largest magnitude)...
+    [direct seed0] lam=+0.095 iters=35 plateaued=True
+    [direct seed1] lam=+0.095 iters=15 plateaued=True
+[cert] shift c=10.14; most-negative via (cI - H)...
+    [neg seed0] lam=+10.143 iters=10 plateaued=True
+    [neg seed1] lam=+10.143 iters=10 plateaued=True
+
+[cert] === ROBUST CERTIFICATION ===
+  lambda_max+ = +0.095
+  lambda_min  = +0.000   (THE PSD GATE)
+  direct largest-magnitude = +0.095
+  CHECK plateaued (all)     : True
+  CHECK restart-agreement   : True
+  CHECK cross (direct==maxmag): True  (maxmag=0.10 vs |direct|=0.10)
+  CHECK shift>lambda_max+   : True
+  -> TRUSTWORTHY: True
+  -> VERDICT: GENUINE PSD MINIMUM (lambda_min>0) - proceed to curvature read
+[cert] saved robust_cert.json  wall=64s

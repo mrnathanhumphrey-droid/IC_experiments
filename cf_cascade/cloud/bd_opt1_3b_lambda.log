@@ -1,0 +1,29 @@
+[BD:opt1_3b] facebook/opt-1.3b dispositive A/B/D N=30 -> model B-D + per-carrier resid
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 8759.29it/s]
+[BD:opt1_3b] gradient checkpointing ON (big model)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 3499097.98 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 501292.91 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 908832.41 examples/s]
+[BD:opt1_3b] w_A SST acc=0.800; 144 carriers (17s)
+[BD:opt1_3b] V basis done (84s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  32%|███▏      | 181000/560000 [00:00<00:00, 1795948.60 examples/s]Generating train split:  74%|███████▍  | 415000/560000 [00:00<00:00, 2111504.61 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 2102048.65 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 2067279.81 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:  10%|█         | 147000/1400000 [00:00<00:00, 1460817.09 examples/s]Generating train split:  22%|██▏       | 309000/1400000 [00:00<00:00, 1551039.01 examples/s]Generating train split:  34%|███▍      | 477000/1400000 [00:00<00:00, 1604708.69 examples/s]Generating train split:  46%|████▌     | 638000/1400000 [00:00<00:00, 1604225.39 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:00<00:00, 1578826.85 examples/s]Generating train split:  75%|███████▍  | 1046000/1400000 [00:00<00:00, 1591545.87 examples/s]Generating train split:  87%|████████▋ | 1217000/1400000 [00:00<00:00, 1610172.91 examples/s]Generating train split:  99%|█████████▉| 1387000/1400000 [00:00<00:00, 1634112.64 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:00<00:00, 1602269.80 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 1607074.60 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 702489.76 examples/s]Generating train split:  96%|█████████▋| 201886/209527 [00:00<00:00, 673602.87 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 675699.83 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 2507242.92 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 1099712.64 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 1154819.38 examples/s]
+[BD:opt1_3b] seed 0: ret A/B/D=0.510/0.667/0.660 (356s)
+[BD:opt1_3b] seed 5: ret A/B/D=0.717/0.643/0.550 (1621s)
+[BD:opt1_3b] seed 10: ret A/B/D=0.547/0.670/0.677 (2888s)
+[BD:opt1_3b] seed 15: ret A/B/D=0.510/0.493/0.617 (4154s)
+[BD:opt1_3b] seed 20: ret A/B/D=0.510/0.690/0.543 (5417s)
+[BD:opt1_3b] seed 25: ret A/B/D=0.647/0.717/0.520 (6680s)
+[BD:opt1_3b] seed 29: ret A/B/D=0.577/0.557/0.763 (7690s)
+
+[BD:opt1_3b] === B-D FEED ===
+  ret A/B/D=0.576/0.649/0.649 (pre 0.800, A_forget 0.224)
+  B-A=+0.074 | B-D=+0.000±0.020 | D-A=+0.074 | mapfrac B/D 0.140/0.014 | resid_B-D(medCarr) +0.009
+[BD:opt1_3b] saved bd_opt1_3b.json wall=7690s

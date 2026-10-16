@@ -1,0 +1,199 @@
+[L:pl] tarball _plastic_ship.tar.gz with 44 files
+[L:pl] picked gpu_1x_a10 @ us-east-1 $1.29/hr  RUN_ENV='SEEDS=0,1,2,3 NCAP=14 STEPS=180 DATASETS=clinc150,banking77 PROJDIM=64' wd=10800s
+[L:pl] instance_id=29b75d72672a4a1d9caabbb12b628737  (manual teardown if I go dark)
+[L:pl] status=booting ip=None 1s
+[L:pl] status=active ip=132.145.138.79 283s
+[L:pl] SSH up at 132.145.138.79 (283s)
+Warning: Permanently added '132.145.138.79' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.138.79' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.138.79' (ED25519) to the list of known hosts.
+[L:pl] uploaded+extracted (285s); pip...
+Warning: Permanently added '132.145.138.79' (ED25519) to the list of known hosts.
+2026-07-26 13:06:18.740094: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-26 13:06:18.884973: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785071178.963097    2565 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785071178.984685    2565 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785071179.103839    2565 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785071179.103907    2565 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785071179.103912    2565 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785071179.103915    2565 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-26 13:06:19.121525: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+pins 4.46.0 0.13.2 2.21.0
+[L:pl] running plastic_transfer_lambda.py (SEEDS=0,1,2,3 NCAP=14 STEPS=180 DATASETS=clinc150,banking77 PROJDIM=64) wd=10800s (329s)...
+Warning: Permanently added '132.145.138.79' (ED25519) to the list of known hosts.
+2026-07-26 13:06:33.458732: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-26 13:06:33.478217: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785071193.512223    2623 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785071193.523357    2623 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785071193.548817    2623 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785071193.548874    2623 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785071193.548878    2623 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785071193.548880    2623 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-26 13:06:33.555888: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[PL] SMOKE=False model=pythia1.4b ds=['clinc150', 'banking77'] ncap=14 seeds=[0, 1, 2, 3] steps=180 proj=64 dev=cuda
+[PL] EleutherAI/pythia-1.4b nlayers=24 layer=12 hdim=2048->64 (9s)
+Downloading readme:   0%|          | 0.00/24.0k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 24.0k/24.0k [00:00<00:00, 612kB/s]
+Downloading data:   0%|          | 0.00/312k [00:00<?, ?B/s]Downloading data: 100%|██████████| 312k/312k [00:00<00:00, 984kB/s]Downloading data: 100%|██████████| 312k/312k [00:00<00:00, 981kB/s]
+Downloading data:   0%|          | 0.00/77.8k [00:00<?, ?B/s]Downloading data: 100%|██████████| 77.8k/77.8k [00:00<00:00, 387kB/s]Downloading data: 100%|██████████| 77.8k/77.8k [00:00<00:00, 386kB/s]
+Downloading data:   0%|          | 0.00/136k [00:00<?, ?B/s]Downloading data: 100%|██████████| 136k/136k [00:00<00:00, 1.11MB/s]Downloading data: 100%|██████████| 136k/136k [00:00<00:00, 1.10MB/s]
+Generating train split:   0%|          | 0/15250 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 15250/15250 [00:00<00:00, 750661.74 examples/s]
+Generating validation split:   0%|          | 0/3100 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 3100/3100 [00:00<00:00, 487892.77 examples/s]
+Generating test split:   0%|          | 0/5500 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 5500/5500 [00:00<00:00, 605222.79 examples/s]
+[PL] clinc150: 14 caps 10 neg layer=12 (11s)
+[PL] clinc150 seed0 src0 done (42s)
+[PL] clinc150 seed0 src1 done (69s)
+[PL] clinc150 seed0 src2 done (97s)
+[PL] clinc150 seed0 src3 done (124s)
+[PL] clinc150 seed0 src4 done (151s)
+[PL] clinc150 seed0 src5 done (179s)
+[PL] clinc150 seed0 src6 done (207s)
+[PL] clinc150 seed0 src7 done (235s)
+[PL] clinc150 seed0 src8 done (262s)
+[PL] clinc150 seed0 src9 done (290s)
+[PL] clinc150 seed0 src10 done (317s)
+[PL] clinc150 seed0 src11 done (344s)
+[PL] clinc150 seed0 src12 done (372s)
+[PL] clinc150 seed0 src13 done (399s)
+[PL] clinc150 seed1 src0 done (427s)
+[PL] clinc150 seed1 src1 done (454s)
+[PL] clinc150 seed1 src2 done (482s)
+[PL] clinc150 seed1 src3 done (509s)
+[PL] clinc150 seed1 src4 done (537s)
+[PL] clinc150 seed1 src5 done (564s)
+[PL] clinc150 seed1 src6 done (592s)
+[PL] clinc150 seed1 src7 done (619s)
+[PL] clinc150 seed1 src8 done (647s)
+[PL] clinc150 seed1 src9 done (674s)
+[PL] clinc150 seed1 src10 done (702s)
+[PL] clinc150 seed1 src11 done (729s)
+[PL] clinc150 seed1 src12 done (757s)
+[PL] clinc150 seed1 src13 done (784s)
+[PL] clinc150 seed2 src0 done (812s)
+[PL] clinc150 seed2 src1 done (839s)
+[PL] clinc150 seed2 src2 done (867s)
+[PL] clinc150 seed2 src3 done (894s)
+[PL] clinc150 seed2 src4 done (922s)
+[PL] clinc150 seed2 src5 done (949s)
+[PL] clinc150 seed2 src6 done (976s)
+[PL] clinc150 seed2 src7 done (1004s)
+[PL] clinc150 seed2 src8 done (1031s)
+[PL] clinc150 seed2 src9 done (1058s)
+[PL] clinc150 seed2 src10 done (1086s)
+[PL] clinc150 seed2 src11 done (1113s)
+[PL] clinc150 seed2 src12 done (1142s)
+[PL] clinc150 seed2 src13 done (1169s)
+[PL] clinc150 seed3 src0 done (1196s)
+[PL] clinc150 seed3 src1 done (1224s)
+[PL] clinc150 seed3 src2 done (1251s)
+[PL] clinc150 seed3 src3 done (1279s)
+[PL] clinc150 seed3 src4 done (1307s)
+[PL] clinc150 seed3 src5 done (1334s)
+[PL] clinc150 seed3 src6 done (1362s)
+[PL] clinc150 seed3 src7 done (1389s)
+[PL] clinc150 seed3 src8 done (1417s)
+[PL] clinc150 seed3 src9 done (1444s)
+[PL] clinc150 seed3 src10 done (1472s)
+[PL] clinc150 seed3 src11 done (1500s)
+[PL] clinc150 seed3 src12 done (1527s)
+[PL] clinc150 seed3 src13 done (1555s)
+/home/ubuntu/ilaw/plastic_transfer_lambda.py:182: RuntimeWarning: Mean of empty slice
+  FT = np.nanmean(FTs, axis=0)
+/home/ubuntu/ilaw/plastic_transfer_lambda.py:183: RuntimeWarning: Mean of empty slice
+  even = np.nanmean(FTs[0::2], axis=0); odd = np.nanmean(FTs[1::2], axis=0)
+[PL] aggregated after clinc150; JSON updated (1566s)
+Downloading builder script:   0%|          | 0.00/7.17k [00:00<?, ?B/s]Downloading builder script: 100%|██████████| 7.17k/7.17k [00:00<00:00, 283kB/s]
+Downloading metadata:   0%|          | 0.00/5.89k [00:00<?, ?B/s]Downloading metadata: 100%|██████████| 5.89k/5.89k [00:00<00:00, 216kB/s]
+Downloading readme:   0%|          | 0.00/9.78k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 9.78k/9.78k [00:00<00:00, 355kB/s]
+Downloading data:   0%|          | 0.00/158k [00:00<?, ?B/s]Downloading data: 839kB [00:00, 18.2MB/s]                   
+Downloading data:   0%|          | 0.00/51.1k [00:00<?, ?B/s]Downloading data: 240kB [00:00, 12.2MB/s]                    
+Generating train split:   0%|          | 0/10003 [00:00<?, ? examples/s]Generating train split:  28%|██▊       | 2807/10003 [00:00<00:00, 27996.67 examples/s]Generating train split:  57%|█████▋    | 5733/10003 [00:00<00:00, 28734.59 examples/s]Generating train split:  86%|████████▋ | 8644/10003 [00:00<00:00, 28900.75 examples/s]Generating train split: 100%|██████████| 10003/10003 [00:00<00:00, 28770.98 examples/s]
+Generating test split:   0%|          | 0/3080 [00:00<?, ? examples/s]Generating test split:  97%|█████████▋| 3000/3080 [00:00<00:00, 29303.41 examples/s]Generating test split: 100%|██████████| 3080/3080 [00:00<00:00, 28982.50 examples/s]
+[PL] banking77: 14 caps 10 neg layer=12 (1568s)
+[PL] banking77 seed0 src0 done (1603s)
+[PL] banking77 seed0 src1 done (1633s)
+[PL] banking77 seed0 src2 done (1664s)
+[PL] banking77 seed0 src3 done (1695s)
+[PL] banking77 seed0 src4 done (1726s)
+[PL] banking77 seed0 src5 done (1758s)
+[PL] banking77 seed0 src6 done (1790s)
+[PL] banking77 seed0 src7 done (1823s)
+[PL] banking77 seed0 src8 done (1857s)
+[PL] banking77 seed0 src9 done (1888s)
+[PL] banking77 seed0 src10 done (1918s)
+[PL] banking77 seed0 src11 done (1949s)
+[PL] banking77 seed0 src12 done (1980s)
+[PL] banking77 seed0 src13 done (2010s)
+[PL] banking77 seed1 src0 done (2041s)
+[PL] banking77 seed1 src1 done (2072s)
+[PL] banking77 seed1 src2 done (2102s)
+[PL] banking77 seed1 src3 done (2132s)
+[PL] banking77 seed1 src4 done (2163s)
+[PL] banking77 seed1 src5 done (2196s)
+[PL] banking77 seed1 src6 done (2227s)
+[PL] banking77 seed1 src7 done (2260s)
+[PL] banking77 seed1 src8 done (2294s)
+[PL] banking77 seed1 src9 done (2324s)
+[PL] banking77 seed1 src10 done (2355s)
+[PL] banking77 seed1 src11 done (2385s)
+[PL] banking77 seed1 src12 done (2416s)
+[PL] banking77 seed1 src13 done (2447s)
+[PL] banking77 seed2 src0 done (2478s)
+[PL] banking77 seed2 src1 done (2509s)
+[PL] banking77 seed2 src2 done (2540s)
+[PL] banking77 seed2 src3 done (2571s)
+[PL] banking77 seed2 src4 done (2602s)
+[PL] banking77 seed2 src5 done (2634s)
+[PL] banking77 seed2 src6 done (2666s)
+[PL] banking77 seed2 src7 done (2699s)
+[PL] banking77 seed2 src8 done (2732s)
+[PL] banking77 seed2 src9 done (2763s)
+[PL] banking77 seed2 src10 done (2793s)
+[PL] banking77 seed2 src11 done (2823s)
+[PL] banking77 seed2 src12 done (2854s)
+[PL] banking77 seed2 src13 done (2885s)
+[PL] banking77 seed3 src0 done (2915s)
+[PL] banking77 seed3 src1 done (2946s)
+[PL] banking77 seed3 src2 done (2977s)
+[PL] banking77 seed3 src3 done (3007s)
+[PL] banking77 seed3 src4 done (3038s)
+[PL] banking77 seed3 src5 done (3070s)
+[PL] banking77 seed3 src6 done (3101s)
+[PL] banking77 seed3 src7 done (3134s)
+[PL] banking77 seed3 src8 done (3167s)
+[PL] banking77 seed3 src9 done (3198s)
+[PL] banking77 seed3 src10 done (3229s)
+[PL] banking77 seed3 src11 done (3259s)
+[PL] banking77 seed3 src12 done (3290s)
+[PL] banking77 seed3 src13 done (3321s)
+[PL] aggregated after banking77; JSON updated (3343s)
+
+[PL] === PLASTIC TRANSFER ===
+  clinc150: FT_rel=0.8493 var(row/col/resid)={'row': 0.806, 'col': 0.039, 'resid': 0.165} FT=-0.015+/-0.068
+    COS        vsFT rho=0.1794 CI[0.0478, 0.306] p=0.0145 | vsRESID rho=0.0508 p=0.5215
+    CKA_drift  vsFT rho=0.0307 CI[-0.1134, 0.1888] p=0.6755 | vsRESID rho=0.0097 p=0.9025
+    CKA_reuse  vsFT rho=0.0661 CI[-0.0771, 0.2015] p=0.39 | vsRESID rho=0.0098 p=0.889
+    SUBOVL     vsFT rho=-0.2135 CI[-0.35, -0.0638] p=0.003 | vsRESID rho=0.1073 p=0.1445
+    LOGME      vsFT rho=-0.1833 CI[-0.3172, -0.0399] p=0.015 | vsRESID rho=0.1685 p=0.0205
+    EFFRANK    vsFT rho=0.0525 CI[-0.0931, 0.2044] p=0.4995 | vsRESID rho=-0.0516 p=0.478
+  banking77: FT_rel=0.7799 var(row/col/resid)={'row': 0.614, 'col': 0.065, 'resid': 0.325} FT=-0.000+/-0.055
+    COS        vsFT rho=0.0619 CI[-0.0835, 0.2062] p=0.4155 | vsRESID rho=0.01 p=0.897
+    CKA_drift  vsFT rho=-0.0771 CI[-0.2085, 0.063] p=0.29 | vsRESID rho=-0.0141 p=0.851
+    CKA_reuse  vsFT rho=0.08 CI[-0.0661, 0.2162] p=0.286 | vsRESID rho=0.0022 p=0.979
+    SUBOVL     vsFT rho=-0.09 CI[-0.2306, 0.0523] p=0.2245 | vsRESID rho=-0.0134 p=0.8435
+    LOGME      vsFT rho=0.2438 CI[0.1233, 0.3543] p=0.0015 | vsRESID rho=0.1043 p=0.166
+    EFFRANK    vsFT rho=-0.0304 CI[-0.1642, 0.1096] p=0.678 | vsRESID rho=-0.052 p=0.4875
+
+[PL] VERDICT: {'cos_dissociation_persists': False, 'feature_reuse_hits_vs_FT': [], 'feature_reuse_hits_vs_resid': [], 'headline': 'NULL: plastic transfer also geometrically opaque (no feature-reuse descriptor clears bar)'}
+[PL] wrote /home/ubuntu/ilaw/out/plastic_transfer.json  wall=3365s
+[L:pl] run rc=0 (3706s)
+Warning: Permanently added '132.145.138.79' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.138.79' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.138.79' (ED25519) to the list of known hosts.
+[L:pl] RESULT LANDED: D:\IC_experiments\interference_law\out\plastic_transfer.json rows=D:\IC_experiments\interference_law\out\plastic_rows.jsonl
+[L:pl] terminating 29b75d72672a4a1d9caabbb12b628737...
+[L:pl] terminated 29b75d72672a4a1d9caabbb12b628737
+[L:pl] ledger += 62min $1.33

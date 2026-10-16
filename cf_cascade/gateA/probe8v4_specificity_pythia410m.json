@@ -1,0 +1,66 @@
+{
+  "cell": "pythia410m",
+  "family": "PYTHIA",
+  "model": "EleutherAI/pythia-410m",
+  "n_carriers": 72,
+  "n_seeds": 100,
+  "w_A_acc": 0.7533333333333333,
+  "VOID": false,
+  "calibration_curve": {
+    "1.0e-05": 0.765,
+    "1.5e-05": 0.7551666666666667,
+    "2.0e-05": 0.7413333333333333,
+    "3.0e-05": 0.7273333333333334
+  },
+  "chosen_lr": 3e-05,
+  "tight_dose": false,
+  "no_nondestructive_point": false,
+  "ret_anchor_ch": [
+    0.7347666666666668,
+    0.0023148643765738015
+  ],
+  "childhood_nondestructive": true,
+  "null_dead": false,
+  "dphase2_noch": [
+    0.1426666666666666,
+    0.008035555108608195
+  ],
+  "dphase2_ch": [
+    0.04610000000000001,
+    0.004840452205456726
+  ],
+  "dalttask_noch": [
+    0.2633333333333332,
+    1.1158161231197418e-17
+  ],
+  "dalttask_ch": [
+    0.18109999999999996,
+    0.007449652181186109
+  ],
+  "drandtop16_noch": [
+    -0.007473333333333376,
+    0.00021321019173244494
+  ],
+  "drandtop16_ch": [
+    0.000580000000000003,
+    0.0005028899646029105
+  ],
+  "N_phase2": [
+    0.0965666666666666,
+    0.009439565584746566
+  ],
+  "N_alttask": [
+    0.08223333333333331,
+    0.007449652181186109
+  ],
+  "N_randtop16": [
+    -0.00805333333333338,
+    0.0005758070508602917
+  ],
+  "S_specificity": [
+    0.014333333333333314,
+    0.0114937644735434
+  ],
+  "SPECIFIC_if": "S>0 (>=2sigma) AND N_phase2>N_randtop16 (>=2sigma)",
+  "GENERIC_if": "S within +-2sigma of 0 AND N_phase2~=N_alttask>N_randtop16"
+}

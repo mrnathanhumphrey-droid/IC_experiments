@@ -1,0 +1,35 @@
+[PR] #3 subspace-dim | SMOKE=0 model=google/gemma-2-2b alpha=4.0 dev=cuda
+2026-07-27 18:56:54.806853: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-27 18:56:54.906752: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785178614.943465    2558 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785178614.953989    2558 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785178615.020385    2558 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785178615.020427    2558 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785178615.020431    2558 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785178615.020434    2558 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-27 18:56:55.032493: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+Downloading shards:   0%|          | 0/3 [00:00<?, ?it/s]Downloading shards:  33%|███▎      | 1/3 [00:50<01:41, 50.78s/it]Downloading shards:  67%|██████▋   | 2/3 [01:07<00:30, 30.79s/it]Downloading shards: 100%|██████████| 3/3 [01:15<00:00, 20.49s/it]Downloading shards: 100%|██████████| 3/3 [01:15<00:00, 25.27s/it]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  2.67it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  2.63it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  3.39it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  3.15it/s]
+[MODEL] google/gemma-2-2b nlayers=26 d=2304
+  [sentiment] L24 spec_PR=3.159 causal_PR=20.798 causal_k90=25 top1c=0.125 steer=47.8366 ablat=6.4352 valid=True
+  [size] L25 spec_PR=6.039 causal_PR=23.032 causal_k90=27 top1c=0.119 steer=46.5739 ablat=10.2116 valid=True
+  [temperature] L26 spec_PR=7.574 causal_PR=14.599 causal_k90=21 top1c=0.169 steer=16.6165 ablat=8.4107 valid=True
+  [speed] L6 spec_PR=9.124 causal_PR=28.206 causal_k90=29 top1c=0.07 steer=11.4645 ablat=1.319 valid=True
+  [brightness] L23 spec_PR=9.46 causal_PR=21.202 causal_k90=26 top1c=0.128 steer=37.1476 ablat=8.3721 valid=True
+  [difficulty] L5 spec_PR=5.973 causal_PR=21.997 causal_k90=25 top1c=0.12 steer=7.8639 ablat=7.724 valid=True
+  [wealth] L5 spec_PR=7.283 causal_PR=29.11 causal_k90=28 top1c=0.066 steer=9.5242 ablat=2.574 valid=True
+  [strength] L7 spec_PR=10.982 causal_PR=26.258 causal_k90=27 top1c=0.08 steer=7.9928 ablat=5.3041 valid=True
+  [age] L8 spec_PR=12.17 causal_PR=15.615 causal_k90=26 top1c=0.197 steer=8.3796 ablat=6.8919 valid=True
+  [loudness] L23 spec_PR=9.602 causal_PR=18.244 causal_k90=27 top1c=0.17 steer=45.1383 ablat=6.1659 valid=True
+  [cleanliness] L7 spec_PR=8.598 causal_PR=26.678 causal_k90=27 top1c=0.086 steer=11.5501 ablat=9.0103 valid=True
+  [toxicity] L23 spec_PR=5.744 causal_PR=22.576 causal_k90=24 top1c=0.095 steer=23.9832 ablat=11.9827 valid=True
+
+[PR] CORE: rho(specPR,causalPR)=-0.119 perm_p=0.7034 | rho(specPR,causalk90)=+0.434 | n=12 HIT=False
+[PR] wrote /home/ubuntu/pr/gateA/pr_steering_gemma-2-2b.json  wall=179s

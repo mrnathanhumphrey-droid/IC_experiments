@@ -1,0 +1,35 @@
+[DEV3] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  71%|███████   | 206/292 [00:00<00:00, 2042.64it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2170.07it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2085201.00 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 383579.77 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 604449.79 examples/s]
+[DEV3] pre SST acc=0.753
+[DEV3]  stream +agnews n=2400
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 69000/560000 [00:00<00:00, 680864.67 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 835949.15 examples/s]Generating train split:  49%|████▉     | 276000/560000 [00:00<00:00, 961565.94 examples/s]Generating train split:  75%|███████▍  | 418000/560000 [00:00<00:00, 1071384.78 examples/s]Generating train split:  96%|█████████▌| 537000/560000 [00:00<00:00, 1110480.27 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1019719.75 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1076479.90 examples/s]
+[DEV3]  stream +dbpedia n=900
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   4%|▍         | 62000/1400000 [00:00<00:02, 611197.59 examples/s]Generating train split:  10%|█         | 147000/1400000 [00:00<00:01, 689692.99 examples/s]Generating train split:  16%|█▌        | 220000/1400000 [00:00<00:01, 703513.21 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 719638.49 examples/s]Generating train split:  28%|██▊       | 398000/1400000 [00:00<00:01, 787944.83 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 711796.71 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 727801.12 examples/s]Generating train split:  49%|████▊     | 682000/1400000 [00:00<00:00, 774796.26 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 690572.43 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 707488.09 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 720628.02 examples/s]Generating train split:  75%|███████▌  | 1056000/1400000 [00:01<00:00, 773901.26 examples/s]Generating train split:  84%|████████▍ | 1180000/1400000 [00:01<00:00, 789857.88 examples/s]Generating train split:  90%|█████████ | 1265000/1400000 [00:01<00:00, 782253.83 examples/s]Generating train split:  97%|█████████▋| 1356000/1400000 [00:01<00:00, 780214.19 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 747221.36 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 887946.48 examples/s]
+[DEV3]  stream +yahoo n=900
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 241963.12 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 255262.10 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 251965.02 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 241895.58 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 240245.50 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 243866.21 examples/s]
+[DEV3]  stream +newscat n=900
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1820098.83 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 805357.91 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 713377.67 examples/s]
+[DEV3]  stream +emotion n=900
+[DEV3] seed 0: A/B/C/D sstA=0.490/0.710/0.510/0.710 | taskB=0.86/0.79/0.87/0.88 (207s)
+[DEV3] seed 1: A/B/C/D sstA=0.517/0.710/0.687/0.567 | taskB=0.90/0.90/0.89/0.83 (383s)
+[DEV3] seed 2: A/B/C/D sstA=0.570/0.667/0.517/0.707 | taskB=0.91/0.88/0.89/0.87 (556s)
+[DEV3] seed 3: A/B/C/D sstA=0.517/0.673/0.623/0.490 | taskB=0.89/0.89/0.89/0.88 (732s)
+[DEV3] seed 4: A/B/C/D sstA=0.497/0.540/0.563/0.683 | taskB=0.88/0.88/0.89/0.86 (909s)
+[DEV3] seed 5: A/B/C/D sstA=0.490/0.613/0.663/0.570 | taskB=0.88/0.84/0.85/0.81 (1085s)
+[DEV3] seed 6: A/B/C/D sstA=0.607/0.657/0.707/0.680 | taskB=0.86/0.86/0.91/0.86 (1261s)
+
+[DEV3] === VERDICT (held-out=subj) ===
+  CASCADE INERT (clean negative): C~B (C-B=-0.043, 2SE 0.069) — depth-distribution adds nothing over all-at-once. Consistent w/ SPIRAL-3/5 inert geometry.
+  retention A/B/C/D = 0.527/0.653/0.610/0.630 (pre 0.753)
+  PAIRED C-B=-0.043±0.034 | C-D=-0.020±0.051 | B-A=+0.126±0.024
+  task-B acc A/B/C/D = 0.88/0.86/0.88/0.86 (starved=False)
+  childhood loss (master-none) B l0->l1=9.50->0.79 C=14.55->1.22 D=12.81->1.57
+[DEV3] saved dev_experiment3.json wall=1261s

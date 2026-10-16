@@ -1,0 +1,33 @@
+[DISP] OPT DISPOSITIVE — 30-seed A/B/D retention, pinned w_A, forced subj
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  77%|███████▋  | 298/388 [00:00<00:00, 2960.69it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 2962.60it/s]
+[DISP] loaded pinned w_A from /home/ubuntu/gateA/opt350m_sst2_wA.pt
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2170769.08 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 344391.06 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 566478.35 examples/s]
+[DISP] pinned w_A SST acc=0.823 (14s)
+[DISP] V basis done (47s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 67000/560000 [00:00<00:00, 662438.58 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 802011.09 examples/s]Generating train split:  49%|████▉     | 276000/560000 [00:00<00:00, 939151.75 examples/s]Generating train split:  75%|███████▍  | 418000/560000 [00:00<00:00, 1054142.91 examples/s]Generating train split:  96%|█████████▌| 537000/560000 [00:00<00:00, 1094550.07 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 998950.88 examples/s] 
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1021104.64 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   4%|▍         | 58000/1400000 [00:00<00:02, 571541.15 examples/s]Generating train split:  11%|█         | 149000/1400000 [00:00<00:01, 686255.00 examples/s]Generating train split:  16%|█▌        | 223000/1400000 [00:00<00:01, 706743.49 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 723136.76 examples/s]Generating train split:  28%|██▊       | 396000/1400000 [00:00<00:01, 780812.43 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 696243.70 examples/s]Generating train split:  42%|████▏     | 585000/1400000 [00:00<00:01, 746893.57 examples/s]Generating train split:  50%|████▉     | 695000/1400000 [00:00<00:00, 737634.35 examples/s]Generating train split:  56%|█████▋    | 791000/1400000 [00:01<00:00, 693305.61 examples/s]Generating train split:  63%|██████▎   | 886000/1400000 [00:01<00:00, 671937.95 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 681058.63 examples/s]Generating train split:  75%|███████▌  | 1051000/1400000 [00:01<00:00, 730447.78 examples/s]Generating train split:  81%|████████  | 1130000/1400000 [00:01<00:00, 733102.84 examples/s]Generating train split:  87%|████████▋ | 1217000/1400000 [00:01<00:00, 735241.48 examples/s]Generating train split:  93%|█████████▎| 1306000/1400000 [00:01<00:00, 741560.85 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 780249.35 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 727914.29 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 896784.08 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 25987/209527 [00:00<00:00, 253084.40 examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 238713.57 examples/s]Generating train split:  38%|███▊      | 79763/209527 [00:00<00:00, 250747.54 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 250786.11 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 250579.83 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 240509.33 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 237054.59 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 241866.28 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1800275.34 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 667617.03 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 725972.13 examples/s]
+[DISP] held-out=subj FORCED; stream=['agnews', 'dbpedia', 'yahoo', 'newscat', 'emotion'] (61s)
+[DISP] seed 0: A/B/D=0.567/0.737/0.593 (209s)
+[DISP] seed 5: A/B/D=0.607/0.603/0.570 (941s)
+[DISP] seed 10: A/B/D=0.543/0.787/0.510 (1671s)
+[DISP] seed 15: A/B/D=0.540/0.567/0.537 (2384s)
+[DISP] seed 20: A/B/D=0.517/0.767/0.683 (3117s)
+[DISP] seed 25: A/B/D=0.773/0.573/0.787 (3827s)
+[DISP] seed 29: A/B/D=0.653/0.573/0.597 (4400s)
+[CARRIER] per-carrier mapfrac B: q_proj=0.303 k_proj=0.295 v_proj=0.293 out_proj=0.294 fc1=0.294 fc2=0.079
+
+[DISP] === OPT DISPOSITIVE VERDICT (N=30, held-out=subj, pinned w_A 0.823) ===
+  OPT PROTECTION REAL but rung-3-INFLATED: B−A=+0.081±0.021 (25/30+), D−A=+0.052±0.021 (20/30+) both clear at N=30. Rescope: OPT protects like Pythia at SMALLER magnitude than rung-3's +0.16.
+  retention A/B/D = 0.581/0.662/0.633 (pre 0.823, A_forget 0.243)
+  PAIRED B−A=+0.081±0.021 (25/30+) | D−A=+0.052±0.021 (20/30+) | B−D=+0.029±0.022 (20/30+)
+  guards: mapfrac B/D 0.219/0.014 | childhood loss-drop B/D 6.68/13.56
+[DISP] saved opt_dispositive.json wall=4400s

@@ -1,0 +1,101 @@
+{
+  "OPT": {
+    "tag": "OPT",
+    "effrank_FB_abs": 14.392401743056585,
+    "sweep": {
+      "4": {
+        "distinct_orthofrac": 0.5010205209255219,
+        "stable_grassmann": 0.6163143217563629,
+        "chance": 0.00341796875
+      },
+      "8": {
+        "distinct_orthofrac": 0.6334963887929916,
+        "stable_grassmann": 0.4724215716123581,
+        "chance": 0.0068359375
+      },
+      "16": {
+        "distinct_orthofrac": 0.7081946134567261,
+        "stable_grassmann": 0.3569193184375763,
+        "chance": 0.013671875
+      },
+      "32": {
+        "distinct_orthofrac": 0.7293295860290527,
+        "stable_grassmann": 0.32516640424728394,
+        "chance": 0.02734375
+      },
+      "64": {
+        "distinct_orthofrac": 0.7078589498996735,
+        "stable_grassmann": 0.33687929809093475,
+        "chance": 0.0546875
+      },
+      "128": {
+        "distinct_orthofrac": 0.6481879204511642,
+        "stable_grassmann": 0.3934032917022705,
+        "chance": 0.109375
+      }
+    },
+    "KWORK": 16,
+    "gate1_distinct_orthofrac_K16": 0.7081946134567261,
+    "gate2_effrank_over_d": 0.011194389074841302,
+    "gate2_topk_energy_frac": 0.9675949379053712,
+    "gate2_antagonism_cos": 0.09553958094991506,
+    "gate3_splithalf_grassmann_K16": 0.3569193184375763,
+    "gates": {
+      "distinct": true,
+      "conditioned": true,
+      "stable": true,
+      "crossterm_trivial": false,
+      "ALL_PASS": true
+    }
+  },
+  "PYTHIA": {
+    "tag": "PYTHIA",
+    "effrank_FB_abs": 2.0557989193928963,
+    "sweep": {
+      "4": {
+        "distinct_orthofrac": 0.4109869599342346,
+        "stable_grassmann": 0.9625498652458191,
+        "chance": 0.0029296875
+      },
+      "8": {
+        "distinct_orthofrac": 0.44955867528915405,
+        "stable_grassmann": 0.9002139568328857,
+        "chance": 0.005859375
+      },
+      "16": {
+        "distinct_orthofrac": 0.5008932650089264,
+        "stable_grassmann": 0.7615256905555725,
+        "chance": 0.01171875
+      },
+      "32": {
+        "distinct_orthofrac": 0.6038663387298584,
+        "stable_grassmann": 0.592821478843689,
+        "chance": 0.0234375
+      },
+      "64": {
+        "distinct_orthofrac": 0.6546572744846344,
+        "stable_grassmann": 0.47830744087696075,
+        "chance": 0.046875
+      },
+      "128": {
+        "distinct_orthofrac": 0.6513427048921585,
+        "stable_grassmann": 0.4296455979347229,
+        "chance": 0.09375
+      }
+    },
+    "KWORK": 16,
+    "gate1_distinct_orthofrac_K16": 0.5008932650089264,
+    "gate2_effrank_over_d": 0.00162008742099115,
+    "gate2_topk_energy_frac": 0.9993622454324974,
+    "gate2_antagonism_cos": -0.03357421072834642,
+    "gate3_splithalf_grassmann_K16": 0.7615256905555725,
+    "gates": {
+      "distinct": true,
+      "conditioned": true,
+      "stable": true,
+      "crossterm_trivial": true,
+      "ALL_PASS": true
+    }
+  },
+  "verdict": "BASIS EXISTS both substrates -> green-light Probe 1 then Probe 2."
+}

@@ -1,0 +1,144 @@
+{
+ "config": {
+  "caps": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19
+  ],
+  "ntr": [
+   45,
+   135
+  ],
+  "steps": [
+   120,
+   70
+  ],
+  "nseed": 3,
+  "seed": 0,
+  "prereg_lock": "52671eee"
+ },
+ "results": {
+  "cifar": {
+   "n": 20,
+   "base_auc_median": 0.878,
+   "headroom": true,
+   "transfer_frac": 0.003,
+   "forget_frac": 0.987,
+   "delta_range": [
+    -0.7921,
+    0.0457
+   ],
+   "rho_cos_delta": 0.728,
+   "pearson_cos_delta": 0.752,
+   "zero_crossing_c0": null,
+   "delta_vs_cos_curve": [
+    [
+     -0.623,
+     -0.5518
+    ],
+    [
+     -0.432,
+     -0.4833
+    ],
+    [
+     -0.318,
+     -0.4118
+    ],
+    [
+     -0.174,
+     -0.4084
+    ],
+    [
+     -0.01,
+     -0.3613
+    ],
+    [
+     0.137,
+     -0.3231
+    ],
+    [
+     0.331,
+     -0.2926
+    ],
+    [
+     0.668,
+     -0.1505
+    ]
+   ],
+   "checks": {
+    "P1_transfer_exists": false,
+    "P2_one_signed_law": true
+   }
+  },
+  "dtd": {
+   "n": 20,
+   "base_auc_median": 0.8895,
+   "headroom": true,
+   "transfer_frac": 0.0,
+   "forget_frac": 1.0,
+   "delta_range": [
+    -0.8053,
+    -0.0402
+   ],
+   "rho_cos_delta": 0.549,
+   "pearson_cos_delta": 0.56,
+   "zero_crossing_c0": null,
+   "delta_vs_cos_curve": [
+    [
+     -0.538,
+     -0.48
+    ],
+    [
+     -0.338,
+     -0.4381
+    ],
+    [
+     -0.223,
+     -0.4245
+    ],
+    [
+     -0.128,
+     -0.3673
+    ],
+    [
+     -0.02,
+     -0.3869
+    ],
+    [
+     0.096,
+     -0.3479
+    ],
+    [
+     0.219,
+     -0.2705
+    ],
+    [
+     0.512,
+     -0.2328
+    ]
+   ],
+   "checks": {
+    "P1_transfer_exists": false,
+    "P2_one_signed_law": true
+   }
+  }
+ },
+ "verdict": "NO transfer even with headroom (forgetting is one-sided)"
+}

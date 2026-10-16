@@ -1,0 +1,52 @@
+[L:f1b] tarball _face1b_ship.tar.gz with 37 files
+[L:f1b] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L:f1b] instance_id=6b4052002c904f9fbddff19c86d8c5e0  (manual teardown if I go dark)
+[L:f1b] status=booting ip=None 1s
+[L:f1b] status=active ip=132.145.132.72 298s
+[L:f1b] SSH up at 132.145.132.72 (298s)
+Warning: Permanently added '132.145.132.72' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.132.72' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.132.72' (ED25519) to the list of known hosts.
+[L:f1b] uploaded+extracted (299s); pip...
+Warning: Permanently added '132.145.132.72' (ED25519) to the list of known hosts.
+pipok
+[L:f1b] running face1c_placebo_lambda.py (SMOKE=1 OUTNAME=face1c_placebo_smoke.json) wd=1800s (322s)...
+Warning: Permanently added '132.145.132.72' (ED25519) to the list of known hosts.
+2026-07-18 22:44:51.577056: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784414691.662193    2606 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1784414691.688720    2606 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1784414691.857693    2606 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784414691.857727    2606 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784414691.857729    2606 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784414691.857731    2606 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+[PBO] SMOKE=True ncap=3 seeds=[0, 1] steps=40 conds=['real', 'randtext', 'noise'] grid=[12]x[0] dev=cuda
+Downloading builder script:   0%|          | 0.00/7.17k [00:00<?, ?B/s]Downloading builder script: 100%|██████████| 7.17k/7.17k [00:00<00:00, 312kB/s]
+Downloading metadata:   0%|          | 0.00/5.89k [00:00<?, ?B/s]Downloading metadata: 100%|██████████| 5.89k/5.89k [00:00<00:00, 243kB/s]
+Downloading readme:   0%|          | 0.00/9.78k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 9.78k/9.78k [00:00<00:00, 392kB/s]
+Downloading data:   0%|          | 0.00/158k [00:00<?, ?B/s]Downloading data: 839kB [00:00, 27.0MB/s]                   
+Downloading data:   0%|          | 0.00/51.1k [00:00<?, ?B/s]Downloading data: 240kB [00:00, 22.6MB/s]                    
+Generating train split:   0%|          | 0/10003 [00:00<?, ? examples/s]Generating train split:  34%|███▍      | 3427/10003 [00:00<00:00, 34213.26 examples/s]Generating train split:  71%|███████   | 7086/10003 [00:00<00:00, 35605.47 examples/s]Generating train split: 100%|██████████| 10003/10003 [00:00<00:00, 35936.36 examples/s]
+Generating test split:   0%|          | 0/3080 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 3080/3080 [00:00<00:00, 36764.92 examples/s]
+[PBO] model+3 caps (9s); PHASE A: 6 x (REAL+RANDTEXT SFT + NOISE)...
+[PBO] seed 0 done, delta_norm~27.75 (56s)
+[PBO] seed 1 done, delta_norm~28.97 (102s)
+[PBO] PHASE B: projections [12]x[0] x 3 conds (102s)...
+  [PBO] real     dim=12 ps=0: auc0=0.763 medFgt=-0.016 dom-rho=-1.000 curl-rho=-0.886
+  [PBO] randtext dim=12 ps=0: auc0=0.763 medFgt=+0.016 dom-rho=+1.000 curl-rho=+0.200
+  [PBO] noise    dim=12 ps=0: auc0=0.763 medFgt=+0.027 dom-rho=+0.500 curl-rho=-0.257
+
+[PBO] === curl-rho by condition (in-band median) ===
+  real    : curl-rho=None  dom-rho=None  medFgt=None  (n_inband=0)
+  randtext: curl-rho=None  dom-rho=None  medFgt=None  (n_inband=0)
+  noise   : curl-rho=None  dom-rho=None  medFgt=None  (n_inband=0)
+
+[PBO] HEADLINE: INCONCLUSIVE — missing in-band points.
+[PBO] wrote /home/ubuntu/ilaw/out/face1c_placebo_smoke.json  wall=102s
+[L:f1b] run rc=0 (439s)
+Warning: Permanently added '132.145.132.72' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.132.72' (ED25519) to the list of known hosts.
+[L:f1b] RESULT LANDED: D:\IC_experiments\interference_law\out\face1c_placebo_smoke.json
+[L:f1b] terminating 6b4052002c904f9fbddff19c86d8c5e0...
+[L:f1b] terminated 6b4052002c904f9fbddff19c86d8c5e0
+[L:f1b] ledger += 7min $0.24

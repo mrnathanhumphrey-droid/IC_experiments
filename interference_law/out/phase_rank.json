@@ -1,0 +1,46 @@
+{
+ "config": {
+  "ranks": [
+   2,
+   8,
+   32
+  ],
+  "N_B": 8,
+  "B_steps": 1500,
+  "B_lr": 0.004,
+  "seed": 0
+ },
+ "frozen_ref_rho": -0.74,
+ "per_rank": {
+  "2": {
+   "rho_cos_pool": -0.042,
+   "rho_cos_within_B": -0.055,
+   "eta2_B": 0.388,
+   "rho_drift_disrupt": 0.714,
+   "median_forget": 0.017,
+   "inband": false,
+   "mean_drift": 29.452,
+   "mean_dtheta": 16.728
+  },
+  "8": {
+   "rho_cos_pool": -0.067,
+   "rho_cos_within_B": -0.114,
+   "eta2_B": 0.307,
+   "rho_drift_disrupt": 0.81,
+   "median_forget": 0.025,
+   "inband": false,
+   "mean_drift": 30.858,
+   "mean_dtheta": 27.498
+  },
+  "32": {
+   "rho_cos_pool": -0.08,
+   "rho_cos_within_B": -0.181,
+   "eta2_B": 0.26,
+   "rho_drift_disrupt": 0.0,
+   "median_forget": 0.116,
+   "inband": true,
+   "mean_drift": 32.11,
+   "mean_dtheta": 53.275
+  }
+ }
+}

@@ -1,0 +1,26 @@
+[PR] #3 subspace-dim | SMOKE=1 model=google/gemma-2-2b alpha=4.0 dev=cuda
+2026-07-27 18:43:07.772694: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-27 18:43:07.842425: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785177787.876874    2569 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785177787.886587    2569 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785177787.941100    2569 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785177787.941128    2569 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785177787.941130    2569 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785177787.941132    2569 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-27 18:43:07.949651: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+Downloading shards:   0%|          | 0/3 [00:00<?, ?it/s]Downloading shards:  33%|███▎      | 1/3 [01:38<03:16, 98.41s/it]Downloading shards:  67%|██████▋   | 2/3 [01:51<00:48, 48.50s/it]Downloading shards: 100%|██████████| 3/3 [01:57<00:00, 28.93s/it]Downloading shards: 100%|██████████| 3/3 [01:57<00:00, 39.20s/it]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  2.68it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  2.65it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  3.40it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  3.16it/s]
+[MODEL] google/gemma-2-2b nlayers=26 d=2304
+  [sentiment] L24 PR=3.159 sr=1.83 ablatable=6.4352 k*=1 top1abl=1.052 steer=47.8366
+  [size] L25 PR=6.039 sr=2.751 ablatable=10.2116 k*=1 top1abl=1.277 steer=46.5739
+  [toxicity] L23 PR=5.744 sr=2.597 ablatable=11.9827 k*=8 top1abl=0.64 steer=23.9832
+
+[PR] 3/3 concepts have valid k* — need >=5 for correlation (smoke validates pipeline).
+[PR] wrote /home/ubuntu/pr/gateA/pr_steering_gemma-2-2b.json  wall=140s

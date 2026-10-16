@@ -1,0 +1,67 @@
+[BP] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  61%|██████    | 236/388 [00:00<00:00, 2346.06it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 2731.44it/s]
+[BP] building panel...
+[BP]   +JSON agnews (topic) n=2400
+[BP]   +JSON yelp (sentiment) n=2400
+[BP]   +JSON subj (subjectivity) n=2400
+[BP]   +JSON ucdp (violence) n=4500
+[BP]   +JSON nullperm (NULLperm) n=2400
+Generating train split:   0%|          | 0/18612 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 18612/18612 [00:00<00:00, 303181.50 examples/s]
+[BP]   +HF code (code) n=600
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1376027.56 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 774857.57 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 738628.86 examples/s]
+[BP]   +HF emotion (emotion) n=600
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▎        | 70000/560000 [00:00<00:00, 691625.57 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 818534.47 examples/s]Generating train split:  49%|████▉     | 276000/560000 [00:00<00:00, 952401.10 examples/s]Generating train split:  75%|███████▍  | 419000/560000 [00:00<00:00, 1080681.00 examples/s]Generating train split:  97%|█████████▋| 545000/560000 [00:00<00:00, 1136342.36 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1031268.19 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1144363.29 examples/s]
+[BP]   +HF dbpedia (topic) n=600
+Generating train split:   0%|          | 0/25000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 25000/25000 [00:00<00:00, 271963.23 examples/s]
+Generating test split:   0%|          | 0/25000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 25000/25000 [00:00<00:00, 306163.41 examples/s]
+Generating unsupervised split:   0%|          | 0/50000 [00:00<?, ? examples/s]Generating unsupervised split:  50%|█████     | 25000/50000 [00:00<00:00, 239700.81 examples/s]Generating unsupervised split: 100%|██████████| 50000/50000 [00:00<00:00, 268783.63 examples/s]
+[BP]   +HF imdb (sentiment) n=600
+Generating train split:   0%|          | 0/26732 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 26732/26732 [00:00<00:00, 2058533.32 examples/s]
+Generating test split:   0%|          | 0/3432 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 3432/3432 [00:00<00:00, 1040466.30 examples/s]
+[BP]   +HF tweet (sentiment) n=600
+Generating train split:   0%|          | 0/2119719 [00:00<?, ? examples/s]Generating train split:   2%|▏         | 34000/2119719 [00:00<00:06, 335081.51 examples/s]Generating train split:   3%|▎         | 72000/2119719 [00:00<00:06, 328602.24 examples/s]Generating train split:   5%|▌         | 110000/2119719 [00:00<00:05, 344790.46 examples/s]Generating train split:   8%|▊         | 163000/2119719 [00:00<00:05, 337686.04 examples/s]Generating train split:  10%|▉         | 202000/2119719 [00:00<00:05, 350936.45 examples/s]Generating train split:  12%|█▏        | 258000/2119719 [00:00<00:05, 353292.73 examples/s]Generating train split:  15%|█▍        | 309000/2119719 [00:00<00:05, 344685.94 examples/s]Generating train split:  17%|█▋        | 356000/2119719 [00:01<00:04, 373487.17 examples/s]Generating train split:  19%|█▉        | 402000/2119719 [00:01<00:04, 347352.76 examples/s]Generating train split:  22%|██▏       | 457000/2119719 [00:01<00:04, 351116.67 examples/s]Generating train split:  24%|██▎       | 500000/2119719 [00:01<00:04, 363037.27 examples/s]Generating train split:  26%|██▌       | 553930/2119719 [00:01<00:04, 357855.14 examples/s]Generating train split:  28%|██▊       | 598930/2119719 [00:01<00:04, 377764.80 examples/s]Generating train split:  31%|███       | 654930/2119719 [00:01<00:03, 373414.03 examples/s]Generating train split:  33%|███▎      | 696930/2119719 [00:01<00:03, 382162.89 examples/s]Generating train split:  35%|███▌      | 741930/2119719 [00:02<00:03, 348325.54 examples/s]Generating train split:  37%|███▋      | 781930/2119719 [00:02<00:03, 355607.00 examples/s]Generating train split:  40%|███▉      | 839930/2119719 [00:02<00:03, 362998.40 examples/s]Generating train split:  41%|████▏     | 877930/2119719 [00:02<00:03, 364566.14 examples/s]Generating train split:  44%|████▍     | 930930/2119719 [00:02<00:03, 358371.02 examples/s]Generating train split:  46%|████▌     | 978930/2119719 [00:02<00:03, 342674.12 examples/s]Generating train split:  48%|████▊     | 1017930/2119719 [00:02<00:03, 350055.05 examples/s]Generating train split:  50%|████▉     | 1056930/2119719 [00:02<00:02, 358550.53 examples/s]Generating train split:  52%|█████▏    | 1104860/2119719 [00:03<00:02, 342191.40 examples/s]Generating train split:  54%|█████▍    | 1141860/2119719 [00:03<00:02, 346310.50 examples/s]Generating train split:  56%|█████▌    | 1180860/2119719 [00:03<00:02, 354694.28 examples/s]Generating train split:  58%|█████▊    | 1230860/2119719 [00:03<00:02, 341764.72 examples/s]Generating train split:  60%|█████▉    | 1267860/2119719 [00:03<00:02, 347469.22 examples/s]Generating train split:  62%|██████▏   | 1316860/2119719 [00:03<00:02, 335174.43 examples/s]Generating train split:  64%|██████▍   | 1365860/2119719 [00:03<00:02, 326738.12 examples/s]Generating train split:  66%|██████▋   | 1406860/2119719 [00:03<00:02, 343849.37 examples/s]Generating train split:  69%|██████▉   | 1462860/2119719 [00:04<00:01, 344924.17 examples/s]Generating train split:  71%|███████   | 1498860/2119719 [00:04<00:01, 344975.34 examples/s]Generating train split:  73%|███████▎  | 1542860/2119719 [00:04<00:01, 366100.27 examples/s]Generating train split:  75%|███████▍  | 1588860/2119719 [00:04<00:01, 385093.23 examples/s]Generating train split:  77%|███████▋  | 1640790/2119719 [00:04<00:01, 369436.49 examples/s]Generating train split:  79%|███████▉  | 1683790/2119719 [00:04<00:01, 382081.80 examples/s]Generating train split:  82%|████████▏ | 1731790/2119719 [00:04<00:00, 406936.61 examples/s]Generating train split:  84%|████████▍ | 1790790/2119719 [00:04<00:00, 399268.55 examples/s]Generating train split:  87%|████████▋ | 1849790/2119719 [00:05<00:00, 390175.98 examples/s]Generating train split:  90%|████████▉ | 1905790/2119719 [00:05<00:00, 381702.11 examples/s]Generating train split:  92%|█████████▏| 1947790/2119719 [00:05<00:00, 388407.25 examples/s]Generating train split:  94%|█████████▍| 2002790/2119719 [00:05<00:00, 377822.65 examples/s]Generating train split:  96%|█████████▋| 2042790/2119719 [00:05<00:00, 363552.16 examples/s]Generating train split:  98%|█████████▊| 2086790/2119719 [00:05<00:00, 379919.47 examples/s]Generating train split: 100%|██████████| 2119719/2119719 [00:05<00:00, 360782.85 examples/s]
+Generating validation split:   0%|          | 0/21990 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 21990/21990 [00:00<00:00, 359408.10 examples/s]
+[BP]   +nltext (NULLnl) n=1500
+[BP] panel: 9 real ['agnews', 'code', 'dbpedia', 'emotion', 'imdb', 'subj', 'tweet', 'ucdp', 'yelp'] | nulls ['nltext', 'nullperm', 'randtok'] (101s)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2625323.47 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 425134.61 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 678676.70 examples/s]
+[BP] FA basis done (135s)
+[BP] seed agnews done (140s)
+[BP] seed code done (152s)
+[BP] seed dbpedia done (157s)
+[BP] seed emotion done (160s)
+[BP] seed imdb done (165s)
+[BP] seed subj done (168s)
+[BP] seed tweet done (171s)
+[BP] seed ucdp done (175s)
+[BP] seed yelp done (181s)
+[BP] seed nltext done (184s)
+[BP] seed nullperm done (187s)
+[BP] seed randtok done (190s)
+/home/ubuntu/breadth_pass_opt_lambda.py:243: RuntimeWarning: Mean of empty slice
+  "same": float(np.nanmean([PL[n][h]["same"] for n in names])), "type": typ[h], "siblings": sib[h]} for h in real_keys}
+
+[BP] === LEAVE-ONE-TYPE-OUT VERDICT ===
+  GRADED / PARTLY-LOCAL: cross-type=0.357 vs language floor=0.297 (lift +0.060) -- modest cross-type generalization, mostly similarity-local + a small genuine cross-type increment. Graded by structural distance (see per-task: near-text types generalize, structurally-far at floor). same-type 0.419 > cross 0.366.
+  real LOO=0.384 | real CROSS-type=0.357 | floor mean=0.289 nltext=0.297
+  cross singletons(purest)=0.346 | cross has-sibling=0.366 | SAME-type has-sibling=0.419
+  cross attn=0.343 mlp=0.385
+  PER-TASK cross-type partial (structural-distance check, high->low):
+    subj      [subjectivity] cross=0.465 loo=0.465 same=nan sibs=[]
+    agnews    [topic       ] cross=0.445 loo=0.476 same=0.455 sibs=['dbpedia']
+    dbpedia   [topic       ] cross=0.394 loo=0.417 same=0.455 sibs=['agnews']
+    imdb      [sentiment   ] cross=0.385 loo=0.473 same=0.478 sibs=['tweet', 'yelp']
+    code      [code        ] cross=0.371 loo=0.371 same=nan sibs=[]
+    yelp      [sentiment   ] cross=0.334 loo=0.422 same=0.471 sibs=['imdb', 'tweet']
+    emotion   [emotion     ] cross=0.295 loo=0.295 same=nan sibs=[]
+    tweet     [sentiment   ] cross=0.270 loo=0.283 same=0.232 sibs=['imdb', 'yelp']
+    ucdp      [violence    ] cross=0.253 loo=0.253 same=nan sibs=[]
+  NULL[nltext    NULLnl   ] partial=0.297
+  NULL[nullperm  NULLperm ] partial=0.268
+  NULL[randtok   NULLrand ] partial=0.282
+[BP] saved breadth_typeout.json wall=203s

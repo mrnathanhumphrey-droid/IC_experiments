@@ -1,0 +1,14 @@
+[prep] overlap-axis B-data (CPU, answer-blind)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  [null_sst2permuted] 2400 ex, label dist {np.int64(0): np.int64(1090), np.int64(1): np.int64(1310)} -> D:/IC_experiments/cf_cascade/gateA/overlap_axis/null_sst2permuted.json
+Generating train split:   0%|          | 0/120000 [00:00<?, ? examples/s]Generating train split: 100%|##########| 120000/120000 [00:00<00:00, 1920073.24 examples/s]
+Generating test split:   0%|          | 0/7600 [00:00<?, ? examples/s]Generating test split: 100%|##########| 7600/7600 [00:00<00:00, 751401.61 examples/s]
+  [low_agnews] 2400 ex, label dist {np.int64(0): np.int64(642), np.int64(1): np.int64(594), np.int64(2): np.int64(579), np.int64(3): np.int64(585)} -> D:/IC_experiments/cf_cascade/gateA/overlap_axis/low_agnews.json
+Repo card metadata block was not found. Setting CardData to empty.
+Generating train split:   0%|          | 0/8000 [00:00<?, ? examples/s]Generating train split: 100%|##########| 8000/8000 [00:00<00:00, 883988.41 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|##########| 2000/2000 [00:00<00:00, 361204.27 examples/s]
+  [medium_subj] 2400 ex, label dist {np.int64(0): np.int64(1173), np.int64(1): np.int64(1227)} -> D:/IC_experiments/cf_cascade/gateA/overlap_axis/medium_subj.json
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  16%|#6        | 90000/560000 [00:00<00:00, 864343.57 examples/s]Generating train split:  39%|###8      | 216000/560000 [00:00<00:00, 1085338.10 examples/s]Generating train split:  68%|######8   | 381000/560000 [00:00<00:00, 1085093.27 examples/s]Generating train split:  89%|########8 | 497000/560000 [00:00<00:00, 1104951.67 examples/s]Generating train split: 100%|##########| 560000/560000 [00:00<00:00, 1066723.64 examples/s]
+Generating test split:   0%|          | 0/38000 [00:00<?, ? examples/s]Generating test split: 100%|##########| 38000/38000 [00:00<00:00, 825842.91 examples/s]
+  [high_yelp] 2400 ex, label dist {np.int64(0): np.int64(1207), np.int64(1): np.int64(1193)} -> D:/IC_experiments/cf_cascade/gateA/overlap_axis/high_yelp.json
+[prep] DONE — overlap axis built, answer-blind, no GPU touched

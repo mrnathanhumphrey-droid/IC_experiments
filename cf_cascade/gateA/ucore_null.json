@@ -1,0 +1,41 @@
+{
+  "per_carrier": {
+    "attention.query_key_value": {
+      "real": 0.6426744559991567,
+      "null_mean": 0.24991128950535593,
+      "null_std": 0.0020791866401991157,
+      "null_p5": 0.24668255077511442,
+      "null_p95": 0.25331888322770085,
+      "z": 188.90231339081956,
+      "real_pctile_vs_null": 100.0
+    },
+    "mlp.dense_h_to_4h": {
+      "real": 0.6312588184993255,
+      "null_mean": 0.24984866349726287,
+      "null_std": 0.0018304226789638354,
+      "null_p5": 0.24693046606695473,
+      "null_p95": 0.25273497088625213,
+      "z": 208.37272132663827,
+      "real_pctile_vs_null": 100.0
+    },
+    "mlp.dense_4h_to_h": {
+      "real": 0.6217313747393498,
+      "null_mean": 0.24995856638436764,
+      "null_std": 0.0019092756531639411,
+      "null_p5": 0.24667095862485505,
+      "null_p95": 0.2530385505311568,
+      "z": 194.71929448436768,
+      "real_pctile_vs_null": 100.0
+    }
+  },
+  "grand_real": 0.6318882164126106,
+  "grand_null_mean": 0.24990617312899546,
+  "grand_z": 197.33144306727516,
+  "analytic_chance": 0.25,
+  "ktop": 64,
+  "m_core": 16,
+  "n_null": 200,
+  "real_is_signal": true,
+  "verdict": "REAL SHARED STRUCTURE \u2014 partially-universal contested core (real 0.63 >> random-PB null 0.25, z=+197.3) -> construction is NOT manufacturing it; the cores genuinely point the same way",
+  "wall_s": 506.2136299610138
+}

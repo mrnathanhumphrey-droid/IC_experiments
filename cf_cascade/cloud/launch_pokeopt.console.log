@@ -1,0 +1,69 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=9a9b7744aec14f1ca13d7f6ec94c74a2  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] status=active ip=150.136.94.219 236s
+[L] SSH up at 150.136.94.219 (236s)
+Warning: Permanently added '150.136.94.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.94.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.94.219' (ED25519) to the list of known hosts.
+[L] upload done (238s)
+[L] installing transformers/datasets + upgrading Pillow...
+Warning: Permanently added '150.136.94.219' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L] running poke_test_opt_lambda.py (263s)...
+Warning: Permanently added '150.136.94.219' (ED25519) to the list of known hosts.
+[POKE-OPT] loading facebook/opt-350m (eager)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  86%|████████▌ | 333/388 [00:00<00:00, 3242.24it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3592.60it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2258087.10 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 404896.83 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 613973.28 examples/s]
+[POKE-OPT] training task-A=SST -> w_A (1200 steps)...
+[POKE-OPT] w_A SST acc=0.800 (rung-1 ~0.77) base_loss=0.1965 (125s)
+[POKE-OPT] FA done. mean lam top-64=2.955e+02 bot-64=-3.035e-13 (150s)
+[POKE-OPT] seed 0: D1 A/B/C/D=0.500/0.505/0.530/0.500 | D2=0.500/0.500/0.500/0.500 | D2a B/C/D=8.83e-03/3.37e-02/9.03e-02 (543s)
+[POKE-OPT] seed 1: D1 A/B/C/D=0.500/0.500/0.505/0.500 | D2=0.500/0.500/0.500/0.500 | D2a B/C/D=8.83e-03/3.33e-02/9.03e-02 (931s)
+[POKE-OPT] seed 2: D1 A/B/C/D=0.500/0.480/0.500/0.500 | D2=0.500/0.500/0.500/0.500 | D2a B/C/D=8.83e-03/3.46e-02/9.03e-02 (1323s)
+[POKE-OPT] seed 3: D1 A/B/C/D=0.500/0.505/0.500/0.500 | D2=0.500/0.500/0.500/0.500 | D2a B/C/D=8.83e-03/2.93e-02/9.03e-02 (1716s)
+[POKE-OPT] seed 4: D1 A/B/C/D=0.500/0.500/0.500/0.500 | D2=0.500/0.500/0.500/0.500 | D2a B/C/D=8.83e-03/3.87e-02/9.03e-02 (2109s)
+[POKE-OPT] seed 5: D1 A/B/C/D=0.500/0.500/0.500/0.535 | D2=0.500/0.500/0.500/0.500 | D2a B/C/D=8.83e-03/3.45e-02/9.03e-02 (2498s)
+[POKE-OPT] seed 6: D1 A/B/C/D=0.500/0.515/0.505/0.500 | D2=0.500/0.500/0.500/0.500 | D2a B/C/D=8.83e-03/3.84e-02/9.03e-02 (2887s)
+
+[POKE-OPT] === VERDICTS (OPT, held-out=subj, pre 0.800, armA forgets 0.300) ===
+  [D1 occupy] INERT: B~A (B-A=+0.001, 2SE 0.007).
+     retention A/B/C/D=0.500/0.501/0.506/0.505 postpoke-B 0.797
+  [D2 perturb] INERT: B~A (B-A=+0.000, 2SE 0.000).
+     retention A/B/C/D=0.500/0.500/0.500/0.500 postpoke-B 0.810
+     D2 alpha B/C/D=8.83e-03/3.47e-02/9.03e-02
+
+  CROSS-ARCH (D1 occupy, the headline): Pythia was INERT (B-A -0.001). OPT B-A=+0.001 -> INERT (universal, no split)
+[POKE-OPT] saved poke_test_opt.json wall=2887s
+[L] run rc=0 (3153s)
+[L] pulling result + log...
+Warning: Permanently added '150.136.94.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.94.219' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.94.219' (ED25519) to the list of known hosts.
+[L] RESULT LANDED: gateA/poke_test_opt.json
+[L] terminating 9a9b7744aec14f1ca13d7f6ec94c74a2...
+[L] terminated 9a9b7744aec14f1ca13d7f6ec94c74a2

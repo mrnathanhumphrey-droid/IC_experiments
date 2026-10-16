@@ -1,0 +1,99 @@
+{
+ "config": {
+  "caps": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15
+  ],
+  "ft": [
+   300,
+   0.0005
+  ],
+  "seed": 0,
+  "prereg_lock": "0f75676e"
+ },
+ "results": {
+  "cifar": {
+   "n": 16,
+   "median_forget": [
+    0.2063,
+    0.2269
+   ],
+   "inband": true,
+   "grad_frac": 0.437,
+   "cyclic_frac": 0.617,
+   "rho_F": 0.181,
+   "rho_dominance": 0.512,
+   "rho_curl": -0.01,
+   "dominance_real": true,
+   "cycle_real": false,
+   "cycle_noise": true,
+   "caps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ]
+  },
+  "dtd": {
+   "n": 16,
+   "median_forget": [
+    0.2351,
+    0.2281
+   ],
+   "inband": true,
+   "grad_frac": 0.578,
+   "cyclic_frac": 0.494,
+   "rho_F": 0.31,
+   "rho_dominance": 0.594,
+   "rho_curl": 0.068,
+   "dominance_real": true,
+   "cycle_real": false,
+   "cycle_noise": true,
+   "caps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ]
+  }
+ },
+ "verdict": "STABLE TRANSITIVE DOMINANCE + noise (no real cycles)"
+}

@@ -1,0 +1,185 @@
+{
+  "real_keys": [
+    "agnews",
+    "code",
+    "dbpedia",
+    "emotion",
+    "imdb",
+    "subj",
+    "tweet",
+    "ucdp",
+    "yelp"
+  ],
+  "null_keys": [
+    "nltext",
+    "nullperm",
+    "randtok"
+  ],
+  "types": {
+    "agnews": "topic",
+    "yelp": "sentiment",
+    "subj": "subjectivity",
+    "ucdp": "violence",
+    "nullperm": "NULLperm",
+    "code": "code",
+    "emotion": "emotion",
+    "dbpedia": "topic",
+    "imdb": "sentiment",
+    "tweet": "sentiment",
+    "nltext": "NULLnl",
+    "randtok": "NULLrand"
+  },
+  "KBAND": 128,
+  "agg": {
+    "real_loo": {
+      "mean": 0.3838595529881175,
+      "se": 0.004361347904692286,
+      "frac_pos": 0.9984567901234568,
+      "n": 1296
+    },
+    "real_cross": {
+      "mean": 0.35689878068551395,
+      "se": 0.004119929696943709,
+      "frac_pos": 0.996141975308642,
+      "n": 1296
+    },
+    "cross_singletons": {
+      "mean": 0.34587904923596774,
+      "se": 0.006080673259217067,
+      "frac_pos": 0.9982638888888888,
+      "n": 576
+    },
+    "cross_hassib": {
+      "mean": 0.3657145658451509,
+      "se": 0.005575712893260293,
+      "frac_pos": 0.9944444444444445,
+      "n": 720
+    },
+    "same_hassib": {
+      "mean": 0.41860372837287,
+      "se": 0.006578727315528304,
+      "frac_pos": 0.9930555555555556,
+      "n": 720
+    },
+    "cross_attn": {
+      "mean": 0.3430028415212788,
+      "se": 0.004952000649257886,
+      "frac_pos": 0.9953703703703703,
+      "n": 864
+    },
+    "cross_mlp": {
+      "mean": 0.3846906590139841,
+      "se": 0.0072106338231378705,
+      "frac_pos": 0.9976851851851852,
+      "n": 432
+    },
+    "null_nltext": {
+      "mean": 0.29706334115541067,
+      "se": 0.00946829635042984,
+      "frac_pos": 1.0,
+      "n": 144
+    },
+    "null_nullperm": {
+      "mean": 0.267814036067208,
+      "se": 0.00941245330773211,
+      "frac_pos": 0.9930555555555556,
+      "n": 144
+    },
+    "null_randtok": {
+      "mean": 0.28163673191211086,
+      "se": 0.009860638968478346,
+      "frac_pos": 0.9861111111111112,
+      "n": 144
+    }
+  },
+  "floor_mean": 0.2893500365337608,
+  "floor_se": 0.009664467659454093,
+  "floor_nltext": 0.29706334115541067,
+  "singletons": [
+    "code",
+    "emotion",
+    "subj",
+    "ucdp"
+  ],
+  "pertask": {
+    "agnews": {
+      "loo": 0.47649063675946085,
+      "cross": 0.4454960767320774,
+      "same": 0.4554909234567241,
+      "type": "topic",
+      "siblings": [
+        "dbpedia"
+      ]
+    },
+    "code": {
+      "loo": 0.3707948483062844,
+      "cross": 0.3707948483062844,
+      "same": NaN,
+      "type": "code",
+      "siblings": []
+    },
+    "dbpedia": {
+      "loo": 0.4169293847496164,
+      "cross": 0.3939460390125153,
+      "same": 0.4554909234567241,
+      "type": "topic",
+      "siblings": [
+        "agnews"
+      ]
+    },
+    "emotion": {
+      "loo": 0.2946460776238192,
+      "cross": 0.2946460776238192,
+      "same": NaN,
+      "type": "emotion",
+      "siblings": []
+    },
+    "imdb": {
+      "loo": 0.47329299628777893,
+      "cross": 0.3845936438496432,
+      "same": 0.47834195534511775,
+      "type": "sentiment",
+      "siblings": [
+        "tweet",
+        "yelp"
+      ]
+    },
+    "subj": {
+      "loo": 0.46501581692988014,
+      "cross": 0.46501581692988014,
+      "same": NaN,
+      "type": "subjectivity",
+      "siblings": []
+    },
+    "tweet": {
+      "loo": 0.2829142527497566,
+      "cross": 0.27036238954593017,
+      "same": 0.23249625418384706,
+      "type": "sentiment",
+      "siblings": [
+        "imdb",
+        "yelp"
+      ]
+    },
+    "ucdp": {
+      "loo": 0.25305945408388725,
+      "cross": 0.25305945408388725,
+      "same": NaN,
+      "type": "violence",
+      "siblings": []
+    },
+    "yelp": {
+      "loo": 0.421592509402574,
+      "cross": 0.3341746800855883,
+      "same": 0.4711985854219368,
+      "type": "sentiment",
+      "siblings": [
+        "imdb",
+        "tweet"
+      ]
+    }
+  },
+  "verdict": "GRADED / PARTLY-LOCAL: cross-type=0.357 vs language floor=0.297 (lift +0.060) -- modest cross-type generalization, mostly similarity-local + a small genuine cross-type increment. Graded by structural distance (see per-task: near-text types generalize, structurally-far at floor). same-type 0.419 > cross 0.366.",
+  "lift_vs_floor_mean": 0.06754874415175316,
+  "lift_vs_nltext": 0.059835439530103285
+}

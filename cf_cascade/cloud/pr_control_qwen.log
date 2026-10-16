@@ -1,0 +1,33 @@
+[PR] #3 subspace-dim | SMOKE=0 model=Qwen/Qwen2.5-1.5B alpha=4.0 dev=cuda
+2026-07-27 20:15:23.915068: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-27 20:15:24.077784: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785183324.149274    2580 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785183324.170729    2580 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785183324.309327    2580 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785183324.309362    2580 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785183324.309364    2580 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785183324.309365    2580 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-27 20:15:24.326084: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+[MODEL] Qwen/Qwen2.5-1.5B nlayers=28 d=1536
+  [sentiment] L16 specPR=3.37 causalPR=27.476 PRsig=5.71 nsig=9 c/rand=1.60 steer=6.2773 valid=True
+  [size] L14 specPR=8.641 causalPR=25.122 PRsig=3.501 nsig=10 c/rand=1.42 steer=4.1846 valid=True
+  [temperature] L8 specPR=11.945 causalPR=24.09 PRsig=2.889 nsig=6 c/rand=1.42 steer=1.137 valid=True
+  [speed] L13 specPR=12.191 causalPR=23.498 PRsig=4.331 nsig=7 c/rand=1.35 steer=2.3952 valid=True
+  [brightness] L10 specPR=8.83 causalPR=26.456 PRsig=8.906 nsig=11 c/rand=1.59 steer=1.9336 valid=True
+  [difficulty] L13 specPR=7.497 causalPR=27.458 PRsig=4.532 nsig=6 c/rand=1.70 steer=3.2669 valid=True
+  [wealth] L10 specPR=9.094 causalPR=27.215 PRsig=9.107 nsig=14 c/rand=1.82 steer=3.305 valid=True
+  [strength] L15 specPR=12.689 causalPR=24.641 PRsig=3.066 nsig=5 c/rand=1.07 steer=2.5042 valid=True
+  [age] L14 specPR=13.662 causalPR=22.515 PRsig=6.074 nsig=9 c/rand=1.08 steer=1.2441 valid=True
+  [loudness] L13 specPR=11.288 causalPR=22.839 PRsig=5.856 nsig=10 c/rand=1.51 steer=3.4434 valid=True
+  [cleanliness] L11 specPR=8.238 causalPR=27.146 PRsig=7.359 nsig=10 c/rand=1.87 steer=2.4482 valid=True
+  [toxicity] L12 specPR=5.259 causalPR=23.207 PRsig=2.532 nsig=4 c/rand=1.15 steer=3.5717 valid=True
+
+[PR] CONTROL mean concept/rand=1.47 (>=1.5 concept-specific; <1.5 CONFOUNDED) | CORE rho(specPR,causalPRsignal)=+0.021 p=0.9558 rho(specPR,nsig)=-0.014 | HIT=False
+[PR] wrote /home/ubuntu/pr/gateA/pr_steering_qwen.json  wall=103s

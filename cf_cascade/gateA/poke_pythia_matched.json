@@ -1,0 +1,146 @@
+{
+  "model": "EleutherAI/pythia-410m",
+  "heldout": "subj",
+  "R": 64,
+  "pre_sst": 0.75,
+  "target_forget": 0.121,
+  "chosen_regime": {
+    "lr": 2e-05,
+    "steps": 200,
+    "forget": 0.11499999999999999,
+    "matched_OPT": true
+  },
+  "precheck": [
+    {
+      "lr": 2e-05,
+      "steps": 200,
+      "ret": 0.635,
+      "forget": 0.11499999999999999
+    },
+    {
+      "lr": 2e-05,
+      "steps": 150,
+      "ret": 0.67,
+      "forget": 0.07999999999999996
+    },
+    {
+      "lr": 3e-05,
+      "steps": 150,
+      "ret": 0.665,
+      "forget": 0.08499999999999996
+    },
+    {
+      "lr": 2e-05,
+      "steps": 250,
+      "ret": 0.64,
+      "forget": 0.10999999999999999
+    },
+    {
+      "lr": 3e-05,
+      "steps": 200,
+      "ret": 0.66,
+      "forget": 0.08999999999999997
+    },
+    {
+      "lr": 3e-05,
+      "steps": 100,
+      "ret": 0.67,
+      "forget": 0.07999999999999996
+    },
+    {
+      "lr": 5e-05,
+      "steps": 100,
+      "ret": 0.495,
+      "forget": 0.255
+    },
+    {
+      "lr": 5e-05,
+      "steps": 150,
+      "ret": 0.5,
+      "forget": 0.25
+    }
+  ],
+  "design1_occupy": {
+    "A": {
+      "sstA": [
+        0.6357142857142858,
+        0.020884242947699642
+      ],
+      "taskB": [
+        0.8428571428571429,
+        0.01029449738378905
+      ],
+      "postpoke_sst": [
+        0.75,
+        0.0
+      ]
+    },
+    "B": {
+      "sstA": [
+        0.63,
+        0.039641248358604594
+      ],
+      "taskB": [
+        0.8385714285714286,
+        0.0062852504467079615
+      ],
+      "postpoke_sst": [
+        0.7435714285714285,
+        0.006036816105203695
+      ]
+    },
+    "C": {
+      "sstA": [
+        0.6178571428571429,
+        0.03398464753710966
+      ],
+      "taskB": [
+        0.8371428571428572,
+        0.018122517925958197
+      ],
+      "postpoke_sst": [
+        0.7521428571428571,
+        0.002444724194022643
+      ]
+    },
+    "D": {
+      "sstA": [
+        0.625,
+        0.03548497813821206
+      ],
+      "taskB": [
+        0.8321428571428571,
+        0.011377436624299056
+      ],
+      "postpoke_sst": [
+        0.7428571428571429,
+        0.001376605873799189
+      ]
+    }
+  },
+  "paired": {
+    "B_minus_A": [
+      -0.0057142857142857195,
+      0.05093441733056994,
+      false
+    ],
+    "B_minus_C": [
+      0.012142857142857138,
+      0.06020252505770513,
+      false
+    ],
+    "B_minus_D": [
+      0.0050000000000000044,
+      0.06125390449862385,
+      false
+    ],
+    "armA_forget": 0.11428571428571421,
+    "retention": {
+      "A": 0.6357142857142858,
+      "B": 0.63,
+      "C": 0.6178571428571429,
+      "D": 0.625
+    }
+  },
+  "verdict": "ARCHITECTURAL \u2014 real cross-arch split (sink direction): Pythia B-C=+0.012 ns at matched forget 0.115 (OPT was -0.125 SIG). OPT's fragile-specific SINK is architectural \u2014 but it's the OPPOSITE of the pre-registered deflect; antagonism controls deposit-survival WITHOUT giving poke-deflection (the two dissociate)."
+}

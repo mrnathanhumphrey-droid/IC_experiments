@@ -1,0 +1,49 @@
+[L:f1b] tarball _face1b_ship.tar.gz with 36 files
+[L:f1b] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L:f1b] instance_id=f1815b1ce8094a1cb58a23caf505cb41  (manual teardown if I go dark)
+[L:f1b] status=booting ip=None 1s
+[L:f1b] status=active ip=158.101.121.78 298s
+[L:f1b] SSH up at 158.101.121.78 (298s)
+Warning: Permanently added '158.101.121.78' (ED25519) to the list of known hosts.
+Warning: Permanently added '158.101.121.78' (ED25519) to the list of known hosts.
+Warning: Permanently added '158.101.121.78' (ED25519) to the list of known hosts.
+[L:f1b] uploaded+extracted (300s); pip...
+Warning: Permanently added '158.101.121.78' (ED25519) to the list of known hosts.
+pipok
+[L:f1b] running face1c_control_lambda.py (SMOKE=1 OUTNAME=face1c_control_smoke.json) wd=1800s (322s)...
+Warning: Permanently added '158.101.121.78' (ED25519) to the list of known hosts.
+2026-07-18 20:16:07.637133: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784405767.688058    2593 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1784405767.703379    2593 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1784405767.792958    2593 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784405767.792990    2593 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784405767.792993    2593 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784405767.792994    2593 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+[CTRL] SMOKE=True ncap=3 seeds=[0, 1] steps=60 layer=14 grid=[8, 12]x[0, 1] dev=cuda
+Downloading builder script:   0%|          | 0.00/7.17k [00:00<?, ?B/s]Downloading builder script: 100%|██████████| 7.17k/7.17k [00:00<00:00, 303kB/s]
+Downloading metadata:   0%|          | 0.00/5.89k [00:00<?, ?B/s]Downloading metadata: 100%|██████████| 5.89k/5.89k [00:00<00:00, 291kB/s]
+Downloading readme:   0%|          | 0.00/9.78k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 9.78k/9.78k [00:00<00:00, 413kB/s]
+Downloading data:   0%|          | 0.00/158k [00:00<?, ?B/s]Downloading data: 839kB [00:00, 32.1MB/s]                   
+Downloading data:   0%|          | 0.00/51.1k [00:00<?, ?B/s]Downloading data: 240kB [00:00, 16.6MB/s]                    
+Generating train split:   0%|          | 0/10003 [00:00<?, ? examples/s]Generating train split:  34%|███▍      | 3422/10003 [00:00<00:00, 34167.25 examples/s]Generating train split:  70%|███████   | 7047/10003 [00:00<00:00, 35381.67 examples/s]Generating train split: 100%|██████████| 10003/10003 [00:00<00:00, 35522.23 examples/s]
+Generating test split:   0%|          | 0/3080 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 3080/3080 [00:00<00:00, 35872.74 examples/s]
+[CTRL] model+3 caps (9s); PHASE A: base acts + 6 LoRA-SFTs...
+[CTRL] seed 0 fine-tunes cached (42s)
+[CTRL] seed 1 fine-tunes cached (73s)
+[CTRL] PHASE B: projection grid (73s)...
+  [CTRL] dim=8 pseed=0: auc0=0.737 medFgt=0.042 dom-rho=+0.500 curl-rho=+0.029 rho(d',phi)=+0.500
+  [CTRL] dim=8 pseed=1: auc0=0.771 medFgt=0.047 dom-rho=+1.000 curl-rho=+0.257 rho(d',phi)=-0.500
+  [CTRL] dim=12 pseed=0: auc0=0.791 medFgt=-0.002 dom-rho=+0.500 curl-rho=+0.714 rho(d',phi)=+0.500
+  [CTRL] dim=12 pseed=1: auc0=0.805 medFgt=0.015 dom-rho=+1.000 curl-rho=+0.943 rho(d',phi)=+0.500
+
+[CTRL] in-band grid pts=2/4 | frac curl-rho>=0.30 = 0.0 | median curl-rho = 0.14300000000000002
+[CTRL] HEADLINE: CYCLES ARE A PROJECTION ARTIFACT (curl-rho>=0.30 in only 0% of in-band grid, median +0.143) — the LLM cyclic finding does NOT survive.
+[CTRL] wrote /home/ubuntu/ilaw/out/face1c_control_smoke.json  wall=74s
+[L:f1b] run rc=0 (410s)
+Warning: Permanently added '158.101.121.78' (ED25519) to the list of known hosts.
+Warning: Permanently added '158.101.121.78' (ED25519) to the list of known hosts.
+[L:f1b] RESULT LANDED: D:\IC_experiments\interference_law\out\face1c_control_smoke.json
+[L:f1b] terminating f1815b1ce8094a1cb58a23caf505cb41...
+[L:f1b] terminated f1815b1ce8094a1cb58a23caf505cb41
+[L:f1b] ledger += 7min $0.23

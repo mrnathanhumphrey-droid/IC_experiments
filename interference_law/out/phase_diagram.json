@@ -1,0 +1,141 @@
+{
+ "config": {
+  "C": 40,
+  "per_class": 120,
+  "smoke": false,
+  "prereg_lock": "dcf864d2"
+ },
+ "backbones": {
+  "resnet18": {
+   "n_pairs": 1560,
+   "spearman": -0.754,
+   "slope": -0.4455,
+   "intercept": 0.2634,
+   "heldout_r2": 0.552,
+   "cstar_10": 0.313,
+   "base_auc_median": 0.984,
+   "median_forget": 0.2306,
+   "cos_range": [
+    -0.48,
+    0.91
+   ],
+   "dim": 512,
+   "saturated": false
+  },
+  "resnet50": {
+   "n_pairs": 1560,
+   "spearman": -0.711,
+   "slope": -0.3844,
+   "intercept": 0.1852,
+   "heldout_r2": 0.43,
+   "cstar_10": 0.104,
+   "base_auc_median": 0.988,
+   "median_forget": 0.1374,
+   "cos_range": [
+    -0.42,
+    0.91
+   ],
+   "dim": 2048,
+   "saturated": false
+  },
+  "resnet152": {
+   "n_pairs": 1560,
+   "spearman": -0.713,
+   "slope": -0.424,
+   "intercept": 0.1816,
+   "heldout_r2": 0.36,
+   "cstar_10": 0.098,
+   "base_auc_median": 0.991,
+   "median_forget": 0.1186,
+   "cos_range": [
+    -0.41,
+    0.91
+   ],
+   "dim": 2048,
+   "saturated": false
+  },
+  "wide_resnet50_2": {
+   "n_pairs": 1560,
+   "spearman": -0.671,
+   "slope": -0.3276,
+   "intercept": 0.1559,
+   "heldout_r2": 0.334,
+   "cstar_10": 0.109,
+   "base_auc_median": 0.987,
+   "median_forget": 0.1069,
+   "cos_range": [
+    -0.42,
+    0.91
+   ],
+   "dim": 2048,
+   "saturated": false
+  },
+  "vit_b_16": {
+   "n_pairs": 1560,
+   "spearman": -0.5,
+   "slope": -0.1312,
+   "intercept": 0.0539,
+   "heldout_r2": 0.089,
+   "cstar_10": -0.211,
+   "base_auc_median": 0.996,
+   "median_forget": 0.0158,
+   "cos_range": [
+    -0.28,
+    0.93
+   ],
+   "dim": 768,
+   "saturated": true
+  },
+  "vit_l_16": {
+   "n_pairs": 1560,
+   "spearman": -0.526,
+   "slope": -0.1514,
+   "intercept": 0.0514,
+   "heldout_r2": 0.11,
+   "cstar_10": -0.191,
+   "base_auc_median": 0.997,
+   "median_forget": 0.0173,
+   "cos_range": [
+    -0.29,
+    0.88
+   ],
+   "dim": 1024,
+   "saturated": true
+  },
+  "convnext_small": {
+   "n_pairs": 1560,
+   "spearman": -0.53,
+   "slope": -0.2026,
+   "intercept": 0.0963,
+   "heldout_r2": 0.187,
+   "cstar_10": -0.118,
+   "base_auc_median": 0.994,
+   "median_forget": 0.0444,
+   "cos_range": [
+    -0.49,
+    0.93
+   ],
+   "dim": 768,
+   "saturated": true
+  },
+  "clip_vitb32": {
+   "error": "'BaseModelOutputWithPooling' object has no attribute 'float'"
+  },
+  "dinov2_vits14": {
+   "n_pairs": 1560,
+   "spearman": -0.637,
+   "slope": -0.8161,
+   "intercept": 0.2726,
+   "heldout_r2": 0.267,
+   "cstar_10": 0.119,
+   "base_auc_median": 0.995,
+   "median_forget": 0.1407,
+   "cos_range": [
+    -0.25,
+    0.92
+   ],
+   "dim": 384,
+   "saturated": false
+  }
+ }
+}

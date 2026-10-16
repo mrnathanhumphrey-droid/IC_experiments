@@ -1,0 +1,131 @@
+[L:pl] tarball _plastic_ship.tar.gz with 46 files
+[L:pl] picked gpu_1x_a10 @ us-east-1 $1.29/hr  RUN_ENV='DATASETS=cifar SEEDS=0,1,2 NCAPS=6,12,24' wd=7200s
+[L:pl] instance_id=12aff5b140054910b856052842987945  (manual teardown if I go dark)
+[L:pl] status=booting ip=None 1s
+[L:pl] status=active ip=150.136.246.244 298s
+[L:pl] SSH up at 150.136.246.244 (298s)
+Warning: Permanently added '150.136.246.244' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.246.244' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.246.244' (ED25519) to the list of known hosts.
+[L:pl] uploaded+extracted (299s); pip...
+Warning: Permanently added '150.136.246.244' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+PILVER 10.4.0 2.21.0
+[L:pl] running lowrank_adjudication_lambda.py (DATASETS=cifar SEEDS=0,1,2 NCAPS=6,12,24) wd=7200s (310s)...
+Warning: Permanently added '150.136.246.244' (ED25519) to the list of known hosts.
+[ADJ] #4 powered | SMOKE=0 datasets=['cifar'] seeds=[0, 1, 2] Ncaps=[6, 12, 24] ft=(300,0.0005) dev=cuda
+Downloading readme:   0%|          | 0.00/9.98k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 9.98k/9.98k [00:00<00:00, 505kB/s]
+Downloading data:   0%|          | 0.00/119M [00:00<?, ?B/s]Downloading data:   9%|▉         | 10.5M/119M [00:00<00:09, 11.5MB/s]Downloading data:  18%|█▊        | 21.0M/119M [00:01<00:04, 21.9MB/s]Downloading data:  27%|██▋       | 31.5M/119M [00:01<00:02, 29.4MB/s]Downloading data:  35%|███▌      | 41.9M/119M [00:01<00:02, 36.4MB/s]Downloading data:  44%|████▍     | 52.4M/119M [00:01<00:01, 41.8MB/s]Downloading data:  53%|█████▎    | 62.9M/119M [00:01<00:01, 52.1MB/s]Downloading data:  62%|██████▏   | 73.4M/119M [00:01<00:00, 56.1MB/s]Downloading data:  71%|███████   | 83.9M/119M [00:02<00:00, 54.7MB/s]Downloading data:  88%|████████▊ | 105M/119M [00:02<00:00, 65.6MB/s] Downloading data:  97%|█████████▋| 115M/119M [00:02<00:00, 67.7MB/s]Downloading data: 100%|██████████| 119M/119M [00:02<00:00, 44.3MB/s]
+Downloading data:   0%|          | 0.00/23.8M [00:00<?, ?B/s]Downloading data:  44%|████▍     | 10.5M/23.8M [00:02<00:02, 5.13MB/s]Downloading data:  88%|████████▊ | 21.0M/23.8M [00:06<00:00, 2.97MB/s]Downloading data: 100%|██████████| 23.8M/23.8M [00:06<00:00, 3.56MB/s]
+Generating train split:   0%|          | 0/50000 [00:00<?, ? examples/s]Generating train split:  28%|██▊       | 14100/50000 [00:00<00:00, 139786.01 examples/s]Generating train split:  58%|█████▊    | 28900/50000 [00:00<00:00, 142748.01 examples/s]Generating train split: 100%|██████████| 50000/50000 [00:00<00:00, 140418.05 examples/s]Generating train split: 100%|██████████| 50000/50000 [00:00<00:00, 140592.95 examples/s]
+Generating test split:   0%|          | 0/10000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 10000/10000 [00:00<00:00, 161929.11 examples/s]
+[data] HF cifar100 banks OK
+[ADJ] cifar: banks loaded (24 caps)
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /home/ubuntu/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+  0%|          | 0.00/44.7M [00:00<?, ?B/s] 97%|█████████▋| 43.5M/44.7M [00:00<00:00, 452MB/s]100%|██████████| 44.7M/44.7M [00:00<00:00, 450MB/s]
+    [cifar s0] perturb 0 (1/24) colFgt=+0.270
+    [cifar s0] perturb 1 (2/24) colFgt=+0.186
+    [cifar s0] perturb 2 (3/24) colFgt=+0.161
+    [cifar s0] perturb 3 (4/24) colFgt=+0.140
+    [cifar s0] perturb 4 (5/24) colFgt=+0.340
+    [cifar s0] perturb 5 (6/24) colFgt=+0.243
+    [cifar s0] perturb 6 (7/24) colFgt=+0.254
+    [cifar s0] perturb 7 (8/24) colFgt=+0.209
+    [cifar s0] perturb 8 (9/24) colFgt=+0.419
+    [cifar s0] perturb 9 (10/24) colFgt=+0.176
+    [cifar s0] perturb 10 (11/24) colFgt=+0.169
+    [cifar s0] perturb 11 (12/24) colFgt=+0.211
+    [cifar s0] perturb 12 (13/24) colFgt=+0.148
+    [cifar s0] perturb 13 (14/24) colFgt=+0.243
+    [cifar s0] perturb 14 (15/24) colFgt=+0.211
+    [cifar s0] perturb 15 (16/24) colFgt=+0.202
+    [cifar s0] perturb 16 (17/24) colFgt=+0.157
+    [cifar s0] perturb 17 (18/24) colFgt=+0.185
+    [cifar s0] perturb 18 (19/24) colFgt=+0.372
+    [cifar s0] perturb 19 (20/24) colFgt=+0.175
+    [cifar s0] perturb 20 (21/24) colFgt=+0.178
+    [cifar s0] perturb 21 (22/24) colFgt=+0.324
+    [cifar s0] perturb 22 (23/24) colFgt=+0.362
+    [cifar s0] perturb 23 (24/24) colFgt=+0.204
+  [cifar s0 N=6] interER=2.047 perTask=1.78 pooled=7.948 cos=0.2066
+  [cifar s0 N=12] interER=4.962 perTask=2.291 pooled=13.703 cos=0.1726
+  [cifar s0 N=24] interER=9.648 perTask=2.088 pooled=18.412 cos=0.1614 | haarPT=21.974 permP=0.0
+    [cifar s1] perturb 0 (1/24) colFgt=+0.274
+    [cifar s1] perturb 1 (2/24) colFgt=+0.324
+    [cifar s1] perturb 2 (3/24) colFgt=+0.211
+    [cifar s1] perturb 3 (4/24) colFgt=+0.303
+    [cifar s1] perturb 4 (5/24) colFgt=+0.169
+    [cifar s1] perturb 5 (6/24) colFgt=+0.339
+    [cifar s1] perturb 6 (7/24) colFgt=+0.209
+    [cifar s1] perturb 7 (8/24) colFgt=+0.299
+    [cifar s1] perturb 8 (9/24) colFgt=+0.301
+    [cifar s1] perturb 9 (10/24) colFgt=+0.265
+    [cifar s1] perturb 10 (11/24) colFgt=+0.347
+    [cifar s1] perturb 11 (12/24) colFgt=+0.172
+    [cifar s1] perturb 12 (13/24) colFgt=+0.189
+    [cifar s1] perturb 13 (14/24) colFgt=+0.239
+    [cifar s1] perturb 14 (15/24) colFgt=+0.225
+    [cifar s1] perturb 15 (16/24) colFgt=+0.209
+    [cifar s1] perturb 16 (17/24) colFgt=+0.172
+    [cifar s1] perturb 17 (18/24) colFgt=+0.249
+    [cifar s1] perturb 18 (19/24) colFgt=+0.191
+    [cifar s1] perturb 19 (20/24) colFgt=+0.180
+    [cifar s1] perturb 20 (21/24) colFgt=+0.351
+    [cifar s1] perturb 21 (22/24) colFgt=+0.236
+    [cifar s1] perturb 22 (23/24) colFgt=+0.355
+    [cifar s1] perturb 23 (24/24) colFgt=+0.309
+  [cifar s1 N=6] interER=2.143 perTask=1.591 pooled=7.564 cos=0.2101
+  [cifar s1 N=12] interER=4.261 perTask=1.914 pooled=12.871 cos=0.177
+  [cifar s1 N=24] interER=9.895 perTask=1.98 pooled=16.847 cos=0.1699 | haarPT=21.974 permP=0.0
+    [cifar s2] perturb 0 (1/24) colFgt=+0.285
+    [cifar s2] perturb 1 (2/24) colFgt=+0.227
+    [cifar s2] perturb 2 (3/24) colFgt=+0.220
+    [cifar s2] perturb 3 (4/24) colFgt=+0.328
+    [cifar s2] perturb 4 (5/24) colFgt=+0.245
+    [cifar s2] perturb 5 (6/24) colFgt=+0.238
+    [cifar s2] perturb 6 (7/24) colFgt=+0.213
+    [cifar s2] perturb 7 (8/24) colFgt=+0.276
+    [cifar s2] perturb 8 (9/24) colFgt=+0.283
+    [cifar s2] perturb 9 (10/24) colFgt=+0.229
+    [cifar s2] perturb 10 (11/24) colFgt=+0.201
+    [cifar s2] perturb 11 (12/24) colFgt=+0.274
+    [cifar s2] perturb 12 (13/24) colFgt=+0.168
+    [cifar s2] perturb 13 (14/24) colFgt=+0.236
+    [cifar s2] perturb 14 (15/24) colFgt=+0.158
+    [cifar s2] perturb 15 (16/24) colFgt=+0.208
+    [cifar s2] perturb 16 (17/24) colFgt=+0.242
+    [cifar s2] perturb 17 (18/24) colFgt=+0.344
+    [cifar s2] perturb 18 (19/24) colFgt=+0.202
+    [cifar s2] perturb 19 (20/24) colFgt=+0.204
+    [cifar s2] perturb 20 (21/24) colFgt=+0.255
+    [cifar s2] perturb 21 (22/24) colFgt=+0.184
+    [cifar s2] perturb 22 (23/24) colFgt=+0.433
+    [cifar s2] perturb 23 (24/24) colFgt=+0.279
+  [cifar s2 N=6] interER=2.215 perTask=1.743 pooled=7.438 cos=0.219
+  [cifar s2 N=12] interER=4.872 perTask=2.097 pooled=13.018 cos=0.1751
+  [cifar s2 N=24] interER=9.177 perTask=1.94 pooled=17.364 cos=0.1673 | haarPT=21.974 permP=0.0
+
+=== #4 POWERED AGGREGATE ===
+[cifar] scaling N=[6, 12, 24] interaction=[2.135, 4.698, 9.573] (slope 0.4122) per_task=[1.705, 2.101, 2.003] (slope 0.013)
+  N=24: perTask=[2.003, [1.94, 2.088]] vs haar=21.974 | interaction=[9.573, [9.177, 9.895]] pooled=[17.541, [16.847, 18.412]] cos=0.1662 permP=0.0
+
+[ADJ] wrote /home/ubuntu/ilaw/out/lowrank_adjudication.json  wall=2945s
+[L:pl] run rc=0 (3258s)
+Warning: Permanently added '150.136.246.244' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.246.244' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.246.244' (ED25519) to the list of known hosts.
+[L:pl] RESULT LANDED: D:\IC_experiments\interference_law\out\lowrank_adjudication.json rows=D:\IC_experiments\interference_law\out\lowrank_rows.jsonl
+[L:pl] terminating 12aff5b140054910b856052842987945...
+[L:pl] terminated 12aff5b140054910b856052842987945
+[L:pl] ledger += 54min $1.17

@@ -1,0 +1,37 @@
+[DISRUPT] N_B=24 FT=400/0.001 A=12 neutral=16 dev=cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[DISRUPT] base ready, accA0 median=0.978 (7s)
+  B0: disrupt=+0.059 drift=0.923 rank=32.9 |dth|=24.12 |g|=0.064 bacc=1.00 (19s)
+  B1: disrupt=+0.073 drift=0.924 rank=37.4 |dth|=26.58 |g|=2.274 bacc=1.00 (31s)
+  B2: disrupt=+0.077 drift=0.915 rank=31.6 |dth|=24.15 |g|=0.085 bacc=1.00 (44s)
+  B3: disrupt=+0.075 drift=0.938 rank=30.2 |dth|=24.63 |g|=0.063 bacc=1.00 (56s)
+  B4: disrupt=+0.080 drift=0.924 rank=29.8 |dth|=29.28 |g|=0.545 bacc=1.00 (68s)
+  B5: disrupt=+0.086 drift=0.911 rank=37.0 |dth|=31.99 |g|=0.377 bacc=1.00 (80s)
+  B6: disrupt=+0.075 drift=0.917 rank=34.7 |dth|=26.05 |g|=0.193 bacc=1.00 (92s)
+  B7: disrupt=+0.083 drift=0.957 rank=23.7 |dth|=27.75 |g|=0.020 bacc=1.00 (105s)
+  B8: disrupt=+0.059 drift=0.930 rank=30.5 |dth|=22.98 |g|=0.205 bacc=1.00 (117s)
+  B9: disrupt=+0.055 drift=0.927 rank=26.6 |dth|=22.71 |g|=0.030 bacc=1.00 (129s)
+  B10: disrupt=+0.079 drift=0.941 rank=27.4 |dth|=23.34 |g|=0.054 bacc=1.00 (141s)
+  B11: disrupt=+0.050 drift=0.917 rank=32.2 |dth|=22.28 |g|=0.118 bacc=1.00 (153s)
+  B12: disrupt=+0.051 drift=0.944 rank=28.8 |dth|=21.68 |g|=0.056 bacc=1.00 (165s)
+  B13: disrupt=+0.079 drift=0.931 rank=34.2 |dth|=29.95 |g|=0.260 bacc=1.00 (177s)
+  B14: disrupt=+0.077 drift=0.918 rank=31.4 |dth|=27.05 |g|=0.279 bacc=1.00 (190s)
+  B15: disrupt=+0.080 drift=0.947 rank=26.7 |dth|=26.25 |g|=0.068 bacc=1.00 (202s)
+  B16: disrupt=+0.093 drift=0.942 rank=24.8 |dth|=22.42 |g|=0.067 bacc=1.00 (214s)
+  B17: disrupt=+0.112 drift=0.908 rank=34.6 |dth|=33.18 |g|=0.086 bacc=1.00 (226s)
+  B18: disrupt=+0.099 drift=0.936 rank=30.0 |dth|=32.14 |g|=0.040 bacc=1.00 (238s)
+  B19: disrupt=+0.074 drift=0.926 rank=29.3 |dth|=23.99 |g|=0.402 bacc=1.00 (250s)
+  B20: disrupt=+0.115 drift=0.976 rank=23.4 |dth|=31.79 |g|=0.064 bacc=0.96 (263s)
+  B21: disrupt=+0.095 drift=0.931 rank=30.7 |dth|=25.24 |g|=0.057 bacc=1.00 (275s)
+  B22: disrupt=+0.098 drift=0.949 rank=29.7 |dth|=25.77 |g|=0.218 bacc=1.00 (287s)
+  B23: disrupt=+0.103 drift=0.916 rank=32.8 |dth|=25.22 |g|=0.065 bacc=1.00 (299s)
+
+[DISRUPT] n_B=24 median_disrupt=+0.079 (partial band [0.05,0.45]: OK)
+  drift      : rho(pred,disrupt)=+0.152  pearson=+0.234
+  drift_rank : rho(pred,disrupt)=-0.123  pearson=-0.108
+  dtheta     : rho(pred,disrupt)=+0.653  pearson=+0.664
+  grad_norm  : rho(pred,disrupt)=-0.085  pearson=-0.111
+  b_acc      : rho(pred,disrupt)=+0.398  pearson=-0.408
+
+[DISRUPT] STRONGEST predictor of disruptiveness = dtheta (|rho|=0.653)  [cosine was ~0 in #6b]
+[DISRUPT] wrote D:\IC_experiments\interference_law\out\disruptiveness.json  wall=299s

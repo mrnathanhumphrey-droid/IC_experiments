@@ -1,0 +1,15 @@
+{
+  "cell": "opt13b",
+  "family": "OPT",
+  "model": "facebook/opt-1.3b",
+  "ckpt": "opt13b_sst2_wA.pt",
+  "VOID": false,
+  "base_acc": 0.7175,
+  "anchor_acc": 0.93,
+  "best_step": 1750,
+  "confirm_reload_acc": 0.93,
+  "lr": 1e-05,
+  "steps": 2500,
+  "posid": 1313,
+  "negid": 2430
+}

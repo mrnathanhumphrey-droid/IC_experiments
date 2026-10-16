@@ -1,0 +1,91 @@
+{
+ "config": {
+  "base": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "K": 64,
+  "epochs": 4,
+  "N_DIR": 240,
+  "neg_per_pos": 6,
+  "smoke": false,
+  "device": "cuda",
+  "prereg_lock": "b52e2928"
+ },
+ "D1_base_gradient": {
+  "cross": 0.6708197030541009,
+  "within_rules": 0.9536265631475643,
+  "within_fantasy": 0.99796559235275,
+  "null": 0.36999081036456744
+ },
+ "D2_surge": {
+  "rules_then_fantasy": {
+   "prior": "rules",
+   "added": "fantasy",
+   "prior_solo": {
+    "auc": 0.9920799484044825,
+    "recall_at_5": 0.966407867494824,
+    "recall_at_3": 0.8831780538302277
+   },
+   "prior_after": {
+    "auc": 0.9840271348877715,
+    "recall_at_5": 0.9503933747412008,
+    "recall_at_3": 0.871583850931677
+   },
+   "added_after": {
+    "auc": 0.9989295090025532,
+    "recall_at_5": 0.7502112175649409,
+    "recall_at_3": 0.5177508440141418
+   },
+   "erosion_auc": 0.008052813516711055,
+   "surge_overlap": {
+    "inV": 0.43697044553098685,
+    "inSwap": 0.0003216068813681773
+   }
+  },
+  "fantasy_then_rules": {
+   "prior": "fantasy",
+   "added": "rules",
+   "prior_solo": {
+    "auc": 0.998611232290969,
+    "recall_at_5": 0.7456181746740257,
+    "recall_at_3": 0.5149519585024904
+   },
+   "prior_after": {
+    "auc": 0.9983641855443804,
+    "recall_at_5": 0.746808650864502,
+    "recall_at_3": 0.5143820496879008
+   },
+   "added_after": {
+    "auc": 0.9928275329455454,
+    "recall_at_5": 0.971335403726708,
+    "recall_at_3": 0.8875258799171842
+   },
+   "erosion_auc": 0.00024704674658859727,
+   "surge_overlap": {
+    "inV": 0.4513523673410634,
+    "inSwap": 0.00032945224350974735
+   }
+  }
+ },
+ "D1_delta_theta": {
+  "cross": 0.07448241513235782,
+  "per_carrier_min": 0.006069309118464472,
+  "per_carrier_max": 0.2912135453186335
+ },
+ "D3_keeper_intrusion": {
+  "n_soccer_gk": 16,
+  "n_fantasy_keeper": 6,
+  "fantasy_keeper_on_rules": {
+   "n": 40,
+   "intruder_beats_positive_rate": 0.0,
+   "mean_true_positive_rank": 0.0
+  },
+  "rules_gk_on_fantasy": {
+   "n": 40,
+   "intruder_beats_positive_rate": 0.0,
+   "mean_true_positive_rank": 0.0
+  }
+ },
+ "DECISION": {
+  "contested": false,
+  "verdict": "CONSTRAINED/NOT-CONTESTED -> HARD-NEG fix (no routing)"
+ }
+}

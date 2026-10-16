@@ -1,0 +1,180 @@
+{
+  "tag": "OPT",
+  "model": "facebook/opt-350m",
+  "heldout": "subj",
+  "pre_sst": 0.8233333333333334,
+  "n_seeds": 30,
+  "retention": {
+    "A": [
+      0.5822222222222222,
+      0.013575702633781111
+    ],
+    "B": [
+      0.6962222222222223,
+      0.012606363141525944
+    ],
+    "D": [
+      0.6365555555555555,
+      0.0155761904734016
+    ],
+    "B_minus_A": [
+      0.11400000000000003,
+      0.015000553416781203
+    ],
+    "B_minus_D": [
+      0.05966666666666665,
+      0.016043801793520853
+    ],
+    "D_minus_A": [
+      0.05433333333333335,
+      0.018426028289311794
+    ]
+  },
+  "guards": {
+    "mapfrac_B": [
+      0.21917266020693602,
+      0.00026085461425752395
+    ],
+    "mapfrac_D": [
+      0.01438389505645147,
+      0.00011209057267525008
+    ],
+    "childB_drop": [
+      6.662819528934444,
+      0.03643773784480565
+    ],
+    "childD_drop": [
+      13.539173372058226,
+      0.057611284018862376
+    ],
+    "M_stability": [
+      0.6141662101769757,
+      0.0009662392795307
+    ],
+    "resid_dim": [
+      16.0,
+      0.0
+    ]
+  },
+  "M2_fracV": {
+    "A": [
+      0.289715026393723,
+      0.0015607802250176032
+    ],
+    "B": [
+      0.25374435930035494,
+      0.0006166799283524835
+    ],
+    "D": [
+      0.273415704023267,
+      0.0012765173591511097
+    ]
+  },
+  "M3": {
+    "resid_A": [
+      0.049413410194760275,
+      0.001164171684856808
+    ],
+    "resid_B": [
+      0.12947321868268857,
+      0.0017592294713372376
+    ],
+    "resid_D": [
+      0.11228266295710393,
+      0.001820914794282176
+    ],
+    "resid_B_minus_D": [
+      0.017190555725584648,
+      0.0010372714830148488
+    ],
+    "resid_D_minus_A": [
+      0.06286925276234365,
+      0.0028661827988427304
+    ],
+    "swap_resid_B_minus_D_topcurv": [
+      0.008761969761486776,
+      0.0008571179998755016
+    ],
+    "deposit_specific_margin": 0.008428585964097872,
+    "by_carrier_type": {
+      "q_proj": {
+        "resid_B_minus_D": [
+          0.006799313781308438,
+          0.0015873610432248623
+        ],
+        "frac_seed_pos": 0.8,
+        "n_layers": 24
+      },
+      "k_proj": {
+        "resid_B_minus_D": [
+          0.01239295373455358,
+          0.0008584744222114047
+        ],
+        "frac_seed_pos": 1.0,
+        "n_layers": 24
+      },
+      "v_proj": {
+        "resid_B_minus_D": [
+          0.022352575666739545,
+          0.001413920348922561
+        ],
+        "frac_seed_pos": 1.0,
+        "n_layers": 24
+      },
+      "out_proj": {
+        "resid_B_minus_D": [
+          0.03808012341985316,
+          0.001968030584474351
+        ],
+        "frac_seed_pos": 1.0,
+        "n_layers": 24
+      },
+      "fc1": {
+        "resid_B_minus_D": [
+          0.01329878303231782,
+          0.0010224301830849046
+        ],
+        "frac_seed_pos": 1.0,
+        "n_layers": 24
+      },
+      "fc2": {
+        "resid_B_minus_D": [
+          0.010219584718735375,
+          0.0019182594585652982
+        ],
+        "frac_seed_pos": 1.0,
+        "n_layers": 24
+      }
+    },
+    "frac_seed_pos_BD": 1.0,
+    "perlayer_BD_mean": 0.01719055572558465,
+    "perlayer_BD_fracpos": 0.9861111111111112
+  },
+  "rows": {
+    "a_perlayer_fracpos": 0.9861111111111112,
+    "b_Mstab": 0.6141662101769757,
+    "b_Mstab_chance": 0.125,
+    "c_resid_D_minus_A": 0.06286925276234365,
+    "d_n_carrier_types_pos": 6,
+    "swap_margin_deposit_minus_topcurv": 0.008428585964097872,
+    "deposit_specific": false
+  },
+  "fires": "QUARANTINE",
+  "verdict": "M3 QUARANTINED (stat-positive but rows fail): resid_B-D=+0.017\u00b10.001 BUT deposit_specific=False (swap margin +0.008), carrier-types pos 6/6, M-stab 0.614, resid_D-A=+0.063. Positive does NOT survive the corroboration rows (curvature-family routing and/or pooling and/or generic-childhood confound) -> NOT deposit-specific mechanism. needs-corroboration, do not claim.",
+  "anchor": {
+    "A_forget": 0.24111111111111116,
+    "B_minus_A": 0.11400000000000003,
+    "B_minus_D": 0.05966666666666665,
+    "D_minus_A": 0.05433333333333335,
+    "mapfrac_B": 0.21917266020693602,
+    "mapfrac_D": 0.01438389505645147,
+    "regime_ok": true,
+    "dispositive_ref": {
+      "B_minus_A": 0.089,
+      "B_minus_D": 0.055,
+      "D_minus_A": 0.034,
+      "A_forget": 0.237,
+      "mapfrac": "0.219/0.014"
+    }
+  }
+}

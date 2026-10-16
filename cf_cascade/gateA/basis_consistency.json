@@ -1,0 +1,46 @@
+{
+  "representations": {
+    "esd_input": {
+      "N": 24576,
+      "PR": 6786.062983440988,
+      "PR_over_N": 0.2761256096777746,
+      "gini": 0.45542554070878216,
+      "top20": 0.031121317377766664,
+      "top100": 0.06259456536212524,
+      "top1pct": 0.09524415722616324
+    },
+    "kfac_curvature_input": {
+      "N": 24576,
+      "PR": 1849.943854708672,
+      "PR_over_N": 0.07527440815058073,
+      "gini": 0.5806962617259361,
+      "top20": 0.07935207993928407,
+      "top100": 0.16895354928404913,
+      "top1pct": 0.23229120263509415
+    },
+    "kfac_binding_2d": {
+      "N": 960000,
+      "PR": 17595.720325592294,
+      "PR_over_N": 0.01832887533915864,
+      "gini": 0.8041652143268376,
+      "top20": 0.01939449116155159,
+      "top100": 0.050658646425703106,
+      "top1pct": 0.3541460470874468
+    },
+    "raw_element": {
+      "N": 959999,
+      "PR": 194331.13478743646,
+      "PR_over_N": 0.20242847626657576,
+      "gini": 0.7010031173444684,
+      "top20": 0.001372513418193229,
+      "top100": 0.004891663977952615,
+      "top1pct": 0.14316937876904123
+    }
+  },
+  "basis_overlap": {
+    "top50_esd_vs_kfac": 0.07894212630821401,
+    "top256_esd_vs_kfac": 0.26043822630481633
+  },
+  "verdict": "DISTRIBUTED-IN-BOTH -> distribution basis-robust; surrogate VALID in ESD basis; F2 = early-localized -> late-distributed",
+  "note": "forget +0.083 this run (bf16/early-stop wobble vs +0.110); ESD vs curvature compared from SAME Delta_w"
+}

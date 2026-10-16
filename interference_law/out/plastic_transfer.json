@@ -1,0 +1,295 @@
+{
+ "config": {
+  "model": "pythia1.4b",
+  "datasets": [
+   "clinc150",
+   "banking77"
+  ],
+  "ncap": 14,
+  "seeds": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "steps": 180,
+  "projdim": 64,
+  "smoke": false
+ },
+ "results": {
+  "clinc150": {
+   "n": 14,
+   "nseed": 4,
+   "FT_reliability": 0.8493,
+   "FT_mean": -0.0148,
+   "FT_std": 0.068,
+   "var_frac": {
+    "row": 0.806,
+    "col": 0.039,
+    "resid": 0.165
+   },
+   "descriptors": {
+    "COS": {
+     "vs_FT": {
+      "rho": 0.1794,
+      "ci": [
+       0.0478,
+       0.306
+      ],
+      "perm_p": 0.0145,
+      "n": 182
+     },
+     "vs_resid": {
+      "rho": 0.0508,
+      "ci": [
+       -0.0821,
+       0.1875
+      ],
+      "perm_p": 0.5215,
+      "n": 182
+     }
+    },
+    "CKA_drift": {
+     "vs_FT": {
+      "rho": 0.0307,
+      "ci": [
+       -0.1134,
+       0.1888
+      ],
+      "perm_p": 0.6755,
+      "n": 182
+     },
+     "vs_resid": {
+      "rho": 0.0097,
+      "ci": [
+       -0.1336,
+       0.15
+      ],
+      "perm_p": 0.9025,
+      "n": 182
+     }
+    },
+    "CKA_reuse": {
+     "vs_FT": {
+      "rho": 0.0661,
+      "ci": [
+       -0.0771,
+       0.2015
+      ],
+      "perm_p": 0.39,
+      "n": 182
+     },
+     "vs_resid": {
+      "rho": 0.0098,
+      "ci": [
+       -0.1407,
+       0.1468
+      ],
+      "perm_p": 0.889,
+      "n": 182
+     }
+    },
+    "SUBOVL": {
+     "vs_FT": {
+      "rho": -0.2135,
+      "ci": [
+       -0.35,
+       -0.0638
+      ],
+      "perm_p": 0.003,
+      "n": 182
+     },
+     "vs_resid": {
+      "rho": 0.1073,
+      "ci": [
+       -0.0383,
+       0.2515
+      ],
+      "perm_p": 0.1445,
+      "n": 182
+     }
+    },
+    "LOGME": {
+     "vs_FT": {
+      "rho": -0.1833,
+      "ci": [
+       -0.3172,
+       -0.0399
+      ],
+      "perm_p": 0.015,
+      "n": 182
+     },
+     "vs_resid": {
+      "rho": 0.1685,
+      "ci": [
+       0.02,
+       0.3192
+      ],
+      "perm_p": 0.0205,
+      "n": 182
+     }
+    },
+    "EFFRANK": {
+     "vs_FT": {
+      "rho": 0.0525,
+      "ci": [
+       -0.0931,
+       0.2044
+      ],
+      "perm_p": 0.4995,
+      "n": 182
+     },
+     "vs_resid": {
+      "rho": -0.0516,
+      "ci": [
+       -0.1815,
+       0.0867
+      ],
+      "perm_p": 0.478,
+      "n": 182
+     }
+    }
+   }
+  },
+  "banking77": {
+   "n": 14,
+   "nseed": 4,
+   "FT_reliability": 0.7799,
+   "FT_mean": -0.0001,
+   "FT_std": 0.0551,
+   "var_frac": {
+    "row": 0.614,
+    "col": 0.065,
+    "resid": 0.325
+   },
+   "descriptors": {
+    "COS": {
+     "vs_FT": {
+      "rho": 0.0619,
+      "ci": [
+       -0.0835,
+       0.2062
+      ],
+      "perm_p": 0.4155,
+      "n": 182
+     },
+     "vs_resid": {
+      "rho": 0.01,
+      "ci": [
+       -0.1321,
+       0.148
+      ],
+      "perm_p": 0.897,
+      "n": 182
+     }
+    },
+    "CKA_drift": {
+     "vs_FT": {
+      "rho": -0.0771,
+      "ci": [
+       -0.2085,
+       0.063
+      ],
+      "perm_p": 0.29,
+      "n": 182
+     },
+     "vs_resid": {
+      "rho": -0.0141,
+      "ci": [
+       -0.147,
+       0.1233
+      ],
+      "perm_p": 0.851,
+      "n": 182
+     }
+    },
+    "CKA_reuse": {
+     "vs_FT": {
+      "rho": 0.08,
+      "ci": [
+       -0.0661,
+       0.2162
+      ],
+      "perm_p": 0.286,
+      "n": 182
+     },
+     "vs_resid": {
+      "rho": 0.0022,
+      "ci": [
+       -0.1399,
+       0.1438
+      ],
+      "perm_p": 0.979,
+      "n": 182
+     }
+    },
+    "SUBOVL": {
+     "vs_FT": {
+      "rho": -0.09,
+      "ci": [
+       -0.2306,
+       0.0523
+      ],
+      "perm_p": 0.2245,
+      "n": 182
+     },
+     "vs_resid": {
+      "rho": -0.0134,
+      "ci": [
+       -0.1603,
+       0.131
+      ],
+      "perm_p": 0.8435,
+      "n": 182
+     }
+    },
+    "LOGME": {
+     "vs_FT": {
+      "rho": 0.2438,
+      "ci": [
+       0.1233,
+       0.3543
+      ],
+      "perm_p": 0.0015,
+      "n": 182
+     },
+     "vs_resid": {
+      "rho": 0.1043,
+      "ci": [
+       -0.0361,
+       0.24
+      ],
+      "perm_p": 0.166,
+      "n": 182
+     }
+    },
+    "EFFRANK": {
+     "vs_FT": {
+      "rho": -0.0304,
+      "ci": [
+       -0.1642,
+       0.1096
+      ],
+      "perm_p": 0.678,
+      "n": 182
+     },
+     "vs_resid": {
+      "rho": -0.052,
+      "ci": [
+       -0.1921,
+       0.086
+      ],
+      "perm_p": 0.4875,
+      "n": 182
+     }
+    }
+   }
+  }
+ },
+ "verdict": {
+  "cos_dissociation_persists": false,
+  "feature_reuse_hits_vs_FT": [],
+  "feature_reuse_hits_vs_resid": [],
+  "headline": "NULL: plastic transfer also geometrically opaque (no feature-reuse descriptor clears bar)"
+ }
+}

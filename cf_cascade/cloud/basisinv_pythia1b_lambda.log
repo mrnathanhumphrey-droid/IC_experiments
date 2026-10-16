@@ -1,0 +1,25 @@
+[BI:pythia1b] EleutherAI/pythia-1b basis-invariance (deposit mapfrac vs basis def)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 116/196 [00:00<00:00, 1127.66it/s]Loading weights: 100%|██████████| 196/196 [00:00<00:00, 1162.78it/s]
+[BI:pythia1b] grad-checkpoint ON
+[BI:pythia1b] 48 carriers (18s)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2120960.01 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 344975.77 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 586487.57 examples/s]
+[BI:pythia1b] Fisher/eig done (117s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 65000/560000 [00:00<00:00, 646662.70 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 809710.66 examples/s]Generating train split:  49%|████▉     | 273000/560000 [00:00<00:00, 928995.37 examples/s]Generating train split:  74%|███████▍  | 416000/560000 [00:00<00:00, 1045592.05 examples/s]Generating train split:  95%|█████████▌| 533000/560000 [00:00<00:00, 1084515.93 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 987032.33 examples/s] 
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1062486.99 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▌         | 72000/1400000 [00:00<00:01, 707675.46 examples/s]Generating train split:  10%|█         | 146000/1400000 [00:00<00:01, 718828.56 examples/s]Generating train split:  19%|█▉        | 264000/1400000 [00:00<00:01, 752804.77 examples/s]Generating train split:  25%|██▌       | 351000/1400000 [00:00<00:01, 753613.52 examples/s]Generating train split:  33%|███▎      | 468000/1400000 [00:00<00:01, 762956.73 examples/s]Generating train split:  39%|███▉      | 545000/1400000 [00:00<00:01, 761540.44 examples/s]Generating train split:  46%|████▌     | 637000/1400000 [00:00<00:00, 763778.18 examples/s]Generating train split:  54%|█████▎    | 749000/1400000 [00:00<00:00, 748764.05 examples/s]Generating train split:  60%|██████    | 840000/1400000 [00:01<00:00, 751604.65 examples/s]Generating train split:  66%|██████▌   | 925000/1400000 [00:01<00:00, 752764.75 examples/s]Generating train split:  72%|███████▏  | 1009000/1400000 [00:01<00:00, 752690.25 examples/s]Generating train split:  78%|███████▊  | 1093000/1400000 [00:01<00:00, 752326.68 examples/s]Generating train split:  84%|████████▍ | 1180000/1400000 [00:01<00:00, 761151.23 examples/s]Generating train split:  90%|█████████ | 1265000/1400000 [00:01<00:00, 763539.14 examples/s]Generating train split:  97%|█████████▋| 1355000/1400000 [00:01<00:00, 770836.20 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 753570.41 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 866726.04 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 245487.98 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 262895.90 examples/s]Generating train split:  74%|███████▍  | 155103/209527 [00:00<00:00, 251384.12 examples/s]Generating train split:  96%|█████████▋| 201886/209527 [00:00<00:00, 244647.94 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 247996.34 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1948629.87 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 757094.58 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 797093.12 examples/s]
+[BI:pythia1b] seed 0 deposit done (199s)
+[BI:pythia1b] seed 1 deposit done (264s)
+[BI:pythia1b] seed 2 deposit done (329s)
+
+[BI:pythia1b] === BASIS-INVARIANCE ===
+  dim~2048 | mapfrac@128=0.199 chance(128/d)=0.062 ENRICH@128=3.60x
+  mapfrac@E90=0.113 | K_E90=26 (KE90/d=0.008)
+[BI:pythia1b] saved basisinv_pythia1b.json wall=329s

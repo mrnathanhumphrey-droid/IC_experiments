@@ -1,0 +1,50 @@
+[L:f1b] tarball _face1b_ship.tar.gz with 35 files
+[L:f1b] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L:f1b] instance_id=b93f7de9abca43be8166ba174234c5cb  (manual teardown if I go dark)
+[L:f1b] status=booting ip=None 1s
+[L:f1b] status=active ip=132.145.128.120 251s
+[L:f1b] SSH up at 132.145.128.120 (251s)
+Warning: Permanently added '132.145.128.120' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.128.120' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.128.120' (ED25519) to the list of known hosts.
+[L:f1b] uploaded+extracted (253s); pip...
+Warning: Permanently added '132.145.128.120' (ED25519) to the list of known hosts.
+pipok
+[L:f1b] running face1c_llm_lambda.py (LAYER=14 PROJDIM=12 OUTNAME=face1c_llm.json) wd=10800s (277s)...
+Warning: Permanently added '132.145.128.120' (ED25519) to the list of known hosts.
+2026-07-18 03:08:45.604895: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784344125.661524    2594 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1784344125.677814    2594 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1784344125.784584    2594 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784344125.784624    2594 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784344125.784628    2594 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784344125.784631    2594 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+[F1c] lock=nolock SMOKE=False model=Qwen/Qwen2.5-1.5B ncap=16 seeds=[0, 1, 2] steps=200 per=80 dev=cuda
+[F1c] random projection 1536->12 (de-saturate readout)
+Downloading builder script:   0%|          | 0.00/7.17k [00:00<?, ?B/s]Downloading builder script: 100%|██████████| 7.17k/7.17k [00:00<00:00, 282kB/s]
+Downloading metadata:   0%|          | 0.00/5.89k [00:00<?, ?B/s]Downloading metadata: 100%|██████████| 5.89k/5.89k [00:00<00:00, 266kB/s]
+Downloading readme:   0%|          | 0.00/9.78k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 9.78k/9.78k [00:00<00:00, 475kB/s]
+Downloading data:   0%|          | 0.00/158k [00:00<?, ?B/s]Downloading data: 839kB [00:00, 31.9MB/s]                   
+Downloading data:   0%|          | 0.00/51.1k [00:00<?, ?B/s]Downloading data: 240kB [00:00, 14.1MB/s]                    
+Generating train split:   0%|          | 0/10003 [00:00<?, ? examples/s]Generating train split:  31%|███       | 3103/10003 [00:00<00:00, 30963.88 examples/s]Generating train split:  63%|██████▎   | 6330/10003 [00:00<00:00, 31728.20 examples/s]Generating train split:  96%|█████████▌| 9626/10003 [00:00<00:00, 32287.29 examples/s]Generating train split: 100%|██████████| 10003/10003 [00:00<00:00, 32023.55 examples/s]
+Generating test split:   0%|          | 0/3080 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 3080/3080 [00:00<00:00, 32800.86 examples/s]
+[F1c] loaded model+16 caps/10 neg (9s)
+[F1c] predictors done (14s)
+[F1c] seed 0: medFgt=0.049 inband=True grad%=0.40 curl%=0.65 (680s)
+[F1c] seed 1: medFgt=0.054 inband=True grad%=0.24 curl%=0.79 (1340s)
+[F1c] seed 2: medFgt=0.055 inband=True grad%=0.38 curl%=0.67 (1998s)
+
+[F1c] medFgt=0.053 inband=True | dominance-rho=+0.788 curl-rho=+0.394
+[F1c] phi: trio LOO-R2=-0.417(null95 0.091) ordinal=-0.485(p0.024) rho(d',phi)=+0.038[-0.471, 0.597]
+[F1c] law_pass=False transitive=False cyclic_real=True
+
+[F1c] HEADLINE: ROCK-PAPER-SCISSORS task-triples EXIST at LLM scale — order NOT globally transitive.
+[F1c] wrote /home/ubuntu/ilaw/out/face1c_llm.json  wall=2018s
+[L:f1b] run rc=0 (2311s)
+Warning: Permanently added '132.145.128.120' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.128.120' (ED25519) to the list of known hosts.
+[L:f1b] RESULT LANDED: D:\IC_experiments\interference_law\out\face1c_llm.json
+[L:f1b] terminating b93f7de9abca43be8166ba174234c5cb...
+[L:f1b] terminated b93f7de9abca43be8166ba174234c5cb
+[L:f1b] ledger += 39min $1.28

@@ -1,0 +1,36 @@
+[2B] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  79%|███████▉  | 230/292 [00:00<00:00, 2243.13it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2465.46it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2043906.46 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 423510.08 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 593367.59 examples/s]
+[2B] pre SST-2 acc=0.753 (12s)
+[2B] task-A curvature basis (top-128) done (46s)
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1421406.48 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 752071.72 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 703801.33 examples/s]
+[2B]   precheck subj: forget=0.263 taskB=0.860 (75s)
+[2B]   precheck emotion: forget=0.080 taskB=0.800 (99s)
+[2B] HELD-OUT = subj (forget 0.263)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  11%|█         | 60000/560000 [00:00<00:00, 594626.07 examples/s]Generating train split:  28%|██▊       | 158000/560000 [00:00<00:00, 819384.38 examples/s]Generating train split:  50%|████▉     | 279000/560000 [00:00<00:00, 808268.33 examples/s]Generating train split:  73%|███████▎  | 410000/560000 [00:00<00:00, 914444.43 examples/s]Generating train split:  93%|█████████▎| 523000/560000 [00:00<00:00, 978009.62 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 895027.62 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 986938.19 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   4%|▍         | 58000/1400000 [00:00<00:02, 572937.02 examples/s]Generating train split:  10%|█         | 147000/1400000 [00:00<00:01, 671962.44 examples/s]Generating train split:  15%|█▌        | 216000/1400000 [00:00<00:01, 675197.87 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 701431.64 examples/s]Generating train split:  28%|██▊       | 399000/1400000 [00:00<00:01, 777378.50 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 709873.43 examples/s]Generating train split:  42%|████▏     | 587000/1400000 [00:00<00:01, 763652.97 examples/s]Generating train split:  50%|████▉     | 697000/1400000 [00:00<00:00, 749728.48 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 670530.04 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 686472.38 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 695968.88 examples/s]Generating train split:  75%|███████▌  | 1051000/1400000 [00:01<00:00, 743158.33 examples/s]Generating train split:  81%|████████  | 1130000/1400000 [00:01<00:00, 737197.92 examples/s]Generating train split:  87%|████████▋ | 1217000/1400000 [00:01<00:00, 748348.18 examples/s]Generating train split:  93%|█████████▎| 1306000/1400000 [00:01<00:00, 740910.43 examples/s]Generating train split: 100%|█████████▉| 1394000/1400000 [00:01<00:00, 777492.86 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 726318.66 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 852821.49 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 25987/209527 [00:00<00:00, 253091.45 examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 226299.66 examples/s]Generating train split:  38%|███▊      | 79763/209527 [00:00<00:00, 242715.90 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 246617.93 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 244696.73 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 239827.83 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 237638.71 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 239609.27 examples/s]
+[2B] stream=['agnews', 'dbpedia', 'yahoo', 'newscat', 'emotion'] (NON-sentiment, held-out excluded) (114s)
+[2B] seed 0: sstA A/B/C/D=0.490/0.710/0.553/0.650 | postchild B/C/D=0.750/0.603/0.783 | mapfrac B/C/D=0.334/0.453/0.018 (338s)
+[2B] seed 1: sstA A/B/C/D=0.517/0.710/0.497/0.660 | postchild B/C/D=0.687/0.613/0.727 | mapfrac B/C/D=0.341/0.441/0.018 (562s)
+[2B] seed 2: sstA A/B/C/D=0.570/0.667/0.553/0.707 | postchild B/C/D=0.753/0.640/0.743 | mapfrac B/C/D=0.347/0.469/0.019 (785s)
+[2B] seed 3: sstA A/B/C/D=0.517/0.673/0.537/0.727 | postchild B/C/D=0.767/0.720/0.737 | mapfrac B/C/D=0.335/0.437/0.018 (1009s)
+[2B] seed 4: sstA A/B/C/D=0.497/0.540/0.557/0.557 | postchild B/C/D=0.673/0.707/0.733 | mapfrac B/C/D=0.343/0.430/0.018 (1235s)
+[2B] seed 5: sstA A/B/C/D=0.490/0.613/0.523/0.680 | postchild B/C/D=0.680/0.693/0.753 | mapfrac B/C/D=0.350/0.444/0.018 (1461s)
+[2B] seed 6: sstA A/B/C/D=0.607/0.657/0.543/0.713 | postchild B/C/D=0.747/0.683/0.710 | mapfrac B/C/D=0.336/0.441/0.019 (1686s)
+
+[2B] === VERDICT (held-out=subj, KPROJ=128) ===
+  MODE 1 ONLY (claim narrows): B~D (B-D=-0.018, 2SE 0.036). B's whole edge was the NON-DESTRUCTIVE START, NOT surge-routing. A non-destructive no-map phase-1 slivers as well as the map -> 'the map routes the surge' does NOT hold beyond 'the map is a gentle phase-1'. D-vs-A=+0.144. Phase-2 dmg A+0.227 B+0.070 D+0.070.
+  retention: A=0.527 B=0.653 C=0.538 D=0.670 (pre 0.753)
+  PAIRED B-D=-0.018±0.018 | D-A=+0.144±0.018
+  GUARDS D: non-destructive post-child 0.741 (B 0.722, C 0.666) | no-map mapfrac D 0.018 vs B 0.341 | trained drop 15.29
+  phase-2 damage (post_child - final): A +0.227 B +0.070 C +0.128 D +0.070
+  task-B acc: A 0.881 B 0.861 C 0.867 D 0.878
+[2B] saved dev_experiment2b.json wall=1686s

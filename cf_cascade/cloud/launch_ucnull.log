@@ -1,0 +1,69 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=b4a684f3a7624ca89cef4d8fb5e565b5  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] status=active ip=129.213.25.76 284s
+[L] SSH up at 129.213.25.76 (284s)
+Warning: Permanently added '129.213.25.76' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.25.76' (ED25519) to the list of known hosts.
+[L] uploading 1.6GB checkpoint...
+Warning: Permanently added '129.213.25.76' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.25.76' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.25.76' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.25.76' (ED25519) to the list of known hosts.
+[L] upload done (350s)
+[L] installing transformers/datasets + upgrading Pillow...
+Warning: Permanently added '129.213.25.76' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L] running ucore_null_lambda.py (375s)...
+Warning: Permanently added '129.213.25.76' (ED25519) to the list of known hosts.
+[NULL] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  83%|████████▎ | 241/292 [00:00<00:00, 2404.26it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2616.30it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2330672.60 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 416090.23 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 611417.51 examples/s]
+[NULL] FA done; analytic chance=0.250 (39s)
+[NULL] real agnews loss=0.017 steps=894 (151s)
+[NULL] real yelp loss=0.019 steps=894 (278s)
+[NULL] real subj loss=0.007 steps=745 (372s)
+[NULL] null draw 50/200 (406s)
+[NULL] null draw 100/200 (439s)
+[NULL] null draw 150/200 (473s)
+[NULL] null draw 200/200 (506s)
+
+[NULL] === REAL vs RANDOM-PB NULL (analytic chance=0.250) ===
+  [attention.query_key_value ] real=0.643  null=0.250±0.002 (p5=0.247,p95=0.253)  z=+188.9  real>100% of null
+  [mlp.dense_h_to_4h         ] real=0.631  null=0.250±0.002 (p5=0.247,p95=0.253)  z=+208.4  real>100% of null
+  [mlp.dense_4h_to_h         ] real=0.622  null=0.250±0.002 (p5=0.247,p95=0.253)  z=+194.7  real>100% of null
+
+[NULL] grand: real=0.632  random-PB null=0.250  z=+197.3
+[NULL] VERDICT: REAL SHARED STRUCTURE — partially-universal contested core (real 0.63 >> random-PB null 0.25, z=+197.3) -> construction is NOT manufacturing it; the cores genuinely point the same way
+[NULL] saved ucore_null.json wall=506s
+[L] run rc=0 (885s)
+[L] pulling result + log...
+Warning: Permanently added '129.213.25.76' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.25.76' (ED25519) to the list of known hosts.
+[L] RESULT LANDED: gateA/ucore_null.json
+[L] terminating b4a684f3a7624ca89cef4d8fb5e565b5...
+[L] terminated b4a684f3a7624ca89cef4d8fb5e565b5

@@ -1,0 +1,14 @@
+{
+  "prereg": "PREREG_PROBE6_DISPLACEMENT_2026_06_25.md",
+  "sha256": "185910cd75a5c7d58d4a2e7c779cfdece4e7375279c114a47094728e56cb88fa",
+  "short": "185910cd",
+  "locked": "2026-06-25",
+  "probe": "probe6_displacement_absorption",
+  "primary_metric": "dD = mean_seed(D_noch - D_ch), D=||P_V(w_end-w_A)||",
+  "N": 100,
+  "cells": [
+    "opt350m",
+    "pythia410m"
+  ],
+  "fired": false
+}

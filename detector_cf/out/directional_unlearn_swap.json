@@ -1,0 +1,56 @@
+{
+ "config": {
+  "subsample": 220,
+  "target": "swap",
+  "others": [
+   "diffusion",
+   "celebdf",
+   "dfdc"
+  ],
+  "smoke": false,
+  "prereg_lock": "0d4c05d3",
+  "cos_uhat_dswap": 0.29853375198266113,
+  "removed_mag": 2.5354213484809653
+ },
+ "base": {
+  "swap": 0.6557,
+  "diffusion": 0.9042,
+  "celebdf": 0.9078,
+  "dfdc": 0.934
+ },
+ "directional": {
+  "swap": 0.4769,
+  "diffusion": 0.8851,
+  "celebdf": 0.8415,
+  "dfdc": 0.8531
+ },
+ "naive": {
+  "swap": 0.5901,
+  "diffusion": 0.9535,
+  "celebdf": 0.889,
+  "dfdc": 0.9365
+ },
+ "random": {
+  "swap": 0.6082,
+  "diffusion": 0.9319,
+  "celebdf": 0.8676,
+  "dfdc": 0.9283
+ },
+ "summary": {
+  "directional": {
+   "swap_drop": 0.1788,
+   "other_drop": 0.0554,
+   "specificity": 3.23
+  },
+  "naive": {
+   "swap_drop": 0.0656,
+   "other_drop": -0.011,
+   "specificity": 5.96
+  },
+  "random": {
+   "swap_drop": 0.0475,
+   "other_drop": 0.0061,
+   "specificity": 7.83
+  }
+ }
+}

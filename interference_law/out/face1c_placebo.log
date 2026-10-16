@@ -1,0 +1,41 @@
+2026-07-18 22:53:09.403614: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784415189.455536    2586 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1784415189.470901    2586 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1784415189.562719    2586 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784415189.562746    2586 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784415189.562748    2586 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784415189.562750    2586 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+[PBO] SMOKE=False ncap=16 seeds=[0, 1, 2] steps=200 conds=['real', 'randtext', 'noise'] grid=[12, 24]x[0, 1] dev=cuda
+Downloading builder script:   0%|          | 0.00/7.17k [00:00<?, ?B/s]Downloading builder script: 100%|██████████| 7.17k/7.17k [00:00<00:00, 303kB/s]
+Downloading metadata:   0%|          | 0.00/5.89k [00:00<?, ?B/s]Downloading metadata: 100%|██████████| 5.89k/5.89k [00:00<00:00, 214kB/s]
+Downloading readme:   0%|          | 0.00/9.78k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 9.78k/9.78k [00:00<00:00, 408kB/s]
+Downloading data:   0%|          | 0.00/158k [00:00<?, ?B/s]Downloading data: 839kB [00:00, 33.8MB/s]                   
+Downloading data:   0%|          | 0.00/51.1k [00:00<?, ?B/s]Downloading data: 240kB [00:00, 16.7MB/s]                    
+Generating train split:   0%|          | 0/10003 [00:00<?, ? examples/s]Generating train split:  34%|███▍      | 3419/10003 [00:00<00:00, 34118.69 examples/s]Generating train split:  71%|███████▏  | 7141/10003 [00:00<00:00, 35936.41 examples/s]Generating train split: 100%|██████████| 10003/10003 [00:00<00:00, 35985.18 examples/s]
+Generating test split:   0%|          | 0/3080 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 3080/3080 [00:00<00:00, 36655.59 examples/s]
+[PBO] model+16 caps (11s); PHASE A: 48 x (REAL+RANDTEXT SFT + NOISE)...
+[PBO] seed 0 done, delta_norm~49.31 (1189s)
+[PBO] seed 1 done, delta_norm~54.51 (2367s)
+[PBO] seed 2 done, delta_norm~52.55 (3555s)
+[PBO] PHASE B: projections [12, 24]x[0, 1] x 3 conds (3555s)...
+  [PBO] real     dim=12 ps=0: auc0=0.77 medFgt=+0.038 dom-rho=+0.440 curl-rho=+0.331
+  [PBO] randtext dim=12 ps=0: auc0=0.77 medFgt=+0.026 dom-rho=+0.518 curl-rho=+0.001
+  [PBO] noise    dim=12 ps=0: auc0=0.77 medFgt=+0.016 dom-rho=+0.219 curl-rho=-0.051
+  [PBO] real     dim=12 ps=1: auc0=0.715 medFgt=+0.032 dom-rho=+0.697 curl-rho=+0.364
+  [PBO] randtext dim=12 ps=1: auc0=0.715 medFgt=+0.039 dom-rho=+0.705 curl-rho=+0.017
+  [PBO] noise    dim=12 ps=1: auc0=0.715 medFgt=+0.016 dom-rho=+0.476 curl-rho=+0.107
+  [PBO] real     dim=24 ps=0: auc0=0.76 medFgt=+0.025 dom-rho=+0.789 curl-rho=+0.296
+  [PBO] randtext dim=24 ps=0: auc0=0.76 medFgt=+0.026 dom-rho=+0.719 curl-rho=+0.007
+  [PBO] noise    dim=24 ps=0: auc0=0.76 medFgt=+0.007 dom-rho=+0.663 curl-rho=-0.021
+  [PBO] real     dim=24 ps=1: auc0=0.779 medFgt=+0.067 dom-rho=+0.483 curl-rho=+0.322
+  [PBO] randtext dim=24 ps=1: auc0=0.779 medFgt=+0.067 dom-rho=+0.465 curl-rho=-0.005
+  [PBO] noise    dim=24 ps=1: auc0=0.779 medFgt=+0.017 dom-rho=+0.640 curl-rho=-0.045
+
+[PBO] === curl-rho by condition (in-band median) ===
+  real    : curl-rho=0.331  dom-rho=0.483  medFgt=0.038  (n_inband=3)
+  randtext: curl-rho=0.006  dom-rho=0.585  medFgt=0.053  (n_inband=2)
+  noise   : curl-rho=None  dom-rho=None  medFgt=None  (n_inband=0)
+
+[PBO] HEADLINE: GENUINE — real curl-rho 0.331 clears placebos (max 0.006) by >=0.15. Cycles are task-specific interference, NOT a pipeline/projection artifact.
+[PBO] wrote /home/ubuntu/ilaw/out/face1c_placebo.json  wall=3567s

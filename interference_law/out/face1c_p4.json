@@ -1,0 +1,387 @@
+{
+ "config": {
+  "cells": [
+   "pythia1.4b:clinc150",
+   "pythia1.4b:banking77",
+   "qwen:clinc150"
+  ],
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "steps": 200,
+  "targets": "all-linear",
+  "smoke": false
+ },
+ "cells": [
+  {
+   "cell": "pythia1.4b:clinc150",
+   "model": "EleutherAI/pythia-1.4b",
+   "dataset": "clinc150",
+   "layer": 12,
+   "ncap": 16,
+   "grid": [
+    {
+     "projdim": 8,
+     "projseed": 0,
+     "auc0_med": 0.871,
+     "medFgt": 0.09,
+     "dominance_rho": 0.292,
+     "curl_rho": 0.202,
+     "rho_dprime_phi": 0.221
+    },
+    {
+     "projdim": 8,
+     "projseed": 1,
+     "auc0_med": 0.879,
+     "medFgt": 0.063,
+     "dominance_rho": 0.548,
+     "curl_rho": 0.265,
+     "rho_dprime_phi": -0.079
+    },
+    {
+     "projdim": 8,
+     "projseed": 2,
+     "auc0_med": 0.883,
+     "medFgt": 0.084,
+     "dominance_rho": 0.335,
+     "curl_rho": 0.237,
+     "rho_dprime_phi": 0.203
+    },
+    {
+     "projdim": 12,
+     "projseed": 0,
+     "auc0_med": 0.915,
+     "medFgt": 0.09,
+     "dominance_rho": 0.209,
+     "curl_rho": 0.094,
+     "rho_dprime_phi": 0.232
+    },
+    {
+     "projdim": 12,
+     "projseed": 1,
+     "auc0_med": 0.924,
+     "medFgt": 0.086,
+     "dominance_rho": 0.332,
+     "curl_rho": 0.176,
+     "rho_dprime_phi": 0.374
+    },
+    {
+     "projdim": 12,
+     "projseed": 2,
+     "auc0_med": 0.905,
+     "medFgt": 0.075,
+     "dominance_rho": 0.23,
+     "curl_rho": 0.058,
+     "rho_dprime_phi": 0.271
+    },
+    {
+     "projdim": 24,
+     "projseed": 0,
+     "auc0_med": 0.968,
+     "medFgt": 0.074,
+     "dominance_rho": 0.521,
+     "curl_rho": 0.087,
+     "rho_dprime_phi": -0.438
+    },
+    {
+     "projdim": 24,
+     "projseed": 1,
+     "auc0_med": 0.956,
+     "medFgt": 0.066,
+     "dominance_rho": 0.559,
+     "curl_rho": 0.249,
+     "rho_dprime_phi": -0.347
+    },
+    {
+     "projdim": 24,
+     "projseed": 2,
+     "auc0_med": 0.96,
+     "medFgt": 0.076,
+     "dominance_rho": 0.441,
+     "curl_rho": 0.212,
+     "rho_dprime_phi": -0.118
+    },
+    {
+     "projdim": 48,
+     "projseed": 0,
+     "auc0_med": 0.987,
+     "medFgt": 0.041,
+     "dominance_rho": 0.596,
+     "curl_rho": 0.19,
+     "rho_dprime_phi": -0.588
+    },
+    {
+     "projdim": 48,
+     "projseed": 1,
+     "auc0_med": 0.981,
+     "medFgt": 0.049,
+     "dominance_rho": 0.227,
+     "curl_rho": 0.121,
+     "rho_dprime_phi": -0.306
+    },
+    {
+     "projdim": 48,
+     "projseed": 2,
+     "auc0_med": 0.981,
+     "medFgt": 0.055,
+     "dominance_rho": 0.495,
+     "curl_rho": 0.197,
+     "rho_dprime_phi": -0.274
+    }
+   ],
+   "n_inband": 12,
+   "frac_cyclic_inband": 0.0,
+   "median_curl_inband": 0.194,
+   "median_dom_inband": 0.388,
+   "persists": false
+  },
+  {
+   "cell": "pythia1.4b:banking77",
+   "model": "EleutherAI/pythia-1.4b",
+   "dataset": "banking77",
+   "layer": 12,
+   "ncap": 16,
+   "grid": [
+    {
+     "projdim": 8,
+     "projseed": 0,
+     "auc0_med": 0.811,
+     "medFgt": 0.071,
+     "dominance_rho": 0.62,
+     "curl_rho": 0.079,
+     "rho_dprime_phi": 0.232
+    },
+    {
+     "projdim": 8,
+     "projseed": 1,
+     "auc0_med": 0.786,
+     "medFgt": 0.064,
+     "dominance_rho": 0.405,
+     "curl_rho": 0.19,
+     "rho_dprime_phi": -0.232
+    },
+    {
+     "projdim": 8,
+     "projseed": 2,
+     "auc0_med": 0.823,
+     "medFgt": 0.066,
+     "dominance_rho": 0.472,
+     "curl_rho": 0.23,
+     "rho_dprime_phi": 0.676
+    },
+    {
+     "projdim": 12,
+     "projseed": 0,
+     "auc0_med": 0.835,
+     "medFgt": 0.053,
+     "dominance_rho": 0.356,
+     "curl_rho": 0.218,
+     "rho_dprime_phi": 0.335
+    },
+    {
+     "projdim": 12,
+     "projseed": 1,
+     "auc0_med": 0.846,
+     "medFgt": 0.062,
+     "dominance_rho": 0.539,
+     "curl_rho": 0.205,
+     "rho_dprime_phi": 0.062
+    },
+    {
+     "projdim": 12,
+     "projseed": 2,
+     "auc0_med": 0.819,
+     "medFgt": 0.068,
+     "dominance_rho": 0.716,
+     "curl_rho": 0.292,
+     "rho_dprime_phi": -0.25
+    },
+    {
+     "projdim": 24,
+     "projseed": 0,
+     "auc0_med": 0.919,
+     "medFgt": 0.067,
+     "dominance_rho": 0.814,
+     "curl_rho": 0.26,
+     "rho_dprime_phi": -0.256
+    },
+    {
+     "projdim": 24,
+     "projseed": 1,
+     "auc0_med": 0.916,
+     "medFgt": 0.073,
+     "dominance_rho": 0.678,
+     "curl_rho": 0.203,
+     "rho_dprime_phi": 0.197
+    },
+    {
+     "projdim": 24,
+     "projseed": 2,
+     "auc0_med": 0.904,
+     "medFgt": 0.07,
+     "dominance_rho": 0.603,
+     "curl_rho": 0.113,
+     "rho_dprime_phi": -0.547
+    },
+    {
+     "projdim": 48,
+     "projseed": 0,
+     "auc0_med": 0.957,
+     "medFgt": 0.052,
+     "dominance_rho": 0.505,
+     "curl_rho": 0.104,
+     "rho_dprime_phi": 0.082
+    },
+    {
+     "projdim": 48,
+     "projseed": 1,
+     "auc0_med": 0.956,
+     "medFgt": 0.059,
+     "dominance_rho": 0.654,
+     "curl_rho": 0.275,
+     "rho_dprime_phi": -0.147
+    },
+    {
+     "projdim": 48,
+     "projseed": 2,
+     "auc0_med": 0.95,
+     "medFgt": 0.061,
+     "dominance_rho": 0.549,
+     "curl_rho": 0.086,
+     "rho_dprime_phi": -0.55
+    }
+   ],
+   "n_inband": 12,
+   "frac_cyclic_inband": 0.0,
+   "median_curl_inband": 0.204,
+   "median_dom_inband": 0.576,
+   "persists": false
+  },
+  {
+   "cell": "qwen:clinc150",
+   "model": "Qwen/Qwen2.5-1.5B",
+   "dataset": "clinc150",
+   "layer": 14,
+   "ncap": 16,
+   "grid": [
+    {
+     "projdim": 8,
+     "projseed": 0,
+     "auc0_med": 0.791,
+     "medFgt": 0.053,
+     "dominance_rho": 0.576,
+     "curl_rho": 0.346,
+     "rho_dprime_phi": 0.047
+    },
+    {
+     "projdim": 8,
+     "projseed": 1,
+     "auc0_med": 0.767,
+     "medFgt": 0.055,
+     "dominance_rho": 0.565,
+     "curl_rho": 0.27,
+     "rho_dprime_phi": 0.588
+    },
+    {
+     "projdim": 8,
+     "projseed": 2,
+     "auc0_med": 0.824,
+     "medFgt": 0.048,
+     "dominance_rho": 0.32,
+     "curl_rho": 0.175,
+     "rho_dprime_phi": 0.465
+    },
+    {
+     "projdim": 12,
+     "projseed": 0,
+     "auc0_med": 0.825,
+     "medFgt": 0.073,
+     "dominance_rho": 0.208,
+     "curl_rho": 0.226,
+     "rho_dprime_phi": 0.662
+    },
+    {
+     "projdim": 12,
+     "projseed": 1,
+     "auc0_med": 0.837,
+     "medFgt": 0.076,
+     "dominance_rho": 0.338,
+     "curl_rho": 0.276,
+     "rho_dprime_phi": 0.265
+    },
+    {
+     "projdim": 12,
+     "projseed": 2,
+     "auc0_med": 0.818,
+     "medFgt": 0.078,
+     "dominance_rho": 0.375,
+     "curl_rho": 0.173,
+     "rho_dprime_phi": -0.068
+    },
+    {
+     "projdim": 24,
+     "projseed": 0,
+     "auc0_med": 0.84,
+     "medFgt": 0.041,
+     "dominance_rho": 0.688,
+     "curl_rho": 0.046,
+     "rho_dprime_phi": 0.179
+    },
+    {
+     "projdim": 24,
+     "projseed": 1,
+     "auc0_med": 0.87,
+     "medFgt": 0.077,
+     "dominance_rho": 0.33,
+     "curl_rho": 0.215,
+     "rho_dprime_phi": 0.047
+    },
+    {
+     "projdim": 24,
+     "projseed": 2,
+     "auc0_med": 0.88,
+     "medFgt": 0.09,
+     "dominance_rho": 0.203,
+     "curl_rho": 0.205,
+     "rho_dprime_phi": -0.074
+    },
+    {
+     "projdim": 48,
+     "projseed": 0,
+     "auc0_med": 0.873,
+     "medFgt": 0.054,
+     "dominance_rho": 0.612,
+     "curl_rho": 0.289,
+     "rho_dprime_phi": 0.335
+    },
+    {
+     "projdim": 48,
+     "projseed": 1,
+     "auc0_med": 0.883,
+     "medFgt": 0.055,
+     "dominance_rho": 0.323,
+     "curl_rho": 0.29,
+     "rho_dprime_phi": 0.45
+    },
+    {
+     "projdim": 48,
+     "projseed": 2,
+     "auc0_med": 0.913,
+     "medFgt": 0.051,
+     "dominance_rho": 0.471,
+     "curl_rho": 0.178,
+     "rho_dprime_phi": 0.138
+    }
+   ],
+   "n_inband": 12,
+   "frac_cyclic_inband": 0.083,
+   "median_curl_inband": 0.221,
+   "median_dom_inband": 0.357,
+   "persists": false
+  }
+ ],
+ "headline_sofar": "DOWNGRADE \u2014 cyclic finding is Qwen/banking77-SPECIFIC. Both-new cell pythia1.4b:clinc150 curl-rho median 0.194 in 0.0 of in-band (bar 0.66). Does NOT generalize.",
+ "headline": "DOWNGRADE \u2014 cyclic finding is Qwen/banking77-SPECIFIC. Both-new cell pythia1.4b:clinc150 curl-rho median 0.194 in 0.0 of in-band (bar 0.66). Does NOT generalize."
+}

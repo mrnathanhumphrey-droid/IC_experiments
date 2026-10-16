@@ -1,0 +1,74 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=ef4eab3a10d24c988e51700bf7faecec  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] status=active ip=150.136.67.22 313s
+[L] SSH up at 150.136.67.22 (313s)
+Warning: Permanently added '150.136.67.22' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.67.22' (ED25519) to the list of known hosts.
+[L] uploading 1.6GB checkpoint...
+Warning: Permanently added '150.136.67.22' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.67.22' (ED25519) to the list of known hosts.
+[L] upload done (384s)
+[L] installing transformers/datasets + upgrading Pillow...
+Warning: Permanently added '150.136.67.22' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L] running dye1_lambda.py (409s)...
+Warning: Permanently added '150.136.67.22' (ED25519) to the list of known hosts.
+[DYE1] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  72%|███████▏  | 211/292 [00:00<00:00, 2109.76it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2334.60it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 1931132.37 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 394545.10 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 626102.76 examples/s]
+[DYE1] curvature basis done (39s)
+[DYE1] seed captured (41s)
+[DYE1] snap step=1 loss=24.085 (41s)
+[DYE1] snap step=2 loss=16.549 (41s)
+[DYE1] snap step=3 loss=10.519 (41s)
+[DYE1] snap step=5 loss=4.575 (42s)
+[DYE1] snap step=10 loss=1.923 (42s)
+[DYE1] snap step=25 loss=0.702 (43s)
+[DYE1] snap step=50 loss=0.274 (46s)
+[DYE1] snap step=100 loss=0.475 (50s)
+[DYE1] snap step=200 loss=0.052 (59s)
+[DYE1] snap step=400 loss=0.004 (78s)
+[DYE1] snap step=800 loss=0.000 (114s)
+Traceback (most recent call last):
+  File "/home/ubuntu/dye1_lambda.py", line 159, in <module>
+    main()
+  File "/home/ubuntu/dye1_lambda.py", line 140, in main
+    wetted = [int((dmg_at(c, s) > thr(torch.tensor(dmg_at(c, s)))).sum()) for s in steps_all]
+  File "/home/ubuntu/dye1_lambda.py", line 140, in <listcomp>
+    wetted = [int((dmg_at(c, s) > thr(torch.tensor(dmg_at(c, s)))).sum()) for s in steps_all]
+TypeError: '>' not supported between instances of 'numpy.ndarray' and 'Tensor'
+[L] run rc=1 (526s)
+[L] pulling result + log...
+Warning: Permanently added '150.136.67.22' (ED25519) to the list of known hosts.
+scp: /home/ubuntu/gateA/dye1.json: No such file or directory
+Warning: Permanently added '150.136.67.22' (ED25519) to the list of known hosts.
+scp: /home/ubuntu/gateA/dye1_series.npz: No such file or directory
+Warning: Permanently added '150.136.67.22' (ED25519) to the list of known hosts.
+[L] WARN: no result file pulled
+[L] terminating ef4eab3a10d24c988e51700bf7faecec...
+[L] terminated ef4eab3a10d24c988e51700bf7faecec

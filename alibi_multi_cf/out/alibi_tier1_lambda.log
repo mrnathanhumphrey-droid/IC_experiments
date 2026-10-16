@@ -1,0 +1,71 @@
+[TIER1] dev=cuda smoke=False cells=[('alibi', 'mono'), ('alibi', 'multi'), ('rope', 'mono'), ('rope', 'multi')] d=384 L=6 vocab=16000
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[corpus] en: 1.3M chars
+[corpus] de: 1.3M chars
+[corpus] es: 1.3M chars
+[corpus] ru: 1.4M chars
+[corpus] hi: 1.3M chars
+[corpus] ar: 1.3M chars
+
+
+
+[TIER1] tokenizer trained (22s)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2169018.93 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 348293.79 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 544819.71 examples/s]
+Generating train split:   0%|          | 0/120000 [00:00<?, ? examples/s]Generating train split:  98%|█████████▊| 118000/120000 [00:00<00:00, 1169431.27 examples/s]Generating train split: 100%|██████████| 120000/120000 [00:00<00:00, 1170691.30 examples/s]
+Generating test split:   0%|          | 0/7600 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 7600/7600 [00:00<00:00, 984760.90 examples/s]
+[TIER1] downstream loaded: SST=3000 AGNews=3000 (26s)
+[corpus] en: 40.0M chars
+[corpus] en: 6.7M chars
+[corpus] de: 6.7M chars
+[corpus] es: 6.7M chars
+[corpus] ru: 6.7M chars
+[corpus] hi: 6.7M chars
+[corpus] ar: 6.7M chars
+[TIER1] corpora: mono=torch.Size([47686, 256]) multi=torch.Size([59472, 256]) (130s)
+    pretrain 0/6000 loss=9.837
+    pretrain 1500/6000 loss=4.109
+    pretrain 3000/6000 loss=3.565
+    pretrain 4500/6000 loss=3.318
+[TIER1] PHASEB fixed=200  (cell0 accA0=0.723 retA_noc=0.707 retA_ch=0.715)
+[TIER1] chosen phaseB=200
+    pretrain 0/6000 loss=9.837
+    pretrain 1500/6000 loss=4.109
+    pretrain 3000/6000 loss=3.565
+    pretrain 4500/6000 loss=3.318
+    pretrain 0/6000 loss=9.854
+    pretrain 1500/6000 loss=4.149
+    pretrain 3000/6000 loss=3.652
+    pretrain 4500/6000 loss=3.378
+[TIER1] alibi mono : accA0=0.707 retA_noc=0.707 retA_ch=0.713 PROTECTION=+0.007±0.002
+    pretrain 0/6000 loss=9.837
+    pretrain 1500/6000 loss=4.536
+    pretrain 3000/6000 loss=3.774
+    pretrain 4500/6000 loss=3.314
+    pretrain 0/6000 loss=9.845
+    pretrain 1500/6000 loss=3.924
+    pretrain 3000/6000 loss=3.581
+    pretrain 4500/6000 loss=3.197
+[TIER1] alibi multi: accA0=0.711 retA_noc=0.697 retA_ch=0.692 PROTECTION=-0.005±0.015
+    pretrain 0/6000 loss=9.839
+    pretrain 1500/6000 loss=4.061
+    pretrain 3000/6000 loss=3.532
+    pretrain 4500/6000 loss=3.295
+    pretrain 0/6000 loss=9.854
+    pretrain 1500/6000 loss=4.110
+    pretrain 3000/6000 loss=3.633
+    pretrain 4500/6000 loss=3.373
+[TIER1] rope  mono : accA0=0.702 retA_noc=0.700 retA_ch=0.694 PROTECTION=-0.006±0.021
+    pretrain 0/6000 loss=9.836
+    pretrain 1500/6000 loss=4.493
+    pretrain 3000/6000 loss=3.745
+    pretrain 4500/6000 loss=3.292
+    pretrain 0/6000 loss=9.847
+    pretrain 1500/6000 loss=3.885
+    pretrain 3000/6000 loss=3.577
+    pretrain 4500/6000 loss=3.192
+[TIER1] rope  multi: accA0=0.724 retA_noc=0.705 retA_ch=0.707 PROTECTION=+0.002±0.028
+
+[TIER1] ALiBi×multi protection=-0.005±0.015  others_min=-0.006 margin=-0.001 (2·SE=0.064)  CONJUNCTION=False
+[TIER1] wrote gateA/alibi_tier1.json  wall=4553s

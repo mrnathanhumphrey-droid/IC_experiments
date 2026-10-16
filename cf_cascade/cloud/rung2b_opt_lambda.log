@@ -1,0 +1,19 @@
+[R2] loading facebook/opt-350m (eager)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  76%|███████▌  | 294/388 [00:00<00:00, 2707.92it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3165.60it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2113691.45 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 377873.03 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 510277.10 examples/s]
+[R2] training task-A=SST -> w_A...
+[R2] w_A SST acc=0.797 (rung-1 was 0.77) (117s)
+[R2] curvature basis done (143s)
+[R2] STEP1: com_rank median=0.072(<0.42) | M1 median=0.859(>0.30, Pythia 0.70) -> core EXISTS | antagonism(g_A·g_B0) median=0.094(~0/not-head-on, Pythia −0.23) (172s)
+[R2] STEP2: partial(seed,contest|λ) median=0.288 (Pythia +0.45), frac_pos=0.99, attn median=0.286 -> PASS (172s)
+[R2] steps 1-2 PASS -> STEP 3 (vary task-A SST->AG) (172s)
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  82%|████████▏ | 317/388 [00:00<00:00, 3117.59it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3263.31it/s]
+[R2] STEP3: fragile_G=0.087 topcurv_G=0.089 (chance 0.014)
+  TASK-A's NOT architecture's (Pythia replicates): fragile_G median=0.087 ≈ topcurv_G 0.089 (chance 0.014) — fragile subspace MOVES with task-A & equals generic curvature (no architectural fragile core). attn fragile 0.086 vs topcurv 0.089. (318s)
+
+[R2] === RUNG-2 VERDICT ===
+  RUNG-2 REPLICATES on OPT: seed/contested-core (com 0.07, M1 0.86) + beyond-curvature aimed (partial 0.29, frac_pos 0.99) + task-A-owned (fragile_G≈topcurv_G) ALL replicate on a 3rd family -> mechanism cross-architecture (Pythia+GPT2+OPT). antagonism g_A·g_B0=0.094 ~0 NOT head-on (the one Pythia feature that does NOT replicate on OPT — corroborating signal diverges). OPT earns rung-3.
+[R2] saved rung2b_opt.json wall=318s

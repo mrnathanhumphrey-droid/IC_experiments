@@ -1,0 +1,28 @@
+[R1b] loading facebook/opt-350m (eager)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  83%|████████▎ | 321/388 [00:00<00:00, 3208.78it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3637.51it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2215720.29 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 399283.09 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 617997.22 examples/s]
+[R1b] training to interpolation...
+[R1b] min train loss 0.0002 (118s)
+[R1b] lambda_max=1.278e+00, mu=1.406e+00 (204s)
+[R1b] batch0 (64ex) lambda_min=-2.384e-08 (341s)
+[R1b] batch1 (64ex) lambda_min=-2.623e-07 (468s)
+[R1b] batch2 (64ex) lambda_min=2.146e-07 (603s)
+[R1b] batch3 (64ex) lambda_min=-1.134e+02 (721s)
+[R1b] batch4 (64ex) lambda_min=-1.431e-07 (858s)
+Traceback (most recent call last):
+  File "/home/ubuntu/rung1b_lmin_opt_lambda.py", line 141, in <module>
+    main()
+  File "/home/ubuntu/rung1b_lmin_opt_lambda.py", line 109, in main
+    b256 = b_pairs(tok, subset[:256]); lmin256 = float(lam_min(model, P, b256, mu, PI_ITERS, 500))
+  File "/home/ubuntu/rung1b_lmin_opt_lambda.py", line 79, in lam_min
+    Hv = hvp(model, P, batch, v); Av = [mu * vi - hvi for vi, hvi in zip(v, Hv)]
+  File "/home/ubuntu/rung1b_lmin_opt_lambda.py", line 55, in hvp
+    g = torch.autograd.grad(loss, P, create_graph=True)
+  File "/usr/lib/python3/dist-packages/torch/autograd/__init__.py", line 502, in grad
+    result = _engine_run_backward(
+  File "/usr/lib/python3/dist-packages/torch/autograd/graph.py", line 824, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 106.00 MiB. GPU 0 has a total capacity of 39.49 GiB of which 53.56 MiB is free. Including non-PyTorch memory, this process has 39.43 GiB memory in use. Of the allocated memory 38.46 GiB is allocated by PyTorch, and 483.91 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

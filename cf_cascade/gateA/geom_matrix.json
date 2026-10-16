@@ -1,0 +1,490 @@
+{
+  "opt125m": {
+    "tag": "opt125m",
+    "family": "OPT",
+    "size_m": 125,
+    "model": "facebook/opt-125m",
+    "n_carriers": 72,
+    "summary": {
+      "G1": {
+        "median": 0.003278360845751999,
+        "mean": 0.004547590600653152
+      },
+      "G2": {
+        "median": 2.122859734588334,
+        "mean": 2.3504617686834766
+      },
+      "G3": {
+        "median": 0.3539033332782615,
+        "mean": 0.3293863729961466
+      },
+      "G4": {
+        "median": 0.2717662920671895,
+        "mean": 0.28141768501864584
+      },
+      "G5": {
+        "median": 0.34437368754573416,
+        "mean": 0.3694823434739367
+      },
+      "G6": {
+        "median": 0.29166415588480443,
+        "mean": 0.26117590055099726
+      },
+      "G4rand": {
+        "median": 0.12533681117711565,
+        "mean": 0.12560170360257633
+      },
+      "G5rand": {
+        "median": 0.12416818128792008,
+        "mean": 0.1253887217404661
+      }
+    }
+  },
+  "opt350m": {
+    "tag": "opt350m",
+    "family": "OPT",
+    "size_m": 350,
+    "model": "facebook/opt-350m",
+    "n_carriers": 144,
+    "summary": {
+      "G1": {
+        "median": 0.0031582484940873012,
+        "mean": 0.0033539745131549946
+      },
+      "G2": {
+        "median": 2.4786717972044165,
+        "mean": 2.5702158064981373
+      },
+      "G3": {
+        "median": 0.3260808885672751,
+        "mean": 0.3054545574719127
+      },
+      "G4": {
+        "median": 0.29889023485318644,
+        "mean": 0.28750448879043083
+      },
+      "G5": {
+        "median": 0.4096030674446436,
+        "mean": 0.42317524632450276
+      },
+      "G6": {
+        "median": 0.2831243312666954,
+        "mean": 0.2576317066345737
+      },
+      "G4rand": {
+        "median": 0.12619604322412092,
+        "mean": 0.1260354582808206
+      },
+      "G5rand": {
+        "median": 0.1252589811147501,
+        "mean": 0.12573550775956135
+      }
+    }
+  },
+  "opt1_3b": {
+    "error": "Traceback (most recent call last):\n  File \"/home/ubuntu/geom_classify_lambda.py\", line 231, in main\n    rep, arr = run(cfg, t0); reps[cfg[\"tag\"]] = rep; allarr.update(arr)\n  File \"/home/ubuntu/geom_classify_lambda.py\", line 188, in run\n    model.load_state_dict(ckpt_sd); train_single(model, tok, ho_tr, STEPS_DEPTH, LR_DEPTH, sd)\n  File \"/home/ubuntu/geom_classify_lambda.py\", line 122, in train_single\n    opt.zero_grad(set_to_none=True); loss.backward(); torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0); opt.step()\n  File \"/usr/lib/python3/dist-packages/torch/optim/optimizer.py\", line 485, in wrapper\n    out = func(*args, **kwargs)\n  File \"/usr/lib/python3/dist-packages/torch/optim/optimizer.py\", line 79, in _use_grad\n    ret = func(self, *args, **kwargs)\n  File \"/usr/lib/python3/dist-packages/torch/optim/adam.py\", line 246, in step\n    adam(\n  File \"/usr/lib/python3/dist-packages/torch/optim/optimizer.py\", line 147, in maybe_fallback\n    return func(*args, **kwargs)\n  File \"/usr/lib/python3/dist-packages/torch/optim/adam.py\", line 933, in adam\n    func(\n  File \"/usr/lib/python3/dist-packages/torch/optim/adam.py\", line 757, in _multi_tensor_adam\n    exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 64.00 MiB. GPU 0 has a total capacity of 39.49 GiB of which 51.56 MiB is free. Including non-PyTorch memory, this process has 39.44 GiB memory in use. Of the allocated memory 38.34 GiB is allocated by PyTorch, and 567.13 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+    "family": "OPT",
+    "size_m": 1300
+  },
+  "pythia160m": {
+    "tag": "pythia160m",
+    "family": "PYTHIA",
+    "size_m": 160,
+    "model": "EleutherAI/pythia-160m",
+    "n_carriers": 36,
+    "summary": {
+      "G1": {
+        "median": 0.0019048744669740067,
+        "mean": 0.0019075029170161012
+      },
+      "G2": {
+        "median": 2.6151125315934642,
+        "mean": 2.945046072875637
+      },
+      "G3": {
+        "median": 0.5517137788472272,
+        "mean": 0.5394335982897326
+      },
+      "G4": {
+        "median": 0.4411124187206209,
+        "mean": 0.423452894301213
+      },
+      "G5": {
+        "median": 0.5246016926031105,
+        "mean": 0.508790916293035
+      },
+      "G6": {
+        "median": 0.4728918429675979,
+        "mean": 0.4631184833885232
+      },
+      "G4rand": {
+        "median": 0.12846958381230933,
+        "mean": 0.12816590423261182
+      },
+      "G5rand": {
+        "median": 0.12428912210320975,
+        "mean": 0.12492650020278259
+      }
+    }
+  },
+  "pythia410m": {
+    "tag": "pythia410m",
+    "family": "PYTHIA",
+    "size_m": 410,
+    "model": "EleutherAI/pythia-410m",
+    "n_carriers": 72,
+    "summary": {
+      "G1": {
+        "median": 0.0010222724439146978,
+        "mean": 0.0009681253986841492
+      },
+      "G2": {
+        "median": 3.4288261916944527,
+        "mean": 3.306982875576396
+      },
+      "G3": {
+        "median": 0.5146949081865184,
+        "mean": 0.5003545956228145
+      },
+      "G4": {
+        "median": 0.42950597833053217,
+        "mean": 0.422299598618418
+      },
+      "G5": {
+        "median": 0.5048374731176457,
+        "mean": 0.5090156961435235
+      },
+      "G6": {
+        "median": 0.3308116036828419,
+        "mean": 0.32602680776692744
+      },
+      "G4rand": {
+        "median": 0.12292758250083574,
+        "mean": 0.12421662570493022
+      },
+      "G5rand": {
+        "median": 0.12614206498037828,
+        "mean": 0.12614221707952222
+      }
+    }
+  },
+  "pythia1b": {
+    "tag": "pythia1b",
+    "family": "PYTHIA",
+    "size_m": 1000,
+    "model": "EleutherAI/pythia-1b",
+    "n_carriers": 48,
+    "summary": {
+      "G1": {
+        "median": 0.0017603288032782857,
+        "mean": 0.00250364186700189
+      },
+      "G2": {
+        "median": 1.8122577436228435,
+        "mean": 1.9731804288204742
+      },
+      "G3": {
+        "median": 0.3027611405296622,
+        "mean": 0.31453493201570404
+      },
+      "G4": {
+        "median": 0.3915907917706996,
+        "mean": 0.38398395052636664
+      },
+      "G5": {
+        "median": 0.4901430174287707,
+        "mean": 0.4842075889982464
+      },
+      "G6": {
+        "median": 0.20050408073391912,
+        "mean": 0.19287154580254753
+      },
+      "G4rand": {
+        "median": 0.12657038957426933,
+        "mean": 0.12732830400516582
+      },
+      "G5rand": {
+        "median": 0.1276998899134335,
+        "mean": 0.12834024581365447
+      }
+    }
+  },
+  "feature_matrix": {
+    "opt125m": {
+      "G1": 0.003278360845751999,
+      "G2": 2.122859734588334,
+      "G3": 0.3539033332782615,
+      "G4": 0.2717662920671895,
+      "G5": 0.34437368754573416,
+      "G6": 0.29166415588480443,
+      "G4rand": 0.12533681117711565,
+      "G5rand": 0.12416818128792008,
+      "family": "OPT",
+      "size_m": 125
+    },
+    "opt350m": {
+      "G1": 0.0031582484940873012,
+      "G2": 2.4786717972044165,
+      "G3": 0.3260808885672751,
+      "G4": 0.29889023485318644,
+      "G5": 0.4096030674446436,
+      "G6": 0.2831243312666954,
+      "G4rand": 0.12619604322412092,
+      "G5rand": 0.1252589811147501,
+      "family": "OPT",
+      "size_m": 350
+    },
+    "pythia160m": {
+      "G1": 0.0019048744669740067,
+      "G2": 2.6151125315934642,
+      "G3": 0.5517137788472272,
+      "G4": 0.4411124187206209,
+      "G5": 0.5246016926031105,
+      "G6": 0.4728918429675979,
+      "G4rand": 0.12846958381230933,
+      "G5rand": 0.12428912210320975,
+      "family": "PYTHIA",
+      "size_m": 160
+    },
+    "pythia410m": {
+      "G1": 0.0010222724439146978,
+      "G2": 3.4288261916944527,
+      "G3": 0.5146949081865184,
+      "G4": 0.42950597833053217,
+      "G5": 0.5048374731176457,
+      "G6": 0.3308116036828419,
+      "G4rand": 0.12292758250083574,
+      "G5rand": 0.12614206498037828,
+      "family": "PYTHIA",
+      "size_m": 410
+    },
+    "pythia1b": {
+      "G1": 0.0017603288032782857,
+      "G2": 1.8122577436228435,
+      "G3": 0.3027611405296622,
+      "G4": 0.3915907917706996,
+      "G5": 0.4901430174287707,
+      "G6": 0.20050408073391912,
+      "G4rand": 0.12657038957426933,
+      "G5rand": 0.1276998899134335,
+      "family": "PYTHIA",
+      "size_m": 1000
+    }
+  },
+  "classification": {
+    "metrics": {
+      "G1": {
+        "OPT_med": 0.0031991447680446332,
+        "PYTHIA_med": 0.0011797542702318888,
+        "gap": 0.0020193904978127444,
+        "boot_se": 0.00015197069814603477,
+        "rand_gap": null,
+        "classifies_family": true,
+        "size_trend": {
+          "OPT": [
+            [
+              125,
+              0.0033
+            ],
+            [
+              350,
+              0.0032
+            ]
+          ],
+          "PYTHIA": [
+            [
+              160,
+              0.0019
+            ],
+            [
+              410,
+              0.001
+            ],
+            [
+              1000,
+              0.0018
+            ]
+          ]
+        }
+      },
+      "G2": {
+        "OPT_med": 2.3807778593202835,
+        "PYTHIA_med": 2.595359187400113,
+        "gap": -0.21458132807982944,
+        "boot_se": 0.10205765001874217,
+        "rand_gap": null,
+        "classifies_family": true,
+        "size_trend": {
+          "OPT": [
+            [
+              125,
+              2.1229
+            ],
+            [
+              350,
+              2.4787
+            ]
+          ],
+          "PYTHIA": [
+            [
+              160,
+              2.6151
+            ],
+            [
+              410,
+              3.4288
+            ],
+            [
+              1000,
+              1.8123
+            ]
+          ]
+        }
+      },
+      "G3": {
+        "OPT_med": 0.3367236481778825,
+        "PYTHIA_med": 0.4833623188657134,
+        "gap": -0.14663867068783093,
+        "boot_se": 0.024653432545890024,
+        "rand_gap": null,
+        "classifies_family": true,
+        "size_trend": {
+          "OPT": [
+            [
+              125,
+              0.3539
+            ],
+            [
+              350,
+              0.3261
+            ]
+          ],
+          "PYTHIA": [
+            [
+              160,
+              0.5517
+            ],
+            [
+              410,
+              0.5147
+            ],
+            [
+              1000,
+              0.3028
+            ]
+          ]
+        }
+      },
+      "G4": {
+        "OPT_med": 0.2905903541981941,
+        "PYTHIA_med": 0.4220880946336403,
+        "gap": -0.13149774043544615,
+        "boot_se": 0.011240160092826777,
+        "rand_gap": 0.0002224233436058931,
+        "classifies_family": true,
+        "size_trend": {
+          "OPT": [
+            [
+              125,
+              0.2718
+            ],
+            [
+              350,
+              0.2989
+            ]
+          ],
+          "PYTHIA": [
+            [
+              160,
+              0.4411
+            ],
+            [
+              410,
+              0.4295
+            ],
+            [
+              1000,
+              0.3916
+            ]
+          ]
+        }
+      },
+      "G5": {
+        "OPT_med": 0.39430510613499037,
+        "PYTHIA_med": 0.5048374731176457,
+        "gap": -0.11053236698265534,
+        "boot_se": 0.009019070290938892,
+        "rand_gap": 0.001601444032867133,
+        "classifies_family": true,
+        "size_trend": {
+          "OPT": [
+            [
+              125,
+              0.3444
+            ],
+            [
+              350,
+              0.4096
+            ]
+          ],
+          "PYTHIA": [
+            [
+              160,
+              0.5246
+            ],
+            [
+              410,
+              0.5048
+            ],
+            [
+              1000,
+              0.4901
+            ]
+          ]
+        }
+      },
+      "G6": {
+        "OPT_med": 0.2845612198554796,
+        "PYTHIA_med": 0.3036284683608331,
+        "gap": -0.019067248505353518,
+        "boot_se": 0.012393694842908084,
+        "rand_gap": null,
+        "classifies_family": false,
+        "size_trend": {
+          "OPT": [
+            [
+              125,
+              0.2917
+            ],
+            [
+              350,
+              0.2831
+            ]
+          ],
+          "PYTHIA": [
+            [
+              160,
+              0.4729
+            ],
+            [
+              410,
+              0.3308
+            ],
+            [
+              1000,
+              0.2005
+            ]
+          ]
+        }
+      }
+    },
+    "classifying_family": [
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5"
+    ],
+    "G5_hypothesis": "SUPPORTED"
+  }
+}

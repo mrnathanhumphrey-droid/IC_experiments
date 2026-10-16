@@ -1,0 +1,93 @@
+{
+  "cell": "pythia410m",
+  "mode": "screen",
+  "VOID": false,
+  "M_omega": 12,
+  "screen_lr": 3e-05,
+  "omega": {
+    "agnews": {
+      "cos2_min": 0.0818103689539115,
+      "cos2_mean": 0.007978141125142411,
+      "keys": [
+        "agnews"
+      ]
+    },
+    "dbpedia": {
+      "cos2_min": 0.08800429104040011,
+      "cos2_mean": 0.0077662234855040615,
+      "keys": [
+        "dbpedia"
+      ]
+    },
+    "yahoo": {
+      "cos2_min": 0.07538251422162413,
+      "cos2_mean": 0.006670570714421784,
+      "keys": [
+        "yahoo"
+      ]
+    },
+    "newscat": {
+      "cos2_min": 0.06356854705634635,
+      "cos2_mean": 0.005583695552264131,
+      "keys": [
+        "newscat"
+      ]
+    },
+    "emotion": {
+      "cos2_min": 0.07195196805467387,
+      "cos2_mean": 0.006500726018192689,
+      "keys": [
+        "emotion"
+      ]
+    },
+    "agnews+dbpedia": {
+      "cos2_min": 0.0882706244286374,
+      "cos2_mean": 0.007731251068359625,
+      "keys": [
+        "agnews",
+        "dbpedia"
+      ]
+    },
+    "yahoo+emotion": {
+      "cos2_min": 0.07617299211995358,
+      "cos2_mean": 0.006659749497121848,
+      "keys": [
+        "yahoo",
+        "emotion"
+      ]
+    },
+    "newscat+dbpedia": {
+      "cos2_min": 0.0809518443661526,
+      "cos2_mean": 0.007081093442821194,
+      "keys": [
+        "newscat",
+        "dbpedia"
+      ]
+    },
+    "mix5": {
+      "cos2_min": 0.08270334889217543,
+      "cos2_mean": 0.0072562100499532324,
+      "keys": [
+        "agnews",
+        "dbpedia",
+        "yahoo",
+        "newscat",
+        "emotion"
+      ]
+    }
+  },
+  "ladder_all": [
+    "agnews",
+    "dbpedia",
+    "yahoo",
+    "newscat",
+    "emotion",
+    "agnews+dbpedia",
+    "yahoo+emotion",
+    "newscat+dbpedia",
+    "mix5"
+  ],
+  "omega_span": 0.024702077372291048,
+  "degenerate": [],
+  "ladder_healthy": false
+}

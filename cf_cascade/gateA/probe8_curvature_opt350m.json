@@ -1,0 +1,57 @@
+{
+  "cell": "opt350m",
+  "family": "OPT",
+  "model": "facebook/opt-350m",
+  "n_carriers": 144,
+  "n_seeds": 100,
+  "w_A_acc": 0.8233333333333334,
+  "VOID": false,
+  "calibration_curve": {
+    "1.0e-05": 0.7891666666666667,
+    "1.5e-05": 0.7775,
+    "2.0e-05": 0.7733333333333333,
+    "3.0e-05": 0.7358333333333333
+  },
+  "chosen_lr": 2e-05,
+  "no_nondestructive_point": false,
+  "dphase2_noch": [
+    0.13080000000000003,
+    0.01086475577588308
+  ],
+  "dphase2_ch": [
+    -0.02376666666666667,
+    0.00334665855097142
+  ],
+  "drand_noch": [
+    -0.0014999999999999708,
+    0.00016585661731874737
+  ],
+  "drand_ch": [
+    3.333333333333622e-05,
+    0.00047636624942524076
+  ],
+  "aniso_noch": [
+    -0.1323,
+    0.010832836041422243
+  ],
+  "aniso_ch": [
+    0.0238,
+    0.0032487656293549577
+  ],
+  "delta_aniso_targeting": [
+    0.15610000000000002,
+    0.01106657488501959
+  ],
+  "global_flatten_g": [
+    -0.001533333333333307,
+    0.00048672616213057355
+  ],
+  "ret_anchor_ch": [
+    0.7628999999999999,
+    0.002625804350070372
+  ],
+  "childhood_nondestructive": false,
+  "insensitive": true,
+  "TARGETED_if": "delta_aniso_targeting>0 (>=2sigma)",
+  "GLOBAL_if": "global_flatten_g>0 (>=2sigma) AND delta_aniso~=0"
+}

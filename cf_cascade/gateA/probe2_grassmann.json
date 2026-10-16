@@ -1,0 +1,96 @@
+{
+ "engine": "REFUSE_NO_FORM (regression panel) -> native-Grassmann reimplementation (verdict-shape preserved)",
+ "n_anchors": 3,
+ "kB": 16,
+ "nrand": 60,
+ "guard": {
+  "fragileG": 0.11433853820495267,
+  "topcurvG": 0.11428008656580158,
+  "cut1": 0.114
+ },
+ "base_model_basis": {
+  "ALL": {
+   "cand_align_median": 0.05422746581844652,
+   "transfer_median": 0.11714828769968115,
+   "rand_floor_median": 0.015483486159779913,
+   "delta_vs_transfer_median": -0.06508683797674697,
+   "frac_cells_beat_transfer": 0.032407407407407406,
+   "frac_cells_beat_random_p10": 1.0
+  },
+  "query_key_value": {
+   "cand_align_median": 0.07151913183209818,
+   "transfer_median": 0.13801160745047758,
+   "rand_floor_median": 0.015596195079530594,
+   "delta_vs_transfer_median": -0.07472302681427384,
+   "frac_cells_beat_transfer": 0.013888888888888888,
+   "frac_cells_beat_random_p10": 1.0
+  },
+  "dense_h_to_4h": {
+   "cand_align_median": 0.060908477346283,
+   "transfer_median": 0.11806615244700945,
+   "rand_floor_median": 0.015653406538907275,
+   "delta_vs_transfer_median": -0.05481713155475407,
+   "frac_cells_beat_transfer": 0.06944444444444445,
+   "frac_cells_beat_random_p10": 1.0
+  },
+  "dense_4h_to_h": {
+   "cand_align_median": 0.026717470464065467,
+   "transfer_median": 0.0899165299278221,
+   "rand_floor_median": 0.0038965827057568314,
+   "delta_vs_transfer_median": -0.06508683797674697,
+   "frac_cells_beat_transfer": 0.013888888888888888,
+   "frac_cells_beat_random_p10": 1.0
+  }
+ },
+ "crossanchor_basis": {
+  "ALL": {
+   "cand_align_median": 0.12930442403229342,
+   "transfer_median": 0.11714828769968115,
+   "rand_floor_median": 0.015483486159779913,
+   "delta_vs_transfer_median": 0.012817542909972154,
+   "frac_cells_beat_transfer": 1.0,
+   "frac_cells_beat_random_p10": 1.0
+  },
+  "query_key_value": {
+   "cand_align_median": 0.15146514670907335,
+   "transfer_median": 0.13801160745047758,
+   "rand_floor_median": 0.015596195079530594,
+   "delta_vs_transfer_median": 0.015507085884431837,
+   "frac_cells_beat_transfer": 1.0,
+   "frac_cells_beat_random_p10": 1.0
+  },
+  "dense_h_to_4h": {
+   "cand_align_median": 0.12959749296239897,
+   "transfer_median": 0.11806615244700945,
+   "rand_floor_median": 0.015653406538907275,
+   "delta_vs_transfer_median": 0.011887172281763309,
+   "frac_cells_beat_transfer": 1.0,
+   "frac_cells_beat_random_p10": 1.0
+  },
+  "dense_4h_to_h": {
+   "cand_align_median": 0.10078664315285885,
+   "transfer_median": 0.0899165299278221,
+   "rand_floor_median": 0.0038965827057568314,
+   "delta_vs_transfer_median": 0.011605186666261195,
+   "frac_cells_beat_transfer": 1.0,
+   "frac_cells_beat_random_p10": 1.0
+  }
+ },
+ "search_corrected": {
+  "frac_cells_beat_transfer": 1.0,
+  "frac_cells_beat_random_corrected_p10": 1.0,
+  "frac_cells_PAYS_STRICT": 1.0
+ },
+ "beyond_curvature_control": {
+  "cross_fragile_to_fragile_median": 0.12930442403229342,
+  "cross_topcurv_to_fragile_median": 0.1284132918158483,
+  "fragile_specific_lift_mean": 0.001092353537308739,
+  "fragile_specific_lift_se": 0.0005521865054959223,
+  "fragile_specific_SIG": false,
+  "reading": "SIG=beyond-curvature fragility; NS=generic curvature (Cut-1 control replicated)"
+ },
+ "verdict_base": "COSTS",
+ "verdict_cross": "PAYS_STRICT (PROVISIONAL n=3)",
+ "verdict_overall": "PROVISIONALLY_IRREDUCIBLE (PROVISIONAL n=3): non-curvature architectural-prior basis COSTS; the only 'paying' basis (cross-anchor) is curvature-family and its lift is NOT fragile-specific (control NS) = generic curvature. No architectural fragility beyond curvature -> Cut-1 basis-robust, reframe killed for tested bases.",
+ "scope": "PROVISIONAL: n=3 task-A anchors on disk. More anchors (code/Dolly/emotion as task-A) need GPU (out of CPU lane)."
+}

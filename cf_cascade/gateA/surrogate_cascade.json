@@ -1,0 +1,59 @@
+{
+  "N": 24576,
+  "n_shells": 32,
+  "n_surr": 30,
+  "scales": [
+    16,
+    27,
+    47,
+    81,
+    139,
+    239,
+    411,
+    706,
+    1212,
+    2082,
+    3577,
+    6144
+  ],
+  "qs": [
+    -3.0,
+    -2.0,
+    -1.0,
+    -0.5,
+    0.5,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "results": {
+    "curvature_PRIMARY": {
+      "label": "kfac_curvature",
+      "N": 24576,
+      "n_q_clean": 8,
+      "W_real": 0.520294019261996,
+      "dh_real": 0.25899917676828343,
+      "W_within_mean": 0.24601367583099892,
+      "W_within_p95": 0.2754124899998099,
+      "W_full_mean": 0.6589760879170786,
+      "W_full_p95": 0.7064157150586214,
+      "scale_coupling": true,
+      "diffusion_struct": false,
+      "verdict": "CASCADE \u2014 fine cross-shell coupling (real>within) AND multifractal-wide (W=0.520>0.15)"
+    },
+    "esd_SECONDARY": {
+      "label": "weight_esd",
+      "N": 24576,
+      "n_q_clean": 8,
+      "W_real": 0.2671545092069352,
+      "dh_real": 0.20009850456580364,
+      "W_within_mean": 0.2584388117205912,
+      "W_within_p95": 0.2994164428561417,
+      "W_full_mean": 0.4884400467018864,
+      "W_full_p95": 0.537445894550782,
+      "scale_coupling": false,
+      "diffusion_struct": false,
+      "verdict": "NOISE (variance-profile/marginal) \u2014 within~full~real, no scale-coupling"
+    }
+  }
+}

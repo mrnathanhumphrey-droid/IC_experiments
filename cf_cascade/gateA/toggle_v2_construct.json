@@ -1,0 +1,65 @@
+{
+  "phase": "construct",
+  "model": "EleutherAI/pythia-410m",
+  "rows": [
+    {
+      "nominal_c": -0.5,
+      "achieved_cosV": 0.6244657832851263,
+      "sharing_fracV": 0.8391194667804579,
+      "label_balance": 0.4841666666666667,
+      "learn_acc": 0.97
+    },
+    {
+      "nominal_c": -0.23,
+      "achieved_cosV": 0.6076995118010975,
+      "sharing_fracV": 0.8296059321277807,
+      "label_balance": 0.4725,
+      "learn_acc": 0.97
+    },
+    {
+      "nominal_c": 0.0,
+      "achieved_cosV": 0.5943035141789457,
+      "sharing_fracV": 0.8269218832752816,
+      "label_balance": 0.48083333333333333,
+      "learn_acc": 0.9558333333333333
+    },
+    {
+      "nominal_c": 0.2,
+      "achieved_cosV": 0.5894393888215523,
+      "sharing_fracV": 0.8166566115313479,
+      "label_balance": 0.5008333333333334,
+      "learn_acc": 0.9391666666666667
+    },
+    {
+      "nominal_c": 0.5,
+      "achieved_cosV": 0.5637949674101174,
+      "sharing_fracV": 0.7631375693188538,
+      "label_balance": 0.5366666666666666,
+      "learn_acc": 0.9225
+    }
+  ],
+  "recommend_nominal_c": {
+    "0.2": {
+      "nominal_c": 0.5,
+      "achieved": 0.5637949674101174
+    },
+    "0.0": {
+      "nominal_c": 0.5,
+      "achieved": 0.5637949674101174
+    },
+    "-0.23": {
+      "nominal_c": 0.5,
+      "achieved": 0.5637949674101174
+    }
+  },
+  "gates": {
+    "a_cosine_monotone_spans": false,
+    "b_sharing_constant": true,
+    "c_learnable_similar": true
+  },
+  "PASS": false,
+  "proj_A": "unembed(pos)-unembed(neg)",
+  "orth_seed": 7,
+  "KPROJ": 128,
+  "n_pool": 1200
+}

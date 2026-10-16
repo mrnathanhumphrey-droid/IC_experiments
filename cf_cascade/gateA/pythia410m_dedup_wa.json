@@ -1,0 +1,10 @@
+{
+  "model": "EleutherAI/pythia-410m-deduped",
+  "tag": "pythia410m_dedup",
+  "wA_sst_acc": 0.7966666666666666,
+  "stop_step": 1500,
+  "target": 0.8,
+  "matched": false,
+  "lr": 5e-05,
+  "subset": 2000
+}

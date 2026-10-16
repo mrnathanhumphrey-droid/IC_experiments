@@ -1,0 +1,55 @@
+[BP] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  54%|█████▍    | 158/292 [00:00<00:00, 1478.44it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 1955.29it/s]
+[BP] building panel...
+[BP]   +JSON agnews (topic) n=2400
+[BP]   +JSON yelp (sentiment) n=2400
+[BP]   +JSON subj (subjectivity) n=2400
+[BP]   +JSON ucdp (violence) n=4500
+[BP]   +JSON nullperm (NULLperm) n=2400
+Generating train split:   0%|          | 0/18612 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 18612/18612 [00:00<00:00, 305976.46 examples/s]
+[BP]   +HF code (code) n=600
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1481006.86 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 766502.92 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 819520.13 examples/s]
+[BP]   +HF emotion (emotion) n=600
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  14%|█▎        | 76000/560000 [00:00<00:00, 752306.01 examples/s]Generating train split:  31%|███▏      | 175000/560000 [00:00<00:00, 885286.58 examples/s]Generating train split:  51%|█████     | 285000/560000 [00:00<00:00, 976431.07 examples/s]Generating train split:  76%|███████▌  | 423000/560000 [00:00<00:00, 1104400.74 examples/s]Generating train split:  99%|█████████▊| 552000/560000 [00:00<00:00, 1167044.97 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1062645.14 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1092295.11 examples/s]
+[BP]   +HF dbpedia (topic) n=600
+Generating train split:   0%|          | 0/25000 [00:00<?, ? examples/s]Generating train split:  96%|█████████▌| 24000/25000 [00:00<00:00, 231528.57 examples/s]Generating train split: 100%|██████████| 25000/25000 [00:00<00:00, 237109.93 examples/s]
+Generating test split:   0%|          | 0/25000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 25000/25000 [00:00<00:00, 254064.74 examples/s]
+Generating unsupervised split:   0%|          | 0/50000 [00:00<?, ? examples/s]Generating unsupervised split:  44%|████▍     | 22000/50000 [00:00<00:00, 214448.17 examples/s]Generating unsupervised split: 100%|██████████| 50000/50000 [00:00<00:00, 249875.43 examples/s]
+[BP]   +HF imdb (sentiment) n=600
+Generating train split:   0%|          | 0/26732 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 26732/26732 [00:00<00:00, 2109184.42 examples/s]
+Generating test split:   0%|          | 0/3432 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 3432/3432 [00:00<00:00, 989608.92 examples/s]
+[BP]   +HF tweet (sentiment) n=600
+Generating train split:   0%|          | 0/2119719 [00:00<?, ? examples/s]Generating train split:   2%|▏         | 42000/2119719 [00:00<00:05, 399330.75 examples/s]Generating train split:   4%|▍         | 82000/2119719 [00:00<00:05, 395692.28 examples/s]Generating train split:   6%|▌         | 124000/2119719 [00:00<00:05, 398929.53 examples/s]Generating train split:   8%|▊         | 166000/2119719 [00:00<00:04, 396501.16 examples/s]Generating train split:  10%|▉         | 207000/2119719 [00:00<00:04, 397369.02 examples/s]Generating train split:  12%|█▏        | 260000/2119719 [00:00<00:04, 374352.34 examples/s]Generating train split:  15%|█▍        | 315000/2119719 [00:00<00:04, 364659.85 examples/s]Generating train split:  17%|█▋        | 357000/2119719 [00:00<00:04, 358394.77 examples/s]Generating train split:  19%|█▊        | 397000/2119719 [00:01<00:04, 367090.20 examples/s]Generating train split:  21%|██▏       | 454000/2119719 [00:01<00:04, 368399.46 examples/s]Generating train split:  23%|██▎       | 497000/2119719 [00:01<00:04, 377597.18 examples/s]Generating train split:  26%|██▌       | 551930/2119719 [00:01<00:04, 356032.65 examples/s]Generating train split:  28%|██▊       | 591930/2119719 [00:01<00:04, 364548.14 examples/s]Generating train split:  30%|██▉       | 634930/2119719 [00:01<00:03, 380140.52 examples/s]Generating train split:  32%|███▏      | 675930/2119719 [00:01<00:03, 385976.79 examples/s]Generating train split:  34%|███▍      | 716930/2119719 [00:01<00:03, 388933.16 examples/s]Generating train split:  36%|███▋      | 770930/2119719 [00:02<00:03, 372724.88 examples/s]Generating train split:  38%|███▊      | 813930/2119719 [00:02<00:03, 363367.98 examples/s]Generating train split:  40%|████      | 855930/2119719 [00:02<00:03, 377300.51 examples/s]Generating train split:  43%|████▎     | 908930/2119719 [00:02<00:03, 364880.27 examples/s]Generating train split:  45%|████▍     | 950930/2119719 [00:02<00:03, 376070.89 examples/s]Generating train split:  48%|████▊     | 1006930/2119719 [00:02<00:02, 371379.26 examples/s]Generating train split:  49%|████▉     | 1045930/2119719 [00:02<00:02, 374365.40 examples/s]Generating train split:  52%|█████▏    | 1104860/2119719 [00:02<00:02, 373323.52 examples/s]Generating train split:  54%|█████▍    | 1142860/2119719 [00:03<00:02, 372959.61 examples/s]Generating train split:  56%|█████▌    | 1182860/2119719 [00:03<00:02, 374105.11 examples/s]Generating train split:  58%|█████▊    | 1222860/2119719 [00:03<00:02, 378151.85 examples/s]Generating train split:  60%|█████▉    | 1264860/2119719 [00:03<00:02, 385467.92 examples/s]Generating train split:  62%|██████▏   | 1317860/2119719 [00:03<00:02, 368103.12 examples/s]Generating train split:  65%|██████▍   | 1370860/2119719 [00:03<00:02, 360741.67 examples/s]Generating train split:  67%|██████▋   | 1410860/2119719 [00:03<00:01, 367090.03 examples/s]Generating train split:  69%|██████▉   | 1467860/2119719 [00:03<00:01, 368282.65 examples/s]Generating train split:  72%|███████▏  | 1520860/2119719 [00:04<00:01, 359699.32 examples/s]Generating train split:  74%|███████▍  | 1572860/2119719 [00:04<00:01, 393358.78 examples/s]Generating train split:  77%|███████▋  | 1635790/2119719 [00:04<00:01, 389591.63 examples/s]Generating train split:  80%|███████▉  | 1694790/2119719 [00:04<00:01, 389017.54 examples/s]Generating train split:  83%|████████▎ | 1754790/2119719 [00:04<00:00, 387283.80 examples/s]Generating train split:  85%|████████▌ | 1804790/2119719 [00:04<00:00, 365430.51 examples/s]Generating train split:  87%|████████▋ | 1843790/2119719 [00:04<00:00, 369118.01 examples/s]Generating train split:  89%|████████▉ | 1894790/2119719 [00:05<00:00, 348048.47 examples/s]Generating train split:  91%|█████████ | 1933790/2119719 [00:05<00:00, 356769.22 examples/s]Generating train split:  94%|█████████▎| 1985790/2119719 [00:05<00:00, 341799.01 examples/s]Generating train split:  95%|█████████▌| 2020790/2119719 [00:05<00:00, 336409.82 examples/s]Generating train split:  97%|█████████▋| 2056790/2119719 [00:05<00:00, 338962.19 examples/s]Generating train split:  99%|█████████▊| 2091790/2119719 [00:05<00:00, 341477.98 examples/s]Generating train split: 100%|██████████| 2119719/2119719 [00:05<00:00, 367682.72 examples/s]
+Generating validation split:   0%|          | 0/21990 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 21990/21990 [00:00<00:00, 388959.27 examples/s]
+[BP]   +nltext (NULLnl) n=1500
+[BP] panel: 9 real ['agnews', 'code', 'dbpedia', 'emotion', 'imdb', 'subj', 'tweet', 'ucdp', 'yelp'] | nulls ['nltext', 'nullperm', 'randtok'] (102s)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2585672.91 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 361835.49 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 682131.61 examples/s]
+[BP] FA basis done (135s)
+[BP] seed agnews done (140s)
+[BP] seed code done (152s)
+[BP] seed dbpedia done (157s)
+[BP] seed emotion done (160s)
+[BP] seed imdb done (166s)
+[BP] seed subj done (169s)
+[BP] seed tweet done (172s)
+[BP] seed ucdp done (176s)
+[BP] seed yelp done (183s)
+[BP] seed nltext done (186s)
+[BP] seed nullperm done (188s)
+[BP] seed randtok done (192s)
+
+[BP] === VERDICT ===
+  TASK-SPECIFIC MAP CONFIRMED: real held-out partial=0.652 vs true-null floor=0.481 -> lift=+0.171 (>>SE). The neighborhood map carries TASK structure beyond generic model geometry; that lift is the part a 'childhood' would learn. Graded same-vs-diff +0.157. Seamstress has terrain -> #3 path holds.
+  real held-out partial=0.652 (frac 1.00, raw 0.824 vs shuf 0.000)
+  NULL[nltext    NULLnl   ] partial=0.561
+  NULL[nullperm  NULLperm ] partial=0.538
+  NULL[randtok   NULLrand ] partial=0.401
+  true-null floor=0.481 -> LIFT=+0.171
+  attn=0.700 mlp=0.628 | graded same 0.702 vs diff 0.544
+[BP] saved breadth_pass.json wall=198s

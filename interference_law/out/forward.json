@@ -1,0 +1,146 @@
+{
+ "config": {
+  "caps": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19
+  ],
+  "few": [
+   8,
+   24
+  ],
+  "K": 30,
+  "d_proj": 24,
+  "nseed": 3,
+  "seed": 0,
+  "prereg_lock": "bb5bba73"
+ },
+ "results": {
+  "cifar": {
+   "n": 20,
+   "cold_auc_median": 0.8003,
+   "headroom": true,
+   "transfer_frac": 0.379,
+   "hurt_frac": 0.408,
+   "FT_range": [
+    -0.1732,
+    0.1306
+   ],
+   "rho_cos_FT": 0.024,
+   "pearson": 0.038,
+   "zero_crossing_c0": -0.375,
+   "top_bin_positive": true,
+   "FT_vs_cos_curve": [
+    [
+     -0.623,
+     -0.0102
+    ],
+    [
+     -0.432,
+     -0.0072
+    ],
+    [
+     -0.318,
+     0.0145
+    ],
+    [
+     -0.174,
+     -0.0161
+    ],
+    [
+     -0.01,
+     -0.0114
+    ],
+    [
+     0.137,
+     -0.009
+    ],
+    [
+     0.331,
+     -0.0063
+    ],
+    [
+     0.668,
+     0.0036
+    ]
+   ],
+   "checks": {
+    "P1_fwd_transfer": true,
+    "P2_cosine_gov": false,
+    "P3_aligned_positive": true
+   }
+  },
+  "dtd": {
+   "n": 20,
+   "cold_auc_median": 0.8095,
+   "headroom": true,
+   "transfer_frac": 0.237,
+   "hurt_frac": 0.524,
+   "FT_range": [
+    -0.1792,
+    0.1037
+   ],
+   "rho_cos_FT": -0.012,
+   "pearson": -0.003,
+   "zero_crossing_c0": null,
+   "top_bin_positive": false,
+   "FT_vs_cos_curve": [
+    [
+     -0.538,
+     -0.0172
+    ],
+    [
+     -0.338,
+     -0.0113
+    ],
+    [
+     -0.223,
+     -0.0141
+    ],
+    [
+     -0.128,
+     -0.0203
+    ],
+    [
+     -0.02,
+     -0.0107
+    ],
+    [
+     0.096,
+     -0.0204
+    ],
+    [
+     0.219,
+     -0.0153
+    ],
+    [
+     0.512,
+     -0.0152
+    ]
+   ],
+   "checks": {
+    "P1_fwd_transfer": true,
+    "P2_cosine_gov": false,
+    "P3_aligned_positive": false
+   }
+  }
+ },
+ "verdict": "forward transfer exists, not cosine-gov"
+}

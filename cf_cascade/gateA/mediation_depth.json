@@ -1,0 +1,112 @@
+{
+ "valid_depths": [
+  12,
+  18,
+  24
+ ],
+ "d6_excluded": "VOID (pre_sst 0.763)",
+ "depth_axis": {
+  "d12": {
+   "B_minus_D": -0.0392,
+   "se": 0.0169,
+   "fc1_funnel": -0.182,
+   "fc1_seed_deep": 0.266,
+   "G5": 0.3927
+  },
+  "d18": {
+   "B_minus_D": 0.0141,
+   "se": 0.0151,
+   "fc1_funnel": -0.43,
+   "fc1_seed_deep": 0.678,
+   "G5": 0.3956
+  },
+  "d24": {
+   "B_minus_D": 0.0546,
+   "se": 0.0213,
+   "fc1_funnel": -0.837,
+   "fc1_seed_deep": 0.648,
+   "G5": 0.4256
+  }
+ },
+ "spearman_vs_BD_n3": {
+  "fc1_funnel": -1.0,
+  "fc1_seed_deep": 0.5,
+  "G5": 1.0
+ },
+ "variance_partition": {
+  "BD_range_depth": 0.0938,
+  "G5_range_depth_all4": 0.0433,
+  "G5_range_family_all6": 0.1802,
+  "G5_range_OPT_size": 0.0652,
+  "fc1_funnel_range_depth": 0.6556,
+  "fc1_seed_range_depth": 0.4123,
+  "G5_depth_over_family": 0.2404
+ },
+ "G5_depth_sign_check": "family law = G5 DOWN as B-D UP; across depth G5 moves UP as B-D UP (wrong-signed) -> coincidental, not causal",
+ "per_carrier_corroboration": {
+  "d12": {
+   "fc1": {
+    "n": 12,
+    "mean_resid_bd": 0.018282907827033304,
+    "rho_resid_vs_depthfrac": 1.0
+   },
+   "fc2": {
+    "n": 12,
+    "mean_resid_bd": 0.006945920360344346,
+    "rho_resid_vs_depthfrac": 0.6993006993006995
+   },
+   "q_proj": {
+    "n": 12,
+    "mean_resid_bd": 0.014464881900793829,
+    "rho_resid_vs_depthfrac": 0.965034965034965
+   },
+   "k_proj": {
+    "n": 12,
+    "mean_resid_bd": 0.011707660120972801,
+    "rho_resid_vs_depthfrac": 0.8251748251748254
+   },
+   "v_proj": {
+    "n": 12,
+    "mean_resid_bd": 0.026767231949437444,
+    "rho_resid_vs_depthfrac": 0.9720279720279721
+   },
+   "out_proj": {
+    "n": 12,
+    "mean_resid_bd": 0.04103894682197979,
+    "rho_resid_vs_depthfrac": 0.9720279720279721
+   }
+  },
+  "d18": {
+   "fc1": {
+    "n": 18,
+    "mean_resid_bd": 0.019323507273163898,
+    "rho_resid_vs_depthfrac": 0.9938080495356036
+   },
+   "fc2": {
+    "n": 18,
+    "mean_resid_bd": 0.005564059459644839,
+    "rho_resid_vs_depthfrac": 0.47781217750258
+   },
+   "q_proj": {
+    "n": 18,
+    "mean_resid_bd": 0.013965553850716413,
+    "rho_resid_vs_depthfrac": 0.9669762641898865
+   },
+   "k_proj": {
+    "n": 18,
+    "mean_resid_bd": 0.016840437192535918,
+    "rho_resid_vs_depthfrac": 0.8823529411764706
+   },
+   "v_proj": {
+    "n": 18,
+    "mean_resid_bd": 0.02951126552441906,
+    "rho_resid_vs_depthfrac": 0.9649122807017543
+   },
+   "out_proj": {
+    "n": 18,
+    "mean_resid_bd": 0.04128692673925876,
+    "rho_resid_vs_depthfrac": 0.8328173374613003
+   }
+  }
+ }
+}

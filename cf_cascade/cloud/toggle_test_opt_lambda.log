@@ -1,0 +1,50 @@
+[TG] loading facebook/opt-350m...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3904.93it/s]
+[TG] 144 carriers; levels=[0.2, 0.0, -0.23]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2226267.52 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 403156.20 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 597685.86 examples/s]
+[TG] training task-A (SST) 500 steps...
+[TG] w_A SST acc=0.773 (52s)
+[TG] task-A curvature basis done (85s)
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1563543.81 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 557012.48 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 697365.37 examples/s]
+[TG]   precheck subj: forget=0.283 taskB=0.475
+[TG]   precheck emotion: forget=0.047 taskB=0.770
+[TG] HELD-OUT = subj (forget 0.283)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 69000/560000 [00:00<00:00, 679536.16 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 820072.61 examples/s]Generating train split:  50%|████▉     | 278000/560000 [00:00<00:00, 961655.56 examples/s]Generating train split:  74%|███████▍  | 417000/560000 [00:00<00:00, 1074437.28 examples/s]Generating train split:  97%|█████████▋| 543000/560000 [00:00<00:00, 1135457.36 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1029379.00 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1095633.46 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▍         | 65000/1400000 [00:00<00:02, 647031.03 examples/s]Generating train split:  11%|█         | 150000/1400000 [00:00<00:01, 721525.30 examples/s]Generating train split:  16%|█▌        | 227000/1400000 [00:00<00:01, 740305.53 examples/s]Generating train split:  22%|██▏       | 306000/1400000 [00:00<00:01, 757894.55 examples/s]Generating train split:  29%|██▊       | 402000/1400000 [00:00<00:01, 772047.12 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 781000.74 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 780498.42 examples/s]Generating train split:  49%|████▊     | 682000/1400000 [00:00<00:00, 812875.37 examples/s]Generating train split:  57%|█████▋    | 796000/1400000 [00:01<00:00, 790154.04 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 782588.82 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 779344.45 examples/s]Generating train split:  75%|███████▍  | 1046000/1400000 [00:01<00:00, 783532.93 examples/s]Generating train split:  81%|████████  | 1130000/1400000 [00:01<00:00, 787551.45 examples/s]Generating train split:  87%|████████▋ | 1217000/1400000 [00:01<00:00, 792940.40 examples/s]Generating train split:  93%|█████████▎| 1306000/1400000 [00:01<00:00, 797188.84 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 800895.94 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 782594.70 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 901755.22 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 246777.72 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 258696.12 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 254341.65 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 248286.82 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 244819.69 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 248335.10 examples/s]
+[TG] stream=['agnews', 'dbpedia', 'yahoo', 'newscat', 'emotion'] (150s)
+[TG] seed 0 c=+0.20: sstA A/B/D=0.490/0.510/0.510 | B-D=+0.000 | cos pre/post=-0.008/+0.200 share=0.576 (363s)
+[TG] seed 0 c=+0.00: sstA A/B/D=0.527/0.773/0.587 | B-D=+0.187 | cos pre/post=-0.012/-0.000 share=0.553 (499s)
+[TG] seed 0 c=-0.23: sstA A/B/D=0.490/0.557/0.510 | B-D=+0.047 | cos pre/post=-0.012/-0.230 share=0.427 (635s)
+[TG] seed 1 c=+0.20: sstA A/B/D=0.490/0.510/0.480 | B-D=+0.030 | cos pre/post=-0.004/+0.200 share=0.523 (842s)
+[TG] seed 1 c=+0.00: sstA A/B/D=0.483/0.637/0.700 | B-D=-0.063 | cos pre/post=-0.006/+0.000 share=0.604 (975s)
+[TG] seed 1 c=-0.23: sstA A/B/D=0.490/0.503/0.490 | B-D=+0.013 | cos pre/post=+0.000/-0.230 share=0.517 (1108s)
+[TG] seed 2 c=+0.20: sstA A/B/D=0.490/0.543/0.490 | B-D=+0.053 | cos pre/post=-0.008/+0.200 share=0.534 (1320s)
+[TG] seed 2 c=+0.00: sstA A/B/D=0.433/0.570/0.533 | B-D=+0.037 | cos pre/post=-0.009/-0.000 share=0.539 (1454s)
+[TG] seed 2 c=-0.23: sstA A/B/D=0.477/0.510/0.510 | B-D=+0.000 | cos pre/post=+0.001/-0.230 share=0.502 (1588s)
+[TG] seed 3 c=+0.20: sstA A/B/D=0.490/0.523/0.490 | B-D=+0.033 | cos pre/post=-0.014/+0.200 share=0.529 (1797s)
+[TG] seed 3 c=+0.00: sstA A/B/D=0.510/0.530/0.783 | B-D=-0.253 | cos pre/post=+0.010/+0.000 share=0.545 (1933s)
+[TG] seed 3 c=-0.23: sstA A/B/D=0.510/0.510/0.510 | B-D=+0.000 | cos pre/post=-0.004/-0.230 share=0.489 (2066s)
+[TG] seed 4 c=+0.20: sstA A/B/D=0.490/0.527/0.490 | B-D=+0.037 | cos pre/post=-0.004/+0.200 share=0.515 (2276s)
+[TG] seed 4 c=+0.00: sstA A/B/D=0.507/0.680/0.740 | B-D=-0.060 | cos pre/post=-0.015/-0.000 share=0.521 (2412s)
+[TG] seed 4 c=-0.23: sstA A/B/D=0.530/0.510/0.577 | B-D=-0.067 | cos pre/post=+0.000/-0.230 share=0.465 (2549s)
+[TG] seed 5 c=+0.20: sstA A/B/D=0.490/0.500/0.490 | B-D=+0.010 | cos pre/post=+0.003/+0.200 share=0.445 (2760s)
+[TG] seed 5 c=+0.00: sstA A/B/D=0.510/0.640/0.600 | B-D=+0.040 | cos pre/post=+0.020/+0.000 share=0.479 (2893s)
+[TG] seed 5 c=-0.23: sstA A/B/D=0.490/0.510/0.527 | B-D=-0.017 | cos pre/post=+0.015/-0.230 share=0.488 (3029s)
+[TG] seed 6 c=+0.20: sstA A/B/D=0.490/0.510/0.507 | B-D=+0.003 | cos pre/post=-0.009/+0.200 share=0.492 (3239s)
+[TG] seed 6 c=+0.00: sstA A/B/D=0.577/0.677/0.670 | B-D=+0.007 | cos pre/post=+0.011/+0.000 share=0.616 (3373s)
+[TG] seed 6 c=-0.23: sstA A/B/D=0.483/0.517/0.587 | B-D=-0.070 | cos pre/post=-0.002/-0.230 share=0.549 (3507s)
+
+[TG] === TOGGLE VERDICT (OPT-350m, held-out=subj) ===
+  CLEAN KILL: B-D FLAT across antagonism ([0.024, -0.015, -0.013]) — antagonism does NOT control map-survival; rung-2/3 divergences are INDEPENDENT facts. Unifying hypothesis dead.
+  c=+0.20: ret A/B/D=0.490/0.518/0.494 | B-D=+0.024±0.007 | D-A=+0.004±0.004 | A_forget=0.283 | cos -0.006->+0.200 share=0.516
+  c=+0.00: ret A/B/D=0.507/0.644/0.659 | B-D=-0.015±0.047 | D-A=+0.152±0.030 | A_forget=0.267 | cos -0.000->-0.000 share=0.551
+  c=-0.23: ret A/B/D=0.496/0.517/0.530 | B-D=-0.013±0.015 | D-A=+0.034±0.012 | A_forget=0.278 | cos -0.000->-0.230 share=0.491
+[TG] saved toggle_test_opt.json wall=3507s

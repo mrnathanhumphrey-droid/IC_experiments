@@ -1,0 +1,15 @@
+{
+  "run": "armF_beta0.1_K8_seed0",
+  "probe_super_zlow": 0.5685,
+  "probe_super_ztrans": 0.5321,
+  "probe_fine_zlow": 0.4554,
+  "probe_fine_ztrans": 0.3575,
+  "within_super_zlow": 0.2915901579140654,
+  "within_super_ztrans": 0.30319066147859924,
+  "within_super_chance": 0.0404040404040404,
+  "selectivity_index": 0.011600503564533848,
+  "n_err_zlow": 5446,
+  "n_err_ztrans": 6425,
+  "cka_zlow_ztrans": 0.6404975788069575,
+  "kl_rate": 4.278434133148194
+}

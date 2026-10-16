@@ -1,0 +1,29 @@
+{
+  "results": {
+    "curvature": {
+      "label": "kfac_curvature",
+      "rho_component": 0.6938610816561342,
+      "n_shells": 32,
+      "var_slope": 0.381852758331851,
+      "var_r2": 0.7530504472350219,
+      "var_shell_rho": 0.9582111436950146,
+      "mean_slope": 0.16475330763377366,
+      "mean_r2": 0.8459376307251352,
+      "mean_shell_rho": 0.9831378299120233
+    },
+    "esd": {
+      "label": "weight_esd",
+      "rho_component": 0.10812073421194934,
+      "n_shells": 32,
+      "var_slope": 0.1203869295265504,
+      "var_r2": 0.09811205128448608,
+      "var_shell_rho": 0.2027126099706745,
+      "mean_slope": 0.035989593502800066,
+      "mean_r2": 0.12767993202841188,
+      "mean_shell_rho": 0.3548387096774193
+    }
+  },
+  "curvature_graded": true,
+  "exceeds_esd": true,
+  "verdict": "CURVATURE-GRADED confirmed (curvature strong, clearly exceeds ESD)"
+}

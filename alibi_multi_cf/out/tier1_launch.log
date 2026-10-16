@@ -1,0 +1,129 @@
+[L:tier1] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L:tier1] instance_id=a67af6f5ba7b467fac10741dc3872915  (manual teardown if I go dark)
+[L:tier1] status=booting ip=None 1s
+[L:tier1] status=active ip=129.213.88.1 315s
+[L:tier1] SSH up at 129.213.88.1 (316s)
+Warning: Permanently added '129.213.88.1' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.88.1' (ED25519) to the list of known hosts.
+[L:tier1] uploaded (317s); pip install...
+Warning: Permanently added '129.213.88.1' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L:tier1] running (MODE=full PHASEB=200) (341s)...
+Warning: Permanently added '129.213.88.1' (ED25519) to the list of known hosts.
+[TIER1] dev=cuda smoke=False cells=[('alibi', 'mono'), ('alibi', 'multi'), ('rope', 'mono'), ('rope', 'multi')] d=384 L=6 vocab=16000
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[corpus] en: 1.3M chars
+[corpus] de: 1.3M chars
+[corpus] es: 1.3M chars
+[corpus] ru: 1.4M chars
+[corpus] hi: 1.3M chars
+[corpus] ar: 1.3M chars
+
+
+
+[TIER1] tokenizer trained (28s)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2258213.46 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 418854.00 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 628420.90 examples/s]
+Generating train split:   0%|          | 0/120000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 120000/120000 [00:00<00:00, 1243122.00 examples/s]
+Generating test split:   0%|          | 0/7600 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 7600/7600 [00:00<00:00, 1031275.00 examples/s]
+[TIER1] downstream loaded: SST=3000 AGNews=3000 (31s)
+[corpus] en: 40.0M chars
+[corpus] en: 6.7M chars
+[corpus] de: 6.7M chars
+[corpus] es: 6.7M chars
+[corpus] ru: 6.7M chars
+[corpus] hi: 6.7M chars
+[corpus] ar: 6.7M chars
+[TIER1] corpora: mono=torch.Size([47686, 256]) multi=torch.Size([59472, 256]) (137s)
+'peer closed connection without sending complete message body (received 16828937 bytes, expected 32780810)' thrown while requesting GET https://huggingface.co/datasets/wikimedia/wikipedia/resolve/b04c8d1ceb2f5cd4588862100d08de323dccfbaa/20231101.ar/train-00000-of-00007.parquet
+Retrying in 1s [Retry 1/5].
+    pretrain 0/6000 loss=9.837
+    pretrain 1500/6000 loss=4.109
+    pretrain 3000/6000 loss=3.565
+    pretrain 4500/6000 loss=3.318
+[TIER1] PHASEB fixed=200  (cell0 accA0=0.723 retA_noc=0.707 retA_ch=0.715)
+[TIER1] chosen phaseB=200
+    pretrain 0/6000 loss=9.837
+    pretrain 1500/6000 loss=4.109
+    pretrain 3000/6000 loss=3.565
+    pretrain 4500/6000 loss=3.318
+    pretrain 0/6000 loss=9.837
+    pretrain 1500/6000 loss=4.109
+    pretrain 3000/6000 loss=3.565
+    pretrain 4500/6000 loss=3.318
+[TIER1] alibi mono : accA0=0.723 retA_noc=0.707 retA_ch=0.715 PROTECTION=+0.008±0.000
+    pretrain 0/6000 loss=9.837
+    pretrain 1500/6000 loss=4.536
+    pretrain 3000/6000 loss=3.774
+    pretrain 4500/6000 loss=3.314
+    pretrain 0/6000 loss=9.837
+    pretrain 1500/6000 loss=4.536
+    pretrain 3000/6000 loss=3.774
+    pretrain 4500/6000 loss=3.314
+[TIER1] alibi multi: accA0=0.727 retA_noc=0.693 retA_ch=0.673 PROTECTION=-0.020±0.000
+Traceback (most recent call last):
+  File "/home/ubuntu/alibi_tier1_lambda.py", line 276, in <module>
+    main()
+  File "/home/ubuntu/alibi_tier1_lambda.py", line 250, in main
+    runs = [protection_for(pe, lg, chosen) for _ in range(1 if SMOKE else 2)]
+  File "/home/ubuntu/alibi_tier1_lambda.py", line 250, in <listcomp>
+    runs = [protection_for(pe, lg, chosen) for _ in range(1 if SMOKE else 2)]
+  File "/home/ubuntu/alibi_tier1_lambda.py", line 215, in protection_for
+    pretrain(base, corpora[lingual], PRETRAIN_STEPS, PRETRAIN_BATCH, LR_PT)
+  File "/home/ubuntu/alibi_tier1_lambda.py", line 142, in pretrain
+    logits = model.forward_lm(x[:, :-1]); loss = Fun.cross_entropy(logits.reshape(-1, VOCAB), x[:, 1:].reshape(-1))
+  File "/home/ubuntu/alibi_tier1_lambda.py", line 132, in forward_lm
+    def forward_lm(s, x): return s.lm(s.hidden(x))
+  File "/home/ubuntu/alibi_tier1_lambda.py", line 130, in hidden
+    for b in s.blocks: h = b(h, s.rope)
+  File "/usr/lib/python3/dist-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/alibi_tier1_lambda.py", line 118, in forward
+    def forward(s, x, r): x = x + s.at(s.ln1(x), r); return x + s.mlp(s.ln2(x))
+  File "/usr/lib/python3/dist-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/alibi_tier1_lambda.py", line 105, in forward
+    if s.pe == "rope": q = apply_rope(q, *rope); k = apply_rope(k, *rope)
+  File "/home/ubuntu/alibi_tier1_lambda.py", line 95, in apply_rope
+    return torch.stack([x1 * c - x2 * s, x1 * s + x2 * c], -1).flatten(-2)
+RuntimeError: The size of tensor a (255) must match the size of tensor b (256) at non-singleton dimension 2
+[L:tier1] run rc=1 (2908s)
+Warning: Permanently added '129.213.88.1' (ED25519) to the list of known hosts.
+scp: /home/ubuntu/gateA/alibi_tier1.json: No such file or directory
+[L] scp rc!=0 (1/3)
+Warning: Permanently added '129.213.88.1' (ED25519) to the list of known hosts.
+scp: /home/ubuntu/gateA/alibi_tier1.json: No such file or directory
+[L] scp rc!=0 (2/3)
+Warning: Permanently added '129.213.88.1' (ED25519) to the list of known hosts.
+scp: /home/ubuntu/gateA/alibi_tier1.json: No such file or directory
+[L] scp rc!=0 (3/3)
+Warning: Permanently added '129.213.88.1' (ED25519) to the list of known hosts.
+[L:tier1] WARN no result
+[L:tier1] terminating a67af6f5ba7b467fac10741dc3872915...
+[L:tier1] terminated a67af6f5ba7b467fac10741dc3872915

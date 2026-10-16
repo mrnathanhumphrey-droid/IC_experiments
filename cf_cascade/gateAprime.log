@@ -1,0 +1,52 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[A'] Step 0: logging saddle eigenvector (lambda_max=-1933 direction)...
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|##########| 292/292 [00:00<00:00, 3525.63it/s]
+  saddle lambda_max=1134.3; direction concentrates in:
+    embed_out.weight                                   |v|=0.969
+    gpt_neox.layers.5.mlp.dense_4h_to_h.weight         |v|=0.185
+    gpt_neox.layers.6.mlp.dense_4h_to_h.weight         |v|=0.077
+    gpt_neox.layers.0.attention.query_key_value.weight |v|=0.059
+    gpt_neox.embed_in.weight                           |v|=0.051
+    gpt_neox.layers.1.attention.query_key_value.weight |v|=0.039
+    gpt_neox.layers.7.mlp.dense_4h_to_h.weight         |v|=0.033
+    gpt_neox.layers.22.mlp.dense_4h_to_h.weight        |v|=0.030
+
+[A'] Step 1: retrain to train-stationarity (no overfit guard, stop train-loss<0.03)...
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|##########| 292/292 [00:00<00:00, 3382.57it/s]
+  step  200  train_win 0.6600  (85s)
+  step  400  train_win 0.4573  (106s)
+  step  600  train_win 0.4317  (127s)
+  step  800  train_win 0.4070  (147s)
+  step 1000  train_win 0.3761  (167s)
+  step 1200  train_win 0.3583  (188s)
+  step 1400  train_win 0.3395  (209s)
+  step 1600  train_win 0.3055  (229s)
+  step 1800  train_win 0.3218  (249s)
+  step 2000  train_win 0.3072  (269s)
+  step 2200  train_win 0.3324  (289s)
+  step 2400  train_win 0.2859  (311s)
+  step 2600  train_win 0.2909  (332s)
+  step 2800  train_win 0.2886  (353s)
+  step 3000  train_win 0.2820  (374s)
+  step 3200  train_win 0.2952  (394s)
+  step 3400  train_win 0.2648  (415s)
+  step 3600  train_win 0.2607  (435s)
+  step 3800  train_win 0.2484  (455s)
+  step 4000  train_win 0.2535  (475s)
+  step 4200  train_win 0.2477  (497s)
+  step 4400  train_win 0.1917  (518s)
+  step 4600  train_win 0.1839  (539s)
+  step 4800  train_win 0.1858  (559s)
+  step 5000  train_win 0.2114  (581s)
+  step 5200  train_win 0.1942  (602s)
+  step 5400  train_win 0.2062  (624s)
+  step 5600  train_win 0.2028  (645s)
+  step 5800  train_win 0.1836  (667s)
+  step 6000  train_win 0.1893  (688s)
+  step 6200  train_win 0.1890  (708s)
+  step 6400  train_win 0.1734  (729s)
+  step 6600  train_win 0.2180  (750s)
+  step 6800  train_win 0.2018  (770s)
+  step 7000  train_win 0.2139  (792s)
+  step 7200  train_win 0.1862  (921s)
+  step 7400  train_win 0.1971  (1062s)

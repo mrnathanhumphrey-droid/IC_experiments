@@ -1,0 +1,17 @@
+[B] start; loading...
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  56%|#####6    | 164/292 [00:00<00:00, 1530.01it/s]Loading weights: 100%|##########| 292/292 [00:00<00:00, 292.97it/s] 
+Using the latest cached version of the dataset since stanfordnlp/sst2 couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at D:\IC_experiments\cf_cascade\hf_cache\datasets\stanfordnlp___sst2\default\0.0.0\8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb (last modified on Wed Jun 17 21:10:07 2026).
+[B] loaded (105s)
+[B] frozen ESD basis built; SST-2 acc before B = 0.770 (151s)
+  [B] step 200 train_win 0.3066 (196s)
+  [B] step 400 train_win 0.1455 (252s)
+  [B] step 600 train_win 0.0422 (313s)
+[B] AG-News trained (train_win 0.010); SST-2 acc after B = 0.662 -> forgetting +0.108
+
+[B] === c2 GATE B: damage tail-index alpha ===
+  task-A forgetting: SST-2 acc 0.770 -> 0.662 (drop +0.108); AG-News train_win 0.010
+  damage components: 24576, median 4.674e-04, max 7.295e-02
+  Hill tail-index ALPHA = 2.86
+  -> DECISION BRANCH: alpha<3: moment-c2 INFEASIBLE -> rank/quantile estimator or concede
+[B] saved c2_gateB.json  wall=401s

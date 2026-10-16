@@ -1,0 +1,36 @@
+{
+  "per_carrier": {
+    "attention.query_key_value": {
+      "M1_grassmann_vs_curv": 0.765625,
+      "M2_spearman_contest_vs_eigrank": 0.7706425518925518,
+      "M2_dissociation_count": 0.7916666666666666,
+      "M3_core_act_loading": 0.47836459772440426,
+      "M3_corr_contest_act": 0.9306750435709753,
+      "crossB_consistency": 0.9191588609287388
+    },
+    "mlp.dense_h_to_4h": {
+      "M1_grassmann_vs_curv": 0.6901041666666666,
+      "M2_spearman_contest_vs_eigrank": 0.7066601800976802,
+      "M2_dissociation_count": 1.0833333333333333,
+      "M3_core_act_loading": 0.47835372438025314,
+      "M3_corr_contest_act": 0.9152417712685401,
+      "crossB_consistency": 0.9119039572355699
+    },
+    "mlp.dense_4h_to_h": {
+      "M1_grassmann_vs_curv": 0.65625,
+      "M2_spearman_contest_vs_eigrank": 0.6724549755799755,
+      "M2_dissociation_count": 1.25,
+      "M3_core_act_loading": 0.453020767231677,
+      "M3_corr_contest_act": 0.8738209540291142,
+      "crossB_consistency": 0.9256218463445881
+    }
+  },
+  "grand_M1_vs_curv": 0.7039930555555555,
+  "grand_dissociation": 1.0416666666666667,
+  "grand_core_act_loading": 0.46991302977877814,
+  "M1_chance": 0.25,
+  "ktop": 64,
+  "core": 16,
+  "verdict": "DEFLATION (M1=0.70>=0.7: contested core IS task-A top-curvature subspace -> known-object relabel; pivot headline to diffusion)",
+  "wall_s": 379.9436857700348
+}

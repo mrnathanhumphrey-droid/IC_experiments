@@ -1,0 +1,33 @@
+[CTL] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  74%|███████▍  | 216/292 [00:00<00:00, 2058.29it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2290.49it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 1944746.31 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 329053.81 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 611270.72 examples/s]
+[CTL] setup done: pre SST-2 acc=0.753, fragile mean-lam=9.44e-02 band mean-lam=2.71e-02 (44s)
+[CTL] ag: E=100 (mass early 236.5 vs late 193.5); naive ret=0.537 forget=0.217 (77s)
+  [ag][naive         ] ret=0.582+-0.072 bloss=0.08
+  [ag][fragile_full  ] ret=0.688+-0.019 bloss=0.11
+  [ag][fragile_early ] ret=0.640+-0.043 bloss=0.08
+  [ag][fragile_late  ] ret=0.554+-0.089 bloss=0.09
+  [ag][randhi_early  ] ret=0.619+-0.057 bloss=0.13 drawlam=1.28e-02
+  [ag][randany_early ] ret=0.596+-0.054 bloss=0.20
+  [ag][randany_full  ] ret=0.652+-0.030 bloss=0.16
+Generating train split:   0%|          | 0/18612 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 18612/18612 [00:00<00:00, 295460.05 examples/s]
+[CTL] code: E=100 (mass early 274.3 vs late 270.9); naive ret=0.723 forget=0.030 (789s)
+  [code][naive         ] ret=0.712+-0.009 bloss=0.73
+  [code][fragile_full  ] ret=0.769+-0.004 bloss=0.79
+  [code][fragile_early ] ret=0.751+-0.012 bloss=0.83
+  [code][fragile_late  ] ret=0.717+-0.020 bloss=0.90
+  [code][randhi_early  ] ret=0.690+-0.012 bloss=0.87 drawlam=1.28e-02
+  [code][randany_early ] ret=0.681+-0.017 bloss=0.85
+  [code][randany_full  ] ret=0.686+-0.028 bloss=0.84
+
+[CTL] === ag (pre=0.753) ===
+  early NOT as cheap as full (early 0.640 < full 0.688) -> timed protection insufficient; needs full-time.
+  mass early/late = 236.5/193.5 (E=100); 5a draw-lam vs fragile-lam = 1.28e-02 vs 9.44e-02
+
+[CTL] === code (pre=0.753) ===
+  HYPOTHESIS HELD: fragile_early 0.751 ~ fragile_full 0.769 (cheap) AND > late 0.717 (timing) AND > randhi_early 0.690 (FRAGILE beyond curvature). Timed+targeted protection works.
+  mass early/late = 274.3/270.9 (E=100); 5a draw-lam vs fragile-lam = 1.28e-02 vs 9.44e-02
+[CTL] saved control_test.json wall=1869s

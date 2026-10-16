@@ -1,0 +1,100 @@
+{
+ "config": {
+  "nseed": 10,
+  "note": "P1b variance localization + norm control"
+ },
+ "results": {
+  "cifar": {
+   "n": 20,
+   "common_norm": 1.106,
+   "raw": {
+    "FT_reliability": 0.9762,
+    "var_frac": {
+     "row_target": 0.068,
+     "col_source": 0.193,
+     "resid_interaction": 0.736
+    },
+    "component_reliability": {
+     "row": 0.693,
+     "col": 0.994,
+     "resid": 0.998
+    },
+    "reliable_var_share": {
+     "row_target": 0.048,
+     "col_source": 0.197,
+     "resid_interaction": 0.755
+    }
+   },
+   "norm": {
+    "FT_reliability": 0.9735,
+    "var_frac": {
+     "row_target": 0.078,
+     "col_source": 0.101,
+     "resid_interaction": 0.817
+    },
+    "component_reliability": {
+     "row": 0.643,
+     "col": 0.998,
+     "resid": 0.999
+    },
+    "reliable_var_share": {
+     "row_target": 0.052,
+     "col_source": 0.105,
+     "resid_interaction": 0.843
+    }
+   },
+   "col_effect": {
+    "rho_wnorm_vs_col_raw": -0.6,
+    "col_var_raw": 0.000318,
+    "col_var_norm": 0.000135,
+    "col_var_ratio_norm_over_raw": 0.426
+   }
+  },
+  "dtd": {
+   "n": 20,
+   "common_norm": 1.456,
+   "raw": {
+    "FT_reliability": 0.9455,
+    "var_frac": {
+     "row_target": 0.172,
+     "col_source": 0.109,
+     "resid_interaction": 0.724
+    },
+    "component_reliability": {
+     "row": 0.715,
+     "col": 0.996,
+     "resid": 0.999
+    },
+    "reliable_var_share": {
+     "row_target": 0.129,
+     "col_source": 0.113,
+     "resid_interaction": 0.758
+    }
+   },
+   "norm": {
+    "FT_reliability": 0.9403,
+    "var_frac": {
+     "row_target": 0.184,
+     "col_source": 0.087,
+     "resid_interaction": 0.734
+    },
+    "component_reliability": {
+     "row": 0.671,
+     "col": 0.98,
+     "resid": 0.996
+    },
+    "reliable_var_share": {
+     "row_target": 0.131,
+     "col_source": 0.091,
+     "resid_interaction": 0.778
+    }
+   },
+   "col_effect": {
+    "rho_wnorm_vs_col_raw": -0.2406,
+    "col_var_raw": 0.000159,
+    "col_var_norm": 0.000123,
+    "col_var_ratio_norm_over_raw": 0.77
+   }
+  }
+ }
+}

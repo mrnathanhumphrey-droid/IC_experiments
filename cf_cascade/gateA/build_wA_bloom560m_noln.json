@@ -1,0 +1,15 @@
+{
+  "cell": "bloom560m_noln",
+  "family": "BLOOM",
+  "model": "bigscience/bloom-560m",
+  "ckpt": "bloom560m_noln_sst2_wA.pt",
+  "VOID": false,
+  "base_acc": 0.4675,
+  "anchor_acc": 0.7725,
+  "best_step": 1000,
+  "confirm_reload_acc": 0.7725,
+  "lr": 2e-05,
+  "steps": 2000,
+  "posid": 18121,
+  "negid": 23381
+}

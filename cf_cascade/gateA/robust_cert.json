@@ -1,0 +1,12 @@
+{
+  "lambda_max_pos": 0.09532567113637924,
+  "lambda_min": 3.0174851417541504e-07,
+  "direct_largest_mag": 0.09532567113637924,
+  "plateaued": true,
+  "restart_agree": true,
+  "cross_check": true,
+  "shift_ok": true,
+  "trustworthy": true,
+  "is_psd_minimum": true,
+  "wall_s": 64.04690551757812
+}

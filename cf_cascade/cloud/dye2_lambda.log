@@ -1,0 +1,17 @@
+[DYE2] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  79%|███████▉  | 230/292 [00:00<00:00, 2174.04it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2338.80it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2153820.55 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 419286.15 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 639202.24 examples/s]
+[DYE2] curvature basis + injections built (39s)
+[DYE2] baseline done, 12 snaps (118s)
+[DYE2] stiff-injection run done (193s)
+[DYE2] flat-injection run done (270s)
+[DYE2] saved dye2_series.npz (270s)
+  [attention.query_key_value ] PR stiff 1.0->8.0  flat 1.0->7.8
+  [mlp.dense_h_to_4h         ] PR stiff 1.0->23.4  flat 1.0->22.3
+  [mlp.dense_4h_to_h         ] PR stiff 1.0->6.2  flat 1.0->5.4
+
+[DYE2] SAME RATE (stiff 13 ~ flat 12, 1.1x) -> grading is SEEDING-driven not transport (falsifier: graded rate lives in where damage seeds, not how perturbations transport)
+[DYE2] saved dye2.json wall=270s

@@ -1,0 +1,63 @@
+[P9:opt350m:screen] facebook/opt-350m aiming-axis MODE=screen STREAM=ALL (Sun Jun 28 17:00:49 2026)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  74%|███████▍  | 289/388 [00:00<00:00, 2831.29it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 2938.43it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2035379.51 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 405300.65 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 575007.72 examples/s]
+[P9:opt350m] w_A acc=0.823; 144 carriers (13s)
+Repo card metadata block was not found. Setting CardData to empty.
+Generating train split:   0%|          | 0/5452 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 5452/5452 [00:00<00:00, 649197.86 examples/s]
+Generating test split:   0%|          | 0/500 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 500/500 [00:00<00:00, 161729.93 examples/s]
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  10%|█         | 58000/560000 [00:00<00:00, 572129.90 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 774384.08 examples/s]Generating train split:  49%|████▊     | 272000/560000 [00:00<00:00, 901368.86 examples/s]Generating train split:  74%|███████▍  | 416000/560000 [00:00<00:00, 1021240.85 examples/s]Generating train split:  96%|█████████▌| 535000/560000 [00:00<00:00, 1075321.43 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 967755.46 examples/s] 
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1004156.42 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1797960.19 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 746383.84 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 721911.19 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 25987/209527 [00:00<00:00, 243538.54 examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 224119.86 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 248516.79 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 245783.06 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 237976.77 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 236731.18 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 238673.57 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   4%|▍         | 62000/1400000 [00:00<00:02, 611854.78 examples/s]Generating train split:  10%|█         | 146000/1400000 [00:00<00:01, 679614.61 examples/s]Generating train split:  16%|█▌        | 219000/1400000 [00:00<00:01, 698478.89 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 714244.37 examples/s]Generating train split:  28%|██▊       | 394000/1400000 [00:00<00:01, 770038.84 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 716082.25 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 731514.59 examples/s]Generating train split:  49%|████▊     | 682000/1400000 [00:00<00:00, 772894.91 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 751330.45 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 749841.37 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 749936.59 examples/s]Generating train split:  75%|███████▍  | 1046000/1400000 [00:01<00:00, 747452.94 examples/s]Generating train split:  81%|████████  | 1130000/1400000 [00:01<00:00, 748128.33 examples/s]Generating train split:  87%|████████▋ | 1217000/1400000 [00:01<00:00, 735061.99 examples/s]Generating train split:  93%|█████████▎| 1306000/1400000 [00:01<00:00, 732509.07 examples/s]Generating train split: 100%|█████████▉| 1396000/1400000 [00:01<00:00, 773231.35 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 737398.92 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 818190.58 examples/s]
+[P9:opt350m] datasets loaded (subj 2200; TREC 900; streams ['agnews', 'dbpedia', 'emotion', 'newscat', 'yahoo'])
+[hb] p2 1/12 1/250 loss=22.584 (60s)
+[hb] p2 1/12 26/250 loss=0.618 (62s)
+[hb] p2 1/12 51/250 loss=0.867 (64s)
+[hb] p2 1/12 76/250 loss=1.098 (66s)
+[hb] p2 1/12 101/250 loss=0.676 (68s)
+[hb] p2 1/12 126/250 loss=0.434 (71s)
+[hb] p2 1/12 151/250 loss=0.119 (73s)
+[hb] p2 1/12 176/250 loss=0.293 (75s)
+[hb] p2 1/12 201/250 loss=0.066 (77s)
+[hb] p2 1/12 226/250 loss=0.427 (78s)
+[hb] p2 1/12 250/250 loss=0.241 (80s)
+[hb] p2 5/12 1/250 loss=21.501 (143s)
+[hb] p2 5/12 26/250 loss=1.283 (146s)
+[hb] p2 5/12 51/250 loss=0.230 (148s)
+[hb] p2 5/12 76/250 loss=0.363 (150s)
+[hb] p2 5/12 101/250 loss=0.163 (152s)
+[hb] p2 5/12 126/250 loss=0.348 (154s)
+[hb] p2 5/12 151/250 loss=0.073 (156s)
+[hb] p2 5/12 176/250 loss=0.872 (158s)
+[hb] p2 5/12 201/250 loss=0.806 (160s)
+[hb] p2 5/12 226/250 loss=0.521 (162s)
+[hb] p2 5/12 250/250 loss=0.457 (164s)
+[hb] p2 9/12 1/250 loss=20.918 (227s)
+[hb] p2 9/12 26/250 loss=0.457 (229s)
+[hb] p2 9/12 51/250 loss=0.472 (231s)
+[hb] p2 9/12 76/250 loss=0.292 (233s)
+[hb] p2 9/12 101/250 loss=0.163 (235s)
+[hb] p2 9/12 126/250 loss=0.205 (237s)
+[hb] p2 9/12 151/250 loss=0.739 (239s)
+[hb] p2 9/12 176/250 loss=0.005 (241s)
+[hb] p2 9/12 201/250 loss=0.003 (243s)
+[hb] p2 9/12 226/250 loss=0.585 (245s)
+[hb] p2 9/12 250/250 loss=0.610 (247s)
+[omega] phase-2 subspace built (M=12, dim=28311552) (310s)
+[omega] agnews             cos2_min=0.0346 cos2_mean=0.0029 (741s)
+[omega] dbpedia            cos2_min=0.0334 cos2_mean=0.0028 (1168s)
+[omega] yahoo              cos2_min=0.0315 cos2_mean=0.0026 (1575s)
+[omega] newscat            cos2_min=0.0190 cos2_mean=0.0016 (1977s)
+[omega] emotion            cos2_min=0.0226 cos2_mean=0.0019 (2387s)
+[omega] agnews+dbpedia     cos2_min=0.0330 cos2_mean=0.0028 (2817s)
+[omega] yahoo+emotion      cos2_min=0.0267 cos2_mean=0.0023 (3224s)
+[omega] newscat+dbpedia    cos2_min=0.0253 cos2_mean=0.0021 (3647s)
+[omega] mix5               cos2_min=0.0281 cos2_mean=0.0024 (4067s)
+[P9:opt350m] SCREEN DONE span=0.016 healthy=False degenerate=[] omegas={'agnews': 0.035, 'dbpedia': 0.033, 'yahoo': 0.031, 'newscat': 0.019, 'emotion': 0.023, 'agnews+dbpedia': 0.033, 'yahoo+emotion': 0.027, 'newscat+dbpedia': 0.025, 'mix5': 0.028} saved /home/ubuntu/gateA/probe9_screen_opt350m.json wall=4067s

@@ -1,0 +1,308 @@
+[P13:opt13b] facebook/opt-1.3b dose-response N=50 DOSES=[1e-07, 3e-07, 1e-06, 3e-06, 1e-05]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 153/389 [00:00<00:00, 1433.41it/s]Loading weights:  80%|███████▉  | 311/389 [00:00<00:00, 1515.02it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 1521.45it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2143719.30 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 384547.69 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 575094.31 examples/s]
+[P13:opt13b] w_A acc=0.927 (exp 0.93); 144 carriers (28s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 65000/560000 [00:00<00:00, 637878.15 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 821429.78 examples/s]Generating train split:  48%|████▊     | 271000/560000 [00:00<00:00, 927673.01 examples/s]Generating train split:  75%|███████▍  | 418000/560000 [00:00<00:00, 1052295.52 examples/s]Generating train split:  95%|█████████▌| 533000/560000 [00:00<00:00, 1083524.46 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 988233.74 examples/s] 
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1092522.73 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▍         | 64000/1400000 [00:00<00:02, 634884.36 examples/s]Generating train split:  11%|█         | 148000/1400000 [00:00<00:01, 699838.53 examples/s]Generating train split:  16%|█▌        | 225000/1400000 [00:00<00:01, 726915.17 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 734142.79 examples/s]Generating train split:  28%|██▊       | 395000/1400000 [00:00<00:01, 790248.50 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 709373.27 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 728915.06 examples/s]Generating train split:  49%|████▊     | 682000/1400000 [00:00<00:00, 778932.48 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 700381.06 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 716367.07 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 729534.19 examples/s]Generating train split:  75%|███████▌  | 1053000/1400000 [00:01<00:00, 773623.18 examples/s]Generating train split:  84%|████████▍ | 1179000/1400000 [00:01<00:00, 789362.04 examples/s]Generating train split:  90%|█████████ | 1265000/1400000 [00:01<00:00, 783289.24 examples/s]Generating train split:  97%|█████████▋| 1353000/1400000 [00:01<00:00, 773099.73 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 750435.39 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 874113.81 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 25987/209527 [00:00<00:00, 259802.73 examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 234005.60 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 259080.75 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 251346.84 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 240204.57 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 240809.63 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 244201.10 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1758894.59 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 802584.00 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 763364.09 examples/s]
+[P13:opt13b] datasets loaded (phase-2 subj 2200; childhood 5)
+[hb] s1/50 d1/5(1e-07) childhood 1/400 loss=14.963 (291s)
+[hb] s1/50 d1/5(1e-07) childhood 41/400 loss=12.845 (298s)
+[hb] s1/50 d1/5(1e-07) childhood 81/400 loss=10.450 (305s)
+[hb] s1/50 d1/5(1e-07) childhood 121/400 loss=9.975 (312s)
+[hb] s1/50 d1/5(1e-07) childhood 161/400 loss=8.462 (319s)
+[hb] s1/50 d1/5(1e-07) childhood 201/400 loss=7.225 (326s)
+[hb] s1/50 d1/5(1e-07) childhood 241/400 loss=6.366 (334s)
+[hb] s1/50 d1/5(1e-07) childhood 281/400 loss=5.049 (341s)
+[hb] s1/50 d1/5(1e-07) childhood 321/400 loss=4.599 (348s)
+[hb] s1/50 d1/5(1e-07) childhood 361/400 loss=3.887 (355s)
+[hb] s1/50 d1/5(1e-07) childhood 400/400 loss=11.459 (362s)
+[hb] s1/50 d2/5(3e-07) childhood 1/400 loss=15.177 (460s)
+[hb] s1/50 d2/5(3e-07) childhood 41/400 loss=9.224 (467s)
+[hb] s1/50 d2/5(3e-07) childhood 81/400 loss=5.803 (474s)
+[hb] s1/50 d2/5(3e-07) childhood 121/400 loss=4.289 (481s)
+[hb] s1/50 d2/5(3e-07) childhood 161/400 loss=3.361 (488s)
+[hb] s1/50 d2/5(3e-07) childhood 201/400 loss=2.778 (495s)
+[hb] s1/50 d2/5(3e-07) childhood 241/400 loss=1.895 (503s)
+[hb] s1/50 d2/5(3e-07) childhood 281/400 loss=1.391 (510s)
+[hb] s1/50 d2/5(3e-07) childhood 321/400 loss=1.360 (517s)
+[hb] s1/50 d2/5(3e-07) childhood 361/400 loss=0.815 (524s)
+[hb] s1/50 d2/5(3e-07) childhood 400/400 loss=1.931 (531s)
+[hb] s1/50 d3/5(1e-06) childhood 1/400 loss=15.160 (627s)
+[hb] s1/50 d3/5(1e-06) childhood 41/400 loss=4.083 (634s)
+[hb] s1/50 d3/5(1e-06) childhood 81/400 loss=2.332 (642s)
+[hb] s1/50 d3/5(1e-06) childhood 121/400 loss=1.001 (649s)
+[hb] s1/50 d3/5(1e-06) childhood 161/400 loss=0.414 (656s)
+[hb] s1/50 d3/5(1e-06) childhood 201/400 loss=0.375 (663s)
+[hb] s1/50 d3/5(1e-06) childhood 241/400 loss=0.332 (670s)
+[hb] s1/50 d3/5(1e-06) childhood 281/400 loss=0.117 (677s)
+[hb] s1/50 d3/5(1e-06) childhood 321/400 loss=0.660 (685s)
+[hb] s1/50 d3/5(1e-06) childhood 361/400 loss=0.367 (692s)
+[hb] s1/50 d3/5(1e-06) childhood 400/400 loss=0.685 (699s)
+[hb] s1/50 d4/5(3e-06) childhood 1/400 loss=15.022 (795s)
+[hb] s1/50 d4/5(3e-06) childhood 41/400 loss=1.303 (802s)
+[hb] s1/50 d4/5(3e-06) childhood 81/400 loss=0.298 (809s)
+[hb] s1/50 d4/5(3e-06) childhood 121/400 loss=0.373 (816s)
+[hb] s1/50 d4/5(3e-06) childhood 161/400 loss=0.167 (823s)
+[hb] s1/50 d4/5(3e-06) childhood 201/400 loss=0.192 (831s)
+[hb] s1/50 d4/5(3e-06) childhood 241/400 loss=0.163 (838s)
+[hb] s1/50 d4/5(3e-06) childhood 281/400 loss=0.064 (845s)
+[hb] s1/50 d4/5(3e-06) childhood 321/400 loss=0.723 (852s)
+[hb] s1/50 d4/5(3e-06) childhood 361/400 loss=0.269 (860s)
+[hb] s1/50 d4/5(3e-06) childhood 400/400 loss=0.178 (867s)
+[hb] s1/50 d5/5(1e-05) childhood 1/400 loss=15.212 (960s)
+[hb] s1/50 d5/5(1e-05) childhood 41/400 loss=0.337 (967s)
+[hb] s1/50 d5/5(1e-05) childhood 81/400 loss=0.258 (975s)
+[hb] s1/50 d5/5(1e-05) childhood 121/400 loss=0.488 (982s)
+[hb] s1/50 d5/5(1e-05) childhood 161/400 loss=0.177 (989s)
+[hb] s1/50 d5/5(1e-05) childhood 201/400 loss=0.187 (996s)
+[hb] s1/50 d5/5(1e-05) childhood 241/400 loss=0.150 (1003s)
+[hb] s1/50 d5/5(1e-05) childhood 281/400 loss=0.065 (1010s)
+[hb] s1/50 d5/5(1e-05) childhood 321/400 loss=1.576 (1018s)
+[hb] s1/50 d5/5(1e-05) childhood 361/400 loss=0.069 (1025s)
+[hb] s1/50 d5/5(1e-05) childhood 400/400 loss=0.517 (1032s)
+[seed] s1/50 1e-07:Np=+0.117@drop0.020 3e-07:Np=-0.093@drop0.023 1e-06:Np=+0.080@drop0.040 3e-06:Np=+0.087@drop0.077 1e-05:Np=-0.020@drop0.120 (1125s)
+[seed] s6/50 1e-07:Np=+0.031@drop0.022 3e-07:Np=-0.013@drop0.023 1e-06:Np=-0.012@drop0.048 3e-06:Np=+0.124@drop0.073 1e-05:Np=+0.110@drop0.118 (5662s)
+[hb] s11/50 d1/5(1e-07) childhood 1/400 loss=15.246 (9365s)
+[hb] s11/50 d1/5(1e-07) childhood 41/400 loss=16.240 (9372s)
+[hb] s11/50 d1/5(1e-07) childhood 81/400 loss=10.736 (9380s)
+[hb] s11/50 d1/5(1e-07) childhood 121/400 loss=9.349 (9387s)
+[hb] s11/50 d1/5(1e-07) childhood 161/400 loss=7.814 (9394s)
+[hb] s11/50 d1/5(1e-07) childhood 201/400 loss=6.785 (9401s)
+[hb] s11/50 d1/5(1e-07) childhood 241/400 loss=5.672 (9409s)
+[hb] s11/50 d1/5(1e-07) childhood 281/400 loss=4.746 (9416s)
+[hb] s11/50 d1/5(1e-07) childhood 321/400 loss=4.053 (9423s)
+[hb] s11/50 d1/5(1e-07) childhood 361/400 loss=4.369 (9430s)
+[hb] s11/50 d1/5(1e-07) childhood 400/400 loss=11.136 (9437s)
+[hb] s11/50 d2/5(3e-07) childhood 1/400 loss=15.183 (9530s)
+[hb] s11/50 d2/5(3e-07) childhood 41/400 loss=11.505 (9537s)
+[hb] s11/50 d2/5(3e-07) childhood 81/400 loss=5.862 (9544s)
+[hb] s11/50 d2/5(3e-07) childhood 121/400 loss=4.020 (9552s)
+[hb] s11/50 d2/5(3e-07) childhood 161/400 loss=3.280 (9559s)
+[hb] s11/50 d2/5(3e-07) childhood 201/400 loss=2.758 (9566s)
+[hb] s11/50 d2/5(3e-07) childhood 241/400 loss=2.127 (9573s)
+[hb] s11/50 d2/5(3e-07) childhood 281/400 loss=1.383 (9580s)
+[hb] s11/50 d2/5(3e-07) childhood 321/400 loss=1.065 (9588s)
+[hb] s11/50 d2/5(3e-07) childhood 361/400 loss=0.759 (9595s)
+[hb] s11/50 d2/5(3e-07) childhood 400/400 loss=1.871 (9602s)
+[hb] s11/50 d3/5(1e-06) childhood 1/400 loss=15.186 (9693s)
+[hb] s11/50 d3/5(1e-06) childhood 41/400 loss=4.562 (9701s)
+[hb] s11/50 d3/5(1e-06) childhood 81/400 loss=2.045 (9708s)
+[hb] s11/50 d3/5(1e-06) childhood 121/400 loss=0.801 (9715s)
+[hb] s11/50 d3/5(1e-06) childhood 161/400 loss=0.307 (9722s)
+[hb] s11/50 d3/5(1e-06) childhood 201/400 loss=0.562 (9730s)
+[hb] s11/50 d3/5(1e-06) childhood 241/400 loss=0.233 (9737s)
+[hb] s11/50 d3/5(1e-06) childhood 281/400 loss=0.176 (9744s)
+[hb] s11/50 d3/5(1e-06) childhood 321/400 loss=0.201 (9751s)
+[hb] s11/50 d3/5(1e-06) childhood 361/400 loss=1.016 (9758s)
+[hb] s11/50 d3/5(1e-06) childhood 400/400 loss=0.841 (9766s)
+[hb] s11/50 d4/5(3e-06) childhood 1/400 loss=15.114 (9858s)
+[hb] s11/50 d4/5(3e-06) childhood 41/400 loss=1.090 (9865s)
+[hb] s11/50 d4/5(3e-06) childhood 81/400 loss=0.488 (9872s)
+[hb] s11/50 d4/5(3e-06) childhood 121/400 loss=0.129 (9879s)
+[hb] s11/50 d4/5(3e-06) childhood 161/400 loss=0.088 (9886s)
+[hb] s11/50 d4/5(3e-06) childhood 201/400 loss=0.242 (9894s)
+[hb] s11/50 d4/5(3e-06) childhood 241/400 loss=0.288 (9901s)
+[hb] s11/50 d4/5(3e-06) childhood 281/400 loss=0.084 (9908s)
+[hb] s11/50 d4/5(3e-06) childhood 321/400 loss=0.210 (9915s)
+[hb] s11/50 d4/5(3e-06) childhood 361/400 loss=0.621 (9923s)
+[hb] s11/50 d4/5(3e-06) childhood 400/400 loss=0.086 (9930s)
+[hb] s11/50 d5/5(1e-05) childhood 1/400 loss=15.244 (10021s)
+[hb] s11/50 d5/5(1e-05) childhood 41/400 loss=0.772 (10028s)
+[hb] s11/50 d5/5(1e-05) childhood 81/400 loss=0.186 (10035s)
+[hb] s11/50 d5/5(1e-05) childhood 121/400 loss=0.111 (10043s)
+[hb] s11/50 d5/5(1e-05) childhood 161/400 loss=0.024 (10050s)
+[hb] s11/50 d5/5(1e-05) childhood 201/400 loss=0.111 (10057s)
+[hb] s11/50 d5/5(1e-05) childhood 241/400 loss=0.170 (10064s)
+[hb] s11/50 d5/5(1e-05) childhood 281/400 loss=0.118 (10071s)
+[hb] s11/50 d5/5(1e-05) childhood 321/400 loss=0.166 (10079s)
+[hb] s11/50 d5/5(1e-05) childhood 361/400 loss=0.549 (10086s)
+[hb] s11/50 d5/5(1e-05) childhood 400/400 loss=0.060 (10093s)
+[seed] s11/50 1e-07:Np=+0.065@drop0.023 3e-07:Np=+0.009@drop0.024 1e-06:Np=+0.064@drop0.048 3e-06:Np=+0.173@drop0.076 1e-05:Np=+0.165@drop0.117 (10185s)
+[seed] s16/50 1e-07:Np=+0.051@drop0.022 3e-07:Np=+0.006@drop0.024 1e-06:Np=+0.074@drop0.046 3e-06:Np=+0.173@drop0.078 1e-05:Np=+0.175@drop0.118 (14705s)
+[hb] s21/50 d1/5(1e-07) childhood 1/400 loss=14.985 (18418s)
+[hb] s21/50 d1/5(1e-07) childhood 41/400 loss=12.498 (18425s)
+[hb] s21/50 d1/5(1e-07) childhood 81/400 loss=11.984 (18432s)
+[hb] s21/50 d1/5(1e-07) childhood 121/400 loss=8.233 (18440s)
+[hb] s21/50 d1/5(1e-07) childhood 161/400 loss=7.833 (18447s)
+[hb] s21/50 d1/5(1e-07) childhood 201/400 loss=6.647 (18454s)
+[hb] s21/50 d1/5(1e-07) childhood 241/400 loss=6.427 (18462s)
+[hb] s21/50 d1/5(1e-07) childhood 281/400 loss=5.152 (18469s)
+[hb] s21/50 d1/5(1e-07) childhood 321/400 loss=4.061 (18476s)
+[hb] s21/50 d1/5(1e-07) childhood 361/400 loss=4.116 (18483s)
+[hb] s21/50 d1/5(1e-07) childhood 400/400 loss=12.447 (18490s)
+[hb] s21/50 d2/5(3e-07) childhood 1/400 loss=15.322 (18582s)
+[hb] s21/50 d2/5(3e-07) childhood 41/400 loss=8.631 (18589s)
+[hb] s21/50 d2/5(3e-07) childhood 81/400 loss=6.652 (18596s)
+[hb] s21/50 d2/5(3e-07) childhood 121/400 loss=3.797 (18604s)
+[hb] s21/50 d2/5(3e-07) childhood 161/400 loss=3.250 (18611s)
+[hb] s21/50 d2/5(3e-07) childhood 201/400 loss=2.552 (18618s)
+[hb] s21/50 d2/5(3e-07) childhood 241/400 loss=1.927 (18626s)
+[hb] s21/50 d2/5(3e-07) childhood 281/400 loss=1.424 (18633s)
+[hb] s21/50 d2/5(3e-07) childhood 321/400 loss=1.065 (18640s)
+[hb] s21/50 d2/5(3e-07) childhood 361/400 loss=0.732 (18647s)
+[hb] s21/50 d2/5(3e-07) childhood 400/400 loss=1.942 (18654s)
+[hb] s21/50 d3/5(1e-06) childhood 1/400 loss=15.051 (18746s)
+[hb] s21/50 d3/5(1e-06) childhood 41/400 loss=3.673 (18754s)
+[hb] s21/50 d3/5(1e-06) childhood 81/400 loss=2.230 (18761s)
+[hb] s21/50 d3/5(1e-06) childhood 121/400 loss=0.683 (18768s)
+[hb] s21/50 d3/5(1e-06) childhood 161/400 loss=0.539 (18775s)
+[hb] s21/50 d3/5(1e-06) childhood 201/400 loss=0.261 (18783s)
+[hb] s21/50 d3/5(1e-06) childhood 241/400 loss=0.269 (18790s)
+[hb] s21/50 d3/5(1e-06) childhood 281/400 loss=0.340 (18797s)
+[hb] s21/50 d3/5(1e-06) childhood 321/400 loss=0.319 (18804s)
+[hb] s21/50 d3/5(1e-06) childhood 361/400 loss=0.070 (18812s)
+[hb] s21/50 d3/5(1e-06) childhood 400/400 loss=0.583 (18819s)
+[hb] s21/50 d4/5(3e-06) childhood 1/400 loss=15.187 (18912s)
+[hb] s21/50 d4/5(3e-06) childhood 41/400 loss=1.251 (18919s)
+[hb] s21/50 d4/5(3e-06) childhood 81/400 loss=0.356 (18927s)
+[hb] s21/50 d4/5(3e-06) childhood 121/400 loss=0.141 (18934s)
+[hb] s21/50 d4/5(3e-06) childhood 161/400 loss=0.251 (18941s)
+[hb] s21/50 d4/5(3e-06) childhood 201/400 loss=0.056 (18948s)
+[hb] s21/50 d4/5(3e-06) childhood 241/400 loss=0.434 (18956s)
+[hb] s21/50 d4/5(3e-06) childhood 281/400 loss=0.279 (18963s)
+[hb] s21/50 d4/5(3e-06) childhood 321/400 loss=0.152 (18970s)
+[hb] s21/50 d4/5(3e-06) childhood 361/400 loss=0.173 (18977s)
+[hb] s21/50 d4/5(3e-06) childhood 400/400 loss=0.151 (18984s)
+[hb] s21/50 d5/5(1e-05) childhood 1/400 loss=15.548 (19077s)
+[hb] s21/50 d5/5(1e-05) childhood 41/400 loss=0.236 (19084s)
+[hb] s21/50 d5/5(1e-05) childhood 81/400 loss=0.303 (19092s)
+[hb] s21/50 d5/5(1e-05) childhood 121/400 loss=0.225 (19099s)
+[hb] s21/50 d5/5(1e-05) childhood 161/400 loss=0.185 (19106s)
+[hb] s21/50 d5/5(1e-05) childhood 201/400 loss=0.072 (19113s)
+[hb] s21/50 d5/5(1e-05) childhood 241/400 loss=0.563 (19121s)
+[hb] s21/50 d5/5(1e-05) childhood 281/400 loss=0.350 (19128s)
+[hb] s21/50 d5/5(1e-05) childhood 321/400 loss=0.061 (19135s)
+[hb] s21/50 d5/5(1e-05) childhood 361/400 loss=0.133 (19142s)
+[hb] s21/50 d5/5(1e-05) childhood 400/400 loss=0.142 (19149s)
+[seed] s21/50 1e-07:Np=+0.020@drop0.022 3e-07:Np=-0.027@drop0.023 1e-06:Np=+0.065@drop0.044 3e-06:Np=+0.142@drop0.079 1e-05:Np=+0.154@drop0.118 (19241s)
+[seed] s26/50 1e-07:Np=+0.000@drop0.022 3e-07:Np=-0.030@drop0.023 1e-06:Np=+0.054@drop0.044 3e-06:Np=+0.137@drop0.079 1e-05:Np=+0.158@drop0.118 (23777s)
+[hb] s31/50 d1/5(1e-07) childhood 1/400 loss=14.083 (27480s)
+[hb] s31/50 d1/5(1e-07) childhood 41/400 loss=13.334 (27488s)
+[hb] s31/50 d1/5(1e-07) childhood 81/400 loss=11.102 (27495s)
+[hb] s31/50 d1/5(1e-07) childhood 121/400 loss=9.274 (27502s)
+[hb] s31/50 d1/5(1e-07) childhood 161/400 loss=8.761 (27509s)
+[hb] s31/50 d1/5(1e-07) childhood 201/400 loss=6.919 (27517s)
+[hb] s31/50 d1/5(1e-07) childhood 241/400 loss=5.823 (27524s)
+[hb] s31/50 d1/5(1e-07) childhood 281/400 loss=4.917 (27531s)
+[hb] s31/50 d1/5(1e-07) childhood 321/400 loss=4.224 (27538s)
+[hb] s31/50 d1/5(1e-07) childhood 361/400 loss=4.001 (27546s)
+[hb] s31/50 d1/5(1e-07) childhood 400/400 loss=11.904 (27552s)
+[hb] s31/50 d2/5(3e-07) childhood 1/400 loss=13.957 (27645s)
+[hb] s31/50 d2/5(3e-07) childhood 41/400 loss=9.586 (27652s)
+[hb] s31/50 d2/5(3e-07) childhood 81/400 loss=5.952 (27659s)
+[hb] s31/50 d2/5(3e-07) childhood 121/400 loss=4.147 (27666s)
+[hb] s31/50 d2/5(3e-07) childhood 161/400 loss=2.773 (27674s)
+[hb] s31/50 d2/5(3e-07) childhood 201/400 loss=3.040 (27681s)
+[hb] s31/50 d2/5(3e-07) childhood 241/400 loss=1.981 (27688s)
+[hb] s31/50 d2/5(3e-07) childhood 281/400 loss=1.158 (27695s)
+[hb] s31/50 d2/5(3e-07) childhood 321/400 loss=0.773 (27702s)
+[hb] s31/50 d2/5(3e-07) childhood 361/400 loss=0.662 (27710s)
+[hb] s31/50 d2/5(3e-07) childhood 400/400 loss=2.314 (27717s)
+[hb] s31/50 d3/5(1e-06) childhood 1/400 loss=14.084 (27808s)
+[hb] s31/50 d3/5(1e-06) childhood 41/400 loss=3.733 (27815s)
+[hb] s31/50 d3/5(1e-06) childhood 81/400 loss=2.167 (27823s)
+[hb] s31/50 d3/5(1e-06) childhood 121/400 loss=1.196 (27830s)
+[hb] s31/50 d3/5(1e-06) childhood 161/400 loss=0.379 (27837s)
+[hb] s31/50 d3/5(1e-06) childhood 201/400 loss=0.812 (27845s)
+[hb] s31/50 d3/5(1e-06) childhood 241/400 loss=0.216 (27852s)
+[hb] s31/50 d3/5(1e-06) childhood 281/400 loss=0.268 (27859s)
+[hb] s31/50 d3/5(1e-06) childhood 321/400 loss=0.257 (27866s)
+[hb] s31/50 d3/5(1e-06) childhood 361/400 loss=0.113 (27873s)
+[hb] s31/50 d3/5(1e-06) childhood 400/400 loss=0.943 (27880s)
+[hb] s31/50 d4/5(3e-06) childhood 1/400 loss=13.774 (27972s)
+[hb] s31/50 d4/5(3e-06) childhood 41/400 loss=1.475 (27980s)
+[hb] s31/50 d4/5(3e-06) childhood 81/400 loss=0.284 (27987s)
+[hb] s31/50 d4/5(3e-06) childhood 121/400 loss=0.562 (27994s)
+[hb] s31/50 d4/5(3e-06) childhood 161/400 loss=0.098 (28001s)
+[hb] s31/50 d4/5(3e-06) childhood 201/400 loss=0.524 (28009s)
+[hb] s31/50 d4/5(3e-06) childhood 241/400 loss=0.491 (28016s)
+[hb] s31/50 d4/5(3e-06) childhood 281/400 loss=0.092 (28023s)
+[hb] s31/50 d4/5(3e-06) childhood 321/400 loss=0.173 (28030s)
+[hb] s31/50 d4/5(3e-06) childhood 361/400 loss=0.138 (28038s)
+[hb] s31/50 d4/5(3e-06) childhood 400/400 loss=0.299 (28044s)
+[hb] s31/50 d5/5(1e-05) childhood 1/400 loss=14.014 (28135s)
+[hb] s31/50 d5/5(1e-05) childhood 41/400 loss=0.587 (28142s)
+[hb] s31/50 d5/5(1e-05) childhood 81/400 loss=0.233 (28150s)
+[hb] s31/50 d5/5(1e-05) childhood 121/400 loss=0.253 (28157s)
+[hb] s31/50 d5/5(1e-05) childhood 161/400 loss=0.130 (28164s)
+[hb] s31/50 d5/5(1e-05) childhood 201/400 loss=0.798 (28171s)
+[hb] s31/50 d5/5(1e-05) childhood 241/400 loss=0.487 (28178s)
+[hb] s31/50 d5/5(1e-05) childhood 281/400 loss=0.151 (28186s)
+[hb] s31/50 d5/5(1e-05) childhood 321/400 loss=0.212 (28193s)
+[hb] s31/50 d5/5(1e-05) childhood 361/400 loss=0.150 (28200s)
+[hb] s31/50 d5/5(1e-05) childhood 400/400 loss=0.269 (28207s)
+[seed] s31/50 1e-07:Np=+0.007@drop0.022 3e-07:Np=-0.015@drop0.023 1e-06:Np=+0.069@drop0.045 3e-06:Np=+0.143@drop0.078 1e-05:Np=+0.172@drop0.118 (28298s)
+[seed] s36/50 1e-07:Np=+0.008@drop0.022 3e-07:Np=-0.021@drop0.023 1e-06:Np=+0.063@drop0.046 3e-06:Np=+0.137@drop0.078 1e-05:Np=+0.168@drop0.118 (32826s)
+[hb] s41/50 d1/5(1e-07) childhood 1/400 loss=16.589 (36552s)
+[hb] s41/50 d1/5(1e-07) childhood 41/400 loss=13.130 (36559s)
+[hb] s41/50 d1/5(1e-07) childhood 81/400 loss=10.358 (36567s)
+[hb] s41/50 d1/5(1e-07) childhood 121/400 loss=9.766 (36574s)
+[hb] s41/50 d1/5(1e-07) childhood 161/400 loss=7.178 (36581s)
+[hb] s41/50 d1/5(1e-07) childhood 201/400 loss=6.559 (36588s)
+[hb] s41/50 d1/5(1e-07) childhood 241/400 loss=5.848 (36595s)
+[hb] s41/50 d1/5(1e-07) childhood 281/400 loss=4.715 (36603s)
+[hb] s41/50 d1/5(1e-07) childhood 321/400 loss=4.580 (36610s)
+[hb] s41/50 d1/5(1e-07) childhood 361/400 loss=4.008 (36617s)
+[hb] s41/50 d1/5(1e-07) childhood 400/400 loss=10.602 (36624s)
+[hb] s41/50 d2/5(3e-07) childhood 1/400 loss=16.576 (36716s)
+[hb] s41/50 d2/5(3e-07) childhood 41/400 loss=9.715 (36724s)
+[hb] s41/50 d2/5(3e-07) childhood 81/400 loss=5.542 (36731s)
+[hb] s41/50 d2/5(3e-07) childhood 121/400 loss=3.963 (36738s)
+[hb] s41/50 d2/5(3e-07) childhood 161/400 loss=3.230 (36745s)
+[hb] s41/50 d2/5(3e-07) childhood 201/400 loss=2.545 (36752s)
+[hb] s41/50 d2/5(3e-07) childhood 241/400 loss=1.930 (36760s)
+[hb] s41/50 d2/5(3e-07) childhood 281/400 loss=0.905 (36767s)
+[hb] s41/50 d2/5(3e-07) childhood 321/400 loss=1.086 (36774s)
+[hb] s41/50 d2/5(3e-07) childhood 361/400 loss=0.848 (36781s)
+[hb] s41/50 d2/5(3e-07) childhood 400/400 loss=1.421 (36788s)
+[hb] s41/50 d3/5(1e-06) childhood 1/400 loss=16.791 (36881s)
+[hb] s41/50 d3/5(1e-06) childhood 41/400 loss=4.069 (36888s)
+[hb] s41/50 d3/5(1e-06) childhood 81/400 loss=2.140 (36895s)
+[hb] s41/50 d3/5(1e-06) childhood 121/400 loss=0.824 (36902s)
+[hb] s41/50 d3/5(1e-06) childhood 161/400 loss=0.563 (36910s)
+[hb] s41/50 d3/5(1e-06) childhood 201/400 loss=0.206 (36917s)
+[hb] s41/50 d3/5(1e-06) childhood 241/400 loss=0.291 (36924s)
+[hb] s41/50 d3/5(1e-06) childhood 281/400 loss=0.321 (36931s)
+[hb] s41/50 d3/5(1e-06) childhood 321/400 loss=0.188 (36938s)
+[hb] s41/50 d3/5(1e-06) childhood 361/400 loss=0.368 (36946s)
+[hb] s41/50 d3/5(1e-06) childhood 400/400 loss=0.562 (36953s)
+[hb] s41/50 d4/5(3e-06) childhood 1/400 loss=17.247 (37044s)
+[hb] s41/50 d4/5(3e-06) childhood 41/400 loss=1.368 (37051s)
+[hb] s41/50 d4/5(3e-06) childhood 81/400 loss=0.260 (37058s)
+[hb] s41/50 d4/5(3e-06) childhood 121/400 loss=0.195 (37065s)
+[hb] s41/50 d4/5(3e-06) childhood 161/400 loss=0.380 (37073s)
+[hb] s41/50 d4/5(3e-06) childhood 201/400 loss=0.063 (37080s)
+[hb] s41/50 d4/5(3e-06) childhood 241/400 loss=0.241 (37087s)
+[hb] s41/50 d4/5(3e-06) childhood 281/400 loss=0.200 (37094s)
+[hb] s41/50 d4/5(3e-06) childhood 321/400 loss=0.465 (37101s)
+[hb] s41/50 d4/5(3e-06) childhood 361/400 loss=0.199 (37109s)
+[hb] s41/50 d4/5(3e-06) childhood 400/400 loss=0.299 (37116s)
+[hb] s41/50 d5/5(1e-05) childhood 1/400 loss=17.083 (37209s)
+[hb] s41/50 d5/5(1e-05) childhood 41/400 loss=0.227 (37216s)
+[hb] s41/50 d5/5(1e-05) childhood 81/400 loss=0.653 (37224s)
+[hb] s41/50 d5/5(1e-05) childhood 121/400 loss=0.499 (37231s)
+[hb] s41/50 d5/5(1e-05) childhood 161/400 loss=0.211 (37238s)
+[hb] s41/50 d5/5(1e-05) childhood 201/400 loss=0.017 (37245s)
+[hb] s41/50 d5/5(1e-05) childhood 241/400 loss=0.208 (37253s)
+[hb] s41/50 d5/5(1e-05) childhood 281/400 loss=0.120 (37260s)
+[hb] s41/50 d5/5(1e-05) childhood 321/400 loss=0.923 (37267s)
+[hb] s41/50 d5/5(1e-05) childhood 361/400 loss=0.064 (37274s)
+[hb] s41/50 d5/5(1e-05) childhood 400/400 loss=0.016 (37281s)
+[seed] s41/50 1e-07:Np=+0.006@drop0.022 3e-07:Np=-0.025@drop0.023 1e-06:Np=+0.053@drop0.046 3e-06:Np=+0.135@drop0.078 1e-05:Np=+0.172@drop0.122 (37373s)
+[seed] s46/50 1e-07:Np=+0.018@drop0.022 3e-07:Np=-0.014@drop0.023 1e-06:Np=+0.053@drop0.046 3e-06:Np=+0.132@drop0.077 1e-05:Np=+0.166@drop0.121 (41904s)
+[seed] s50/50 1e-07:Np=+0.018@drop0.022 3e-07:Np=-0.020@drop0.023 1e-06:Np=+0.044@drop0.046 3e-06:Np=+0.129@drop0.077 1e-05:Np=+0.168@drop0.120 (45544s)
+[P13:opt13b] DONE saved /home/ubuntu/gateA/probe13_doseresponse_opt13b.json wall=45544s
+[P13:opt13b] lr=1e-07 retA_drop=+0.022 N_phase2=+0.0179±0.0201 N_conc(ph2-rnd)=+0.0294
+[P13:opt13b] lr=3e-07 retA_drop=+0.023 N_phase2=-0.0203±0.0216 N_conc(ph2-rnd)=+0.0061
+[P13:opt13b] lr=1e-06 retA_drop=+0.046 N_phase2=+0.0442±0.0178 N_conc(ph2-rnd)=+0.0835
+[P13:opt13b] lr=3e-06 retA_drop=+0.077 N_phase2=+0.1293±0.0150 N_conc(ph2-rnd)=+0.1697
+[P13:opt13b] lr=1e-05 retA_drop=+0.120 N_phase2=+0.1675±0.0155 N_conc(ph2-rnd)=+0.1767

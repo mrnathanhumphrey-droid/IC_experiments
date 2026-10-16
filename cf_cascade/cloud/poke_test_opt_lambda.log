@@ -1,0 +1,37 @@
+[POKE-OPT] loading facebook/opt-350m (eager)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 4166.06it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2157208.82 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 385358.03 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 611711.32 examples/s]
+[POKE-OPT] training task-A=SST -> w_A (1200 steps)...
+[POKE-OPT] w_A SST acc=0.795 (rung-1 ~0.77) base_loss=0.0001 (121s)
+[POKE-OPT] PRECHECK depth regime (prev 5e-5/200 collapsed both tasks to chance)...
+[POKE-OPT]   lr=1e-05 steps=60: SST_ret=0.740 subj=0.655  (139s)
+[POKE-OPT]   lr=1e-05 steps=120: SST_ret=0.725 subj=0.855  (161s)
+[POKE-OPT]   lr=1e-05 steps=200: SST_ret=0.760 subj=0.875  (190s)
+[POKE-OPT]   lr=2e-05 steps=60: SST_ret=0.735 subj=0.625  (207s)
+[POKE-OPT]   lr=2e-05 steps=120: SST_ret=0.810 subj=0.840  (231s)
+[POKE-OPT]   lr=2e-05 steps=200: SST_ret=0.575 subj=0.920  (261s)
+[POKE-OPT]   lr=3e-05 steps=60: SST_ret=0.500 subj=0.475  (279s)
+[POKE-OPT]   lr=3e-05 steps=120: SST_ret=0.565 subj=0.860  (302s)
+[POKE-OPT]   lr=3e-05 steps=200: SST_ret=0.725 subj=0.870  (332s)
+[POKE-OPT] PRECHECK -> chosen lr=2e-05 steps=200 (SST_ret~0.575 subj~0.920) NO CLEAN WINDOW (results flagged) (332s)
+[POKE-OPT] FA done. mean lam top-64=4.016e+01 bot-64=-2.322e-14 (358s)
+[POKE-OPT] seed 0: D1 A/B/C/D=0.770/0.560/0.795/0.755 | D2=0.770/0.490/0.500/0.500 | D2a B/C/D=1.08e-02/2.73e-02/2.82e-02 (740s)
+[POKE-OPT] seed 1: D1 A/B/C/D=0.775/0.500/0.780/0.710 | D2=0.775/0.495/0.515/0.630 | D2a B/C/D=1.08e-02/3.16e-02/2.82e-02 (1123s)
+[POKE-OPT] seed 2: D1 A/B/C/D=0.695/0.595/0.755/0.770 | D2=0.695/0.475/0.495/0.750 | D2a B/C/D=1.08e-02/3.11e-02/2.82e-02 (1503s)
+[POKE-OPT] seed 3: D1 A/B/C/D=0.735/0.500/0.755/0.710 | D2=0.735/0.500/0.515/0.625 | D2a B/C/D=1.08e-02/2.93e-02/2.82e-02 (1888s)
+[POKE-OPT] seed 4: D1 A/B/C/D=0.655/0.695/0.700/0.715 | D2=0.655/0.500/0.500/0.620 | D2a B/C/D=1.08e-02/3.45e-02/2.82e-02 (2272s)
+[POKE-OPT] seed 5: D1 A/B/C/D=0.500/0.510/0.500/0.510 | D2=0.500/0.500/0.515/0.665 | D2a B/C/D=1.08e-02/1.75e-02/2.82e-02 (2658s)
+[POKE-OPT] seed 6: D1 A/B/C/D=0.590/0.815/0.765/0.695 | D2=0.590/0.500/0.495/0.685 | D2a B/C/D=1.08e-02/2.63e-02/2.82e-02 (3038s)
+
+[POKE-OPT] === VERDICTS (OPT, held-out=subj, pre 0.795, armA forgets 0.121) ===
+  [D1 occupy] INERT: B~A (B-A=-0.078, 2SE 0.126).
+     retention A/B/C/D=0.674/0.596/0.721/0.695 postpoke-B 0.784
+  [D2 perturb] SINK/PRIMED: B retains LESS (B-A=-0.180<0,>2SE) FRAGILE-SPECIFIC.
+     retention A/B/C/D=0.674/0.494/0.505/0.639 postpoke-B 0.780
+     D2 alpha B/C/D=1.08e-02/2.82e-02/2.82e-02
+
+  CROSS-ARCH (D1 occupy, the headline): Pythia was INERT (B-A -0.001). OPT B-A=-0.078 -> INERT (universal, no split)
+[POKE-OPT] saved poke_test_opt.json wall=3038s

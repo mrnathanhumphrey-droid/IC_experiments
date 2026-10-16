@@ -1,0 +1,90 @@
+[BX] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  71%|███████   | 206/292 [00:00<00:00, 2016.08it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2257.34it/s]
+[BX] building panel...
+[BX]   +JSON agnews (topic,orig) n=2400
+[BX]   +JSON yelp (sentiment,orig) n=2400
+[BX]   +JSON subj (subjectivity,orig) n=2400
+[BX]   +JSON ucdp (violence,orig) n=4500
+[BX]   +JSON nullperm (NULLperm,null) n=2400
+Generating train split:   0%|          | 0/18612 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 18612/18612 [00:00<00:00, 273358.61 examples/s]
+[BX]   +HF code (code,orig) n=600
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1301972.37 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 667563.90 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 693044.28 examples/s]
+[BX]   +HF emotion (emotion,orig) n=600
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 68000/560000 [00:00<00:00, 675018.04 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 839287.22 examples/s]Generating train split:  50%|█████     | 281000/560000 [00:00<00:00, 984811.75 examples/s]Generating train split:  75%|███████▌  | 421000/560000 [00:00<00:00, 1102475.96 examples/s]Generating train split:  98%|█████████▊| 547000/560000 [00:00<00:00, 1153572.63 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1048058.99 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1055531.20 examples/s]
+[BX]   +HF dbpedia (topic,orig) n=600
+Generating train split:   0%|          | 0/25000 [00:00<?, ? examples/s]Generating train split:  96%|█████████▌| 24000/25000 [00:00<00:00, 220541.49 examples/s]Generating train split: 100%|██████████| 25000/25000 [00:00<00:00, 226177.29 examples/s]
+Generating test split:   0%|          | 0/25000 [00:00<?, ? examples/s]Generating test split:  92%|█████████▏| 23000/25000 [00:00<00:00, 217683.36 examples/s]Generating test split: 100%|██████████| 25000/25000 [00:00<00:00, 227513.59 examples/s]
+Generating unsupervised split:   0%|          | 0/50000 [00:00<?, ? examples/s]Generating unsupervised split:  38%|███▊      | 19000/50000 [00:00<00:00, 181376.55 examples/s]Generating unsupervised split:  86%|████████▌ | 43000/50000 [00:00<00:00, 208049.30 examples/s]Generating unsupervised split: 100%|██████████| 50000/50000 [00:00<00:00, 209552.80 examples/s]
+[BX]   +HF imdb (sentiment,orig) n=600
+Generating train split:   0%|          | 0/26732 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 26732/26732 [00:00<00:00, 1972869.77 examples/s]
+Generating test split:   0%|          | 0/3432 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 3432/3432 [00:00<00:00, 924584.19 examples/s]
+[BX]   +HF tweet (sentiment,orig) n=600
+Generating train split:   0%|          | 0/7473 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 7473/7473 [00:00<00:00, 807107.86 examples/s]
+Generating test split:   0%|          | 0/1319 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1319/1319 [00:00<00:00, 382090.41 examples/s]
+[BX]   +HF gsm8k (math,new) n=600
+Generating train split:   0%|          | 0/11679 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 11679/11679 [00:00<00:00, 625226.89 examples/s]
+Generating validation split:   0%|          | 0/1000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 1000/1000 [00:00<00:00, 244266.73 examples/s]
+Generating test split:   0%|          | 0/1000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1000/1000 [00:00<00:00, 267528.00 examples/s]
+[BX]   +HF sciq (science,new) n=600
+Generating test split:   0%|          | 0/10000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 10000/10000 [00:00<00:00, 1584490.20 examples/s]
+Generating validation split:   0%|          | 0/10000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 10000/10000 [00:00<00:00, 1866707.02 examples/s]
+Generating train split:   0%|          | 0/550152 [00:00<?, ? examples/s]Generating train split:  55%|█████▍    | 302000/550152 [00:00<00:00, 3006227.12 examples/s]Generating train split: 100%|██████████| 550152/550152 [00:00<00:00, 3093111.84 examples/s]
+[BX]   +HF snli (nli,new) n=600
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 25987/209527 [00:00<00:00, 252496.95 examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 239079.35 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 255137.49 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 249673.80 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 243606.79 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 239255.91 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 243374.22 examples/s]
+[BX]   +HF newscat (newscat,new) n=600
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   6%|▌         | 78000/1400000 [00:00<00:01, 773805.58 examples/s]Generating train split:  14%|█▎        | 192000/1400000 [00:00<00:01, 758579.51 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 731084.30 examples/s]Generating train split:  28%|██▊       | 399000/1400000 [00:00<00:01, 793364.18 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 709664.70 examples/s]Generating train split:  42%|████▏     | 588000/1400000 [00:00<00:01, 764367.42 examples/s]Generating train split:  50%|█████     | 701000/1400000 [00:00<00:01, 689425.38 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 705745.47 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 721271.04 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 725593.64 examples/s]Generating train split:  75%|███████▌  | 1056000/1400000 [00:01<00:00, 778288.93 examples/s]Generating train split:  84%|████████▍ | 1180000/1400000 [00:01<00:00, 793318.00 examples/s]Generating train split:  90%|█████████ | 1265000/1400000 [00:01<00:00, 787403.32 examples/s]Generating train split:  97%|█████████▋| 1356000/1400000 [00:01<00:00, 787958.50 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 755336.45 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 883646.97 examples/s]
+[BX]   +HF yahoo (qatopic,new) n=600
+Generating train split:   0%|          | 0/2119719 [00:00<?, ? examples/s]Generating train split:   2%|▏         | 33000/2119719 [00:00<00:06, 322269.92 examples/s]Generating train split:   3%|▎         | 72000/2119719 [00:00<00:05, 348712.65 examples/s]Generating train split:   5%|▌         | 111000/2119719 [00:00<00:05, 363194.61 examples/s]Generating train split:   7%|▋         | 148000/2119719 [00:00<00:05, 362316.45 examples/s]Generating train split:   9%|▊         | 185000/2119719 [00:00<00:05, 359342.50 examples/s]Generating train split:  11%|█         | 225000/2119719 [00:00<00:05, 366372.54 examples/s]Generating train split:  13%|█▎        | 265000/2119719 [00:00<00:04, 374071.47 examples/s]Generating train split:  15%|█▌        | 322000/2119719 [00:00<00:04, 367925.56 examples/s]Generating train split:  18%|█▊        | 381000/2119719 [00:01<00:04, 368998.58 examples/s]Generating train split:  20%|█▉        | 420000/2119719 [00:01<00:04, 371934.84 examples/s]Generating train split:  22%|██▏       | 470000/2119719 [00:01<00:04, 352628.38 examples/s]Generating train split:  25%|██▍       | 524000/2119719 [00:01<00:04, 352600.33 examples/s]Generating train split:  27%|██▋       | 573930/2119719 [00:01<00:04, 343013.43 examples/s]Generating train split:  29%|██▉       | 612930/2119719 [00:01<00:04, 350286.40 examples/s]Generating train split:  31%|███       | 650930/2119719 [00:01<00:04, 353497.06 examples/s]Generating train split:  33%|███▎      | 689930/2119719 [00:01<00:03, 358964.49 examples/s]Generating train split:  34%|███▍      | 727930/2119719 [00:02<00:03, 362796.74 examples/s]Generating train split:  36%|███▌      | 765930/2119719 [00:02<00:03, 365497.94 examples/s]Generating train split:  39%|███▉      | 824930/2119719 [00:02<00:03, 372065.98 examples/s]Generating train split:  41%|████      | 870930/2119719 [00:02<00:03, 393166.09 examples/s]Generating train split:  44%|████▍     | 930930/2119719 [00:02<00:03, 392166.51 examples/s]Generating train split:  47%|████▋     | 985930/2119719 [00:02<00:02, 379733.75 examples/s]Generating train split:  48%|████▊     | 1027930/2119719 [00:02<00:02, 384753.73 examples/s]Generating train split:  51%|█████     | 1079860/2119719 [00:02<00:02, 366766.44 examples/s]Generating train split:  53%|█████▎    | 1117860/2119719 [00:03<00:02, 369084.16 examples/s]Generating train split:  55%|█████▍    | 1157860/2119719 [00:03<00:02, 373370.69 examples/s]Generating train split:  57%|█████▋    | 1213860/2119719 [00:03<00:02, 368243.51 examples/s]Generating train split:  59%|█████▉    | 1255860/2119719 [00:03<00:02, 378051.97 examples/s]Generating train split:  61%|██████    | 1296860/2119719 [00:03<00:02, 378778.03 examples/s]Generating train split:  63%|██████▎   | 1342860/2119719 [00:03<00:01, 397447.36 examples/s]Generating train split:  66%|██████▌   | 1403860/2119719 [00:03<00:01, 396462.57 examples/s]Generating train split:  69%|██████▉   | 1464860/2119719 [00:03<00:01, 390123.62 examples/s]Generating train split:  72%|███████▏  | 1515860/2119719 [00:04<00:01, 372455.70 examples/s]Generating train split:  73%|███████▎  | 1556860/2119719 [00:04<00:01, 380169.73 examples/s]Generating train split:  76%|███████▌  | 1610790/2119719 [00:04<00:01, 367309.34 examples/s]Generating train split:  78%|███████▊  | 1651790/2119719 [00:04<00:01, 373022.72 examples/s]Generating train split:  80%|███████▉  | 1690790/2119719 [00:04<00:01, 376436.69 examples/s]Generating train split:  82%|████████▏ | 1731790/2119719 [00:04<00:01, 382677.41 examples/s]Generating train split:  84%|████████▍ | 1788790/2119719 [00:04<00:00, 377791.27 examples/s]Generating train split:  86%|████████▋ | 1828790/2119719 [00:04<00:00, 381030.92 examples/s]Generating train split:  88%|████████▊ | 1870790/2119719 [00:05<00:00, 386491.96 examples/s]Generating train split:  90%|█████████ | 1913790/2119719 [00:05<00:00, 396801.15 examples/s]Generating train split:  93%|█████████▎| 1970790/2119719 [00:05<00:00, 388183.68 examples/s]Generating train split:  95%|█████████▍| 2010790/2119719 [00:05<00:00, 389766.30 examples/s]Generating train split:  98%|█████████▊| 2069790/2119719 [00:05<00:00, 384993.24 examples/s]Generating train split: 100%|██████████| 2119719/2119719 [00:05<00:00, 375649.06 examples/s]Generating train split: 100%|██████████| 2119719/2119719 [00:05<00:00, 373385.43 examples/s]
+Generating validation split:   0%|          | 0/21990 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 21990/21990 [00:00<00:00, 367701.39 examples/s]
+[BX]   +nltext n=1500
+[BX] ORIG=['agnews', 'code', 'dbpedia', 'emotion', 'imdb', 'subj', 'tweet', 'ucdp', 'yelp']
+[BX] NEW=['gsm8k', 'newscat', 'sciq', 'snli', 'yahoo']
+[BX] nulls=['nltext', 'nullperm', 'randtok'] (88s)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2638787.30 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 420781.53 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 595820.86 examples/s]
+[BX] FA basis done (121s)
+[BX] seed agnews done (126s)
+[BX] seed code done (137s)
+[BX] seed dbpedia done (143s)
+[BX] seed emotion done (146s)
+[BX] seed gsm8k done (153s)
+[BX] seed imdb done (158s)
+[BX] seed newscat done (160s)
+[BX] seed sciq done (163s)
+[BX] seed snli done (166s)
+[BX] seed subj done (169s)
+[BX] seed tweet done (172s)
+[BX] seed ucdp done (176s)
+[BX] seed yahoo done (179s)
+[BX] seed yelp done (186s)
+[BX] seed nltext done (189s)
+[BX] seed nullperm done (192s)
+[BX] seed randtok done (195s)
+
+[BX] === EXTEND VERDICT (does a broader childhood reach the alien kinds?) ===
+  [code] HARD LIMIT: cross stays at/below language floor (0.607 vs 0.639, Δ+0.028) despite bridges -> unreachable from a sentiment-rooted childhood.
+  [ucdp] HARD LIMIT: cross stays at/below language floor (0.487 vs 0.639, Δ-0.029) despite bridges -> unreachable from a sentiment-rooted childhood.
+  floors: nltext(language)=0.639 randtok(generic)=0.419
+  --- ORIG task-Bs (alien-kind focus) ---
+    agnews   [topic      ] orig=0.720 -> enr=0.719 (Δ-0.001)  vs nl-floor 0.639
+    subj     [subjectivity] orig=0.664 -> enr=0.688 (Δ+0.024)  vs nl-floor 0.639
+    dbpedia  [topic      ] orig=0.691 -> enr=0.680 (Δ-0.011)  vs nl-floor 0.639
+    tweet    [sentiment  ] orig=0.643 -> enr=0.665 (Δ+0.021)  vs nl-floor 0.639
+    code     [code       ] orig=0.579 -> enr=0.607 (Δ+0.028)  vs nl-floor 0.639
+    emotion  [emotion    ] orig=0.628 -> enr=0.606 (Δ-0.022)  vs nl-floor 0.639
+    yelp     [sentiment  ] orig=0.607 -> enr=0.602 (Δ-0.005)  vs nl-floor 0.639
+    imdb     [sentiment  ] orig=0.631 -> enr=0.599 (Δ-0.032)  vs nl-floor 0.639
+    ucdp     [violence   ] orig=0.515 -> enr=0.487 (Δ-0.029)  vs nl-floor 0.639
+  --- NEW bridge task-Bs (where they land = bridge quality) ---
+    newscat  [newscat    ] orig=0.727 -> enr=0.734 (Δ+0.007)  vs nl-floor 0.639
+    yahoo    [qatopic    ] orig=0.570 -> enr=0.622 (Δ+0.052)  vs nl-floor 0.639
+    snli     [nli        ] orig=0.631 -> enr=0.590 (Δ-0.041)  vs nl-floor 0.639
+    gsm8k    [math       ] orig=0.542 -> enr=0.555 (Δ+0.013)  vs nl-floor 0.639
+    sciq     [science    ] orig=0.456 -> enr=0.511 (Δ+0.055)  vs nl-floor 0.639
+[BX] saved breadth_extend.json wall=195s

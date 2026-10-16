@@ -1,0 +1,12 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|##########| 292/292 [00:00<00:00, 3707.09it/s]
+[curv] hooking 24 attention.dense modules for K-FAC
+
+[curv] === CURVATURE READ (K-FAC binding spectrum, 24 attention.dense) ===
+  pooled binding: lmax=1.092e-05 lmed=1.285e-19 p1=1.034e-20 p99=5.799e-13
+  DECADES spanned (p1-p99) = 7.75   (per-layer median 7.62)
+  DYNAMIC RANGE lmax/lmed  = 85017970703939.3
+  global true-Hessian: lambda_max+ = 0.0954, lambda_mean(trace/N) = 2.114e-09, dyn = 4.5e+07
+  VERDICT: CURVED
+    -> CURVED: stiff+sloppy both present, binding has dynamic range -> all 3 lanes proceed on SST-2
+[curv] saved curvature_read.json  wall=45s

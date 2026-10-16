@@ -1,0 +1,38 @@
+{
+  "levels": {
+    "self_sst2": {
+      "s_stiff_top1pct": 0.5427586377301175,
+      "mean_binding_felt": 3.2541416710416814e-07,
+      "pull_energy": 0.00528740800154992
+    },
+    "null_permuted": {
+      "s_stiff_top1pct": 0.7862137767776415,
+      "mean_binding_felt": 1.084218205225322e-06,
+      "pull_energy": 16.000212587416172,
+      "s_normalized": 1.0
+    },
+    "low_agnews": {
+      "s_stiff_top1pct": 0.5335188547001465,
+      "mean_binding_felt": 1.304226853539536e-07,
+      "pull_energy": 117.00700423121452,
+      "s_normalized": 0.0
+    },
+    "medium_subj": {
+      "s_stiff_top1pct": 0.5062020471416597,
+      "mean_binding_felt": 1.426451138931389e-07,
+      "pull_energy": 106.35097026824951,
+      "s_normalized": 0.012814516617601263
+    },
+    "high_yelp": {
+      "s_stiff_top1pct": 0.5094585261281606,
+      "mean_binding_felt": 3.9762414803611954e-07,
+      "pull_energy": 5.869110121391714,
+      "s_normalized": 0.2801454369571808
+    }
+  },
+  "shape": "STEP_LIKE",
+  "range": 0.28001172963598175,
+  "max_gap_over_range": 0.9024440597756426,
+  "monotone_handorder": false,
+  "wall_s": 122.02843022346497
+}

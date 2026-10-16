@@ -1,0 +1,37 @@
+[N2] loading facebook/opt-350m...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  87%|████████▋ | 338/388 [00:00<00:00, 3366.73it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3504.19it/s]
+[N2] 144 carriers (e.g. model.decoder.layers.0.self_attn.k_proj.weight, model.decoder.layers.23.fc2.weight)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2113849.62 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 382816.94 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 582062.76 examples/s]
+[N2] training task-A (SST) 500 steps...
+[N2] w_A SST acc=0.787 (51s)
+[N2] task-A curvature basis done (83s)
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1555462.27 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 706349.61 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 778380.63 examples/s]
+[N2]   precheck subj: forget=0.243 taskB=0.900 (106s)
+[N2]   precheck emotion: forget=0.053 taskB=0.865 (128s)
+[N2] HELD-OUT = subj (forget 0.243)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  11%|█▏        | 64000/560000 [00:00<00:00, 634798.78 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 828245.87 examples/s]Generating train split:  50%|████▉     | 278000/560000 [00:00<00:00, 963543.15 examples/s]Generating train split:  75%|███████▍  | 419000/560000 [00:00<00:00, 1083575.57 examples/s]Generating train split:  97%|█████████▋| 542000/560000 [00:00<00:00, 1129157.51 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1026773.56 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1089510.46 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▍         | 68000/1400000 [00:00<00:02, 665341.65 examples/s]Generating train split:  11%|█         | 149000/1400000 [00:00<00:01, 712213.42 examples/s]Generating train split:  16%|█▌        | 223000/1400000 [00:00<00:01, 722593.94 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 731584.24 examples/s]Generating train split:  29%|██▊       | 402000/1400000 [00:00<00:01, 734750.07 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 749933.03 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 762275.15 examples/s]Generating train split:  49%|████▊     | 682000/1400000 [00:00<00:00, 804005.31 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 744220.47 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 750564.55 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 759090.70 examples/s]Generating train split:  75%|███████▍  | 1046000/1400000 [00:01<00:00, 768040.47 examples/s]Generating train split:  81%|████████  | 1130000/1400000 [00:01<00:00, 768880.75 examples/s]Generating train split:  87%|████████▋ | 1217000/1400000 [00:01<00:00, 771659.07 examples/s]Generating train split:  93%|█████████▎| 1306000/1400000 [00:01<00:00, 772700.07 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 799821.21 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 763755.78 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 900326.06 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 250239.20 examples/s]Generating train split:  38%|███▊      | 79763/209527 [00:00<00:00, 255457.45 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 258966.53 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 248555.40 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 246598.95 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 249557.27 examples/s]
+[N2] stream=['agnews', 'dbpedia', 'yahoo', 'newscat', 'emotion'] (142s)
+[N2] seed 0: sstA A/B/C/D=0.737/0.710/0.637/0.593 | postchild B/C/D=0.790/0.717/0.797 | mapfrac B/D=0.215/0.017 (335s)
+[N2] seed 1: sstA A/B/C/D=0.523/0.673/0.567/0.550 | postchild B/C/D=0.787/0.807/0.823 | mapfrac B/D=0.213/0.016 (530s)
+[N2] seed 2: sstA A/B/C/D=0.623/0.713/0.510/0.557 | postchild B/C/D=0.790/0.737/0.800 | mapfrac B/D=0.215/0.017 (724s)
+[N2] seed 3: sstA A/B/C/D=0.680/0.513/0.523/0.737 | postchild B/C/D=0.810/0.783/0.817 | mapfrac B/D=0.215/0.017 (915s)
+[N2] seed 4: sstA A/B/C/D=0.520/0.777/0.567/0.617 | postchild B/C/D=0.780/0.790/0.813 | mapfrac B/D=0.214/0.017 (1109s)
+[N2] seed 5: sstA A/B/C/D=0.753/0.723/0.627/0.670 | postchild B/C/D=0.783/0.787/0.827 | mapfrac B/D=0.215/0.017 (1302s)
+[N2] seed 6: sstA A/B/C/D=0.663/0.580/0.550/0.703 | postchild B/C/D=0.767/0.760/0.807 | mapfrac B/D=0.215/0.017 (1498s)
+
+[N2] === VERDICT (OPT-350m, held-out=subj) ===
+  DOES NOT REPLICATE: childhood doesn't sliver on OPT (B-A=+0.027 n.s.) — the #2 effect is net-dependent. Big caveat on generality.
+  retention: A=0.643 B=0.670 C=0.569 D=0.632 (pre 0.787)
+  PAIRED B-A=+0.027±0.051 | B-D=+0.038±0.053 | D-A=-0.010±0.031
+  guards D: post-child 0.812 (B 0.787) | mapfrac D 0.017 vs B 0.214
+  task-B: A 0.879 B 0.849 D 0.889
+[N2] saved dev_net2_opt.json wall=1498s

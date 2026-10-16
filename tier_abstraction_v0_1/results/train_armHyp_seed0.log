@@ -1,0 +1,11 @@
+D:\IC_experiments\tier_abstraction_v0_1\train_armHyp.py:101: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} kl={float(kl):.3f} "
+[armHyp_beta0.1_K8_seed0] ep00 fine=3.528 super=2.990 kl=0.041 val_fine=0.138 val_super=0.203 nan=0
+[armHyp_beta0.1_K8_seed0] ep10 fine=2.455 super=2.322 kl=3.288 val_fine=0.315 val_super=0.372 nan=0
+[armHyp_beta0.1_K8_seed0] ep20 fine=2.296 super=2.338 kl=3.716 val_fine=0.387 val_super=0.442 nan=0
+[armHyp_beta0.1_K8_seed0] ep30 fine=2.086 super=2.186 kl=3.529 val_fine=0.428 val_super=0.495 nan=0
+[armHyp_beta0.1_K8_seed0] ep40 fine=1.848 super=1.995 kl=4.564 val_fine=0.428 val_super=0.488 nan=0
+[armHyp_beta0.1_K8_seed0] ep49 fine=1.957 super=1.961 kl=5.104 val_fine=0.451 val_super=0.518 nan=0
+[armHyp_beta0.1_K8_seed0] DONE test_fine=0.463 test_super=0.528 test_kl=5.290 nan_hits=0 (1357s)
+[armHyp_beta0.1_K8_seed0] sup low/trans=0.578/0.549  fine low/trans=0.508/0.218  WS low/trans=0.273/0.415 sel=+0.141  cka=0.508 kl=5.289521875

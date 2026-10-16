@@ -1,0 +1,157 @@
+{
+ "config": {
+  "subsample": 220,
+  "collapse_to": "diffusion",
+  "profiles": [
+   [],
+   [
+    "swap"
+   ],
+   [
+    "celebdf"
+   ],
+   [
+    "dfdc"
+   ],
+   [
+    "diffusion"
+   ],
+   [
+    "swap",
+    "celebdf",
+    "dfdc"
+   ],
+   [
+    "swap",
+    "diffusion"
+   ]
+  ],
+  "smoke": false,
+  "prereg_lock": "128d757a"
+ },
+ "cosine": {
+  "swap": {
+   "swap": 0.9999998807907104,
+   "diffusion": -0.93271404504776,
+   "celebdf": 0.5860363245010376,
+   "dfdc": 0.4280339777469635
+  },
+  "diffusion": {
+   "swap": -0.93271404504776,
+   "diffusion": 1.0,
+   "celebdf": -0.4329989552497864,
+   "dfdc": -0.25539430975914
+  },
+  "celebdf": {
+   "swap": 0.5860363245010376,
+   "diffusion": -0.4329989552497864,
+   "celebdf": 1.0,
+   "dfdc": 0.9647574424743652
+  },
+  "dfdc": {
+   "swap": 0.4280339777469635,
+   "diffusion": -0.25539430975914,
+   "celebdf": 0.9647574424743652,
+   "dfdc": 1.0
+  }
+ },
+ "base": {
+  "swap": 0.6557,
+  "diffusion": 0.9042,
+  "celebdf": 0.9078,
+  "dfdc": 0.934
+ },
+ "profile_retention": {
+  "none": {
+   "swap": 0.4417,
+   "diffusion": 0.9914,
+   "celebdf": 0.6132,
+   "dfdc": 0.7497
+  },
+  "swap": {
+   "swap": 0.5947,
+   "diffusion": 0.9837,
+   "celebdf": 0.7106,
+   "dfdc": 0.7822
+  },
+  "celebdf": {
+   "swap": 0.5119,
+   "diffusion": 0.9914,
+   "celebdf": 0.777,
+   "dfdc": 0.8456
+  },
+  "dfdc": {
+   "swap": 0.4879,
+   "diffusion": 0.9917,
+   "celebdf": 0.7564,
+   "dfdc": 0.854
+  },
+  "diffusion": {
+   "swap": 0.3813,
+   "diffusion": 0.9814,
+   "celebdf": 0.4274,
+   "dfdc": 0.4946
+  },
+  "swap+celebdf+dfdc": {
+   "swap": 0.584,
+   "diffusion": 0.9837,
+   "celebdf": 0.7591,
+   "dfdc": 0.8719
+  },
+  "swap+diffusion": {
+   "swap": 0.6333,
+   "diffusion": 0.9474,
+   "celebdf": 0.6587,
+   "dfdc": 0.5913
+  }
+ },
+ "leakage_analysis": {
+  "swap": {
+   "self_gain": 0.153,
+   "aligned_leak": 0.065,
+   "anti_leak": -0.0077,
+   "aligned": [
+    "celebdf",
+    "dfdc"
+   ],
+   "anti": [
+    "diffusion"
+   ]
+  },
+  "celebdf": {
+   "self_gain": 0.1638,
+   "aligned_leak": 0.0831,
+   "anti_leak": 0.0,
+   "aligned": [
+    "swap",
+    "dfdc"
+   ],
+   "anti": [
+    "diffusion"
+   ]
+  },
+  "dfdc": {
+   "self_gain": 0.1043,
+   "aligned_leak": 0.0947,
+   "anti_leak": 0.0003,
+   "aligned": [
+    "swap",
+    "celebdf"
+   ],
+   "anti": [
+    "diffusion"
+   ]
+  },
+  "diffusion": {
+   "self_gain": -0.01,
+   "aligned_leak": 0.0,
+   "anti_leak": -0.1671,
+   "aligned": [],
+   "anti": [
+    "swap",
+    "celebdf",
+    "dfdc"
+   ]
+  }
+ }
+}

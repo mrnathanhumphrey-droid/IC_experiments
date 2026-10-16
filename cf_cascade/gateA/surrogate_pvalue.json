@@ -1,0 +1,46 @@
+{
+  "N": 24576,
+  "n_full_surr": 200,
+  "scales": [
+    16,
+    27,
+    47,
+    81,
+    139,
+    239,
+    411,
+    706,
+    1212,
+    2082,
+    3577,
+    6144
+  ],
+  "results": {
+    "curvature_PRIMARY": {
+      "label": "kfac_curvature",
+      "W_real": 0.520294019261996,
+      "full_mean": 0.6658095451656298,
+      "full_std": 0.039828506049040494,
+      "full_min": 0.4856141762968098,
+      "full_max": 0.752132689370691,
+      "n_surr": 200,
+      "z": -3.6535522001368017,
+      "n_shuffles_below_real": 2,
+      "p_cascade_upper_tail": 0.9900497512437811,
+      "cascade": false
+    },
+    "esd_SECONDARY": {
+      "label": "weight_esd",
+      "W_real": 0.2671545092069352,
+      "full_mean": 0.4817866970375511,
+      "full_std": 0.03974081614526688,
+      "full_min": 0.35298943325728604,
+      "full_max": 0.577789550909993,
+      "n_surr": 200,
+      "z": -5.400799697873809,
+      "n_shuffles_below_real": 0,
+      "p_cascade_upper_tail": 1.0,
+      "cascade": false
+    }
+  }
+}

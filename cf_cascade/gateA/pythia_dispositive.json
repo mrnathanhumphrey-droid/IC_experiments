@@ -1,0 +1,71 @@
+{
+  "model": "EleutherAI/pythia-410m",
+  "heldout": "subj",
+  "pre_sst": 0.7533333333333333,
+  "n_seeds": 30,
+  "opt_ref_BD": 0.055,
+  "regime": {
+    "lr_depth": 5e-05,
+    "steps_depth": 250,
+    "steps_child": 400,
+    "lr_child": 3e-05,
+    "pinned_wA": true
+  },
+  "anchor_bank": {
+    "A_forget": 0.226,
+    "B_minus_A": 0.126,
+    "D_minus_A": 0.143
+  },
+  "retention": {
+    "A": [
+      0.5385555555555557,
+      0.011053894828961434
+    ],
+    "B": [
+      0.6120000000000001,
+      0.01279427553986697
+    ],
+    "D": [
+      0.6178888888888888,
+      0.014208341526122815
+    ]
+  },
+  "guards": {
+    "mapfrac_B": [
+      0.34015174964101713,
+      0.0010983757821161626
+    ],
+    "mapfrac_D": [
+      0.018179632527184693,
+      6.735380816314703e-05
+    ],
+    "childB_drop": [
+      8.77256820774288,
+      0.030882541619795246
+    ],
+    "childD_drop": [
+      15.278596858280071,
+      0.04410652378920877
+    ]
+  },
+  "paired": {
+    "B_minus_A": [
+      0.07344444444444445,
+      0.016849937437748066,
+      "25/30+"
+    ],
+    "D_minus_A": [
+      0.07933333333333333,
+      0.013624596494194962,
+      "26/30+"
+    ],
+    "B_minus_D": [
+      -0.005888888888888896,
+      0.01518189697445182,
+      "11/30+"
+    ]
+  },
+  "A_forget": 0.21477777777777762,
+  "verdict": "CROSS-ARCH DISSOCIATION CONFIRMED at matched power: Pythia B\u2212D=-0.006\u00b10.015 (11/30+) \u22480, CI [-0.036,+0.024] EXCLUDES OPT's +0.055. Map-dominant OPT vs non-destructiveness-dominant Pythia is REAL. Antagonism-controls-survival reopens with a real target; rung-4 M3 / toggle have a cross-arch effect to predict against. The morning's 'substrates unify on #2b' is OVERTURNED at matched power.",
+  "anchor_check": "anchor vs #2b bank: A_forget 0.215 (bank 0.226), B\u2212A +0.073 (bank +0.126), D\u2212A +0.079 (bank +0.143)"
+}

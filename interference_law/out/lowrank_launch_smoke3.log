@@ -1,0 +1,57 @@
+[L:pl] tarball _plastic_ship.tar.gz with 46 files
+[L:pl] picked gpu_1x_a10 @ us-east-1 $1.29/hr  RUN_ENV='SMOKE=1' wd=600s
+[L:pl] instance_id=f13e0660a90a453181861083765cf16d  (manual teardown if I go dark)
+[L:pl] status=booting ip=None 1s
+[L:pl] status=active ip=132.145.131.207 298s
+[L:pl] SSH up at 132.145.131.207 (298s)
+Warning: Permanently added '132.145.131.207' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.131.207' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.131.207' (ED25519) to the list of known hosts.
+[L:pl] uploaded+extracted (300s); pip...
+Warning: Permanently added '132.145.131.207' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+PILVER 10.4.0 datasets 2.21.0
+[L:pl] running lowrank_adjudication_lambda.py (SMOKE=1) wd=600s (311s)...
+Warning: Permanently added '132.145.131.207' (ED25519) to the list of known hosts.
+[ADJ] #4 powered | SMOKE=1 datasets=['cifar'] seeds=[0] Ncaps=[6] ft=(150,0.0005) dev=cuda
+Downloading readme:   0%|          | 0.00/9.98k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 9.98k/9.98k [00:00<00:00, 466kB/s]
+Downloading data:   0%|          | 0.00/119M [00:00<?, ?B/s]Downloading data:   9%|▉         | 10.5M/119M [00:00<00:05, 19.9MB/s]Downloading data:  18%|█▊        | 21.0M/119M [00:00<00:02, 35.2MB/s]Downloading data:  27%|██▋       | 31.5M/119M [00:00<00:01, 48.9MB/s]Downloading data:  35%|███▌      | 41.9M/119M [00:00<00:01, 61.8MB/s]Downloading data:  44%|████▍     | 52.4M/119M [00:01<00:01, 64.4MB/s]Downloading data:  53%|█████▎    | 62.9M/119M [00:01<00:00, 72.5MB/s]Downloading data:  62%|██████▏   | 73.4M/119M [00:01<00:00, 70.6MB/s]Downloading data:  71%|███████   | 83.9M/119M [00:01<00:00, 72.7MB/s]Downloading data:  80%|███████▉  | 94.4M/119M [00:01<00:00, 69.0MB/s]Downloading data:  88%|████████▊ | 105M/119M [00:01<00:00, 75.2MB/s] Downloading data:  97%|█████████▋| 115M/119M [00:01<00:00, 78.5MB/s]Downloading data: 100%|██████████| 119M/119M [00:01<00:00, 60.1MB/s]
+Downloading data:   0%|          | 0.00/23.8M [00:00<?, ?B/s]Downloading data:  44%|████▍     | 10.5M/23.8M [00:01<00:02, 6.11MB/s]Downloading data:  88%|████████▊ | 21.0M/23.8M [00:06<00:00, 3.11MB/s]Downloading data: 100%|██████████| 23.8M/23.8M [00:06<00:00, 3.79MB/s]
+Generating train split:   0%|          | 0/50000 [00:00<?, ? examples/s]Generating train split:  29%|██▉       | 14400/50000 [00:00<00:00, 143342.60 examples/s]Generating train split:  58%|█████▊    | 28900/50000 [00:00<00:00, 138806.30 examples/s]Generating train split:  94%|█████████▍| 47000/50000 [00:00<00:00, 157281.78 examples/s]Generating train split: 100%|██████████| 50000/50000 [00:00<00:00, 153081.59 examples/s]
+Generating test split:   0%|          | 0/10000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 10000/10000 [00:00<00:00, 151182.05 examples/s]
+[data] HF cifar100 banks OK
+[ADJ] cifar: banks loaded (24 caps)
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /home/ubuntu/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+  0%|          | 0.00/44.7M [00:00<?, ?B/s] 70%|███████   | 31.4M/44.7M [00:00<00:00, 329MB/s]100%|██████████| 44.7M/44.7M [00:00<00:00, 329MB/s]
+    [cifar s0] perturb 0 (1/6) colFgt=+0.226
+    [cifar s0] perturb 1 (2/6) colFgt=+0.405
+    [cifar s0] perturb 2 (3/6) colFgt=+0.166
+    [cifar s0] perturb 3 (4/6) colFgt=+0.190
+    [cifar s0] perturb 4 (5/6) colFgt=+0.112
+    [cifar s0] perturb 5 (6/6) colFgt=+0.241
+  [cifar s0 N=6] interER=1.688 perTask=2.032 pooled=8.06 cos=0.2068 | haarPT=4.95 permP=0.0
+
+=== #4 POWERED AGGREGATE ===
+[cifar] scaling N=None interaction=None (slope None) per_task=None (slope None)
+  N=6: perTask=[2.032, [2.032, 2.032]] vs haar=4.95 | interaction=[1.688, [1.688, 1.688]] pooled=[8.06, [8.06, 8.06]] cos=0.2068 permP=0.0
+
+[ADJ] wrote /home/ubuntu/ilaw/out/lowrank_adjudication.json  wall=134s
+[L:pl] run rc=0 (449s)
+Warning: Permanently added '132.145.131.207' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.131.207' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.131.207' (ED25519) to the list of known hosts.
+[L:pl] RESULT LANDED: D:\IC_experiments\interference_law\out\lowrank_adjudication.json rows=D:\IC_experiments\interference_law\out\lowrank_rows.jsonl
+[L:pl] terminating f13e0660a90a453181861083765cf16d...
+[L:pl] terminated f13e0660a90a453181861083765cf16d
+[L:pl] ledger += 8min $0.16

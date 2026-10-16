@@ -1,0 +1,35 @@
+{
+ "config": {
+  "d": 128,
+  "L": 2,
+  "vocab": 4000,
+  "langs": [
+   "en",
+   "de",
+   "es"
+  ],
+  "smoke": true,
+  "phaseb": 40
+ },
+ "cells": {
+  "alibi_multi": {
+   "accA0": [
+    0.5,
+    0.0
+   ],
+   "retA_noc": [
+    0.5,
+    0.0
+   ],
+   "retA_ch": [
+    0.5,
+    0.0
+   ],
+   "protection": [
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "conjunction": null
+}

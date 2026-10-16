@@ -1,0 +1,13 @@
+[WA] EleutherAI/pythia-70m-deduped (tag pythia70m_dedup) target acc>=0.8
+Loading weights:   0%|          | 0/76 [00:00<?, ?it/s]Loading weights: 100%|██████████| 76/76 [00:00<00:00, 3290.57it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2014693.43 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 370335.47 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 567362.03 examples/s]
+[WA] step 250: SST acc=0.757 (20s)
+[WA] step 500: SST acc=0.720 (26s)
+[WA] step 750: SST acc=0.617 (32s)
+[WA] step 1000: SST acc=0.697 (37s)
+[WA] step 1250: SST acc=0.513 (43s)
+[WA] step 1500: SST acc=0.730 (49s)
+[WA] MAXSTEPS reached; final acc=0.730 (below target 0.8) — saved best-effort /home/ubuntu/gateA/pythia70m_dedup_sst2_wA.pt
+[WA] DONE tag=pythia70m_dedup acc=0.757 stop_step=1500 matched=False wall=49s

@@ -1,0 +1,32 @@
+[RES] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  90%|█████████ | 264/292 [00:00<00:00, 2539.77it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2605.83it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 1690669.79 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 392260.09 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 544470.17 examples/s]
+[RES] curvature basis done, pre SST-2 acc=0.753 (39s)
+[RES] precheck ag: naive ret=0.537 forget=0.217 (70s)
+[RES] precheck yelp: naive ret=0.733 forget=0.020 (105s)
+[RES] precheck subj: naive ret=0.570 forget=0.183 (134s)
+[RES] second task-B = subj (forget 0.183 OK); test on ['ag', 'subj']
+Generating train split:   0%|          | 0/18612 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 18612/18612 [00:00<00:00, 320983.15 examples/s]
+[RES] panel=['yelp', 'code']; GUARD Grassmann(RES,CURV)=0.000 (chance~0.016); lam CURV=1.05e-01 RES=5.96e-08 (151s)
+  [ag][naive        ] ret=0.595+-0.066 (se 0.025) bloss=0.15
+  [ag][curv_full    ] ret=0.722+-0.016 (se 0.006) bloss=0.15
+  [ag][curvres_full ] ret=0.680+-0.027 (se 0.010) bloss=0.19
+  [ag][res_full     ] ret=0.635+-0.047 (se 0.018) bloss=0.23
+  [ag][currand_full ] ret=0.689+-0.047 (se 0.018) bloss=0.14
+  [subj][naive        ] ret=0.531+-0.055 (se 0.021) bloss=0.10
+  [subj][curv_full    ] ret=0.543+-0.049 (se 0.019) bloss=0.13
+  [subj][curvres_full ] ret=0.551+-0.066 (se 0.025) bloss=0.10
+  [subj][res_full     ] ret=0.527+-0.076 (se 0.029) bloss=0.03
+  [subj][currand_full ] ret=0.554+-0.095 (se 0.036) bloss=0.06
+
+[RES] === ag (pre=0.753, forget 0.217) ===
+  CLEAN NEGATIVE: curvres~curv (Δ-0.042, 2SE 0.024) -> residual adds NOTHING beyond curvature; curvature lever captures all protectable structure. Caps lever at curvature.
+  res_alone>naive: False (Δ+0.040); lam match RES 5.96e-08 vs randorthog 1.93e-08 (both off-curv, vs CURV 1.05e-01)
+
+[RES] === subj (pre=0.753, forget 0.183) ===
+  VOID: guard failed (naive 0.531 vs pre 0.753; curv 0.543)
+  res_alone>naive: False (Δ-0.004); lam match RES 5.96e-08 vs randorthog 1.93e-08 (both off-curv, vs CURV 1.05e-01)
+[RES] saved residual_test.json wall=2306s

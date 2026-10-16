@@ -1,0 +1,135 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=e19e8505af7a4bc989497194aa906e8a  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] status=active ip=129.213.30.162 235s
+[L] SSH up at 129.213.30.162 (235s)
+Warning: Permanently added '129.213.30.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.30.162' (ED25519) to the list of known hosts.
+[L] uploading 1.6GB checkpoint...
+Warning: Permanently added '129.213.30.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.30.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.30.162' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.30.162' (ED25519) to the list of known hosts.
+[L] upload done (303s)
+[L] installing transformers/datasets + upgrading Pillow...
+Warning: Permanently added '129.213.30.162' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts f2py and numpy-config are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L] running deflation_lambda.py (336s)...
+Warning: Permanently added '129.213.30.162' (ED25519) to the list of known hosts.
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/home/ubuntu/deflation_lambda.py", line 27, in <module>
+    import json, time, numpy as np, torch
+  File "/usr/lib/python3/dist-packages/torch/__init__.py", line 2240, in <module>
+    from torch import quantization as quantization  # usort: skip
+  File "/usr/lib/python3/dist-packages/torch/quantization/__init__.py", line 2, in <module>
+    from .fake_quantize import *  # noqa: F403
+  File "/usr/lib/python3/dist-packages/torch/quantization/fake_quantize.py", line 10, in <module>
+    from torch.ao.quantization.fake_quantize import (
+  File "/usr/lib/python3/dist-packages/torch/ao/quantization/__init__.py", line 12, in <module>
+    from .pt2e._numeric_debugger import (  # noqa: F401
+  File "/usr/lib/python3/dist-packages/torch/ao/quantization/pt2e/_numeric_debugger.py", line 9, in <module>
+    from torch.ao.quantization.pt2e.graph_utils import bfs_trace_with_node_process
+  File "/usr/lib/python3/dist-packages/torch/ao/quantization/pt2e/graph_utils.py", line 9, in <module>
+    from torch.export import ExportedProgram
+  File "/usr/lib/python3/dist-packages/torch/export/__init__.py", line 60, in <module>
+    from .decomp_utils import CustomDecompTable
+  File "/usr/lib/python3/dist-packages/torch/export/decomp_utils.py", line 5, in <module>
+    from torch._export.utils import (
+  File "/usr/lib/python3/dist-packages/torch/_export/__init__.py", line 48, in <module>
+    from .wrappers import _wrap_submodules
+  File "/usr/lib/python3/dist-packages/torch/_export/wrappers.py", line 7, in <module>
+    from torch._higher_order_ops.strict_mode import strict_mode
+  File "/usr/lib/python3/dist-packages/torch/_higher_order_ops/__init__.py", line 1, in <module>
+    from torch._higher_order_ops._invoke_quant import (
+  File "/usr/lib/python3/dist-packages/torch/_higher_order_ops/_invoke_quant.py", line 8, in <module>
+    from torch._higher_order_ops.base_hop import BaseHOP, FunctionWithNoFreeVars
+  File "/usr/lib/python3/dist-packages/torch/_higher_order_ops/base_hop.py", line 12, in <module>
+    from torch._subclasses.functional_tensor import disable_functional_mode
+  File "/usr/lib/python3/dist-packages/torch/_subclasses/functional_tensor.py", line 46, in <module>
+    class FunctionalTensor(torch.Tensor):
+  File "/usr/lib/python3/dist-packages/torch/_subclasses/functional_tensor.py", line 276, in FunctionalTensor
+    cpu = _conversion_method_template(device=torch.device("cpu"))
+/usr/lib/python3/dist-packages/torch/_subclasses/functional_tensor.py:276: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at ./torch/csrc/utils/tensor_numpy.cpp:81.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+[DEF] loading...
+Traceback (most recent call last):
+  File "/home/ubuntu/deflation_lambda.py", line 184, in <module>
+    main()
+  File "/home/ubuntu/deflation_lambda.py", line 114, in main
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+  File "<frozen importlib._bootstrap>", line 1075, in _handle_fromlist
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2262, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2496, in _get_module
+    raise e
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2494, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py", line 21, in <module>
+    from .auto_factory import (
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 42, in <module>
+    from ...generation import GenerationMixin
+  File "<frozen importlib._bootstrap>", line 1075, in _handle_fromlist
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2262, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2496, in _get_module
+    raise e
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2494, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/generation/utils.py", line 53, in <module>
+    from .candidate_generator import (
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/generation/candidate_generator.py", line 31, in <module>
+    from sklearn.metrics import roc_curve
+  File "/usr/lib/python3/dist-packages/sklearn/__init__.py", line 80, in <module>
+    from .base import clone
+  File "/usr/lib/python3/dist-packages/sklearn/base.py", line 21, in <module>
+    from .utils import _IS_32BIT
+  File "/usr/lib/python3/dist-packages/sklearn/utils/__init__.py", line 22, in <module>
+    from .murmurhash import murmurhash3_32
+  File "sklearn/utils/murmurhash.pyx", line 1, in init sklearn.utils.murmurhash
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+[L] run rc=1 (341s)
+[L] pulling result + log...
+Warning: Permanently added '129.213.30.162' (ED25519) to the list of known hosts.
+scp: /home/ubuntu/gateA/deflation.json: No such file or directory
+Warning: Permanently added '129.213.30.162' (ED25519) to the list of known hosts.
+scp: /home/ubuntu/gateA/deflation_artifacts.npz: No such file or directory
+Warning: Permanently added '129.213.30.162' (ED25519) to the list of known hosts.
+[L] WARN: no result file pulled
+[L] terminating e19e8505af7a4bc989497194aa906e8a...
+[L] terminated e19e8505af7a4bc989497194aa906e8a

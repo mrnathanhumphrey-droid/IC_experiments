@@ -1,0 +1,17 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|##########| 292/292 [00:00<00:00, 3399.65it/s]
+[A+] train 4749 blocks, val 493 blocks
+  step  150  val 2.7731  train 2.8826  (54s)
+  step  300  val 2.7673  train 2.7829  (89s)
+  step  450  val 2.8052  train 2.6072  (125s)
+  step  600  val 2.7640  train 2.3017  (160s)
+  step  750  val 2.7757  train 2.4401  (196s)
+  step  900  val 2.7804  train 2.4240  (231s)
+[A+] overfit guard: restored best-val checkpoint @ step 600 (val 2.7640)
+[A+] FREEZE: step=600 reason=overfit_guard_best_val  grad_norm(8-batch)=2.0168
+
+[A+] === RE-FROZEN BASIS (plateau) ===
+  freeze: step=600 reason=overfit_guard_best_val val=2.7640 grad_norm=2.0168
+  ESD decade-span median = 5.87 [5.60, 5.99]  vs 5.86 (900-step) / 5.89 (pretrained)
+  VERDICT: PASS - plateau reached AND geometry held (>=2 decades)
+[A+] saved frozen_basis_taskA_plateau.npz, pythia410m_taskA_plateau.pt, gateA_plateau_summary.json  wall=245s

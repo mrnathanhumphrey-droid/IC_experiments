@@ -1,0 +1,318 @@
+{
+ "config": {
+  "mode": "gate",
+  "ft_steps": 500,
+  "ft_lr": 0.0003,
+  "n_b": 3,
+  "sub_a": [
+   0,
+   6,
+   12,
+   18,
+   24,
+   30,
+   36,
+   42
+  ],
+  "seed": 0,
+  "prereg_lock": "18693b8d"
+ },
+ "median_forget_old": 0.14350000000000002,
+ "inband": true,
+ "predictors": {
+  "onaxis": {
+   "spearman": 0.097,
+   "pearson": 0.223
+  },
+  "offaxis": {
+   "spearman": -0.233,
+   "pearson": -0.213
+  },
+  "total": {
+   "spearman": 0.028,
+   "pearson": 0.155
+  },
+  "dtheta": {
+   "spearman": 0.577,
+   "pearson": 0.824
+  },
+  "cosAB": {
+   "spearman": 0.029,
+   "pearson": -0.012
+  },
+  "cosAB_vs_onaxis": -0.349
+ },
+ "checks": {
+  "P1": false,
+  "P2": false,
+  "P3": false,
+  "P4": false
+ },
+ "verdict": "P1 FAILS -> the dichotomy is REAL physics: frozen and plastic forgetting are genuinely different mechanisms.",
+ "points": [
+  {
+   "A": 0,
+   "B": 0,
+   "forget_old": 0.3344,
+   "forget_fresh": 0.0219,
+   "onaxis": 17.4327,
+   "total": 24.7666,
+   "offaxis": 17.3894,
+   "dtheta": 15.966,
+   "cosAB": 0.4658
+  },
+  {
+   "A": 6,
+   "B": 0,
+   "forget_old": 0.3063,
+   "forget_fresh": 0.059,
+   "onaxis": 9.6003,
+   "total": 18.9479,
+   "offaxis": 16.3773,
+   "dtheta": 15.966,
+   "cosAB": 0.1188
+  },
+  {
+   "A": 12,
+   "B": 0,
+   "forget_old": 0.2292,
+   "forget_fresh": 0.0423,
+   "onaxis": 9.445,
+   "total": 19.6421,
+   "offaxis": 17.0221,
+   "dtheta": 15.966,
+   "cosAB": 0.3626
+  },
+  {
+   "A": 18,
+   "B": 0,
+   "forget_old": 0.3686,
+   "forget_fresh": 0.1499,
+   "onaxis": 8.8668,
+   "total": 17.245,
+   "offaxis": 16.6648,
+   "dtheta": 15.966,
+   "cosAB": 0.1582
+  },
+  {
+   "A": 24,
+   "B": 0,
+   "forget_old": 0.3871,
+   "forget_fresh": 0.0521,
+   "onaxis": 15.0348,
+   "total": 24.61,
+   "offaxis": 17.835,
+   "dtheta": 15.966,
+   "cosAB": 0.0066
+  },
+  {
+   "A": 30,
+   "B": 0,
+   "forget_old": 0.181,
+   "forget_fresh": 0.0435,
+   "onaxis": 12.7191,
+   "total": 22.6305,
+   "offaxis": 17.343,
+   "dtheta": 15.966,
+   "cosAB": -0.2529
+  },
+  {
+   "A": 36,
+   "B": 0,
+   "forget_old": 0.4588,
+   "forget_fresh": 0.0795,
+   "onaxis": 19.8087,
+   "total": 29.5332,
+   "offaxis": 16.2934,
+   "dtheta": 15.966,
+   "cosAB": -0.1749
+  },
+  {
+   "A": 42,
+   "B": 0,
+   "forget_old": 0.3419,
+   "forget_fresh": 0.0439,
+   "onaxis": 14.2424,
+   "total": 24.9028,
+   "offaxis": 16.8607,
+   "dtheta": 15.966,
+   "cosAB": -0.2941
+  },
+  {
+   "A": 0,
+   "B": 1,
+   "forget_old": 0.0449,
+   "forget_fresh": 0.0123,
+   "onaxis": 13.0729,
+   "total": 20.6546,
+   "offaxis": 16.5712,
+   "dtheta": 7.231,
+   "cosAB": -0.114
+  },
+  {
+   "A": 6,
+   "B": 1,
+   "forget_old": 0.0412,
+   "forget_fresh": 0.0047,
+   "onaxis": 6.7985,
+   "total": 20.156,
+   "offaxis": 18.9563,
+   "dtheta": 7.231,
+   "cosAB": 0.1081
+  },
+  {
+   "A": 12,
+   "B": 1,
+   "forget_old": 0.2129,
+   "forget_fresh": 0.0223,
+   "onaxis": 7.8246,
+   "total": 17.1156,
+   "offaxis": 14.8645,
+   "dtheta": 7.231,
+   "cosAB": 0.4049
+  },
+  {
+   "A": 18,
+   "B": 1,
+   "forget_old": 0.1316,
+   "forget_fresh": 0.0429,
+   "onaxis": 7.0246,
+   "total": 16.2822,
+   "offaxis": 15.7961,
+   "dtheta": 7.231,
+   "cosAB": -0.0129
+  },
+  {
+   "A": 24,
+   "B": 1,
+   "forget_old": 0.0219,
+   "forget_fresh": 0.0027,
+   "onaxis": 14.5235,
+   "total": 23.5677,
+   "offaxis": 17.4509,
+   "dtheta": 7.231,
+   "cosAB": 0.16
+  },
+  {
+   "A": 30,
+   "B": 1,
+   "forget_old": 0.1753,
+   "forget_fresh": 0.033,
+   "onaxis": 8.5008,
+   "total": 20.0121,
+   "offaxis": 17.1712,
+   "dtheta": 7.231,
+   "cosAB": 0.2683
+  },
+  {
+   "A": 36,
+   "B": 1,
+   "forget_old": 0.05,
+   "forget_fresh": -0.0022,
+   "onaxis": 17.4041,
+   "total": 26.3173,
+   "offaxis": 17.0371,
+   "dtheta": 7.231,
+   "cosAB": 0.1595
+  },
+  {
+   "A": 42,
+   "B": 1,
+   "forget_old": 0.0711,
+   "forget_fresh": 0.026,
+   "onaxis": 11.4835,
+   "total": 21.65,
+   "offaxis": 15.9274,
+   "dtheta": 7.231,
+   "cosAB": 0.3277
+  },
+  {
+   "A": 0,
+   "B": 2,
+   "forget_old": 0.0139,
+   "forget_fresh": 0.0049,
+   "onaxis": 12.9565,
+   "total": 21.9993,
+   "offaxis": 17.6969,
+   "dtheta": 7.026,
+   "cosAB": -0.0297
+  },
+  {
+   "A": 6,
+   "B": 2,
+   "forget_old": 0.2249,
+   "forget_fresh": 0.0148,
+   "onaxis": 9.447,
+   "total": 19.2444,
+   "offaxis": 17.1911,
+   "dtheta": 7.026,
+   "cosAB": -0.0616
+  },
+  {
+   "A": 12,
+   "B": 2,
+   "forget_old": 0.1394,
+   "forget_fresh": 0.0336,
+   "onaxis": 7.879,
+   "total": 17.7553,
+   "offaxis": 14.9994,
+   "dtheta": 7.026,
+   "cosAB": 0.4122
+  },
+  {
+   "A": 18,
+   "B": 2,
+   "forget_old": 0.1385,
+   "forget_fresh": 0.0436,
+   "onaxis": 8.8143,
+   "total": 14.8612,
+   "offaxis": 13.8392,
+   "dtheta": 7.026,
+   "cosAB": -0.01
+  },
+  {
+   "A": 24,
+   "B": 2,
+   "forget_old": 0.0716,
+   "forget_fresh": 0.0109,
+   "onaxis": 13.3075,
+   "total": 23.862,
+   "offaxis": 19.7652,
+   "dtheta": 7.026,
+   "cosAB": -0.1807
+  },
+  {
+   "A": 30,
+   "B": 2,
+   "forget_old": 0.1476,
+   "forget_fresh": 0.0365,
+   "onaxis": 9.4218,
+   "total": 22.4763,
+   "offaxis": 20.1247,
+   "dtheta": 7.026,
+   "cosAB": 0.1849
+  },
+  {
+   "A": 36,
+   "B": 2,
+   "forget_old": 0.1356,
+   "forget_fresh": 0.0045,
+   "onaxis": 17.7872,
+   "total": 26.8062,
+   "offaxis": 18.0125,
+   "dtheta": 7.026,
+   "cosAB": -0.1417
+  },
+  {
+   "A": 42,
+   "B": 2,
+   "forget_old": 0.078,
+   "forget_fresh": 0.0153,
+   "onaxis": 10.9342,
+   "total": 23.7148,
+   "offaxis": 20.2053,
+   "dtheta": 7.026,
+   "cosAB": -0.1446
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+[PDISP] PYTHIA DISPOSITIVE — 30-seed A/B/D retention, pinned w_A, forced subj (mirror of OPT)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  80%|███████▉  | 233/292 [00:00<00:00, 2253.35it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2365.58it/s]
+[PDISP] loaded pinned w_A from /home/ubuntu/gateA/pythia410m_sst2_subsetmin.pt
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2044024.78 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 382656.74 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 566814.66 examples/s]
+[PDISP] pinned w_A SST acc=0.753 (13s)
+[PDISP] V basis done (44s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 67000/560000 [00:00<00:00, 660039.38 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 818315.90 examples/s]Generating train split:  49%|████▉     | 277000/560000 [00:00<00:00, 954440.60 examples/s]Generating train split:  75%|███████▌  | 420000/560000 [00:00<00:00, 1074981.25 examples/s]Generating train split:  97%|█████████▋| 542000/560000 [00:00<00:00, 1122508.36 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1021886.96 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1089078.03 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   4%|▍         | 63000/1400000 [00:00<00:02, 618073.26 examples/s]Generating train split:  10%|█         | 147000/1400000 [00:00<00:01, 690364.26 examples/s]Generating train split:  16%|█▌        | 222000/1400000 [00:00<00:01, 712055.10 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 730488.51 examples/s]Generating train split:  28%|██▊       | 399000/1400000 [00:00<00:01, 799414.63 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 720708.97 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 739740.96 examples/s]Generating train split:  49%|████▊     | 682000/1400000 [00:00<00:00, 783689.62 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 700945.80 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 716418.19 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 725089.78 examples/s]Generating train split:  75%|███████▌  | 1054000/1400000 [00:01<00:00, 772911.90 examples/s]Generating train split:  84%|████████▍ | 1178000/1400000 [00:01<00:00, 787230.66 examples/s]Generating train split:  90%|█████████ | 1265000/1400000 [00:01<00:00, 781238.38 examples/s]Generating train split:  97%|█████████▋| 1354000/1400000 [00:01<00:00, 777735.59 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 751292.12 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 862345.34 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 243446.68 examples/s]Generating train split:  38%|███▊      | 79763/209527 [00:00<00:00, 253412.41 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 253320.80 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 240771.26 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 238802.36 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 233730.39 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 239445.99 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1824750.90 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 742486.10 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 763364.09 examples/s]
+[PDISP] held-out=subj FORCED; stream=['agnews', 'dbpedia', 'yahoo', 'newscat', 'emotion'] (57s)
+[PDISP] seed 0: A/B/D=0.490/0.710/0.650 (208s)
+[PDISP] seed 5: A/B/D=0.490/0.613/0.680 (956s)
+[PDISP] seed 10: A/B/D=0.713/0.513/0.697 (1697s)
+[PDISP] seed 15: A/B/D=0.490/0.607/0.523 (2451s)
+[PDISP] seed 20: A/B/D=0.547/0.627/0.527 (3208s)
+[PDISP] seed 25: A/B/D=0.490/0.523/0.623 (3965s)
+[PDISP] seed 29: A/B/D=0.497/0.703/0.520 (4563s)
+
+[PDISP] === PYTHIA DISPOSITIVE VERDICT (N=30, held-out=subj, pinned w_A 0.753, OPT_REF +0.055) ===
+  CROSS-ARCH DISSOCIATION CONFIRMED at matched power: Pythia B−D=-0.006±0.015 (11/30+) ≈0, CI [-0.036,+0.024] EXCLUDES OPT's +0.055. Map-dominant OPT vs non-destructiveness-dominant Pythia is REAL. Antagonism-controls-survival reopens with a real target; rung-4 M3 / toggle have a cross-arch effect to predict against. The morning's 'substrates unify on #2b' is OVERTURNED at matched power.
+  retention A/B/D = 0.539/0.612/0.618 (pre 0.753, A_forget 0.215)
+  PAIRED B−A=+0.073±0.017 (25/30+) | D−A=+0.079±0.014 (26/30+) | B−D=-0.006±0.015 (11/30+)
+  anchor vs #2b bank: A_forget 0.215 (bank 0.226), B−A +0.073 (bank +0.126), D−A +0.079 (bank +0.143)
+  guards: mapfrac B/D 0.340/0.018 | childhood loss-drop B/D 8.77/15.28 (OPT: D faster 13.54 vs 6.67)
+[PDISP] saved pythia_dispositive.json wall=4563s

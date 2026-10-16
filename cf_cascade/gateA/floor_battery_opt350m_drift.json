@@ -1,0 +1,17 @@
+{
+  "cell": "opt350m",
+  "family": "OPT",
+  "block": "drift",
+  "model": "facebook/opt-350m",
+  "precision": "bf16",
+  "w_A_acc": 0.8233333333333334,
+  "w_A_ok": true,
+  "anchor_BD": 0.055,
+  "n_seeds": 30,
+  "bd_mean": 0.006555555555555559,
+  "bd_se": 0.01917752205225452,
+  "retB": 0.6695555555555555,
+  "retD": 0.6629999999999999,
+  "A_forget": 0.16033333333333344,
+  "DRIFT_gap_from_anchor": -0.04844444444444444
+}

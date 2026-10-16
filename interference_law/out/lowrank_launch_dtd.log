@@ -1,0 +1,131 @@
+[L:pl] tarball _plastic_ship.tar.gz with 46 files
+[L:pl] picked gpu_1x_a10 @ us-east-1 $1.29/hr  RUN_ENV='DATASETS=dtd SEEDS=0,1,2 NCAPS=6,12,24 OUTNAME=lowrank_adjudication_dtd.json ROWSNAME=lowrank_rows_dtd.jsonl' wd=7200s
+[L:pl] instance_id=130a3578b54d4e1aa72404f6dbfd9b88  (manual teardown if I go dark)
+[L:pl] status=booting ip=None 1s
+[L:pl] status=active ip=150.136.216.153 297s
+[L:pl] SSH up at 150.136.216.153 (298s)
+Warning: Permanently added '150.136.216.153' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.216.153' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.216.153' (ED25519) to the list of known hosts.
+[L:pl] uploaded+extracted (299s); pip...
+Warning: Permanently added '150.136.216.153' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+PILVER 10.4.0 2.21.0
+[L:pl] running lowrank_adjudication_lambda.py (DATASETS=dtd SEEDS=0,1,2 NCAPS=6,12,24 OUTNAME=lowrank_adjudication_dtd.json ROWSNAME=lowrank_rows_dtd.jsonl) wd=7200s (310s)...
+Warning: Permanently added '150.136.216.153' (ED25519) to the list of known hosts.
+[ADJ] #4 powered | SMOKE=0 datasets=['dtd'] seeds=[0, 1, 2] Ncaps=[6, 12, 24] ft=(300,0.0005) dev=cuda
+Downloading readme:   0%|          | 0.00/2.85k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 2.85k/2.85k [00:00<00:00, 134kB/s]
+Downloading data:   0%|          | 0.00/450M [00:00<?, ?B/s]Downloading data:   2%|▏         | 10.5M/450M [00:01<00:49, 8.83MB/s]Downloading data:   5%|▍         | 21.0M/450M [00:01<00:32, 13.2MB/s]Downloading data:   7%|▋         | 31.5M/450M [00:01<00:20, 20.6MB/s]Downloading data:   9%|▉         | 41.9M/450M [00:02<00:17, 23.5MB/s]Downloading data:  12%|█▏        | 52.4M/450M [00:02<00:18, 21.9MB/s]Downloading data:  14%|█▍        | 62.9M/450M [00:03<00:17, 22.4MB/s]Downloading data:  16%|█▋        | 73.4M/450M [00:11<01:46, 3.53MB/s]Downloading data:  16%|█▋        | 73.4M/450M [00:29<01:46, 3.53MB/s]Downloading data:  19%|█▊        | 83.9M/450M [00:34<05:29, 1.11MB/s]Downloading data:  19%|█▊        | 83.9M/450M [00:49<05:29, 1.11MB/s]Downloading data:  21%|██        | 94.4M/450M [01:04<08:59, 659kB/s] Downloading data:  23%|██▎       | 105M/450M [01:05<06:06, 944kB/s] Downloading data:  26%|██▌       | 115M/450M [01:05<04:08, 1.35MB/s]Downloading data:  28%|██▊       | 126M/450M [01:05<02:51, 1.89MB/s]Downloading data:  28%|██▊       | 126M/450M [01:19<02:51, 1.89MB/s]Downloading data:  30%|███       | 136M/450M [01:51<08:51, 590kB/s] Downloading data:  30%|███       | 136M/450M [02:09<08:51, 590kB/s]Downloading data:  33%|███▎      | 147M/450M [02:10<08:46, 577kB/s]Downloading data:  35%|███▍      | 157M/450M [02:20<07:12, 677kB/s]Downloading data:  37%|███▋      | 168M/450M [02:20<04:58, 948kB/s]Downloading data:  40%|███▉      | 178M/450M [02:21<03:28, 1.30MB/s]Downloading data:  42%|████▏     | 189M/450M [02:22<02:26, 1.79MB/s]Downloading data:  42%|████▏     | 189M/450M [02:39<02:26, 1.79MB/s]Downloading data:  44%|████▍     | 199M/450M [03:15<07:56, 527kB/s] Downloading data:  44%|████▍     | 199M/450M [03:29<07:56, 527kB/s]Downloading data:  47%|████▋     | 210M/450M [04:06<11:12, 358kB/s]Downloading data:  49%|████▉     | 220M/450M [04:11<08:01, 478kB/s]Downloading data:  51%|█████     | 231M/450M [04:11<05:23, 680kB/s]Downloading data:  54%|█████▎    | 241M/450M [04:11<03:37, 961kB/s]Downloading data:  56%|█████▌    | 252M/450M [04:12<02:27, 1.35MB/s]Downloading data:  56%|█████▌    | 252M/450M [04:29<02:27, 1.35MB/s]Downloading data:  58%|█████▊    | 262M/450M [04:59<05:54, 531kB/s] Downloading data:  58%|█████▊    | 262M/450M [05:19<05:54, 531kB/s]Downloading data:  61%|██████    | 273M/450M [06:34<11:52, 249kB/s]Downloading data:  63%|██████▎   | 283M/450M [06:42<08:29, 328kB/s]Downloading data:  65%|██████▌   | 294M/450M [06:44<05:41, 459kB/s]Downloading data:  68%|██████▊   | 304M/450M [06:44<03:43, 653kB/s]Downloading data:  70%|██████▉   | 315M/450M [06:45<02:28, 912kB/s]Downloading data:  70%|██████▉   | 315M/450M [06:59<02:28, 912kB/s]Downloading data:  72%|███████▏  | 325M/450M [07:17<03:31, 592kB/s]Downloading data:  72%|███████▏  | 325M/450M [07:29<03:31, 592kB/s]Downloading data:  75%|███████▍  | 336M/450M [08:24<05:55, 323kB/s]Downloading data:  75%|███████▍  | 336M/450M [08:39<05:55, 323kB/s]Downloading data:  77%|███████▋  | 346M/450M [09:18<06:28, 269kB/s]Downloading data:  79%|███████▉  | 357M/450M [09:18<04:05, 383kB/s]Downloading data:  81%|████████▏ | 367M/450M [09:19<02:33, 544kB/s]Downloading data:  84%|████████▍ | 377M/450M [09:19<01:34, 770kB/s]Downloading data:  84%|████████▍ | 377M/450M [09:29<01:34, 770kB/s]Downloading data:  86%|████████▌ | 388M/450M [10:19<02:44, 380kB/s]Downloading data:  86%|████████▌ | 388M/450M [10:29<02:44, 380kB/s]Downloading data:  88%|████████▊ | 398M/450M [11:34<03:25, 252kB/s]Downloading data:  91%|█████████ | 409M/450M [11:34<01:55, 359kB/s]Downloading data:  93%|█████████▎| 419M/450M [11:35<01:01, 506kB/s]Downloading data:  95%|█████████▌| 430M/450M [11:35<00:28, 713kB/s]Downloading data:  98%|█████████▊| 440M/450M [11:36<00:09, 1.01MB/s]Downloading data: 100%|██████████| 450M/450M [11:44<00:00, 1.04MB/s]Downloading data: 100%|██████████| 450M/450M [11:44<00:00, 639kB/s] 
+Downloading data:   0%|          | 0.00/179M [00:00<?, ?B/s]Downloading data:   6%|▌         | 10.5M/179M [00:01<00:22, 7.57MB/s]Downloading data:  12%|█▏        | 21.0M/179M [00:01<00:11, 13.5MB/s]Downloading data:  18%|█▊        | 31.5M/179M [00:01<00:07, 20.5MB/s]Downloading data:  23%|██▎       | 41.9M/179M [00:02<00:04, 28.0MB/s]Downloading data:  29%|██▉       | 52.4M/179M [00:02<00:04, 30.6MB/s]Downloading data:  35%|███▌      | 62.9M/179M [00:02<00:03, 30.3MB/s]Downloading data:  41%|████      | 73.4M/179M [00:03<00:05, 18.2MB/s]Downloading data:  47%|████▋     | 83.9M/179M [00:05<00:08, 11.3MB/s]Downloading data:  53%|█████▎    | 94.4M/179M [00:07<00:09, 9.00MB/s]Downloading data:  59%|█████▊    | 105M/179M [00:24<00:43, 1.72MB/s] Downloading data:  59%|█████▊    | 105M/179M [00:34<00:43, 1.72MB/s]Downloading data:  64%|██████▍   | 115M/179M [00:37<00:49, 1.28MB/s]Downloading data:  70%|███████   | 126M/179M [00:45<00:42, 1.27MB/s]Downloading data:  76%|███████▌  | 136M/179M [00:55<00:35, 1.22MB/s]Downloading data:  82%|████████▏ | 147M/179M [00:58<00:21, 1.48MB/s]Downloading data:  82%|████████▏ | 147M/179M [01:14<00:21, 1.48MB/s]Downloading data:  88%|████████▊ | 157M/179M [01:15<00:20, 1.05MB/s]Downloading data:  94%|█████████▎| 168M/179M [01:34<00:13, 828kB/s] Downloading data:  94%|█████████▎| 168M/179M [01:44<00:13, 828kB/s]Downloading data:  99%|█████████▉| 178M/179M [01:53<00:01, 712kB/s]Downloading data: 100%|██████████| 179M/179M [01:54<00:00, 719kB/s]Downloading data: 100%|██████████| 179M/179M [01:54<00:00, 1.56MB/s]
+Generating train split:   0%|          | 0/3760 [00:00<?, ? examples/s]Generating train split:  13%|█▎        | 500/3760 [00:00<00:00, 4184.50 examples/s]Generating train split:  32%|███▏      | 1200/3760 [00:00<00:00, 5108.64 examples/s]Generating train split:  51%|█████     | 1900/3760 [00:00<00:00, 5471.14 examples/s]Generating train split:  69%|██████▉   | 2600/3760 [00:00<00:00, 5545.68 examples/s]Generating train split:  90%|█████████ | 3400/3760 [00:00<00:00, 5833.61 examples/s]Generating train split: 100%|██████████| 3760/3760 [00:00<00:00, 5502.59 examples/s]
+Generating test split:   0%|          | 0/1880 [00:00<?, ? examples/s]Generating test split:  48%|████▊     | 900/1880 [00:00<00:00, 7696.39 examples/s]Generating test split:  96%|█████████▌| 1800/1880 [00:00<00:00, 7276.54 examples/s]Generating test split: 100%|██████████| 1880/1880 [00:00<00:00, 7367.29 examples/s]
+[data] HF tanganke/dtd banks OK (100-100/class)
+[ADJ] dtd: banks loaded (24 caps)
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /home/ubuntu/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+  0%|          | 0.00/44.7M [00:00<?, ?B/s] 66%|██████▌   | 29.5M/44.7M [00:00<00:00, 309MB/s]100%|██████████| 44.7M/44.7M [00:00<00:00, 317MB/s]
+    [dtd s0] perturb 0 (1/24) colFgt=+0.298
+    [dtd s0] perturb 1 (2/24) colFgt=+0.199
+    [dtd s0] perturb 2 (3/24) colFgt=+0.206
+    [dtd s0] perturb 3 (4/24) colFgt=+0.265
+    [dtd s0] perturb 4 (5/24) colFgt=+0.254
+    [dtd s0] perturb 5 (6/24) colFgt=+0.423
+    [dtd s0] perturb 6 (7/24) colFgt=+0.237
+    [dtd s0] perturb 7 (8/24) colFgt=+0.251
+    [dtd s0] perturb 8 (9/24) colFgt=+0.321
+    [dtd s0] perturb 9 (10/24) colFgt=+0.277
+    [dtd s0] perturb 10 (11/24) colFgt=+0.309
+    [dtd s0] perturb 11 (12/24) colFgt=+0.229
+    [dtd s0] perturb 12 (13/24) colFgt=+0.289
+    [dtd s0] perturb 13 (14/24) colFgt=+0.231
+    [dtd s0] perturb 14 (15/24) colFgt=+0.227
+    [dtd s0] perturb 15 (16/24) colFgt=+0.322
+    [dtd s0] perturb 16 (17/24) colFgt=+0.262
+    [dtd s0] perturb 17 (18/24) colFgt=+0.231
+    [dtd s0] perturb 18 (19/24) colFgt=+0.252
+    [dtd s0] perturb 19 (20/24) colFgt=+0.303
+    [dtd s0] perturb 20 (21/24) colFgt=+0.222
+    [dtd s0] perturb 21 (22/24) colFgt=+0.241
+    [dtd s0] perturb 22 (23/24) colFgt=+0.284
+    [dtd s0] perturb 23 (24/24) colFgt=+0.232
+  [dtd s0 N=6] interER=3.037 perTask=2.013 pooled=8.596 cos=0.2032
+  [dtd s0 N=12] interER=5.087 perTask=2.061 pooled=16.258 cos=0.1581
+  [dtd s0 N=24] interER=9.314 perTask=2.753 pooled=21.466 cos=0.1513 | haarPT=21.974 permP=0.0
+    [dtd s1] perturb 0 (1/24) colFgt=+0.253
+    [dtd s1] perturb 1 (2/24) colFgt=+0.258
+    [dtd s1] perturb 2 (3/24) colFgt=+0.188
+    [dtd s1] perturb 3 (4/24) colFgt=+0.291
+    [dtd s1] perturb 4 (5/24) colFgt=+0.345
+    [dtd s1] perturb 5 (6/24) colFgt=+0.275
+    [dtd s1] perturb 6 (7/24) colFgt=+0.201
+    [dtd s1] perturb 7 (8/24) colFgt=+0.228
+    [dtd s1] perturb 8 (9/24) colFgt=+0.275
+    [dtd s1] perturb 9 (10/24) colFgt=+0.198
+    [dtd s1] perturb 10 (11/24) colFgt=+0.350
+    [dtd s1] perturb 11 (12/24) colFgt=+0.288
+    [dtd s1] perturb 12 (13/24) colFgt=+0.244
+    [dtd s1] perturb 13 (14/24) colFgt=+0.192
+    [dtd s1] perturb 14 (15/24) colFgt=+0.234
+    [dtd s1] perturb 15 (16/24) colFgt=+0.260
+    [dtd s1] perturb 16 (17/24) colFgt=+0.254
+    [dtd s1] perturb 17 (18/24) colFgt=+0.251
+    [dtd s1] perturb 18 (19/24) colFgt=+0.215
+    [dtd s1] perturb 19 (20/24) colFgt=+0.324
+    [dtd s1] perturb 20 (21/24) colFgt=+0.461
+    [dtd s1] perturb 21 (22/24) colFgt=+0.213
+    [dtd s1] perturb 22 (23/24) colFgt=+0.300
+    [dtd s1] perturb 23 (24/24) colFgt=+0.259
+  [dtd s1 N=6] interER=1.764 perTask=1.755 pooled=7.905 cos=0.2185
+  [dtd s1 N=12] interER=4.903 perTask=2.02 pooled=15.053 cos=0.1641
+  [dtd s1 N=24] interER=8.414 perTask=2.17 pooled=21.13 cos=0.1525 | haarPT=21.974 permP=0.0
+    [dtd s2] perturb 0 (1/24) colFgt=+0.292
+    [dtd s2] perturb 1 (2/24) colFgt=+0.207
+    [dtd s2] perturb 2 (3/24) colFgt=+0.186
+    [dtd s2] perturb 3 (4/24) colFgt=+0.324
+    [dtd s2] perturb 4 (5/24) colFgt=+0.237
+    [dtd s2] perturb 5 (6/24) colFgt=+0.349
+    [dtd s2] perturb 6 (7/24) colFgt=+0.314
+    [dtd s2] perturb 7 (8/24) colFgt=+0.367
+    [dtd s2] perturb 8 (9/24) colFgt=+0.223
+    [dtd s2] perturb 9 (10/24) colFgt=+0.145
+    [dtd s2] perturb 10 (11/24) colFgt=+0.317
+    [dtd s2] perturb 11 (12/24) colFgt=+0.250
+    [dtd s2] perturb 12 (13/24) colFgt=+0.253
+    [dtd s2] perturb 13 (14/24) colFgt=+0.216
+    [dtd s2] perturb 14 (15/24) colFgt=+0.205
+    [dtd s2] perturb 15 (16/24) colFgt=+0.239
+    [dtd s2] perturb 16 (17/24) colFgt=+0.249
+    [dtd s2] perturb 17 (18/24) colFgt=+0.332
+    [dtd s2] perturb 18 (19/24) colFgt=+0.254
+    [dtd s2] perturb 19 (20/24) colFgt=+0.177
+    [dtd s2] perturb 20 (21/24) colFgt=+0.244
+    [dtd s2] perturb 21 (22/24) colFgt=+0.241
+    [dtd s2] perturb 22 (23/24) colFgt=+0.331
+    [dtd s2] perturb 23 (24/24) colFgt=+0.283
+  [dtd s2 N=6] interER=2.165 perTask=1.909 pooled=7.762 cos=0.2227
+  [dtd s2 N=12] interER=4.573 perTask=2.358 pooled=15.352 cos=0.1657
+  [dtd s2 N=24] interER=10.194 perTask=2.568 pooled=20.049 cos=0.1563 | haarPT=21.974 permP=0.0
+
+=== #4 POWERED AGGREGATE ===
+[dtd] scaling N=[6, 12, 24] interaction=[2.322, 4.854, 9.307] (slope 0.3856) per_task=[1.892, 2.146, 2.497] (slope 0.033)
+  N=24: perTask=[2.497, [2.17, 2.753]] vs haar=21.974 | interaction=[9.307, [8.414, 10.194]] pooled=[20.882, [20.049, 21.466]] cos=0.1534 permP=0.0
+
+[ADJ] wrote /home/ubuntu/ilaw/out/lowrank_adjudication_dtd.json  wall=3846s
+[L:pl] run rc=0 (4161s)
+Warning: Permanently added '150.136.216.153' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.216.153' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.216.153' (ED25519) to the list of known hosts.
+[L:pl] RESULT LANDED: D:\IC_experiments\interference_law\out\lowrank_adjudication_dtd.json rows=D:\IC_experiments\interference_law\out\lowrank_rows_dtd.jsonl
+[L:pl] terminating 130a3578b54d4e1aa72404f6dbfd9b88...
+[L:pl] terminated 130a3578b54d4e1aa72404f6dbfd9b88
+[L:pl] ledger += 69min $1.49

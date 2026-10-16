@@ -1,0 +1,42 @@
+{
+ "config": {
+  "C": 6,
+  "per_class": 40,
+  "smoke": true,
+  "prereg_lock": "dcf864d2"
+ },
+ "backbones": {
+  "resnet18": {
+   "n_pairs": 30,
+   "spearman": -0.776,
+   "slope": -0.4663,
+   "intercept": 0.2435,
+   "heldout_r2": 0.492,
+   "cstar_10": 0.264,
+   "base_auc_median": 0.989,
+   "median_forget": 0.2017,
+   "cos_range": [
+    -0.24,
+    0.76
+   ],
+   "dim": 512,
+   "saturated": false
+  },
+  "resnet50": {
+   "n_pairs": 30,
+   "spearman": -0.763,
+   "slope": -0.4092,
+   "intercept": 0.1855,
+   "heldout_r2": 0.519,
+   "cstar_10": 0.117,
+   "base_auc_median": 0.988,
+   "median_forget": 0.1154,
+   "cos_range": [
+    -0.26,
+    0.67
+   ],
+   "dim": 2048,
+   "saturated": false
+  }
+ }
+}

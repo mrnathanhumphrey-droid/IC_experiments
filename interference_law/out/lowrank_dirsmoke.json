@@ -1,0 +1,55 @@
+{
+ "smoke": true,
+ "dataset": "cifar",
+ "n": 12,
+ "caps": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "ft": [
+  300,
+  0.0005
+ ],
+ "seed": 0,
+ "prereg_lock": "b5c3929a",
+ "median_forget": 0.1864,
+ "interaction_eff_rank": 4.607,
+ "interaction_var_top6": [
+  0.339,
+  0.2339,
+  0.1702,
+  0.0979,
+  0.0794,
+  0.0441
+ ],
+ "per_task_eff_rank_median": 2.371,
+ "per_task_eff_rank_min": 1.583,
+ "per_task_eff_rank_max": 2.927,
+ "per_task_eff_rank_by_cap": {
+  "0": 2.36,
+  "1": 1.592,
+  "2": 2.498,
+  "3": 2.382,
+  "4": 2.47,
+  "5": 1.583,
+  "6": 2.512,
+  "7": 2.927,
+  "8": 1.857,
+  "9": 1.953,
+  "10": 1.662,
+  "11": 2.425
+ },
+ "pooled_direction_eff_rank": 13.863,
+ "pooled_dim": 132,
+ "mean_abs_cos_pairdirs": 0.1686
+}

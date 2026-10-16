@@ -1,0 +1,41 @@
+[P1] BAKEOFF | nseed=10 caps=20 K=30 kpc=5 D_PROJ=24 boot=2000 perm=2000 dev=cuda
+[P1] HIT = |rho|>=0.30 & CI excl 0 & replicates same-sign on BOTH datasets & beats COS. LogME deferred to plastic regime.
+[P1] === cifar ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  [cifar] FT target built (96s)
+  [cifar] descriptors built (98s)
+  [cifar] COS              (dir  ) rho=+0.034 CI[-0.073,+0.137] perm_p=0.520 
+  [cifar] X1_subspace      (dir  ) rho=+0.066 CI[-0.033,+0.162] perm_p=0.197 
+  [cifar] X4_cka           (dir  ) rho=-0.020 CI[-0.115,+0.073] perm_p=0.688 
+  [cifar] Xzs_auc          (dir  ) rho=+0.226 CI[+0.129,+0.314] perm_p=0.000 
+  [cifar] X0_wnorm         (scale) rho=-0.222 CI[-0.320,-0.125] perm_p=0.000 
+  [cifar] X3_headInAsub    (scale) rho=+0.111 CI[+0.012,+0.206] perm_p=0.034 
+  [cifar] X6_gradnorm      (scale) rho=-0.162 CI[-0.258,-0.060] perm_p=0.002 
+  [cifar] X7_loss0         (scale) rho=-0.086 CI[-0.182,+0.017] perm_p=0.098 
+  [cifar] hits=[] (99s)
+[P1] === dtd ===
+  [dtd] FT target built (98s)
+  [dtd] descriptors built (99s)
+  [dtd] COS              (dir  ) rho=-0.014 CI[-0.110,+0.089] perm_p=0.776 
+  [dtd] X1_subspace      (dir  ) rho=+0.015 CI[-0.083,+0.119] perm_p=0.771 
+  [dtd] X4_cka           (dir  ) rho=+0.018 CI[-0.079,+0.123] perm_p=0.719 
+  [dtd] Xzs_auc          (dir  ) rho=+0.116 CI[+0.017,+0.216] perm_p=0.024 
+  [dtd] X0_wnorm         (scale) rho=-0.231 CI[-0.326,-0.130] perm_p=0.000 
+  [dtd] X3_headInAsub    (scale) rho=+0.057 CI[-0.040,+0.158] perm_p=0.270 
+  [dtd] X6_gradnorm      (scale) rho=+0.022 CI[-0.087,+0.122] perm_p=0.653 
+  [dtd] X7_loss0         (scale) rho=-0.092 CI[-0.196,+0.012] perm_p=0.077 
+  [dtd] hits=[] (100s)
+
+=== P1 BAKE-OFF (rho(X,FT) by dataset) ===
+  descriptor       family         cifar           dtd   replicated_HIT
+  COS                 dir        +0.034        -0.014   
+  X1_subspace         dir        +0.066        +0.015   
+  X4_cka              dir        -0.020        +0.018   
+  Xzs_auc             dir        +0.226        +0.116   
+  X0_wnorm          scale        -0.222        -0.231   
+  X3_headInAsub     scale        +0.111        +0.057   
+  X6_gradnorm       scale        -0.162        +0.022   
+  X7_loss0          scale        -0.086        -0.092   
+
+[P1] replicated_HITs=[] | VERDICT: NULL: no descriptor >=0.30 replicates cross-dataset -> frozen transfer geometrically structureless -> MOVE TO PLASTIC REGIME (contrarian result stands given P0)
+[P1] wrote D:\IC_experiments\interference_law\out\p1_bakeoff.json  wall=199s

@@ -1,0 +1,2 @@
+[KILLSWITCH-P2] armed 14400s; targets (exact IDs only) = ['bc0ebef907aa486d944ac3f70ac93f31', 'c014a1e2eef142b9897b497752e58eaa']
+[KILLSWITCH-P2] CLEAN — both Probe-2 instances already self-terminated; nothing to kill.

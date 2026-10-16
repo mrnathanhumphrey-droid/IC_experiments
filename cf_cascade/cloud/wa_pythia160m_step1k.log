@@ -1,0 +1,14 @@
+[WA] EleutherAI/pythia-160m (tag pythia160m_step1k) target acc>=0.8
+[WA] revision=step1000
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 5636.89it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 1978609.91 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 393018.81 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 586667.76 examples/s]
+[WA] step 250: SST acc=0.773 (30s)
+[WA] step 500: SST acc=0.750 (42s)
+[WA] step 750: SST acc=0.727 (53s)
+[WA] step 1000: SST acc=0.733 (65s)
+[WA] step 1250: SST acc=0.680 (77s)
+[WA] step 1500: SST acc=0.700 (89s)
+[WA] MAXSTEPS reached; final acc=0.700 (below target 0.8) — saved best-effort /home/ubuntu/gateA/pythia160m_step1k_sst2_wA.pt
+[WA] DONE tag=pythia160m_step1k acc=0.773 stop_step=1500 matched=False wall=90s

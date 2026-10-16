@@ -1,0 +1,14 @@
+{
+  "task_B": "AG-News",
+  "sst_acc_before": 0.77,
+  "sst_acc_after": 0.6625,
+  "forgetting": 0.10750000000000004,
+  "agnews_train_win": 0.009884810368097874,
+  "steps": 745,
+  "n_damage_components": 24576,
+  "damage_median": 0.0004673857765737921,
+  "damage_max": 0.07295328378677368,
+  "alpha": 2.8553519438169768,
+  "branch": "alpha<3: moment-c2 INFEASIBLE -> rank/quantile estimator or concede",
+  "wall_s": 400.50724816322327
+}

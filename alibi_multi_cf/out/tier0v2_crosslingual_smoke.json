@@ -1,0 +1,99 @@
+{
+ "config": {
+  "d": 128,
+  "layers": 3,
+  "heads": 8,
+  "copy": 2,
+  "langA": 0,
+  "langB": 5,
+  "base_multi": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "phaseb": 40,
+  "seeds": [
+   0
+  ],
+  "smoke": true,
+  "prereg_lock": "690a5b42"
+ },
+ "cells": {
+  "alibi_mono": {
+   "accA_base": [
+    0.9948508739471436,
+    0.0
+   ],
+   "retA_noc": [
+    0.009055398404598236,
+    0.0
+   ],
+   "retA_ch": [
+    0.11532315611839294,
+    0.0
+   ],
+   "protection": [
+    0.10626775771379471,
+    0.0
+   ]
+  },
+  "alibi_multi": {
+   "accA_base": [
+    0.990234375,
+    0.0
+   ],
+   "retA_noc": [
+    0.0478515625,
+    0.0
+   ],
+   "retA_ch": [
+    0.08922230452299118,
+    0.0
+   ],
+   "protection": [
+    0.04137074202299118,
+    0.0
+   ]
+  },
+  "rope_mono": {
+   "accA_base": [
+    1.0,
+    0.0
+   ],
+   "retA_noc": [
+    0.22984731197357178,
+    0.0
+   ],
+   "retA_ch": [
+    0.5812322497367859,
+    0.0
+   ],
+   "protection": [
+    0.3513849377632141,
+    0.0
+   ]
+  },
+  "rope_multi": {
+   "accA_base": [
+    1.0,
+    0.0
+   ],
+   "retA_noc": [
+    0.0947265625,
+    0.0
+   ],
+   "retA_ch": [
+    0.7268288731575012,
+    0.0
+   ],
+   "protection": [
+    0.6321023106575012,
+    0.0
+   ]
+  }
+ },
+ "conjunction": false,
+ "margin": 0.06489701569080353,
+ "verdict": "NOT a clean conjunction (single-knob or null) -> Lambda a judgment call"
+}

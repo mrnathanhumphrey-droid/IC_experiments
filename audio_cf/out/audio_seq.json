@@ -1,0 +1,467 @@
+{
+ "config": {
+  "paradigms": [
+   "bark",
+   "elevenlabs",
+   "gtts",
+   "mms",
+   "parler",
+   "pyttsx3",
+   "speecht5"
+  ],
+  "subsample": 180,
+  "smoke": false,
+  "prereg_lock": "17a22acb"
+ },
+ "D1_cosine_matrix": [
+  [
+   1.0,
+   0.624,
+   0.614,
+   0.743,
+   0.553,
+   0.585,
+   0.079
+  ],
+  [
+   0.624,
+   1.0,
+   0.959,
+   0.942,
+   0.954,
+   0.876,
+   -0.111
+  ],
+  [
+   0.614,
+   0.959,
+   1.0,
+   0.943,
+   0.926,
+   0.908,
+   -0.224
+  ],
+  [
+   0.743,
+   0.942,
+   0.943,
+   1.0,
+   0.896,
+   0.921,
+   -0.175
+  ],
+  [
+   0.553,
+   0.954,
+   0.926,
+   0.896,
+   1.0,
+   0.89,
+   -0.166
+  ],
+  [
+   0.585,
+   0.876,
+   0.908,
+   0.921,
+   0.89,
+   1.0,
+   -0.368
+  ],
+  [
+   0.079,
+   -0.111,
+   -0.224,
+   -0.175,
+   -0.166,
+   -0.368,
+   1.0
+  ]
+ ],
+ "D2_law": {
+  "spearman_rho": -0.5193258244874808,
+  "pearson": -0.2927078990957963,
+  "base_auc": {
+   "bark": 1.0,
+   "elevenlabs": 0.999,
+   "gtts": 1.0,
+   "mms": 1.0,
+   "parler": 0.999,
+   "pyttsx3": 0.998,
+   "speecht5": 1.0
+  },
+  "pairs": [
+   {
+    "A": "bark",
+    "B": "elevenlabs",
+    "cos": 0.624,
+    "A_base": 1.0,
+    "A_after": 0.016,
+    "forget": 0.984
+   },
+   {
+    "A": "bark",
+    "B": "gtts",
+    "cos": 0.614,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "bark",
+    "B": "mms",
+    "cos": 0.743,
+    "A_base": 1.0,
+    "A_after": 0.216,
+    "forget": 0.784
+   },
+   {
+    "A": "bark",
+    "B": "parler",
+    "cos": 0.553,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "bark",
+    "B": "pyttsx3",
+    "cos": 0.585,
+    "A_base": 1.0,
+    "A_after": 0.032,
+    "forget": 0.968
+   },
+   {
+    "A": "bark",
+    "B": "speecht5",
+    "cos": 0.079,
+    "A_base": 1.0,
+    "A_after": 0.316,
+    "forget": 0.684
+   },
+   {
+    "A": "elevenlabs",
+    "B": "bark",
+    "cos": 0.624,
+    "A_base": 0.999,
+    "A_after": 0.0,
+    "forget": 0.999
+   },
+   {
+    "A": "elevenlabs",
+    "B": "gtts",
+    "cos": 0.959,
+    "A_base": 0.999,
+    "A_after": 0.889,
+    "forget": 0.11
+   },
+   {
+    "A": "elevenlabs",
+    "B": "mms",
+    "cos": 0.942,
+    "A_base": 0.999,
+    "A_after": 0.093,
+    "forget": 0.906
+   },
+   {
+    "A": "elevenlabs",
+    "B": "parler",
+    "cos": 0.954,
+    "A_base": 0.999,
+    "A_after": 0.824,
+    "forget": 0.175
+   },
+   {
+    "A": "elevenlabs",
+    "B": "pyttsx3",
+    "cos": 0.876,
+    "A_base": 0.999,
+    "A_after": 0.0,
+    "forget": 0.999
+   },
+   {
+    "A": "elevenlabs",
+    "B": "speecht5",
+    "cos": -0.111,
+    "A_base": 0.999,
+    "A_after": 0.0,
+    "forget": 0.999
+   },
+   {
+    "A": "gtts",
+    "B": "bark",
+    "cos": 0.614,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "gtts",
+    "B": "elevenlabs",
+    "cos": 0.959,
+    "A_base": 1.0,
+    "A_after": 0.155,
+    "forget": 0.845
+   },
+   {
+    "A": "gtts",
+    "B": "mms",
+    "cos": 0.943,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "gtts",
+    "B": "parler",
+    "cos": 0.926,
+    "A_base": 1.0,
+    "A_after": 0.633,
+    "forget": 0.367
+   },
+   {
+    "A": "gtts",
+    "B": "pyttsx3",
+    "cos": 0.908,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "gtts",
+    "B": "speecht5",
+    "cos": -0.224,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "mms",
+    "B": "bark",
+    "cos": 0.743,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "mms",
+    "B": "elevenlabs",
+    "cos": 0.942,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "mms",
+    "B": "gtts",
+    "cos": 0.943,
+    "A_base": 1.0,
+    "A_after": 0.058,
+    "forget": 0.941
+   },
+   {
+    "A": "mms",
+    "B": "parler",
+    "cos": 0.896,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "mms",
+    "B": "pyttsx3",
+    "cos": 0.921,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "mms",
+    "B": "speecht5",
+    "cos": -0.175,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "parler",
+    "B": "bark",
+    "cos": 0.553,
+    "A_base": 0.999,
+    "A_after": 0.0,
+    "forget": 0.999
+   },
+   {
+    "A": "parler",
+    "B": "elevenlabs",
+    "cos": 0.954,
+    "A_base": 0.999,
+    "A_after": 0.055,
+    "forget": 0.944
+   },
+   {
+    "A": "parler",
+    "B": "gtts",
+    "cos": 0.926,
+    "A_base": 0.999,
+    "A_after": 0.126,
+    "forget": 0.873
+   },
+   {
+    "A": "parler",
+    "B": "mms",
+    "cos": 0.896,
+    "A_base": 0.999,
+    "A_after": 0.0,
+    "forget": 0.999
+   },
+   {
+    "A": "parler",
+    "B": "pyttsx3",
+    "cos": 0.89,
+    "A_base": 0.999,
+    "A_after": 0.0,
+    "forget": 0.999
+   },
+   {
+    "A": "parler",
+    "B": "speecht5",
+    "cos": -0.166,
+    "A_base": 0.999,
+    "A_after": 0.0,
+    "forget": 0.999
+   },
+   {
+    "A": "pyttsx3",
+    "B": "bark",
+    "cos": 0.585,
+    "A_base": 0.998,
+    "A_after": 0.0,
+    "forget": 0.998
+   },
+   {
+    "A": "pyttsx3",
+    "B": "elevenlabs",
+    "cos": 0.876,
+    "A_base": 0.998,
+    "A_after": 0.0,
+    "forget": 0.998
+   },
+   {
+    "A": "pyttsx3",
+    "B": "gtts",
+    "cos": 0.908,
+    "A_base": 0.998,
+    "A_after": 0.017,
+    "forget": 0.981
+   },
+   {
+    "A": "pyttsx3",
+    "B": "mms",
+    "cos": 0.921,
+    "A_base": 0.998,
+    "A_after": 0.782,
+    "forget": 0.216
+   },
+   {
+    "A": "pyttsx3",
+    "B": "parler",
+    "cos": 0.89,
+    "A_base": 0.998,
+    "A_after": 0.0,
+    "forget": 0.998
+   },
+   {
+    "A": "pyttsx3",
+    "B": "speecht5",
+    "cos": -0.368,
+    "A_base": 0.998,
+    "A_after": 0.0,
+    "forget": 0.998
+   },
+   {
+    "A": "speecht5",
+    "B": "bark",
+    "cos": 0.079,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "speecht5",
+    "B": "elevenlabs",
+    "cos": -0.111,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "speecht5",
+    "B": "gtts",
+    "cos": -0.224,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "speecht5",
+    "B": "mms",
+    "cos": -0.175,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   },
+   {
+    "A": "speecht5",
+    "B": "parler",
+    "cos": -0.166,
+    "A_base": 1.0,
+    "A_after": 0.039,
+    "forget": 0.961
+   },
+   {
+    "A": "speecht5",
+    "B": "pyttsx3",
+    "cos": -0.368,
+    "A_base": 1.0,
+    "A_after": 0.0,
+    "forget": 1.0
+   }
+  ]
+ },
+ "D3_route": {
+  "clusters": [
+   [
+    "bark",
+    "elevenlabs",
+    "gtts",
+    "mms",
+    "parler",
+    "pyttsx3"
+   ],
+   [
+    "speecht5"
+   ]
+  ],
+  "naive": {
+   "bark": 0.582,
+   "elevenlabs": 0.0,
+   "gtts": 0.0,
+   "mms": 0.0,
+   "parler": 0.075,
+   "pyttsx3": 0.0,
+   "speecht5": 0.98
+  },
+  "route": {
+   "bark": 0.969,
+   "elevenlabs": 0.995,
+   "gtts": 0.999,
+   "mms": 0.999,
+   "parler": 0.929,
+   "pyttsx3": 0.996,
+   "speecht5": 1.0
+  },
+  "worst_naive": 0.0,
+  "worst_route": 0.929
+ }
+}

@@ -1,0 +1,66 @@
+[P16:bloom560m] bigscience/bloom-560m curvature spectrum; DOSES=[1e-06, 7e-06] N=8
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/293 [00:00<?, ?it/s]Loading weights:  84%|████████▎ | 245/293 [00:00<00:00, 2449.09it/s]Loading weights: 100%|██████████| 293/293 [00:00<00:00, 1365.80it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2076632.04 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 328315.36 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 599703.80 examples/s]
+[P16:bloom560m] w_A acc=0.830 (exp 0.83); 72 carriers (21s)
+[P16:bloom560m] BASELINE(w_A): anis=0.4940 eff_rank=6.72 lam_max=1.773e+03 (52s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 65000/560000 [00:00<00:00, 641921.32 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 796762.72 examples/s]Generating train split:  49%|████▉     | 276000/560000 [00:00<00:00, 934846.23 examples/s]Generating train split:  75%|███████▌  | 420000/560000 [00:00<00:00, 1070618.04 examples/s]Generating train split:  97%|█████████▋| 542000/560000 [00:00<00:00, 1119039.56 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1011326.24 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1092254.48 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▍         | 65000/1400000 [00:00<00:02, 646043.62 examples/s]Generating train split:  10%|█         | 146000/1400000 [00:00<00:01, 690978.96 examples/s]Generating train split:  16%|█▌        | 217000/1400000 [00:00<00:01, 694050.71 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 712877.02 examples/s]Generating train split:  29%|██▊       | 401000/1400000 [00:00<00:01, 791824.59 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 714597.38 examples/s]Generating train split:  42%|████▏     | 584000/1400000 [00:00<00:01, 760073.41 examples/s]Generating train split:  50%|█████     | 701000/1400000 [00:00<00:01, 680590.93 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 697355.67 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 712190.92 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 724031.44 examples/s]Generating train split:  75%|███████▌  | 1054000/1400000 [00:01<00:00, 774048.41 examples/s]Generating train split:  84%|████████▍ | 1179000/1400000 [00:01<00:00, 792387.56 examples/s]Generating train split:  90%|█████████ | 1264000/1400000 [00:01<00:00, 781946.45 examples/s]Generating train split:  97%|█████████▋| 1355000/1400000 [00:01<00:00, 781756.70 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 744597.52 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 875177.76 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 247186.18 examples/s]Generating train split:  38%|███▊      | 79763/209527 [00:00<00:00, 254991.27 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 255722.83 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 248893.65 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 241845.56 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 246332.34 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1738526.57 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 721538.62 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 732885.55 examples/s]
+[hb] s1/8 d1/2(1e-06) childhood 1/400 loss=17.411 (72s)
+[hb] s1/8 d1/2(1e-06) childhood 41/400 loss=8.264 (76s)
+[hb] s1/8 d1/2(1e-06) childhood 81/400 loss=2.688 (81s)
+[hb] s1/8 d1/2(1e-06) childhood 121/400 loss=1.328 (85s)
+[hb] s1/8 d1/2(1e-06) childhood 161/400 loss=0.513 (90s)
+[hb] s1/8 d1/2(1e-06) childhood 201/400 loss=0.125 (94s)
+[hb] s1/8 d1/2(1e-06) childhood 241/400 loss=0.317 (99s)
+[hb] s1/8 d1/2(1e-06) childhood 281/400 loss=0.181 (103s)
+[hb] s1/8 d1/2(1e-06) childhood 321/400 loss=0.627 (108s)
+[hb] s1/8 d1/2(1e-06) childhood 361/400 loss=0.568 (112s)
+[hb] s1/8 d1/2(1e-06) childhood 400/400 loss=0.949 (117s)
+[hb] s1/8 d2/2(7e-06) childhood 1/400 loss=17.411 (150s)
+[hb] s1/8 d2/2(7e-06) childhood 41/400 loss=1.156 (154s)
+[hb] s1/8 d2/2(7e-06) childhood 81/400 loss=0.494 (159s)
+[hb] s1/8 d2/2(7e-06) childhood 121/400 loss=0.491 (163s)
+[hb] s1/8 d2/2(7e-06) childhood 161/400 loss=0.179 (168s)
+[hb] s1/8 d2/2(7e-06) childhood 201/400 loss=0.148 (172s)
+[hb] s1/8 d2/2(7e-06) childhood 241/400 loss=0.280 (176s)
+[hb] s1/8 d2/2(7e-06) childhood 281/400 loss=0.099 (181s)
+[hb] s1/8 d2/2(7e-06) childhood 321/400 loss=1.199 (185s)
+[hb] s1/8 d2/2(7e-06) childhood 361/400 loss=0.197 (190s)
+[hb] s1/8 d2/2(7e-06) childhood 400/400 loss=0.263 (194s)
+[seed] s1/8 1e-06:dA=+0.021/dER=+0.087@retA0.797 7e-06:dA=-0.073/dER=+0.527@retA0.740 (227s)
+[seed] s3/8 1e-06:dA=+0.020/dER=+0.090@retA0.798 7e-06:dA=-0.070/dER=+0.470@retA0.774 (537s)
+[hb] s5/8 d1/2(1e-06) childhood 1/400 loss=17.483 (692s)
+[hb] s5/8 d1/2(1e-06) childhood 41/400 loss=8.362 (696s)
+[hb] s5/8 d1/2(1e-06) childhood 81/400 loss=2.807 (701s)
+[hb] s5/8 d1/2(1e-06) childhood 121/400 loss=0.821 (705s)
+[hb] s5/8 d1/2(1e-06) childhood 161/400 loss=0.324 (710s)
+[hb] s5/8 d1/2(1e-06) childhood 201/400 loss=0.291 (714s)
+[hb] s5/8 d1/2(1e-06) childhood 241/400 loss=0.100 (719s)
+[hb] s5/8 d1/2(1e-06) childhood 281/400 loss=0.198 (723s)
+[hb] s5/8 d1/2(1e-06) childhood 321/400 loss=0.217 (728s)
+[hb] s5/8 d1/2(1e-06) childhood 361/400 loss=0.892 (732s)
+[hb] s5/8 d1/2(1e-06) childhood 400/400 loss=0.811 (736s)
+[hb] s5/8 d2/2(7e-06) childhood 1/400 loss=17.483 (769s)
+[hb] s5/8 d2/2(7e-06) childhood 41/400 loss=0.419 (774s)
+[hb] s5/8 d2/2(7e-06) childhood 81/400 loss=0.677 (778s)
+[hb] s5/8 d2/2(7e-06) childhood 121/400 loss=0.427 (783s)
+[hb] s5/8 d2/2(7e-06) childhood 161/400 loss=0.088 (787s)
+[hb] s5/8 d2/2(7e-06) childhood 201/400 loss=0.567 (792s)
+[hb] s5/8 d2/2(7e-06) childhood 241/400 loss=0.062 (796s)
+[hb] s5/8 d2/2(7e-06) childhood 281/400 loss=0.248 (801s)
+[hb] s5/8 d2/2(7e-06) childhood 321/400 loss=0.210 (805s)
+[hb] s5/8 d2/2(7e-06) childhood 361/400 loss=0.860 (809s)
+[hb] s5/8 d2/2(7e-06) childhood 400/400 loss=0.464 (814s)
+[seed] s5/8 1e-06:dA=+0.019/dER=+0.090@retA0.798 7e-06:dA=-0.068/dER=+0.452@retA0.772 (846s)
+[seed] s7/8 1e-06:dA=+0.019/dER=+0.089@retA0.799 7e-06:dA=-0.068/dER=+0.439@retA0.771 (1155s)
+[seed] s8/8 1e-06:dA=+0.019/dER=+0.090@retA0.799 7e-06:dA=-0.065/dER=+0.419@retA0.777 (1310s)
+[P16:bloom560m] DONE saved /home/ubuntu/gateA/probe16_curvature_bloom560m.json wall=1310s

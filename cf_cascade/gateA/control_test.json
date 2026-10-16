@@ -1,0 +1,246 @@
+{
+  "pre_acc": 0.7533333333333333,
+  "fragile_mean_lam": 0.09439121850791879,
+  "band_mean_lam": 0.027134711038691577,
+  "E_and_mass": {
+    "ag": {
+      "E": 100,
+      "mass_early": 236.46827152487822,
+      "mass_late": 193.5396222869167,
+      "mass_rest": 161.24220835094457,
+      "naive_ret": 0.5366666666666666,
+      "forgetting": 0.21666666666666667
+    },
+    "code": {
+      "E": 100,
+      "mass_early": 274.29821742512286,
+      "mass_late": 270.86145756667247,
+      "mass_rest": 274.1932818359928,
+      "naive_ret": 0.7233333333333334,
+      "forgetting": 0.029999999999999916
+    }
+  },
+  "results": {
+    "ag": {
+      "naive": {
+        "ret_mean": 0.5822222222222222,
+        "ret_std": 0.07161281353032012,
+        "rets": [
+          0.5366666666666666,
+          0.6833333333333333,
+          0.5266666666666666
+        ],
+        "bloss_mean": 0.07999500042448442,
+        "mass_early": 0.0,
+        "mass_late": 0.0,
+        "draw_lam": null
+      },
+      "fragile_full": {
+        "ret_mean": 0.6877777777777778,
+        "ret_std": 0.019116278371205823,
+        "rets": [
+          0.6633333333333333,
+          0.69,
+          0.71
+        ],
+        "bloss_mean": 0.10502278059720993,
+        "mass_early": 250.39678548652833,
+        "mass_late": 217.166976055402,
+        "draw_lam": null
+      },
+      "fragile_early": {
+        "ret_mean": 0.64,
+        "ret_std": 0.042774170122044756,
+        "rets": [
+          0.6033333333333334,
+          0.6166666666666667,
+          0.7
+        ],
+        "bloss_mean": 0.08335685357451439,
+        "mass_early": 250.39678548652833,
+        "mass_late": 0.0,
+        "draw_lam": null
+      },
+      "fragile_late": {
+        "ret_mean": 0.5544444444444445,
+        "ret_std": 0.08904153559844079,
+        "rets": [
+          0.5,
+          0.68,
+          0.48333333333333334
+        ],
+        "bloss_mean": 0.08583149911525349,
+        "mass_early": 0.0,
+        "mass_late": 197.11504801620808,
+        "draw_lam": null
+      },
+      "randhi_early": {
+        "ret_mean": 0.6188888888888889,
+        "ret_std": 0.05665577237325315,
+        "rets": [
+          0.5966666666666667,
+          0.5633333333333334,
+          0.6966666666666667
+        ],
+        "bloss_mean": 0.13442620014150938,
+        "mass_early": 48.33256148405295,
+        "mass_late": 0.0,
+        "draw_lam": 0.012797208223312486
+      },
+      "randany_early": {
+        "ret_mean": 0.5955555555555555,
+        "ret_std": 0.053702426549309214,
+        "rets": [
+          0.64,
+          0.6266666666666667,
+          0.52
+        ],
+        "bloss_mean": 0.2036655160288016,
+        "mass_early": 32.678060421875365,
+        "mass_late": 0.0,
+        "draw_lam": null
+      },
+      "randany_full": {
+        "ret_mean": 0.6522222222222221,
+        "ret_std": 0.03034777840832816,
+        "rets": [
+          0.6666666666666666,
+          0.68,
+          0.61
+        ],
+        "bloss_mean": 0.1612156704068184,
+        "mass_early": 32.678060421875365,
+        "mass_late": 29.69455824061879,
+        "draw_lam": null
+      }
+    },
+    "code": {
+      "naive": {
+        "ret_mean": 0.7122222222222222,
+        "ret_std": 0.008748897637790916,
+        "rets": [
+          0.72,
+          0.7166666666666667,
+          0.7
+        ],
+        "bloss_mean": 0.7290997306505839,
+        "mass_early": 0.0,
+        "mass_late": 0.0,
+        "draw_lam": null
+      },
+      "fragile_full": {
+        "ret_mean": 0.7688888888888888,
+        "ret_std": 0.004157397096415497,
+        "rets": [
+          0.7633333333333333,
+          0.77,
+          0.7733333333333333
+        ],
+        "bloss_mean": 0.7864385843276978,
+        "mass_early": 288.08844812206615,
+        "mass_late": 289.2969765621092,
+        "draw_lam": null
+      },
+      "fragile_early": {
+        "ret_mean": 0.7511111111111112,
+        "ret_std": 0.012272623352430302,
+        "rets": [
+          0.7366666666666667,
+          0.7666666666666667,
+          0.75
+        ],
+        "bloss_mean": 0.8342448870340983,
+        "mass_early": 290.0164991506608,
+        "mass_late": 0.0,
+        "draw_lam": null
+      },
+      "fragile_late": {
+        "ret_mean": 0.7166666666666667,
+        "ret_std": 0.019626135258506316,
+        "rets": [
+          0.6966666666666667,
+          0.71,
+          0.7433333333333333
+        ],
+        "bloss_mean": 0.899232029914856,
+        "mass_early": 0.0,
+        "mass_late": 278.41024110733997,
+        "draw_lam": null
+      },
+      "randhi_early": {
+        "ret_mean": 0.6900000000000001,
+        "ret_std": 0.012472191289246483,
+        "rets": [
+          0.6733333333333333,
+          0.6933333333333334,
+          0.7033333333333334
+        ],
+        "bloss_mean": 0.8668595552444458,
+        "mass_early": 111.25927738564012,
+        "mass_late": 0.0,
+        "draw_lam": 0.012797208223312486
+      },
+      "randany_early": {
+        "ret_mean": 0.6811111111111111,
+        "ret_std": 0.01749779527558181,
+        "rets": [
+          0.69,
+          0.6966666666666667,
+          0.6566666666666666
+        ],
+        "bloss_mean": 0.8455923795700073,
+        "mass_early": 71.62342215160606,
+        "mass_late": 0.0,
+        "draw_lam": null
+      },
+      "randany_full": {
+        "ret_mean": 0.6855555555555556,
+        "ret_std": 0.02832788618662662,
+        "rets": [
+          0.6966666666666667,
+          0.7133333333333334,
+          0.6466666666666666
+        ],
+        "bloss_mean": 0.8427747885386149,
+        "mass_early": 71.06317273219368,
+        "mass_late": 75.964112861373,
+        "draw_lam": null
+      }
+    }
+  },
+  "steps": 300,
+  "verdicts": {
+    "ag": {
+      "verdict": "early NOT as cheap as full (early 0.640 < full 0.688) -> timed protection insufficient; needs full-time.",
+      "guard": true,
+      "cheap": false,
+      "timing_specific": true,
+      "fragile_specific": true,
+      "vals": {
+        "naive": 0.5822222222222222,
+        "fragile_full": 0.6877777777777778,
+        "fragile_early": 0.64,
+        "fragile_late": 0.5544444444444445,
+        "randhi_early": 0.6188888888888889,
+        "randany_early": 0.5955555555555555,
+        "randany_full": 0.6522222222222221
+      }
+    },
+    "code": {
+      "verdict": "HYPOTHESIS HELD: fragile_early 0.751 ~ fragile_full 0.769 (cheap) AND > late 0.717 (timing) AND > randhi_early 0.690 (FRAGILE beyond curvature). Timed+targeted protection works.",
+      "guard": true,
+      "cheap": true,
+      "timing_specific": true,
+      "fragile_specific": true,
+      "vals": {
+        "naive": 0.7122222222222222,
+        "fragile_full": 0.7688888888888888,
+        "fragile_early": 0.7511111111111112,
+        "fragile_late": 0.7166666666666667,
+        "randhi_early": 0.6900000000000001,
+        "randany_early": 0.6811111111111111,
+        "randany_full": 0.6855555555555556
+      }
+    }
+  }
+}

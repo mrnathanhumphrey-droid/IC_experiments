@@ -1,0 +1,65 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=fa91cc79f2ad466ba82da9a846a566c6  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] status=active ip=150.136.43.215 252s
+[L] SSH up at 150.136.43.215 (253s)
+Warning: Permanently added '150.136.43.215' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.43.215' (ED25519) to the list of known hosts.
+[L] uploading 1.6GB checkpoint...
+Warning: Permanently added '150.136.43.215' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.43.215' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.43.215' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.43.215' (ED25519) to the list of known hosts.
+[L] upload done (324s)
+[L] installing transformers/datasets + upgrading Pillow...
+Warning: Permanently added '150.136.43.215' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L] running universal_core_lambda.py (353s)...
+Warning: Permanently added '150.136.43.215' (ED25519) to the list of known hosts.
+[UC] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  53%|█████▎    | 155/292 [00:00<00:00, 1472.52it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 1733.45it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 1959572.54 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 357275.87 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 626462.24 examples/s]
+[UC] FA done (43s)
+[UC] agnews trained loss=0.017 steps=894 (168s)
+[UC] yelp trained loss=0.019 steps=894 (301s)
+[UC] subj trained loss=0.007 steps=745 (406s)
+
+[UC] === MUTUAL OVERLAP of contested cores (chance=0.250) ===
+  [attention.query_key_value ] agnews~yelp:0.629/2.5x  agnews~subj:0.639/2.6x  yelp~subj:0.660/2.6x   MEAN 0.643/2.6x
+  [mlp.dense_h_to_4h         ] agnews~yelp:0.607/2.4x  agnews~subj:0.616/2.5x  yelp~subj:0.671/2.7x   MEAN 0.631/2.5x
+  [mlp.dense_4h_to_h         ] agnews~yelp:0.597/2.4x  agnews~subj:0.608/2.4x  yelp~subj:0.661/2.6x   MEAN 0.622/2.5x
+
+[UC] grand mean mutual-overlap ratio = 2.5x -> TASK-PAIR-SPECIFIC (mutual overlap 2.5x ~chance -> each task fights task-A elsewhere -> no fixed resource)
+[UC] FORMAT CHECK: taskA={s}\nSentiment: + LAB{ negative, positive} | yelp='{text}\nSentiment:' | agnews='{text}\nTopic:' | subj='{text}\nType:'
+[UC] saved universal_core.json wall=406s
+[L] run rc=0 (762s)
+[L] pulling result + log...
+Warning: Permanently added '150.136.43.215' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.43.215' (ED25519) to the list of known hosts.
+[L] RESULT LANDED: gateA/universal_core.json
+[L] terminating fa91cc79f2ad466ba82da9a846a566c6...
+[L] terminated fa91cc79f2ad466ba82da9a846a566c6

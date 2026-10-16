@@ -1,0 +1,15 @@
+{
+  "cell": "jais590m",
+  "family": "JAIS",
+  "model": "inceptionai/jais-family-590m",
+  "ckpt": "jais590m_sst2_wA.pt",
+  "VOID": false,
+  "base_acc": 0.8275,
+  "anchor_acc": 0.91,
+  "best_step": 1000,
+  "confirm_reload_acc": 0.91,
+  "lr": 2e-05,
+  "steps": 2000,
+  "posid": 5377,
+  "negid": 8021
+}

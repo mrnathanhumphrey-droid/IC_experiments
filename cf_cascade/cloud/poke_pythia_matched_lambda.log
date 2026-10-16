@@ -1,0 +1,31 @@
+[PYM] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  88%|████████▊ | 258/292 [00:00<00:00, 2543.78it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2642.47it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2165859.15 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 396555.69 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 594614.84 examples/s]
+[PYM] pre SST acc=0.750 (target match OPT forget 0.121) (20s)
+[PYM]   lr=2e-05 st=200: ret=0.635 forget=0.115  MATCH (44s)
+[PYM]   lr=2e-05 st=150: ret=0.670 forget=0.080 (63s)
+[PYM]   lr=3e-05 st=150: ret=0.665 forget=0.085 (83s)
+[PYM]   lr=2e-05 st=250: ret=0.640 forget=0.110  MATCH (111s)
+[PYM]   lr=3e-05 st=200: ret=0.660 forget=0.090 (135s)
+[PYM]   lr=3e-05 st=100: ret=0.670 forget=0.080 (149s)
+[PYM]   lr=5e-05 st=100: ret=0.495 forget=0.255 (164s)
+[PYM]   lr=5e-05 st=150: ret=0.500 forget=0.250 (183s)
+[PYM] PRECHECK -> lr=2e-05 steps=200 forget=0.115 (OPT 0.121) MATCHED (183s)
+[PYM] FA basis done (206s)
+[PYM] seed 0: A/B/C/D=0.635/0.510/0.545/0.680 (433s)
+[PYM] seed 1: A/B/C/D=0.615/0.680/0.555/0.615 (659s)
+[PYM] seed 2: A/B/C/D=0.720/0.515/0.735/0.600 (885s)
+[PYM] seed 3: A/B/C/D=0.670/0.775/0.685/0.730 (1109s)
+[PYM] seed 4: A/B/C/D=0.655/0.690/0.495/0.495 (1335s)
+[PYM] seed 5: A/B/C/D=0.525/0.725/0.580/0.505 (1560s)
+[PYM] seed 6: A/B/C/D=0.630/0.515/0.730/0.750 (1787s)
+
+[PYM] === DISAMBIGUATOR VERDICT ===
+  ARCHITECTURAL — real cross-arch split (sink direction): Pythia B-C=+0.012 ns at matched forget 0.115 (OPT was -0.125 SIG). OPT's fragile-specific SINK is architectural — but it's the OPPOSITE of the pre-registered deflect; antagonism controls deposit-survival WITHOUT giving poke-deflection (the two dissociate).
+  retention A/B/C/D = 0.636/0.630/0.618/0.625 | armA forget 0.114 (OPT 0.121, matched=True)
+  B-A=-0.006 | B-C=+0.012 | B-D=+0.005 | postpoke-B 0.744 (pre 0.750)
+  (Pythia NATIVE-regime was: B-A -0.001, B-C -0.068 ns, forget 0.214 | OPT: B-A -0.078 ns, B-C -0.125 SIG, forget 0.121)
+[PYM] saved poke_pythia_matched.json wall=1787s

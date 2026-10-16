@@ -1,0 +1,66 @@
+{
+  "cell": "bloom560m",
+  "family": "BLOOM",
+  "model": "bigscience/bloom-560m",
+  "n_carriers": 72,
+  "n_seeds": 100,
+  "w_A_acc": 0.83,
+  "VOID": false,
+  "calibration_curve": {
+    "1.0e-05": 0.7583333333333334,
+    "1.5e-05": 0.754,
+    "2.0e-05": 0.7361666666666666,
+    "3.0e-05": 0.6778333333333333
+  },
+  "chosen_lr": 1e-05,
+  "tight_dose": false,
+  "no_nondestructive_point": true,
+  "ret_anchor_ch": [
+    0.7681666666666667,
+    0.0021697724438089023
+  ],
+  "childhood_nondestructive": false,
+  "null_dead": false,
+  "dphase2_noch": [
+    0.15016666666666662,
+    0.00939402764159701
+  ],
+  "dphase2_ch": [
+    0.10516666666666666,
+    0.010131722249209612
+  ],
+  "dalttask_noch": [
+    0.3199999999999999,
+    5.579080615598709e-18
+  ],
+  "dalttask_ch": [
+    0.2581666666666666,
+    0.0021697724438089023
+  ],
+  "drandtop16_noch": [
+    0.0025533333333332985,
+    0.0003220382616635928
+  ],
+  "drandtop16_ch": [
+    0.0009199999999999919,
+    0.0005542027974854878
+  ],
+  "N_phase2": [
+    0.04499999999999997,
+    0.01351778975020102
+  ],
+  "N_alttask": [
+    0.0618333333333333,
+    0.0021697724438089023
+  ],
+  "N_randtop16": [
+    0.0016333333333333063,
+    0.0005321852120152966
+  ],
+  "S_specificity": [
+    -0.016833333333333325,
+    0.013491434286321541
+  ],
+  "SPECIFIC_if": "S>0 (>=2sigma) AND N_phase2>N_randtop16 (>=2sigma)",
+  "GENERIC_if": "S within +-2sigma of 0 AND N_phase2~=N_alttask>N_randtop16"
+}

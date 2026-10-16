@@ -1,0 +1,17 @@
+{
+ "seed": 4,
+ "base_swap_auc": 0.8646691673840856,
+ "base_diff_auc": 0.234284332688588,
+ "naive_swap_auc": 0.20941458615176486,
+ "naive_diff_auc": 0.8035944551901999,
+ "gpm_swap_auc": 0.8568902963965072,
+ "gpm_diff_auc": 0.26684397163120566,
+ "randctrl_swap_auc": 0.21605583569056697,
+ "randctrl_diff_auc": 0.8035138620245004,
+ "swap_drop_naive": 0.6552545812323207,
+ "swap_drop_gpm": 0.007778870987578457,
+ "swap_drop_randctrl": 0.6486133316935186,
+ "cos_w_swap_w_diff": -0.2960316830320991,
+ "cos_meanshift_swap_diff": -0.9946281512798153,
+ "wall_s": 8.5
+}

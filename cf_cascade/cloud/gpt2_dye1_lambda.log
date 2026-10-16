@@ -1,0 +1,22 @@
+[G2D1] loading gpt2-medium + basis...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 5512.09it/s]
+[G2D1] 72 carriers, basis loaded (14s)
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+[G2D1] seed captured (16s)
+[G2D1] snap step=1 loss=16.580 (17s)
+[G2D1] snap step=2 loss=8.920 (17s)
+[G2D1] snap step=3 loss=4.689 (17s)
+[G2D1] snap step=5 loss=2.361 (17s)
+[G2D1] snap step=10 loss=0.389 (18s)
+[G2D1] snap step=25 loss=0.087 (19s)
+[G2D1] snap step=50 loss=0.299 (22s)
+[G2D1] snap step=100 loss=0.044 (27s)
+[G2D1] snap step=200 loss=0.270 (37s)
+[G2D1] snap step=400 loss=0.025 (56s)
+[G2D1] snap step=800 loss=0.000 (94s)
+[G2D1] saved camera frame (94s)
+  [attn.c_attn ] seedPR=4.1  wetted 8->1024  com 76->438  PR_rank 4->886
+  [mlp.c_fc    ] seedPR=18.5  wetted 31->1024  com 221->433  PR_rank 19->765
+  [mlp.c_proj  ] seedPR=17.3  wetted 37->1024  com 182->382  PR_rank 17->376
+[G2D1] saved gpt2_dye1.json wall=94s

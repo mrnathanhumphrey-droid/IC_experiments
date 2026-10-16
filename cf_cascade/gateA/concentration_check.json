@@ -1,0 +1,26 @@
+{
+  "N_positive": 24576,
+  "forgetting": 0.10999999999999999,
+  "alpha": 2.624112244309841,
+  "total_mass": 17.138301588123795,
+  "participation_ratio": 6857.003137828084,
+  "PR_over_N": 0.27901217194938494,
+  "gini": 0.45776315004655466,
+  "topk_mass": {
+    "top1": 0.004723782343223712,
+    "top5": 0.015386068087921055,
+    "top10": 0.02244274025644465,
+    "top20": 0.030456152377329255,
+    "top50": 0.046327057362462766,
+    "top100": 0.06329831139296851,
+    "top250": 0.09759329894271164,
+    "top245": 0.0966461941619894
+  },
+  "top100_spans_n_matrices": 15,
+  "damage_esd_spearman": 0.10996733895571742,
+  "mass_top_esd_decile": 0.18048753725455158,
+  "mass_bottom_esd_decile": 0.09593354549087847,
+  "verdict": "DISTRIBUTED -> genuine cascade candidate; tail-robust + surrogate has power -> BUILD route a",
+  "wall_s": 322.04015922546387,
+  "damage_npy": "D:/IC_experiments/cf_cascade/gateA/damage_field_agnews.npy"
+}

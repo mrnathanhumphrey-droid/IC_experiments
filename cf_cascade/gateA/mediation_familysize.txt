@@ -1,0 +1,35 @@
+=== PANEL (6 size cells) ===
+cell        fam      size      G5      B-D  B-D_se
+opt125m     OPT       125  0.344  +0.110  0.020
+opt350m     OPT       350  0.410  +0.055  0.021
+opt1_3b     OPT      1300  0.439  +0.000  0.020
+pythia160m  PYTHIA    160  0.525  -0.005  0.023
+pythia410m  PYTHIA    410  0.505  -0.006  0.015
+pythia1b    PYTHIA   1000  0.490  +0.006  0.018
+
+[1] CROSS-CELL B-D ~ G5:  slope=-0.635  R2=0.848  pearson r=-0.921
+    sign: RIGHT (G5 up -> B-D down)
+    LEVERAGE (drop opt125m, n=5): slope=-0.420  R2=0.624  r=-0.790
+
+[2] WITHIN-FAMILY slopes (recipe held constant = the causal-leaning test):
+    OPT     G5[np.float64(0.344), np.float64(0.41), np.float64(0.439)]->B-D[np.float64(0.11), np.float64(0.055), np.float64(0.0)]  slope=-1.112  monotone  range(B-D)=0.110
+    PYTHIA  G5[np.float64(0.525), np.float64(0.505), np.float64(0.49)]->B-D[np.float64(-0.005), np.float64(-0.006), np.float64(0.006)]  slope=-0.299  non-monotone  range(B-D)=0.012
+
+[3] FAMILY OFFSET (recipe-confounded -> CO-OCCURRENCE, not causal):
+    mean B-D  OPT=+0.055  PYTHIA=-0.002  gap=+0.057
+    NOTE: gap is small-size only -> opt125m+0.110 vs py160m-0.005; large end opt1_3b+0.000 vs py1b+0.006 (converged).
+
+[4] GROUPING NULL on per-model B-D (POWER FLOOR check):
+    unique bipartitions=10 -> MIN possible p = 0.10 (POWER FLOOR)
+    family-partition B-D gap=0.057  rank=2/10  p=0.20
+
+[5] MEDIATION (does G5 absorb family?): family B-D gap 0.057 -> after removing G5: 0.013
+    family-gap on G5-RESIDUALS rank=7/10 p=0.70 (G5 absorbs most of family (mediation-consistent))
+
+=== VERDICT (family/size side, under locked pre-reg) ===
+ SIGN: cross-cell RIGHT-signed; within-OPT RIGHT-signed monotone.
+ DE-CONFOUND (pythia1b breaker): Pythia B-D flat across size ([-0.005 -0.006  0.006]) -> protection FAMILY-FLOORED, size-invariant;
+   size-dependence is OPT-ONLY (decays +0.110->0 as size grows). Family offset = OPT-small-size elevation.
+ POWER: per-model grouping floor p>=0.10 -> formal grouping CANNOT reach significance at n=6. UNDERPOWERED.
+ CAUSAL-LEANING signal = within-OPT slope (recipe-controlled, right-signed, monotone, n=3 directional).
+ LEVERAGE: cross-cell relation robust when opt125m dropped (r -0.92->-0.79).

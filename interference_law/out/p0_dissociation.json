@@ -1,0 +1,101 @@
+{
+ "config": {
+  "caps": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19
+  ],
+  "few": [
+   8,
+   24
+  ],
+  "K": 30,
+  "d_proj": 24,
+  "nseed": 12,
+  "boot": 2000,
+  "perm": 2000,
+  "prereg": "P0_2026_07_26"
+ },
+ "results": {
+  "cifar": {
+   "n": 20,
+   "cold_auc_median": 0.8003,
+   "headroom": true,
+   "nseed": 12,
+   "transfer_frac": 0.313,
+   "hurt_frac": 0.489,
+   "FT_range": [
+    -0.177,
+    0.1022
+   ],
+   "FT_reliability": {
+    "r_half": 0.9543,
+    "r_SB": 0.9766,
+    "ci": [
+     0.9692,
+     0.9814
+    ],
+    "rel_ok": true
+   },
+   "rho_cos_FT": 0.0324,
+   "rho_ci": [
+    -0.0716,
+    0.1302
+   ],
+   "pearson": 0.0556,
+   "perm_p": 0.5365,
+   "excl_coupling": true,
+   "reaches_coupling": false,
+   "band": "CONFIRMED"
+  },
+  "dtd": {
+   "n": 20,
+   "cold_auc_median": 0.8095,
+   "headroom": true,
+   "nseed": 12,
+   "transfer_frac": 0.268,
+   "hurt_frac": 0.487,
+   "FT_range": [
+    -0.1589,
+    0.1101
+   ],
+   "FT_reliability": {
+    "r_half": 0.8961,
+    "r_SB": 0.9452,
+    "ci": [
+     0.9245,
+     0.9613
+    ],
+    "rel_ok": true
+   },
+   "rho_cos_FT": -0.0121,
+   "rho_ci": [
+    -0.1148,
+    0.083
+   ],
+   "pearson": -0.005,
+   "perm_p": 0.816,
+   "excl_coupling": true,
+   "reaches_coupling": false,
+   "band": "CONFIRMED"
+  }
+ },
+ "overall_band": "CONFIRMED"
+}

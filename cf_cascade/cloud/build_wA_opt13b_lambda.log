@@ -1,0 +1,70 @@
+[buildwA:opt13b] facebook/opt-1.3b fine-tune on SST-2  lr=1.0e-05 steps=2500 (Mon Jul  6 23:09:43 2026)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights:  31%|███       | 119/389 [00:00<00:00, 1142.59it/s]Loading weights:  66%|██████▌   | 257/389 [00:00<00:00, 1238.67it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 1347.19it/s]
+[buildwA:opt13b] posid=1313 negid=2430 (distinct=True)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2108500.82 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 414769.01 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 596379.14 examples/s]
+[buildwA:opt13b] base (untuned) SST-2 acc=0.718 (23s)
+[hb] opt13b step 0/2500 loss=7.844 (23s)
+[hb] opt13b step 50/2500 loss=0.506 (31s)
+[hb] opt13b step 100/2500 loss=0.416 (39s)
+[hb] opt13b step 150/2500 loss=0.417 (47s)
+[hb] opt13b step 200/2500 loss=0.132 (55s)
+[eval] opt13b step 250 val_acc=0.9225 (best -1.0000@0) (66s)
+[hb] opt13b step 250/2500 loss=0.084 (70s)
+[hb] opt13b step 300/2500 loss=0.069 (78s)
+[hb] opt13b step 350/2500 loss=0.003 (86s)
+[hb] opt13b step 400/2500 loss=0.005 (94s)
+[hb] opt13b step 450/2500 loss=0.000 (103s)
+[eval] opt13b step 500 val_acc=0.9200 (best 0.9225@250) (114s)
+[hb] opt13b step 500/2500 loss=0.477 (114s)
+[hb] opt13b step 550/2500 loss=0.000 (122s)
+[hb] opt13b step 600/2500 loss=0.494 (130s)
+[hb] opt13b step 650/2500 loss=0.444 (138s)
+[hb] opt13b step 700/2500 loss=0.028 (146s)
+[eval] opt13b step 750 val_acc=0.9175 (best 0.9225@250) (157s)
+[hb] opt13b step 750/2500 loss=0.170 (157s)
+[hb] opt13b step 800/2500 loss=0.649 (165s)
+[hb] opt13b step 850/2500 loss=0.004 (173s)
+[hb] opt13b step 900/2500 loss=0.004 (181s)
+[hb] opt13b step 950/2500 loss=0.027 (189s)
+[eval] opt13b step 1000 val_acc=0.9150 (best 0.9225@250) (200s)
+[hb] opt13b step 1000/2500 loss=0.001 (200s)
+[hb] opt13b step 1050/2500 loss=0.004 (208s)
+[hb] opt13b step 1100/2500 loss=0.199 (216s)
+[hb] opt13b step 1150/2500 loss=0.001 (224s)
+[hb] opt13b step 1200/2500 loss=0.003 (232s)
+[eval] opt13b step 1250 val_acc=0.8975 (best 0.9225@250) (243s)
+[hb] opt13b step 1250/2500 loss=0.509 (244s)
+[hb] opt13b step 1300/2500 loss=1.000 (251s)
+[hb] opt13b step 1350/2500 loss=0.000 (260s)
+[hb] opt13b step 1400/2500 loss=0.000 (268s)
+[hb] opt13b step 1450/2500 loss=0.001 (276s)
+[eval] opt13b step 1500 val_acc=0.9150 (best 0.9225@250) (286s)
+[hb] opt13b step 1500/2500 loss=0.040 (287s)
+[hb] opt13b step 1550/2500 loss=0.005 (295s)
+[hb] opt13b step 1600/2500 loss=0.001 (303s)
+[hb] opt13b step 1650/2500 loss=0.113 (311s)
+[hb] opt13b step 1700/2500 loss=0.000 (319s)
+[eval] opt13b step 1750 val_acc=0.9300 (best 0.9225@250) (330s)
+[hb] opt13b step 1750/2500 loss=0.000 (334s)
+[hb] opt13b step 1800/2500 loss=0.001 (342s)
+[hb] opt13b step 1850/2500 loss=0.000 (350s)
+[hb] opt13b step 1900/2500 loss=0.000 (358s)
+[hb] opt13b step 1950/2500 loss=0.000 (366s)
+[eval] opt13b step 2000 val_acc=0.8975 (best 0.9300@1750) (377s)
+[hb] opt13b step 2000/2500 loss=0.000 (377s)
+[hb] opt13b step 2050/2500 loss=0.000 (385s)
+[hb] opt13b step 2100/2500 loss=0.000 (393s)
+[hb] opt13b step 2150/2500 loss=0.000 (401s)
+[hb] opt13b step 2200/2500 loss=0.001 (409s)
+[eval] opt13b step 2250 val_acc=0.9100 (best 0.9300@1750) (420s)
+[hb] opt13b step 2250/2500 loss=0.000 (420s)
+[hb] opt13b step 2300/2500 loss=0.001 (429s)
+[hb] opt13b step 2350/2500 loss=0.000 (437s)
+[hb] opt13b step 2400/2500 loss=0.000 (445s)
+[hb] opt13b step 2450/2500 loss=0.000 (453s)
+[eval] opt13b step 2500 val_acc=0.9075 (best 0.9300@1750) (464s)
+[buildwA:opt13b] SAVED /home/ubuntu/gateA/opt13b_sst2_wA.pt  anchor_acc=0.9300@1750  reload_confirm=0.9300  wall=474s
+[buildwA:opt13b] >>> set ANCHOR_WA['OPT']=0.930 in the Probe-11 harness <<<

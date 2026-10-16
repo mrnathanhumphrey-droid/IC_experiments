@@ -1,0 +1,17 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=28da06e5cf3e474d9fc60b53dfb58c25  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] terminating 28da06e5cf3e474d9fc60b53dfb58c25...
+[L] terminated 28da06e5cf3e474d9fc60b53dfb58c25
+Traceback (most recent call last):
+  File "D:\IC_experiments\cf_cascade\cloud\lambda_launch_lever.py", line 125, in <module>
+    main()
+  File "D:\IC_experiments\cf_cascade\cloud\lambda_launch_lever.py", line 78, in main
+    info = get(f"/instances/{iid}")["data"]; st = info.get("status"); ip = info.get("ip")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IC_experiments\cf_cascade\cloud\lambda_launch_lever.py", line 32, in get
+    r = requests.get(API + p, headers=H, timeout=30); r.raise_for_status(); return r.json()
+                                                      ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nate\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://cloud.lambda.ai/api/v1/instances/28da06e5cf3e474d9fc60b53dfb58c25

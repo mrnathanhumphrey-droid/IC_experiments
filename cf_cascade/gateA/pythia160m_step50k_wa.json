@@ -1,0 +1,10 @@
+{
+  "model": "EleutherAI/pythia-160m",
+  "tag": "pythia160m_step50k",
+  "wA_sst_acc": 0.8333333333333334,
+  "stop_step": 250,
+  "target": 0.8,
+  "matched": true,
+  "lr": 5e-05,
+  "subset": 2000
+}

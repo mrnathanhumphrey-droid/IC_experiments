@@ -1,0 +1,71 @@
+{
+  "mutual_overlap": {
+    "attention.query_key_value": {
+      "agnews~yelp": {
+        "overlap": 0.6288804047554676,
+        "ratio": 2.5155216190218703
+      },
+      "agnews~subj": {
+        "overlap": 0.6389776382453546,
+        "ratio": 2.5559105529814183
+      },
+      "yelp~subj": {
+        "overlap": 0.6601653249966466,
+        "ratio": 2.6406612999865864
+      },
+      "MEAN": {
+        "overlap": 0.6426744559991563,
+        "ratio": 2.570697823996625
+      }
+    },
+    "mlp.dense_h_to_4h": {
+      "agnews~yelp": {
+        "overlap": 0.6068225601432581,
+        "ratio": 2.4272902405730323
+      },
+      "agnews~subj": {
+        "overlap": 0.6155817152745043,
+        "ratio": 2.4623268610980173
+      },
+      "yelp~subj": {
+        "overlap": 0.6713721800802164,
+        "ratio": 2.6854887203208655
+      },
+      "MEAN": {
+        "overlap": 0.6312588184993263,
+        "ratio": 2.525035273997305
+      }
+    },
+    "mlp.dense_4h_to_h": {
+      "agnews~yelp": {
+        "overlap": 0.5966387604664213,
+        "ratio": 2.386555041865685
+      },
+      "agnews~subj": {
+        "overlap": 0.6078951786481227,
+        "ratio": 2.431580714592491
+      },
+      "yelp~subj": {
+        "overlap": 0.6606601851035053,
+        "ratio": 2.6426407404140213
+      },
+      "MEAN": {
+        "overlap": 0.6217313747393498,
+        "ratio": 2.4869254989573992
+      }
+    }
+  },
+  "grand_ratio": 2.5275528656504433,
+  "universal": false,
+  "verdict": "TASK-PAIR-SPECIFIC (mutual overlap 2.5x ~chance -> each task fights task-A elsewhere -> no fixed resource)",
+  "chance": 0.25,
+  "ktop": 64,
+  "m_core": 16,
+  "formats": {
+    "taskA_sst2": "{s}\\nSentiment: + LAB{ negative, positive}",
+    "agnews": "{text}\nTopic:",
+    "yelp": "{text}\nSentiment:",
+    "subj": "{text}\nType:"
+  },
+  "wall_s": 406.31289625167847
+}

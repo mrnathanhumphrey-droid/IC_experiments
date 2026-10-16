@@ -1,0 +1,64 @@
+{
+ "config": {
+  "deviation": "AMP+bs64+150steps+gpu-resize for tractability",
+  "ft": [
+   150,
+   0.0001
+  ],
+  "bs": 64,
+  "victims": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23
+  ],
+  "perturbers": [
+   50,
+   55,
+   60,
+   65,
+   70,
+   75
+  ],
+  "seed": 0,
+  "prereg_lock": "8b4cf4c6"
+ },
+ "dim": 768,
+ "median_forget": 0.0552,
+ "inband": true,
+ "cos_range": [
+  -0.0134,
+  0.0175
+ ],
+ "decomp": {
+  "fo_full": 0.094,
+  "align": 0.08,
+  "align_dcenter": 0.363,
+  "gmag_broadcast": -0.424
+ },
+ "checks": {
+  "P1_align": false,
+  "P2_interaction": true,
+  "P3_magpattern": true
+ }
+}

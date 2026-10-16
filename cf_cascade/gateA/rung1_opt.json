@@ -1,0 +1,39 @@
+{
+  "model": "facebook/opt-350m",
+  "gate0a": {
+    "n_matrices": 96,
+    "esd_eigWtW_full_median": 7.249518774937363,
+    "esd_eigWtW_robust_median": 5.011200061621032,
+    "esd_eigW_full_median": 2.120133679765367,
+    "autocorr_median_abs": 0.0011075905640609562,
+    "pass": true
+  },
+  "freeze": {
+    "train_loss": 0.00019253460050094873,
+    "sst_acc": 0.7733333333333333,
+    "lambda_max": 5.351309537887573,
+    "lambda_min": -0.7017455220222475,
+    "lambda_max_runs": [
+      5.351309776306152,
+      5.351309299468994
+    ],
+    "lambda_min_runs": [
+      -0.7016673207283022,
+      -0.7018237233161928
+    ],
+    "range_decades": null,
+    "top_spectrum": [
+      5.351309537887573,
+      1.7315807342529297,
+      0.8763412237167358,
+      -0.701957643032074,
+      0.6204688549041748
+    ],
+    "spectrum_shape": "continuum",
+    "esd_frozen_robust_median": 4.975562303424043,
+    "lambda_min_positive": false,
+    "curved": false,
+    "pass": false
+  },
+  "verdict": "FREEZE GATE FAILED: lambda_min=-7.017e-01 NOT > 0 (runs ['-7.02e-01', '-7.02e-01']) -> not a genuine PSD basin (saddle) on facebook/opt-350m. Harder-task-A fork or can't anchor. Don't proceed to rung 2."
+}

@@ -1,0 +1,17 @@
+{
+  "prereg": "PREREG_PROBE8_CURVATURE_ALIGNMENT_2026_06_26.md",
+  "sha256": "b33ab1055592b635ffafaa2765c27f19dbfb2c9f6c2abc9b5bb9ed3528058baf",
+  "short": "b33ab105",
+  "locked": "2026-06-26",
+  "probe": "probe8_targeted_vs_global_curvature_alignment",
+  "primary": "dla=mean(logR_NoCH-logR_CH) targeting; g=mean(rise_rand_NoCH-rise_rand_CH) global flatness; R=rise_phase2/rise_rand",
+  "white_space": "literature mechanism is GLOBAL undirected flatness (Mirzadeh/Mehta/RLsRazor); we test DIRECTIONAL targeting + cross-arch",
+  "N": 100,
+  "K_RAND": 3,
+  "cells": [
+    "opt350m",
+    "pythia410m"
+  ],
+  "childhood": "non-destructive chosen_lr via Probe-7b calibration rule",
+  "fired": false
+}

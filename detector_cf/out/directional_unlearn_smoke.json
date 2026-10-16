@@ -1,0 +1,46 @@
+{
+ "config": {
+  "subsample": 60,
+  "target": "swap",
+  "others": [
+   "diffusion"
+  ],
+  "smoke": true,
+  "prereg_lock": "0d4c05d3",
+  "cos_uhat_dswap": 0.37266059158024734,
+  "removed_mag": 2.8884008446241243
+ },
+ "base": {
+  "swap": 0.6863,
+  "diffusion": 0.9259
+ },
+ "directional": {
+  "swap": 0.309,
+  "diffusion": 0.8597
+ },
+ "naive": {
+  "swap": 0.4596,
+  "diffusion": 0.996
+ },
+ "random": {
+  "swap": 0.5959,
+  "diffusion": 0.9442
+ },
+ "summary": {
+  "directional": {
+   "swap_drop": 0.3773,
+   "other_drop": 0.0662,
+   "specificity": 5.7
+  },
+  "naive": {
+   "swap_drop": 0.2267,
+   "other_drop": -0.0701,
+   "specificity": 3.23
+  },
+  "random": {
+   "swap_drop": 0.0904,
+   "other_drop": -0.0183,
+   "specificity": 4.94
+  }
+ }
+}

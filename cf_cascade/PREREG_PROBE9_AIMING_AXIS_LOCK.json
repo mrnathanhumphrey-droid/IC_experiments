@@ -1,0 +1,25 @@
+{
+  "prereg": "PREREG_PROBE9_AIMING_AXIS_2026_06_28.md",
+  "sha256": "11fe73b382864b7d2fcff9e8e323da4d49e5ab9f9928bbf54e213167343d8b25",
+  "short": "11fe73b3",
+  "locked": "2026-06-28",
+  "probe": "probe9_aiming_axis_geometric_vs_semantic",
+  "successor_of": "probe8v4 0112d69b",
+  "IV_geometric": "Omega=cos2(theta_min) principal-angle overlap childhood-subspace vs phase2-subspace in V (cross-Gram, M_Omega=12)",
+  "IV_semantic": "sigma_sem=linear CKA frozen-base childhood-inputs vs subj-inputs",
+  "DV": "S=N(phase2)-N(alttask), realized short-train dirs (v5 relabel), paired N=100",
+  "predictions": "P1 OPT Spearman rho(S,Omega)>=0.7 +Omega*; P2 Pythia flat-or-unify fork; P3 partials S.Omega|sem vs S.sem|Omega",
+  "verdict_map": "RECOVERED-on-axis / RE-AXIS RECOVERY / BOUNDARY",
+  "redecomp": [
+    "sigma_sem axis",
+    "absorption-weighted Omega (DSI weights)"
+  ],
+  "cells": [
+    "opt350m",
+    "pythia410m"
+  ],
+  "N": 100,
+  "M_omega": 12,
+  "fired": false,
+  "stop_gate": "prereg+lock+harness+dryrun THEN await go"
+}

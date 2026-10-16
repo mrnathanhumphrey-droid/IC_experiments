@@ -1,0 +1,23 @@
+[TGv2-C] CONSTRUCT+VALIDATE synthetic task-B family (Phase 1, no arms)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  77%|███████▋  | 225/292 [00:00<00:00, 2147.12it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2317.74it/s]
+[TGv2-C] loaded w_A /home/ubuntu/gateA/pythia410m_sst2_subsetmin.pt
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2059208.19 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 392934.37 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 594522.27 examples/s]
+[TGv2-C] V basis done (43s)
+[TGv2-C] proj_A·proj_orth = 1.39e-17 (should be ~0)
+[TGv2-C] pool=1200 zA/zO standardized; corr(zA,zO)=-0.636 (48s)
+[TGv2-C] c=-0.50: achieved cosV=+0.624 | sharing fracV=0.839 | bal=0.48 | learn_acc=0.970 (80s)
+[TGv2-C] c=-0.23: achieved cosV=+0.608 | sharing fracV=0.830 | bal=0.47 | learn_acc=0.970 (108s)
+[TGv2-C] c=+0.00: achieved cosV=+0.594 | sharing fracV=0.827 | bal=0.48 | learn_acc=0.956 (136s)
+[TGv2-C] c=+0.20: achieved cosV=+0.589 | sharing fracV=0.817 | bal=0.50 | learn_acc=0.939 (163s)
+[TGv2-C] c=+0.50: achieved cosV=+0.564 | sharing fracV=0.763 | bal=0.54 | learn_acc=0.922 (191s)
+
+[TGv2-C] === CONSTRUCTION GATES ===
+  (a) cosine monotone & spans incl −: False  (achieved ['+0.624', '+0.608', '+0.594', '+0.589', '+0.564'])
+  (b) sharing constant across c: True  (fracV ['0.839', '0.830', '0.827', '0.817', '0.763'])
+  (c) learnable & similar: True  (acc ['0.970', '0.970', '0.956', '0.939', '0.922'])
+  RECOMMEND nominal-c -> targets: {'0.2': {'nominal_c': 0.5, 'achieved': 0.5637949674101174}, '0.0': {'nominal_c': 0.5, 'achieved': 0.5637949674101174}, '-0.23': {'nominal_c': 0.5, 'achieved': 0.5637949674101174}}
+  PASS=False  (REDESIGN — do not fire arms)
+[TGv2-C] saved toggle_v2_construct.json wall=191s

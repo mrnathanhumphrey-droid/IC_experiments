@@ -1,0 +1,15 @@
+{
+  "prereg": "PREREG_PROBE7_REORG_2026_06_25.md",
+  "sha256": "7bdfcbc612239d799e720ffc1b88962ac6060ef546f3534d7f922419ffddab0f",
+  "short": "7bdfcbc6",
+  "locked": "2026-06-25",
+  "probe": "probe7_suppression_vs_reorganization",
+  "primary": "dD2=D2_noch-D2_ch (suppression), drobust=robust_noch-robust_ch (reorg); D2=||P_V(w_end-w_anchor)|| phase-2-only",
+  "N": 100,
+  "cells": [
+    "opt350m",
+    "pythia410m"
+  ],
+  "fixes": "probe6 step-count confound (per-arm pre-phase-2 anchor)",
+  "fired": false
+}

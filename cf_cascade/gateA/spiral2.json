@@ -1,0 +1,202 @@
+{
+ "pre_reg": "expect layered-but-NOT-recursive (smooth funnel); fractal must exceed phase-randomized surrogate",
+ "guard": "reloaded SPIRAL-1 rho=-0.720870",
+ "substrates": {
+  "breadth9": {
+   "qkv": {
+    "k6": {
+     "folded_descent": -0.2852891442571627,
+     "folded_z": -1.58630171542697,
+     "folded_p": 0.9495126218445389,
+     "reexpansion": 0.17564046465773359,
+     "reexp_z": 0.023724779228255676,
+     "reexp_p": 0.4303924018995251
+    },
+    "k8": {
+     "folded_descent": 0.26462965508207537,
+     "folded_z": 0.6641974169932332,
+     "folded_p": 0.2699325168707823,
+     "reexpansion": 1.6745522261231263,
+     "reexp_z": 0.024398751480795625,
+     "reexp_p": 0.21969507623094225
+    },
+    "k12": {
+     "folded_descent": -0.34470162039621466,
+     "folded_z": -0.997990224471994,
+     "folded_p": 0.818045488627843,
+     "reexpansion": 0.46812498710637657,
+     "reexp_z": 0.02464243139470475,
+     "reexp_p": 0.3736565858535366
+    },
+    "dfa_hurst": {
+     "H": 1.280259646948112,
+     "H_surr_mean": 1.2071991154497277,
+     "H_z": 0.24232967354203191,
+     "note": "Hurst PRESERVED by surrogate by construction -> descriptive only, not the discriminator"
+    }
+   },
+   "h4h": {
+    "k6": {
+     "folded_descent": -0.5054848997591742,
+     "folded_z": -1.4312344872947984,
+     "folded_p": 0.9192701824543864,
+     "reexpansion": 0.06366030474153885,
+     "reexp_z": 0.023173621823370925,
+     "reexp_p": 0.5088727818045489
+    },
+    "k8": {
+     "folded_descent": 0.06554404923047667,
+     "folded_z": 0.16948613880104868,
+     "folded_p": 0.43889027743064235,
+     "reexpansion": 1.1414795750255802,
+     "reexp_z": 0.037232745942985444,
+     "reexp_p": 0.20194951262184455
+    },
+    "k12": {
+     "folded_descent": -0.24549631333554123,
+     "folded_z": -0.31539809181004264,
+     "folded_p": 0.6278430392401899,
+     "reexpansion": 0.7491071675699694,
+     "reexp_z": 0.03195238086572327,
+     "reexp_p": 0.3911522119470133
+    },
+    "dfa_hurst": {
+     "H": 1.8354991191840129,
+     "H_surr_mean": 1.3949890497495576,
+     "H_z": 1.6620499361006729,
+     "note": "Hurst PRESERVED by surrogate by construction -> descriptive only, not the discriminator"
+    }
+   },
+   "4hh": {
+    "k6": {
+     "folded_descent": 0.17623870691504984,
+     "folded_z": 0.5571240346240511,
+     "folded_p": 0.2986753311672082,
+     "reexpansion": 1.6085846254387668,
+     "reexp_z": -0.014208966212203172,
+     "reexp_p": 0.14371407148212947
+    },
+    "k8": {
+     "folded_descent": -0.01954099971728899,
+     "folded_z": -0.049979121842943175,
+     "folded_p": 0.5138715321169708,
+     "reexpansion": 0.7001336217354394,
+     "reexp_z": 0.020468073368882178,
+     "reexp_p": 0.21194701324668833
+    },
+    "k12": {
+     "folded_descent": 0.03328577543817424,
+     "folded_z": 0.09580878195379725,
+     "folded_p": 0.46988252936765806,
+     "reexpansion": 1.1477032921098884,
+     "reexp_z": 0.04735886214244458,
+     "reexp_p": 0.1374656335916021
+    },
+    "dfa_hurst": {
+     "H": 1.907872996780759,
+     "H_surr_mean": 1.1914019260702549,
+     "H_z": 2.3304565618002626,
+     "note": "Hurst PRESERVED by surrogate by construction -> descriptive only, not the discriminator"
+    }
+   }
+  },
+  "crosspair4": {
+   "qkv": {
+    "k6": {
+     "folded_descent": -0.21677041031401073,
+     "folded_z": -1.4587308552985139,
+     "folded_p": 0.9270182454386403,
+     "reexpansion": -0.4696973788789095,
+     "reexp_z": 0.010787790060488639,
+     "reexp_p": 0.588352911772057
+    },
+    "k8": {
+     "folded_descent": -0.06030241812092278,
+     "folded_z": -0.4593179902199152,
+     "folded_p": 0.6745813546613346,
+     "reexpansion": 0.8959204624430154,
+     "reexp_z": 0.005406740661478534,
+     "reexp_p": 0.3981504623844039
+    },
+    "k12": {
+     "folded_descent": -0.023757419220321624,
+     "folded_z": -0.11915056854411571,
+     "folded_p": 0.5336165958510373,
+     "reexpansion": 0.8772924245367918,
+     "reexp_z": -0.014559840543796465,
+     "reexp_p": 0.5216195951012247
+    },
+    "dfa_hurst": {
+     "H": 0.8303946980721447,
+     "H_surr_mean": 0.8475616460299104,
+     "H_z": -0.08958260906451909,
+     "note": "Hurst PRESERVED by surrogate by construction -> descriptive only, not the discriminator"
+    }
+   },
+   "h4h": {
+    "k6": {
+     "folded_descent": -0.11150346088412064,
+     "folded_z": -0.7764563073959682,
+     "folded_p": 0.7655586103474131,
+     "reexpansion": -0.0734036155714919,
+     "reexp_z": -0.01830144039809173,
+     "reexp_p": 0.5306173456635841
+    },
+    "k8": {
+     "folded_descent": 0.005244053913218583,
+     "folded_z": 0.03824969346896328,
+     "folded_p": 0.4873781554611347,
+     "reexpansion": 0.48693449547323847,
+     "reexp_z": 0.01810777745391155,
+     "reexp_p": 0.24093976505873532
+    },
+    "k12": {
+     "folded_descent": -0.005443124673945671,
+     "folded_z": -0.010100300039218189,
+     "folded_p": 0.5036240939765059,
+     "reexpansion": 1.0315147601063452,
+     "reexp_z": 0.011234517173357472,
+     "reexp_p": 0.12646838290427392
+    },
+    "dfa_hurst": {
+     "H": 1.7231953539104625,
+     "H_surr_mean": 1.4205468523915852,
+     "H_z": 0.8501838923996692,
+     "note": "Hurst PRESERVED by surrogate by construction -> descriptive only, not the discriminator"
+    }
+   },
+   "4hh": {
+    "k6": {
+     "folded_descent": -0.10646395043488435,
+     "folded_z": -0.6847029288296603,
+     "folded_p": 0.7368157960509872,
+     "reexpansion": -0.5005094298226113,
+     "reexp_z": -0.017882005250399957,
+     "reexp_p": 0.6250937265683579
+    },
+    "k8": {
+     "folded_descent": -0.03389588548922007,
+     "folded_z": -0.15524178034339517,
+     "folded_p": 0.5538615346163459,
+     "reexpansion": 0.1680541059832947,
+     "reexp_z": 0.031894110678024966,
+     "reexp_p": 0.416895776055986
+    },
+    "k12": {
+     "folded_descent": 0.01626404894748057,
+     "folded_z": 0.09740832093519897,
+     "folded_p": 0.4708822794301425,
+     "reexpansion": 1.477285739419118,
+     "reexp_z": 0.011255911112007723,
+     "reexp_p": 0.06873281679580105
+    },
+    "dfa_hurst": {
+     "H": 1.722551235721331,
+     "H_surr_mean": 1.2218110212501727,
+     "H_z": 1.5291981196045143,
+     "note": "Hurst PRESERVED by surrogate by construction -> descriptive only, not the discriminator"
+    }
+   }
+  }
+ }
+}

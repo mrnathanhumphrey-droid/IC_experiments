@@ -1,0 +1,15 @@
+[R2] loading facebook/opt-350m (eager)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[GEN] FROM-SCRATCH random-init facebook/opt-350m arch (331M params)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2136746.65 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 395868.93 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 573755.08 examples/s]
+[R2] training task-A=SST -> w_A...
+[R2] w_A SST acc=0.490 (rung-1 was 0.77) (254s)
+[R2] curvature basis done (279s)
+[R2] STEP1: com_rank median=0.000(<0.42) | M1 median=1.000(>0.30, Pythia 0.70) | antagonism median=-0.017(<0, Pythia −0.23) -> FAIL (300s)
+[R2] STEP2: partial(seed,contest|λ) median=0.049 (Pythia +0.45), frac_pos=0.65, attn median=0.030 -> FAIL (300s)
+
+[BRIDGE] === VERDICT ===
+  BRIDGE FAIL (regime): from-scratch SST acc=0.490 OUTSIDE band [0.77, 0.84] -> pretraining is load-bearing for task-A; aspect-ratio shapes need PRETRAINED variants or a from-scratch-learnable task-A.
+[BRIDGE] wall=300s

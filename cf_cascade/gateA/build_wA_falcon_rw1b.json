@@ -1,0 +1,15 @@
+{
+  "cell": "falcon_rw1b",
+  "family": "FALCON",
+  "model": "tiiuae/falcon-rw-1b",
+  "ckpt": "falcon_rw1b_sst2_wA.pt",
+  "VOID": false,
+  "base_acc": 0.5225,
+  "anchor_acc": 0.88,
+  "best_step": 500,
+  "confirm_reload_acc": 0.88,
+  "lr": 2e-05,
+  "steps": 2000,
+  "posid": 3967,
+  "negid": 4633
+}

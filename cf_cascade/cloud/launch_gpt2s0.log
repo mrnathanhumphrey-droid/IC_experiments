@@ -1,0 +1,60 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=36a5c3fad8984fb18fd4eb586835d8a6  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] status=active ip=150.136.221.66 328s
+[L] SSH up at 150.136.221.66 (329s)
+Warning: Permanently added '150.136.221.66' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.221.66' (ED25519) to the list of known hosts.
+[L] uploading 1.6GB checkpoint...
+Warning: Permanently added '150.136.221.66' (ED25519) to the list of known hosts.
+[L] upload done (375s)
+[L] installing transformers/datasets + upgrading Pillow...
+Warning: Permanently added '150.136.221.66' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L] running gpt2_stage0_lambda.py (400s)...
+Warning: Permanently added '150.136.221.66' (ED25519) to the list of known hosts.
+[G2S0] loading gpt2-medium...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 5439.38it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2197979.91 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 420297.99 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 572207.64 examples/s]
+[G2S0] 72 carrier weights: attn.c_attn, mlp.c_fc, mlp.c_proj
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+[G2S0] Fisher done (31s)
+  [attn.c_attn ] dyn-range(top/med) pooled=1772618.5 perlayer-med=201325.0 | frac-top-decade=0.0013 | outliers>5xmed=0.321 | top8=[0.0, 0.0, 0.0, 0.0, 0.0]
+  [mlp.c_fc    ] dyn-range(top/med) pooled=1133970.4 perlayer-med=283908.6 | frac-top-decade=0.0014 | outliers>5xmed=0.325 | top8=[0.0, 0.0, 0.0, 0.0, 0.0]
+  [mlp.c_proj  ] dyn-range(top/med) pooled=385021824.0 perlayer-med=22773382.6 | frac-top-decade=0.0003 | outliers>5xmed=0.410 | top8=[0.0, 0.0, 0.0, 0.0, 0.0]
+  [attn.c_attn ] early gaps [1.2, 1.2, 1.1, 1.2] -> continuum-ish
+  [mlp.c_fc    ] early gaps [1.0, 1.0, 1.1, 1.0] -> continuum-ish
+  [mlp.c_proj  ] early gaps [1.8, 1.1, 1.0, 1.1] -> continuum-ish
+[G2S0] saved gpt2_stage0.json + gpt2_dye_basis.npz wall=44s
+[L] run rc=0 (447s)
+[L] pulling result + log...
+Warning: Permanently added '150.136.221.66' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.221.66' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.221.66' (ED25519) to the list of known hosts.
+[L] RESULT LANDED: gateA/gpt2_stage0.json
+[L] terminating 36a5c3fad8984fb18fd4eb586835d8a6...
+[L] terminated 36a5c3fad8984fb18fd4eb586835d8a6

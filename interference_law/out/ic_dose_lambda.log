@@ -1,0 +1,40 @@
+[DOSE] model=Qwen/Qwen2.5-1.5B kA=8 doses=[4, 8, 16, 32, 64, 96] N_eval=160 layer=15
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/120000 [00:00<?, ? examples/s]Generating train split:  94%|█████████▍| 113000/120000 [00:00<00:00, 1121758.32 examples/s]Generating train split: 100%|██████████| 120000/120000 [00:00<00:00, 1119349.18 examples/s]
+Generating test split:   0%|          | 0/7600 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 7600/7600 [00:00<00:00, 951770.88 examples/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  52%|█████▏    | 177/338 [00:00<00:00, 1743.65it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 1786.90it/s]
+  loaded (17s)
+  cos range [-0.89,+0.76] (24s)
+  clean AUC [0.93, 0.995, 0.878, 0.937, 0.731] (33s)
+  dose=  4 | mean_drop=-0.0238 max=+0.0009 | rho(cos,drop)=+0.420 | aligned=-0.0122 antipar=-0.0413  (86s)
+  dose=  8 | mean_drop=-0.0206 max=+0.0145 | rho(cos,drop)=+0.403 | aligned=-0.0090 antipar=-0.0380  (156s)
+  dose= 16 | mean_drop=-0.0098 max=+0.0331 | rho(cos,drop)=-0.036 | aligned=-0.0106 antipar=-0.0085  (260s)
+  dose= 32 | mean_drop=-0.0044 max=+0.0617 | rho(cos,drop)=-0.102 | aligned=-0.0059 antipar=-0.0021  (441s)
+  dose= 64 | mean_drop=+0.0107 max=+0.0539 | rho(cos,drop)=-0.027 | aligned=+0.0086 antipar=+0.0138  (809s)
+Traceback (most recent call last):
+  File "/home/ubuntu/probe_ic_dose.py", line 116, in <module>
+    main()
+  File "/home/ubuntu/probe_ic_dose.py", line 84, in main
+    _, auc_i = F.eval_acc(lm, tasks[a], pa, na, pre, N_EVAL)
+  File "/home/ubuntu/probe_ic_feasibility.py", line 155, in eval_acc
+    m = lm.classify_batch(prompts, lids)                 # margin = logit(label0) - logit(label1)
+  File "/usr/lib/python3/dist-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ubuntu/probe_ic_feasibility.py", line 133, in classify_batch
+    logits = self.model(**enc).logits[torch.arange(B, device=DEV), idx]   # [B,V] next-token at last real tok
+  File "/usr/lib/python3/dist-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 911, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 475, in forward
+    logits = self.lm_head(hidden_states[:, slice_indices, :])
+  File "/usr/lib/python3/dist-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 18.86 GiB. GPU 0 has a total capacity of 39.49 GiB of which 945.56 MiB is free. Including non-PyTorch memory, this process has 38.56 GiB memory in use. Of the allocated memory 4.86 GiB is allocated by PyTorch, and 33.21 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

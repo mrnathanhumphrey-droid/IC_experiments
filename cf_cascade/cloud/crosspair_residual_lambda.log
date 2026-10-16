@@ -1,0 +1,29 @@
+[CPR] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  79%|███████▉  | 230/292 [00:00<00:00, 2229.81it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2438.13it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2139416.83 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 421217.68 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 617248.07 examples/s]
+[CPR] FA + PA done (39s)
+[CPR] agnews: seed+train(loss=0.017,steps=894)+contest done (155s)
+[CPR] yelp: seed+train(loss=0.019,steps=894)+contest done (285s)
+[CPR] subj: seed+train(loss=0.007,steps=745)+contest done (380s)
+[CPR] saved camera frame crosspair_residual.npz (380s)
+[CPR] GUARD align(max reldiff)=0.0e+00  mean-contest reproduce spearman=+1.000
+
+[CPR] === CONTEST ===
+  [attention.query_key_value ] agnews-yelp=+0.58(t+28) agnews-subj=+0.52(t+21) yelp-subj=+0.62(t+29) | dissoc Jac=0.35(z+3.7)
+  [mlp.dense_h_to_4h         ] agnews-yelp=+0.60(t+31) agnews-subj=+0.60(t+32) yelp-subj=+0.71(t+20) | dissoc Jac=0.26(z+2.6)
+  [mlp.dense_4h_to_h         ] agnews-yelp=+0.70(t+25) agnews-subj=+0.71(t+28) yelp-subj=+0.74(t+24) | dissoc Jac=0.32(z+3.5)
+  GRAND raw=0.82 partial=+0.64 t=+66.0 pos=216/216
+  VERDICT: UNIVERSAL: cross-pair contest partial mean=+0.64 (=142% of within-pair 0.45), t=+66 216/216 pos, raw=0.82 -> fixed beyond-curvature aimed subspace shared across task-Bs. MECHANISM.
+
+[CPR] === SEED ===
+  [attention.query_key_value ] agnews-yelp=+0.61(t+22) agnews-subj=+0.76(t+28) yelp-subj=+0.62(t+26) | dissoc Jac=0.49(z+5.2)
+  [mlp.dense_h_to_4h         ] agnews-yelp=+0.55(t+17) agnews-subj=+0.68(t+18) yelp-subj=+0.64(t+16) | dissoc Jac=0.35(z+3.7)
+  [mlp.dense_4h_to_h         ] agnews-yelp=+0.51(t+21) agnews-subj=+0.70(t+27) yelp-subj=+0.57(t+20) | dissoc Jac=0.31(z+3.3)
+  GRAND raw=0.81 partial=+0.63 t=+56.5 pos=216/216
+  VERDICT: UNIVERSAL: cross-pair seed partial mean=+0.63 (=139% of within-pair 0.45), t=+57 216/216 pos, raw=0.81 -> fixed beyond-curvature aimed subspace shared across task-Bs. MECHANISM.
+
+[CPR] OBJECT AGREEMENT: contest:UNIVERSAL | seed:UNIVERSAL
+[CPR] saved crosspair_residual.json wall=387s

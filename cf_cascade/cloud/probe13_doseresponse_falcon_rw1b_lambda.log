@@ -1,0 +1,73 @@
+[P13:falcon_rw1b] tiiuae/falcon-rw-1b dose-response N=25 DOSES=[3e-07, 1e-06, 2e-06, 3e-06, 7e-06]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  41%|████      | 119/292 [00:00<00:00, 1187.09it/s]Loading weights:  82%|████████▏ | 238/292 [00:00<00:00, 1002.59it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 912.51it/s] 
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2031412.87 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 399850.56 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 645686.67 examples/s]
+[P13:falcon_rw1b] w_A acc=0.887 (exp 0.88); 72 carriers (39s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▎        | 70000/560000 [00:00<00:00, 686802.69 examples/s]Generating train split:  29%|██▉       | 165000/560000 [00:00<00:00, 835155.96 examples/s]Generating train split:  49%|████▉     | 277000/560000 [00:00<00:00, 963814.45 examples/s]Generating train split:  75%|███████▌  | 420000/560000 [00:00<00:00, 1080056.89 examples/s]Generating train split:  97%|█████████▋| 543000/560000 [00:00<00:00, 1129873.89 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1029107.04 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1097697.98 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▍         | 68000/1400000 [00:00<00:01, 670449.74 examples/s]Generating train split:  10%|█         | 147000/1400000 [00:00<00:01, 706861.41 examples/s]Generating train split:  16%|█▌        | 223000/1400000 [00:00<00:01, 726200.81 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 740828.53 examples/s]Generating train split:  28%|██▊       | 397000/1400000 [00:00<00:01, 801114.10 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 722069.31 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 736840.87 examples/s]Generating train split:  49%|████▊     | 682000/1400000 [00:00<00:00, 782885.74 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 729227.65 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 751000.55 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 764106.52 examples/s]Generating train split:  75%|███████▍  | 1046000/1400000 [00:01<00:00, 769295.82 examples/s]Generating train split:  81%|████████  | 1130000/1400000 [00:01<00:00, 783292.46 examples/s]Generating train split:  87%|████████▋ | 1217000/1400000 [00:01<00:00, 791083.63 examples/s]Generating train split:  93%|█████████▎| 1306000/1400000 [00:01<00:00, 799340.20 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 833104.32 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 772461.96 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 917295.70 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 248804.51 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 261606.49 examples/s]Generating train split:  74%|███████▍  | 155103/209527 [00:00<00:00, 252728.35 examples/s]Generating train split:  96%|█████████▋| 201886/209527 [00:00<00:00, 245311.78 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 248668.95 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1915261.97 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 830719.75 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 772289.45 examples/s]
+[P13:falcon_rw1b] datasets loaded (phase-2 subj 2200; childhood 5)
+[hb] s1/25 d1/5(3e-07) childhood 1/400 loss=17.015 (307s)
+[hb] s1/25 d1/5(3e-07) childhood 41/400 loss=10.547 (314s)
+[hb] s1/25 d1/5(3e-07) childhood 81/400 loss=4.823 (322s)
+[hb] s1/25 d1/5(3e-07) childhood 121/400 loss=3.132 (329s)
+[hb] s1/25 d1/5(3e-07) childhood 161/400 loss=1.333 (337s)
+[hb] s1/25 d1/5(3e-07) childhood 201/400 loss=0.272 (344s)
+[hb] s1/25 d1/5(3e-07) childhood 241/400 loss=0.424 (352s)
+[hb] s1/25 d1/5(3e-07) childhood 281/400 loss=0.137 (359s)
+[hb] s1/25 d1/5(3e-07) childhood 321/400 loss=0.756 (367s)
+[hb] s1/25 d1/5(3e-07) childhood 361/400 loss=0.193 (375s)
+[hb] s1/25 d1/5(3e-07) childhood 400/400 loss=1.779 (382s)
+[hb] s1/25 d2/5(1e-06) childhood 1/400 loss=17.015 (482s)
+[hb] s1/25 d2/5(1e-06) childhood 41/400 loss=3.478 (489s)
+[hb] s1/25 d2/5(1e-06) childhood 81/400 loss=0.467 (497s)
+[hb] s1/25 d2/5(1e-06) childhood 121/400 loss=0.463 (504s)
+[hb] s1/25 d2/5(1e-06) childhood 161/400 loss=0.047 (512s)
+[hb] s1/25 d2/5(1e-06) childhood 201/400 loss=0.240 (519s)
+[hb] s1/25 d2/5(1e-06) childhood 241/400 loss=0.197 (527s)
+[hb] s1/25 d2/5(1e-06) childhood 281/400 loss=0.180 (534s)
+[hb] s1/25 d2/5(1e-06) childhood 321/400 loss=0.803 (542s)
+[hb] s1/25 d2/5(1e-06) childhood 361/400 loss=0.226 (549s)
+[hb] s1/25 d2/5(1e-06) childhood 400/400 loss=0.550 (557s)
+[hb] s1/25 d3/5(2e-06) childhood 1/400 loss=17.015 (656s)
+[hb] s1/25 d3/5(2e-06) childhood 41/400 loss=1.156 (663s)
+[hb] s1/25 d3/5(2e-06) childhood 81/400 loss=0.329 (671s)
+[hb] s1/25 d3/5(2e-06) childhood 121/400 loss=0.305 (678s)
+[hb] s1/25 d3/5(2e-06) childhood 161/400 loss=0.143 (686s)
+[hb] s1/25 d3/5(2e-06) childhood 201/400 loss=0.182 (693s)
+[hb] s1/25 d3/5(2e-06) childhood 241/400 loss=0.189 (700s)
+[hb] s1/25 d3/5(2e-06) childhood 281/400 loss=0.178 (708s)
+[hb] s1/25 d3/5(2e-06) childhood 321/400 loss=0.948 (716s)
+[hb] s1/25 d3/5(2e-06) childhood 361/400 loss=0.155 (723s)
+[hb] s1/25 d3/5(2e-06) childhood 400/400 loss=0.308 (731s)
+[hb] s1/25 d4/5(3e-06) childhood 1/400 loss=17.015 (830s)
+[hb] s1/25 d4/5(3e-06) childhood 41/400 loss=0.508 (837s)
+[hb] s1/25 d4/5(3e-06) childhood 81/400 loss=0.493 (845s)
+[hb] s1/25 d4/5(3e-06) childhood 121/400 loss=0.268 (852s)
+[hb] s1/25 d4/5(3e-06) childhood 161/400 loss=0.047 (860s)
+[hb] s1/25 d4/5(3e-06) childhood 201/400 loss=0.154 (867s)
+[hb] s1/25 d4/5(3e-06) childhood 241/400 loss=0.165 (875s)
+[hb] s1/25 d4/5(3e-06) childhood 281/400 loss=0.027 (883s)
+[hb] s1/25 d4/5(3e-06) childhood 321/400 loss=0.998 (890s)
+[hb] s1/25 d4/5(3e-06) childhood 361/400 loss=0.237 (898s)
+[hb] s1/25 d4/5(3e-06) childhood 400/400 loss=0.270 (905s)
+[hb] s1/25 d5/5(7e-06) childhood 1/400 loss=17.015 (1004s)
+[hb] s1/25 d5/5(7e-06) childhood 41/400 loss=0.285 (1011s)
+[hb] s1/25 d5/5(7e-06) childhood 81/400 loss=0.615 (1019s)
+[hb] s1/25 d5/5(7e-06) childhood 121/400 loss=0.280 (1026s)
+[hb] s1/25 d5/5(7e-06) childhood 161/400 loss=0.022 (1033s)
+[hb] s1/25 d5/5(7e-06) childhood 201/400 loss=0.137 (1041s)
+[hb] s1/25 d5/5(7e-06) childhood 241/400 loss=0.112 (1048s)
+[hb] s1/25 d5/5(7e-06) childhood 281/400 loss=0.043 (1056s)
+[hb] s1/25 d5/5(7e-06) childhood 321/400 loss=1.162 (1064s)
+[hb] s1/25 d5/5(7e-06) childhood 361/400 loss=0.155 (1071s)
+[hb] s1/25 d5/5(7e-06) childhood 400/400 loss=0.315 (1079s)
+[seed] s1/25 3e-07:Np=-0.133@drop0.060 1e-06:Np=-0.123@drop0.050 2e-06:Np=-0.113@drop0.083 3e-06:Np=-0.133@drop0.097 7e-06:Np=-0.067@drop0.077 (1176s)
+[seed] s6/25 3e-07:Np=-0.002@drop0.058 1e-06:Np=+0.144@drop0.062 2e-06:Np=+0.203@drop0.076 3e-06:Np=+0.191@drop0.079 7e-06:Np=+0.214@drop0.093 (5900s)

@@ -1,0 +1,98 @@
+{
+ "config": {
+  "SEQ": [
+   "soccer",
+   "nba",
+   "nfl"
+  ],
+  "base": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "K": 16,
+  "epochs": 1,
+  "lr": 2e-05,
+  "retention_frac": 0.25,
+  "smoke": true,
+  "n_rules_chunks": 573,
+  "device": "cuda"
+ },
+ "sequential": [
+  {
+   "after_adding": "soccer",
+   "retention": {
+    "soccer": {
+     "auc": 0.9536641356872757,
+     "recall_at_5": 0.8529411764705882,
+     "recall_at_3": 0.8357843137254902
+    }
+   },
+   "surge_overlap_on_prior": {}
+  },
+  {
+   "after_adding": "nba",
+   "retention": {
+    "soccer": {
+     "auc": 0.9578253131331378,
+     "recall_at_5": 0.8676470588235294,
+     "recall_at_3": 0.8259803921568627
+    },
+    "nba": {
+     "auc": 0.9586137058522958,
+     "recall_at_5": 0.8161290322580645,
+     "recall_at_3": 0.7693548387096775
+    }
+   },
+   "surge_overlap_on_prior": {
+    "soccer": {
+     "inV": 0.26566600215696295,
+     "inSwap": 6.071280400131468e-05
+    }
+   }
+  },
+  {
+   "after_adding": "nfl",
+   "retention": {
+    "soccer": {
+     "auc": 0.958836067231918,
+     "recall_at_5": 0.8676470588235294,
+     "recall_at_3": 0.8504901960784315
+    },
+    "nba": {
+     "auc": 0.9656181330617064,
+     "recall_at_5": 0.8806451612903226,
+     "recall_at_3": 0.7908602150537634
+    },
+    "nfl": {
+     "auc": 0.9448589894822687,
+     "recall_at_5": 0.8160714285714286,
+     "recall_at_3": 0.6916428571428571
+    }
+   },
+   "surge_overlap_on_prior": {
+    "soccer": {
+     "inV": 0.241291182586072,
+     "inSwap": 6.102738104853905e-05
+    },
+    "nba": {
+     "inV": 0.277769970139561,
+     "inSwap": 6.102738104853905e-05
+    }
+   }
+  }
+ ],
+ "joint_retention": {
+  "soccer": {
+   "auc": 0.9603319431607832,
+   "recall_at_5": 0.8676470588235294,
+   "recall_at_3": 0.8504901960784315
+  },
+  "nba": {
+   "auc": 0.9653217854930629,
+   "recall_at_5": 0.853763440860215,
+   "recall_at_3": 0.7827956989247311
+  },
+  "nfl": {
+   "auc": 0.9386307711579976,
+   "recall_at_5": 0.8027380952380951,
+   "recall_at_3": 0.6589761904761905
+  }
+ }
+}

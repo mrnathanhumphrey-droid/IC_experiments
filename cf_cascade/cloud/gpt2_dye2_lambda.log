@@ -1,0 +1,15 @@
+[G2D2] loading gpt2-medium + basis...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 5595.04it/s]
+[G2D2] basis + injections built (12s)
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+[G2D2] baseline done (95s)
+[G2D2] stiff run done (175s)
+[G2D2] flat run done (254s)
+[G2D2] saved series (254s)
+  [attn.c_attn ] PR stiff 1.0->3.0 flat 1.0->2.8 | peak ratio 1.06@800 final 1.06
+  [mlp.c_fc    ] PR stiff 1.0->3.1 flat 1.0->2.9 | peak ratio 1.10@800 final 1.10
+  [mlp.c_proj  ] PR stiff 1.0->1.5 flat 1.0->1.4 | peak ratio 1.03@800 final 1.03
+
+[G2D2] WEAKER grading (mean peak 1.06x < Pythia 1.4x) -> continuum gives gentler transport grading as predicted
+[G2D2] saved gpt2_dye2.json wall=254s

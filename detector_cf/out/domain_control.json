@@ -1,0 +1,323 @@
+{
+ "config": {
+  "paradigms": [
+   "swap",
+   "diffusion",
+   "celebdf",
+   "dfdc"
+  ],
+  "subsample": 260,
+  "boot": 500,
+  "smoke": false,
+  "prereg": "DOMAIN_CONTROL_2026_07_26"
+ },
+ "C_shared": [
+  [
+   1.0,
+   -0.937,
+   0.489,
+   0.341
+  ],
+  [
+   -0.937,
+   1.0,
+   -0.349,
+   -0.191
+  ],
+  [
+   0.489,
+   -0.349,
+   1.0,
+   0.973
+  ],
+  [
+   0.341,
+   -0.191,
+   0.973,
+   1.0
+  ]
+ ],
+ "C_forgery": [
+  [
+   1.0,
+   0.575,
+   0.4,
+   0.687
+  ],
+  [
+   0.575,
+   1.0,
+   -0.011,
+   0.233
+  ],
+  [
+   0.4,
+   -0.011,
+   1.0,
+   0.915
+  ],
+  [
+   0.687,
+   0.233,
+   0.915,
+   1.0
+  ]
+ ],
+ "C_domain": [
+  [
+   NaN,
+   NaN,
+   NaN,
+   NaN
+  ],
+  [
+   NaN,
+   1.0,
+   -0.325,
+   -0.083
+  ],
+  [
+   NaN,
+   -0.325,
+   1.0,
+   0.947
+  ],
+  [
+   NaN,
+   -0.083,
+   0.947,
+   1.0
+  ]
+ ],
+ "pairs": [
+  {
+   "pair": "swap-diffusion",
+   "shared": [
+    -0.937,
+    -0.953,
+    -0.896
+   ],
+   "forgery": [
+    0.575,
+    -0.335,
+    0.849
+   ],
+   "domain": [
+    NaN,
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "pair": "swap-celebdf",
+   "shared": [
+    0.489,
+    0.317,
+    0.633
+   ],
+   "forgery": [
+    0.4,
+    -0.154,
+    0.692
+   ],
+   "domain": [
+    NaN,
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "pair": "swap-dfdc",
+   "shared": [
+    0.341,
+    0.147,
+    0.522
+   ],
+   "forgery": [
+    0.687,
+    -0.057,
+    0.948
+   ],
+   "domain": [
+    NaN,
+    NaN,
+    NaN
+   ]
+  },
+  {
+   "pair": "diffusion-celebdf",
+   "shared": [
+    -0.349,
+    -0.433,
+    -0.256
+   ],
+   "forgery": [
+    -0.011,
+    -0.607,
+    0.472
+   ],
+   "domain": [
+    -0.325,
+    -0.445,
+    -0.185
+   ]
+  },
+  {
+   "pair": "diffusion-dfdc",
+   "shared": [
+    -0.191,
+    -0.316,
+    -0.07
+   ],
+   "forgery": [
+    0.233,
+    -0.537,
+    0.704
+   ],
+   "domain": [
+    -0.083,
+    -0.234,
+    0.048
+   ]
+  },
+  {
+   "pair": "celebdf-dfdc",
+   "shared": [
+    0.973,
+    0.947,
+    0.985
+   ],
+   "forgery": [
+    0.915,
+    -0.069,
+    0.974
+   ],
+   "domain": [
+    0.947,
+    0.901,
+    0.973
+   ]
+  }
+ ],
+ "swap_diffusion": {
+  "shared": -0.937,
+  "forgery": 0.575,
+  "domain": NaN,
+  "forgery_ci": [
+   -0.335,
+   0.849
+  ],
+  "forgery_flips_positive": false
+ },
+ "corr_shared_vs_forgery": 0.538,
+ "corr_shared_vs_domain": 1.0,
+ "routing": {
+  "shared": {
+   "-0.5": [
+    [
+     "swap",
+     "celebdf",
+     "dfdc"
+    ],
+    [
+     "diffusion"
+    ]
+   ],
+   "-0.2": [
+    [
+     "swap",
+     "celebdf",
+     "dfdc"
+    ],
+    [
+     "diffusion"
+    ]
+   ],
+   "0.0": [
+    [
+     "swap",
+     "celebdf",
+     "dfdc"
+    ],
+    [
+     "diffusion"
+    ]
+   ],
+   "0.2": [
+    [
+     "swap",
+     "celebdf",
+     "dfdc"
+    ],
+    [
+     "diffusion"
+    ]
+   ],
+   "0.5": [
+    [
+     "swap"
+    ],
+    [
+     "diffusion"
+    ],
+    [
+     "celebdf",
+     "dfdc"
+    ]
+   ]
+  },
+  "forgery": {
+   "-0.5": [
+    [
+     "swap",
+     "diffusion",
+     "celebdf",
+     "dfdc"
+    ]
+   ],
+   "-0.2": [
+    [
+     "swap",
+     "diffusion",
+     "celebdf",
+     "dfdc"
+    ]
+   ],
+   "0.0": [
+    [
+     "swap",
+     "diffusion",
+     "celebdf",
+     "dfdc"
+    ]
+   ],
+   "0.2": [
+    [
+     "swap",
+     "diffusion",
+     "celebdf",
+     "dfdc"
+    ]
+   ],
+   "0.5": [
+    [
+     "swap",
+     "diffusion"
+    ],
+    [
+     "celebdf",
+     "dfdc"
+    ]
+   ]
+  }
+ },
+ "conditions": {
+  "prereg_forgeryCI_gt0": false,
+  "antagonism_destroyed_CInonoverlap": true,
+  "forgery_point_positive": true,
+  "shared_tracks_domain": true,
+  "routing_reverses": true,
+  "swapfamily_robust_realforgery": true
+ },
+ "verdict": "DOMAIN ARTIFACT (diffusion antagonist): the -0.9 diffusion antagonism is DOMAIN-driven, not forgery. Under domain control it is destroyed (forgery +0.57 CI excludes shared -0.94), operative C_shared tracks C_domain (rho +1.00) over C_forgery (+0.54), and ROUTING REVERSES (diffusion isolates under shared, joins swap under forgery). NUANCE: swap-family internal geometry (celebdf/dfdc/swap) is ROBUST to domain control = REAL forgery similarity. Prereg's strict forgery-CI>0 NOT met (wide bootstrap, 247 diffusion reals) -- reported, not hidden."
+}

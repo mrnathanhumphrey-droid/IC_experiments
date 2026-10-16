@@ -1,0 +1,39 @@
+{
+  "model": "facebook/opt-350m",
+  "wA_sst_acc": 0.7766666666666666,
+  "step1": {
+    "com_rank_median": 0.12454227281282268,
+    "M1_median": 0.711412638425827,
+    "antag_median": -0.008195081993047916,
+    "pass": false
+  },
+  "step2": {
+    "partial_median": 0.4904775903143406,
+    "partial_frac_pos": 1.0,
+    "partial_attn_median": 0.48226611064767183,
+    "pass": true
+  },
+  "surgery_bridge": {
+    "wA_acc": 0.7766666666666666,
+    "reached_acc_band": true,
+    "acc_band": [
+      0.77,
+      0.84
+    ],
+    "M1_median": 0.711412638425827,
+    "antag_median": -0.008195081993047916,
+    "partial_median": 0.4904775903143406,
+    "anchor": {
+      "M1": 0.86,
+      "antag": 0.09,
+      "partial": 0.29,
+      "wA_acc_band": [
+        0.77,
+        0.84
+      ]
+    },
+    "backbone_present": true,
+    "surgery": "half-depth every-other"
+  },
+  "verdict": "SURGERY-BRIDGE PASS: half-depth pretrained reaches acc band (0.777) AND keeps backbone (M1=0.711 vs anchor 0.86, partial=0.490 vs 0.29, antag=-0.008 vs 0.09) -> layer-surgery regime VALID; the depth sweep can fire."
+}

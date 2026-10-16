@@ -1,0 +1,22 @@
+[FH] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  49%|████▉     | 144/292 [00:00<00:00, 1416.19it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 1842.23it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2088175.97 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 410164.08 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 624158.50 examples/s]
+[FH] K-FAC + task-A Fisher done; training task-B... (42s)
+[FH] task-B trained + task-B Fisher done (145s)
+
+[FH] === TEST #1 BASIS-EIGENSPACE OVERLAP (task-A vs task-B top-Fisher subspaces, task-neutral) ===
+  [attention.query_key_value ] top64 overlap=0.184  chance=0.062  ratio=2.9x
+  [mlp.dense_h_to_4h         ] top64 overlap=0.173  chance=0.062  ratio=2.8x
+  [mlp.dense_4h_to_h         ] top64 overlap=0.120  chance=0.016  ratio=7.6x
+  -> adjudication-negative SCOPED/REOPENED (near chance -> curvature-binning manufactured alignment, free lane exists)
+
+[FH] === TEST #2a ANTAGONISM along-path (cosine grad_A,grad_B in shared dirs) ===
+  t=0.25: query_key_value: full=-0.510 shared=-0.500  dense_h_to_4h: full=-0.422 shared=-0.428  dense_4h_to_h: full=-0.473 shared=-0.483
+  t=0.5: query_key_value: full=-0.146 shared=-0.144  dense_h_to_4h: full=-0.093 shared=-0.099  dense_4h_to_h: full=-0.085 shared=-0.101
+  t=0.75: query_key_value: full=-0.123 shared=-0.115  dense_h_to_4h: full=-0.097 shared=-0.105  dense_4h_to_h: full=-0.066 shared=-0.080
+  mean shared-dir cosine = -0.228 -> ANTAGONISTIC (anti-aligned in shared dirs -> no joint descent -> STOP/YIELD only)
+
+[FH] saved firsthalf_agnews.json wall=158s

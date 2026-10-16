@@ -1,0 +1,28 @@
+[boot] feats cache present, no extract needed
+N=100000 tiers=[('class', 51), ('order', 273), ('family', 1103)] train=85720 novel=14280
+[seed 0] done
+[seed 1] done
+[seed 2] done
+
+=== CONFIRMATORY: hyp-euc by TIER x balanced-k (CONFIRM=+0.02 & CI>0 at k<=2, grows w/ depth) ===
+-- tier1=class (n=51) --
+  k= 1 euc=0.442 hyp=0.249 hyp-euc=-0.193[-0.201,-0.186]
+  k= 2 euc=0.589 hyp=0.460 hyp-euc=-0.129[-0.138,-0.119]
+  k= 5 euc=0.660 hyp=0.544 hyp-euc=-0.116[-0.126,-0.107]
+  k=10 euc=0.674 hyp=0.615 hyp-euc=-0.058[-0.068,-0.048]
+  k=20 euc=0.673 hyp=0.636 hyp-euc=-0.037[-0.047,-0.027]
+-- tier2=order (n=273) --
+  k= 1 euc=0.111 hyp=0.042 hyp-euc=-0.069[-0.073,-0.065]
+  k= 2 euc=0.212 hyp=0.076 hyp-euc=-0.136[-0.142,-0.131]
+  k= 5 euc=0.254 hyp=0.147 hyp-euc=-0.107[-0.114,-0.099]
+  k=10 euc=0.275 hyp=0.171 hyp-euc=-0.104[-0.112,-0.096]
+  k=20 euc=0.289 hyp=0.176 hyp-euc=-0.113[-0.121,-0.104]
+-- tier3=family (n=1103) --
+  k= 1 euc=0.038 hyp=0.012 hyp-euc=-0.026[-0.028,-0.023]
+  k= 2 euc=0.059 hyp=0.022 hyp-euc=-0.037[-0.040,-0.034]
+  k= 5 euc=0.077 hyp=0.020 hyp-euc=-0.057[-0.061,-0.054]
+  k=10 euc=0.097 hyp=0.022 hyp-euc=-0.076[-0.080,-0.071]
+  k=20 euc=0.104 hyp=0.023 hyp-euc=-0.081[-0.085,-0.076]
+
+DONE confirmatory
+[boot] DONE

@@ -1,0 +1,79 @@
+{
+ "config": {
+  "ranks": [
+   1,
+   2,
+   4,
+   8,
+   16,
+   32
+  ],
+  "N_B": 6,
+  "B_steps": 1000,
+  "B_lr": 0.008,
+  "seed": 0
+ },
+ "frozen_ref_rho": -0.74,
+ "per_rank": {
+  "1": {
+   "rho_cos_pool": -0.052,
+   "rho_cos_within_B": -0.056,
+   "eta2_B": 0.39,
+   "rho_drift_disrupt": 0.257,
+   "median_forget": 0.014,
+   "inband": false,
+   "mean_drift": 28.076,
+   "mean_dtheta": 15.667
+  },
+  "2": {
+   "rho_cos_pool": -0.125,
+   "rho_cos_within_B": -0.068,
+   "eta2_B": 0.828,
+   "rho_drift_disrupt": 0.943,
+   "median_forget": 0.066,
+   "inband": true,
+   "mean_drift": 78.598,
+   "mean_dtheta": 33.866
+  },
+  "4": {
+   "rho_cos_pool": 0.062,
+   "rho_cos_within_B": -0.015,
+   "eta2_B": 0.386,
+   "rho_drift_disrupt": 0.943,
+   "median_forget": 0.096,
+   "inband": true,
+   "mean_drift": 31.579,
+   "mean_dtheta": 38.541
+  },
+  "8": {
+   "rho_cos_pool": -0.029,
+   "rho_cos_within_B": -0.13,
+   "eta2_B": 0.295,
+   "rho_drift_disrupt": -0.086,
+   "median_forget": 0.11,
+   "inband": true,
+   "mean_drift": 31.854,
+   "mean_dtheta": 48.083
+  },
+  "16": {
+   "rho_cos_pool": -0.17,
+   "rho_cos_within_B": -0.212,
+   "eta2_B": 0.035,
+   "rho_drift_disrupt": 0.086,
+   "median_forget": 0.166,
+   "inband": true,
+   "mean_drift": 32.399,
+   "mean_dtheta": 65.756
+  },
+  "32": {
+   "rho_cos_pool": -0.202,
+   "rho_cos_within_B": -0.2,
+   "eta2_B": 0.027,
+   "rho_drift_disrupt": 0.029,
+   "median_forget": 0.158,
+   "inband": true,
+   "mean_drift": 32.426,
+   "mean_dtheta": 74.048
+  }
+ }
+}

@@ -1,0 +1,45 @@
+[P1b] LOCALIZE reliable FT variance | nseed=10 dev=cuda
+[P1b] === cifar ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  [cifar] common_norm=1.106
+  [cifar] seed 1/10 (31s)
+  [cifar] seed 2/10 (46s)
+  [cifar] seed 3/10 (61s)
+  [cifar] seed 4/10 (76s)
+  [cifar] seed 5/10 (92s)
+  [cifar] seed 6/10 (107s)
+  [cifar] seed 7/10 (122s)
+  [cifar] seed 8/10 (137s)
+  [cifar] seed 9/10 (154s)
+  [cifar] seed 10/10 (169s)
+D:\IC_experiments\interference_law\p1b_variance_localize.py:96: RuntimeWarning: Mean of empty slice
+  mean = np.nanmean(arr, axis=0)
+D:\IC_experiments\interference_law\p1b_variance_localize.py:97: RuntimeWarning: Mean of empty slice
+  even = np.nanmean(arr[0::2], axis=0); odd = np.nanmean(arr[1::2], axis=0)
+  [cifar/raw] FT r_SB=+0.976 | var_frac row=0.07 col=0.19 resid=0.74 | comp_rel row=+0.69 col=+0.99 resid=+1.00 | RELIABLE-share row=0.05 col=0.20 resid=0.75
+  [cifar/norm] FT r_SB=+0.973 | var_frac row=0.08 col=0.10 resid=0.82 | comp_rel row=+0.64 col=+1.00 resid=+1.00 | RELIABLE-share row=0.05 col=0.10 resid=0.84
+D:\IC_experiments\interference_law\p1b_variance_localize.py:113: RuntimeWarning: Mean of empty slice
+  mean_raw = np.nanmean(raws, axis=0); col_raw = np.nanmean(mean_raw, axis=0) - np.nanmean(mean_raw[m])
+D:\IC_experiments\interference_law\p1b_variance_localize.py:116: RuntimeWarning: Mean of empty slice
+  mean_nrm = np.nanmean(nrms, axis=0); col_nrm = np.nanmean(mean_nrm, axis=0) - np.nanmean(mean_nrm[m])
+  [cifar] rho(||w_j||, col_source_effect)=-0.600 | col-var raw=0.00032 -> norm=0.00014 (ratio 0.43) (169s)
+[P1b] === dtd ===
+  [dtd] common_norm=1.456
+  [dtd] seed 1/10 (32s)
+  [dtd] seed 2/10 (49s)
+  [dtd] seed 3/10 (64s)
+  [dtd] seed 4/10 (80s)
+  [dtd] seed 5/10 (96s)
+  [dtd] seed 6/10 (113s)
+  [dtd] seed 7/10 (128s)
+  [dtd] seed 8/10 (143s)
+  [dtd] seed 9/10 (158s)
+  [dtd] seed 10/10 (174s)
+  [dtd/raw] FT r_SB=+0.945 | var_frac row=0.17 col=0.11 resid=0.72 | comp_rel row=+0.72 col=+1.00 resid=+1.00 | RELIABLE-share row=0.13 col=0.11 resid=0.76
+  [dtd/norm] FT r_SB=+0.940 | var_frac row=0.18 col=0.09 resid=0.73 | comp_rel row=+0.67 col=+0.98 resid=+1.00 | RELIABLE-share row=0.13 col=0.09 resid=0.78
+  [dtd] rho(||w_j||, col_source_effect)=-0.241 | col-var raw=0.00016 -> norm=0.00012 (ratio 0.77) (174s)
+
+=== P1b: reliable-FT variance localization ===
+  cifar  RAW reliable-share: target(row)=0.05 source(col)=0.20 interaction(resid)=0.76 | rho(||w||,col)=-0.60 col-var norm/raw=0.43
+  dtd    RAW reliable-share: target(row)=0.13 source(col)=0.11 interaction(resid)=0.76 | rho(||w||,col)=-0.24 col-var norm/raw=0.77
+[P1b] wrote D:\IC_experiments\interference_law\out\p1b_localize.json  wall=343s

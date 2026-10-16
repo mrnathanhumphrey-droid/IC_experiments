@@ -1,0 +1,11 @@
+[GEN] loading facebook/opt-350m (eager) KEEP=6...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  92%|█████████▏| 358/388 [00:00<00:00, 3574.36it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3587.03it/s]
+[GEN] depth-variant -> 6 layers
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2069254.29 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 397331.13 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 611711.32 examples/s]
+[GEN] loaded w_A SST acc=0.763 (matched-band guard) (15s)
+[GEN] curvature basis done (22s)
+[GEN] SST fragile/topcurv done (29s)
+[GEN] saved /home/ubuntu/gateA/taskA_variation_optd6.npz + /home/ubuntu/gateA/perlayer_seed_optd6.npz acc=0.763 wall=30s

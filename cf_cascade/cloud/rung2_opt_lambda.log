@@ -1,0 +1,16 @@
+[R2] loading facebook/opt-350m (eager)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  69%|██████▊   | 266/388 [00:00<00:00, 2592.30it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 2920.15it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2122250.71 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 397806.51 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 589429.51 examples/s]
+[R2] training task-A=SST -> w_A...
+[R2] w_A SST acc=0.697 (rung-1 was 0.77) (115s)
+[R2] curvature basis done (141s)
+[R2] STEP1: com_rank median=0.060(<0.42) | M1 median=0.879(>0.30, Pythia 0.70) | antagonism median=-0.002(<0, Pythia −0.23) -> FAIL (164s)
+[R2] STEP2: partial(seed,contest|λ) median=0.294 (Pythia +0.45), frac_pos=1.00, attn median=0.291 -> PASS (164s)
+[R2] STEP3 SKIPPED (steps 1-2 not both pass).
+
+[R2] === RUNG-2 VERDICT ===
+  RUNG-2 FAIL: seed/contested-core structure absent on OPT -> fragile-subspace mechanism is Pythia/GPT-family-specific. Bounds the framework.
+[R2] saved rung2_opt.json wall=164s

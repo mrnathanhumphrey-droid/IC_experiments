@@ -1,0 +1,106 @@
+{
+  "real_keys": [
+    "agnews",
+    "code",
+    "dbpedia",
+    "emotion",
+    "imdb",
+    "subj",
+    "tweet",
+    "ucdp",
+    "yelp"
+  ],
+  "null_keys": [
+    "nltext",
+    "nullperm",
+    "randtok"
+  ],
+  "types": {
+    "agnews": "topic",
+    "yelp": "sentiment",
+    "subj": "subjectivity",
+    "ucdp": "violence",
+    "nullperm": "NULLperm",
+    "code": "code",
+    "emotion": "emotion",
+    "dbpedia": "topic",
+    "imdb": "sentiment",
+    "tweet": "sentiment",
+    "nltext": "NULLnl",
+    "randtok": "NULLrand"
+  },
+  "KBAND": 128,
+  "agg": {
+    "real": {
+      "raw_mean": 0.8236686759338384,
+      "raw_shuf_mean": 0.0002284365137699195,
+      "partial_mean": 0.6521460963748125,
+      "partial_frac_pos": 1.0,
+      "partial_se": 0.005776939438114245,
+      "n": 648
+    },
+    "real_attn": {
+      "raw_mean": 0.8543516377918846,
+      "raw_shuf_mean": -0.0004576614022750549,
+      "partial_mean": 0.7000193937350936,
+      "partial_frac_pos": 1.0,
+      "partial_se": 0.00937650886151779,
+      "n": 216
+    },
+    "real_mlp": {
+      "raw_mean": 0.8083271950048153,
+      "raw_shuf_mean": 0.0005714854717924067,
+      "partial_mean": 0.6282094476946719,
+      "partial_frac_pos": 1.0,
+      "partial_se": 0.007009327748758563,
+      "n": 432
+    },
+    "null_nltext": {
+      "raw_mean": 0.766777108893365,
+      "raw_shuf_mean": 0.0,
+      "partial_mean": 0.5614231739150234,
+      "partial_frac_pos": 1.0,
+      "partial_se": 0.019066658902844928,
+      "n": 72
+    },
+    "null_nullperm": {
+      "raw_mean": 0.7945021134712813,
+      "raw_shuf_mean": 0.0,
+      "partial_mean": 0.5382992800090906,
+      "partial_frac_pos": 1.0,
+      "partial_se": 0.013872304549650048,
+      "n": 72
+    },
+    "null_randtok": {
+      "raw_mean": 0.6709860418065475,
+      "raw_shuf_mean": 0.0,
+      "partial_mean": 0.40102639919668776,
+      "partial_frac_pos": 1.0,
+      "partial_se": 0.015035258198905433,
+      "n": 72
+    }
+  },
+  "graded": {
+    "same_type_mean": 0.7018323098777386,
+    "same_n": 288,
+    "diff_type_mean": 0.5444127304614691,
+    "diff_n": 2304
+  },
+  "perlayer_headline": {
+    "agnews": 0.7364106039314708,
+    "code": 0.5824198558269588,
+    "dbpedia": 0.7017521143693894,
+    "emotion": 0.6328951967780226,
+    "imdb": 0.6949007764793098,
+    "subj": 0.6635668157855977,
+    "tweet": 0.6563997002840749,
+    "ucdp": 0.5093908186722901,
+    "yelp": 0.6915789852461979,
+    "nltext": 0.5614231739150234,
+    "nullperm": 0.5382992800090906,
+    "randtok": 0.40102639919668776
+  },
+  "floor": 0.48122478655585554,
+  "lift": 0.17092130981895692,
+  "verdict": "TASK-SPECIFIC MAP CONFIRMED: real held-out partial=0.652 vs true-null floor=0.481 -> lift=+0.171 (>>SE). The neighborhood map carries TASK structure beyond generic model geometry; that lift is the part a 'childhood' would learn. Graded same-vs-diff +0.157. Seamstress has terrain -> #3 path holds."
+}

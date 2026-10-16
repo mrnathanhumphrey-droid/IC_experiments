@@ -1,0 +1,49 @@
+# TIER-ABSTRACTION TOY EXPERIMENT v0.1 (tightened) — reference config.
+# The sweep is driven by sweep.py CLI args; this file documents the locked decisions.
+
+dataset: CIFAR-100            # 20 superclasses / 100 fine classes (real hierarchy, headroom)
+split: {train: 45000, val: 5000, test: 10000, split_seed: 1234}
+
+architecture:
+  lower_tier: plain_cnn       # MoE dropped for v0.1 (orthogonal to the question)
+  z_low_dim: 64
+  translation: VIB            # variational information bottleneck (mu, logvar, reparam)
+  K: 8                        # bottleneck width, fixed for v0.1 (K-sweep deferred)
+  upper_tier: mlp             # fine head always; super head only in Arm B
+
+arms:
+  A: {lam: 0.0, use_super: false}   # abstraction from the bottleneck ALONE (the control)
+  B: {lam: 0.5, use_super: true}    # superclass head present (Wilson's original)
+
+training:
+  optimizer: adamw
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  epochs: 50
+  batch_size: 128
+  loss: "L = L_fine + lam*L_super + beta*KL"
+
+sweep:
+  beta: [0.0, 0.001, 0.01, 0.1, 1.0]
+  seeds: [0, 1, 2]            # staged: run seed 0 first (10 runs), then fill 1,2
+  default_best_guess: {beta: 0.01, K: 8}
+
+measurements:                # see evaluate.py
+  - probe z_low  -> superclass acc
+  - probe z_trans-> superclass acc
+  - probe z_low  -> fine acc
+  - probe z_trans-> fine acc
+  - within-superclass confusion concentration (PRIMARY signature) + selectivity index
+  - CKA(z_low, z_trans)
+  - KL rate (analytic VIB rate = MI proxy; no MINE)
+
+prereg_discriminator:
+  H1_genuine_abstraction: >
+    As beta increases (esp. Arm A): z_trans super-acc preserved relative to z_low while
+    z_trans fine-acc drops, AND selectivity_index > 0 (errors concentrate within superclass),
+    AND KL rate decreases, AND CKA drops.
+  H0_architecture_fails: >
+    Signature flat across beta (routes around bottleneck), OR fine and super drop together
+    with selectivity_index ~ 0 (uniform degradation, no abstraction).
+  arm_contrast: >
+    Signature in Arm B only => supervision-driven, not bottleneck-driven (qualified result).

@@ -1,0 +1,135 @@
+{
+  "cell": "opt_d12",
+  "model": "facebook/opt-350m",
+  "family": "OPT",
+  "size_m": 350,
+  "depth": 12,
+  "pre_sst": 0.82,
+  "n_carriers": 72,
+  "n_seeds": 30,
+  "A_forget": 0.21933333333333316,
+  "VOID": false,
+  "retention": {
+    "A": [
+      0.6006666666666668,
+      0.010870654840160055
+    ],
+    "B": [
+      0.6186666666666666,
+      0.01182848910613034
+    ],
+    "D": [
+      0.6578888888888889,
+      0.013291585343878181
+    ],
+    "B_minus_A": [
+      0.017999999999999995,
+      0.014560044348942322
+    ],
+    "B_minus_D": [
+      -0.03922222222222223,
+      0.01685539378661919
+    ],
+    "D_minus_A": [
+      0.057222222222222216,
+      0.015586518172579352
+    ]
+  },
+  "guards": {
+    "mapfrac_B": [
+      0.2290167140671782,
+      0.0002093122099548795
+    ],
+    "mapfrac_D": [
+      0.015097640553665333,
+      4.784021253297798e-05
+    ],
+    "childB_drop": [
+      7.2045867741164455,
+      0.044894783334999314
+    ],
+    "childD_drop": [
+      13.313556680053637,
+      0.046592524374900676
+    ],
+    "M_stability": [
+      0.6192152519251926,
+      0.0007783401947428163
+    ]
+  },
+  "resid_BD_per_carrier_median": 0.014659175540594385,
+  "carriers": [
+    "model.decoder.layers.0.self_attn.k_proj.weight",
+    "model.decoder.layers.0.self_attn.v_proj.weight",
+    "model.decoder.layers.0.self_attn.q_proj.weight",
+    "model.decoder.layers.0.self_attn.out_proj.weight",
+    "model.decoder.layers.0.fc1.weight",
+    "model.decoder.layers.0.fc2.weight",
+    "model.decoder.layers.1.self_attn.k_proj.weight",
+    "model.decoder.layers.1.self_attn.v_proj.weight",
+    "model.decoder.layers.1.self_attn.q_proj.weight",
+    "model.decoder.layers.1.self_attn.out_proj.weight",
+    "model.decoder.layers.1.fc1.weight",
+    "model.decoder.layers.1.fc2.weight",
+    "model.decoder.layers.2.self_attn.k_proj.weight",
+    "model.decoder.layers.2.self_attn.v_proj.weight",
+    "model.decoder.layers.2.self_attn.q_proj.weight",
+    "model.decoder.layers.2.self_attn.out_proj.weight",
+    "model.decoder.layers.2.fc1.weight",
+    "model.decoder.layers.2.fc2.weight",
+    "model.decoder.layers.3.self_attn.k_proj.weight",
+    "model.decoder.layers.3.self_attn.v_proj.weight",
+    "model.decoder.layers.3.self_attn.q_proj.weight",
+    "model.decoder.layers.3.self_attn.out_proj.weight",
+    "model.decoder.layers.3.fc1.weight",
+    "model.decoder.layers.3.fc2.weight",
+    "model.decoder.layers.4.self_attn.k_proj.weight",
+    "model.decoder.layers.4.self_attn.v_proj.weight",
+    "model.decoder.layers.4.self_attn.q_proj.weight",
+    "model.decoder.layers.4.self_attn.out_proj.weight",
+    "model.decoder.layers.4.fc1.weight",
+    "model.decoder.layers.4.fc2.weight",
+    "model.decoder.layers.5.self_attn.k_proj.weight",
+    "model.decoder.layers.5.self_attn.v_proj.weight",
+    "model.decoder.layers.5.self_attn.q_proj.weight",
+    "model.decoder.layers.5.self_attn.out_proj.weight",
+    "model.decoder.layers.5.fc1.weight",
+    "model.decoder.layers.5.fc2.weight",
+    "model.decoder.layers.6.self_attn.k_proj.weight",
+    "model.decoder.layers.6.self_attn.v_proj.weight",
+    "model.decoder.layers.6.self_attn.q_proj.weight",
+    "model.decoder.layers.6.self_attn.out_proj.weight",
+    "model.decoder.layers.6.fc1.weight",
+    "model.decoder.layers.6.fc2.weight",
+    "model.decoder.layers.7.self_attn.k_proj.weight",
+    "model.decoder.layers.7.self_attn.v_proj.weight",
+    "model.decoder.layers.7.self_attn.q_proj.weight",
+    "model.decoder.layers.7.self_attn.out_proj.weight",
+    "model.decoder.layers.7.fc1.weight",
+    "model.decoder.layers.7.fc2.weight",
+    "model.decoder.layers.8.self_attn.k_proj.weight",
+    "model.decoder.layers.8.self_attn.v_proj.weight",
+    "model.decoder.layers.8.self_attn.q_proj.weight",
+    "model.decoder.layers.8.self_attn.out_proj.weight",
+    "model.decoder.layers.8.fc1.weight",
+    "model.decoder.layers.8.fc2.weight",
+    "model.decoder.layers.9.self_attn.k_proj.weight",
+    "model.decoder.layers.9.self_attn.v_proj.weight",
+    "model.decoder.layers.9.self_attn.q_proj.weight",
+    "model.decoder.layers.9.self_attn.out_proj.weight",
+    "model.decoder.layers.9.fc1.weight",
+    "model.decoder.layers.9.fc2.weight",
+    "model.decoder.layers.10.self_attn.k_proj.weight",
+    "model.decoder.layers.10.self_attn.v_proj.weight",
+    "model.decoder.layers.10.self_attn.q_proj.weight",
+    "model.decoder.layers.10.self_attn.out_proj.weight",
+    "model.decoder.layers.10.fc1.weight",
+    "model.decoder.layers.10.fc2.weight",
+    "model.decoder.layers.11.self_attn.k_proj.weight",
+    "model.decoder.layers.11.self_attn.v_proj.weight",
+    "model.decoder.layers.11.self_attn.q_proj.weight",
+    "model.decoder.layers.11.self_attn.out_proj.weight",
+    "model.decoder.layers.11.fc1.weight",
+    "model.decoder.layers.11.fc2.weight"
+  ]
+}

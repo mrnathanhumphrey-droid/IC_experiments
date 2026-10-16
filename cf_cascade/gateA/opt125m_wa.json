@@ -1,0 +1,10 @@
+{
+  "model": "facebook/opt-125m",
+  "tag": "opt125m",
+  "wA_sst_acc": 0.8333333333333334,
+  "stop_step": 250,
+  "target": 0.8,
+  "matched": true,
+  "lr": 5e-05,
+  "subset": 2000
+}

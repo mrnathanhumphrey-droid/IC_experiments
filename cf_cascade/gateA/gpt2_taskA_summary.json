@@ -1,0 +1,9 @@
+{
+  "train_win": 0.011928651499198395,
+  "grad_norm": 0.0017100070253945887,
+  "acc_before": 0.795,
+  "acc_after": 0.91,
+  "steps": 1500,
+  "ckpt": "D:/IC_experiments/cf_cascade/gateA/gpt2med_sst2_subsetmin.pt",
+  "wall_s": 165.66607570648193
+}

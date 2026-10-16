@@ -1,0 +1,23 @@
+[ADJ] #4 powered | SMOKE=1 datasets=['cifar'] seeds=[0] Ncaps=[6] ft=(150,0.0005) dev=cuda
+Downloading readme:   0%|          | 0.00/9.98k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 9.98k/9.98k [00:00<00:00, 466kB/s]
+Downloading data:   0%|          | 0.00/119M [00:00<?, ?B/s]Downloading data:   9%|▉         | 10.5M/119M [00:00<00:05, 19.9MB/s]Downloading data:  18%|█▊        | 21.0M/119M [00:00<00:02, 35.2MB/s]Downloading data:  27%|██▋       | 31.5M/119M [00:00<00:01, 48.9MB/s]Downloading data:  35%|███▌      | 41.9M/119M [00:00<00:01, 61.8MB/s]Downloading data:  44%|████▍     | 52.4M/119M [00:01<00:01, 64.4MB/s]Downloading data:  53%|█████▎    | 62.9M/119M [00:01<00:00, 72.5MB/s]Downloading data:  62%|██████▏   | 73.4M/119M [00:01<00:00, 70.6MB/s]Downloading data:  71%|███████   | 83.9M/119M [00:01<00:00, 72.7MB/s]Downloading data:  80%|███████▉  | 94.4M/119M [00:01<00:00, 69.0MB/s]Downloading data:  88%|████████▊ | 105M/119M [00:01<00:00, 75.2MB/s] Downloading data:  97%|█████████▋| 115M/119M [00:01<00:00, 78.5MB/s]Downloading data: 100%|██████████| 119M/119M [00:01<00:00, 60.1MB/s]
+Downloading data:   0%|          | 0.00/23.8M [00:00<?, ?B/s]Downloading data:  44%|████▍     | 10.5M/23.8M [00:01<00:02, 6.11MB/s]Downloading data:  88%|████████▊ | 21.0M/23.8M [00:06<00:00, 3.11MB/s]Downloading data: 100%|██████████| 23.8M/23.8M [00:06<00:00, 3.79MB/s]
+Generating train split:   0%|          | 0/50000 [00:00<?, ? examples/s]Generating train split:  29%|██▉       | 14400/50000 [00:00<00:00, 143342.60 examples/s]Generating train split:  58%|█████▊    | 28900/50000 [00:00<00:00, 138806.30 examples/s]Generating train split:  94%|█████████▍| 47000/50000 [00:00<00:00, 157281.78 examples/s]Generating train split: 100%|██████████| 50000/50000 [00:00<00:00, 153081.59 examples/s]
+Generating test split:   0%|          | 0/10000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 10000/10000 [00:00<00:00, 151182.05 examples/s]
+[data] HF cifar100 banks OK
+[ADJ] cifar: banks loaded (24 caps)
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /home/ubuntu/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+  0%|          | 0.00/44.7M [00:00<?, ?B/s] 70%|███████   | 31.4M/44.7M [00:00<00:00, 329MB/s]100%|██████████| 44.7M/44.7M [00:00<00:00, 329MB/s]
+    [cifar s0] perturb 0 (1/6) colFgt=+0.226
+    [cifar s0] perturb 1 (2/6) colFgt=+0.405
+    [cifar s0] perturb 2 (3/6) colFgt=+0.166
+    [cifar s0] perturb 3 (4/6) colFgt=+0.190
+    [cifar s0] perturb 4 (5/6) colFgt=+0.112
+    [cifar s0] perturb 5 (6/6) colFgt=+0.241
+  [cifar s0 N=6] interER=1.688 perTask=2.032 pooled=8.06 cos=0.2068 | haarPT=4.95 permP=0.0
+
+=== #4 POWERED AGGREGATE ===
+[cifar] scaling N=None interaction=None (slope None) per_task=None (slope None)
+  N=6: perTask=[2.032, [2.032, 2.032]] vs haar=4.95 | interaction=[1.688, [1.688, 1.688]] pooled=[8.06, [8.06, 8.06]] cos=0.2068 permP=0.0
+
+[ADJ] wrote /home/ubuntu/ilaw/out/lowrank_adjudication.json  wall=134s

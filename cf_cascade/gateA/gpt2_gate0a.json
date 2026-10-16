@@ -1,0 +1,9 @@
+{
+  "n_matrices": 24,
+  "esd_decades_full_median": 8.850849342041604,
+  "esd_decades_robust_median": 3.967499676219602,
+  "esd_full_min": 7.119816757466158,
+  "index_autocorr_median": 0.001210760901053906,
+  "K8_pass": true,
+  "K7_pass": true
+}

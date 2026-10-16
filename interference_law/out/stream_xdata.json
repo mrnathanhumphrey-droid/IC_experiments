@@ -1,0 +1,68 @@
+{
+ "dtd": {
+  "name": "dtd",
+  "gate": {
+   "rho_pair": -0.531,
+   "median_forget": 0.079,
+   "partial": true
+  },
+  "Q1_compose": {
+   "additive": 0.438,
+   "mean": 0.438,
+   "last_recency": 0.509,
+   "recency_weighted": 0.535,
+   "gamma": 0.5,
+   "winner": "recency-weighted"
+  },
+  "Q2_markov": {
+   "order_var": 0.00305,
+   "set_var": 0.00872,
+   "order_frac": 0.259,
+   "within_set_last_rho": -0.393,
+   "markovian": false
+  },
+  "config": {
+   "STEPS_A": 300,
+   "PSTEP": 60,
+   "LR": 0.5,
+   "K": 4,
+   "NVIC": 16,
+   "NSET": 16,
+   "NORD": 8,
+   "seed": 0
+  }
+ },
+ "gtsrb": {
+  "name": "gtsrb",
+  "gate": {
+   "rho_pair": -0.529,
+   "median_forget": 0.002,
+   "partial": false
+  },
+  "Q1_compose": {
+   "additive": 0.5,
+   "mean": 0.5,
+   "last_recency": 0.532,
+   "recency_weighted": 0.58,
+   "gamma": 0.5,
+   "winner": "recency-weighted"
+  },
+  "Q2_markov": {
+   "order_var": 0.00167,
+   "set_var": 0.00705,
+   "order_frac": 0.191,
+   "within_set_last_rho": -0.395,
+   "markovian": true
+  },
+  "config": {
+   "STEPS_A": 300,
+   "PSTEP": 60,
+   "LR": 0.5,
+   "K": 4,
+   "NVIC": 16,
+   "NSET": 16,
+   "NORD": 8,
+   "seed": 0
+  }
+ }
+}

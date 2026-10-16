@@ -1,0 +1,207 @@
+{
+ "config": {
+  "caps": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19
+  ],
+  "K": 30,
+  "kpc": 5,
+  "d_proj": 24,
+  "nseed": 10,
+  "prereg": "P1_2026_07_26"
+ },
+ "results": {
+  "cifar": {
+   "n": 20,
+   "hits": [],
+   "descriptors": {
+    "COS": {
+     "family": "dir",
+     "rho": 0.0342,
+     "ci": [
+      -0.073,
+      0.1366
+     ],
+     "perm_p": 0.52,
+     "hit": false
+    },
+    "X1_subspace": {
+     "family": "dir",
+     "rho": 0.0659,
+     "ci": [
+      -0.0332,
+      0.1616
+     ],
+     "perm_p": 0.197,
+     "hit": false
+    },
+    "X4_cka": {
+     "family": "dir",
+     "rho": -0.02,
+     "ci": [
+      -0.1154,
+      0.0726
+     ],
+     "perm_p": 0.688,
+     "hit": false
+    },
+    "Xzs_auc": {
+     "family": "dir",
+     "rho": 0.2258,
+     "ci": [
+      0.1293,
+      0.3142
+     ],
+     "perm_p": 0.0,
+     "hit": false
+    },
+    "X0_wnorm": {
+     "family": "scale",
+     "rho": -0.2217,
+     "ci": [
+      -0.3201,
+      -0.1248
+     ],
+     "perm_p": 0.0,
+     "hit": false
+    },
+    "X3_headInAsub": {
+     "family": "scale",
+     "rho": 0.1108,
+     "ci": [
+      0.0116,
+      0.2059
+     ],
+     "perm_p": 0.0335,
+     "hit": false
+    },
+    "X6_gradnorm": {
+     "family": "scale",
+     "rho": -0.1621,
+     "ci": [
+      -0.2577,
+      -0.0598
+     ],
+     "perm_p": 0.0015,
+     "hit": false
+    },
+    "X7_loss0": {
+     "family": "scale",
+     "rho": -0.0856,
+     "ci": [
+      -0.1824,
+      0.0174
+     ],
+     "perm_p": 0.0975,
+     "hit": false
+    }
+   }
+  },
+  "dtd": {
+   "n": 20,
+   "hits": [],
+   "descriptors": {
+    "COS": {
+     "family": "dir",
+     "rho": -0.0142,
+     "ci": [
+      -0.1097,
+      0.0885
+     ],
+     "perm_p": 0.776,
+     "hit": false
+    },
+    "X1_subspace": {
+     "family": "dir",
+     "rho": 0.0147,
+     "ci": [
+      -0.0825,
+      0.1187
+     ],
+     "perm_p": 0.7715,
+     "hit": false
+    },
+    "X4_cka": {
+     "family": "dir",
+     "rho": 0.018,
+     "ci": [
+      -0.0786,
+      0.1229
+     ],
+     "perm_p": 0.719,
+     "hit": false
+    },
+    "Xzs_auc": {
+     "family": "dir",
+     "rho": 0.1163,
+     "ci": [
+      0.0174,
+      0.2158
+     ],
+     "perm_p": 0.024,
+     "hit": false
+    },
+    "X0_wnorm": {
+     "family": "scale",
+     "rho": -0.2308,
+     "ci": [
+      -0.3264,
+      -0.13
+     ],
+     "perm_p": 0.0,
+     "hit": false
+    },
+    "X3_headInAsub": {
+     "family": "scale",
+     "rho": 0.0566,
+     "ci": [
+      -0.0401,
+      0.1576
+     ],
+     "perm_p": 0.27,
+     "hit": false
+    },
+    "X6_gradnorm": {
+     "family": "scale",
+     "rho": 0.0224,
+     "ci": [
+      -0.0875,
+      0.1224
+     ],
+     "perm_p": 0.6535,
+     "hit": false
+    },
+    "X7_loss0": {
+     "family": "scale",
+     "rho": -0.0918,
+     "ci": [
+      -0.196,
+      0.0118
+     ],
+     "perm_p": 0.077,
+     "hit": false
+    }
+   }
+  }
+ },
+ "replicated_hits": [],
+ "verdict": "NULL: no descriptor >=0.30 replicates cross-dataset -> frozen transfer geometrically structureless -> MOVE TO PLASTIC REGIME (contrarian result stands given P0)"
+}

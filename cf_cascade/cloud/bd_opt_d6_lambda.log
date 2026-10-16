@@ -1,0 +1,27 @@
+[BD:opt_d6] facebook/opt-350m dispositive A/B/D N=30 -> model B-D + per-carrier resid
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2116256.72 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 391588.13 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 610147.59 examples/s]
+[BD:opt_d6] w_A SST acc=0.763; 36 carriers (14s)
+[BD:opt_d6] V basis done (24s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 65000/560000 [00:00<00:00, 639645.63 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 834051.58 examples/s]Generating train split:  49%|████▉     | 275000/560000 [00:00<00:00, 957888.99 examples/s]Generating train split:  75%|███████▌  | 420000/560000 [00:00<00:00, 1082172.42 examples/s]Generating train split:  97%|█████████▋| 544000/560000 [00:00<00:00, 1132188.96 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1029322.61 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1134800.58 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▍         | 68000/1400000 [00:00<00:01, 670657.84 examples/s]Generating train split:  10%|█         | 147000/1400000 [00:00<00:01, 699209.82 examples/s]Generating train split:  16%|█▌        | 223000/1400000 [00:00<00:01, 723725.13 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 739946.76 examples/s]Generating train split:  29%|██▊       | 400000/1400000 [00:00<00:01, 809165.32 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 727801.26 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 749315.79 examples/s]Generating train split:  49%|████▊     | 682000/1400000 [00:00<00:00, 794675.31 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 709892.63 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 723841.28 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 733660.09 examples/s]Generating train split:  76%|███████▌  | 1057000/1400000 [00:01<00:00, 788612.30 examples/s]Generating train split:  85%|████████▍ | 1184000/1400000 [00:01<00:00, 806953.05 examples/s]Generating train split:  90%|█████████ | 1267000/1400000 [00:01<00:00, 799965.22 examples/s]Generating train split:  97%|█████████▋| 1355000/1400000 [00:01<00:00, 793027.71 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 764403.83 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 879140.07 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 239883.55 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 264803.28 examples/s]Generating train split:  74%|███████▍  | 155103/209527 [00:00<00:00, 253352.62 examples/s]Generating train split:  96%|█████████▋| 201886/209527 [00:00<00:00, 246228.31 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 249225.49 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1825495.46 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 713499.02 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 810963.65 examples/s]
+[BD:opt_d6] seed 0: ret A/B/D=0.547/0.653/0.663 (83s)
+[BD:opt_d6] seed 5: ret A/B/D=0.723/0.747/0.680 (293s)
+[BD:opt_d6] seed 10: ret A/B/D=0.593/0.657/0.677 (504s)
+[BD:opt_d6] seed 15: ret A/B/D=0.600/0.750/0.723 (716s)
+[BD:opt_d6] seed 20: ret A/B/D=0.537/0.653/0.563 (927s)
+[BD:opt_d6] seed 25: ret A/B/D=0.703/0.663/0.727 (1140s)
+[BD:opt_d6] seed 29: ret A/B/D=0.540/0.693/0.677 (1309s)
+
+[BD:opt_d6] === B-D FEED ===
+  ret A/B/D=0.649/0.686/0.684 (pre 0.763, A_forget 0.114 VOID)
+  B-A=+0.037 | B-D=+0.001±0.010 | D-A=+0.035 | mapfrac B/D 0.248/0.014 | resid_B-D(medCarr) +0.012
+[BD:opt_d6] saved bd_opt_d6.json wall=1309s

@@ -1,0 +1,7 @@
+{
+  "model": "facebook/opt-350m",
+  "keep": 6,
+  "tag": "optd6",
+  "wA_sst_acc": 0.7633333333333333,
+  "note": "depth-variant SST-side artifacts; reproduce-anchor in opt3_depth/opt4_depth vs banked full-24"
+}

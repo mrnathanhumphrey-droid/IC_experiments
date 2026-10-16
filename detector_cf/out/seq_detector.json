@@ -1,0 +1,268 @@
+{
+ "config": {
+  "paradigms": [
+   "swap",
+   "diffusion",
+   "celebdf",
+   "dfdc"
+  ],
+  "subsample": 220,
+  "pca_k": 20,
+  "smoke": false,
+  "route_tau": 0.0
+ },
+ "arms": {
+  "naive": [
+   {
+    "added": "swap",
+    "retention": {
+     "swap": 0.7479,
+     "diffusion": 0.2974,
+     "celebdf": 0.7722,
+     "dfdc": 0.7945
+    }
+   },
+   {
+    "added": "diffusion",
+    "retention": {
+     "swap": 0.483,
+     "diffusion": 0.9919,
+     "celebdf": 0.747,
+     "dfdc": 0.8516
+    }
+   },
+   {
+    "added": "celebdf",
+    "retention": {
+     "swap": 0.678,
+     "diffusion": 0.7224,
+     "celebdf": 0.9238,
+     "dfdc": 0.9129
+    }
+   },
+   {
+    "added": "dfdc",
+    "retention": {
+     "swap": 0.6515,
+     "diffusion": 0.6834,
+     "celebdf": 0.8961,
+     "dfdc": 0.938
+    }
+   }
+  ],
+  "gpm": [
+   {
+    "added": "swap",
+    "retention": {
+     "swap": 0.7479,
+     "diffusion": 0.2974,
+     "celebdf": 0.7722,
+     "dfdc": 0.7945
+    }
+   },
+   {
+    "added": "diffusion",
+    "retention": {
+     "swap": 0.7385,
+     "diffusion": 0.5687,
+     "celebdf": 0.8112,
+     "dfdc": 0.7818
+    }
+   },
+   {
+    "added": "celebdf",
+    "retention": {
+     "swap": 0.7388,
+     "diffusion": 0.5748,
+     "celebdf": 0.8222,
+     "dfdc": 0.7848
+    }
+   },
+   {
+    "added": "dfdc",
+    "retention": {
+     "swap": 0.7398,
+     "diffusion": 0.5745,
+     "celebdf": 0.8222,
+     "dfdc": 0.7886
+    }
+   }
+  ],
+  "rand": [
+   {
+    "added": "swap",
+    "retention": {
+     "swap": 0.7479,
+     "diffusion": 0.2974,
+     "celebdf": 0.7722,
+     "dfdc": 0.7945
+    }
+   },
+   {
+    "added": "diffusion",
+    "retention": {
+     "swap": 0.4799,
+     "diffusion": 0.9917,
+     "celebdf": 0.7543,
+     "dfdc": 0.853
+    }
+   },
+   {
+    "added": "celebdf",
+    "retention": {
+     "swap": 0.6719,
+     "diffusion": 0.7712,
+     "celebdf": 0.9164,
+     "dfdc": 0.915
+    }
+   },
+   {
+    "added": "dfdc",
+    "retention": {
+     "swap": 0.6514,
+     "diffusion": 0.7735,
+     "celebdf": 0.8962,
+     "dfdc": 0.9393
+    }
+   }
+  ],
+  "route": {
+   "router_log": [
+    {
+     "added": "swap",
+     "action": "spawn",
+     "head": 0,
+     "all_cos": []
+    },
+    {
+     "added": "diffusion",
+     "action": "spawn",
+     "head": 1,
+     "all_cos": [
+      -0.933
+     ]
+    },
+    {
+     "added": "celebdf",
+     "action": "join",
+     "head": 0,
+     "cos": 0.586,
+     "gpm": false,
+     "all_cos": [
+      0.586,
+      -0.433
+     ]
+    },
+    {
+     "added": "dfdc",
+     "action": "join",
+     "head": 0,
+     "cos": 0.841,
+     "gpm": false,
+     "all_cos": [
+      0.841,
+      -0.255
+     ]
+    }
+   ],
+   "n_heads": 2,
+   "heads": [
+    {
+     "head": 0,
+     "members": [
+      "swap",
+      "celebdf",
+      "dfdc"
+     ]
+    },
+    {
+     "head": 1,
+     "members": [
+      "diffusion"
+     ]
+    }
+   ],
+   "oracle": {
+    "swap": 0.6564,
+    "diffusion": 0.9928,
+    "celebdf": 0.8944,
+    "dfdc": 0.9362
+   },
+   "maxens": {
+    "swap": 0.6388,
+    "diffusion": 0.9638,
+    "celebdf": 0.8839,
+    "dfdc": 0.9281
+   }
+  },
+  "route_gpm": {
+   "router_log": [
+    {
+     "added": "swap",
+     "action": "spawn",
+     "head": 0,
+     "all_cos": []
+    },
+    {
+     "added": "diffusion",
+     "action": "spawn",
+     "head": 1,
+     "all_cos": [
+      -0.933
+     ]
+    },
+    {
+     "added": "celebdf",
+     "action": "join",
+     "head": 0,
+     "cos": 0.586,
+     "gpm": true,
+     "all_cos": [
+      0.586,
+      -0.433
+     ]
+    },
+    {
+     "added": "dfdc",
+     "action": "join",
+     "head": 0,
+     "cos": 0.841,
+     "gpm": true,
+     "all_cos": [
+      0.841,
+      -0.255
+     ]
+    }
+   ],
+   "n_heads": 2,
+   "heads": [
+    {
+     "head": 0,
+     "members": [
+      "swap",
+      "celebdf",
+      "dfdc"
+     ]
+    },
+    {
+     "head": 1,
+     "members": [
+      "diffusion"
+     ]
+    }
+   ],
+   "oracle": {
+    "swap": 0.7516,
+    "diffusion": 0.9928,
+    "celebdf": 0.8007,
+    "dfdc": 0.8129
+   },
+   "maxens": {
+    "swap": 0.7509,
+    "diffusion": 0.9532,
+    "celebdf": 0.8172,
+    "dfdc": 0.8692
+   }
+  }
+ }
+}

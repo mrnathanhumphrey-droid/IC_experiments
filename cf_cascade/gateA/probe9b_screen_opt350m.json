@@ -1,0 +1,106 @@
+{
+  "cell": "opt350m",
+  "family": "OPT",
+  "mode": "screen",
+  "VOID": false,
+  "M_omega": 12,
+  "screen_lr": 3e-05,
+  "omega": {
+    "subj": {
+      "cos2_min": 0.028386691486560357,
+      "cos2_mean": 0.002398216309032822,
+      "keys": [
+        "subj"
+      ]
+    },
+    "agnews": {
+      "cos2_min": 0.1292534181728433,
+      "cos2_mean": 0.01087758455855023,
+      "keys": [
+        "agnews"
+      ]
+    },
+    "dbpedia": {
+      "cos2_min": 0.1766179672245193,
+      "cos2_mean": 0.014763854432539305,
+      "keys": [
+        "dbpedia"
+      ]
+    },
+    "yahoo": {
+      "cos2_min": 0.12823724528310645,
+      "cos2_mean": 0.010710907423444712,
+      "keys": [
+        "yahoo"
+      ]
+    },
+    "newscat": {
+      "cos2_min": 0.16426367822803645,
+      "cos2_mean": 0.013718089050028404,
+      "keys": [
+        "newscat"
+      ]
+    },
+    "emotion": {
+      "cos2_min": 0.12397717537256808,
+      "cos2_mean": 0.010369951794557054,
+      "keys": [
+        "emotion"
+      ]
+    },
+    "trec": {
+      "cos2_min": 0.03814300935893876,
+      "cos2_mean": 0.0031958242768627223,
+      "keys": [
+        "trec"
+      ]
+    },
+    "subj+trec": {
+      "cos2_min": 0.03820937386634793,
+      "cos2_mean": 0.0032085344718094924,
+      "keys": [
+        "subj",
+        "trec"
+      ]
+    },
+    "agnews+yahoo": {
+      "cos2_min": 0.19939312461634787,
+      "cos2_mean": 0.016672322645218843,
+      "keys": [
+        "agnews",
+        "yahoo"
+      ]
+    }
+  },
+  "ladder_all": [
+    "subj",
+    "agnews",
+    "dbpedia",
+    "yahoo",
+    "newscat",
+    "emotion",
+    "trec",
+    "subj+trec",
+    "agnews+yahoo"
+  ],
+  "omega_span": 0.1710064331297875,
+  "degenerate": [],
+  "n_nondegenerate": 9,
+  "ladder_healthy": true,
+  "child_keys": [
+    "agnews",
+    "dbpedia",
+    "yahoo",
+    "newscat",
+    "emotion"
+  ],
+  "chosen_child_lr": 1e-05,
+  "child_calibration": {
+    "1.0e-05": 0.7909999999999999,
+    "1.5e-05": 0.7815000000000001,
+    "2.0e-05": 0.7543333333333333,
+    "3.0e-05": 0.7440000000000001
+  },
+  "child_tight": false,
+  "child_no_nondestructive": false
+}

@@ -1,0 +1,10 @@
+[WA] gpt2-medium (tag gpt2med) target acc>=0.8
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 5469.26it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2162923.85 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 399588.45 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 632165.83 examples/s]
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+[WA] step 250: SST acc=0.873 (37s)
+[WA] target hit acc=0.873 at step 250; saved /home/ubuntu/gateA/gpt2med_sst2_wA.pt
+[WA] DONE tag=gpt2med acc=0.873 stop_step=250 matched=True wall=39s

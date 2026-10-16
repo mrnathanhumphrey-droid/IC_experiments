@@ -1,0 +1,10 @@
+{
+  "model": "gpt2",
+  "tag": "gpt2small",
+  "wA_sst_acc": 0.84,
+  "stop_step": 250,
+  "target": 0.8,
+  "matched": true,
+  "lr": 5e-05,
+  "subset": 2000
+}

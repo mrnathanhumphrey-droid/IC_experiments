@@ -1,0 +1,211 @@
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armF_beta0.01_K8_seed1/asym] ep00 fine=3.792 super=2.411 kl=11.268 val_fine=0.089 val_super=0.242
+[armF_beta0.01_K8_seed1/asym] ep10 fine=2.789 super=1.632 kl=13.611 val_fine=0.257 val_super=0.442
+[armF_beta0.01_K8_seed1/asym] ep20 fine=2.158 super=1.264 kl=14.447 val_fine=0.326 val_super=0.506
+[armF_beta0.01_K8_seed1/asym] ep30 fine=2.307 super=1.326 kl=17.503 val_fine=0.342 val_super=0.528
+[armF_beta0.01_K8_seed1/asym] ep40 fine=2.262 super=1.212 kl=16.085 val_fine=0.374 val_super=0.558
+[armF_beta0.01_K8_seed1/asym] ep49 fine=2.419 super=1.317 kl=16.075 val_fine=0.379 val_super=0.563
+[armF_beta0.01_K8_seed1] DONE test_fine=0.379 test_super=0.577 test_kl=17.990 (75s)
+[armF_beta0.01_K8_seed1] sup low/trans=0.574/0.561  fine low/trans=0.465/0.382  WS low/trans=0.297/0.318 sel=+0.022  cka=0.761 kl=17.989637341308594
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armF_beta0.01_K8_seed2/asym] ep00 fine=3.965 super=2.472 kl=9.683 val_fine=0.083 val_super=0.225
+[armF_beta0.01_K8_seed2/asym] ep10 fine=2.935 super=1.839 kl=15.821 val_fine=0.253 val_super=0.440
+[armF_beta0.01_K8_seed2/asym] ep20 fine=2.733 super=1.608 kl=16.284 val_fine=0.317 val_super=0.504
+[armF_beta0.01_K8_seed2/asym] ep30 fine=2.135 super=1.149 kl=17.537 val_fine=0.341 val_super=0.530
+[armF_beta0.01_K8_seed2/asym] ep40 fine=2.005 super=1.268 kl=17.724 val_fine=0.375 val_super=0.562
+[armF_beta0.01_K8_seed2/asym] ep49 fine=1.826 super=0.934 kl=17.001 val_fine=0.383 val_super=0.571
+[armF_beta0.01_K8_seed2] DONE test_fine=0.385 test_super=0.576 test_kl=18.323 (72s)
+[armF_beta0.01_K8_seed2] sup low/trans=0.578/0.565  fine low/trans=0.471/0.393  WS low/trans=0.289/0.314 sel=+0.025  cka=0.782 kl=18.323478143310545
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armF_beta0.1_K8_seed1/asym] ep00 fine=4.181 super=2.623 kl=1.972 val_fine=0.068 val_super=0.197
+[armF_beta0.1_K8_seed1/asym] ep10 fine=2.934 super=1.757 kl=3.272 val_fine=0.209 val_super=0.408
+[armF_beta0.1_K8_seed1/asym] ep20 fine=2.548 super=1.489 kl=3.749 val_fine=0.245 val_super=0.451
+[armF_beta0.1_K8_seed1/asym] ep30 fine=2.588 super=1.477 kl=4.445 val_fine=0.281 val_super=0.498
+[armF_beta0.1_K8_seed1/asym] ep40 fine=2.712 super=1.399 kl=3.990 val_fine=0.298 val_super=0.518
+[armF_beta0.1_K8_seed1/asym] ep49 fine=2.783 super=1.552 kl=4.027 val_fine=0.329 val_super=0.551
+[armF_beta0.1_K8_seed1] DONE test_fine=0.325 test_super=0.555 test_kl=4.448 (82s)
+[armF_beta0.1_K8_seed1] sup low/trans=0.574/0.541  fine low/trans=0.457/0.353  WS low/trans=0.290/0.321 sel=+0.031  cka=0.644 kl=4.448429208374024
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armF_beta0.1_K8_seed2/asym] ep00 fine=4.131 super=2.586 kl=1.791 val_fine=0.061 val_super=0.181
+[armF_beta0.1_K8_seed2/asym] ep10 fine=3.144 super=1.920 kl=3.628 val_fine=0.202 val_super=0.411
+[armF_beta0.1_K8_seed2/asym] ep20 fine=2.898 super=1.723 kl=3.595 val_fine=0.269 val_super=0.488
+[armF_beta0.1_K8_seed2/asym] ep30 fine=2.349 super=1.267 kl=4.031 val_fine=0.281 val_super=0.501
+[armF_beta0.1_K8_seed2/asym] ep40 fine=2.447 super=1.478 kl=4.242 val_fine=0.305 val_super=0.521
+[armF_beta0.1_K8_seed2/asym] ep49 fine=2.163 super=1.096 kl=4.217 val_fine=0.318 val_super=0.537
+[armF_beta0.1_K8_seed2] DONE test_fine=0.323 test_super=0.543 test_kl=4.507 (79s)
+[armF_beta0.1_K8_seed2] sup low/trans=0.573/0.552  fine low/trans=0.458/0.354  WS low/trans=0.299/0.324 sel=+0.025  cka=0.621 kl=4.506970560455322
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armF_beta0.2_K8_seed1/asym] ep00 fine=4.368 super=2.734 kl=0.933 val_fine=0.041 val_super=0.170
+[armF_beta0.2_K8_seed1/asym] ep10 fine=3.246 super=1.897 kl=2.010 val_fine=0.172 val_super=0.386
+[armF_beta0.2_K8_seed1/asym] ep20 fine=2.770 super=1.527 kl=2.325 val_fine=0.223 val_super=0.457
+[armF_beta0.2_K8_seed1/asym] ep30 fine=2.594 super=1.479 kl=2.625 val_fine=0.258 val_super=0.499
+[armF_beta0.2_K8_seed1/asym] ep40 fine=2.735 super=1.407 kl=2.563 val_fine=0.283 val_super=0.510
+[armF_beta0.2_K8_seed1/asym] ep49 fine=2.946 super=1.701 kl=2.522 val_fine=0.276 val_super=0.512
+[armF_beta0.2_K8_seed1] DONE test_fine=0.274 test_super=0.517 test_kl=2.807 (78s)
+[armF_beta0.2_K8_seed1] sup low/trans=0.565/0.536  fine low/trans=0.448/0.319  WS low/trans=0.288/0.317 sel=+0.029  cka=0.620 kl=2.807411266708374
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armF_beta0.2_K8_seed2/asym] ep00 fine=4.301 super=2.695 kl=0.863 val_fine=0.039 val_super=0.161
+[armF_beta0.2_K8_seed2/asym] ep10 fine=3.432 super=2.120 kl=1.688 val_fine=0.156 val_super=0.356
+[armF_beta0.2_K8_seed2/asym] ep20 fine=3.111 super=1.827 kl=2.220 val_fine=0.232 val_super=0.432
+[armF_beta0.2_K8_seed2/asym] ep30 fine=2.633 super=1.406 kl=2.525 val_fine=0.250 val_super=0.480
+[armF_beta0.2_K8_seed2/asym] ep40 fine=2.764 super=1.663 kl=2.522 val_fine=0.262 val_super=0.487
+[armF_beta0.2_K8_seed2/asym] ep49 fine=2.269 super=1.120 kl=2.519 val_fine=0.284 val_super=0.526
+[armF_beta0.2_K8_seed2] DONE test_fine=0.282 test_super=0.528 test_kl=2.785 (112s)
+[armF_beta0.2_K8_seed2] sup low/trans=0.567/0.538  fine low/trans=0.443/0.318  WS low/trans=0.297/0.333 sel=+0.036  cka=0.582 kl=2.784594087982178
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armF_beta0.5_K8_seed1/asym] ep00 fine=4.582 super=2.907 kl=0.165 val_fine=0.027 val_super=0.119
+[armF_beta0.5_K8_seed1/asym] ep10 fine=3.548 super=2.186 kl=0.853 val_fine=0.113 val_super=0.318
+[armF_beta0.5_K8_seed1/asym] ep20 fine=3.115 super=1.792 kl=1.152 val_fine=0.152 val_super=0.379
+[armF_beta0.5_K8_seed1/asym] ep30 fine=3.145 super=1.919 kl=1.317 val_fine=0.188 val_super=0.423
+[armF_beta0.5_K8_seed1/asym] ep40 fine=2.999 super=1.599 kl=1.395 val_fine=0.194 val_super=0.455
+[armF_beta0.5_K8_seed1/asym] ep49 fine=3.167 super=1.758 kl=1.352 val_fine=0.213 val_super=0.478
+[armF_beta0.5_K8_seed1] DONE test_fine=0.219 test_super=0.475 test_kl=1.446 (142s)
+[armF_beta0.5_K8_seed1] sup low/trans=0.546/0.491  fine low/trans=0.420/0.267  WS low/trans=0.278/0.308 sel=+0.030  cka=0.528 kl=1.445656805419922
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armF_beta0.5_K8_seed2/asym] ep00 fine=4.484 super=2.872 kl=0.254 val_fine=0.019 val_super=0.105
+[armF_beta0.5_K8_seed2/asym] ep10 fine=3.684 super=2.281 kl=0.765 val_fine=0.093 val_super=0.299
+[armF_beta0.5_K8_seed2/asym] ep20 fine=3.619 super=2.150 kl=0.927 val_fine=0.130 val_super=0.368
+[armF_beta0.5_K8_seed2/asym] ep30 fine=3.069 super=1.708 kl=1.186 val_fine=0.161 val_super=0.421
+[armF_beta0.5_K8_seed2/asym] ep40 fine=3.207 super=1.849 kl=1.310 val_fine=0.191 val_super=0.452
+[armF_beta0.5_K8_seed2/asym] ep49 fine=2.818 super=1.452 kl=1.414 val_fine=0.206 val_super=0.475
+[armF_beta0.5_K8_seed2] DONE test_fine=0.200 test_super=0.471 test_kl=1.518 (138s)
+[armF_beta0.5_K8_seed2] sup low/trans=0.547/0.492  fine low/trans=0.426/0.260  WS low/trans=0.279/0.308 sel=+0.029  cka=0.551 kl=1.5182019523620605
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armU_beta0.01_K8_seed1/uniform] ep00 fine=3.800 super=2.380 kl=14.640 val_fine=0.079 val_super=0.224
+[armU_beta0.01_K8_seed1/uniform] ep10 fine=2.720 super=1.652 kl=17.235 val_fine=0.270 val_super=0.439
+[armU_beta0.01_K8_seed1/uniform] ep20 fine=2.106 super=1.235 kl=19.348 val_fine=0.339 val_super=0.518
+[armU_beta0.01_K8_seed1/uniform] ep30 fine=2.289 super=1.328 kl=20.303 val_fine=0.342 val_super=0.520
+[armU_beta0.01_K8_seed1/uniform] ep40 fine=2.283 super=1.261 kl=18.639 val_fine=0.373 val_super=0.554
+[armU_beta0.01_K8_seed1/uniform] ep49 fine=2.154 super=1.220 kl=18.297 val_fine=0.370 val_super=0.552
+[armU_beta0.01_K8_seed1] DONE test_fine=0.362 test_super=0.551 test_kl=19.909 (143s)
+[armU_beta0.01_K8_seed1] sup low/trans=0.573/0.558  fine low/trans=0.467/0.389  WS low/trans=0.292/0.306 sel=+0.014  cka=0.744 kl=19.90942554321289
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armU_beta0.01_K8_seed2/uniform] ep00 fine=3.918 super=2.488 kl=16.046 val_fine=0.093 val_super=0.227
+[armU_beta0.01_K8_seed2/uniform] ep10 fine=2.805 super=1.704 kl=18.082 val_fine=0.264 val_super=0.444
+[armU_beta0.01_K8_seed2/uniform] ep20 fine=2.759 super=1.634 kl=17.463 val_fine=0.320 val_super=0.513
+[armU_beta0.01_K8_seed2/uniform] ep30 fine=2.158 super=1.157 kl=19.960 val_fine=0.331 val_super=0.531
+[armU_beta0.01_K8_seed2/uniform] ep40 fine=2.120 super=1.349 kl=19.545 val_fine=0.355 val_super=0.551
+[armU_beta0.01_K8_seed2/uniform] ep49 fine=1.927 super=1.099 kl=20.149 val_fine=0.379 val_super=0.568
+[armU_beta0.01_K8_seed2] DONE test_fine=0.376 test_super=0.574 test_kl=21.546 (145s)
+[armU_beta0.01_K8_seed2] sup low/trans=0.565/0.554  fine low/trans=0.466/0.388  WS low/trans=0.289/0.314 sel=+0.026  cka=0.776 kl=21.54598515625
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armU_beta0.1_K8_seed1/uniform] ep00 fine=4.294 super=2.685 kl=2.270 val_fine=0.043 val_super=0.171
+[armU_beta0.1_K8_seed1/uniform] ep10 fine=3.100 super=1.738 kl=6.027 val_fine=0.220 val_super=0.418
+[armU_beta0.1_K8_seed1/uniform] ep20 fine=2.435 super=1.399 kl=6.734 val_fine=0.273 val_super=0.486
+[armU_beta0.1_K8_seed1/uniform] ep30 fine=2.488 super=1.413 kl=7.450 val_fine=0.319 val_super=0.528
+[armU_beta0.1_K8_seed1/uniform] ep40 fine=2.634 super=1.323 kl=7.561 val_fine=0.336 val_super=0.538
+[armU_beta0.1_K8_seed1/uniform] ep49 fine=2.487 super=1.431 kl=7.505 val_fine=0.355 val_super=0.567
+[armU_beta0.1_K8_seed1] DONE test_fine=0.343 test_super=0.565 test_kl=7.949 (136s)
+[armU_beta0.1_K8_seed1] sup low/trans=0.579/0.566  fine low/trans=0.460/0.369  WS low/trans=0.290/0.328 sel=+0.038  cka=0.654 kl=7.948666586303711
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armU_beta0.1_K8_seed2/uniform] ep00 fine=4.266 super=2.679 kl=2.532 val_fine=0.039 val_super=0.179
+[armU_beta0.1_K8_seed2/uniform] ep10 fine=3.282 super=1.963 kl=5.942 val_fine=0.222 val_super=0.424
+[armU_beta0.1_K8_seed2/uniform] ep20 fine=3.043 super=1.707 kl=6.789 val_fine=0.295 val_super=0.500
+[armU_beta0.1_K8_seed2/uniform] ep30 fine=2.597 super=1.403 kl=7.117 val_fine=0.312 val_super=0.535
+[armU_beta0.1_K8_seed2/uniform] ep40 fine=2.343 super=1.343 kl=8.018 val_fine=0.311 val_super=0.523
+[armU_beta0.1_K8_seed2/uniform] ep49 fine=2.236 super=1.298 kl=7.952 val_fine=0.334 val_super=0.545
+[armU_beta0.1_K8_seed2] DONE test_fine=0.338 test_super=0.542 test_kl=8.417 (132s)
+[armU_beta0.1_K8_seed2] sup low/trans=0.576/0.559  fine low/trans=0.460/0.373  WS low/trans=0.293/0.316 sel=+0.023  cka=0.683 kl=8.417142988586425
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armU_beta0.2_K8_seed1/uniform] ep00 fine=4.555 super=2.876 kl=0.571 val_fine=0.024 val_super=0.125
+[armU_beta0.2_K8_seed1/uniform] ep10 fine=3.401 super=2.011 kl=3.367 val_fine=0.144 val_super=0.352
+[armU_beta0.2_K8_seed1/uniform] ep20 fine=2.871 super=1.578 kl=3.960 val_fine=0.181 val_super=0.412
+[armU_beta0.2_K8_seed1/uniform] ep30 fine=2.895 super=1.666 kl=4.544 val_fine=0.232 val_super=0.466
+[armU_beta0.2_K8_seed1/uniform] ep40 fine=2.854 super=1.427 kl=4.591 val_fine=0.242 val_super=0.499
+[armU_beta0.2_K8_seed1/uniform] ep49 fine=2.954 super=1.564 kl=4.595 val_fine=0.264 val_super=0.521
+[armU_beta0.2_K8_seed1] DONE test_fine=0.274 test_super=0.527 test_kl=5.025 (148s)
+[armU_beta0.2_K8_seed1] sup low/trans=0.567/0.530  fine low/trans=0.442/0.307  WS low/trans=0.283/0.316 sel=+0.033  cka=0.636 kl=5.025208138275146
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armU_beta0.2_K8_seed2/uniform] ep00 fine=4.449 super=2.834 kl=0.838 val_fine=0.023 val_super=0.104
+[armU_beta0.2_K8_seed2/uniform] ep10 fine=3.671 super=2.231 kl=3.264 val_fine=0.146 val_super=0.364
+[armU_beta0.2_K8_seed2/uniform] ep20 fine=3.102 super=1.809 kl=4.046 val_fine=0.220 val_super=0.434
+[armU_beta0.2_K8_seed2/uniform] ep30 fine=2.990 super=1.547 kl=4.419 val_fine=0.251 val_super=0.495
+[armU_beta0.2_K8_seed2/uniform] ep40 fine=2.802 super=1.656 kl=5.063 val_fine=0.266 val_super=0.501
+[armU_beta0.2_K8_seed2/uniform] ep49 fine=2.479 super=1.366 kl=4.974 val_fine=0.278 val_super=0.520
+[armU_beta0.2_K8_seed2] DONE test_fine=0.283 test_super=0.531 test_kl=5.253 (133s)
+[armU_beta0.2_K8_seed2] sup low/trans=0.572/0.547  fine low/trans=0.448/0.326  WS low/trans=0.298/0.333 sel=+0.035  cka=0.639 kl=5.253185503387451
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armU_beta0.5_K8_seed1/uniform] ep00 fine=4.665 super=2.996 kl=0.005 val_fine=0.019 val_super=0.049
+[armU_beta0.5_K8_seed1/uniform] ep10 fine=4.126 super=2.580 kl=0.970 val_fine=0.060 val_super=0.208
+[armU_beta0.5_K8_seed1/uniform] ep20 fine=3.843 super=2.309 kl=1.244 val_fine=0.070 val_super=0.247
+[armU_beta0.5_K8_seed1/uniform] ep30 fine=3.641 super=2.201 kl=1.761 val_fine=0.078 val_super=0.259
+[armU_beta0.5_K8_seed1/uniform] ep40 fine=3.757 super=2.188 kl=1.976 val_fine=0.095 val_super=0.298
+[armU_beta0.5_K8_seed1/uniform] ep49 fine=3.835 super=2.280 kl=1.597 val_fine=0.110 val_super=0.356
+[armU_beta0.5_K8_seed1] DONE test_fine=0.110 test_super=0.359 test_kl=1.826 (132s)
+[armU_beta0.5_K8_seed1] sup low/trans=0.492/0.398  fine low/trans=0.374/0.183  WS low/trans=0.243/0.256 sel=+0.013  cka=0.552 kl=1.826185454750061
+D:\IC_experiments\tier_abstraction_v0_1\train_armF.py:120: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print(f"[{run}/{args.mult}] ep{ep:02d} fine={float(l_fine):.3f} super={float(l_super):.3f} "
+[armU_beta0.5_K8_seed2/uniform] ep00 fine=4.595 super=2.995 kl=0.010 val_fine=0.023 val_super=0.047
+[armU_beta0.5_K8_seed2/uniform] ep10 fine=4.367 super=2.828 kl=0.665 val_fine=0.047 val_super=0.186
+[armU_beta0.5_K8_seed2/uniform] ep20 fine=4.089 super=2.530 kl=1.301 val_fine=0.092 val_super=0.285
+[armU_beta0.5_K8_seed2/uniform] ep30 fine=3.689 super=2.151 kl=1.813 val_fine=0.098 val_super=0.319
+[armU_beta0.5_K8_seed2/uniform] ep40 fine=3.918 super=2.509 kl=1.889 val_fine=0.110 val_super=0.344
+[armU_beta0.5_K8_seed2/uniform] ep49 fine=3.264 super=1.841 kl=2.275 val_fine=0.116 val_super=0.348
+[armU_beta0.5_K8_seed2] DONE test_fine=0.122 test_super=0.363 test_kl=2.109 (134s)
+[armU_beta0.5_K8_seed2] sup low/trans=0.516/0.423  fine low/trans=0.383/0.188  WS low/trans=0.266/0.282 sel=+0.016  cka=0.618 kl=2.1090126251220704
+=== armF/U sweep: 16 runs (mults=['asym', 'uniform'] betas=[0.01, 0.1, 0.2, 0.5] seeds=[1, 2]) ===
+
+--- [1/16] armF_beta0.01_K8_seed1 (asym) ---
+
+--- [2/16] armF_beta0.01_K8_seed2 (asym) ---
+
+--- [3/16] armF_beta0.1_K8_seed1 (asym) ---
+
+--- [4/16] armF_beta0.1_K8_seed2 (asym) ---
+
+--- [5/16] armF_beta0.2_K8_seed1 (asym) ---
+
+--- [6/16] armF_beta0.2_K8_seed2 (asym) ---
+
+--- [7/16] armF_beta0.5_K8_seed1 (asym) ---
+
+--- [8/16] armF_beta0.5_K8_seed2 (asym) ---
+
+--- [9/16] armU_beta0.01_K8_seed1 (uniform) ---
+
+--- [10/16] armU_beta0.01_K8_seed2 (uniform) ---
+
+--- [11/16] armU_beta0.1_K8_seed1 (uniform) ---
+
+--- [12/16] armU_beta0.1_K8_seed2 (uniform) ---
+
+--- [13/16] armU_beta0.2_K8_seed1 (uniform) ---
+
+--- [14/16] armU_beta0.2_K8_seed2 (uniform) ---
+
+--- [15/16] armU_beta0.5_K8_seed1 (uniform) ---
+
+--- [16/16] armU_beta0.5_K8_seed2 (uniform) ---
+
+=== armF/U sweep complete ===

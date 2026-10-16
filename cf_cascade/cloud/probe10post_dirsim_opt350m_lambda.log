@@ -1,0 +1,76 @@
+[P10post:opt350m] facebook/opt-350m interference-direction overlap  KDIR=8 tasks=['agnews', 'dbpedia', 'yahoo', 'emotion', 'trec', 'subj'] (Mon Jul  6 14:27:55 2026)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  96%|█████████▌| 373/388 [00:00<00:00, 3729.68it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3841.42it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2167088.71 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 365999.51 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 606851.07 examples/s]
+[P10post:opt350m] w_A acc=0.823; 144 carriers (15s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  13%|█▎        | 72000/560000 [00:00<00:00, 712159.68 examples/s]Generating train split:  30%|███       | 169000/560000 [00:00<00:00, 858645.05 examples/s]Generating train split:  52%|█████▏    | 289000/560000 [00:00<00:00, 1008047.22 examples/s]Generating train split:  75%|███████▍  | 419000/560000 [00:00<00:00, 1104318.97 examples/s]Generating train split:  96%|█████████▌| 537000/560000 [00:00<00:00, 1123214.01 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1034560.93 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 971571.98 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▍         | 64000/1400000 [00:00<00:02, 633815.53 examples/s]Generating train split:  11%|█         | 149000/1400000 [00:00<00:01, 710221.89 examples/s]Generating train split:  16%|█▌        | 224000/1400000 [00:00<00:01, 724833.80 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 745303.14 examples/s]Generating train split:  28%|██▊       | 398000/1400000 [00:00<00:01, 808586.16 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 732259.28 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 745470.10 examples/s]Generating train split:  49%|████▊     | 682000/1400000 [00:00<00:00, 791111.58 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 736217.44 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 742496.63 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 751612.27 examples/s]Generating train split:  75%|███████▍  | 1046000/1400000 [00:01<00:00, 759520.40 examples/s]Generating train split:  81%|████████  | 1130000/1400000 [00:01<00:00, 762966.88 examples/s]Generating train split:  87%|████████▋ | 1217000/1400000 [00:01<00:00, 767641.62 examples/s]Generating train split:  93%|█████████▎| 1306000/1400000 [00:01<00:00, 769117.72 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 796812.04 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 761297.23 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 867422.12 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1825048.65 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 762600.73 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 794676.77 examples/s]
+Repo card metadata block was not found. Setting CardData to empty.
+Generating train split:   0%|          | 0/5452 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 5452/5452 [00:00<00:00, 755620.57 examples/s]
+Generating test split:   0%|          | 0/500 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 500/500 [00:00<00:00, 177049.56 examples/s]
+[P10post:opt350m] datasets loaded ({'agnews': 2400, 'dbpedia': 900, 'yahoo': 900, 'emotion': 900, 'trec': 900, 'subj': 2200})
+[hb] dir agnews 1/8 (84s)
+[hb] dir agnews 2/8 (104s)
+[hb] dir agnews 3/8 (125s)
+[hb] dir agnews 4/8 (145s)
+[hb] dir agnews 5/8 (166s)
+[hb] dir agnews 6/8 (186s)
+[hb] dir agnews 7/8 (206s)
+[hb] dir agnews 8/8 (227s)
+[P10post:opt350m] agnews   self_consistency=+0.199 (228s)
+[hb] dir dbpedia 1/8 (249s)
+[hb] dir dbpedia 2/8 (270s)
+[hb] dir dbpedia 3/8 (291s)
+[hb] dir dbpedia 4/8 (313s)
+[hb] dir dbpedia 5/8 (333s)
+[hb] dir dbpedia 6/8 (354s)
+[hb] dir dbpedia 7/8 (374s)
+[hb] dir dbpedia 8/8 (394s)
+[P10post:opt350m] dbpedia  self_consistency=+0.188 (395s)
+[hb] dir yahoo 1/8 (415s)
+[hb] dir yahoo 2/8 (435s)
+[hb] dir yahoo 3/8 (455s)
+[hb] dir yahoo 4/8 (476s)
+[hb] dir yahoo 5/8 (496s)
+[hb] dir yahoo 6/8 (516s)
+[hb] dir yahoo 7/8 (536s)
+[hb] dir yahoo 8/8 (556s)
+[P10post:opt350m] yahoo    self_consistency=+0.183 (557s)
+[hb] dir emotion 1/8 (577s)
+[hb] dir emotion 2/8 (598s)
+[hb] dir emotion 3/8 (619s)
+[hb] dir emotion 4/8 (640s)
+[hb] dir emotion 5/8 (660s)
+[hb] dir emotion 6/8 (681s)
+[hb] dir emotion 7/8 (702s)
+[hb] dir emotion 8/8 (723s)
+[P10post:opt350m] emotion  self_consistency=+0.180 (723s)
+[hb] dir trec 1/8 (744s)
+[hb] dir trec 2/8 (764s)
+[hb] dir trec 3/8 (785s)
+[hb] dir trec 4/8 (804s)
+[hb] dir trec 5/8 (824s)
+[hb] dir trec 6/8 (844s)
+[hb] dir trec 7/8 (864s)
+[hb] dir trec 8/8 (885s)
+[P10post:opt350m] trec     self_consistency=+0.196 (886s)
+[hb] dir subj 1/8 (907s)
+[hb] dir subj 2/8 (928s)
+[hb] dir subj 3/8 (948s)
+[hb] dir subj 4/8 (969s)
+[hb] dir subj 5/8 (990s)
+[hb] dir subj 6/8 (1010s)
+[hb] dir subj 7/8 (1029s)
+[hb] dir subj 8/8 (1049s)
+[P10post:opt350m] subj     self_consistency=+0.156 (1050s)
+[P10post:opt350m] OVERLAP with probe dirs (cos of realized in-V directions):
+   probe=agnews: agnews=+1.004  dbpedia=+0.230  yahoo=+0.239  emotion=+0.142  trec=+0.165  subj=+0.170
+   probe=yahoo: agnews=+0.239  dbpedia=+0.216  yahoo=+1.004  emotion=+0.160  trec=+0.170  subj=+0.167
+[P10post:opt350m] self_consistency={'agnews': 0.199, 'dbpedia': 0.188, 'yahoo': 0.183, 'emotion': 0.18, 'trec': 0.196, 'subj': 0.156} saved /home/ubuntu/gateA/probe10post_dirsim_opt350m.json wall=1050s

@@ -1,0 +1,110 @@
+{
+ "config": {
+  "lock": "nolock",
+  "smoke": true,
+  "model": "Qwen/Qwen2.5-1.5B",
+  "ncap": 3,
+  "seeds": [
+   0
+  ],
+  "steps": 80,
+  "per": 20,
+  "lora_r": 16
+ },
+ "median_forget": 0.042,
+ "inband": true,
+ "cross_seed_dominance_rho": NaN,
+ "cross_seed_curl_rho": NaN,
+ "phi_regression": {
+  "n": 3,
+  "univariate": {
+   "dprime": {
+    "rho": -1.0,
+    "ci": [
+     -1.0,
+     -0.5
+    ],
+    "perm_p": 0.3332,
+    "excl0": true
+   },
+   "spread": {
+    "rho": -0.5,
+    "ci": [
+     -0.5,
+     1.0
+    ],
+    "perm_p": 1.0,
+    "excl0": false
+   },
+   "munorm": {
+    "rho": 1.0,
+    "ci": [
+     1.0,
+     1.0
+    ],
+    "perm_p": 0.3332,
+    "excl0": true
+   },
+   "wnorm": {
+    "rho": -1.0,
+    "ci": [
+     -1.0,
+     -0.5
+    ],
+    "perm_p": 0.3332,
+    "excl0": true
+   },
+   "iso": {
+    "rho": 0.5,
+    "ci": [
+     -0.5,
+     1.0
+    ],
+    "perm_p": 1.0,
+    "excl0": false
+   }
+  },
+  "trio_loo_r2": -0.272,
+  "perm_null_loo_r2_95": -0.272,
+  "ordinal_loo_rankcorr": 0.5,
+  "ordinal_perm_p": 1.0
+ },
+ "phi_mean": {
+  "0": 0.014750000000000013,
+  "1": -0.001187500000000008,
+  "2": -0.013562500000000005
+ },
+ "preds": {
+  "dprime": {
+   "0": 1.0838611723944809,
+   "1": 1.4550149562024586,
+   "2": 1.7523735551358504
+  },
+  "spread": {
+   "0": 4.854712963104248,
+   "1": 8.286162376403809,
+   "2": 6.199111461639404
+  },
+  "munorm": {
+   "0": 116.37687683105469,
+   "1": 115.3676986694336,
+   "2": 85.8495864868164
+  },
+  "wnorm": {
+   "0": 1.1147960424423218,
+   "1": 1.3468146324157715,
+   "2": 1.5887480974197388
+  },
+  "iso": {
+   "0": 0.009847432374954224,
+   "1": 0.012052655220031738,
+   "2": -0.9766892194747925
+  }
+ },
+ "decision": {
+  "law_pass": false,
+  "transitive": false,
+  "cyclic_real": false,
+  "headline": "Mixed \u2014 see numbers."
+ }
+}

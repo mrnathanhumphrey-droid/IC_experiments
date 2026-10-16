@@ -1,0 +1,21 @@
+[s] start; loading model...
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   4%|4         | 12/292 [00:00<00:08, 32.24it/s]Loading weights:   5%|5         | 16/292 [00:00<00:14, 19.71it/s]Loading weights:  56%|#####6    | 164/292 [00:00<00:00, 276.47it/s]Loading weights:  75%|#######5  | 219/292 [00:01<00:00, 277.97it/s]Loading weights:  90%|######### | 264/292 [00:01<00:00, 244.25it/s]Loading weights: 100%|##########| 292/292 [00:01<00:00, 201.65it/s]
+[s] model loaded (93s); loading data...
+Using the latest cached version of the dataset since stanfordnlp/sst2 couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at D:\IC_experiments\cf_cascade\hf_cache\datasets\stanfordnlp___sst2\default\0.0.0\8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb (last modified on Wed Jun 17 21:10:07 2026).
+[s] data loaded (103s)
+[s] K-FAC binding bases built on 24 matrices (109s)
+  [self_sst2     ] s_stiff(top1%)=0.5428  mean_binding_felt=3.254e-07  pull_energy=5.287e-03
+  [null_permuted ] s_stiff(top1%)=0.7862  mean_binding_felt=1.084e-06  pull_energy=1.600e+01
+  [low_agnews    ] s_stiff(top1%)=0.5335  mean_binding_felt=1.304e-07  pull_energy=1.170e+02
+  [medium_subj   ] s_stiff(top1%)=0.5062  mean_binding_felt=1.426e-07  pull_energy=1.064e+02
+  [high_yelp     ] s_stiff(top1%)=0.5095  mean_binding_felt=3.976e-07  pull_energy=5.869e+00
+
+[s] === SHAPE OF MEASURED ALIGNMENT ACROSS LEVELS ===
+  s_stiff by level: null=0.786  low=0.534  medium=0.506  high=0.509
+  s_normalized(bind_felt): null=1.00  low=0.00  medium=0.01  high=0.28
+  range=0.2800  max-gap/range=0.90
+  SHAPE: STEP_LIKE  (monotone in hand-order AG<SUBJ<Yelp: False)
+  self(no-drive) s_stiff=0.5428 pull_energy=5.287e-03 (should be ~0 drive at the min)
+    -> STEP-LIKE: pull-vs-stiff is ~binary -> flat sigma_cpl peak is substrate-structure (two-scale), PRE-FLAG to physics; may need continuum task A for a clean peak
+[s] saved s_measurement.json  wall=122s

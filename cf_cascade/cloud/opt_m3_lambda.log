@@ -1,0 +1,39 @@
+[M3] RUNG-4 M3 ON OPT — matched-conditions deposit-routing mechanism (N=30, pinned w_A)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  84%|████████▎ | 324/388 [00:00<00:00, 3015.70it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3345.06it/s]
+[M3] loaded pinned w_A /home/ubuntu/gateA/opt350m_sst2_wA.pt
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2423824.31 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 400025.49 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 619500.98 examples/s]
+[M3] w_A SST acc=0.823 (dispositive 0.823); 144 carriers (11s)
+[M3] V basis + M_topcurv (KPROJ=128, K_M=16) done (44s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 69000/560000 [00:00<00:00, 682433.25 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 836280.53 examples/s]Generating train split:  50%|████▉     | 279000/560000 [00:00<00:00, 974237.31 examples/s]Generating train split:  76%|███████▌  | 423000/560000 [00:00<00:00, 1108764.94 examples/s]Generating train split:  98%|█████████▊| 551000/560000 [00:00<00:00, 1164418.16 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1053109.54 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1202978.26 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▍         | 66000/1400000 [00:00<00:02, 652228.56 examples/s]Generating train split:  11%|█         | 151000/1400000 [00:00<00:01, 736382.81 examples/s]Generating train split:  16%|█▋        | 228000/1400000 [00:00<00:01, 745825.15 examples/s]Generating train split:  22%|██▏       | 307000/1400000 [00:00<00:01, 758596.98 examples/s]Generating train split:  29%|██▊       | 402000/1400000 [00:00<00:01, 779673.48 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 785520.62 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 787133.13 examples/s]Generating train split:  49%|████▉     | 689000/1400000 [00:00<00:00, 843419.24 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 734509.33 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 750117.74 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 761317.94 examples/s]Generating train split:  75%|███████▍  | 1046000/1400000 [00:01<00:00, 774440.08 examples/s]Generating train split:  81%|████████  | 1130000/1400000 [00:01<00:00, 781359.64 examples/s]Generating train split:  87%|████████▋ | 1217000/1400000 [00:01<00:00, 788194.94 examples/s]Generating train split:  93%|█████████▎| 1306000/1400000 [00:01<00:00, 792813.31 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 793867.95 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 776081.16 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 775700.67 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 247310.43 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 259160.80 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 249491.44 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 245345.37 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 240618.49 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 245157.27 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1749357.80 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 727925.03 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 693101.55 examples/s]
+[M3] held-out=subj FORCED; stream=['agnews', 'dbpedia', 'yahoo', 'newscat', 'emotion'] (57s)
+[M3] seed 0: ret A/B/D=0.597/0.790/0.767 | resid B/D(meanCarr)=0.124/0.100 | mfB/D=0.218/0.014 (196s)
+[M3] seed 5: ret A/B/D=0.580/0.653/0.687 | resid B/D(meanCarr)=0.125/0.109 | mfB/D=0.217/0.014 (894s)
+[M3] seed 10: ret A/B/D=0.527/0.573/0.583 | resid B/D(meanCarr)=0.126/0.108 | mfB/D=0.219/0.015 (1589s)
+[M3] seed 15: ret A/B/D=0.513/0.653/0.550 | resid B/D(meanCarr)=0.128/0.110 | mfB/D=0.219/0.015 (2280s)
+[M3] seed 20: ret A/B/D=0.510/0.660/0.543 | resid B/D(meanCarr)=0.131/0.112 | mfB/D=0.219/0.015 (2975s)
+[M3] seed 25: ret A/B/D=0.540/0.773/0.760 | resid B/D(meanCarr)=0.129/0.111 | mfB/D=0.219/0.015 (3670s)
+[M3] seed 29: ret A/B/D=0.510/0.557/0.587 | resid B/D(meanCarr)=0.129/0.112 | mfB/D=0.219/0.015 (4223s)
+
+[M3] === RUNG-4 M3 ON OPT VERDICT (QUARANTINE) ===
+  M3 QUARANTINED (stat-positive but rows fail): resid_B-D=+0.017±0.001 BUT deposit_specific=False (swap margin +0.008), carrier-types pos 6/6, M-stab 0.614, resid_D-A=+0.063. Positive does NOT survive the corroboration rows (curvature-family routing and/or pooling and/or generic-childhood confound) -> NOT deposit-specific mechanism. needs-corroboration, do not claim.
+  ANCHOR (vs dispositive): B-A=+0.114(ref+0.089) B-D=+0.060(ref+0.055) D-A=+0.054(ref+0.034) A_forget=0.241(ref0.237) mapfrac B/D 0.219/0.014(ref .219/.014) regime_ok=True
+  M3 resid_B-D=+0.017±0.001 | swap(topcurv)=+0.009 margin=+0.008 | resid_D-A=+0.063 | M-stab=0.614(chance 0.125) | frac_seed_pos=1.00
+  ROWS: (a)perlayer fracpos=0.99 (b)Mstab=0.614 (c)resid_D-A=+0.063 (d)types_pos=6/6 | deposit_specific=False
+    [q_proj   ] resid_B-D=+0.007±0.002 fracpos=0.80 (n_layers 24)
+    [k_proj   ] resid_B-D=+0.012±0.001 fracpos=1.00 (n_layers 24)
+    [v_proj   ] resid_B-D=+0.022±0.001 fracpos=1.00 (n_layers 24)
+    [out_proj ] resid_B-D=+0.038±0.002 fracpos=1.00 (n_layers 24)
+    [fc1      ] resid_B-D=+0.013±0.001 fracpos=1.00 (n_layers 24)
+    [fc2      ] resid_B-D=+0.010±0.002 fracpos=1.00 (n_layers 24)
+  M2 fracV A/B/D = 0.290/0.254/0.273
+[M3] saved opt_m3.json wall=4223s

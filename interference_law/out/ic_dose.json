@@ -1,0 +1,53 @@
+{
+ "model": "Qwen/Qwen2.5-1.5B",
+ "kA": 8,
+ "layer": 15,
+ "clean": {
+  "world": 0.93,
+  "sports": 0.995,
+  "business": 0.878,
+  "technology": 0.937,
+  "length": 0.731
+ },
+ "cos_range": [
+  -0.888,
+  0.757
+ ],
+ "doses": {
+  "4": {
+   "mean_drop": -0.0238,
+   "rho_cos_drop": 0.42,
+   "aligned_drop": -0.0122,
+   "antipar_drop": -0.0413,
+   "max_drop": 0.0009
+  },
+  "8": {
+   "mean_drop": -0.0206,
+   "rho_cos_drop": 0.403,
+   "aligned_drop": -0.009,
+   "antipar_drop": -0.038,
+   "max_drop": 0.0145
+  },
+  "16": {
+   "mean_drop": -0.0098,
+   "rho_cos_drop": -0.036,
+   "aligned_drop": -0.0106,
+   "antipar_drop": -0.0085,
+   "max_drop": 0.0331
+  },
+  "32": {
+   "mean_drop": -0.0044,
+   "rho_cos_drop": -0.102,
+   "aligned_drop": -0.0059,
+   "antipar_drop": -0.0021,
+   "max_drop": 0.0617
+  },
+  "64": {
+   "mean_drop": 0.0107,
+   "rho_cos_drop": -0.027,
+   "aligned_drop": 0.0086,
+   "antipar_drop": 0.0138,
+   "max_drop": 0.0539
+  }
+ }
+}

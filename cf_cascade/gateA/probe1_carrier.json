@@ -1,0 +1,133 @@
+{
+ "opt350m": {
+  "cell": "opt350m",
+  "family": "OPT",
+  "n_carriers": 144,
+  "dominant_sig": "DEFLECT",
+  "carrier_universal": false,
+  "by_type": {
+   "fc1": {
+    "n": 24,
+    "deflect": -0.016997156848017236,
+    "surv_end": 0.9946132160686431,
+    "swap_gap": 4.863444191230838e-05,
+    "gnorm_ratio": 1.3054329927981498,
+    "sig_counts": {
+     "DEFLECT": 8,
+     "PASS": 4,
+     "ABSORB": 12
+    }
+   },
+   "fc2": {
+    "n": 24,
+    "deflect": 0.024056483602527965,
+    "surv_end": 0.9623359359467337,
+    "swap_gap": 0.00011372368585847235,
+    "gnorm_ratio": 1.2442582655954817,
+    "sig_counts": {
+     "DEFLECT": 16,
+     "PASS": 8
+    }
+   },
+   "k_proj": {
+    "n": 24,
+    "deflect": -0.026585005526582942,
+    "surv_end": 0.9985614270389555,
+    "swap_gap": -0.0004629579865557512,
+    "gnorm_ratio": 1.1845248918539824,
+    "sig_counts": {
+     "DEFLECT": 3,
+     "PASS": 7,
+     "ABSORB": 14
+    }
+   },
+   "out_proj": {
+    "n": 24,
+    "deflect": 0.03275884152742703,
+    "surv_end": 0.9879964552641292,
+    "swap_gap": 3.0624237422599196e-05,
+    "gnorm_ratio": 1.085509971893437,
+    "sig_counts": {
+     "DEFLECT": 17,
+     "PASS": 7
+    }
+   },
+   "q_proj": {
+    "n": 24,
+    "deflect": 0.0298864009535884,
+    "surv_end": 0.9982766378547562,
+    "swap_gap": -0.0006316164144378153,
+    "gnorm_ratio": 1.223316345179827,
+    "sig_counts": {
+     "DEFLECT": 20,
+     "PASS": 4
+    }
+   },
+   "v_proj": {
+    "n": 24,
+    "deflect": -0.10007739773126784,
+    "surv_end": 0.9784773145949519,
+    "swap_gap": 0.0003483835660525638,
+    "gnorm_ratio": 1.3309931212348398,
+    "sig_counts": {
+     "PASS": 6,
+     "ABSORB": 18
+    }
+   }
+  },
+  "fly_around": {
+   "corr_G5_surv": -0.10203761755485893,
+   "corr_G5_deflect": 0.003596977734908769,
+   "note": "predict corr(G5,surv)<0 and corr(G5,deflect)<0 (high G5 -> erase): G5 = static snapshot of collision"
+  }
+ },
+ "pythia410m": {
+  "cell": "pythia410m",
+  "family": "PYTHIA",
+  "n_carriers": 72,
+  "dominant_sig": "DEFLECT",
+  "carrier_universal": true,
+  "by_type": {
+   "4hh": {
+    "n": 24,
+    "deflect": 0.3228220788543105,
+    "surv_end": 0.8851022157982289,
+    "swap_gap": -0.0006082436507710535,
+    "gnorm_ratio": 1.1084558947476557,
+    "sig_counts": {
+     "DEFLECT": 23,
+     "PASS": 1
+    }
+   },
+   "h4h": {
+    "n": 24,
+    "deflect": 0.26242369041786684,
+    "surv_end": 0.986274134007475,
+    "swap_gap": -0.0007955410549549282,
+    "gnorm_ratio": 0.9782916610765753,
+    "sig_counts": {
+     "DEFLECT": 22,
+     "PASS": 1,
+     "ABSORB": 1
+    }
+   },
+   "qkv": {
+    "n": 24,
+    "deflect": 0.17930625679255566,
+    "surv_end": 0.9982774525855939,
+    "swap_gap": -0.0010886921409770127,
+    "gnorm_ratio": 1.2914661567487533,
+    "sig_counts": {
+     "DEFLECT": 20,
+     "PASS": 3,
+     "ABSORB": 1
+    }
+   }
+  },
+  "fly_around": {
+   "corr_G5_surv": -0.1786288507299505,
+   "corr_G5_deflect": 0.40816129654640176,
+   "note": "predict corr(G5,surv)<0 and corr(G5,deflect)<0 (high G5 -> erase): G5 = static snapshot of collision"
+  }
+ }
+}

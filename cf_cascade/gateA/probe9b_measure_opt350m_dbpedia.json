@@ -1,0 +1,34 @@
+{
+  "cell": "opt350m",
+  "family": "OPT",
+  "mode": "measure",
+  "phase2": "dbpedia",
+  "keys": [
+    "dbpedia"
+  ],
+  "VOID": false,
+  "n_seeds": 100,
+  "w_A_acc": 0.8233333333333334,
+  "chosen_child_lr": 1e-05,
+  "child_lr_from_env": true,
+  "omega_cos2_min": 0.1740236707994706,
+  "omega_cos2_mean": 0.01453744440146847,
+  "sigma_sem": 0.010298917070031166,
+  "ret_anchor_ch": [
+    0.7876333333333335,
+    0.0018148254655084982
+  ],
+  "childhood_nondestructive": true,
+  "forget_noch": [
+    0.05703333333333336,
+    0.0032059481054393137
+  ],
+  "forget_ch": [
+    0.03073333333333333,
+    0.0037400312691875407
+  ],
+  "P_protection": [
+    0.02630000000000003,
+    0.005019131747790998
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "prereg": "PREREG_PROBE9_AIMING_AXIS_v2_MEASURE9_2026_06_28.md",
+  "sha256": "6e269459d7b16acc993c2433b57fd69d6375a6459b7bb1234f1b5adfbc592d32",
+  "short": "6e269459",
+  "locked": "2026-06-28",
+  "probe": "probe9_v2_measure9_aiming_axis",
+  "supersedes": "v1 11fe73b3 (down-select-5 -> measure-ALL-9; screen=abort-gate only)",
+  "reason": "n=5 underpowers Spearman (n=9 crit 0.60) + Omega* CI; measure-all removes hand-pick discretion; ~+$50",
+  "predictions": "P1 OPT rho(S,Omega)>=0.70 (n=9) +Omega* CI; P2 Pythia fork; P3 partials",
+  "cells": [
+    "opt350m",
+    "pythia410m"
+  ],
+  "N": 100,
+  "M_omega": 12,
+  "ladder": "all 9 candidates clearing nondestruct gate",
+  "fired": false
+}

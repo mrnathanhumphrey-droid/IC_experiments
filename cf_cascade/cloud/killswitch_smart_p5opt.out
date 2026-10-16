@@ -1,0 +1,4 @@
+[SMARTKILL] watching ['7f319627f0c34df0b8444cbb4ba1619f']  poll=180s stall=600s maxfuse=72000s
+[SMARTKILL] 7f319627f0c3 alive (log advancing)
+[SMARTKILL] 7f319627f0c3 gone -> done, drop
+[SMARTKILL] watcher exit

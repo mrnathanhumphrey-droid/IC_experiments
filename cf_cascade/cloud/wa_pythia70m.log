@@ -1,0 +1,13 @@
+[WA] EleutherAI/pythia-70m (tag pythia70m) target acc>=0.8
+Loading weights:   0%|          | 0/76 [00:00<?, ?it/s]Loading weights: 100%|██████████| 76/76 [00:00<00:00, 1533.77it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2049705.26 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 392428.44 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 584781.23 examples/s]
+[WA] step 250: SST acc=0.580 (18s)
+[WA] step 500: SST acc=0.757 (24s)
+[WA] step 750: SST acc=0.490 (29s)
+[WA] step 1000: SST acc=0.490 (35s)
+[WA] step 1250: SST acc=0.650 (41s)
+[WA] step 1500: SST acc=0.723 (47s)
+[WA] MAXSTEPS reached; final acc=0.723 (below target 0.8) — saved best-effort /home/ubuntu/gateA/pythia70m_sst2_wA.pt
+[WA] DONE tag=pythia70m acc=0.757 stop_step=1500 matched=False wall=47s

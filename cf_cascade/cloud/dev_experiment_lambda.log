@@ -1,0 +1,42 @@
+[DEV] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  68%|██████▊   | 200/292 [00:00<00:00, 1944.38it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2275.02it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2058172.96 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 394417.46 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 604162.92 examples/s]
+[DEV] pre SST-2 acc=0.753 (13s)
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1547642.27 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 702151.84 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 819840.50 examples/s]
+[DEV]   cand subj n=2400
+[DEV]   cand emotion n=900
+[DEV]   precheck subj: forget=0.263 taskB_acc=0.860 (38s)
+[DEV]   precheck emotion: forget=0.080 taskB_acc=0.800 (61s)
+[DEV] HELD-OUT depth task-B = subj (forget 0.263, taskB 0.860)
+[DEV]   stream +agnews n=2400 (4 labels)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 65000/560000 [00:00<00:00, 639513.59 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 814541.14 examples/s]Generating train split:  50%|████▉     | 278000/560000 [00:00<00:00, 956734.47 examples/s]Generating train split:  75%|███████▌  | 420000/560000 [00:00<00:00, 1080899.76 examples/s]Generating train split:  97%|█████████▋| 543000/560000 [00:00<00:00, 1127023.27 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1021124.61 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1081743.01 examples/s]
+[DEV]   stream +dbpedia n=900 (14 labels)
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▍         | 69000/1400000 [00:00<00:01, 676831.31 examples/s]Generating train split:  11%|█         | 150000/1400000 [00:00<00:01, 721732.78 examples/s]Generating train split:  16%|█▌        | 225000/1400000 [00:00<00:01, 731076.90 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 742913.99 examples/s]Generating train split:  29%|██▊       | 401000/1400000 [00:00<00:01, 816850.49 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 732754.38 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 748683.29 examples/s]Generating train split:  49%|████▉     | 685000/1400000 [00:00<00:00, 801310.44 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 706552.56 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 723884.91 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 734185.51 examples/s]Generating train split:  75%|███████▌  | 1055000/1400000 [00:01<00:00, 784070.37 examples/s]Generating train split:  84%|████████▍ | 1181000/1400000 [00:01<00:00, 800433.08 examples/s]Generating train split:  90%|█████████ | 1266000/1400000 [00:01<00:00, 792307.59 examples/s]Generating train split:  97%|█████████▋| 1355000/1400000 [00:01<00:00, 790476.02 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 763618.82 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 883799.03 examples/s]
+[DEV]   stream +yahoo n=900 (10 labels)
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 246017.90 examples/s]Generating train split:  38%|███▊      | 79763/209527 [00:00<00:00, 256473.74 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 253154.94 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 244091.09 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 242598.98 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 245667.49 examples/s]
+[DEV]   stream +newscat n=900 (42 labels)
+[DEV]   stream +emotion n=900 (6 labels)
+[DEV] stream=['agnews', 'dbpedia', 'yahoo', 'newscat', 'emotion'] (NON-sentiment; held-out=subj excluded) (77s)
+[DEV] seed 0: A_sstA=0.490 B_sstA=0.710 C_sstA=0.553 | taskB A/B/C=0.86/0.79/0.80 | postchild B/C=0.750/0.603 (223s)
+[DEV] seed 1: A_sstA=0.517 B_sstA=0.710 C_sstA=0.497 | taskB A/B/C=0.90/0.90/0.88 | postchild B/C=0.687/0.613 (370s)
+[DEV] seed 2: A_sstA=0.570 B_sstA=0.667 C_sstA=0.553 | taskB A/B/C=0.91/0.88/0.91 | postchild B/C=0.753/0.640 (512s)
+[DEV] seed 3: A_sstA=0.517 B_sstA=0.673 C_sstA=0.537 | taskB A/B/C=0.89/0.89/0.88 | postchild B/C=0.767/0.720 (654s)
+[DEV] seed 4: A_sstA=0.497 B_sstA=0.540 C_sstA=0.557 | taskB A/B/C=0.88/0.88/0.86 | postchild B/C=0.673/0.707 (795s)
+[DEV] seed 5: A_sstA=0.490 B_sstA=0.613 C_sstA=0.523 | taskB A/B/C=0.88/0.84/0.89 | postchild B/C=0.680/0.693 (937s)
+[DEV] seed 6: A_sstA=0.607 B_sstA=0.657 C_sstA=0.543 | taskB A/B/C=0.86/0.86/0.86 | postchild B/C=0.747/0.683 (1079s)
+
+[DEV] === VERDICT (held-out=subj) ===
+  CLAIM LANDS (in-neighborhood): childhood RETAINS task-A better (B-A=+0.126>2SE 0.048) AND it's the MAP not compute (B-C=+0.115>2SE 0.049) AND task-B not starved (B 0.86 vs A 0.88). The childhood makes depth SLIVER.
+  task-A retention: A=0.527 B=0.653 C=0.538 (pre 0.753)
+  PAIRED B-A=+0.126±0.024 | B-C=+0.115±0.025
+  task-B acc: A=0.881 B=0.861 C=0.867 (starved=False)
+  post-childhood SST (childhood's own effect on A): B=0.722 C=0.666
+  childhood loss drop (master-none/structure check): real=+8.701 scrambled=+7.368
+[DEV] saved dev_experiment.json wall=1079s

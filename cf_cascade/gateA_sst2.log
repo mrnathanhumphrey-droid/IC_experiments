@@ -1,0 +1,23 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|##########| 292/292 [00:00<00:00, 3505.17it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|##########| 67349/67349 [00:00<00:00, 3437777.54 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|##########| 872/872 [00:00<00:00, 157770.39 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|##########| 1821/1821 [00:00<00:00, 302212.94 examples/s]
+[A2] SST-2: 67349 train, 872 val
+[A2] PRE-FT baseline: val_loss 7.0696  acc 0.603
+  step  150  val 0.5257  acc 0.733  train 0.5958  (51s)
+  step  300  val 0.4999  acc 0.740  train 0.3645  (79s)
+  step  450  val 0.5702  acc 0.752  train 0.5188  (106s)
+  step  600  val 0.4367  acc 0.810  train 0.3771  (134s)
+  step  750  val 0.4629  acc 0.790  train 0.1468  (164s)
+  step  900  val 0.4788  acc 0.770  train 0.2176  (195s)
+[A2] overfit guard: restored best-val @ step 600
+[A2] FREEZE step=600 reason=overfit_guard_best_val  grad_norm(8b)=2.6696  val_acc 0.810 (base 0.603)
+
+[A2] === TASK-A BASIN CHECK (SST-2) ===
+  val acc: 0.603 (pre-FT) -> 0.810 (task-A min)  [learned +0.208]
+  val loss: 7.0696 -> 0.4367
+  grad_norm(8-batch) = 2.6696   (WikiText was 2.02 at its non-basin)
+  GENUINE BASIN: NO - not enough learning or not stationary, reconsider
+  re-frozen ESD decade-span median = 5.91 [5.69,5.99]  ESD PASS=True
+[A2] saved frozen_basis_sst2.npz, pythia410m_sst2.pt, gateA_sst2_summary.json  wall=224s

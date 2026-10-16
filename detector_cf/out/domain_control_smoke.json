@@ -1,0 +1,225 @@
+{
+ "config": {
+  "paradigms": [
+   "swap",
+   "diffusion",
+   "celebdf"
+  ],
+  "subsample": 40,
+  "boot": 100,
+  "smoke": true,
+  "prereg": "DOMAIN_CONTROL_2026_07_26"
+ },
+ "C_shared": [
+  [
+   1.0,
+   -0.9,
+   0.623
+  ],
+  [
+   -0.9,
+   1.0,
+   -0.392
+  ],
+  [
+   0.623,
+   -0.392,
+   1.0
+  ]
+ ],
+ "C_forgery": [
+  [
+   1.0,
+   -0.037,
+   0.718
+  ],
+  [
+   -0.037,
+   1.0,
+   -0.091
+  ],
+  [
+   0.718,
+   -0.091,
+   1.0
+  ]
+ ],
+ "C_domain": [
+  [
+   1.0,
+   -0.466,
+   -0.27
+  ],
+  [
+   -0.466,
+   1.0,
+   -0.336
+  ],
+  [
+   -0.27,
+   -0.336,
+   1.0
+  ]
+ ],
+ "pairs": [
+  {
+   "pair": "swap-diffusion",
+   "shared": [
+    -0.9,
+    -0.939,
+    -0.75
+   ],
+   "forgery": [
+    -0.037,
+    -0.932,
+    0.811
+   ],
+   "domain": [
+    -0.466,
+    -0.898,
+    0.772
+   ]
+  },
+  {
+   "pair": "swap-celebdf",
+   "shared": [
+    0.623,
+    0.31,
+    0.824
+   ],
+   "forgery": [
+    0.718,
+    -0.455,
+    0.949
+   ],
+   "domain": [
+    -0.27,
+    -0.913,
+    0.785
+   ]
+  },
+  {
+   "pair": "diffusion-celebdf",
+   "shared": [
+    -0.392,
+    -0.6,
+    -0.228
+   ],
+   "forgery": [
+    -0.091,
+    -0.887,
+    0.676
+   ],
+   "domain": [
+    -0.336,
+    -0.56,
+    0.067
+   ]
+  }
+ ],
+ "swap_diffusion": {
+  "shared": -0.9,
+  "forgery": -0.037,
+  "domain": -0.466,
+  "forgery_ci": [
+   -0.932,
+   0.811
+  ],
+  "forgery_flips_positive": false
+ },
+ "corr_shared_vs_forgery": 0.486,
+ "corr_shared_vs_domain": 1.0,
+ "routing": {
+  "shared": {
+   "-0.5": [
+    [
+     "swap",
+     "celebdf"
+    ],
+    [
+     "diffusion"
+    ]
+   ],
+   "-0.2": [
+    [
+     "swap",
+     "celebdf"
+    ],
+    [
+     "diffusion"
+    ]
+   ],
+   "0.0": [
+    [
+     "swap",
+     "celebdf"
+    ],
+    [
+     "diffusion"
+    ]
+   ],
+   "0.2": [
+    [
+     "swap",
+     "celebdf"
+    ],
+    [
+     "diffusion"
+    ]
+   ],
+   "0.5": [
+    [
+     "swap",
+     "celebdf"
+    ],
+    [
+     "diffusion"
+    ]
+   ]
+  },
+  "forgery": {
+   "-0.5": [
+    [
+     "swap",
+     "diffusion",
+     "celebdf"
+    ]
+   ],
+   "-0.2": [
+    [
+     "swap",
+     "diffusion",
+     "celebdf"
+    ]
+   ],
+   "0.0": [
+    [
+     "swap",
+     "celebdf"
+    ],
+    [
+     "diffusion"
+    ]
+   ],
+   "0.2": [
+    [
+     "swap",
+     "celebdf"
+    ],
+    [
+     "diffusion"
+    ]
+   ],
+   "0.5": [
+    [
+     "swap",
+     "celebdf"
+    ],
+    [
+     "diffusion"
+    ]
+   ]
+  }
+ },
+ "verdict": "MIXED/NUANCED: see per-pair flips + routing; partial confound."
+}

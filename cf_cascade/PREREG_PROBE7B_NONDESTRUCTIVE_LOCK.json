@@ -1,0 +1,16 @@
+{
+  "prereg": "PREREG_PROBE7B_NONDESTRUCTIVE_2026_06_26.md",
+  "sha256": "9d27939af3e4dea310d80d768e6e776fbfa29d4b003d8b4a8049bde494efe373",
+  "short": "9d27939a",
+  "locked": "2026-06-26",
+  "probe": "probe7b_nondestructive_childhood_confirmatory",
+  "stage1": "calibrate lr_child grid [1e-5,1.5e-5,2e-5,3e-5] x12 seeds; chosen=max lr with r_cal>=wA-0.05",
+  "stage2": "identical Probe-7 (D2/forget/robust, N=100) at chosen_lr",
+  "supersedes_softvoid": "PREREG_PROBE7_REORG_LOCK.json (7bdfcbc6) result tripped childhood_nondestructive gate",
+  "N": 100,
+  "cells": [
+    "opt350m",
+    "pythia410m"
+  ],
+  "fired": false
+}

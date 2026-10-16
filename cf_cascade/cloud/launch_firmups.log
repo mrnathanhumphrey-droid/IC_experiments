@@ -1,0 +1,70 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=59525495ea4b4c76a157ffbd8ffed938  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] status=active ip=150.136.223.104 281s
+[L] SSH up at 150.136.223.104 (282s)
+Warning: Permanently added '150.136.223.104' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.223.104' (ED25519) to the list of known hosts.
+[L] uploading 1.6GB checkpoint...
+Warning: Permanently added '150.136.223.104' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.223.104' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.223.104' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.223.104' (ED25519) to the list of known hosts.
+[L] upload done (346s)
+[L] installing transformers/datasets + upgrading Pillow...
+Warning: Permanently added '150.136.223.104' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L] running firmups_lambda.py (371s)...
+Warning: Permanently added '150.136.223.104' (ED25519) to the list of known hosts.
+[FU] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  82%|████████▏ | 239/292 [00:00<00:00, 2194.56it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2296.46it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2104118.97 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 397503.87 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 598107.09 examples/s]
+[FU] FA done (41s)
+
+[FU] === agnews (low_agnews) trainloss=0.017 steps=894 (153s) ===
+  [attention.query_key_value ] k8:0.253/32.4x  k16:0.207/13.2x  k32:0.182/5.8x  k64:0.184/2.9x  k128:0.229/1.8x  k256:0.338/1.4x
+  [mlp.dense_h_to_4h         ] k8:0.249/31.9x  k16:0.193/12.4x  k32:0.169/5.4x  k64:0.173/2.8x  k128:0.218/1.7x  k256:0.327/1.3x
+  [mlp.dense_4h_to_h         ] k8:0.214/109.5x  k16:0.156/39.8x  k32:0.127/16.3x  k64:0.120/7.6x  k128:0.136/4.4x  k256:0.175/2.8x
+
+[FU] === yelp (high_yelp) trainloss=0.019 steps=894 (280s) ===
+  [attention.query_key_value ] k8:0.394/50.5x  k16:0.307/19.6x  k32:0.254/8.1x  k64:0.238/3.8x  k128:0.275/2.2x  k256:0.373/1.5x
+  [mlp.dense_h_to_4h         ] k8:0.365/46.8x  k16:0.290/18.6x  k32:0.242/7.8x  k64:0.231/3.7x  k128:0.267/2.1x  k256:0.362/1.4x
+  [mlp.dense_4h_to_h         ] k8:0.312/159.5x  k16:0.250/64.1x  k32:0.206/26.4x  k64:0.194/12.4x  k128:0.213/6.8x  k256:0.257/4.1x
+
+[FU] === subj (medium_subj) trainloss=0.007 steps=745 (375s) ===
+  [attention.query_key_value ] k8:0.320/41.0x  k16:0.273/17.5x  k32:0.232/7.4x  k64:0.228/3.6x  k128:0.268/2.1x  k256:0.368/1.5x
+  [mlp.dense_h_to_4h         ] k8:0.320/41.0x  k16:0.273/17.5x  k32:0.229/7.3x  k64:0.218/3.5x  k128:0.255/2.0x  k256:0.351/1.4x
+  [mlp.dense_4h_to_h         ] k8:0.250/127.8x  k16:0.217/55.6x  k32:0.181/23.2x  k64:0.162/10.4x  k128:0.175/5.6x  k256:0.211/3.4x
+
+[FU] saved firmups.json wall=375s
+[L] run rc=0 (749s)
+[L] pulling result + log...
+Warning: Permanently added '150.136.223.104' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.223.104' (ED25519) to the list of known hosts.
+[L] RESULT LANDED: gateA/firmups.json
+[L] terminating 59525495ea4b4c76a157ffbd8ffed938...
+[L] terminated 59525495ea4b4c76a157ffbd8ffed938

@@ -1,0 +1,14 @@
+[CPR] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  78%|███████▊  | 304/388 [00:00<00:00, 3037.06it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3313.23it/s]
+[CPR] depth-variant KEEP=12 -> 12 layers
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2078312.67 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 386498.27 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 563594.13 examples/s]
+[CPR] FA + PA done (27s)
+[CPR] agnews: seed+train(loss=0.020,steps=1192)+contest done (100s)
+[CPR] yelp: seed+train(loss=0.011,steps=1000)+contest done (173s)
+[CPR] subj: seed+train(loss=0.012,steps=745)+contest done (221s)
+[CPR] saved camera frame crosspair_residual.npz (221s)
+[CPR] analysis error (camera frame saved): [Errno 2] No such file or directory: '/home/ubuntu/gateA/deflation_artifacts_opt_MISSING.npz'
+[CPR] saved crosspair_residual.json wall=221s

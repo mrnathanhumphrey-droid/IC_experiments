@@ -1,0 +1,20 @@
+[PR] ranks=[2, 8, 32] N_B=8 B_steps=1500 B_lr=0.004 dev=cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/50000 [00:00<?, ? examples/s]Generating train split:  22%|██▏       | 11200/50000 [00:00<00:00, 110569.97 examples/s]Generating train split:  56%|█████▌    | 27800/50000 [00:00<00:00, 142248.16 examples/s]Generating train split:  89%|████████▉ | 44700/50000 [00:00<00:00, 154287.44 examples/s]Generating train split: 100%|██████████| 50000/50000 [00:00<00:00, 145550.65 examples/s]
+Generating test split:   0%|          | 0/10000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 10000/10000 [00:00<00:00, 137299.39 examples/s]
+[PR] loaded 100 banks (14s)
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /home/ubuntu/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+  0%|          | 0.00/44.7M [00:00<?, ?B/s] 64%|██████▎   | 28.4M/44.7M [00:00<00:00, 297MB/s]100%|██████████| 44.7M/44.7M [00:00<00:00, 306MB/s]
+[PR] base accA0 median=0.985 (130s)
+  rank=  2 | DIR rho_cos=-0.042 within-B=-0.055 | DISRUPT eta2_B=0.388 rho_drift=+0.714 | med_forget=0.017 band=False drift=29.45 (1358s)
+  rank=  8 | DIR rho_cos=-0.067 within-B=-0.114 | DISRUPT eta2_B=0.307 rho_drift=+0.810 | med_forget=0.025 band=False drift=30.86 (2529s)
+  rank= 32 | DIR rho_cos=-0.080 within-B=-0.181 | DISRUPT eta2_B=0.260 rho_drift=+0.000 | med_forget=0.116 band=True drift=32.11 (3727s)
+
+=== DIRECTION B: frozen<->plastic phase transition (order parameter = LoRA rank) ===
+  frozen readout reference (rank 0): rho(cos,forget) = -0.74 (DIRECTION-governed)
+   rank |rho_cos|  within-B  eta2_B  rho_drift  med_fgt
+      2     0.042    -0.055   0.388     +0.714    0.017
+      8     0.067    -0.114   0.307     +0.810    0.025
+     32     0.080    -0.181   0.260     +0.000    0.116
+  measurable (partial-forget) ranks: [32]
+[PR] wrote /home/ubuntu/out/phase_rank.json  wall=3727s

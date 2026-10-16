@@ -1,0 +1,12 @@
+{
+ "challenger": "Reynolds x harmonic (S_H MLP-hidden-perm, all-ones invariant, 4hh only)",
+ "group": "S_H hidden-unit permutation = only architecturally-given discrete symmetry on a fragile-subspace input space (4hh); head-perm acts on OUTPUT not input so qkv/h4h have no group; degenerate filtration (invariant=1-dim all-ones, complement isotropic)",
+ "align_fragile_allones_median": 0.6698,
+ "random_1dim_floor_median": 0.0038,
+ "beats_random_frac_cells": 1.0,
+ "swap_control_fragile_minus_topcurv_mean": -0.00046,
+ "swap_control_se": 0.00513,
+ "fragile_specific": false,
+ "verdict": "PAYS_NONSPECIFIC (generic curvature): the group-invariant architectural direction is heavily IN the contested core but equally in topcurv -> high-curvature, NOT fragility-specific. No architectural fragility beyond curvature.",
+ "scope": "4hh only (rank-1 invariant); qkv/h4h have no architectural group -> challenger does not reach them"
+}

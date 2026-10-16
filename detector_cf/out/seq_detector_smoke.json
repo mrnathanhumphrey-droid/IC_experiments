@@ -1,0 +1,112 @@
+{
+ "config": {
+  "paradigms": [
+   "swap",
+   "diffusion"
+  ],
+  "subsample": 40,
+  "pca_k": 20,
+  "smoke": true,
+  "route_tau": 0.0
+ },
+ "arms": {
+  "naive": [
+   {
+    "added": "swap",
+    "retention": {
+     "swap": 0.7259,
+     "diffusion": 0.206
+    }
+   },
+   {
+    "added": "diffusion",
+    "retention": {
+     "swap": 0.6111,
+     "diffusion": 0.9861
+    }
+   }
+  ],
+  "route": {
+   "router_log": [
+    {
+     "added": "swap",
+     "action": "spawn",
+     "head": 0,
+     "all_cos": []
+    },
+    {
+     "added": "diffusion",
+     "action": "spawn",
+     "head": 1,
+     "all_cos": [
+      -0.932
+     ]
+    }
+   ],
+   "n_heads": 2,
+   "heads": [
+    {
+     "head": 0,
+     "members": [
+      "swap"
+     ]
+    },
+    {
+     "head": 1,
+     "members": [
+      "diffusion"
+     ]
+    }
+   ],
+   "oracle": {
+    "swap": 0.7259,
+    "diffusion": 0.9977
+   },
+   "maxens": {
+    "swap": 0.7593,
+    "diffusion": 0.9537
+   }
+  },
+  "route_gpm": {
+   "router_log": [
+    {
+     "added": "swap",
+     "action": "spawn",
+     "head": 0,
+     "all_cos": []
+    },
+    {
+     "added": "diffusion",
+     "action": "spawn",
+     "head": 1,
+     "all_cos": [
+      -0.932
+     ]
+    }
+   ],
+   "n_heads": 2,
+   "heads": [
+    {
+     "head": 0,
+     "members": [
+      "swap"
+     ]
+    },
+    {
+     "head": 1,
+     "members": [
+      "diffusion"
+     ]
+    }
+   ],
+   "oracle": {
+    "swap": 0.7259,
+    "diffusion": 0.9977
+   },
+   "maxens": {
+    "swap": 0.7593,
+    "diffusion": 0.9537
+   }
+  }
+ }
+}

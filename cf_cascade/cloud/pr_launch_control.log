@@ -1,0 +1,64 @@
+[L:pr] picked gpu_1x_a10 @ us-east-1 $1.29/hr  RUN_ENV='' wd=3000s hf_tok=yes
+[L:pr] instance_id=8b1b402f34b24997b9ff32a37fb421c3  (manual teardown if I go dark)
+[L:pr] status=booting ip=None 1s
+[L:pr] status=active ip=132.145.193.252 327s
+[L:pr] SSH up at 132.145.193.252 (328s)
+Warning: Permanently added '132.145.193.252' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.193.252' (ED25519) to the list of known hosts.
+[L:pr] uploaded (329s); pip...
+Warning: Permanently added '132.145.193.252' (ED25519) to the list of known hosts.
+WARNING: The candidate selected for download or install is a yanked version: 'transformers' candidate (version 4.46.0 at https://files.pythonhosted.org/packages/db/88/1ef8a624a33d7fe460a686b9e0194a7916320fc0d67d4e38e570beeac039/transformers-4.46.0-py3-none-any.whl#sha256=e161268ae8bee315eb9e9b4c0b27f1bd6980f91e0fc292d75249193d339704c0 (from https://pypi.org/simple/transformers/) (requires-python:>=3.8.0))
+Reason for being yanked: This version unfortunately does not work with 3.8 but we did not drop the support yet
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+tf 2.7.0 4.46.0
+[L:pr] running pr_steering_lambda.py () wd=3000s (340s)...
+Warning: Permanently added '132.145.193.252' (ED25519) to the list of known hosts.
+[PR] #3 subspace-dim | SMOKE=0 model=google/gemma-2-2b alpha=4.0 dev=cuda
+2026-07-27 20:03:49.371949: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-27 20:03:49.444416: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785182629.480571    2580 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785182629.490864    2580 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785182629.547302    2580 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785182629.547327    2580 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785182629.547329    2580 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785182629.547331    2580 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-27 20:03:49.555820: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+Downloading shards:   0%|          | 0/3 [00:00<?, ?it/s]Downloading shards:  33%|███▎      | 1/3 [00:12<00:25, 12.98s/it]Downloading shards:  67%|██████▋   | 2/3 [00:25<00:12, 12.50s/it]Downloading shards: 100%|██████████| 3/3 [00:27<00:00,  7.88s/it]Downloading shards: 100%|██████████| 3/3 [00:27<00:00,  9.18s/it]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  2.59it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  2.61it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  3.37it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  3.12it/s]
+[MODEL] google/gemma-2-2b nlayers=26 d=2304
+  [sentiment] L24 specPR=3.159 causalPR=20.798 PRsig=5.744 nsig=13 c/rand=1.97 steer=47.8366 valid=True
+  [size] L25 specPR=6.039 causalPR=23.032 PRsig=6.392 nsig=14 c/rand=2.51 steer=46.5739 valid=True
+  [temperature] L26 specPR=7.574 causalPR=14.599 PRsig=3.718 nsig=9 c/rand=1.71 steer=16.6165 valid=True
+  [speed] L6 specPR=9.124 causalPR=28.206 PRsig=7.568 nsig=13 c/rand=1.69 steer=11.4645 valid=True
+  [brightness] L23 specPR=9.46 causalPR=21.202 PRsig=4.67 nsig=10 c/rand=1.52 steer=37.1476 valid=True
+  [difficulty] L5 specPR=5.973 causalPR=21.997 PRsig=3.779 nsig=10 c/rand=1.56 steer=7.8639 valid=True
+  [wealth] L5 specPR=7.283 causalPR=29.11 PRsig=4.387 nsig=10 c/rand=1.50 steer=9.5242 valid=True
+  [strength] L7 specPR=10.982 causalPR=26.258 PRsig=6.239 nsig=12 c/rand=1.56 steer=7.9928 valid=True
+  [age] L8 specPR=12.17 causalPR=15.615 PRsig=3.28 nsig=13 c/rand=2.30 steer=8.3796 valid=True
+  [loudness] L23 specPR=9.602 causalPR=18.244 PRsig=3.566 nsig=15 c/rand=2.08 steer=45.1383 valid=True
+  [cleanliness] L7 specPR=8.598 causalPR=26.678 PRsig=6.849 nsig=14 c/rand=1.94 steer=11.5501 valid=True
+  [toxicity] L23 specPR=5.744 causalPR=22.576 PRsig=9.754 nsig=17 c/rand=2.58 steer=23.9832 valid=True
+
+[PR] CONTROL mean concept/rand=1.91 (>=1.5 concept-specific; <1.5 CONFOUNDED) | CORE rho(specPR,causalPRsignal)=-0.371 p=0.2350 rho(specPR,nsig)=-0.007 | HIT=False
+[PR] wrote /home/ubuntu/pr/gateA/pr_steering_gemma-2-2b.json  wall=299s
+[L:pr] run rc=0 (641s)
+Warning: Permanently added '132.145.193.252' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.193.252' (ED25519) to the list of known hosts.
+[L:pr] RESULT LANDED: D:\IC_experiments\cf_cascade\gateA\pr_steering_gemma-2-2b.json
+[L:pr] terminating 8b1b402f34b24997b9ff32a37fb421c3...
+[L:pr] terminated 8b1b402f34b24997b9ff32a37fb421c3
+[L:pr] ledger += 11min $0.23

@@ -1,0 +1,29 @@
+[VAC:pythia410m] EleutherAI/pythia-410m projection-strength ladder K=[0, 16, 32, 64, 128, 512]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  79%|███████▉  | 230/292 [00:00<00:00, 2299.80it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2091.06it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2145477.73 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 367507.34 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 610537.78 examples/s]
+[VAC:pythia410m] w_A acc=0.753; 72 carriers (12s)
+[VAC:pythia410m] V basis (top-512) done (43s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  13%|█▎        | 71000/560000 [00:00<00:00, 704693.17 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 830833.91 examples/s]Generating train split:  50%|████▉     | 278000/560000 [00:00<00:00, 968252.02 examples/s]Generating train split:  75%|███████▌  | 421000/560000 [00:00<00:00, 1092879.78 examples/s]Generating train split:  97%|█████████▋| 545000/560000 [00:00<00:00, 1139274.08 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1038744.56 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1108422.92 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   4%|▍         | 60000/1400000 [00:00<00:02, 592636.24 examples/s]Generating train split:  11%|█         | 148000/1400000 [00:00<00:01, 679306.03 examples/s]Generating train split:  16%|█▌        | 225000/1400000 [00:00<00:01, 713569.85 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 738711.56 examples/s]Generating train split:  29%|██▊       | 402000/1400000 [00:00<00:01, 740547.72 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 753491.71 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 768596.87 examples/s]Generating train split:  49%|████▉     | 686000/1400000 [00:00<00:00, 821400.15 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 719718.00 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 735700.58 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 743715.19 examples/s]Generating train split:  76%|███████▌  | 1057000/1400000 [00:01<00:00, 796828.16 examples/s]Generating train split:  84%|████████▍ | 1182000/1400000 [00:01<00:00, 806927.42 examples/s]Generating train split:  90%|█████████ | 1265000/1400000 [00:01<00:00, 796167.17 examples/s]Generating train split:  97%|█████████▋| 1352000/1400000 [00:01<00:00, 783448.09 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 762765.76 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 822573.84 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 241345.10 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 255294.49 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 252090.93 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 248700.47 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 247695.83 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 248794.54 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1811452.05 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 745124.18 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 751869.50 examples/s]
+[VAC:pythia410m] seed 0: A=0.490 | D0=0.710 D16=0.500 D32=0.630 D64=0.663 D128=0.607 D512=0.620 (471s)
+[VAC:pythia410m] seed 5: A=0.490 | D0=0.613 D16=0.680 D32=0.653 D64=0.657 D128=0.643 D512=0.557 (2542s)
+[VAC:pythia410m] seed 10: A=0.713 | D0=0.513 D16=0.543 D32=0.497 D64=0.530 D128=0.550 D512=0.567 (4613s)
+[VAC:pythia410m] seed 14: A=0.490 | D0=0.677 D16=0.693 D32=0.600 D64=0.703 D128=0.647 D512=0.680 (6268s)
+
+[VAC:pythia410m] === VACUUMS (D_K - A; flat across K = out-of-V; check lossdrop matched) ===
+  K=   0  D-A=+0.082±0.026  B-D_k=+0.000  childhood_lossdrop=8.77
+  K=  16  D-A=+0.081±0.026  B-D_k=+0.001  childhood_lossdrop=13.74
+  K=  32  D-A=+0.097±0.028  B-D_k=-0.016  childhood_lossdrop=14.29
+  K=  64  D-A=+0.078±0.028  B-D_k=+0.004  childhood_lossdrop=14.76
+  K= 128  D-A=+0.086±0.027  B-D_k=-0.004  childhood_lossdrop=15.06
+  K= 512  D-A=+0.085±0.028  B-D_k=-0.003  childhood_lossdrop=15.58
+[VAC:pythia410m] saved vacuums_pythia410m.json wall=6268s

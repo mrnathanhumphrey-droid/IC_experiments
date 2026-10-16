@@ -1,0 +1,20 @@
+{
+  "model": "facebook/opt-350m",
+  "wA_sst_acc": 0.6966666666666667,
+  "step1": {
+    "com_rank_median": 0.05973215351002972,
+    "M1_median": 0.8785106241703033,
+    "antag_median": -0.0016133504783275424,
+    "pass": false
+  },
+  "step2": {
+    "partial_median": 0.29387183956440305,
+    "partial_frac_pos": 1.0,
+    "partial_attn_median": 0.2911044821863936,
+    "pass": true
+  },
+  "step3": {
+    "skipped": "steps 1-2 did not both pass \u2014 no subspace to vary; not run (dependency order)"
+  },
+  "verdict": "RUNG-2 FAIL: seed/contested-core structure absent on OPT -> fragile-subspace mechanism is Pythia/GPT-family-specific. Bounds the framework."
+}

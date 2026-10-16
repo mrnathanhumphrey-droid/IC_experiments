@@ -1,0 +1,56 @@
+{
+  "model": "EleutherAI/pythia-410m",
+  "task_A": "SST-2 sentiment (generation)",
+  "task_B_planned": "AG-News topic",
+  "seed": 0,
+  "LR": 5e-05,
+  "freeze_step": 600,
+  "freeze_reason": "overfit_guard_best_val",
+  "base_acc": 0.6025,
+  "final_acc": 0.81,
+  "base_val_loss": 7.069587886333466,
+  "best_val": 0.4367266185581684,
+  "grad_norm_8batch": 2.6696236967123195,
+  "val_history": [
+    {
+      "step": 150,
+      "val": 0.5257381523648897,
+      "acc": 0.7325,
+      "train": 0.5958071947097778
+    },
+    {
+      "step": 300,
+      "val": 0.4998870448519786,
+      "acc": 0.74,
+      "train": 0.3645261228084564
+    },
+    {
+      "step": 450,
+      "val": 0.5701519524057707,
+      "acc": 0.7525,
+      "train": 0.5187990665435791
+    },
+    {
+      "step": 600,
+      "val": 0.4367266185581684,
+      "acc": 0.81,
+      "train": 0.37705591320991516
+    },
+    {
+      "step": 750,
+      "val": 0.4629199169576168,
+      "acc": 0.79,
+      "train": 0.14684131741523743
+    },
+    {
+      "step": 900,
+      "val": 0.4787873240808646,
+      "acc": 0.77,
+      "train": 0.217551589012146
+    }
+  ],
+  "genuine_basin": false,
+  "refrozen_decade_span_median": 5.914921972871401,
+  "ESD_PASS": true,
+  "wall_s": 224.16059231758118
+}

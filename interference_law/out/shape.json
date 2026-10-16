@@ -1,0 +1,84 @@
+{
+ "config": {
+  "caps": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15
+  ],
+  "ft": [
+   300,
+   0.0005
+  ],
+  "seed": 0,
+  "prereg_lock": "44ba13f8"
+ },
+ "results": {
+  "cifar": {
+   "n": 16,
+   "median_forget": 0.2468,
+   "inband": true,
+   "asym_k_over_s": 0.273,
+   "rho_sym": 0.098,
+   "interaction_frac": 0.645,
+   "dc_s0": 0.688,
+   "dc_null95": 0.741,
+   "interaction_real": false,
+   "dc_eff_rank": 6.3,
+   "dominance_rank1_pct": 39.7,
+   "align_dc_cos_vs_interaction": 0.293,
+   "checks": {
+    "P1_asymmetric": true,
+    "P2_interaction_real": false
+   }
+  },
+  "dtd": {
+   "n": 16,
+   "median_forget": 0.2589,
+   "inband": true,
+   "asym_k_over_s": 0.334,
+   "rho_sym": -0.274,
+   "interaction_frac": 0.583,
+   "dc_s0": 0.88,
+   "dc_null95": 0.728,
+   "interaction_real": true,
+   "dc_eff_rank": 4.39,
+   "dominance_rank1_pct": 45.6,
+   "align_dc_cos_vs_interaction": 0.06,
+   "checks": {
+    "P1_asymmetric": true,
+    "P2_interaction_real": true
+   }
+  },
+  "gtsrb": {
+   "n": 16,
+   "median_forget": 0.3848,
+   "inband": true,
+   "asym_k_over_s": 0.231,
+   "rho_sym": 0.664,
+   "interaction_frac": 0.305,
+   "dc_s0": 2.007,
+   "dc_null95": 1.528,
+   "interaction_real": true,
+   "dc_eff_rank": 4.02,
+   "dominance_rank1_pct": 25.4,
+   "align_dc_cos_vs_interaction": -0.225,
+   "checks": {
+    "P1_asymmetric": true,
+    "P2_interaction_real": true
+   }
+  }
+ }
+}

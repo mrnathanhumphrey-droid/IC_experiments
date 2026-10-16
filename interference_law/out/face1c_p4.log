@@ -1,0 +1,91 @@
+2026-07-19 01:05:38.863320: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-19 01:05:38.877067: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784423138.893605    2588 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1784423138.898974    2588 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1784423138.911892    2588 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784423138.911915    2588 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784423138.911917    2588 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784423138.911918    2588 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-19 01:05:38.915841: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[P4] SMOKE=False cells=['pythia1.4b:clinc150', 'pythia1.4b:banking77', 'qwen:clinc150'] ncap=16 seeds=[0, 1, 2] steps=200 grid=[8, 12, 24, 48]x[0, 1, 2] targets=all-linear dev=cuda
+
+[P4] === CELL pythia1.4b:clinc150  model=EleutherAI/pythia-1.4b data=clinc150 (0s) ===
+Downloading readme:   0%|          | 0.00/24.0k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 24.0k/24.0k [00:00<00:00, 501kB/s]
+Downloading data:   0%|          | 0.00/312k [00:00<?, ?B/s]Downloading data: 100%|██████████| 312k/312k [00:00<00:00, 881kB/s]Downloading data: 100%|██████████| 312k/312k [00:00<00:00, 880kB/s]
+Downloading data:   0%|          | 0.00/77.8k [00:00<?, ?B/s]Downloading data: 100%|██████████| 77.8k/77.8k [00:00<00:00, 343kB/s]Downloading data: 100%|██████████| 77.8k/77.8k [00:00<00:00, 343kB/s]
+Downloading data:   0%|          | 0.00/136k [00:00<?, ?B/s]Downloading data: 100%|██████████| 136k/136k [00:00<00:00, 815kB/s]Downloading data: 100%|██████████| 136k/136k [00:00<00:00, 813kB/s]
+Generating train split:   0%|          | 0/15250 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 15250/15250 [00:00<00:00, 1253368.13 examples/s]
+Generating validation split:   0%|          | 0/3100 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 3100/3100 [00:00<00:00, 1036125.78 examples/s]
+Generating test split:   0%|          | 0/5500 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 5500/5500 [00:00<00:00, 1270721.16 examples/s]
+[P4] pythia1.4b:clinc150: 16 caps, 10 neg, nlayers=24 -> LAYER=12 (13s)
+[P4] pythia1.4b:clinc150: seed 0 fine-tunes cached (283s)
+[P4] pythia1.4b:clinc150: seed 1 fine-tunes cached (552s)
+[P4] pythia1.4b:clinc150: seed 2 fine-tunes cached (821s)
+  [P4] pythia1.4b:clinc150 dim=8 ps=0: auc0=0.871 medFgt=+0.090 dom-rho=+0.292 curl-rho=+0.202 rho(d',phi)=+0.221
+  [P4] pythia1.4b:clinc150 dim=8 ps=1: auc0=0.879 medFgt=+0.063 dom-rho=+0.548 curl-rho=+0.265 rho(d',phi)=-0.079
+  [P4] pythia1.4b:clinc150 dim=8 ps=2: auc0=0.883 medFgt=+0.084 dom-rho=+0.335 curl-rho=+0.237 rho(d',phi)=+0.203
+  [P4] pythia1.4b:clinc150 dim=12 ps=0: auc0=0.915 medFgt=+0.090 dom-rho=+0.209 curl-rho=+0.094 rho(d',phi)=+0.232
+  [P4] pythia1.4b:clinc150 dim=12 ps=1: auc0=0.924 medFgt=+0.086 dom-rho=+0.332 curl-rho=+0.176 rho(d',phi)=+0.374
+  [P4] pythia1.4b:clinc150 dim=12 ps=2: auc0=0.905 medFgt=+0.075 dom-rho=+0.230 curl-rho=+0.058 rho(d',phi)=+0.271
+  [P4] pythia1.4b:clinc150 dim=24 ps=0: auc0=0.968 medFgt=+0.074 dom-rho=+0.521 curl-rho=+0.087 rho(d',phi)=-0.438
+  [P4] pythia1.4b:clinc150 dim=24 ps=1: auc0=0.956 medFgt=+0.066 dom-rho=+0.559 curl-rho=+0.249 rho(d',phi)=-0.347
+  [P4] pythia1.4b:clinc150 dim=24 ps=2: auc0=0.96 medFgt=+0.076 dom-rho=+0.441 curl-rho=+0.212 rho(d',phi)=-0.118
+  [P4] pythia1.4b:clinc150 dim=48 ps=0: auc0=0.987 medFgt=+0.041 dom-rho=+0.596 curl-rho=+0.190 rho(d',phi)=-0.588
+  [P4] pythia1.4b:clinc150 dim=48 ps=1: auc0=0.981 medFgt=+0.049 dom-rho=+0.227 curl-rho=+0.121 rho(d',phi)=-0.306
+  [P4] pythia1.4b:clinc150 dim=48 ps=2: auc0=0.981 medFgt=+0.055 dom-rho=+0.495 curl-rho=+0.197 rho(d',phi)=-0.274
+[P4] cell pythia1.4b:clinc150 done, persists=False curl=0.194 (842s); JSON updated
+
+[P4] === CELL pythia1.4b:banking77  model=EleutherAI/pythia-1.4b data=banking77 (842s) ===
+Downloading builder script:   0%|          | 0.00/7.17k [00:00<?, ?B/s]Downloading builder script: 100%|██████████| 7.17k/7.17k [00:00<00:00, 324kB/s]
+Downloading metadata:   0%|          | 0.00/5.89k [00:00<?, ?B/s]Downloading metadata: 100%|██████████| 5.89k/5.89k [00:00<00:00, 226kB/s]
+Downloading readme:   0%|          | 0.00/9.78k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 9.78k/9.78k [00:00<00:00, 417kB/s]
+Downloading data:   0%|          | 0.00/158k [00:00<?, ?B/s]Downloading data: 839kB [00:00, 36.1MB/s]                   
+Downloading data:   0%|          | 0.00/51.1k [00:00<?, ?B/s]Downloading data: 240kB [00:00, 16.4MB/s]                    
+Generating train split:   0%|          | 0/10003 [00:00<?, ? examples/s]Generating train split:  59%|█████▉    | 5893/10003 [00:00<00:00, 58846.16 examples/s]Generating train split: 100%|██████████| 10003/10003 [00:00<00:00, 59036.55 examples/s]
+Generating test split:   0%|          | 0/3080 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 3080/3080 [00:00<00:00, 60504.87 examples/s]
+[P4] pythia1.4b:banking77: 16 caps, 10 neg, nlayers=24 -> LAYER=12 (844s)
+[P4] pythia1.4b:banking77: seed 0 fine-tunes cached (1254s)
+[P4] pythia1.4b:banking77: seed 1 fine-tunes cached (1661s)
+[P4] pythia1.4b:banking77: seed 2 fine-tunes cached (2067s)
+  [P4] pythia1.4b:banking77 dim=8 ps=0: auc0=0.811 medFgt=+0.071 dom-rho=+0.620 curl-rho=+0.079 rho(d',phi)=+0.232
+  [P4] pythia1.4b:banking77 dim=8 ps=1: auc0=0.786 medFgt=+0.064 dom-rho=+0.405 curl-rho=+0.190 rho(d',phi)=-0.232
+  [P4] pythia1.4b:banking77 dim=8 ps=2: auc0=0.823 medFgt=+0.066 dom-rho=+0.472 curl-rho=+0.230 rho(d',phi)=+0.676
+  [P4] pythia1.4b:banking77 dim=12 ps=0: auc0=0.835 medFgt=+0.053 dom-rho=+0.356 curl-rho=+0.218 rho(d',phi)=+0.335
+  [P4] pythia1.4b:banking77 dim=12 ps=1: auc0=0.846 medFgt=+0.062 dom-rho=+0.539 curl-rho=+0.205 rho(d',phi)=+0.062
+  [P4] pythia1.4b:banking77 dim=12 ps=2: auc0=0.819 medFgt=+0.068 dom-rho=+0.716 curl-rho=+0.292 rho(d',phi)=-0.250
+  [P4] pythia1.4b:banking77 dim=24 ps=0: auc0=0.919 medFgt=+0.067 dom-rho=+0.814 curl-rho=+0.260 rho(d',phi)=-0.256
+  [P4] pythia1.4b:banking77 dim=24 ps=1: auc0=0.916 medFgt=+0.073 dom-rho=+0.678 curl-rho=+0.203 rho(d',phi)=+0.197
+  [P4] pythia1.4b:banking77 dim=24 ps=2: auc0=0.904 medFgt=+0.070 dom-rho=+0.603 curl-rho=+0.113 rho(d',phi)=-0.547
+  [P4] pythia1.4b:banking77 dim=48 ps=0: auc0=0.957 medFgt=+0.052 dom-rho=+0.505 curl-rho=+0.104 rho(d',phi)=+0.082
+  [P4] pythia1.4b:banking77 dim=48 ps=1: auc0=0.956 medFgt=+0.059 dom-rho=+0.654 curl-rho=+0.275 rho(d',phi)=-0.147
+  [P4] pythia1.4b:banking77 dim=48 ps=2: auc0=0.95 medFgt=+0.061 dom-rho=+0.549 curl-rho=+0.086 rho(d',phi)=-0.550
+[P4] cell pythia1.4b:banking77 done, persists=False curl=0.204 (2088s); JSON updated
+
+[P4] === CELL qwen:clinc150  model=Qwen/Qwen2.5-1.5B data=clinc150 (2088s) ===
+[P4] qwen:clinc150: 16 caps, 10 neg, nlayers=28 -> LAYER=14 (2093s)
+[P4] qwen:clinc150: seed 0 fine-tunes cached (2596s)
+[P4] qwen:clinc150: seed 1 fine-tunes cached (3101s)
+[P4] qwen:clinc150: seed 2 fine-tunes cached (3611s)
+  [P4] qwen:clinc150 dim=8 ps=0: auc0=0.791 medFgt=+0.053 dom-rho=+0.576 curl-rho=+0.346 rho(d',phi)=+0.047
+  [P4] qwen:clinc150 dim=8 ps=1: auc0=0.767 medFgt=+0.055 dom-rho=+0.565 curl-rho=+0.270 rho(d',phi)=+0.588
+  [P4] qwen:clinc150 dim=8 ps=2: auc0=0.824 medFgt=+0.048 dom-rho=+0.320 curl-rho=+0.175 rho(d',phi)=+0.465
+  [P4] qwen:clinc150 dim=12 ps=0: auc0=0.825 medFgt=+0.073 dom-rho=+0.208 curl-rho=+0.226 rho(d',phi)=+0.662
+  [P4] qwen:clinc150 dim=12 ps=1: auc0=0.837 medFgt=+0.076 dom-rho=+0.338 curl-rho=+0.276 rho(d',phi)=+0.265
+  [P4] qwen:clinc150 dim=12 ps=2: auc0=0.818 medFgt=+0.078 dom-rho=+0.375 curl-rho=+0.173 rho(d',phi)=-0.068
+  [P4] qwen:clinc150 dim=24 ps=0: auc0=0.84 medFgt=+0.041 dom-rho=+0.688 curl-rho=+0.046 rho(d',phi)=+0.179
+  [P4] qwen:clinc150 dim=24 ps=1: auc0=0.87 medFgt=+0.077 dom-rho=+0.330 curl-rho=+0.215 rho(d',phi)=+0.047
+  [P4] qwen:clinc150 dim=24 ps=2: auc0=0.88 medFgt=+0.090 dom-rho=+0.203 curl-rho=+0.205 rho(d',phi)=-0.074
+  [P4] qwen:clinc150 dim=48 ps=0: auc0=0.873 medFgt=+0.054 dom-rho=+0.612 curl-rho=+0.289 rho(d',phi)=+0.335
+  [P4] qwen:clinc150 dim=48 ps=1: auc0=0.883 medFgt=+0.055 dom-rho=+0.323 curl-rho=+0.290 rho(d',phi)=+0.450
+  [P4] qwen:clinc150 dim=48 ps=2: auc0=0.913 medFgt=+0.051 dom-rho=+0.471 curl-rho=+0.178 rho(d',phi)=+0.138
+[P4] cell qwen:clinc150 done, persists=False curl=0.221 (3632s); JSON updated
+
+[P4] === PER-CELL ===
+  pythia1.4b:clinc150     : curl-rho=0.194 dom-rho=0.388 frac=0.0 persists=False (n_inband=12)
+  pythia1.4b:banking77    : curl-rho=0.204 dom-rho=0.576 frac=0.0 persists=False (n_inband=12)
+  qwen:clinc150           : curl-rho=0.221 dom-rho=0.357 frac=0.083 persists=False (n_inband=12)
+
+[P4] HEADLINE: DOWNGRADE — cyclic finding is Qwen/banking77-SPECIFIC. Both-new cell pythia1.4b:clinc150 curl-rho median 0.194 in 0.0 of in-band (bar 0.66). Does NOT generalize.
+[P4] wrote /home/ubuntu/ilaw/out/face1c_p4.json  wall=3632s

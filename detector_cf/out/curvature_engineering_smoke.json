@@ -1,0 +1,49 @@
+{
+ "config": {
+  "subsample": 60,
+  "collapse_to": "diffusion",
+  "profiles": [
+   [],
+   [
+    "swap"
+   ]
+  ],
+  "smoke": true,
+  "prereg_lock": "128d757a"
+ },
+ "cosine": {
+  "swap": {
+   "swap": 1.0,
+   "diffusion": -0.9279677271842957
+  },
+  "diffusion": {
+   "swap": -0.9279677271842957,
+   "diffusion": 1.0000001192092896
+  }
+ },
+ "base": {
+  "swap": 0.6863,
+  "diffusion": 0.9259
+ },
+ "profile_retention": {
+  "none": {
+   "swap": 0.4565,
+   "diffusion": 0.997
+  },
+  "swap": {
+   "swap": 0.6289,
+   "diffusion": 0.9812
+  }
+ },
+ "leakage_analysis": {
+  "swap": {
+   "self_gain": 0.1724,
+   "aligned_leak": 0.0,
+   "anti_leak": -0.0158,
+   "aligned": [],
+   "anti": [
+    "diffusion"
+   ]
+  }
+ }
+}

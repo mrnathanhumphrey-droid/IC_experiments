@@ -1,0 +1,14 @@
+{
+ "config": {
+  "mode": "gate",
+  "perturb": "neg",
+  "ft": [
+   300,
+   0.0005
+  ],
+  "prereg_lock": "ebdbba5a"
+ },
+ "median_forget": 0.139625,
+ "inband": true,
+ "verdict": "GATE PASS -> run full 12x12"
+}

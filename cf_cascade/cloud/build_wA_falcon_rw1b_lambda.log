@@ -1,0 +1,58 @@
+[buildwA:falcon_rw1b] tiiuae/falcon-rw-1b fine-tune on SST-2  lr=2.0e-05 steps=2000 (Thu Jul  9 20:06:46 2026)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  35%|███▍      | 101/292 [00:00<00:00, 999.81it/s]Loading weights:  69%|██████▉   | 201/292 [00:00<00:00, 915.53it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 838.69it/s]
+[buildwA:falcon_rw1b] posid=3967 negid=4633 (distinct=True)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 1804398.41 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 324643.45 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 520500.72 examples/s]
+[buildwA:falcon_rw1b] base (untuned) SST-2 acc=0.522 (24s)
+[hb] falcon_rw1b step 0/2000 loss=9.054 (25s)
+[hb] falcon_rw1b step 50/2000 loss=0.571 (33s)
+[hb] falcon_rw1b step 100/2000 loss=0.177 (41s)
+[hb] falcon_rw1b step 150/2000 loss=0.410 (50s)
+[hb] falcon_rw1b step 200/2000 loss=0.557 (58s)
+[eval] falcon_rw1b step 250 val_acc=0.7150 (best -1.0000@0) (69s)
+[hb] falcon_rw1b step 250/2000 loss=0.426 (75s)
+[hb] falcon_rw1b step 300/2000 loss=0.204 (83s)
+[hb] falcon_rw1b step 350/2000 loss=0.162 (91s)
+[hb] falcon_rw1b step 400/2000 loss=0.991 (100s)
+[hb] falcon_rw1b step 450/2000 loss=0.224 (108s)
+[eval] falcon_rw1b step 500 val_acc=0.8800 (best 0.7150@250) (120s)
+[hb] falcon_rw1b step 500/2000 loss=0.514 (126s)
+[hb] falcon_rw1b step 550/2000 loss=0.113 (134s)
+[hb] falcon_rw1b step 600/2000 loss=0.092 (142s)
+[hb] falcon_rw1b step 650/2000 loss=0.307 (151s)
+[hb] falcon_rw1b step 700/2000 loss=0.562 (159s)
+[eval] falcon_rw1b step 750 val_acc=0.8550 (best 0.8800@500) (171s)
+[hb] falcon_rw1b step 750/2000 loss=0.028 (171s)
+[hb] falcon_rw1b step 800/2000 loss=0.418 (179s)
+[hb] falcon_rw1b step 850/2000 loss=0.205 (188s)
+[hb] falcon_rw1b step 900/2000 loss=0.343 (196s)
+[hb] falcon_rw1b step 950/2000 loss=0.031 (204s)
+[eval] falcon_rw1b step 1000 val_acc=0.8600 (best 0.8800@500) (216s)
+[hb] falcon_rw1b step 1000/2000 loss=0.004 (216s)
+[hb] falcon_rw1b step 1050/2000 loss=0.268 (224s)
+[hb] falcon_rw1b step 1100/2000 loss=0.003 (233s)
+[hb] falcon_rw1b step 1150/2000 loss=0.021 (241s)
+[hb] falcon_rw1b step 1200/2000 loss=0.024 (249s)
+[eval] falcon_rw1b step 1250 val_acc=0.8450 (best 0.8800@500) (261s)
+[hb] falcon_rw1b step 1250/2000 loss=0.205 (261s)
+[hb] falcon_rw1b step 1300/2000 loss=0.330 (269s)
+[hb] falcon_rw1b step 1350/2000 loss=0.001 (278s)
+[hb] falcon_rw1b step 1400/2000 loss=0.005 (286s)
+[hb] falcon_rw1b step 1450/2000 loss=0.283 (294s)
+[eval] falcon_rw1b step 1500 val_acc=0.8525 (best 0.8800@500) (306s)
+[hb] falcon_rw1b step 1500/2000 loss=0.589 (306s)
+[hb] falcon_rw1b step 1550/2000 loss=0.302 (314s)
+[hb] falcon_rw1b step 1600/2000 loss=0.001 (323s)
+[hb] falcon_rw1b step 1650/2000 loss=0.409 (331s)
+[hb] falcon_rw1b step 1700/2000 loss=0.014 (339s)
+[eval] falcon_rw1b step 1750 val_acc=0.8750 (best 0.8800@500) (351s)
+[hb] falcon_rw1b step 1750/2000 loss=0.000 (351s)
+[hb] falcon_rw1b step 1800/2000 loss=0.191 (359s)
+[hb] falcon_rw1b step 1850/2000 loss=0.147 (367s)
+[hb] falcon_rw1b step 1900/2000 loss=0.321 (376s)
+[hb] falcon_rw1b step 1950/2000 loss=0.001 (384s)
+[eval] falcon_rw1b step 2000 val_acc=0.8575 (best 0.8800@500) (396s)
+[buildwA:falcon_rw1b] SAVED /home/ubuntu/gateA/falcon_rw1b_sst2_wA.pt  anchor_acc=0.8800@500  reload_confirm=0.8800  wall=407s
+[buildwA:falcon_rw1b] >>> set ANCHOR_WA['FALCON']=0.880 in the Probe-11 harness <<<

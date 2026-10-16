@@ -1,0 +1,51 @@
+{
+  "model": "EleutherAI/pythia-410m",
+  "task": "wikitext-2-raw causal-LM",
+  "seed": 0,
+  "LR": 2e-05,
+  "plateau_criterion": "val rel-improve <0.5% x2 consecutive; overfit-guard->best-val; max 4000",
+  "freeze_step": 600,
+  "freeze_reason": "overfit_guard_best_val",
+  "best_val": 2.7640418310960135,
+  "best_val_step": 600,
+  "grad_norm_8batch": 2.0167828485285035,
+  "val_history": [
+    {
+      "step": 150,
+      "val": 2.773136168718338,
+      "train": 2.882561206817627
+    },
+    {
+      "step": 300,
+      "val": 2.7672595580418906,
+      "train": 2.782933235168457
+    },
+    {
+      "step": 450,
+      "val": 2.8052448431650796,
+      "train": 2.60723614692688
+    },
+    {
+      "step": 600,
+      "val": 2.7640418310960135,
+      "train": 2.3016598224639893
+    },
+    {
+      "step": 750,
+      "val": 2.7757299641768136,
+      "train": 2.4401330947875977
+    },
+    {
+      "step": 900,
+      "val": 2.780423124631246,
+      "train": 2.423999547958374
+    }
+  ],
+  "refrozen_decade_span_median": 5.868696962552642,
+  "refrozen_decade_span_minmax": [
+    5.596029520821952,
+    5.990239471044342
+  ],
+  "PASS": true,
+  "wall_s": 244.8589415550232
+}

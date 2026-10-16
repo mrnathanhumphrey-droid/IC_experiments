@@ -1,0 +1,10 @@
+[WA] EleutherAI/pythia-160m (tag pythia160m_step16k) target acc>=0.8
+[WA] revision=step16000
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 5624.79it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2115812.90 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 402048.27 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 635691.02 examples/s]
+[WA] step 250: SST acc=0.820 (30s)
+[WA] target hit acc=0.820 at step 250; saved /home/ubuntu/gateA/pythia160m_step16k_sst2_wA.pt
+[WA] DONE tag=pythia160m_step16k acc=0.820 stop_step=250 matched=True wall=31s

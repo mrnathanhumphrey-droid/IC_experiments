@@ -1,0 +1,8 @@
+{
+  "report": {
+    "error": "Traceback (most recent call last):\n  File \"/home/ubuntu/crosspair_depth_lambda.py\", line 171, in main\n    defl = np.load(DEFL); rng = np.random.default_rng(0); NPERM = 2000\n  File \"/usr/lib/python3/dist-packages/numpy/lib/npyio.py\", line 417, in load\n    fid = stack.enter_context(open(os_fspath(file), \"rb\"))\nFileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/gateA/deflation_artifacts_opt_MISSING.npz'\n"
+  },
+  "ktop": 64,
+  "core": 16,
+  "wall_s": 131.7016236782074
+}

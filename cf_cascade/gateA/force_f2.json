@@ -1,0 +1,17 @@
+{
+  "task_B": "AG-News",
+  "cells_frac": {
+    "stiff_hipull": 0.3999989583333333,
+    "stiff_lopull": 0.1000125,
+    "sloppy_hipull": 0.10000104166666667,
+    "sloppy_lopull": 0.3999875
+  },
+  "collinearity_corr_logg2_logH": 0.6026858194002506,
+  "collinear": true,
+  "escape_median": 7754195.729737233,
+  "escape_p99": 1284299483866365.2,
+  "frac_stiff_hipull": 0.3999989583333333,
+  "high_binding_pulled_populated": true,
+  "verdict": "COLLINEAR -> force frame ~collapses to localization on AG-News (pull tracks binding); FK6 finding for this overlap regime",
+  "wall_s": 87.44813895225525
+}

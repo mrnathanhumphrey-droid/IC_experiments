@@ -1,0 +1,49 @@
+{
+ "bloom560m": {
+  "cell": "bloom560m",
+  "family": "BLOOM(ALiBi+multi ctrl)",
+  "model": "bigscience/bloom-560m",
+  "loaded": true,
+  "n_carriers": 72,
+  "carrier_kinds_sample": {
+   "query_key_value.weight": "Linear(3072, 1024)",
+   "dense_h_to_4h.weight": "Linear(4096, 1024)",
+   "dense_4h_to_h.weight": "Linear(1024, 4096)"
+  },
+  "posid": 18121,
+  "negid": 23381,
+  "acc_pretrain": 0.65,
+  "fisher_proj_ok": true,
+  "proj_frac": 0.0156,
+  "loss_first": 6.141,
+  "loss_last": 0.0,
+  "loss_dropped": true,
+  "acc_after20": 0.458
+ },
+ "jais590m": {
+  "cell": "jais590m",
+  "family": "JAIS(ALiBi+multi 2nd)",
+  "model": "inceptionai/jais-family-590m",
+  "loaded": true,
+  "n_carriers": 72,
+  "carrier_kinds_sample": {
+   "c_attn.weight": "Conv1D(1536, 4608)",
+   "c_fc.weight": "Conv1D(1536, 4096)",
+   "c_fc2.weight": "Conv1D(1536, 4096)"
+  },
+  "posid": 5377,
+  "negid": 8021,
+  "acc_pretrain": 0.85,
+  "fisher_proj_ok": true,
+  "proj_frac": 0.0034,
+  "loss_first": 5.948,
+  "loss_last": 0.001,
+  "loss_dropped": true,
+  "acc_after20": 0.458
+ },
+ "qwen2_1p5b": {
+  "cell": "qwen2_1p5b",
+  "loaded": false,
+  "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 54.00 MiB. GPU 0 has a total capacity of 22.07 GiB of which 8.44 MiB is free. Including non-PyTorch memory, this process has 22.05 GiB memory in use. Of the alloc"
+ }
+}

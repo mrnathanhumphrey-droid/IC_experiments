@@ -1,0 +1,29 @@
+[OPT3] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  86%|████████▋ | 252/292 [00:00<00:00, 2478.00it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2689.78it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2122027.51 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 406426.61 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 596985.12 examples/s]
+[OPT3] FA + PA done (39s)
+Generating train split:   0%|          | 0/18612 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 18612/18612 [00:00<00:00, 264700.41 examples/s]
+[OPT3] code task-B = python_code_instructions: 1500 examples (gen / CODE / instruction->python)
+[OPT3] code: seed+train(loss=0.104,steps=3000)+contest done (560s)
+[OPT3] saved camera frame crosspair_opt3.npz (560s)
+[OPT3] GUARD align(vs deflation)=0.0e+00 align(vs anchors)=0.0e+00  code_M1(vs curv)=0.59
+
+[OPT3] === CONTEST ===
+  [attention.query_key_value ] anchor-anchor(ref)=+0.57  code-anchor(test)=+0.32  test pos=71/72  dissoc Jac=0.29(z+2.9)
+  [mlp.dense_h_to_4h         ] anchor-anchor(ref)=+0.64  code-anchor(test)=+0.36  test pos=72/72  dissoc Jac=0.11(z+1.0)
+  [mlp.dense_4h_to_h         ] anchor-anchor(ref)=+0.72  code-anchor(test)=+0.49  test pos=72/72  dissoc Jac=0.21(z+2.2)
+  GRAND ref=+0.64 test=+0.39 frac=61% pos=215/216
+  VERDICT: PARTIAL: code-vs-anchor contest=+0.39 vs anchor-anchor +0.64 (shared frac 61%), 215/216 pos -> partly task-A-property, partly family-specific.
+
+[OPT3] === SEED ===
+  [attention.query_key_value ] anchor-anchor(ref)=+0.66  code-anchor(test)=+0.67  test pos=72/72  dissoc Jac=0.50(z+5.4)
+  [mlp.dense_h_to_4h         ] anchor-anchor(ref)=+0.62  code-anchor(test)=+0.37  test pos=70/72  dissoc Jac=0.14(z+1.3)
+  [mlp.dense_4h_to_h         ] anchor-anchor(ref)=+0.59  code-anchor(test)=+0.33  test pos=70/72  dissoc Jac=0.21(z+2.2)
+  GRAND ref=+0.63 test=+0.46 frac=73% pos=212/216
+  VERDICT: UNIVERSAL-STRONG: code-vs-anchor seed=+0.46 ~ anchor-anchor +0.63 (73%), 212/216 pos -> fragile subspace is a property of TASK-A, survives a structurally-different task-B. Strongest mechanism claim.
+
+[OPT3] OBJECT AGREEMENT: contest:PARTIAL | seed:UNIVERSAL-STRONG
+[OPT3] saved crosspair_opt3.json wall=567s

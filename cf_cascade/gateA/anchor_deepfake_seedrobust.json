@@ -1,0 +1,147 @@
+{
+ "anchor": "deepfake_seedrobust",
+ "lock": "a227f6a5",
+ "substrate": "physics-detector frozen-backbone GPM (head-only, no-reorg)",
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "n_seeds": 5,
+ "per_seed": [
+  {
+   "seed": 0,
+   "base_swap_auc": 0.8768635170603675,
+   "base_diff_auc": 0.23363636363636364,
+   "naive_swap_auc": 0.23931758530183728,
+   "naive_diff_auc": 0.7965909090909091,
+   "gpm_swap_auc": 0.8556430446194225,
+   "gpm_diff_auc": 0.2840909090909091,
+   "randctrl_swap_auc": 0.2398950131233596,
+   "randctrl_diff_auc": 0.793939393939394,
+   "swap_drop_naive": 0.6375459317585301,
+   "swap_drop_gpm": 0.021220472440944937,
+   "swap_drop_randctrl": 0.6369685039370079,
+   "cos_w_swap_w_diff": -0.24930613672299487,
+   "cos_meanshift_swap_diff": -0.9901337821611593,
+   "wall_s": 7.8
+  },
+  {
+   "seed": 1,
+   "base_swap_auc": 0.8388015262762328,
+   "base_diff_auc": 0.21328076685219544,
+   "naive_swap_auc": 0.24288894027866104,
+   "naive_diff_auc": 0.8532776747062462,
+   "gpm_swap_auc": 0.8360987454471873,
+   "gpm_diff_auc": 0.25803957946815087,
+   "randctrl_swap_auc": 0.2412412557090825,
+   "randctrl_diff_auc": 0.855364873222016,
+   "swap_drop_naive": 0.5959125859975718,
+   "swap_drop_gpm": 0.0027027808290455146,
+   "swap_drop_randctrl": 0.5975602705671503,
+   "cos_w_swap_w_diff": -0.08514525786347892,
+   "cos_meanshift_swap_diff": -0.9916970287459768,
+   "wall_s": 10.4
+  },
+  {
+   "seed": 2,
+   "base_swap_auc": 0.8939131575495212,
+   "base_diff_auc": 0.26637588001224366,
+   "naive_swap_auc": 0.1622458349731077,
+   "naive_diff_auc": 0.8255280073461891,
+   "gpm_swap_auc": 0.8780926144562509,
+   "gpm_diff_auc": 0.2679828588919498,
+   "randctrl_swap_auc": 0.16170798898071626,
+   "randctrl_diff_auc": 0.8200948882767065,
+   "swap_drop_naive": 0.7316673225764134,
+   "swap_drop_gpm": 0.0158205430932703,
+   "swap_drop_randctrl": 0.7322051685688049,
+   "cos_w_swap_w_diff": -0.022760589204471954,
+   "cos_meanshift_swap_diff": -0.990561965175615,
+   "wall_s": 9.4
+  },
+  {
+   "seed": 3,
+   "base_swap_auc": 0.8582173382173383,
+   "base_diff_auc": 0.2624659291325958,
+   "naive_swap_auc": 0.1950997150997151,
+   "naive_diff_auc": 0.763668430335097,
+   "gpm_swap_auc": 0.8477818477818477,
+   "gpm_diff_auc": 0.29677729677729675,
+   "randctrl_swap_auc": 0.1963858363858364,
+   "randctrl_diff_auc": 0.7681577681577682,
+   "swap_drop_naive": 0.6631176231176231,
+   "swap_drop_gpm": 0.010435490435490524,
+   "swap_drop_randctrl": 0.6618315018315019,
+   "cos_w_swap_w_diff": -0.2985676054916242,
+   "cos_meanshift_swap_diff": -0.992303027766299,
+   "wall_s": 8.9
+  },
+  {
+   "seed": 4,
+   "base_swap_auc": 0.8646691673840856,
+   "base_diff_auc": 0.234284332688588,
+   "naive_swap_auc": 0.20941458615176486,
+   "naive_diff_auc": 0.8035944551901999,
+   "gpm_swap_auc": 0.8568902963965072,
+   "gpm_diff_auc": 0.26684397163120566,
+   "randctrl_swap_auc": 0.21605583569056697,
+   "randctrl_diff_auc": 0.8035138620245004,
+   "swap_drop_naive": 0.6552545812323207,
+   "swap_drop_gpm": 0.007778870987578457,
+   "swap_drop_randctrl": 0.6486133316935186,
+   "cos_w_swap_w_diff": -0.2960316830320991,
+   "cos_meanshift_swap_diff": -0.9946281512798153,
+   "wall_s": 8.5
+  }
+ ],
+ "aggregate_mean_se": {
+  "base_swap_auc": [
+   0.8664929412975091,
+   0.009214237148208944
+  ],
+  "naive_swap_auc": [
+   0.2097933323610172,
+   0.014906057694638528
+  ],
+  "gpm_swap_auc": [
+   0.8549013097402431,
+   0.006879556728278526
+  ],
+  "randctrl_swap_auc": [
+   0.21105718597791237,
+   0.014863170223874907
+  ],
+  "gpm_diff_auc": [
+   0.27474692317190247,
+   0.006928174277257572
+  ],
+  "swap_drop_naive": [
+   0.6566996089364918,
+   0.022051488166002164
+  ],
+  "swap_drop_gpm": [
+   0.011591631557265947,
+   0.003205337285422295
+  ],
+  "swap_drop_randctrl": [
+   0.6554357553195966,
+   0.0219904581093304
+  ],
+  "cos_meanshift_swap_diff": [
+   -0.9918647910257731,
+   0.0007921522076628007
+  ],
+  "cos_w_swap_w_diff": [
+   -0.1903622544629338,
+   0.05723187134459398
+  ]
+ },
+ "reads": {
+  "antagonistic_endpoint_firms": true,
+  "suppression_works": true,
+  "randctrl_zero_protection": true
+ }
+}

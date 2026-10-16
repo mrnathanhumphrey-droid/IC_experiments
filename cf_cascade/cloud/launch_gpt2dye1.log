@@ -1,0 +1,68 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=ebd763d27caf48f9a6e624c5e8007472  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] status=active ip=129.213.81.192 347s
+[L] SSH up at 129.213.81.192 (349s)
+Warning: Permanently added '129.213.81.192' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.81.192' (ED25519) to the list of known hosts.
+[L] uploading 1.6GB checkpoint...
+Warning: Permanently added '129.213.81.192' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.81.192' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.81.192' (ED25519) to the list of known hosts.
+[L] upload done (476s)
+[L] installing transformers/datasets + upgrading Pillow...
+Warning: Permanently added '129.213.81.192' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L] running gpt2_dye1_lambda.py (502s)...
+Warning: Permanently added '129.213.81.192' (ED25519) to the list of known hosts.
+[G2D1] loading gpt2-medium + basis...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 5512.09it/s]
+[G2D1] 72 carriers, basis loaded (14s)
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+[G2D1] seed captured (16s)
+[G2D1] snap step=1 loss=16.580 (17s)
+[G2D1] snap step=2 loss=8.920 (17s)
+[G2D1] snap step=3 loss=4.689 (17s)
+[G2D1] snap step=5 loss=2.361 (17s)
+[G2D1] snap step=10 loss=0.389 (18s)
+[G2D1] snap step=25 loss=0.087 (19s)
+[G2D1] snap step=50 loss=0.299 (22s)
+[G2D1] snap step=100 loss=0.044 (27s)
+[G2D1] snap step=200 loss=0.270 (37s)
+[G2D1] snap step=400 loss=0.025 (56s)
+[G2D1] snap step=800 loss=0.000 (94s)
+[G2D1] saved camera frame (94s)
+  [attn.c_attn ] seedPR=4.1  wetted 8->1024  com 76->438  PR_rank 4->886
+  [mlp.c_fc    ] seedPR=18.5  wetted 31->1024  com 221->433  PR_rank 19->765
+  [mlp.c_proj  ] seedPR=17.3  wetted 37->1024  com 182->382  PR_rank 17->376
+[G2D1] saved gpt2_dye1.json wall=94s
+[L] run rc=0 (599s)
+[L] pulling result + log...
+Warning: Permanently added '129.213.81.192' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.81.192' (ED25519) to the list of known hosts.
+Warning: Permanently added '129.213.81.192' (ED25519) to the list of known hosts.
+[L] RESULT LANDED: gateA/gpt2_dye1.json
+[L] terminating ebd763d27caf48f9a6e624c5e8007472...
+[L] terminated ebd763d27caf48f9a6e624c5e8007472

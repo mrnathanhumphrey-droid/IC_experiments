@@ -1,0 +1,34 @@
+{
+  "cell": "opt350m",
+  "family": "OPT",
+  "mode": "measure",
+  "phase2": "subj",
+  "keys": [
+    "subj"
+  ],
+  "VOID": false,
+  "n_seeds": 100,
+  "w_A_acc": 0.8233333333333334,
+  "chosen_child_lr": 1e-05,
+  "child_lr_from_env": true,
+  "omega_cos2_min": 0.028391547893825364,
+  "omega_cos2_mean": 0.002404038250824446,
+  "sigma_sem": 0.003088906407356262,
+  "ret_anchor_ch": [
+    0.7891666666666666,
+    0.0017786456215091247
+  ],
+  "childhood_nondestructive": true,
+  "forget_noch": [
+    0.23693333333333338,
+    0.007540341187909111
+  ],
+  "forget_ch": [
+    0.09496666666666666,
+    0.007110557901461295
+  ],
+  "P_protection": [
+    0.14196666666666669,
+    0.009185712689859777
+  ]
+}

@@ -1,0 +1,91 @@
+{
+ "config": {
+  "caps": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15
+  ],
+  "ft": [
+   300,
+   0.0005
+  ],
+  "seed": 0,
+  "prereg_lock": "40287dfa"
+ },
+ "results": {
+  "cifar": {
+   "n": 16,
+   "median_forget": 0.232,
+   "descriptor_rho": {
+    "FC_feature": 0.191,
+    "JC_jacobian": 0.248,
+    "GC_gradient": 0.016,
+    "DS_centroid": 0.182
+   },
+   "best_descriptor": "JC_jacobian",
+   "svd_var_frac_top4": [
+    0.22,
+    0.191,
+    0.161,
+    0.126
+   ],
+   "mode1_victims": [
+    0,
+    6,
+    7,
+    10
+   ],
+   "mode1_perturbers": [
+    10,
+    4,
+    15,
+    5
+   ],
+   "mode1_u1v1_corr": 0.116
+  },
+  "dtd": {
+   "n": 16,
+   "median_forget": 0.2669,
+   "descriptor_rho": {
+    "FC_feature": 0.075,
+    "JC_jacobian": 0.072,
+    "GC_gradient": -0.022,
+    "DS_centroid": 0.08
+   },
+   "best_descriptor": "DS_centroid",
+   "svd_var_frac_top4": [
+    0.247,
+    0.228,
+    0.137,
+    0.103
+   ],
+   "mode1_victims": [
+    7,
+    15,
+    8,
+    6
+   ],
+   "mode1_perturbers": [
+    9,
+    6,
+    11,
+    2
+   ],
+   "mode1_u1v1_corr": 0.154
+  }
+ },
+ "verdict": "no candidate fits DTD -> the low-rank interaction descriptor is outside {feature,jacobian,gradient,centroid}"
+}

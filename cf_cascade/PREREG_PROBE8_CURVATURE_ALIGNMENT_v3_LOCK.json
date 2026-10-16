@@ -1,0 +1,23 @@
+{
+  "prereg": "PREREG_PROBE8_CURVATURE_ALIGNMENT_v3_2026_06_27.md",
+  "sha256": "65ae39d4ded332759627df7c341187fdfe3fc4e4ceee69ae8ea716f6902ebe21",
+  "short": "65ae39d4",
+  "locked": "2026-06-27",
+  "probe": "probe8_v3_curvature_alignment_clean_dualcell",
+  "supersedes": "v2 93f26963 (strong +14sigma TARGETED but double-flagged: nondestruct 0.010, random baseline at floor)",
+  "fixes": "calibration margin 0.015 + K_CAL=20 (reliable non-destructive dose); MULT={1,2,3} magnitude sweep (lift random off floor); dual-cell",
+  "primary": "delta_aniso(m=1)=mean(aniso_CH-aniso_NoCH); g(m)=mean(drand_NoCH-drand_CH); aniso=drand-dphase2 (acc-drops)",
+  "N": 100,
+  "K_CAL": 20,
+  "K_RAND": 5,
+  "MULT": [
+    1,
+    2,
+    3
+  ],
+  "cells": [
+    "opt350m",
+    "pythia410m"
+  ],
+  "fired": false
+}

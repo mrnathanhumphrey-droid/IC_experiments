@@ -1,0 +1,50 @@
+[L:f1b] tarball _face1b_ship.tar.gz with 35 files
+[L:f1b] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L:f1b] instance_id=bd2c8acc4bf045af8d7deaf1b4a52f72  (manual teardown if I go dark)
+[L:f1b] status=booting ip=None 1s
+[L:f1b] status=active ip=150.136.67.19 282s
+[L:f1b] SSH up at 150.136.67.19 (282s)
+Warning: Permanently added '150.136.67.19' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.67.19' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.67.19' (ED25519) to the list of known hosts.
+[L:f1b] uploaded+extracted (284s); pip...
+Warning: Permanently added '150.136.67.19' (ED25519) to the list of known hosts.
+pipok
+[L:f1b] running face1c_llm_lambda.py (SMOKE=1 LAYER=14 PROJDIM=12 OUTNAME=face1c_smoke.json) wd=1800s (306s)...
+Warning: Permanently added '150.136.67.19' (ED25519) to the list of known hosts.
+2026-07-18 03:01:44.247580: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784343704.303106    2567 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1784343704.319726    2567 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1784343704.423022    2567 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784343704.423046    2567 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784343704.423049    2567 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1784343704.423051    2567 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+[F1c] lock=nolock SMOKE=True model=Qwen/Qwen2.5-1.5B ncap=3 seeds=[0] steps=80 per=20 dev=cuda
+[F1c] random projection 1536->12 (de-saturate readout)
+Downloading builder script:   0%|          | 0.00/7.17k [00:00<?, ?B/s]Downloading builder script: 100%|██████████| 7.17k/7.17k [00:00<00:00, 285kB/s]
+Downloading metadata:   0%|          | 0.00/5.89k [00:00<?, ?B/s]Downloading metadata: 100%|██████████| 5.89k/5.89k [00:00<00:00, 199kB/s]
+Downloading readme:   0%|          | 0.00/9.78k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 9.78k/9.78k [00:00<00:00, 400kB/s]
+Downloading data:   0%|          | 0.00/158k [00:00<?, ?B/s]Downloading data: 839kB [00:00, 33.9MB/s]                   
+Downloading data:   0%|          | 0.00/51.1k [00:00<?, ?B/s]Downloading data: 240kB [00:00, 17.3MB/s]                    
+Generating train split:   0%|          | 0/10003 [00:00<?, ? examples/s]Generating train split:  34%|███▎      | 3367/10003 [00:00<00:00, 33620.41 examples/s]Generating train split:  70%|██████▉   | 7000/10003 [00:00<00:00, 34986.10 examples/s]Generating train split: 100%|██████████| 10003/10003 [00:00<00:00, 35122.48 examples/s]
+Generating test split:   0%|          | 0/3080 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 3080/3080 [00:00<00:00, 35719.89 examples/s]
+[F1c] loaded model+3 caps/10 neg (9s)
+[F1c] predictors done (10s)
+[F1c][diag] base victim AUC0 median=0.866 vals={0: 0.785, 1: 0.866, 2: 0.902}
+[F1c][diag] col j=0: act-drift(neg)=0.0641  auc1={0: 0.754, 1: 0.857, 2: 0.847}
+[F1c] seed 0: medFgt=0.042 inband=True grad%=1.86 curl%=0.38 (50s)
+
+[F1c] medFgt=0.042 inband=True | dominance-rho=+nan curl-rho=+nan
+[F1c] phi: trio LOO-R2=-0.272(null95 -0.272) ordinal=+0.500(p1.0) rho(d',phi)=-1.000[-1.0, -0.5]
+[F1c] law_pass=False transitive=False cyclic_real=False
+
+[F1c] HEADLINE: Mixed — see numbers.
+[F1c] wrote /home/ubuntu/ilaw/out/face1c_smoke.json  wall=64s
+[L:f1b] run rc=0 (384s)
+Warning: Permanently added '150.136.67.19' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.67.19' (ED25519) to the list of known hosts.
+[L:f1b] RESULT LANDED: D:\IC_experiments\interference_law\out\face1c_smoke.json
+[L:f1b] terminating bd2c8acc4bf045af8d7deaf1b4a52f72...
+[L:f1b] terminated bd2c8acc4bf045af8d7deaf1b4a52f72
+[L:f1b] ledger += 6min $0.21

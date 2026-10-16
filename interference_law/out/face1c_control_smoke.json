@@ -1,0 +1,59 @@
+{
+ "config": {
+  "model": "Qwen/Qwen2.5-1.5B",
+  "ncap": 3,
+  "seeds": [
+   0,
+   1
+  ],
+  "steps": 60,
+  "layer": 14,
+  "smoke": true
+ },
+ "grid": [
+  {
+   "projdim": 8,
+   "projseed": 0,
+   "auc0_med": 0.737,
+   "medFgt": 0.042,
+   "dominance_rho": 0.5,
+   "curl_rho": 0.029,
+   "phi_loo_r2": -30.085,
+   "rho_dprime_phi": 0.5
+  },
+  {
+   "projdim": 8,
+   "projseed": 1,
+   "auc0_med": 0.771,
+   "medFgt": 0.047,
+   "dominance_rho": 1.0,
+   "curl_rho": 0.257,
+   "phi_loo_r2": -6.073,
+   "rho_dprime_phi": -0.5
+  },
+  {
+   "projdim": 12,
+   "projseed": 0,
+   "auc0_med": 0.791,
+   "medFgt": -0.002,
+   "dominance_rho": 0.5,
+   "curl_rho": 0.714,
+   "phi_loo_r2": -130.392,
+   "rho_dprime_phi": 0.5
+  },
+  {
+   "projdim": 12,
+   "projseed": 1,
+   "auc0_med": 0.805,
+   "medFgt": 0.015,
+   "dominance_rho": 1.0,
+   "curl_rho": 0.943,
+   "phi_loo_r2": -24.484,
+   "rho_dprime_phi": 0.5
+  }
+ ],
+ "frac_cyclic_inband": 0.0,
+ "median_curl_inband": 0.143,
+ "cycles_persist": false,
+ "headline": "CYCLES ARE A PROJECTION ARTIFACT (curl-rho>=0.30 in only 0% of in-band grid, median +0.143) \u2014 the LLM cyclic finding does NOT survive."
+}

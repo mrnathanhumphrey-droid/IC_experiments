@@ -1,0 +1,63 @@
+{
+ "config": {
+  "model": "Qwen/Qwen2.5-1.5B",
+  "ncap": 3,
+  "seeds": [
+   0,
+   1
+  ],
+  "steps": 40,
+  "layer": 14,
+  "smoke": true
+ },
+ "summary": {
+  "real": {
+   "median_curl_rho": null,
+   "median_dom_rho": null,
+   "median_medFgt": null,
+   "n_inband": 0
+  },
+  "randtext": {
+   "median_curl_rho": null,
+   "median_dom_rho": null,
+   "median_medFgt": null,
+   "n_inband": 0
+  },
+  "noise": {
+   "median_curl_rho": null,
+   "median_dom_rho": null,
+   "median_medFgt": null,
+   "n_inband": 0
+  }
+ },
+ "rows": [
+  {
+   "cond": "real",
+   "projdim": 12,
+   "projseed": 0,
+   "auc0": 0.763,
+   "medFgt": -0.016,
+   "dom_rho": -1.0,
+   "curl_rho": -0.886
+  },
+  {
+   "cond": "randtext",
+   "projdim": 12,
+   "projseed": 0,
+   "auc0": 0.763,
+   "medFgt": 0.016,
+   "dom_rho": 1.0,
+   "curl_rho": 0.2
+  },
+  {
+   "cond": "noise",
+   "projdim": 12,
+   "projseed": 0,
+   "auc0": 0.763,
+   "medFgt": 0.027,
+   "dom_rho": 0.5,
+   "curl_rho": -0.257
+  }
+ ],
+ "headline": "INCONCLUSIVE \u2014 missing in-band points."
+}

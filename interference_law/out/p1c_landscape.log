@@ -1,0 +1,36 @@
+[P1c] LANDSCAPE ROUND-2 | nseed=10 kpc=5 boot=2000 perm=2000 dev=cuda | primary=RESID, bar |rho|>=.30 & perm_p<.01 & both-datasets
+[P1c] === cifar ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  [cifar] FT seed 5/10 (53s)
+  [cifar] FT seed 10/10 (96s)
+D:\IC_experiments\interference_law\p1c_landscape_round2.py:115: RuntimeWarning: Mean of empty slice
+  FT = np.nanmean(seeds, axis=0); RES = decomp_resid(FT, n)
+  [cifar] descriptors built (98s)
+  [cifar] Y1_reach     resid rho=+0.055 CI[-0.044,+0.158] p=0.273 | ft rho=+0.067 p=0.188 
+  [cifar] Y2_newton    resid rho=-0.063 CI[-0.161,+0.038] p=0.227 | ft rho=-0.022 p=0.655 
+  [cifar] Y3_spread    resid rho=+0.123 CI[+0.023,+0.225] p=0.017 | ft rho=+0.160 p=0.003 
+  [cifar] Y4_whiten    resid rho=+0.064 CI[-0.037,+0.159] p=0.217 | ft rho=+0.024 p=0.639 
+  [cifar] Y5_usage     resid rho=-0.107 CI[-0.209,-0.007] p=0.031 | ft rho=-0.093 p=0.075 
+  [cifar] Y6_curvtr    resid rho=+0.110 CI[+0.005,+0.217] p=0.032 | ft rho=+0.129 p=0.012 
+[P1c] === dtd ===
+  [dtd] FT seed 5/10 (79s)
+  [dtd] FT seed 10/10 (121s)
+  [dtd] descriptors built (123s)
+  [dtd] Y1_reach     resid rho=+0.077 CI[-0.018,+0.169] p=0.117 | ft rho=-0.042 p=0.414 
+  [dtd] Y2_newton    resid rho=+0.085 CI[-0.015,+0.182] p=0.098 | ft rho=-0.064 p=0.217 
+  [dtd] Y3_spread    resid rho=+0.108 CI[+0.007,+0.207] p=0.038 | ft rho=-0.055 p=0.281 
+  [dtd] Y4_whiten    resid rho=+0.008 CI[-0.096,+0.110] p=0.874 | ft rho=-0.015 p=0.762 
+  [dtd] Y5_usage     resid rho=-0.092 CI[-0.186,+0.008] p=0.070 | ft rho=-0.046 p=0.386 
+  [dtd] Y6_curvtr    resid rho=-0.088 CI[-0.190,+0.012] p=0.095 | ft rho=+0.093 p=0.075 
+
+=== P1c ROUND-2 (rho(X, interaction-residual) by dataset) ===
+  descriptor           cifar           dtd   replicated_HIT
+  Y1_reach            +0.055        +0.077   
+  Y2_newton           -0.063        +0.085   
+  Y3_spread           +0.123        +0.107   
+  Y4_whiten           +0.065        +0.008   
+  Y5_usage            -0.107        -0.092   
+  Y6_curvtr           +0.110        -0.088   
+
+[P1c] replicated_HITs=[] | VERDICT: NULL: interaction resists optimization-landscape descriptors too -> bank strengthened negative + PIVOT TO PLASTIC
+[P1c] wrote D:\IC_experiments\interference_law\out\p1c_landscape.json  wall=223s

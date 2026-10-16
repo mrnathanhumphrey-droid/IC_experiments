@@ -1,0 +1,67 @@
+[buildwA:bloom560m] bigscience/bloom-560m fine-tune on SST-2  lr=2.0e-05 steps=2000 (Sun Jul 26 15:52:20 2026)
+2026-07-26 15:52:26.758584: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-26 15:52:27.004544: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785081147.112346    2635 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1785081147.137246    2635 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1785081147.339458    2635 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785081147.339530    2635 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785081147.339533    2635 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1785081147.339536    2635 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-07-26 15:52:27.363766: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[buildwA:bloom560m] posid=18121 negid=23381 (distinct=True)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 1315939.38 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 263238.31 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 422516.32 examples/s]
+[buildwA:bloom560m] base (untuned) SST-2 acc=0.605 (26s)
+[hb] bloom560m step 0/2000 loss=8.094 (26s)
+[hb] bloom560m step 50/2000 loss=1.095 (37s)
+[hb] bloom560m step 100/2000 loss=0.916 (48s)
+[hb] bloom560m step 150/2000 loss=0.532 (59s)
+[hb] bloom560m step 200/2000 loss=0.305 (70s)
+[eval] bloom560m step 250 val_acc=0.8050 (best -1.0000@0) (84s)
+[hb] bloom560m step 250/2000 loss=0.035 (86s)
+[hb] bloom560m step 300/2000 loss=0.293 (97s)
+[hb] bloom560m step 350/2000 loss=0.271 (109s)
+[hb] bloom560m step 400/2000 loss=0.183 (120s)
+[hb] bloom560m step 450/2000 loss=0.118 (131s)
+[eval] bloom560m step 500 val_acc=0.8125 (best 0.8050@250) (145s)
+[hb] bloom560m step 500/2000 loss=0.385 (148s)
+[hb] bloom560m step 550/2000 loss=0.997 (159s)
+[hb] bloom560m step 600/2000 loss=0.304 (170s)
+[hb] bloom560m step 650/2000 loss=0.432 (181s)
+[hb] bloom560m step 700/2000 loss=0.387 (193s)
+[eval] bloom560m step 750 val_acc=0.8275 (best 0.8125@500) (206s)
+[hb] bloom560m step 750/2000 loss=0.182 (209s)
+[hb] bloom560m step 800/2000 loss=0.644 (220s)
+[hb] bloom560m step 850/2000 loss=0.078 (231s)
+[hb] bloom560m step 900/2000 loss=0.264 (242s)
+[hb] bloom560m step 950/2000 loss=0.229 (253s)
+[eval] bloom560m step 1000 val_acc=0.8050 (best 0.8275@750) (267s)
+[hb] bloom560m step 1000/2000 loss=0.009 (267s)
+[hb] bloom560m step 1050/2000 loss=0.430 (278s)
+[hb] bloom560m step 1100/2000 loss=0.013 (290s)
+[hb] bloom560m step 1150/2000 loss=0.406 (301s)
+[hb] bloom560m step 1200/2000 loss=1.128 (313s)
+[eval] bloom560m step 1250 val_acc=0.8475 (best 0.8275@750) (326s)
+[hb] bloom560m step 1250/2000 loss=0.011 (329s)
+[hb] bloom560m step 1300/2000 loss=0.152 (340s)
+[hb] bloom560m step 1350/2000 loss=0.058 (351s)
+[hb] bloom560m step 1400/2000 loss=0.288 (363s)
+[hb] bloom560m step 1450/2000 loss=0.107 (374s)
+[eval] bloom560m step 1500 val_acc=0.8300 (best 0.8475@1250) (387s)
+[hb] bloom560m step 1500/2000 loss=0.213 (388s)
+[hb] bloom560m step 1550/2000 loss=0.009 (399s)
+[hb] bloom560m step 1600/2000 loss=0.310 (410s)
+[hb] bloom560m step 1650/2000 loss=1.669 (421s)
+[hb] bloom560m step 1700/2000 loss=0.000 (432s)
+[eval] bloom560m step 1750 val_acc=0.8150 (best 0.8475@1250) (446s)
+[hb] bloom560m step 1750/2000 loss=0.136 (446s)
+[hb] bloom560m step 1800/2000 loss=0.010 (457s)
+[hb] bloom560m step 1850/2000 loss=0.001 (468s)
+[hb] bloom560m step 1900/2000 loss=0.000 (480s)
+[hb] bloom560m step 1950/2000 loss=0.000 (491s)
+[eval] bloom560m step 2000 val_acc=0.8300 (best 0.8475@1250) (505s)
+[buildwA:bloom560m] SAVED /home/ubuntu/gateA/bloom560m_sst2_wA.pt  anchor_acc=0.8475@1250  reload_confirm=0.8475  wall=512s
+[buildwA:bloom560m] >>> set ANCHOR_WA['BLOOM']=0.848 in the Probe-11 harness <<<

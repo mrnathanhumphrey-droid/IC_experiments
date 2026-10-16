@@ -1,0 +1,29 @@
+[TAV] loading base + tokenizer...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  62%|██████▏   | 182/292 [00:00<00:00, 1806.31it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2214.95it/s]
+[TAV] base loaded, 72 carriers (9s)
+[TAV] probe 'ag': 2400 examples
+[TAV] probe 'yelp': 2400 examples
+[TAV] probe 'subj': 2400 examples
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2026356.35 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 370148.07 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 542459.35 examples/s]
+[TAV] probe 'sst2': 400 examples
+[TAV] GUARD align(PA_sst vs deflation)=0.0e+00
+[TAV] task-A=sst2 fragile+topcurv subspaces built (46s)
+[TAV] task-A=ag trained loss=0.017 steps=1341 (173s)
+[TAV] task-A=ag fragile+topcurv subspaces built (202s)
+[TAV] task-A=ucdp trained loss=0.020 steps=2529 (431s)
+[TAV] task-A=ucdp fragile+topcurv subspaces built (460s)
+[TAV] saved camera frame taskA_variation.npz (460s)
+  [sst2 vs ag][attention.query_key_value ] fragile G=0.13(z+83) topcurv G=0.13 match=0.03 chance~0.016
+  [sst2 vs ag][mlp.dense_h_to_4h         ] fragile G=0.10(z+67) topcurv G=0.11 match=0.02 chance~0.016
+  [sst2 vs ag][mlp.dense_4h_to_h         ] fragile G=0.08(z+232) topcurv G=0.08 match=0.02 chance~0.004
+  [sst2 vs ucdp][attention.query_key_value ] fragile G=0.15(z+98) topcurv G=0.15 match=0.03 chance~0.016
+  [sst2 vs ucdp][mlp.dense_h_to_4h         ] fragile G=0.12(z+80) topcurv G=0.12 match=0.02 chance~0.016
+  [sst2 vs ucdp][mlp.dense_4h_to_h         ] fragile G=0.10(z+276) topcurv G=0.10 match=0.03 chance~0.004
+
+[TAV] VERDICT: ATTENTION PARTIAL (fragile G=0.14 z+90>>random but not full) -> fixed architectural core + task-A margin (shared frac ~14%).
+  generic-curvature(fragile~topcurv)
+  attention G=0.14 vs MLP G=0.10 -> attention ~ MLP (no carrier split)
+[TAV] saved taskA_variation.json wall=495s

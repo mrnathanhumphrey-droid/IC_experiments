@@ -1,0 +1,25 @@
+[FLOOR:pythia410m:drift] EleutherAI/pythia-410m precision=bf16 dispositive B-D floor
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 3431.58it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2671706.31 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 524438.36 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 869317.96 examples/s]
+[FLOOR:pythia410m:drift] w_A acc=0.753 (exp 0.753) OK; 72 carriers (12s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  17%|█▋        | 95000/560000 [00:00<00:00, 931174.50 examples/s]Generating train split:  38%|███▊      | 210000/560000 [00:00<00:00, 1053941.52 examples/s]Generating train split:  61%|██████    | 340000/560000 [00:00<00:00, 1103505.73 examples/s]Generating train split:  89%|████████▊ | 496000/560000 [00:00<00:00, 1271810.40 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1180706.55 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1171967.43 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   6%|▌         | 83000/1400000 [00:00<00:01, 811649.99 examples/s]Generating train split:  12%|█▏        | 169000/1400000 [00:00<00:01, 832039.23 examples/s]Generating train split:  22%|██▏       | 301000/1400000 [00:00<00:01, 848722.43 examples/s]Generating train split:  30%|██▉       | 418000/1400000 [00:00<00:01, 813838.58 examples/s]Generating train split:  36%|███▌      | 503000/1400000 [00:00<00:01, 820108.48 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:00, 831086.80 examples/s]Generating train split:  50%|████▉     | 693000/1400000 [00:00<00:00, 887739.26 examples/s]Generating train split:  57%|█████▋    | 796000/1400000 [00:00<00:00, 806198.85 examples/s]Generating train split:  63%|██████▎   | 884000/1400000 [00:01<00:00, 822131.58 examples/s]Generating train split:  69%|██████▉   | 971000/1400000 [00:01<00:00, 834057.29 examples/s]Generating train split:  76%|███████▋  | 1070000/1400000 [00:01<00:00, 876996.30 examples/s]Generating train split:  83%|████████▎ | 1159000/1400000 [00:01<00:00, 878971.57 examples/s]Generating train split:  89%|████████▉ | 1250000/1400000 [00:01<00:00, 885276.97 examples/s]Generating train split:  99%|█████████▉| 1389000/1400000 [00:01<00:00, 898045.88 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 856097.34 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 925329.78 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 573873.46 examples/s]Generating train split:  96%|█████████▋| 201886/209527 [00:00<00:00, 551879.91 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 554402.11 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1638360.00 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 919702.66 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 957494.35 examples/s]
+Traceback (most recent call last):
+  File "/home/ubuntu/floor_battery_lambda.py", line 205, in <module>
+    main()
+  File "/home/ubuntu/floor_battery_lambda.py", line 180, in main
+    seeds = list(range(30)); rB, rD = bd_over(seeds); bd = float(np.mean(rB - rD))
+  File "/home/ubuntu/floor_battery_lambda.py", line 148, in bd_over
+    model.load_state_dict(ckpt_sd); childhood(model, tok, stream, sd, use_bf16, Vproj=V, carriers=carriers); rD.append(phase2(model, tok, ho_tr, sst_eval, posid, negid, sd, use_bf16))
+  File "/home/ubuntu/floor_battery_lambda.py", line 105, in childhood
+    for n in carriers: gd = params[n].grad; gd.sub_((gd @ Vproj[n]) @ Vproj[n].T)
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: float != double

@@ -1,0 +1,99 @@
+{
+  "cell": "pythia160m",
+  "model": "EleutherAI/pythia-160m",
+  "family": "PYTHIA",
+  "size_m": 160,
+  "depth": null,
+  "pre_sst": 0.7933333333333333,
+  "n_carriers": 36,
+  "n_seeds": 30,
+  "A_forget": 0.2737777777777778,
+  "VOID": false,
+  "retention": {
+    "A": [
+      0.5195555555555555,
+      0.0093992382144696
+    ],
+    "B": [
+      0.55,
+      0.014215096394933149
+    ],
+    "D": [
+      0.5549999999999999,
+      0.016370354478358936
+    ],
+    "B_minus_A": [
+      0.030444444444444437,
+      0.017368909359705895
+    ],
+    "B_minus_D": [
+      -0.005000000000000003,
+      0.023138071881001022
+    ],
+    "D_minus_A": [
+      0.03544444444444445,
+      0.019411181181845035
+    ]
+  },
+  "guards": {
+    "mapfrac_B": [
+      0.47111306618487375,
+      0.0013819532213505455
+    ],
+    "mapfrac_D": [
+      0.019918099994738092,
+      0.00013068826073414684
+    ],
+    "childB_drop": [
+      12.140622523340085,
+      0.05139418832913493
+    ],
+    "childD_drop": [
+      20.229199565698703,
+      0.06446973502453125
+    ],
+    "M_stability": [
+      0.6519240504874217,
+      0.0032517981504751998
+    ]
+  },
+  "resid_BD_per_carrier_median": 0.05128793126573069,
+  "carriers": [
+    "gpt_neox.layers.0.attention.query_key_value.weight",
+    "gpt_neox.layers.0.mlp.dense_h_to_4h.weight",
+    "gpt_neox.layers.0.mlp.dense_4h_to_h.weight",
+    "gpt_neox.layers.1.attention.query_key_value.weight",
+    "gpt_neox.layers.1.mlp.dense_h_to_4h.weight",
+    "gpt_neox.layers.1.mlp.dense_4h_to_h.weight",
+    "gpt_neox.layers.2.attention.query_key_value.weight",
+    "gpt_neox.layers.2.mlp.dense_h_to_4h.weight",
+    "gpt_neox.layers.2.mlp.dense_4h_to_h.weight",
+    "gpt_neox.layers.3.attention.query_key_value.weight",
+    "gpt_neox.layers.3.mlp.dense_h_to_4h.weight",
+    "gpt_neox.layers.3.mlp.dense_4h_to_h.weight",
+    "gpt_neox.layers.4.attention.query_key_value.weight",
+    "gpt_neox.layers.4.mlp.dense_h_to_4h.weight",
+    "gpt_neox.layers.4.mlp.dense_4h_to_h.weight",
+    "gpt_neox.layers.5.attention.query_key_value.weight",
+    "gpt_neox.layers.5.mlp.dense_h_to_4h.weight",
+    "gpt_neox.layers.5.mlp.dense_4h_to_h.weight",
+    "gpt_neox.layers.6.attention.query_key_value.weight",
+    "gpt_neox.layers.6.mlp.dense_h_to_4h.weight",
+    "gpt_neox.layers.6.mlp.dense_4h_to_h.weight",
+    "gpt_neox.layers.7.attention.query_key_value.weight",
+    "gpt_neox.layers.7.mlp.dense_h_to_4h.weight",
+    "gpt_neox.layers.7.mlp.dense_4h_to_h.weight",
+    "gpt_neox.layers.8.attention.query_key_value.weight",
+    "gpt_neox.layers.8.mlp.dense_h_to_4h.weight",
+    "gpt_neox.layers.8.mlp.dense_4h_to_h.weight",
+    "gpt_neox.layers.9.attention.query_key_value.weight",
+    "gpt_neox.layers.9.mlp.dense_h_to_4h.weight",
+    "gpt_neox.layers.9.mlp.dense_4h_to_h.weight",
+    "gpt_neox.layers.10.attention.query_key_value.weight",
+    "gpt_neox.layers.10.mlp.dense_h_to_4h.weight",
+    "gpt_neox.layers.10.mlp.dense_4h_to_h.weight",
+    "gpt_neox.layers.11.attention.query_key_value.weight",
+    "gpt_neox.layers.11.mlp.dense_h_to_4h.weight",
+    "gpt_neox.layers.11.mlp.dense_4h_to_h.weight"
+  ]
+}

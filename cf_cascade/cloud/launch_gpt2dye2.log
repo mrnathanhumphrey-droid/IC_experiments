@@ -1,0 +1,61 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=403d441fe426469882c9c7994cb43659  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] status=active ip=150.136.36.112 380s
+[L] SSH up at 150.136.36.112 (380s)
+Warning: Permanently added '150.136.36.112' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.36.112' (ED25519) to the list of known hosts.
+[L] uploading 1.6GB checkpoint...
+Warning: Permanently added '150.136.36.112' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.36.112' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.36.112' (ED25519) to the list of known hosts.
+[L] upload done (463s)
+[L] installing transformers/datasets + upgrading Pillow...
+Warning: Permanently added '150.136.36.112' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L] running gpt2_dye2_lambda.py (488s)...
+Warning: Permanently added '150.136.36.112' (ED25519) to the list of known hosts.
+[G2D2] loading gpt2-medium + basis...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 5595.04it/s]
+[G2D2] basis + injections built (12s)
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+[G2D2] baseline done (95s)
+[G2D2] stiff run done (175s)
+[G2D2] flat run done (254s)
+[G2D2] saved series (254s)
+  [attn.c_attn ] PR stiff 1.0->3.0 flat 1.0->2.8 | peak ratio 1.06@800 final 1.06
+  [mlp.c_fc    ] PR stiff 1.0->3.1 flat 1.0->2.9 | peak ratio 1.10@800 final 1.10
+  [mlp.c_proj  ] PR stiff 1.0->1.5 flat 1.0->1.4 | peak ratio 1.03@800 final 1.03
+
+[G2D2] WEAKER grading (mean peak 1.06x < Pythia 1.4x) -> continuum gives gentler transport grading as predicted
+[G2D2] saved gpt2_dye2.json wall=254s
+[L] run rc=0 (746s)
+[L] pulling result + log...
+Warning: Permanently added '150.136.36.112' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.36.112' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.36.112' (ED25519) to the list of known hosts.
+[L] RESULT LANDED: gateA/gpt2_dye2.json
+[L] terminating 403d441fe426469882c9c7994cb43659...
+[L] terminated 403d441fe426469882c9c7994cb43659

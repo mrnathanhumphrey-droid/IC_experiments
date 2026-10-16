@@ -1,0 +1,63 @@
+[P9:pythia410m:screen] EleutherAI/pythia-410m aiming-axis MODE=screen STREAM=ALL (Sun Jun 28 17:00:23 2026)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 5863.29it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 3742725.14 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 577246.38 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 974958.84 examples/s]
+[P9:pythia410m] w_A acc=0.753; 72 carriers (8s)
+Repo card metadata block was not found. Setting CardData to empty.
+Generating train split:   0%|          | 0/5452 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 5452/5452 [00:00<00:00, 778860.54 examples/s]
+Generating test split:   0%|          | 0/500 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 500/500 [00:00<00:00, 286261.53 examples/s]
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  32%|███▏      | 179000/560000 [00:00<00:00, 1771962.28 examples/s]Generating train split:  70%|███████   | 393000/560000 [00:00<00:00, 1978998.28 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1973266.12 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1893358.96 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 2690057.48 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 1150385.08 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 1188861.68 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 686932.24 examples/s]Generating train split:  96%|█████████▋| 201886/209527 [00:00<00:00, 660264.23 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 661634.95 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:  11%|█         | 150000/1400000 [00:00<00:00, 1484954.68 examples/s]Generating train split:  22%|██▎       | 315000/1400000 [00:00<00:00, 1579297.44 examples/s]Generating train split:  35%|███▌      | 491000/1400000 [00:00<00:00, 1636641.63 examples/s]Generating train split:  47%|████▋     | 656000/1400000 [00:00<00:00, 1636761.34 examples/s]Generating train split:  64%|██████▎   | 891000/1400000 [00:00<00:00, 1601534.82 examples/s]Generating train split:  76%|███████▌  | 1057000/1400000 [00:00<00:00, 1616919.57 examples/s]Generating train split:  87%|████████▋ | 1221000/1400000 [00:00<00:00, 1620069.57 examples/s]Generating train split: 100%|█████████▉| 1394000/1400000 [00:00<00:00, 1643644.73 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:00<00:00, 1619392.92 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 1600238.07 examples/s]
+[P9:pythia410m] datasets loaded (subj 2200; TREC 900; streams ['agnews', 'dbpedia', 'emotion', 'newscat', 'yahoo'])
+[hb] p2 1/12 1/250 loss=23.185 (40s)
+[hb] p2 1/12 26/250 loss=0.778 (43s)
+[hb] p2 1/12 51/250 loss=0.220 (44s)
+[hb] p2 1/12 76/250 loss=0.404 (46s)
+[hb] p2 1/12 101/250 loss=0.389 (48s)
+[hb] p2 1/12 126/250 loss=0.031 (50s)
+[hb] p2 1/12 151/250 loss=0.004 (52s)
+[hb] p2 1/12 176/250 loss=0.162 (54s)
+[hb] p2 1/12 201/250 loss=0.001 (55s)
+[hb] p2 1/12 226/250 loss=0.012 (57s)
+[hb] p2 1/12 250/250 loss=0.144 (59s)
+[hb] p2 5/12 1/250 loss=23.376 (116s)
+[hb] p2 5/12 26/250 loss=0.601 (118s)
+[hb] p2 5/12 51/250 loss=0.344 (120s)
+[hb] p2 5/12 76/250 loss=0.226 (122s)
+[hb] p2 5/12 101/250 loss=0.349 (123s)
+[hb] p2 5/12 126/250 loss=0.115 (125s)
+[hb] p2 5/12 151/250 loss=0.007 (127s)
+[hb] p2 5/12 176/250 loss=0.151 (129s)
+[hb] p2 5/12 201/250 loss=0.014 (130s)
+[hb] p2 5/12 226/250 loss=0.369 (132s)
+[hb] p2 5/12 250/250 loss=0.054 (134s)
+[hb] p2 9/12 1/250 loss=23.606 (191s)
+[hb] p2 9/12 26/250 loss=0.945 (193s)
+[hb] p2 9/12 51/250 loss=0.379 (195s)
+[hb] p2 9/12 76/250 loss=0.434 (197s)
+[hb] p2 9/12 101/250 loss=0.107 (199s)
+[hb] p2 9/12 126/250 loss=0.115 (200s)
+[hb] p2 9/12 151/250 loss=0.098 (202s)
+[hb] p2 9/12 176/250 loss=0.337 (204s)
+[hb] p2 9/12 201/250 loss=0.063 (206s)
+[hb] p2 9/12 226/250 loss=0.119 (208s)
+[hb] p2 9/12 250/250 loss=0.557 (209s)
+[omega] phase-2 subspace built (M=12, dim=25165824) (266s)
+[omega] agnews             cos2_min=0.0818 cos2_mean=0.0080 (644s)
+[omega] dbpedia            cos2_min=0.0880 cos2_mean=0.0078 (1023s)
+[omega] yahoo              cos2_min=0.0754 cos2_mean=0.0067 (1381s)
+[omega] newscat            cos2_min=0.0636 cos2_mean=0.0056 (1742s)
+[omega] emotion            cos2_min=0.0720 cos2_mean=0.0065 (2106s)
+[omega] agnews+dbpedia     cos2_min=0.0883 cos2_mean=0.0077 (2486s)
+[omega] yahoo+emotion      cos2_min=0.0762 cos2_mean=0.0067 (2850s)
+[omega] newscat+dbpedia    cos2_min=0.0810 cos2_mean=0.0071 (3222s)
+[omega] mix5               cos2_min=0.0827 cos2_mean=0.0073 (3596s)
+[P9:pythia410m] SCREEN DONE span=0.025 healthy=False degenerate=[] omegas={'agnews': 0.082, 'dbpedia': 0.088, 'yahoo': 0.075, 'newscat': 0.064, 'emotion': 0.072, 'agnews+dbpedia': 0.088, 'yahoo+emotion': 0.076, 'newscat+dbpedia': 0.081, 'mix5': 0.083} saved /home/ubuntu/gateA/probe9_screen_pythia410m.json wall=3596s

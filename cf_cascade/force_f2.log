@@ -1,0 +1,15 @@
+[F2] start; loading model...
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  60%|#####9    | 174/292 [00:00<00:00, 1403.38it/s]Loading weights: 100%|##########| 292/292 [00:00<00:00, 353.48it/s] 
+Using the latest cached version of the dataset since stanfordnlp/sst2 couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at D:\IC_experiments\cf_cascade\hf_cache\datasets\stanfordnlp___sst2\default\0.0.0\8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb (last modified on Wed Jun 17 21:10:07 2026).
+[F2] loaded (77s)
+[F2] F0 binding bases built (84s)
+[F2] F1 pull computed (87s)
+
+[F2] === FORCE BALANCE 2x2 OCCUPANCY (task-B = AG-News) ===
+  2x2 cells (frac): stiff&hipull=0.400  stiff&lopull=0.100
+                    sloppy&hipull=0.100  sloppy&lopull=0.400
+  pull-binding collinearity corr(log g^2, log H) = +0.603  (COLLINEAR)
+  escape g^2/H: median=7.754e+06  p99=1.284e+15  p99/median=1.7e+08
+  VERDICT: COLLINEAR -> force frame ~collapses to localization on AG-News (pull tracks binding); FK6 finding for this overlap regime
+[F2] saved force_f2.json  wall=87s

@@ -1,0 +1,35 @@
+{
+  "cell": "opt350m",
+  "family": "OPT",
+  "mode": "measure",
+  "phase2": "agnews+yahoo",
+  "keys": [
+    "agnews",
+    "yahoo"
+  ],
+  "VOID": false,
+  "n_seeds": 100,
+  "w_A_acc": 0.8233333333333334,
+  "chosen_child_lr": 1e-05,
+  "child_lr_from_env": true,
+  "omega_cos2_min": 0.19949085794523355,
+  "omega_cos2_mean": 0.01666869628106154,
+  "sigma_sem": 0.018317533656954765,
+  "ret_anchor_ch": [
+    0.7874,
+    0.0015986666722830195
+  ],
+  "childhood_nondestructive": true,
+  "forget_noch": [
+    0.13856666666666667,
+    0.005662655542146381
+  ],
+  "forget_ch": [
+    0.11786666666666665,
+    0.006049648680563952
+  ],
+  "P_protection": [
+    0.02070000000000003,
+    0.007757013408173944
+  ]
+}

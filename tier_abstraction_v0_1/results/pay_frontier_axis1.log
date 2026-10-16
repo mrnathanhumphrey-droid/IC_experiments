@@ -1,0 +1,31 @@
+held-out fine (15): [0, 1, 2, 3, 4, 5, 6, 9, 12, 15, 22, 23, 26, 34, 54]
+[seed 0] super fit_pool=   50  z_low=0.1827  z_trans=0.2307  diff=+0.0480
+[seed 0] super fit_pool=  200  z_low=0.2687  z_trans=0.3387  diff=+0.0700
+[seed 0] super fit_pool= 1000  z_low=0.3320  z_trans=0.3667  diff=+0.0347
+[seed 0] super fit_pool= 4000  z_low=0.3747  z_trans=0.3653  diff=-0.0093
+[seed 0] super fit_pool= 8000  z_low=0.3840  z_trans=0.3660  diff=-0.0180
+[seed 1] super fit_pool=   50  z_low=0.1560  z_trans=0.2093  diff=+0.0533
+[seed 1] super fit_pool=  200  z_low=0.2553  z_trans=0.3093  diff=+0.0540
+[seed 1] super fit_pool= 1000  z_low=0.3007  z_trans=0.3273  diff=+0.0267
+[seed 1] super fit_pool= 4000  z_low=0.3460  z_trans=0.3487  diff=+0.0027
+[seed 1] super fit_pool= 8000  z_low=0.3500  z_trans=0.3480  diff=-0.0020
+[seed 2] super fit_pool=   50  z_low=0.1820  z_trans=0.2193  diff=+0.0373
+[seed 2] super fit_pool=  200  z_low=0.2573  z_trans=0.3233  diff=+0.0660
+[seed 2] super fit_pool= 1000  z_low=0.3187  z_trans=0.3387  diff=+0.0200
+[seed 2] super fit_pool= 4000  z_low=0.3427  z_trans=0.3347  diff=-0.0080
+[seed 2] super fit_pool= 8000  z_low=0.3513  z_trans=0.3407  diff=-0.0107
+
+=== AXIS 1: data-scarcity super-transfer ===
+fit_pool=   50  z_low=0.1736  z_trans=0.2198  diff=+0.0462  CI=[+0.0340,+0.0582]  <-- CROSSOVER
+fit_pool=  200  z_low=0.2604  z_trans=0.3238  diff=+0.0633  CI=[+0.0491,+0.0769]  <-- CROSSOVER
+fit_pool= 1000  z_low=0.3171  z_trans=0.3442  diff=+0.0271  CI=[+0.0147,+0.0400]  <-- CROSSOVER
+fit_pool= 4000  z_low=0.3544  z_trans=0.3496  diff=-0.0049  CI=[-0.0178,+0.0082]
+fit_pool= 8000  z_low=0.3618  z_trans=0.3516  diff=-0.0102  CI=[-0.0227,+0.0029]
+
+=== fine k-shot (secondary) ===
+k= 1  z_low=0.3040  z_trans=0.2661  diff=-0.0379
+k= 5  z_low=0.5090  z_trans=0.4274  diff=-0.0816
+k=10  z_low=0.5628  z_trans=0.4755  diff=-0.0873
+k=20  z_low=0.5938  z_trans=0.4964  diff=-0.0974
+
+AXIS 1 CONFIRMED — low-data regime of utility EXISTS

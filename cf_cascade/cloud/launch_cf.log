@@ -1,0 +1,94 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=5df74063fa6b48158035460b9af83432  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] status=active ip=132.145.143.21 251s
+[L] SSH up at 132.145.143.21 (251s)
+Warning: Permanently added '132.145.143.21' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.143.21' (ED25519) to the list of known hosts.
+[L] uploading 1.6GB checkpoint (slow on residential up)...
+Warning: Permanently added '132.145.143.21' (ED25519) to the list of known hosts.
+Warning: Permanently added '132.145.143.21' (ED25519) to the list of known hosts.
+[L] upload done (313s)
+[L] installing transformers/datasets...
+Warning: Permanently added '132.145.143.21' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L] running firsthalf_lambda.py (337s)...
+Warning: Permanently added '132.145.143.21' (ED25519) to the list of known hosts.
+[FH] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2262, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2496, in _get_module
+    raise e
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2494, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/models/gpt_neox/modeling_gpt_neox.py", line 18, in <module>
+    from ...modeling_layers import GradientCheckpointingLayer
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/modeling_layers.py", line 27, in <module>
+    from .processing_utils import Unpack
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/processing_utils.py", line 40, in <module>
+    from .image_utils import ChannelDimension, ImageInput, is_vision_available, make_flat_list_of_images
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/image_utils.py", line 51, in <module>
+    PILImageResampling = PIL.Image.Resampling
+  File "/usr/lib/python3/dist-packages/PIL/Image.py", line 65, in __getattr__
+    raise AttributeError(f"module '{__name__}' has no attribute '{name}'")
+AttributeError: module 'PIL.Image' has no attribute 'Resampling'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/firsthalf_lambda.py", line 164, in <module>
+    main()
+  File "/home/ubuntu/firsthalf_lambda.py", line 75, in main
+    model = AutoModelForCausalLM.from_pretrained(MODEL, dtype=torch.float32).to(dev); model.load_state_dict(torch.load(CKPT))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 359, in from_pretrained
+    explicit_local_code = has_local_code and not _get_model_class(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 179, in _get_model_class
+    supported_models = model_mapping[type(config)]
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 606, in __getitem__
+    return self._load_attr_from_module(model_type, model_name)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 620, in _load_attr_from_module
+    return getattribute_from_module(self._modules[module_name], attr)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 532, in getattribute_from_module
+    if hasattr(module, attr):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 2350, in __getattr__
+    raise ModuleNotFoundError(
+ModuleNotFoundError: Could not import module 'GPTNeoXForCausalLM'. Are this object's requirements defined correctly?
+[L] run rc=0 (343s)
+[L] pulling result + log...
+Warning: Permanently added '132.145.143.21' (ED25519) to the list of known hosts.
+scp: /home/ubuntu/gateA/firsthalf_agnews.json: No such file or directory
+Warning: Permanently added '132.145.143.21' (ED25519) to the list of known hosts.
+[L] WARN: no result file pulled
+[L] terminating 5df74063fa6b48158035460b9af83432...
+[L] terminated 5df74063fa6b48158035460b9af83432

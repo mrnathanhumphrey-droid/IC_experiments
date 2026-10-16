@@ -1,0 +1,39 @@
+{
+ "config": {
+  "ranks": [
+   2,
+   8,
+   32
+  ],
+  "LR": 0.006,
+  "target": 0.1,
+  "N_B": 8,
+  "seed": 0
+ },
+ "per_rank": {
+  "2": {
+   "matched_steps": 2600,
+   "achieved_median_forget": 0.019,
+   "eta2_B": 0.44,
+   "within_B_rho_cos": -0.022,
+   "rho_drift_disrupt": 0.833,
+   "per_B_forget_spread": 0.08
+  },
+  "8": {
+   "matched_steps": 692,
+   "achieved_median_forget": 0.107,
+   "eta2_B": 0.188,
+   "within_B_rho_cos": -0.138,
+   "rho_drift_disrupt": 0.762,
+   "per_B_forget_spread": 0.097
+  },
+  "32": {
+   "matched_steps": 493,
+   "achieved_median_forget": 0.143,
+   "eta2_B": 0.055,
+   "within_B_rho_cos": -0.172,
+   "rho_drift_disrupt": -0.286,
+   "per_B_forget_spread": 0.052
+  }
+ }
+}

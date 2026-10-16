@@ -1,0 +1,16 @@
+[G2S0] loading gpt2-medium...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 5439.38it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2197979.91 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 420297.99 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 572207.64 examples/s]
+[G2S0] 72 carrier weights: attn.c_attn, mlp.c_fc, mlp.c_proj
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+[G2S0] Fisher done (31s)
+  [attn.c_attn ] dyn-range(top/med) pooled=1772618.5 perlayer-med=201325.0 | frac-top-decade=0.0013 | outliers>5xmed=0.321 | top8=[0.0, 0.0, 0.0, 0.0, 0.0]
+  [mlp.c_fc    ] dyn-range(top/med) pooled=1133970.4 perlayer-med=283908.6 | frac-top-decade=0.0014 | outliers>5xmed=0.325 | top8=[0.0, 0.0, 0.0, 0.0, 0.0]
+  [mlp.c_proj  ] dyn-range(top/med) pooled=385021824.0 perlayer-med=22773382.6 | frac-top-decade=0.0003 | outliers>5xmed=0.410 | top8=[0.0, 0.0, 0.0, 0.0, 0.0]
+  [attn.c_attn ] early gaps [1.2, 1.2, 1.1, 1.2] -> continuum-ish
+  [mlp.c_fc    ] early gaps [1.0, 1.0, 1.1, 1.0] -> continuum-ish
+  [mlp.c_proj  ] early gaps [1.8, 1.1, 1.0, 1.1] -> continuum-ish
+[G2S0] saved gpt2_stage0.json + gpt2_dye_basis.npz wall=44s

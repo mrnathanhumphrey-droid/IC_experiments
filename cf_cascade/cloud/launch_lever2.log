@@ -1,0 +1,59 @@
+[L] picked gpu_1x_a100_sxm4 @ us-east-1 $1.99/hr
+[L] instance_id=304e548b45bf4694a913cd8e0b8d88f6  (manual teardown: terminate this id if I go dark)
+[L] status=booting ip=None 1s
+[L] status=active ip=150.136.91.165 297s
+[L] SSH up at 150.136.91.165 (297s)
+Warning: Permanently added '150.136.91.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.91.165' (ED25519) to the list of known hosts.
+[L] uploading 1.6GB checkpoint...
+Warning: Permanently added '150.136.91.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.91.165' (ED25519) to the list of known hosts.
+[L] upload done (365s)
+[L] installing transformers/datasets + upgrading Pillow...
+Warning: Permanently added '150.136.91.165' (ED25519) to the list of known hosts.
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script markdown-it is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script httpx is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script typer is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script datasets-cli is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script transformers is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+[L] running projection_lever_lambda.py (391s)...
+Warning: Permanently added '150.136.91.165' (ED25519) to the list of known hosts.
+[PL] loading...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  79%|███████▉  | 232/292 [00:00<00:00, 2241.92it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2396.80it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2142581.12 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 405795.31 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 620104.54 examples/s]
+[PL] FA done; task-A ceiling A0=0.750 (47s)
+[PL] FB@w_A rider: query_key_value=0.290  dense_h_to_4h=0.288  dense_4h_to_h=0.297  (vs FB@w_B banked qkv=0.184) (72s)
+[PL] BASELINE: A=0.585 (from A0=0.750, forgot +0.165)  B=0.880  loss=0.013 (169s)
+[PL] PROJ r=32: A=0.705 (gain +0.120)  B=0.865 (cost +0.015)  loss=0.013  -> SUCCESS (290s)
+[PL] PROJ r=64: A=0.740 (gain +0.155)  B=0.895 (cost -0.015)  loss=0.019  -> SUCCESS (411s)
+[PL] PROJ r=128: A=0.735 (gain +0.150)  B=0.895 (cost -0.015)  loss=0.015  -> SUCCESS (546s)
+
+[PL] VERDICT: LEVER WORKS (>=1 r: A retained AND B not starved -> free lane is usable, forgetting preventable)
+[PL] saved projection_lever.json wall=546s
+[L] run rc=0 (940s)
+[L] pulling result + log...
+Warning: Permanently added '150.136.91.165' (ED25519) to the list of known hosts.
+Warning: Permanently added '150.136.91.165' (ED25519) to the list of known hosts.
+[L] RESULT LANDED: gateA/projection_lever.json
+[L] terminating 304e548b45bf4694a913cd8e0b8d88f6...
+[L] terminated 304e548b45bf4694a913cd8e0b8d88f6

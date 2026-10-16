@@ -1,0 +1,78 @@
+{
+  "per_carrier": {
+    "attention.query_key_value": {
+      "real_coherence": 0.9677802313222126,
+      "null_mean": -0.0005110261669103444,
+      "null_std": 0.01637500061728936,
+      "z_spatial": 59.132288300962344,
+      "comv_traj": [
+        202.46562409261355,
+        249.1195496021444,
+        232.63281527716842,
+        227.7991691728033,
+        241.91005677075634,
+        306.9983104675874,
+        351.6101253385535,
+        377.16713667454695,
+        366.2692545234101,
+        371.4678942081495,
+        368.30050149790287
+      ],
+      "com_advance_spearman": 0.8727272727272729,
+      "arrival_order_spearman": 0.9101087587911977,
+      "z_arrival": 27.480744795696065,
+      "n_wet": 1023
+    },
+    "mlp.dense_h_to_4h": {
+      "real_coherence": 0.8816657508475787,
+      "null_mean": -0.0007891443337547389,
+      "null_std": 0.008422917429071971,
+      "z_spatial": 104.76831840126363,
+      "comv_traj": [
+        166.28659452825337,
+        264.29107705028775,
+        242.12265539206572,
+        235.850921280393,
+        245.02582865809387,
+        287.9706700922572,
+        337.3362388824044,
+        388.02796631114217,
+        385.77331260271177,
+        383.1049575883309,
+        384.9941280330212
+      ],
+      "com_advance_spearman": 0.8545454545454546,
+      "arrival_order_spearman": 0.8937576890065086,
+      "z_arrival": 23.994376514128422,
+      "n_wet": 1024
+    },
+    "mlp.dense_4h_to_h": {
+      "real_coherence": 0.9114498150055788,
+      "null_mean": -0.0009725826443808337,
+      "null_std": 0.003304401396542386,
+      "z_spatial": 276.1233542415774,
+      "comv_traj": [
+        43.9967919261073,
+        95.85249515304166,
+        82.33238351972399,
+        78.39426073306944,
+        81.9001971000285,
+        112.58632004985783,
+        210.64580884609006,
+        359.4705946673753,
+        353.1844468426077,
+        312.45870805657717,
+        328.9770469831588
+      ],
+      "com_advance_spearman": 0.8363636363636365,
+      "arrival_order_spearman": 0.927960927960928,
+      "z_arrival": 3.991936229497505,
+      "n_wet": 27
+    }
+  },
+  "spreading_spatial_z": 81.95030335111298,
+  "spreading_temporal_z": 25.737560654912244,
+  "laminar": true,
+  "verdict": "LAMINAR TRAVELING FLOW REAL (qkv+up-proj: spatial z=82.0>>rank-shuffle AND arrival-order z=25.7>>shuffle -> velocity field spatially coherent AND the front arrives in curvature order (high->low) -> forgetting is laminar additive transport from the localized high-curvature seed; HEADLINE HOLDS",
+  "n_shuffle": 500
+}

@@ -1,0 +1,15 @@
+{
+  "prereg": "PREREG_PROBE9b_PHASE2_LEVER_2026_06_28.md",
+  "sha256": "869ce94edc7255270beaf024fbc745688b23bb992813df02f18eeba8209db669",
+  "short": "869ce94e",
+  "locked": "2026-06-28",
+  "probe": "probe9b_phase2_lever_omega_sweep",
+  "pivot": "Omega via phase-2 task (not childhood stream, which screen showed cannot span); sigma_sem=task-A<->phase-2=Ramasesh axis head-to-head",
+  "DV": "protection P(d)=forget_NoCH-forget_CH paired N=100",
+  "cells": [
+    "opt350m",
+    "pythia410m"
+  ],
+  "fired": false,
+  "next": "build probe9b harness + dryrun + abort-gate screen on go"
+}

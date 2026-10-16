@@ -1,0 +1,9 @@
+[WA] facebook/opt-1.3b (tag opt1_3b) target acc>=0.8
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 151/389 [00:00<00:00, 1437.95it/s]Loading weights:  76%|███████▌  | 295/389 [00:00<00:00, 1287.83it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 1326.83it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 1791240.31 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 382496.66 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 564844.52 examples/s]
+[WA] step 250: SST acc=0.800 (62s)
+[WA] target hit acc=0.800 at step 250; saved /home/ubuntu/gateA/opt1_3b_sst2_wA.pt
+[WA] DONE tag=opt1_3b acc=0.800 stop_step=250 matched=True wall=71s

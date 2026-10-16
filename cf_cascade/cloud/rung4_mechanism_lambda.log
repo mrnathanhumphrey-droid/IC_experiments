@@ -1,0 +1,60 @@
+[R4] RUNG-4 ATTEMPT 3 (force-subj + reproduce-anchor; M2 / M3=resid_B-D; M1 sharpness WEAK) on OPT + Pythia
+
+[OPT] loading facebook/opt-350m (eager)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  85%|████████▌ | 330/388 [00:00<00:00, 3299.39it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3689.11it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2244041.44 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 396254.94 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 619199.64 examples/s]
+[OPT] training task-A (SST) 500 steps...
+[OPT] w_A SST acc=0.823 (57s)
+[OPT] saved w_A -> /home/ubuntu/gateA/opt350m_sst2_wA.pt
+[OPT] V basis (144 carriers, KPROJ=128) done (94s)
+[OPT] M1 sharpness @ w_A (FLAGGED WEAK) {0.02: [-0.014925852417945862, 0.004826398024382854], 0.05: [-0.10766512403885524, 0.01591603375010877]} baseLoss 1.4763 (125s)
+[OPT] HELD-OUT=subj FORCED (precheck forget 0.097)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  11%|█▏        | 63000/560000 [00:00<00:00, 619605.16 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 779308.02 examples/s]Generating train split:  49%|████▉     | 276000/560000 [00:00<00:00, 924045.32 examples/s]Generating train split:  75%|███████▌  | 420000/560000 [00:00<00:00, 1063876.26 examples/s]Generating train split:  97%|█████████▋| 542000/560000 [00:00<00:00, 1112848.06 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1003738.47 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1154796.67 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▌         | 76000/1400000 [00:00<00:01, 756744.11 examples/s]Generating train split:  12%|█▏        | 169000/1400000 [00:00<00:01, 852334.33 examples/s]Generating train split:  19%|█▊        | 262000/1400000 [00:00<00:01, 880675.39 examples/s]Generating train split:  25%|██▌       | 355000/1400000 [00:00<00:01, 896869.90 examples/s]Generating train split:  35%|███▍      | 489000/1400000 [00:00<00:01, 890216.06 examples/s]Generating train split:  43%|████▎     | 603000/1400000 [00:00<00:00, 836727.73 examples/s]Generating train split:  50%|████▉     | 697000/1400000 [00:00<00:00, 863398.42 examples/s]Generating train split:  58%|█████▊    | 815000/1400000 [00:00<00:00, 831768.49 examples/s]Generating train split:  64%|██████▍   | 902000/1400000 [00:01<00:00, 837783.95 examples/s]Generating train split:  70%|███████   | 987000/1400000 [00:01<00:00, 839739.74 examples/s]Generating train split:  80%|███████▉  | 1116000/1400000 [00:01<00:00, 843672.01 examples/s]Generating train split:  86%|████████▌ | 1205000/1400000 [00:01<00:00, 853752.51 examples/s]Generating train split:  93%|█████████▎| 1296000/1400000 [00:01<00:00, 866040.36 examples/s]Generating train split:  99%|█████████▉| 1384000/1400000 [00:01<00:00, 867139.16 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 855721.82 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 831334.45 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 255054.31 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 268200.97 examples/s]Generating train split:  74%|███████▍  | 155103/209527 [00:00<00:00, 261025.69 examples/s]Generating train split:  96%|█████████▋| 201886/209527 [00:00<00:00, 253250.62 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 256349.73 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1645833.57 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 731033.38 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 770020.93 examples/s]
+[OPT] seed 0: ret A/B/D=0.510/0.590/0.650 | sharpD=2.131(A -0.108) baseD 1.469(A 1.476) | fracV A/B/D=0.251/0.228/0.244 | resid A/B/D=0.050/0.143/0.124 | mfB/D=0.220/0.014 (344s)
+[OPT] seed 1: ret A/B/D=0.510/0.680/0.740 | sharpD=2.942(A -0.108) baseD 1.662(A 1.476) | fracV A/B/D=0.254/0.232/0.239 | resid A/B/D=0.058/0.125/0.119 | mfB/D=0.218/0.013 (522s)
+[OPT] seed 2: ret A/B/D=0.537/0.737/0.547 | sharpD=4.448(A -0.108) baseD 1.663(A 1.476) | fracV A/B/D=0.250/0.225/0.240 | resid A/B/D=0.064/0.117/0.104 | mfB/D=0.217/0.015 (696s)
+[OPT] seed 3: ret A/B/D=0.510/0.687/0.677 | sharpD=3.010(A -0.108) baseD 1.543(A 1.476) | fracV A/B/D=0.249/0.227/0.237 | resid A/B/D=0.056/0.130/0.121 | mfB/D=0.219/0.014 (870s)
+[OPT] seed 4: ret A/B/D=0.573/0.703/0.703 | sharpD=4.690(A -0.108) baseD 1.509(A 1.476) | fracV A/B/D=0.257/0.228/0.238 | resid A/B/D=0.057/0.116/0.108 | mfB/D=0.219/0.014 (1045s)
+[OPT] seed 5: ret A/B/D=0.507/0.623/0.537 | sharpD=3.165(A -0.108) baseD 1.612(A 1.476) | fracV A/B/D=0.254/0.226/0.244 | resid A/B/D=0.048/0.134/0.119 | mfB/D=0.221/0.015 (1221s)
+[OPT] seed 6: ret A/B/D=0.547/0.663/0.683 | sharpD=3.607(A -0.108) baseD 1.631(A 1.476) | fracV A/B/D=0.253/0.228/0.239 | resid A/B/D=0.059/0.118/0.109 | mfB/D=0.219/0.014 (1397s)
+
+[OPT] === RUNG-4 VERDICT (OPT, anchor=True) ===
+  VOID (anchor substrate, rung-3 NOT reproduced): A_forget=0.296 (need >=0.15), B-D=+0.021 (need >=0.08). Cannot read mechanism where the protection effect is absent. M2 fracV A/B/D 0.253/0.228/0.240, resid_B-D=+0.011 reported but UNANCHORED.
+  ANCHOR A_forget 0.296 (gate 0.15) | B-D +0.021 (gate 0.08) | ret A/B/D 0.528/0.669/0.648
+  M1 sharpness wA -0.108 -> wD 3.428 (baseLoss wA 1.476 wD 1.584) [WEAK/off-min]
+  M2 fracV 0.253/0.228/0.240 | M3 resid_B-D +0.011±0.002 (D-A +0.059, M-stab 0.477) | mfB/D 0.219/0.014
+
+[PYTHIA] loading EleutherAI/pythia-410m (eager)...
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  77%|███████▋  | 224/292 [00:00<00:00, 2232.66it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2116.29it/s]
+[PYTHIA] loaded w_A ckpt
+[PYTHIA] w_A SST acc=0.753 (1404s)
+[PYTHIA] V basis (72 carriers, KPROJ=128) done (1437s)
+[PYTHIA] M1 sharpness @ w_A (FLAGGED WEAK) {0.02: [-0.002929293860991796, 0.0004309758357186703], 0.05: [-0.02044438322385152, 0.004784765712180284]} baseLoss 2.4367 (1466s)
+[PYTHIA] HELD-OUT=subj FORCED (precheck forget 0.093)
+[PYTHIA] seed 0: ret A/B/D=0.660/0.643/0.490 | sharpD=0.013(A -0.020) baseD 4.680(A 2.437) | fracV A/B/D=0.460/0.337/0.423 | resid A/B/D=0.016/0.118/0.050 | mfB/D=0.329/0.018 (1681s)
+[PYTHIA] seed 1: ret A/B/D=0.507/0.513/0.573 | sharpD=0.088(A -0.020) baseD 4.766(A 2.437) | fracV A/B/D=0.453/0.356/0.397 | resid A/B/D=0.017/0.102/0.063 | mfB/D=0.351/0.019 (1865s)
+[PYTHIA] seed 2: ret A/B/D=0.537/0.727/0.500 | sharpD=0.031(A -0.020) baseD 3.802(A 2.437) | fracV A/B/D=0.476/0.357/0.415 | resid A/B/D=0.016/0.097/0.060 | mfB/D=0.345/0.018 (2049s)
+[PYTHIA] seed 3: ret A/B/D=0.523/0.647/0.717 | sharpD=0.020(A -0.020) baseD 3.702(A 2.437) | fracV A/B/D=0.456/0.344/0.407 | resid A/B/D=0.014/0.106/0.057 | mfB/D=0.338/0.019 (2234s)
+[PYTHIA] seed 4: ret A/B/D=0.560/0.510/0.547 | sharpD=0.006(A -0.020) baseD 2.303(A 2.437) | fracV A/B/D=0.454/0.354/0.411 | resid A/B/D=0.018/0.104/0.066 | mfB/D=0.338/0.019 (2418s)
+[PYTHIA] seed 5: ret A/B/D=0.510/0.577/0.657 | sharpD=0.045(A -0.020) baseD 4.401(A 2.437) | fracV A/B/D=0.462/0.352/0.402 | resid A/B/D=0.017/0.109/0.072 | mfB/D=0.343/0.018 (2607s)
+[PYTHIA] seed 6: ret A/B/D=0.510/0.657/0.680 | sharpD=-0.006(A -0.020) baseD 4.416(A 2.437) | fracV A/B/D=0.468/0.335/0.415 | resid A/B/D=0.018/0.107/0.051 | mfB/D=0.338/0.018 (2793s)
+
+[PYTHIA] === RUNG-4 VERDICT (PYTHIA, anchor=False) ===
+  map-inert: M3 DEPOSIT-RIDING FIRES: resid_B-resid_D=+0.046±0.004 (generic-childhood resid_D-A=+0.043, M-stab 0.613) BUT map inert (B-D=+0.016~0) -> deposit-riding EXISTS without protecting = riding != mechanism (the Pythia caveat confirmed). M2 CAPACITY FIRES: fracV A/B/D 0.461/0.348/0.410.
+  ANCHOR A_forget 0.210 (gate 0.15) | B-D +0.016 (gate 0.08) | ret A/B/D 0.544/0.610/0.595
+  M1 sharpness wA -0.020 -> wD 0.028 (baseLoss wA 2.437 wD 4.010) [WEAK/off-min]
+  M2 fracV 0.461/0.348/0.410 | M3 resid_B-D +0.046±0.004 (D-A +0.043, M-stab 0.613) | mfB/D 0.340/0.018
+
+[R4] === CROSS-ARCH ===
+  OPT anchor NOT reproduced -> cross-arch UNREADABLE (the load-bearing regime is the whole comparison).
+[R4] saved rung4_mechanism.json wall=2793s

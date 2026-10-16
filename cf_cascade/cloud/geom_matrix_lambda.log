@@ -1,0 +1,83 @@
+[GEOM] GEOMETRY MATRIX — size x family, bootstrap-null (measurement-only)
+
+[opt125m] loading facebook/opt-125m...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 4567.80it/s]
+[opt125m] 72 carriers (8s)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2205599.69 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 407195.85 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 627801.05 examples/s]
+[opt125m] Fisher/V/spectrum done (23s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  13%|█▎        | 71000/560000 [00:00<00:00, 694743.58 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 806023.72 examples/s]Generating train split:  49%|████▉     | 273000/560000 [00:00<00:00, 932438.16 examples/s]Generating train split:  75%|███████▌  | 422000/560000 [00:00<00:00, 1071240.13 examples/s]Generating train split:  98%|█████████▊| 547000/560000 [00:00<00:00, 1130385.41 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 1024258.10 examples/s]
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1149443.80 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   4%|▍         | 54000/1400000 [00:00<00:02, 530664.57 examples/s]Generating train split:   8%|▊         | 119000/1400000 [00:00<00:02, 595494.40 examples/s]Generating train split:  15%|█▍        | 204000/1400000 [00:00<00:01, 660670.84 examples/s]Generating train split:  21%|██        | 292000/1400000 [00:00<00:01, 742015.91 examples/s]Generating train split:  29%|██▊       | 402000/1400000 [00:00<00:01, 700094.58 examples/s]Generating train split:  35%|███▍      | 489000/1400000 [00:00<00:01, 746669.02 examples/s]Generating train split:  42%|████▏     | 590000/1400000 [00:00<00:01, 709736.21 examples/s]Generating train split:  49%|████▊     | 682000/1400000 [00:00<00:00, 757256.76 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 719699.68 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 731085.72 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 733552.43 examples/s]Generating train split:  76%|███████▌  | 1057000/1400000 [00:01<00:00, 789502.89 examples/s]Generating train split:  84%|████████▍ | 1179000/1400000 [00:01<00:00, 794514.36 examples/s]Generating train split:  90%|█████████ | 1265000/1400000 [00:01<00:00, 783335.91 examples/s]Generating train split:  97%|█████████▋| 1352000/1400000 [00:01<00:00, 764730.66 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 737039.80 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 805285.75 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 246326.53 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 256505.26 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 253488.61 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 246929.44 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 242847.37 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 246683.87 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1654680.18 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 797017.39 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 773500.05 examples/s]
+[opt125m] seed 0: G5 dep-surge=0.369(rand 0.125) G2=2.12 G6=0.261 (66s)
+[opt125m] seed 1: G5 dep-surge=0.373(rand 0.125) G2=2.12 G6=0.261 (94s)
+[opt125m] seed 2: G5 dep-surge=0.366(rand 0.126) G2=2.12 G6=0.262 (121s)
+[opt125m] G1=0.003 G2=2.12 G3=0.354 G4=0.272 ★G5=0.344(rand 0.124) G6=0.292
+
+[opt350m] loading facebook/opt-350m...
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 4902.41it/s]
+[opt350m] 144 carriers (126s)
+[opt350m] Fisher/V/spectrum done (158s)
+[opt350m] seed 0: G5 dep-surge=0.436(rand 0.126) G2=2.48 G6=0.259 (215s)
+[opt350m] seed 1: G5 dep-surge=0.422(rand 0.126) G2=2.48 G6=0.256 (271s)
+[opt350m] seed 2: G5 dep-surge=0.412(rand 0.126) G2=2.48 G6=0.258 (325s)
+[opt350m] G1=0.003 G2=2.48 G3=0.326 G4=0.299 ★G5=0.410(rand 0.125) G6=0.283
+
+[opt1_3b] loading facebook/opt-1.3b...
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights:  51%|█████     | 199/389 [00:00<00:00, 1898.79it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 1765.37it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 1781.96it/s]
+[opt1_3b] 144 carriers (338s)
+[opt1_3b] Fisher/V/spectrum done (490s)
+[opt1_3b] seed 0: G5 dep-surge=0.447(rand 0.125) G2=1.73 G6=0.162 (610s)
+[opt1_3b] FAILED: CUDA out of memory. Tried to allocate 64.00 MiB. GPU 0 has a total capacity of 39.49 GiB of which 51.56 MiB is free. Including non-PyTorch memory, this process has 39.44 GiB memory in use. Of the allo
+
+[pythia160m] loading EleutherAI/pythia-160m...
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 4957.13it/s]
+[pythia160m] 36 carriers (614s)
+[pythia160m] Fisher/V/spectrum done (625s)
+[pythia160m] seed 0: G5 dep-surge=0.514(rand 0.125) G2=2.62 G6=0.467 (657s)
+[pythia160m] seed 1: G5 dep-surge=0.515(rand 0.125) G2=2.62 G6=0.469 (687s)
+[pythia160m] seed 2: G5 dep-surge=0.497(rand 0.125) G2=2.62 G6=0.454 (718s)
+[pythia160m] G1=0.002 G2=2.62 G3=0.552 G4=0.441 ★G5=0.525(rand 0.124) G6=0.473
+
+[pythia410m] loading EleutherAI/pythia-410m...
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  68%|██████▊   | 200/292 [00:00<00:00, 1970.61it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2306.93it/s]
+[pythia410m] 72 carriers (722s)
+[pythia410m] Fisher/V/spectrum done (754s)
+[pythia410m] seed 0: G5 dep-surge=0.503(rand 0.126) G2=3.43 G6=0.319 (817s)
+[pythia410m] seed 1: G5 dep-surge=0.510(rand 0.127) G2=3.43 G6=0.327 (879s)
+[pythia410m] seed 2: G5 dep-surge=0.514(rand 0.126) G2=3.43 G6=0.332 (942s)
+[pythia410m] G1=0.001 G2=3.43 G3=0.515 G4=0.430 ★G5=0.505(rand 0.126) G6=0.331
+
+[pythia1b] loading EleutherAI/pythia-1b...
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]Loading weights:  38%|███▊      | 74/196 [00:00<00:00, 697.24it/s]Loading weights: 100%|██████████| 196/196 [00:00<00:00, 964.42it/s]
+[pythia1b] 48 carriers (953s)
+[pythia1b] Fisher/V/spectrum done (1051s)
+[pythia1b] seed 0: G5 dep-surge=0.489(rand 0.128) G2=1.81 G6=0.193 (1141s)
+[pythia1b] seed 1: G5 dep-surge=0.486(rand 0.129) G2=1.81 G6=0.189 (1230s)
+[pythia1b] seed 2: G5 dep-surge=0.478(rand 0.128) G2=1.81 G6=0.197 (1318s)
+[pythia1b] G1=0.002 G2=1.81 G3=0.303 G4=0.392 ★G5=0.490(rand 0.128) G6=0.201
+
+[GEOM] === FAMILY CLASSIFICATION (bootstrap null, models: OPT ['opt125m', 'opt350m'] | PYTHIA ['pythia160m', 'pythia410m', 'pythia1b']) ===
+  G1: OPT=+0.003 PY=+0.001 gap=+0.002 bootSE=0.000 randgap=None -> CLASSIFIES
+      size-trend OPT [(125, 0.0033), (350, 0.0032)]  PY [(160, 0.0019), (410, 0.001), (1000, 0.0018)]
+  G2: OPT=+2.381 PY=+2.595 gap=-0.215 bootSE=0.102 randgap=None -> CLASSIFIES
+      size-trend OPT [(125, 2.1229), (350, 2.4787)]  PY [(160, 2.6151), (410, 3.4288), (1000, 1.8123)]
+  G3: OPT=+0.337 PY=+0.483 gap=-0.147 bootSE=0.025 randgap=None -> CLASSIFIES
+      size-trend OPT [(125, 0.3539), (350, 0.3261)]  PY [(160, 0.5517), (410, 0.5147), (1000, 0.3028)]
+  G4: OPT=+0.291 PY=+0.422 gap=-0.131 bootSE=0.011 randgap=0.0002224233436058931 -> CLASSIFIES
+      size-trend OPT [(125, 0.2718), (350, 0.2989)]  PY [(160, 0.4411), (410, 0.4295), (1000, 0.3916)]
+ ★G5: OPT=+0.394 PY=+0.505 gap=-0.111 bootSE=0.009 randgap=0.001601444032867133 -> CLASSIFIES
+      size-trend OPT [(125, 0.3444), (350, 0.4096)]  PY [(160, 0.5246), (410, 0.5048), (1000, 0.4901)]
+  G6: OPT=+0.285 PY=+0.304 gap=-0.019 bootSE=0.012 randgap=None -> no
+      size-trend OPT [(125, 0.2917), (350, 0.2831)]  PY [(160, 0.4729), (410, 0.3308), (1000, 0.2005)]
+  CLASSIFYING-BY-FAMILY: ['G1', 'G2', 'G3', 'G4', 'G5']
+  G5 hypothesis: SUPPORTED
+
+[GEOM] cells OK: ['opt125m', 'opt350m', 'pythia160m', 'pythia410m', 'pythia1b'] | saved geom_matrix.json wall=1319s

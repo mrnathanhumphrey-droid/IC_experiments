@@ -1,0 +1,42 @@
+[GEOM] COMMENSURABLE GEOMETRY CLASSIFICATION — OPT vs Pythia at pinned w_A (measurement-only)
+
+[OPT] loading facebook/opt-350m...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  66%|██████▌   | 256/388 [00:00<00:00, 2536.84it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 2774.70it/s]
+[OPT] 144 carriers (10s)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2110217.68 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 404672.84 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 567362.03 examples/s]
+[OPT] Fisher/V/spectrum done (46s)
+Generating train split:   0%|          | 0/560000 [00:00<?, ? examples/s]Generating train split:  12%|█▏        | 66000/560000 [00:00<00:00, 652294.65 examples/s]Generating train split:  29%|██▉       | 164000/560000 [00:00<00:00, 811847.45 examples/s]Generating train split:  48%|████▊     | 270000/560000 [00:00<00:00, 920345.83 examples/s]Generating train split:  68%|██████▊   | 383000/560000 [00:00<00:00, 999227.25 examples/s]Generating train split:  91%|█████████▏| 511000/560000 [00:00<00:00, 1094225.26 examples/s]Generating train split: 100%|██████████| 560000/560000 [00:00<00:00, 985506.65 examples/s] 
+Generating test split:   0%|          | 0/70000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 70000/70000 [00:00<00:00, 1037753.71 examples/s]
+Generating train split:   0%|          | 0/1400000 [00:00<?, ? examples/s]Generating train split:   5%|▍         | 65000/1400000 [00:00<00:02, 642302.42 examples/s]Generating train split:  11%|█         | 150000/1400000 [00:00<00:01, 711247.33 examples/s]Generating train split:  16%|█▌        | 226000/1400000 [00:00<00:01, 730378.13 examples/s]Generating train split:  22%|██▏       | 305000/1400000 [00:00<00:01, 745133.48 examples/s]Generating train split:  29%|██▊       | 400000/1400000 [00:00<00:01, 812960.33 examples/s]Generating train split:  35%|███▌      | 496000/1400000 [00:00<00:01, 723159.40 examples/s]Generating train split:  42%|████▏     | 589000/1400000 [00:00<00:01, 777383.35 examples/s]Generating train split:  50%|█████     | 701000/1400000 [00:00<00:00, 722624.68 examples/s]Generating train split:  57%|█████▋    | 792000/1400000 [00:01<00:00, 738383.91 examples/s]Generating train split:  63%|██████▎   | 878000/1400000 [00:01<00:00, 748429.01 examples/s]Generating train split:  69%|██████▊   | 962000/1400000 [00:01<00:00, 753135.42 examples/s]Generating train split:  75%|███████▍  | 1046000/1400000 [00:01<00:00, 758679.49 examples/s]Generating train split:  81%|████████  | 1130000/1400000 [00:01<00:00, 759690.47 examples/s]Generating train split:  87%|████████▋ | 1217000/1400000 [00:01<00:00, 759783.85 examples/s]Generating train split:  93%|█████████▎| 1306000/1400000 [00:01<00:00, 762809.98 examples/s]Generating train split: 100%|█████████▉| 1399000/1400000 [00:01<00:00, 807992.03 examples/s]Generating train split: 100%|██████████| 1400000/1400000 [00:01<00:00, 756659.38 examples/s]
+Generating test split:   0%|          | 0/60000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 60000/60000 [00:00<00:00, 885983.30 examples/s]
+Generating train split:   0%|          | 0/209527 [00:00<?, ? examples/s]Generating train split:  25%|██▍       | 52198/209527 [00:00<00:00, 237111.48 examples/s]Generating train split:  51%|█████     | 105878/209527 [00:00<00:00, 254194.54 examples/s]Generating train split:  63%|██████▎   | 131930/209527 [00:00<00:00, 250648.75 examples/s]Generating train split:  85%|████████▌ | 178545/209527 [00:00<00:00, 244562.92 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 242924.86 examples/s]Generating train split: 100%|██████████| 209527/209527 [00:00<00:00, 245023.78 examples/s]
+Generating train split:   0%|          | 0/16000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 16000/16000 [00:00<00:00, 1811305.37 examples/s]
+Generating validation split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 2000/2000 [00:00<00:00, 754371.22 examples/s]
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2000/2000 [00:00<00:00, 705043.54 examples/s]
+[OPT] seed 0: G5 deposit-surge(meanCarr)=0.433 (rand 0.126, chance 0.125) | G6 mapfrac=0.259 (116s)
+[OPT] seed 1: G5 deposit-surge(meanCarr)=0.412 (rand 0.126, chance 0.125) | G6 mapfrac=0.256 (173s)
+[OPT] seed 2: G5 deposit-surge(meanCarr)=0.430 (rand 0.126, chance 0.125) | G6 mapfrac=0.257 (230s)
+[OPT] G1 effrank/dim=0.003 G2 decay=2.48 G3 fracV=0.310 G4 surge-curv=0.286(rand 0.126) ★G5 deposit-surge=0.420(rand 0.125, chance 0.125) G6 mapfrac=0.282
+
+[PYTHIA] loading EleutherAI/pythia-410m...
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  78%|███████▊  | 228/292 [00:00<00:00, 2211.29it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2319.23it/s]
+[PYTHIA] 72 carriers (234s)
+[PYTHIA] Fisher/V/spectrum done (267s)
+[PYTHIA] seed 0: G5 deposit-surge(meanCarr)=0.466 (rand 0.124, chance 0.125) | G6 mapfrac=0.339 (331s)
+[PYTHIA] seed 1: G5 deposit-surge(meanCarr)=0.477 (rand 0.124, chance 0.125) | G6 mapfrac=0.347 (393s)
+[PYTHIA] seed 2: G5 deposit-surge(meanCarr)=0.476 (rand 0.124, chance 0.125) | G6 mapfrac=0.353 (455s)
+[PYTHIA] G1 effrank/dim=0.001 G2 decay=5.92 G3 fracV=0.511 G4 surge-curv=0.411(rand 0.123) ★G5 deposit-surge=0.463(rand 0.124, chance 0.125) G6 mapfrac=0.346
+
+[GEOM] === CLASSIFICATION (OPT vs PYTHIA) ===
+  G1: OPT=+0.003 PYTHIA=+0.001 gap=+0.002 noise=0.000 randgap=None -> CLASSIFIES
+  G2: OPT=+2.479 PYTHIA=+5.924 gap=-3.445 noise=0.000 randgap=None -> CLASSIFIES
+  G3: OPT=+0.310 PYTHIA=+0.511 gap=-0.201 noise=0.015 randgap=None -> CLASSIFIES
+  G4: OPT=+0.286 PYTHIA=+0.411 gap=-0.125 noise=0.009 randgap=0.0027299115324044554 -> CLASSIFIES
+ ★G5: OPT=+0.420 PYTHIA=+0.463 gap=-0.043 noise=0.016 randgap=0.0009984183631590315 -> CLASSIFIES
+  G6: OPT=+0.282 PYTHIA=+0.346 gap=-0.064 noise=0.007 randgap=None -> CLASSIFIES
+  CLASSIFYING METRICS (the cross-arch vocabulary): ['G1', 'G2', 'G3', 'G4', 'G5', 'G6']
+  G5 HYPOTHESIS: SUPPORTED: G5 deposit-surge overlap LOWER on OPT than Pythia (OPT deposits OUT of the surge's way=separable=protective; Pythia overlaps=overwritten=inert). OPT G5=0.420 < Pythia G5=0.463.
+[GEOM] saved geom_classify.json wall=455s

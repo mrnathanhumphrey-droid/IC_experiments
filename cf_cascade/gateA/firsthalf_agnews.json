@@ -1,0 +1,68 @@
+{
+  "test1_overlap": {
+    "attention.query_key_value": {
+      "overlap": 0.1836096672461606,
+      "chance": 0.0625,
+      "ratio": 2.9377546759385695
+    },
+    "mlp.dense_h_to_4h": {
+      "overlap": 0.1727717457156872,
+      "chance": 0.0625,
+      "ratio": 2.7643479314509953
+    },
+    "mlp.dense_4h_to_h": {
+      "overlap": 0.11950672486390955,
+      "chance": 0.015625,
+      "ratio": 7.648430391290211
+    }
+  },
+  "test1_firm": false,
+  "test2a_cosines": {
+    "t=0.25": {
+      "attention.query_key_value": {
+        "cos_full": -0.5097538929872453,
+        "cos_shared": -0.5000816585618045
+      },
+      "mlp.dense_h_to_4h": {
+        "cos_full": -0.4219324465454471,
+        "cos_shared": -0.42831658808245865
+      },
+      "mlp.dense_4h_to_h": {
+        "cos_full": -0.47294070445208414,
+        "cos_shared": -0.48291301800580877
+      }
+    },
+    "t=0.5": {
+      "attention.query_key_value": {
+        "cos_full": -0.14629220791883116,
+        "cos_shared": -0.14423945275598407
+      },
+      "mlp.dense_h_to_4h": {
+        "cos_full": -0.09258290106252283,
+        "cos_shared": -0.09873517441908915
+      },
+      "mlp.dense_4h_to_h": {
+        "cos_full": -0.08511959619285599,
+        "cos_shared": -0.10075788467067111
+      }
+    },
+    "t=0.75": {
+      "attention.query_key_value": {
+        "cos_full": -0.1229601708603435,
+        "cos_shared": -0.11529564298406088
+      },
+      "mlp.dense_h_to_4h": {
+        "cos_full": -0.09661727928641368,
+        "cos_shared": -0.10474963544622772
+      },
+      "mlp.dense_4h_to_h": {
+        "cos_full": -0.0660877404876558,
+        "cos_shared": -0.0796653135505642
+      }
+    }
+  },
+  "test2a_mean_shared_cos": -0.22830604094185214,
+  "test2a_verdict": "ANTAGONISTIC (anti-aligned in shared dirs -> no joint descent -> STOP/YIELD only)",
+  "ktop": 64,
+  "wall_s": 158.12989401817322
+}

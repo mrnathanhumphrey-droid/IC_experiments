@@ -1,0 +1,252 @@
+{
+ "config": {
+  "n_b": 24,
+  "ft": [
+   400,
+   0.001
+  ],
+  "prereg_lock": "bec29a92"
+ },
+ "median_disrupt": 0.07855000000000001,
+ "predictors": {
+  "drift": {
+   "spearman": 0.152,
+   "pearson": 0.234
+  },
+  "drift_rank": {
+   "spearman": -0.123,
+   "pearson": -0.108
+  },
+  "dtheta": {
+   "spearman": 0.653,
+   "pearson": 0.664
+  },
+  "grad_norm": {
+   "spearman": -0.085,
+   "pearson": -0.111
+  },
+  "b_acc": {
+   "spearman": 0.398,
+   "pearson": -0.408
+  }
+ },
+ "winner": "dtheta",
+ "rows": [
+  {
+   "B": 0,
+   "disrupt": 0.0591,
+   "drift": 0.9231,
+   "drift_rank": 32.92,
+   "dtheta": 24.122,
+   "grad_norm": 0.0636,
+   "b_acc": 1.0
+  },
+  {
+   "B": 1,
+   "disrupt": 0.0725,
+   "drift": 0.924,
+   "drift_rank": 37.38,
+   "dtheta": 26.575,
+   "grad_norm": 2.2737,
+   "b_acc": 0.998
+  },
+  {
+   "B": 2,
+   "disrupt": 0.0772,
+   "drift": 0.9154,
+   "drift_rank": 31.59,
+   "dtheta": 24.146,
+   "grad_norm": 0.0852,
+   "b_acc": 1.0
+  },
+  {
+   "B": 3,
+   "disrupt": 0.0754,
+   "drift": 0.9377,
+   "drift_rank": 30.24,
+   "dtheta": 24.631,
+   "grad_norm": 0.0628,
+   "b_acc": 1.0
+  },
+  {
+   "B": 4,
+   "disrupt": 0.0797,
+   "drift": 0.924,
+   "drift_rank": 29.83,
+   "dtheta": 29.279,
+   "grad_norm": 0.5452,
+   "b_acc": 1.0
+  },
+  {
+   "B": 5,
+   "disrupt": 0.0862,
+   "drift": 0.9109,
+   "drift_rank": 36.96,
+   "dtheta": 31.989,
+   "grad_norm": 0.3766,
+   "b_acc": 1.0
+  },
+  {
+   "B": 6,
+   "disrupt": 0.0755,
+   "drift": 0.917,
+   "drift_rank": 34.68,
+   "dtheta": 26.049,
+   "grad_norm": 0.1928,
+   "b_acc": 1.0
+  },
+  {
+   "B": 7,
+   "disrupt": 0.083,
+   "drift": 0.9566,
+   "drift_rank": 23.73,
+   "dtheta": 27.746,
+   "grad_norm": 0.02,
+   "b_acc": 1.0
+  },
+  {
+   "B": 8,
+   "disrupt": 0.0595,
+   "drift": 0.93,
+   "drift_rank": 30.54,
+   "dtheta": 22.982,
+   "grad_norm": 0.2048,
+   "b_acc": 1.0
+  },
+  {
+   "B": 9,
+   "disrupt": 0.0553,
+   "drift": 0.9274,
+   "drift_rank": 26.63,
+   "dtheta": 22.706,
+   "grad_norm": 0.0301,
+   "b_acc": 1.0
+  },
+  {
+   "B": 10,
+   "disrupt": 0.0785,
+   "drift": 0.941,
+   "drift_rank": 27.36,
+   "dtheta": 23.337,
+   "grad_norm": 0.0539,
+   "b_acc": 1.0
+  },
+  {
+   "B": 11,
+   "disrupt": 0.0503,
+   "drift": 0.9172,
+   "drift_rank": 32.19,
+   "dtheta": 22.284,
+   "grad_norm": 0.1184,
+   "b_acc": 1.0
+  },
+  {
+   "B": 12,
+   "disrupt": 0.0513,
+   "drift": 0.9438,
+   "drift_rank": 28.82,
+   "dtheta": 21.683,
+   "grad_norm": 0.0556,
+   "b_acc": 1.0
+  },
+  {
+   "B": 13,
+   "disrupt": 0.0786,
+   "drift": 0.9311,
+   "drift_rank": 34.17,
+   "dtheta": 29.946,
+   "grad_norm": 0.2604,
+   "b_acc": 1.0
+  },
+  {
+   "B": 14,
+   "disrupt": 0.0765,
+   "drift": 0.9176,
+   "drift_rank": 31.35,
+   "dtheta": 27.055,
+   "grad_norm": 0.2791,
+   "b_acc": 1.0
+  },
+  {
+   "B": 15,
+   "disrupt": 0.0804,
+   "drift": 0.9471,
+   "drift_rank": 26.65,
+   "dtheta": 26.249,
+   "grad_norm": 0.0682,
+   "b_acc": 1.0
+  },
+  {
+   "B": 16,
+   "disrupt": 0.0934,
+   "drift": 0.9417,
+   "drift_rank": 24.82,
+   "dtheta": 22.424,
+   "grad_norm": 0.0665,
+   "b_acc": 1.0
+  },
+  {
+   "B": 17,
+   "disrupt": 0.1122,
+   "drift": 0.9085,
+   "drift_rank": 34.55,
+   "dtheta": 33.178,
+   "grad_norm": 0.086,
+   "b_acc": 1.0
+  },
+  {
+   "B": 18,
+   "disrupt": 0.0989,
+   "drift": 0.9362,
+   "drift_rank": 30.0,
+   "dtheta": 32.143,
+   "grad_norm": 0.0396,
+   "b_acc": 1.0
+  },
+  {
+   "B": 19,
+   "disrupt": 0.0739,
+   "drift": 0.9258,
+   "drift_rank": 29.28,
+   "dtheta": 23.99,
+   "grad_norm": 0.4016,
+   "b_acc": 1.0
+  },
+  {
+   "B": 20,
+   "disrupt": 0.1148,
+   "drift": 0.976,
+   "drift_rank": 23.44,
+   "dtheta": 31.788,
+   "grad_norm": 0.0637,
+   "b_acc": 0.964
+  },
+  {
+   "B": 21,
+   "disrupt": 0.0952,
+   "drift": 0.9307,
+   "drift_rank": 30.69,
+   "dtheta": 25.244,
+   "grad_norm": 0.0572,
+   "b_acc": 1.0
+  },
+  {
+   "B": 22,
+   "disrupt": 0.0978,
+   "drift": 0.9488,
+   "drift_rank": 29.68,
+   "dtheta": 25.773,
+   "grad_norm": 0.2178,
+   "b_acc": 1.0
+  },
+  {
+   "B": 23,
+   "disrupt": 0.1034,
+   "drift": 0.9164,
+   "drift_rank": 32.76,
+   "dtheta": 25.222,
+   "grad_norm": 0.0651,
+   "b_acc": 1.0
+  }
+ ]
+}

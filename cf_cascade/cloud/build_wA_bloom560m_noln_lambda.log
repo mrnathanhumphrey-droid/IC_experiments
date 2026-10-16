@@ -1,0 +1,59 @@
+[buildwA:bloom560m_noln] bigscience/bloom-560m fine-tune on SST-2  lr=2.0e-05 steps=2000 (Fri Jul 10 02:22:42 2026)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/293 [00:00<?, ?it/s]Loading weights:  96%|█████████▌| 280/293 [00:00<00:00, 2724.00it/s]Loading weights: 100%|██████████| 293/293 [00:00<00:00, 1544.42it/s]
+[buildwA:bloom560m_noln] ABLATED post-embed LayerNorm -> Identity
+[buildwA:bloom560m_noln] posid=18121 negid=23381 (distinct=True)
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2054550.33 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 392049.85 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 595960.33 examples/s]
+[buildwA:bloom560m_noln] base (untuned) SST-2 acc=0.468 (18s)
+[hb] bloom560m_noln step 0/2000 loss=18.255 (19s)
+[hb] bloom560m_noln step 50/2000 loss=0.799 (24s)
+[hb] bloom560m_noln step 100/2000 loss=0.757 (29s)
+[hb] bloom560m_noln step 150/2000 loss=0.755 (34s)
+[hb] bloom560m_noln step 200/2000 loss=0.310 (39s)
+[eval] bloom560m_noln step 250 val_acc=0.5900 (best -1.0000@0) (45s)
+[hb] bloom560m_noln step 250/2000 loss=0.248 (47s)
+[hb] bloom560m_noln step 300/2000 loss=0.370 (52s)
+[hb] bloom560m_noln step 350/2000 loss=0.196 (57s)
+[hb] bloom560m_noln step 400/2000 loss=1.115 (62s)
+[hb] bloom560m_noln step 450/2000 loss=0.532 (67s)
+[eval] bloom560m_noln step 500 val_acc=0.7375 (best 0.5900@250) (74s)
+[hb] bloom560m_noln step 500/2000 loss=0.479 (76s)
+[hb] bloom560m_noln step 550/2000 loss=0.580 (81s)
+[hb] bloom560m_noln step 600/2000 loss=0.126 (86s)
+[hb] bloom560m_noln step 650/2000 loss=0.696 (91s)
+[hb] bloom560m_noln step 700/2000 loss=0.163 (96s)
+[eval] bloom560m_noln step 750 val_acc=0.7500 (best 0.7375@500) (102s)
+[hb] bloom560m_noln step 750/2000 loss=0.039 (104s)
+[hb] bloom560m_noln step 800/2000 loss=0.423 (109s)
+[hb] bloom560m_noln step 850/2000 loss=0.116 (114s)
+[hb] bloom560m_noln step 900/2000 loss=0.322 (119s)
+[hb] bloom560m_noln step 950/2000 loss=0.360 (124s)
+[eval] bloom560m_noln step 1000 val_acc=0.7725 (best 0.7500@750) (131s)
+[hb] bloom560m_noln step 1000/2000 loss=0.266 (133s)
+[hb] bloom560m_noln step 1050/2000 loss=0.356 (138s)
+[hb] bloom560m_noln step 1100/2000 loss=0.366 (143s)
+[hb] bloom560m_noln step 1150/2000 loss=0.751 (147s)
+[hb] bloom560m_noln step 1200/2000 loss=0.118 (152s)
+[eval] bloom560m_noln step 1250 val_acc=0.7675 (best 0.7725@1000) (159s)
+[hb] bloom560m_noln step 1250/2000 loss=0.201 (159s)
+[hb] bloom560m_noln step 1300/2000 loss=0.483 (164s)
+[hb] bloom560m_noln step 1350/2000 loss=0.003 (169s)
+[hb] bloom560m_noln step 1400/2000 loss=0.115 (173s)
+[hb] bloom560m_noln step 1450/2000 loss=0.036 (178s)
+[eval] bloom560m_noln step 1500 val_acc=0.7375 (best 0.7725@1000) (185s)
+[hb] bloom560m_noln step 1500/2000 loss=0.389 (185s)
+[hb] bloom560m_noln step 1550/2000 loss=0.639 (190s)
+[hb] bloom560m_noln step 1600/2000 loss=0.012 (195s)
+[hb] bloom560m_noln step 1650/2000 loss=0.930 (200s)
+[hb] bloom560m_noln step 1700/2000 loss=0.150 (205s)
+[eval] bloom560m_noln step 1750 val_acc=0.7225 (best 0.7725@1000) (211s)
+[hb] bloom560m_noln step 1750/2000 loss=0.208 (211s)
+[hb] bloom560m_noln step 1800/2000 loss=0.191 (216s)
+[hb] bloom560m_noln step 1850/2000 loss=0.003 (221s)
+[hb] bloom560m_noln step 1900/2000 loss=0.001 (226s)
+[hb] bloom560m_noln step 1950/2000 loss=0.000 (231s)
+[eval] bloom560m_noln step 2000 val_acc=0.7650 (best 0.7725@1000) (237s)
+[buildwA:bloom560m_noln] SAVED /home/ubuntu/gateA/bloom560m_noln_sst2_wA.pt  anchor_acc=0.7725@1000  reload_confirm=0.7725  wall=243s
+[buildwA:bloom560m_noln] >>> set ANCHOR_WA['BLOOM']=0.772 in the Probe-11 harness <<<

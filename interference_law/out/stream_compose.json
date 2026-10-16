@@ -1,0 +1,33 @@
+{
+ "name": "cifar",
+ "gate": {
+  "rho_pair": -0.593,
+  "median_forget": 0.026,
+  "partial": false
+ },
+ "Q1_compose": {
+  "additive": 0.455,
+  "mean": 0.455,
+  "last_recency": 0.559,
+  "recency_weighted": 0.645,
+  "gamma": 0.5,
+  "winner": "recency-weighted"
+ },
+ "Q2_markov": {
+  "order_var": 0.00145,
+  "set_var": 0.00178,
+  "order_frac": 0.449,
+  "within_set_last_rho": -0.554,
+  "markovian": false
+ },
+ "config": {
+  "STEPS_A": 300,
+  "PSTEP": 60,
+  "LR": 0.5,
+  "K": 8,
+  "NVIC": 16,
+  "NSET": 16,
+  "NORD": 8,
+  "seed": 0
+ }
+}

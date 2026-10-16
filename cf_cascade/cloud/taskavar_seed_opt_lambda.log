@@ -1,0 +1,14 @@
+[GEN] loading facebook/opt-350m (eager)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  85%|████████▍ | 328/388 [00:00<00:00, 3264.15it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3231.12it/s]
+Generating train split:   0%|          | 0/67349 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 67349/67349 [00:00<00:00, 2058187.95 examples/s]
+Generating validation split:   0%|          | 0/872 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 872/872 [00:00<00:00, 390834.91 examples/s]
+Generating test split:   0%|          | 0/1821 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1821/1821 [00:00<00:00, 590431.94 examples/s]
+[GEN] training task-A=SST -> w_A...
+[GEN] w_A SST acc=0.793 (guard ~0.77) (116s)
+[GEN] curvature basis done (142s)
+[GEN] SST fragile/topcurv done (169s)
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  90%|█████████ | 350/388 [00:00<00:00, 3498.67it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 3581.26it/s]
+[GEN] AG fragile/topcurv done (309s)
+[GEN] saved taskA_variation_opt.npz + perlayer_seed_opt.npz (309s)
+[GEN] GUARD fG_median=0.080 tG_median=0.080 (vs banked rung2b_opt) acc=0.793 wall=309s

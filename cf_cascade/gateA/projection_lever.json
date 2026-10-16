@@ -1,0 +1,61 @@
+{
+  "A0_ceiling": 0.75,
+  "baseline": {
+    "A": 0.585,
+    "B": 0.88,
+    "trainloss": 0.013212477951336154,
+    "steps": 800
+  },
+  "projected": {
+    "r32": {
+      "A": 0.705,
+      "B": 0.865,
+      "trainloss": 0.012718442065670387,
+      "steps": 685,
+      "A_retention_gain": 0.12,
+      "B_cost": 0.015000000000000013,
+      "success": true
+    },
+    "r64": {
+      "A": 0.74,
+      "B": 0.895,
+      "trainloss": 0.01907633172812666,
+      "steps": 685,
+      "A_retention_gain": 0.15500000000000003,
+      "B_cost": -0.015000000000000013,
+      "success": true
+    },
+    "r128": {
+      "A": 0.735,
+      "B": 0.895,
+      "trainloss": 0.015368323306114462,
+      "steps": 800,
+      "A_retention_gain": 0.15000000000000002,
+      "B_cost": -0.015000000000000013,
+      "success": true
+    }
+  },
+  "fb_at_wA_rider": {
+    "attention.query_key_value": {
+      "overlap_FB_at_wA": 0.2901558639855973,
+      "chance": 0.0625
+    },
+    "mlp.dense_h_to_4h": {
+      "overlap_FB_at_wA": 0.28838938565727656,
+      "chance": 0.0625
+    },
+    "mlp.dense_4h_to_h": {
+      "overlap_FB_at_wA": 0.2966884786052976,
+      "chance": 0.015625
+    }
+  },
+  "rsweep": [
+    32,
+    64,
+    128
+  ],
+  "success_criterion": "A_gain>=0.05 AND B_cost<=0.05",
+  "any_success": true,
+  "verdict": "LEVER WORKS (>=1 r: A retained AND B not starved -> free lane is usable, forgetting preventable)",
+  "wall_s": 546.0046401023865
+}

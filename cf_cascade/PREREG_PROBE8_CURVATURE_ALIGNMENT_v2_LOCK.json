@@ -1,0 +1,16 @@
+{
+  "prereg": "PREREG_PROBE8_CURVATURE_ALIGNMENT_v2_2026_06_26.md",
+  "sha256": "93f2696321f1fa3eeec96f30b1db7ee9a7fba2374e1c10f3bde517a3a08f4626",
+  "short": "93f26963",
+  "locked": "2026-06-26",
+  "probe": "probe8_v2_curvature_alignment_bounded",
+  "supersedes": "b33ab105 (VOID: R-ratio/CE estimator numerically degenerate)",
+  "primary": "daniso=mean((drand-dphase2)_CH-(drand-dphase2)_NoCH) targeting; g=mean(drand_NoCH-drand_CH) global; ACC-DROPS not ratios",
+  "N": 100,
+  "K_RAND": 5,
+  "cells": [
+    "opt350m",
+    "pythia410m"
+  ],
+  "fired": false
+}

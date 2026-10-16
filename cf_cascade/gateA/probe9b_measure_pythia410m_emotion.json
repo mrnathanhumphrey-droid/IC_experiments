@@ -1,0 +1,34 @@
+{
+  "cell": "pythia410m",
+  "family": "PYTHIA",
+  "mode": "measure",
+  "phase2": "emotion",
+  "keys": [
+    "emotion"
+  ],
+  "VOID": false,
+  "n_seeds": 100,
+  "w_A_acc": 0.7533333333333333,
+  "chosen_child_lr": 3e-05,
+  "child_lr_from_env": true,
+  "omega_cos2_min": 0.2314582990441145,
+  "omega_cos2_mean": 0.01977445515312749,
+  "sigma_sem": 0.0036883880384266376,
+  "ret_anchor_ch": [
+    0.7296666666666667,
+    0.002571317226313966
+  ],
+  "childhood_nondestructive": true,
+  "forget_noch": [
+    0.04269999999999998,
+    0.002326683646335156
+  ],
+  "forget_ch": [
+    0.03330000000000001,
+    0.0040113461415794745
+  ],
+  "P_protection": [
+    0.009399999999999967,
+    0.00464409645402618
+  ]
+}
